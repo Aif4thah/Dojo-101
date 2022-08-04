@@ -1,0 +1,3 @@
+## dictionnaire Kali
+/usr/share/wordlists/
+

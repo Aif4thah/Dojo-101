@@ -1,0 +1,9 @@
+## powershell
+#depuis KALI: 
+pwsh
+
+
+#clavier en français:
+Set-WinUserLanguageList -Force 'fr-FR'
+
+

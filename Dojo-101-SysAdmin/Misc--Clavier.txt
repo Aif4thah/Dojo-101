@@ -1,0 +1,5 @@
+## Clavier
+setxkbmap fr  #ne marche que lorsque X est lancé
+loadkeys fr
+loadkeys us
+

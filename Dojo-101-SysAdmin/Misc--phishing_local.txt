@@ -1,0 +1,12 @@
+## phishing_local
+faire sa page puis:
+
+nohup python3 -m http.server 80 > ../nohup.out &
+nohup tcpdump -i ens192 -v port 80 -w ../phish.pcap &
+
+
+tcpdump -i eth0 -v port 80 -w ../phish.pcap &
+
+control:
+strings ../phish.pcap
+

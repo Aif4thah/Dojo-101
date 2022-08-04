@@ -1,0 +1,5 @@
+## tmux
+> tmux
+> ctrl + b puis " pour spliter
+> ctrl + b puis o pour switcher
+

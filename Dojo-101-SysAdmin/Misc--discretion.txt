@@ -1,0 +1,4 @@
+## discretion
+modifier le /etc/hostname
+modifier la mac: ifconfig eth0 hw ether 00:11:22:aa:bb:ff
+

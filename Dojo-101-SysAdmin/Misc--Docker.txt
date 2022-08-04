@@ -1,0 +1,57 @@
+## Docker
+Détacher: Ctrl-P Ctrl-Q
+
+shooter tous les container : docker rm $(docker ps -a -q)
+
+
+Container en arriere plan: 
+================
+ctrl P + ctrl D
+
+bind de port: 
+========
+docker run -p <host_port1>:<container_port1> -p <host_port2>:<container_port2>
+
+#sauvegarde de l'image: 
+===============
+sudo docker save -o docker_save_ForensicsExam.tar secit/forensicsexam:latest
+#pour charger l'image ce sera: 
+===================
+sudo docker load -i ./docker_save_ForensicsExam.tar
+
+#Pousser un container sur le repo: 
+=====================
+michael@k:~/Documents/Formations/99_Cours_dispensés/wargame2/exercice$ sudo docker image ls
+REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
+<none>                   <none>              85a603db6265        3 minutes ago       218MB
+alpine                   latest              961769676411        8 days ago          5.58MB
+ep9piegi/forensicsexam   1.0                 18906800a393        3 months ago        620MB
+splunk/splunk            latest              d0e924f35601        4 months ago        537MB
+centos                   latest              9f38484d220f        5 months ago        202MB
+arvindr226/alpine-ssh    latest              eae0904b4356        2 years ago         11.3MB
+michael@k:~/Documents/Formations/99_Cours_dispensés/wargame2/exercice$ sudo docker tag 85a603db6265 ep9piegi/alpine_escalation:latest
+michael@k:~/Documents/Formations/99_Cours_dispensés/wargame2/exercice$ sudo docker login
+Authenticating with existing credentials...
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+
+michael@k:~/Documents/Formations/99_Cours_dispensés/wargame2/exercice$ sudo docker push ep9piegi/alpine_escalation
+The push refers to repository [docker.io/ep9piegi/alpine_escalation]
+d870b445421f: Pushed 
+222e39406225: Layer already exists 
+cff9126566c1: Layer already exists 
+288789f98c30: Layer already exists 
+d8b33d0bad10: Layer already exists 
+285c1bd5d4b1: Pushed 
+03901b4a2ea8: Layer already exists 
+latest: digest: sha256:0d24ff93bcfc6d1114ee170b2f804ac8156a9ebfd1ea22098708795078334776 size: 1780
+
+
+
+
+
+
+

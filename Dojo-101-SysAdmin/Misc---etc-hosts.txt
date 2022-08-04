@@ -1,0 +1,5 @@
+## /etc/hosts
+TOUJOURS ajouter les hostname des VM attaquées dans /etc/hosts
+
+les requetes et réponse HTTP peuvent etre différentes (virual host etc...)
+

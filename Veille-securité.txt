@@ -1,0 +1,25 @@
+# Referentiels
+
+ANSSI
+OWASP
+MITRE
+Expérience et formation personnelle
+
+# vulnerabilités
+
+https://www.cert.ssi.gouv.fr/
+https://www.cisa.gov/uscert/ncas
+
+# exploits
+
+https://www.exploit-db.com/
+
+# exploit recent / google dorks
+
+site:hackerone.com inurl:/reports/ "<type d'exploit>"
+
+## exemple:
+
+```
+site:hackerone.com inurl:/reports/ "ssrf"
+site:hackerone.com inurl:/rep
