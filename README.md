@@ -1,6 +1,6 @@
 ## DOJO-101
 
-v2.0.15
+v2.0.17
 
 ## Licence
 
@@ -14,7 +14,7 @@ GNU GENERAL PUBLIC LICENSE version 3
 
 ### Conditions
 
-* One Markdown file / item
-* have to be tested
+* Only Markdown / Text / Scripts Files
+* have to be tested (CTF or production)
 * not already discribed
 * Keep it simple stupid (KISS)
