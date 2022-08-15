@@ -1,8 +1,14 @@
+# Meilleur ratio temps/informations importantes
+
+## SANS newsletters
+https://www.sans.org/newsletters/
+
 # Referentiels
 
 ANSSI
 OWASP
 MITRE
+SANS
 Expérience et formation personnelle
 
 # vulnerabilités
@@ -16,10 +22,4 @@ https://www.exploit-db.com/
 
 # exploit recent / google dorks
 
-site:hackerone.com inurl:/reports/ "<type d'exploit>"
-
-## exemple:
-
-```
-site:hackerone.com inurl:/reports/ "ssrf"
-site:hackerone.com inurl:/rep
+site:hackerone.com inurl:/reports/
