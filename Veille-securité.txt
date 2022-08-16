@@ -1,7 +1,12 @@
-# Meilleur ratio temps/informations importantes
+# newsletters
 
 ## SANS newsletters
+
 https://www.sans.org/newsletters/
+
+## Kindred
+
+https://news.infosecgur.us/
 
 # Referentiels
 
