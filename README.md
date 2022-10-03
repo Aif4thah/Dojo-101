@@ -1,6 +1,6 @@
 ## DOJO-101
 
-v2.0.19
+v2.0.20
 
 ## Licence
 
@@ -23,4 +23,4 @@ GNU GENERAL PUBLIC LICENSE version 3
 
 Help me to keep Dojo-101 free and open-source
 
-* [buY mE a CofFEe](https://www.buymeacoffee.com/taisensolutions)
+* [buy me a coffee](https://www.buymeacoffee.com/taisensolutions)
