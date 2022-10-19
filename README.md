@@ -1,7 +1,5 @@
 ## DOJO-101
 
-v2.0.21
-
 ## Licence
 
 GNU GENERAL PUBLIC LICENSE version 3

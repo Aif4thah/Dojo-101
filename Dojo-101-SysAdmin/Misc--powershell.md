@@ -35,6 +35,7 @@ if($var.Contains('a')){ $true }else{ $false }
 
 ```Powershell
 1..100 |%{ $_  }
+ls |% { $_.FullName }
 ```
 
 ## chercher une commande
@@ -47,8 +48,8 @@ gcm *bitlocker*
 
 ```Powershell
 get-date
-get-date |ft
-get-date |fl
+get-date |ft *
+get-date |fl *
 ```
 ## Transformer un resultat
 
@@ -292,5 +293,8 @@ Get-NimporteQuoi -parametre1 aaaaa -parametre2 bbbbb
 Get-NimporteQuoi
 ```
 
+### intefrité
 
-
+```Powershell
+"F68E37DC9CABF2EE8B94D6A5D28AD04BE246CCC2E82911F8F1AC390DCF0EE364" -eq (Get-FileHash .\test -Algorithm SHA256).Hash
+```
