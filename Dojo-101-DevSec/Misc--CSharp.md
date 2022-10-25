@@ -73,8 +73,11 @@ List<int> liste = new List<int>(){1,2,3};
 
 		
 		Console.WriteLine(message);
-
-
 ```
 
+# lire un fichier
+
+```c#
+string text = File.ReadAllText(textFile); 
+``` 
 
