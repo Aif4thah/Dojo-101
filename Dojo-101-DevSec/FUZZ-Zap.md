@@ -2,6 +2,8 @@
 
 utilisé en alternative de Burp (cf pentest) car gratuit
 
+besoin du Java JDK sous windows (JRE ne suffit pas)
+
 ## Documentation
 https://www.zaproxy.org/docs/desktop/start/
 https://www.zaproxy.org/docs/desktop/addons/fuzzer/
