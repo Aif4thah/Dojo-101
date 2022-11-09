@@ -3,7 +3,7 @@
 ## HELLO WORLD
 
 ```c#
-using System; # librairie
+using System; # librairie importée
 					
 public class Program
 {
@@ -50,11 +50,10 @@ List<int> liste = new List<int>(){1,2,3};
 		liste.ForEach(i => Console.WriteLine(i));
 ```
 
-## executer des commandes
+## executer des commandes système
 
 ```c#
 
- //execute command
 		string message = "cat /etc/passwd";
 		int timeout = 200;
             System.Diagnostics.Process cmd = new Process();
@@ -80,4 +79,23 @@ List<int> liste = new List<int>(){1,2,3};
 ```c#
 string text = File.ReadAllText(textFile); 
 ``` 
+
+# classes et objets
+
+```c#
+namespace CShidori.DataHandler
+{
+    public class BinLoader
+    {
+        public byte[] DataBytes { get; set; }
+        public string FileName { get; set; }
+
+        public BinLoader(string FileName)
+        {
+            this.FileName = FileName;
+            this.DataBytes = File.ReadAllBytes(FileName);
+        }
+    }
+}
+```
 
