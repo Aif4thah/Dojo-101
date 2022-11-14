@@ -1,18 +1,10 @@
-# Topic
-1. what we are looking for
-keyword
-file //comment
-## subtopic
-`regex`
-```code``` 
-
-----------
-
 # Authentication
 
 1. Cleartext password
 2. Weak hashs, Weak Algorithms
-`[A-Fa-f0-9]{5,64}`
+
+```regex
+[A-Fa-f0-9]{5,64}
 password
 passwd
 key
@@ -28,10 +20,12 @@ salt
 authent
 user
 form
+```
 
 ## spring security
 1. check if Spring security is in pom.xml: `<groupId>org.springframework.security</groupId>`
 
+```java
 @EnableWebSecurity
 PasswordEncoder
 WebSecurityConfig //most likely in WebSecurityConfig.java or \config\SecurityConfiguration.java
@@ -45,33 +39,38 @@ UsernamePasswordAuthenticationFilter
 authenticationFilter 
 passwordExpirationFilter
 AuthTokenFilter;
-
-
-## spring kafka
 @KafkaListener
+```
 
-----------
 
 # Session management
 
 1. How sessions are handled
+
+```
 cookie
 session
-
-----------
+```
 
 # Privilèges
 
 1. least privilege policy
+
+```shell
 chmod
 sudo
-runas
+```
 
-----------
+```powershell
+runas
+```
+
 
 # SQL
 
 1. prepared statement
+
+```SQL
 `(.*)FROM\b(.*)`
 INSERT
 DROP
@@ -83,8 +82,8 @@ data
 sql
 exec
 @Query
+```
 
-----------
 
 # Inputs
 
@@ -92,52 +91,28 @@ exec
 2. Code Injection
 3. Consider using the OWASP encoding library to sanitize input
 
-
 ## Concatenation
 
 `(["'] ?[+.] )|([+.] ?["'])`
 
 ## XSS:
 
-1. Check Parameters or other data within the URL query string and message body.
-2. Check The URL file path.
-3. Check HTTP request headers that might not be exploitable in relation to reflected XSS.
-4. Check Any out-of-band routes via which an attacker can deliver data into the application.
-### How prevent XSS:
 
-1. Filter input on arrival. At the point where user input is received, filter as strictly as possible based on what is expected or valid input.
-2. Encode data on output. At the point where user-controllable data is output in HTTP responses, encode the output to prevent it from being interpreted as active content. Depending on the output context, this might require applying combinations of HTML, URL, JavaScript, and CSS encoding.
-3. Use appropriate response headers. To prevent XSS in HTTP responses that aren't intended to contain any HTML or JavaScript, you can use the Content-Type and X-Content-Type-Options headers to ensure that browsers interpret the responses in the way you intend.
-4. Content Security Policy. As a last line of defense, you can use Content Security Policy (CSP) to reduce the severity of any XSS vulnerabilities that still occur.
-
-### Header:
-Content-Type
-X-Content-Type-Options
+```js
+document.write(),
+document.writeln
+```
 
 
-
-### php
-
-- prevent: regex + htmlentities + ENT_QUOTES
-
-## java
-
-- prevent: Filter your inputs with a whitelist of allowed characters and use a library such as Google Guava to HTML-encode your output for HTML contexts, or use JavaScript Unicode escapes for JavaScript contexts.
-
-### Spring:
-
+```java
 .contentSecurityPolicy
+```
 
-Spring MVC allows to automatically bind user input into object. Identify the controllers that handle state-changing requests (e.g. find the occurences of @RequestMapping) then verify if controls are in place (both on the controller or on the involved models). Limitations on the exploitation of the mass assignment can be, for example, in the form of:
-	• list of bindlable fields via setAllowedFields method of the DataBinder class (e.g. binder.setAllowedFields(["username","password","email"]))
-	• list of non-bindlable fields via setDisallowedFields method of the DataBinder class (e.g. binder.setDisallowedFields(["isAdmin"]))
-It is also advisable to pay attention to the use of the @ModelAttribute annotation that allows to specify a different name/key.
-
-
-----------
 
 # TLS
+
 ## Spring
+
 application.properties
 ```
  http
@@ -147,28 +122,32 @@ application.properties
 
 ### Spring sécurity
 
+```java
 WebSecurityConfig
 configure(HttpSecurity
 <webapp>\src\main\java\<..SNIP...>\config\SecurityConfiguration.java
 .requiresSecure()
+```
 
-
-----------
 
 # Url:
 
 1. Encryption
 2. Servers/Clients is authenticated ?
-`(https?|ftp|file)://(.*)`
+
+```regex
+(https?|ftp|file)://(.*)
 url
 URI
 request
+```
 
-----------
 
 # Other Bad Practices:
 
 1. Code injection
+
+```
 eval
 toString
 setInterval
@@ -177,17 +156,18 @@ exec
 cmd
 printf
 strcpy
+```
 
-## java
-
+```java
 @ToString.Exclude //reco: @JsonIgnore and @JsonIgnoreProperties
 runtime
 getId
+```
 
-----------
 
 # Process:
 
+```regex
 POST
 request
 response
@@ -197,16 +177,20 @@ buffer
 redirect //redirection vers url
 location //redirection vers url
 fwd //le parametre redirige vers une fonction
+```
 
-----------
 
 # Files io:
+
+```regex
 file
 AbsolutePath (peut etre bypassé, utiliser CanonicalPath)
+```
 
-----------
 
 # Configurations:
+
+```file
 *.xml
 *.yml
 *.conf
@@ -219,8 +203,8 @@ web.config
 web.xml
 ## php
 php.ini
+```
 
-----------
 
 # CSRF:
 
@@ -229,15 +213,17 @@ Token (Anti-csrf dans les form)
 
 ## IIS
 
+```c#
 ViewState
+```
 
 ## Spring
 
+```java
 WebSecurityConfig.java
 http.csrf()
 @EnableWebSecurity
-
-----------
+```
 
 # Log:
 
@@ -247,7 +233,6 @@ log
 debug
 console
 
-----------
 
 # Deserialiation:
 
@@ -255,92 +240,137 @@ console
 stream
 io
 
-## Java
 
+```java
 Java.io
 serialization
 Serializable
 readObject
 Serialize.java //fichier
-### Spring
-
 @RequestBody //maps the HttpRequest body to a transfer or domain object, enabling automatic deserialization
 @ResponseBody //tells a controller that the object returned is automatically serialized into JSON and passed back into the HttpResponse object.
+```
 
-----------
+
+```php
+unserialize()
+```
+
+```python
+pickle.loads()
+yaml.load()
+```
+
+```c#
+JsonConvert
+DeserializeObject
+TypeNameHandling.All
+```
+
+```ruby
+Marshall.load(),
+yaml.load()
+```
+
 
 # Race Conditions:
 
+```regex
 Thread
 Dispose
+```
 
-## Python
 
-Pickle
-## C#
-
-Dispose
-
-----------
 
 # Erreurs trop verbeuses:
 
+```regex
 try
+```
 
-## Java
-
+```java
 StackTrace
+```
 
-----------
+```c#
+Diagnostic
+```
+
 
 # BOF (à completer si revue de code en C/C++,Objective C):
-Buff
 
-----------
+```regex
+Buff
+```
+
 
 # Composant / librairies
 
 ## Dependancy check
 
-```.\dependency-check.bat --scan "fichier.jar ou lib folder"```
+```powershell
+.\dependency-check.bat --scan "fichier.jar ou lib folder"
+```
 
-----------
 
 # Regex Bypass
 
 1. find regex in code:
 
+```regex
 regex
 pattern
 compile
 match
 replace
+```
+
 2. char to encode (Hex, Unicode, B64 etc...)
 3. logic errors
 https://regex101.com/
 
-----------
+
+
+# RCE
+
+
+```php
+eval()
+assert()
+system()
+exec()
+shell_exec()
+passthru()
+popen()
+backticks(`CODE`)
+include()
+require()
+```
+
+```python
+eval()
+exec()
+os.system()
+```
+
+```c#
+Diagnostic
+PSobject
+```
+
+```ruby
+System()
+exec()
+%x()
+backticks(`CODE`)
+```
+
 
 # API
 
-## Spring
+## spring 
 
-### Rappel: 
-
-1. les starters sont dans le pom.xml (spring-boot-starter-<nom du starter>)
-2. pour une requete https://.../greeting.html on va avoir:
-3. Une class: src/main/java/com/example/restservice/Greeting.java
-4. Un controler : src/main/java/com/example/restservice/GreetingController.java
-5. le tout buildé avec java ou maven (mvnw)
-6. Parfois c'est fait differement, il faut chercher les entrypoints à la main
-6. pour la Doc on peut chercher un swagger dans le pom.xml ex: <artifactId>springfox-swagger-ui</artifactId> -> http://.../swagger-ui.html
-
-## touver les points d'entrées et les paramètre
-
-
-
-### Spring
-
+```java
 `@\w{3,8}mapp\w*\(.*\)` // liste les endpoits, mais pas les paramètres
 @PathVariables
 @RequestParam
@@ -362,8 +392,8 @@ addViewController(
 *.properties // nom de fichiers
 *Controller.java // nom de fichiers
 context.xml //nom de fichier
+```
 
-----------
 
 # XML + XXE
 
@@ -375,50 +405,31 @@ context.xml //nom de fichier
 XML
 XMLinputFactory
 
-----------
 
 # Template injection
 
 ## AngularJS
 
-1. Avoid mixing server-side and client-side templates. Instead, treat
-templates only within one application context: either the server-side
-or the client-side.
+1. Avoid mixing server-side and client-side templates. Instead, treat templates only within one application context: either the server-side or the client-side.
 
-2. Reduce the scope of `ng-app` directive from an HTML’s document
-body to specific DOM element context within the page itself.
-Bind the data from the template to ng-bind or ng-bind-html to
-ensure user input is being properly handled with Angular’s support
-for output encoding and sanitization controls with these Angular
-directives.
+2. Reduce the scope of `ng-app` directive from an HTML’s document body to specific DOM element context within the page itself. Bind the data from the template to ng-bind or ng-bind-html to ensure user input is being properly handled with Angular’s support for output encoding and sanitization controls with these Angular directives.
 
-3. Use `ng-non-bindable` to make sure the data is not being treated
-by Angular as an expression that needs to be evaluated and so
-mitigating the Angular code injection.
+3. Use `ng-non-bindable` to make sure the data is not being treated by Angular as an expression that needs to be evaluated and so mitigating the Angular code injection.
 
 4. `ngCsp` directive that offers compatibility with CSP
 
-### si OnePage
+# Open redirect
+
+```js
+document.location.href()
 HttpClient
-
-### spring security in TypeScript
-
 intercept
-
-### a proscrire:
-
 ng-bind-html-unsafe
 $sce.trustAsHtml(value)
 s angular.element()
+```
 
-## redirection
 
-location
-
-### whitelister les template 
-bonne pratique: $sceDelegateProvider.resourceUrlWhitelist()
-
-----------
 
 # Compilation options:
 
@@ -429,10 +440,6 @@ bonne pratique: $sceDelegateProvider.resourceUrlWhitelist()
 3. grant: specific permission
 4. grant codeBase: code wich can be executed
 6. exemple of permission to lunch tomcat: `permission java.net.SocketPermission "localhost:8080", "listen,resolve";`
-
-----------
-
-# Misc
 
 ## Java
 
