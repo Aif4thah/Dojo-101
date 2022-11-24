@@ -1,6 +1,6 @@
 # CodeQL
 
-## Article écrit pour Squad:
+## Presentation
 
 CodeQL est un outil permettant de découvrir des vulnérabilités en analysant le code source de vos applications.
 
@@ -36,8 +36,14 @@ Ci-dessous un exemple de commande exécutée depuis le répertoire courant d’u
 
 Evidement ce ne sera pas toujours le cas et l’option --command permet de corriger les éventuels écarts ou d’utiliser un outil spécifique pour la compilation :
 
+ex: java
 ```
 ..\codeql-home\codeql\codeql.cmd database create ..\java-spring-POC1 --language=java
+```
+
+ex: c#
+```
+..\..\..\01-ToolBox\CodeQL\codeql-win64\codeql\codeql.exe database create .\CodeQL-database\CQL-vulnApp --language=csharp
 ```
 
 À l’issue de la compilation, l’outil confirme que la base de données a été correctement créée par le retour suivant :
@@ -52,9 +58,16 @@ Pour aller à l’essentiel, des répertoires nommés « codeql-suites » contie
 
 Enfin, la commande database analyze et les options suivantes permettent de spécifier le chemin des « helpers » nécessaires à notre listes de requêtes ainsi que le format souhaité du résultat de l’analyse :
 
+ex java
 ```
  .\codeql-home\codeql\codeql.cmd database analyze java-spring-POC1-database .\codeql-home\codeql-queries\codeql-main\java\ql\src\codeql-suites\java-lgtm.qls --format=sarifv2.1.0 --output=OUTPUT.sarif --search-path .\codeql-home\codeql-queries\codeql-main\misc\suite-helpers
 ```
+
+ex c#
+```
+..\..\..\01-ToolBox\CodeQL\codeql-win64\codeql\codeql.exe database analyze .\CodeQL-database\CQL-vulnApp C:\Users\vaca\OneDrive\Documents\Projets-InfoSec\01-ToolBox\CodeQL\codeql\csharp\ql\src\codeql-suites\csharp-security-and-quality.qls --format=csv --output=result.csv
+```
+
 
 Différents formats sont possibles pour les résultats, en voici un extrait au format JSON avec notre fichier et la ligne comportant une vulnérabilité de type injection SQL :
 
@@ -78,6 +91,7 @@ Une fois cette première étape effectuée, la recherche de vulnérabilité peut
 
 ## Références
 
+QuickStart: https://codeql.github.com/docs/codeql-cli/getting-started-with-the-codeql-cli/
 License : https://securitylab.github.com/tools/codeql/license/
 Query Console : https://lgtm.com/
 Documentation : https://codeql.github.com/docs/codeql-cli/

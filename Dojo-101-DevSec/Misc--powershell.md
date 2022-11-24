@@ -1,5 +1,11 @@
 # Initiation au scripting powershell
 
+## version
+
+```Powershell
+$PsVersionTable.PSVersion
+```
+
 ## variables
 ```Powershell
 $var = 'chaine de charactères'
@@ -11,6 +17,7 @@ $var |gm #lister les membres (proprietés et fonctions)
 
 ```Powershell
 $var = Read-Host "saisissez une valeur"
+$var = (read-host ">>>").ToString()
 ```
 
 ### stocker une saisie de manière sécurisée
@@ -121,9 +128,19 @@ Get-LocalUser
 Get-EventLog -LogName *
 ```
 
+## registry
+
+```Powershell
+get-psdrive
+Get-ItemProperty -path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0
+
+```
+
+
 ## sécurité de la mémoire
 
 ```Powershell
+Get-Processmitigation
 Set-Processmitigation -System -Enable DEP,BottomUp,SEHOP #pas d'autres options pour limiter les effets de bord ; pose pbm avec virtualbox ? 
 Set-ProcessMitigation -System -Remove ; Set-ProcessMitigation -System -Reset #restauration de la conf par défaut 
 ```

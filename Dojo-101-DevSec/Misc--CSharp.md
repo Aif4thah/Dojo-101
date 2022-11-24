@@ -1,6 +1,10 @@
 # C#
 
-## HELLO WORLD
+## Compiler le code
+
+installer `visual studio` ou le framework dotnet et utiliser la commande `dotnet run`
+
+## Hello world
 
 ```c#
 using System; # librairie importée
