@@ -315,3 +315,14 @@ Get-NimporteQuoi
 ```Powershell
 "F68E37DC9CABF2EE8B94D6A5D28AD04BE246CCC2E82911F8F1AC390DCF0EE364" -eq (Get-FileHash .\test -Algorithm SHA256).Hash
 ```
+
+### signature
+
+```Powershell
+        $message = "<votre message"
+        $hmacsha = New-Object System.Security.Cryptography.HMACSHA256
+        $hmacsha.key = [Text.Encoding]::ASCII.GetBytes($secret)
+        $signature = $hmacsha.ComputeHash([Text.Encoding]::ASCII.GetBytes($message))
+        $signature = [Convert]::ToBase64String($signature)
+        write-host -ForegroundColor Cyan $signature
+```
