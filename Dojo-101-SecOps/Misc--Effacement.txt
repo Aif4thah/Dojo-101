@@ -1,4 +1,0 @@
-## Effacement
-### Effacement
-find <dir> -type f -exec shred {} \;
-

@@ -1,6 +1,0 @@
-## flash
-sudo apt install swfmill 
-swfmill swf2xml RootMe.swf movie.xml
-
-
-

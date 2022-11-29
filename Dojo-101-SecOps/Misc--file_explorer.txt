@@ -1,3 +1,0 @@
-## file explorer
-> ouvrir l'explorateur de fichier: xdg-open .
-

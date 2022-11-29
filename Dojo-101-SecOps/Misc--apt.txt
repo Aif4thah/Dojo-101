@@ -1,6 +1,0 @@
-## apt
-#en cas de pbm de dépendant avec des paquet installé manuellement (dpkg -i )
-
-apt-get install --fix-missing
-apt-get install --fix-broken
-

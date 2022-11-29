@@ -1,5 +1,0 @@
-## RDP
-### RDP
-rdesktop <server> [ -u username -p password ]
-
-

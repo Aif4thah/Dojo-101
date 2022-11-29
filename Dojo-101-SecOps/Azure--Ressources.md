@@ -1,0 +1,26 @@
+# Azure ressources
+
+## resources can be moved:
+
+    Azure Storage accounts
+    Azure virtual machines
+    Azure virtual networks
+
+## These resources can't be moved:
+
+    Azure Active Directory domain services
+    Azure Backup vaults
+    Azure App Service gateways
+
+## Move ressources:
+
+az group create --name <destination resource group name> --location <location name>
+yourResource=$(az resource show --resource-group <resource group name> --name <resource name> --resource-type <resource type> --query id --output tsv)
+az resource move --destination-group <destination resource group name> --ids $yourResource
+az group show --name <destination resource group name>
+
+
+New-AzResourceGroup -Name <destination resource group name> -Location <location name>
+$yourResource = Get-AzResource -ResourceGroupName <resource group name> -ResourceName <resource name>
+Move-AzResource -DestinationResourceGroupName <destination resource group name> -ResourceId $yourResource.ResourceId
+Get-AzResource -ResourceGroupName <destination resource group name> | ft
