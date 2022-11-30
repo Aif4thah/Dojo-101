@@ -332,3 +332,10 @@ Get-NimporteQuoi
         $signature = [Convert]::ToBase64String($signature)
         write-host -ForegroundColor Cyan $signature
 ```
+
+### certificat (quick and dirty)
+
+```Powershell
+New-SelfSignedCertificate -DnsName Ucshiwa.lan -CertStoreLocation Cert:\CurrentUser\My\  -KeyAlgorithm RSA -KeyLength 4096 -NotAfter $(Get-Date).AddYears(30)
+certmgr.msc # export the generated certificate as password protected .pfx file 
+```
