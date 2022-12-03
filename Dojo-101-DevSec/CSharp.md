@@ -235,3 +235,155 @@ int randvalue = RandomNumberGenerator.GetInt32(p.Length);
 byte[] RandBytes = RandomNumberGenerator.GetBytes(Length);
 
 ```
+
+## Encoding
+
+```c#
+                Uri.EscapeDataString(input);
+                HttpUtility.UrlEncode(input);
+                HttpUtility.UrlEncodeUnicode(input);
+                HttpUtility.HtmlEncode(input);
+
+private static string HexEscapeString(string str)
+        {
+            string hexstr = string.Empty;
+            foreach (char c in str)
+            {
+                try { hexstr += Uri.HexEscape(c); }
+                catch { hexstr += c; }               
+            }
+            return hexstr;
+        }
+
+        private static string AsciiEncode(string str)
+        {
+            string htmlASCIIEncoded = string.Empty; ;
+            foreach (char c in str)
+            {
+                try
+                {
+                    int val = Convert.ToInt32(c);
+                    if (val < 128) //if ASCCI not extended
+                    {
+                        htmlASCIIEncoded += "&#" + val.ToString() + ";";
+                    }
+                }
+                catch { htmlASCIIEncoded += c; }
+            }
+            return htmlASCIIEncoded;
+        }
+
+
+        private static string AsciiHexEncode(string str)
+        {
+            string htmlASCIIHexEncoded = string.Empty; ;
+            foreach (char c in str)
+            {
+                try
+                {
+                    int val = Convert.ToInt32(c);
+                    if (val < 128) //if ASCCI not extended
+                    {
+                        htmlASCIIHexEncoded += "&#x" + val.ToString("X") + ";";
+                    }
+                }
+                catch { htmlASCIIHexEncoded += c; }
+            }
+            return htmlASCIIHexEncoded;
+        }
+
+
+```
+
+### fuzzing : mutation:
+
+```c#
+
+        public static string RepRandBc(string p)
+        {         
+            int randvalue = RandomNumberGenerator.GetInt32(p.Length);
+            int randbc = RandomNumberGenerator.GetInt32(BadStrings.Output.Count);  
+            
+            StringBuilder sb = new StringBuilder(p);
+            sb.Remove(randvalue, 1);     
+            
+            return sb.ToString().Insert(randvalue, BadStrings.Output[randbc]);
+        }
+
+
+        public static string AddRandBc(string p)
+        {
+            int randvalue = RandomNumberGenerator.GetInt32(p.Length);
+            int randbc = RandomNumberGenerator.GetInt32(BadStrings.Output.Count);
+
+            return p.Insert(randvalue, BadStrings.Output[randbc]);
+        }
+
+        public static string RepLine(string p)
+        {
+            string[] lines = p.Split('\n');
+            int randvalue = RandomNumberGenerator.GetInt32(lines.Length);
+            int randbc = RandomNumberGenerator.GetInt32(BadStrings.Output.Count);
+            lines[randvalue] = BadStrings.Output[randbc];
+
+            return String.Join('\n', lines);
+        }
+
+
+        public static string DelChar(string p)
+        {
+            int randvalue = RandomNumberGenerator.GetInt32(p.Length);
+            StringBuilder sb = new StringBuilder(p);
+            
+            return sb.Remove(randvalue, 1).ToString();
+        }
+
+        public static byte[] BitFlip(byte[] bytes)
+        {
+            byte[] bitW = { 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80 };
+
+            int randvalue = RandomNumberGenerator.GetInt32(bytes.Length);
+            int randbit = RandomNumberGenerator.GetInt32(bitW.Length);
+
+            try { bytes[randvalue] += bitW[randbit]; }
+            catch { bytes[randvalue] -= bitW[randbit]; }
+
+            return bytes;
+        }
+
+
+        public static byte[] RepBytes(byte[] bytes)
+        {
+
+            int randLength = RandomNumberGenerator.GetInt32(1, 4);
+
+            if(bytes.Length <= randLength)
+            {
+                bytes = RandomNumberGenerator.GetBytes(randLength);
+            }
+            else
+            {
+                int randvalue = RandomNumberGenerator.GetInt32(bytes.Length - randLength);
+                byte[] RandBytes = RandomNumberGenerator.GetBytes(randLength);
+
+                for (int i = 0; i < randLength; i++)
+                    bytes[randvalue + i] = RandBytes[i];
+            }
+
+
+            return bytes;
+        }
+
+
+        public static string RepeatStr(string p)
+        {
+
+            StringBuilder sb = new StringBuilder(p);
+            int startIndex = RandomNumberGenerator.GetInt32(sb.Length);
+            
+            return p + sb.ToString(startIndex, sb.Length - startIndex);
+           
+        }
+
+```
+
