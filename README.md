@@ -1,6 +1,6 @@
 # DOJO-101
 
-Base de connaissances en cybersécurité, Administration et développement sécurisé
+Base de connaissances en cybersécurité, Administration et développement sécurisés
 
 ## Licence
 
