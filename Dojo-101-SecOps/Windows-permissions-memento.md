@@ -1,4 +1,5 @@
 # permissions memento
+
    permission is a permission mask and can be specified in one of two forms:
         a sequence of simple rights:
                 D - Delete access

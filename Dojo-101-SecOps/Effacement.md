@@ -3,6 +3,6 @@
 
 ## Effacement avec shred
 
-```shell
+```sh
 find <dir> -type f -exec shred {} \;
 ```
