@@ -1,6 +1,0 @@
-## bash
-
-cat file2upload | base64
-
-cat fileWithBase64Content | base64 -d > finalBinary
-

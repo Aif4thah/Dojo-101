@@ -1,3 +1,0 @@
-### Montage
-mount  -o loop,ro,noexec img.dd  /mnt
-

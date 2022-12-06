@@ -1,51 +1,62 @@
-## python
-shebang:
-#!/usr/bin/env python3
+# python
 
-linux time:
-=======
+## shebang:
+```python
+#!/usr/bin/env python3
+```
+
+## linux time:
+
+```python
 >>> import time
 >>> time.ctime(152546)
 'Fri Jan  2 19:22:26 1970'
+```
 
-base64:
-=====
+## base64:
+
+```python
 >>> import base64
 >>> base64.b64encode(b'test')
 'dGVzdA=='
+```
 
+## Hexlify:
 
-Hexlify:
-====
+```python
 >>> import binascii
 >>> binascii.hexlify('A')
 '41'
 >>> binascii.unhexlify('41') 
 'A'
+```
 
-file:
-==
+## file:
+
+```python
     with open(file, 'r') as f:
         line = f.readline()
         while line:
             if "MAC Address" in line:
                 tgt.addmac(line.split(" ")[1].replace(",",""))
             line = f.readline() #ligne suivante
+```          
             
             
-            
-Process:
-=====
+## Process:
+
+```python
     scan = subprocess.Popen(["nmap","-sP",subnet,"-oG", file ], stdout=subprocess.PIPE)
     while scan.poll() is None: #on attend la fin du process
         pass
     if scan.returncode == 0:
         print("[*] scan arp terminé")
+```
 
 
+## sha256:
 
-sha256:
-=====
+```python
 import hashlib
 def encrypt_string(hash_string):
     sha_signature = hashlib.sha256(hash_string.encode()).hexdigest()
@@ -55,47 +66,55 @@ hash_string = 'confidential data'
 sha_signature = encrypt_string(hash_string)
 print(sha_signature)
 # 3fef7ff0fc1660c6bd319b3a8109fcb9f81985eabcbbf8958869ef03d605a9eb
+```
 
-mini serveur web:
-===========
+## mini serveur web:
+
+```sh
 python3 -m http.server
 python -m SimpleHTTPServer
+```
 
-#changer le port: 
+## changer le port:
+
+```sh
 sudo python3 -m http.server 80
+```
 
+## binaire et char:
 
-binaire et char:
-=========
-
+```python
 >>> import binascii
 >>> bin(int(binascii.hexlify('Sam & Max'), 16))[2:]
 '10100110110000101101101001000000010011000100000010011010110000101111000'
- 
+ ```
 Et l’inverse:
- 
+
+```python
 >>> binascii.unhexlify('%x' % int('0b' + '10100110110000101101101001000000010011000100000010011010110000101111000', 2))
 'Sam & Max'
+```
 
+## url decode:
 
-url decode:
-=======
-
+```python
 >>> import urllib.parse
 >>> encodedStr = 'Hell%C3%B6%20W%C3%B6rld%40Python'
 >>> urllib.parse.unquote(encodedStr)
 'Hellö Wörld@Python'
+```
 
+## url encode:
 
-url encode:
-=======
-
+```python
 import urllib.parse
 urllib.parse.quote('&')
 #'%26'
+```
 
-http client:
-=======
+## http client:
+
+```
 import http.client
 conn = http.client.HTTPSConnection('enirdd6d0146.x.pipedream.net')
 conn.request("POST", "/", '{ "name": "Princess Leia" }', {'Content-Type': 'application/json'})
@@ -113,11 +132,11 @@ response = connection.getresponse()
 print("Status: {} and reason: {}".format(response.status, response.reason))
 
 connection.close()
+```
 
+## request:
 
-request: #aussi pour les requetes http
-========================
-
+```python
 import requests
 
 url = "http://staging-order.mango.htb"
@@ -125,32 +144,38 @@ headers = {'Content-type': 'application/x-www-form-urlencoded'}
 post_data = "username=admin&password[$regex]=" + payload +".*" + "&login=login"
 r = requests.post(url, data=post_data, headers=headers, allow_redirects=False)
 
+```
 
 
+## conversion char / Unicode / ascci:
 
-conversion char / Unicode / ascci:
-====================
+```python
 >>> ord('A')
 65
 >>> chr(65)
 'A'
+```
 
 
+## little indian:
 
-little indian:
-=======
+```python
 from struct import pack
 pack('<I', 0x08048474)
+```
 
-avoir un shell (ou corriger le shell apres un netcat) 
-=========
+## avoir un shell (ou corriger le shell apres un netcat) 
+
+```sh
 python -c "import pty;pty.spawn('/bin/bash')"
+```
+
+## divers:
 
 
-divers:
-====
 fonction one line: [print(i) for i in range(4)]
 
+```python
 >>> import string
 >>> string.printable
 '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ \t\n\r\x0b\x0c'
@@ -158,7 +183,7 @@ fonction one line: [print(i) for i in range(4)]
 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 >>> string.digits
 '0123456789'
-
+```
 
 
 

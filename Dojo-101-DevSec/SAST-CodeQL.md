@@ -21,7 +21,7 @@ Les binaires permettant d’exécuter nos requêtes (queries) [4] ;
 Les queries elles-mêmes [4], qui serviront de base pour débuter la recherche de vulnérabilités.
 Ces deux éléments sont ensuite placés côte à côte dans un même répertoire. Ceux-ci portant le même nom, un des deux doit être renommé. Dans notre cas le dossier contenant nos queries s’appelle « codeql-queries ». Notons que CodeQL peut être ajouté au Path, bien que cela ne soit pas indispensable :
 
-```
+```Powershell
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 da---l        06/06/2021     10:52                codeql
@@ -37,12 +37,14 @@ Ci-dessous un exemple de commande exécutée depuis le répertoire courant d’u
 Evidement ce ne sera pas toujours le cas et l’option --command permet de corriger les éventuels écarts ou d’utiliser un outil spécifique pour la compilation :
 
 ex: java
-```
+
+```PowerShell
 ..\codeql-home\codeql\codeql.cmd database create ..\java-spring-POC1 --language=java
 ```
 
 ex: c#
-```
+
+```PowerShell
 ..\..\..\01-ToolBox\CodeQL\codeql-win64\codeql\codeql.exe database create .\CodeQL-database\CQL-vulnApp --language=csharp
 ```
 
@@ -59,19 +61,21 @@ Pour aller à l’essentiel, des répertoires nommés « codeql-suites » contie
 Enfin, la commande database analyze et les options suivantes permettent de spécifier le chemin des « helpers » nécessaires à notre listes de requêtes ainsi que le format souhaité du résultat de l’analyse :
 
 ex java
-```
+
+```PowerShell
  .\codeql-home\codeql\codeql.cmd database analyze java-spring-POC1-database .\codeql-home\codeql-queries\codeql-main\java\ql\src\codeql-suites\java-lgtm.qls --format=sarifv2.1.0 --output=OUTPUT.sarif --search-path .\codeql-home\codeql-queries\codeql-main\misc\suite-helpers
 ```
 
 ex c#
-```
+
+```PowerShell
 ..\..\..\01-ToolBox\CodeQL\codeql-win64\codeql\codeql.exe database analyze .\CodeQL-database\CQL-vulnApp C:\Users\vaca\OneDrive\Documents\Projets-InfoSec\01-ToolBox\CodeQL\codeql\csharp\ql\src\codeql-suites\csharp-security-and-quality.qls --format=csv --output=result.csv
 ```
 
 
 Différents formats sont possibles pour les résultats, en voici un extrait au format JSON avec notre fichier et la ligne comportant une vulnérabilité de type injection SQL :
 
-```
+```PowerShell
     "results" : [ {
       "ruleId" : "java/sql-injection",
       "ruleIndex" : 54,

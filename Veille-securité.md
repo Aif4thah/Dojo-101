@@ -28,3 +28,4 @@ https://www.exploit-db.com/
 # exploit recent / google dorks
 
 site:hackerone.com inurl:/reports/
+https://hackerone.com/reports/XXXXXX

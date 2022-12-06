@@ -1,3 +1,5 @@
+## sort Azure graph api
+
 $appli = gc .\Permissions-Role-Application-review.csv
 $deleg = gc .\Permissions-Scope-Delegated-review.csv
 

@@ -1,26 +1,32 @@
-## Docker
-Détacher: Ctrl-P Ctrl-Q
+# Docker
 
-shooter tous les container : docker rm $(docker ps -a -q)
+## Détacher: 
 
+`Ctrl-P Ctrl-Q`
 
-Container en arriere plan: 
-================
-ctrl P + ctrl D
+## shooter tous les container : 
 
-bind de port: 
-========
-docker run -p <host_port1>:<container_port1> -p <host_port2>:<container_port2>
+`docker rm $(docker ps -a -q)`
 
-#sauvegarde de l'image: 
-===============
-sudo docker save -o docker_save_ForensicsExam.tar secit/forensicsexam:latest
-#pour charger l'image ce sera: 
-===================
-sudo docker load -i ./docker_save_ForensicsExam.tar
+## Container en arriere plan: 
 
-#Pousser un container sur le repo: 
-=====================
+`ctrl P + ctrl D`
+
+## bind de port: 
+
+`docker run -p <host_port1>:<container_port1> -p <host_port2>:<container_port2>`
+
+## sauvegarde de l'image: 
+
+`sudo docker save -o docker_save_ForensicsExam.tar secit/forensicsexam:latest`
+
+## pour charger l'image ce sera: 
+
+`sudo docker load -i ./docker_save_ForensicsExam.tar`
+
+## Pousser un container sur le repo: 
+
+```bash
 michael@k:~/Documents/Formations/99_Cours_dispensés/wargame2/exercice$ sudo docker image ls
 REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
 <none>                   <none>              85a603db6265        3 minutes ago       218MB
@@ -48,7 +54,7 @@ d8b33d0bad10: Layer already exists
 285c1bd5d4b1: Pushed 
 03901b4a2ea8: Layer already exists 
 latest: digest: sha256:0d24ff93bcfc6d1114ee170b2f804ac8156a9ebfd1ea22098708795078334776 size: 1780
-
+```
 
 
 

