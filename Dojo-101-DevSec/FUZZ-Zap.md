@@ -13,6 +13,10 @@ https://www.zaproxy.org/docs/desktop/addons/fuzzer/
 
 Click droit sur la requete puis fuzz / generer du bruit
 
+fichier -> charger un fichier des seclists
+processeurs -> encoder son payload
+
+# Documentation
 
 ## Fuzzing
 
