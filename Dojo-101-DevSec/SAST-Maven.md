@@ -1,8 +1,20 @@
-## compilation maven complexes
+# compilations maven
+
+
+## varial d'environnement
+
+```powershell
+$env:JAVA_HOME
+C:\Program Files\Java\jdk-17.0.1
+$env:M2_HOME
+C:\Program Files\apache-maven-3.8.6
+$env:M2
+C:\Program Files\apache-maven-3.8.6\bin
+```
 
 ## avoir les dépendances dans son repository local .m2:
 
-télécharger les projeets et faire un "maven install"
+télécharger les projets et faire un "maven install"
 
 
 ## spécifier le chmin d'un projet parent (après l'avoir téléchargé manuellement):

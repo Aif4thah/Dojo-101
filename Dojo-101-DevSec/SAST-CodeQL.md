@@ -45,7 +45,7 @@ ex: java
 ex: c#
 
 ```PowerShell
-..\..\..\01-ToolBox\CodeQL\codeql-win64\codeql\codeql.exe database create .\CodeQL-database\CQL-vulnApp --language=csharp
+..\..\..\01-ToolBox\CodeQL\codeql-win64\codeql\codeql.exe database create <CodeQL-database> --language=csharp
 ```
 
 À l’issue de la compilation, l’outil confirme que la base de données a été correctement créée par le retour suivant :
@@ -63,7 +63,7 @@ Enfin, la commande database analyze et les options suivantes permettent de spéc
 ex java
 
 ```PowerShell
- .\codeql-home\codeql\codeql.cmd database analyze java-spring-POC1-database .\codeql-home\codeql-queries\codeql-main\java\ql\src\codeql-suites\java-lgtm.qls --format=sarifv2.1.0 --output=OUTPUT.sarif --search-path .\codeql-home\codeql-queries\codeql-main\misc\suite-helpers
+C:\Users\vaca\OneDrive\Documents\Projets-InfoSec\01-ToolBox\CodeQL\codeql-win64\codeql\codeql.cmd database analyze --format=csv --output=cqlscan <CODEQL-database> "C:\Users\vaca\OneDrive\Documents\Projets-InfoSec\01-ToolBox\CodeQL\codeql\java\ql\src\codeql-suites\java-security-extended.qls"
 ```
 
 ex c#

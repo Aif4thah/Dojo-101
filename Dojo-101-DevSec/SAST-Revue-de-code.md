@@ -306,11 +306,7 @@ Buff
 
 # Composant / librairies
 
-## Dependancy check
-
-```powershell
-.\dependency-check.bat --scan "fichier.jar ou lib folder"
-```
+1. Dependancy check
 
 
 # Regex Bypass

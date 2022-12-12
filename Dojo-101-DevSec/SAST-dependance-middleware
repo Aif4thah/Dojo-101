@@ -1,0 +1,18 @@
+# SAST - Scan des dépendances et du middleware / librairies
+
+
+## Dependancy check
+
+```powershell
+.\dependency-check.bat --scan <fichier.jar ou lib folder> --out <output>
+```
+
+## sonatype
+
+oneline: https://ossindex.sonatype.org/search
+
+package@version
+
+## snyk.io
+
+online : check online: https://security.snyk.io/vuln/?search=<lib>
