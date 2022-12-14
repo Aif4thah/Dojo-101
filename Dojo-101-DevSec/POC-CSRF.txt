@@ -1,0 +1,3 @@
+# POC CSRF
+
+depuis Zap: clic droit sur la requete POST et "generer les form de test pour la requete anti-CSRF"
