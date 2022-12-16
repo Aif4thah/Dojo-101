@@ -6,6 +6,11 @@ Base de connaissances en cybersécurité, Administration et développement sécu
 
 GNU GENERAL PUBLIC LICENSE version 3
 
+## Avis de non-responsabilité
+
+Les informations de ce projet sont partagées dans un souci de transparence et afin que chacun puisse sécuriser son environnement.
+L'utilisation de ces informations et outils reste sous l'entière responsabilité de la personne physique ou morale qui les met en oeuvre.
+
 ## Contributions
 
 ### mode
