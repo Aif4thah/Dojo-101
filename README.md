@@ -1,6 +1,6 @@
 # DOJO-101
 
-Base de connaissances en cybersécurité, Administration et développement sécurisés
+Base de connaissances en cybersécurité, Administration et développement sécurisé
 
 ## Licence
 
@@ -8,7 +8,7 @@ GNU GENERAL PUBLIC LICENSE version 3
 
 ## Avis de non-responsabilité
 
-Les informations de ce projet sont partagées dans un souci de transparence et afin que chacun puisse sécuriser son environnement.
+Les informations de ce projet sont partagées dans un souci de transparence et parce que la cybersécurité appartient à tout le monde.
 L'utilisation de ces informations et outils reste sous l'entière responsabilité de la personne physique ou morale qui les met en oeuvre.
 
 ## Contributions
