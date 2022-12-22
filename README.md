@@ -11,6 +11,16 @@ GNU GENERAL PUBLIC LICENSE version 3
 Les informations de ce projet sont partagées dans un souci de transparence et parce que la cybersécurité appartient à tout le monde.
 L'utilisation de ces informations et outils reste sous l'entière responsabilité de la personne physique ou morale qui les met en oeuvre.
 
+## utilisation
+
+1. Git clone
+2. Ouverture du répertoire téléchargé dans un éditeur de texte afin de pouvoir rechercher, lire et modifier l'ensemble des fichiers.
+
+## Anti-virus
+
+Ce projet contient des signatures pouvant entrainer des faux positifs. 
+Vous pouvez laisser votre AV faire le ménage, au détriment des informations contenues dans les fichiers supprimés, ou mettre en place une exclusion.
+
 ## Contributions
 
 ### mode
