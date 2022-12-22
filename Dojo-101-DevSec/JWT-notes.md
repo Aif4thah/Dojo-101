@@ -9,11 +9,10 @@
 - Signature. Dans l'exemple ci-dessous cette signature est calculée en réalisant un hash HMAC du header JWS et du payload : 
 Signature = HMAC-SHA256((base64url(HEADER) + "." + base64url(PAYLOAD)), secret).
 
-## ressources
+## tools
 
 https://jwt.io/
-https://developer.okta.com/blog/2017/08/17/why-jwts-suck-as-session-tokens
-
+https://github.com/ticarpi/jwt_tool
  
 ## notes
 
@@ -31,14 +30,25 @@ Les implémentations manquent de maturité d’un point de vue sécurité et son
 
 Le support des attributs standards (en particulier la gestion de l'expiration) est variable suivant les implémentations.
 
-Les contrôles relatifs aux algorithmes de chiffrement utilisés présentent / ont présenté de nombreuses failles facilement
+Les contrôles relatifs aux algorithmes de chiffrement utilisés présentent / ont présenté de nombreuses failles exploitables
 
-### exploitables :
+### exploit:
 
-Remplacement de la valeur "alg" du header JWS par "None" pour bypasser tous les contrôles de sécurité (source). Exploitation d’une mauvaise implémentation des contrôles pour valider un token JWT en HMAC-SHA256 à partir une clé
+### None
 
-publique RSA au niveau du serveur (source).
+Remplacement de la valeur "alg" du header JWS par "None" pour bypasser tous les contrôles de sécurité (source).
 
-Attaque liée à l’implémentation de ECDH-ES (Invalid Curve Attack) pour récupérer la clé privée du serveur signant les tokens (source).
+### Leak
+
+clé des les sources
+
+### Weak Crypto 
+
+Par éxemple pour RSA :Attaque liée à l’implémentation de ECDH-ES (Invalid Curve Attack) pour récupérer la clé privée du serveur signant les tokens (source).
+
+### Changer l'algo de signatue en forgean un nouveau token similaire
+
+### brute force 
 
 Une attaque par recherche exhaustive offline est réalisable sur les tokens JWT obtenus. Cette attaque a peu de chance d’aboutir (sauf si la clé de signature est présente dans un dictionnaire), la compromission de la clé partagée peut cependant permettre de forger des tokens JWT. Suivant leur contenu et leur usage, ces tokens forgés peuvent permettre d’accéder à d’autres éléments de l’infrastructure et d’élever ses privilèges.
+

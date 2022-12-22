@@ -30,3 +30,22 @@ application/x-www-form-urlencoded
 
 Postman
 Client http du même langage de programmation
+OWASP Zap
+
+## Doc pour la collecte d'info
+
+* https://www.programmableweb.com/
+* shodan
+
+### liste de repertoires pour trouver la doc:
+
+/docs
+/api/docs
+/documentation
+/developers/documentation
+
+### liste de sous domaines pour trouver la doc
+
+dev.
+api.
+
