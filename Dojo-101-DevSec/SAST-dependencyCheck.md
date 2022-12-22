@@ -1,4 +1,4 @@
-# TP 2 - Dev Sécu : Scan du code et des dépendances - CHAMOULAUD Rémi
+# Scan du code et des dépendances avec dependencyCheck - CHAMOULAUD Rémi
 
 ## Téléchargement de Dependency-Check
 
@@ -10,9 +10,8 @@
 
 ## Téléchargement du code du projet open source
 
-    1. Chercher un projet open source github sur le web (Symfony, JQuery, ...)
-    2. Une fois sur la page github de ce projet, sélectionner le bouton Code -> Download ZIP
-    3. Extraire ce .zip à l'emplacement souhaité.
+    1. Une fois sur la page github de ce projet, sélectionner le bouton Code -> Download ZIP
+    2. Extraire ce .zip à l'emplacement souhaité.
 
 ## Scan du code
 
