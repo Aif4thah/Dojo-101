@@ -26,4 +26,7 @@
 
 ## References
 
-...
+* CVE : https://nvd.nist.gov/vuln/detail/CVE-20xx-xxxxx
+
+* CWE : https://cwe.mitre.org/data/definitions/xxx.html
+

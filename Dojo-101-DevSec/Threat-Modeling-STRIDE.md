@@ -10,6 +10,7 @@ https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool
 - Élévation de privilège
 
 
+
 Catégories de contrôles de sécurité
 Chaque catégorie de menaces est associée à un contrôle de sécurité destiné à vous aider à atténuer ou éliminer les risques
 
