@@ -15,7 +15,7 @@ bootsect /nt60 <drive name>: /mbr
 
 ## tool pour les taches rebarbatives
 
-powertoys
+powertoys et devtoys
 
 ### Pour réparer léenregistrement de démarrage :
 	Saisissez et exécutez la commande :

@@ -184,6 +184,3 @@ fonction one line: [print(i) for i in range(4)]
 >>> string.digits
 '0123456789'
 ```
-
-
-
