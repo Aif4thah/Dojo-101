@@ -1,4 +1,4 @@
-# Javascript
+# Javascript basics
 
 ## sécurité
 
