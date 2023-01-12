@@ -9,13 +9,13 @@ cf. `injection`, `XSS`, `CSRF` etc. dans les dossiers `pentest` et `DevSec`
 
 console
 
-```js
+```javascript
 console.log("hello");
 ```
 
 page web
 
-```js
+```javascript
 document.write('...Hello again!');
 ```
 
@@ -39,7 +39,7 @@ const MY_VARIABLE = 123;
 
 ## arrays
 
-```js
+```javascript
 let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan"];
 iceCreamFlavors[3] // Pistachio
 iceCreamFlavors[4] = "Butter Pecan"; //Changes "Neapolitan" to "Butter Pecan"
@@ -82,19 +82,19 @@ myString1 + ", " + myString2 + "!"; //Hello, World!
 
 ### boolean
 
-```js
+```javascript
 let myFalseBool = false
 ```
 
 ## fonctions
 
-```js
+```javascript
 function displayGreeting(name, salutation='Hello') {
   console.log(`${salutation}, ${name}`);
 }
 ```
 
-```js
+```javascript
 function createGreetingMessage(name) {
   const message = `Hello, ${name}`;
   return message;
@@ -103,7 +103,7 @@ function createGreetingMessage(name) {
 
 ### Anonymous functions
 
-```js
+```javascript
 setTimeout(
     function() { // anonymous function
         console.log('Done!');
@@ -112,7 +112,7 @@ setTimeout(
 )
 ```
 
-```js
+```javascript
 setTimeout(
     () => { // anonymous function
         console.log('Done!');
@@ -139,7 +139,7 @@ setTimeout(
 
 ### if else
 
-```js
+```javascript
 let currentMoney = 1000;
 let laptopPrice = 1500;
 
@@ -156,7 +156,7 @@ if (currentMoney >= laptopPrice) {
 
 for: 
 
-```js
+```javascript
 for (let i = 0; i < 10; i++ ) {
   console.log(i);
 }
@@ -164,7 +164,7 @@ for (let i = 0; i < 10; i++ ) {
 
 while
 
-```js
+```javascript
 //Counting up to 10
 let i = 0;
 while (i < 10) {
@@ -175,7 +175,7 @@ while (i < 10) {
 
 foreach
 
-```js
+```javascript
 let numbers = [1, 2, 3, 4, 5];
 numbers.forEach(number => console.log(number)); // 1 2 3 4 5
 ```
@@ -183,14 +183,14 @@ numbers.forEach(number => console.log(number)); // 1 2 3 4 5
 
 ### find
 
-```js
+```javascript
 let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan", "Mint Chip"];
 iceCreamFlavors.find(flavor => flavor === "Chocolate") // "Chocolate"
 ```
 
 ### filter
 
-```js
+```javascript
 let iceCreamFlavors = [
   { name: "Chocolate", type: "Chocolate" }, 
   { name: "Strawberry", type: "fruit"}, 
@@ -205,7 +205,7 @@ iceCreamFlavors.filter(flavor => flavor.type === "Chocolate") // [{ name: "Choco
 
 ### modifier les objets: map
 
-```js
+```javascript
 let iceCreamFlavors = [
   { name: "Chocolate", type: "Chocolate" }, 
   { name: "Strawberry", type: "fruit"}, 
@@ -224,7 +224,7 @@ iceCreamFlavors.map(flavor => {
 
 ### GET
 
-```js
+```javascript
 function reqListener() {
   console.log(this.responseText);
 }
@@ -237,11 +237,38 @@ req.send();
 
 ### POST
 
-```js
+```javascript
 var xhr = new XMLHttpRequest();
 xhr.open("POST", yourUrl, true);
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.send(JSON.stringify({
     value: value
 }));
+```
+
+## forms
+
+### valider un formulaire
+
+```javascript
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+```
+
+```html
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+```
+
+### soumettre
+
+```javascript
+document.getElementById("myForm").submit();
 ```
