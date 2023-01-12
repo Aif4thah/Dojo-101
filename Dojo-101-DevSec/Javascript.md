@@ -2,12 +2,12 @@
 
 ## sécurité
 
-voir également "injection NodeJS" dans le dossier `pentest`
+cf. `injection`, `XSS`, `CSRF` etc. dans les dossiers `pentest` et `DevSec`
 
 
 ## afficher
 
-console :
+console
 
 ```js
 console.log("hello");
