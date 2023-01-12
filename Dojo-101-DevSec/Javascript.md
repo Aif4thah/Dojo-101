@@ -219,3 +219,29 @@ iceCreamFlavors.map(flavor => {
   return flavor;
 }) // every item now has a new property price: 1
 ```
+
+## XHR
+
+### GET
+
+```js
+function reqListener() {
+  console.log(this.responseText);
+}
+
+const req = new XMLHttpRequest();
+req.addEventListener("load", reqListener);
+req.open("GET", "http://www.example.org/example.txt");
+req.send();
+```
+
+### POST
+
+```js
+var xhr = new XMLHttpRequest();
+xhr.open("POST", yourUrl, true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+xhr.send(JSON.stringify({
+    value: value
+}));
+```
