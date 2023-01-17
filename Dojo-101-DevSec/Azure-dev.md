@@ -1,5 +1,7 @@
 # Azure Web Apps
 
+Remarque: les vulnéraiblités liés à l'administration azure sont également à prendre en compte
+
 ## Secrets
 
 Web.config ou appsettings.json doivent aller dans l'App service (portail Azure)
@@ -33,3 +35,18 @@ Applications Linux/de conteneur : https://<app-name>.scm.azurewebsites.net/api/l
 Applications Windows : https://<app-name>.scm.azurewebsites.net/api/dump
 
 
+## Deploiement et surface d'attaque
+
+* FTP/FTPS
+* WebDeploy (Visual Studio, msbuild.exe/msdeploy.exe,  WAWSDeploy.exe)
+* Github (privée ou public)
+* Autres ressources: OneDrive, Bitbucket etc...
+
+### User Deployment Credentials
+
+Azure portal -> App Services -> Web App à deployer -> Deployment Credentials -> Spécifier username/password
+format: `<Website Name>\<Username>`
+
+### Web Deployment Credentials
+
+ Azure portal -> Get publish profile -> fichier: `<App Name>.publishsettings.`
