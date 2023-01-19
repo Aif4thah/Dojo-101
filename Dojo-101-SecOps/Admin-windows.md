@@ -2,22 +2,25 @@
 
 ## changer la langue:
 
+```powershell
 Set-WinUserLanguageList fr-FR -Force
 Set-Culture fr-FR
 Set-WinHomeLocation -GeoId 94
 Set-WinsystemLocale fr-FR
+```
 
 ## Boot
 
 Uniquement pour partition MBR
 commande pour shooter grub / reparer le bootmgr / bcd :
-bootsect /nt60 <drive name>: /mbr
+`bootsect /nt60 <drive name>: /mbr`
 
 ## tool pour les taches rebarbatives
 
-powertoys et devtoys
+`powertoys` et `devtoys`
 
 ### Pour réparer léenregistrement de démarrage :
+
 	Saisissez et exécutez la commande :
 	cd <partition system>:\EFI\Microsoft\Boot\
 	Saisissez et exécutez la commande :
@@ -57,113 +60,109 @@ Infrastructure master (unicité des noms)
 
 ## Verifier si nom machine dispo:
 
-	- AD
-	- DNS
-	- remote desktop
+* AD
+* DNS
+* remote desktop
 
 	
 
 ## Verifier si une IP est dispo:
 
-	-zone forward du serveur DNS (cocher Associated pointer pour créer automatiquement dans la reverse)
-	-ping et nslokup (zone reverse DNS)
-	-remote desktop (au cas ou firewall empeche reponse ICMP)
+* zone forward du serveur DNS (cocher Associated pointer pour créer automatiquement dans la reverse)
+* ping et nslokup (zone reverse DNS)
+* remote desktop (au cas ou firewall empeche reponse ICMP)
 
 	
 ## Moyen d'acces a distance:
 
-	-remote desktop
-	-winRM
-	-Console
+* remote desktop
+* winRM
+* Console
 
 	
-## Controle d'acces distant:
+## administration distante:
 
-	-GPO
-	-local policy
-	-droits share 
-	-droits NTFS
-	-Firewall
+* GPO
+* local policy
+* droits share 
+* droits NTFS
+* Firewall
 
 
 ## mise en place audit:
 
-	- GPO:Computer Configuration / Policies / Windows Settings / Security Settings / Local Policies / Audit Policy 
-	- local policy
-	- proprieté de l'objet / sécurité /audits
-	
+* GPO:Computer Configuration / Policies / Windows Settings / Security Settings / Local Policies / Audit Policy 
+* local policy
+* proprieté de l'objet / sécurité /audits
+* auditpol.exe
 
 	
 ## Ajouter un user d'un autre domaine dans un groupe:
 
-	- onglet "General" des proprietés du groupe: passé le groupe a "universal" puis "domain local"
+onglet "General" des proprietés du groupe: passé le groupe a "universal" puis "domain local"
 	
 ## Attribuer un privilege a un user:
 
-	- Stratégie de sécurité du contréleur de domaine -> Paramétres de sécurité/Stratégies locales/Attribution des droits d'utilisateurs
-
+Stratégie de sécurité du contréleur de domaine -> Paramétres de sécurité/Stratégies locales/Attribution des droits d'utilisateurs
 
 	
-## Commande net use pour monter un lecteur partagé en local:
+## Commande net use pour monter un lecteur partagé en local (historique):
 
-	net use Y: \\serveur\dossier-public  passwd /user:domaine\account /PERSISTENT:YES
-	passwd peut etre remplacé par * pour masquer le mot de passe qui sera demandé
+`net use Y: \\serveur\dossier-public  passwd /user:domaine\account /PERSISTENT:YES`
+passwd peut etre remplacé par * pour masquer le mot de passe qui sera demandé
 
+## Commande pour creer un partage (historique):
 
-## Commande pour creer un partage:
-
-net share myshare=C:\Users\Myname
+`net share myshare=C:\Users\Myname`
 	
 	
 ## Ajouter un script au démarrage:
 
-	- dans les GPO: computer configuration -> windows setting -> script 
+dans les GPO: computer configuration -> windows setting -> script 
 	
-	- Tous les programmes présents dans l'onglet démarrage de MSconfig sont inscrits dans votre base de registre dans les clés :
-		HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run 
-		HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce 
-		HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices
+Tous les programmes présents dans l'onglet démarrage de MSconfig sont inscrits dans votre base de registre dans les clés
+
+* HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run 
+* HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce 
+* HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices
+* cf. aussi les HKCU
 		
-		controler aussi dans HKCU
-		
-	- taskscheduler: déclanché au logon
+* taskscheduler: déclanché au logon
 		
 	
 ## Connaitre le groupe d'un users:
 
 
-	dsquery user -name "michael" | dsget user -memberof -expand |findstr /I croadmins
+`dsquery user -name "michael" | dsget user -memberof -expand |findstr /I croadmins`
 	
 ## Lister les user d'un group:
 
+`dsquery group -name "group" | dsget group -members -expand`
 
-	dsquery group -name "group" | dsget group -members -expand
-	dsquery group -name "group" | dsget group -members -expand
-		
-	
+			
 ## Config IP powershell
 
-New-NetIPAddress -InterfaceAlias -Wired Ethernet-Connection -IPv4Address 192.168.0.1 -PrefixLength 24 -DefaultGateway 192.168.0.254
+`New-NetIPAddress -InterfaceAlias -Wired Ethernet-Connection -IPv4Address 192.168.0.1 -PrefixLength 24 -DefaultGateway 192.168.0.254`
 	
 ## Teaming/Biding NIC 
 
-	-sur ILO installer l'outils HP Network Config Utility est teamer les carte depuis l'utilitaire
+sur ILO installer l'outils HP Network Config Utility est teamer les carte depuis l'utilitaire
 		- attention l'utilitaire ne démarre pas si les cartes sont déja configuré (adresse static etc...)
 		- dans properties ->teaming controls choisir Network Fault Tolerance Only (NFT)
-	pour windows 2012 aller dans le server manager, et configurer en mode: active/stanby
+
+pour windows 2012 aller dans le server manager, et configurer en mode: active/stanby
 		
 ## Lier un groupe de machine sur un Cluster:
 
-	- sur le cluster: edit setting -> DRS
-	- chaque groupe correspond é une salle, il faut répartir les VM entres ses groupes pour assurer une redondance.
+1. sur le cluster: edit setting -> DRS
+2. chaque groupe correspond é une salle, il faut répartir les VM entres ses groupes pour assurer une redondance.
 	- ATTENTION il faut s'assurer que la VM soit déja sur le bon datastore avec de lui attribuer un groupe (la migration ne seras pas automatiqe)
 
 ## Voir qui est connecté en RDP sur une machine depuis l'AD:
 
-	Outils d'administration > Remote Desktop service Manager
+Outils d'administration > Remote Desktop service Manager
 	
-	
-	
+
 ## Verifier qu'un compte existe sur une machine:
 
 	Net use \\qfast01\IPC$ /user:admav ---> le partage administratif IPC$
@@ -177,12 +176,10 @@ New-NetIPAddress -InterfaceAlias -Wired Ethernet-Connection -IPv4Address 192.168
 	
 ## Fermer une sessions en batch:
 
-	query session
-	tsdiscon
+`query session` puis `tsdiscon`
 
 
 ## Etendue des groupes:	
-
 	
 	Local ou domaine : 
 	Utilisable uniquement dans le domaine local. Un groupe avec une étendue de domaine peut contenir des groupes locaux, globaux ou universels.	
@@ -197,33 +194,30 @@ New-NetIPAddress -InterfaceAlias -Wired Ethernet-Connection -IPv4Address 192.168
 	La particularité des groupes universels est quéils sont stockés directement sur le catalogue global cependant seulement séils sont de type sécurité.
 
 ## changement de version Windows:
-
 	
-	dism /online /set-edition:serverenterprise /productkey:<key>
-
+`dism /online /set-edition:serverenterprise /productkey:<key>`
 
 
 ## empecher windows de passer en adresse APIPA
 
-new-ItemProperty -path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters -Name "IPAutoconfigurationEnabled" -value 0
+`new-ItemProperty -path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters -Name "IPAutoconfigurationEnabled" -value 0`
 
 ## GPO 
 
-rsop.msc -> ATTENTION apres changement d'OU les parametre de l'ancienne GPO ne disparaisse pas forcement !
-
+`rsop.msc` -> ATTENTION apres changement d'OU les parametre de l'ancienne GPO ne disparaisse pas forcement !
+`gpresult /z`
 
 ## Gerer les objet AD: 
 
-adsiedit.msc
+`adsiedit.msc`
 
 ## Tester la connection avec le controleur de domaine:
 
-nltest /sc_query:<domain>
+`nltest /sc_query:<domain>`
 
-	
 ## changement clavier:
 
-Set-WinUserLanguageList -LanguageList [en-US |fr-FR ]
+`Set-WinUserLanguageList -LanguageList [en-US |fr-FR]`
 
 ## Niveau d'authentification remote desktop:
 
@@ -256,8 +250,7 @@ demarrer -> executer -> perfmon
 
 ## copier les ACL:
 
-Get-Acl -Path C:\Folder1 | Set-Acl -Path C:\Folder2
-
+`Get-Acl -Path C:\Folder1 | Set-Acl -Path C:\Folder2`
 
 ## tester WINRM:
 
@@ -275,7 +268,6 @@ Coté serveur:
 Coté cilent:
 	Set-item wsman:\localhost\client\trustedhosts "IP"
 	new-pssession -computername name -credential -\username
-
 
 
 ## fichier hosts 
