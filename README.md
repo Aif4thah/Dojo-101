@@ -43,8 +43,7 @@ Vous pouvez laisser votre AV faire le ménage, au détriment des informations co
 
 ### Pourquoi Dojo-101 est-il en français ?
 
-Actuellement, ma clientèle (Entreprises et centre de formation) est très majoritairement française.
-Si cela évolue, Dojo-101 basculera en anglais.
+Actuellement, ma clientèle est majoritairement française. Si cela évolue, Dojo-101 basculera en anglais.
 
 ### Quels sont les prérequis pour pouvoir mettre en oeuvre ce contenu ?
 
