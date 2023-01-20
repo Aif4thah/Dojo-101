@@ -98,7 +98,7 @@ exec
 ## XSS:
 
 
-```js
+```javascript
 document.write(),
 document.writeln
 ```
@@ -416,7 +416,7 @@ XMLinputFactory
 
 # Open redirect
 
-```js
+```javascript
 document.location.href()
 HttpClient
 intercept

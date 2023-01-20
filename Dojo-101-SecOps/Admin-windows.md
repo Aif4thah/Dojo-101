@@ -202,7 +202,7 @@ Outils d'administration > Remote Desktop service Manager
 
 `new-ItemProperty -path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters -Name "IPAutoconfigurationEnabled" -value 0`
 
-## GPO 
+## GPO
 
 `rsop.msc` -> ATTENTION apres changement d'OU les parametre de l'ancienne GPO ne disparaisse pas forcement !
 `gpresult /z`
