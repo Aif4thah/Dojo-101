@@ -13,7 +13,7 @@ Les informations de ce projet sont partagées par souci de transparence et parce
 ## Usage
 
 1. télécharger le projet
-2. Ouverture du répertoire téléchargé dans un éditeur de texte moderne afin de pouvoir rechercher, lire et modifier l'ensemble des fichiers
+2. Ouverture du répertoire téléchargé dans un éditeur de texte moderne (`VScode`) afin de pouvoir rechercher, visualiser (`ctrl`+`shift` +`V`) et éventuellement modifier l'ensemble des fichiers
 
 ## Script d'installation
 
@@ -36,8 +36,7 @@ Le contenu est mis à jour régulièrement, pensez à faire un `git pull` avant 
 
 ## Antivirus
 
-Ce projet contient des signatures pouvant entrainer des faux positifs. 
-Vous pouvez laisser votre AV faire le ménage, au détriment des informations contenues dans les fichiers supprimés, ou mettre en place une exclusion.
+Ce projet contient des signatures pouvant entrainer des faux positifs. Vous pouvez laisser votre AV faire le ménage, au détriment des informations contenues dans les fichiers supprimés, ou mettre en place une exclusion.
 
 ## FAQ
 
@@ -45,7 +44,7 @@ Vous pouvez laisser votre AV faire le ménage, au détriment des informations co
 
 Actuellement, ma clientèle est majoritairement française. Si cela évolue, Dojo-101 basculera en anglais.
 
-### Quels sont les prérequis pour pouvoir mettre en oeuvre ce contenu ?
+### Quels sont les prérequis pour pouvoir mettre en oeuvre son contenu ?
 
 Aucun, si ce n'est être prudent et s'assurer que l'on sait ce que l'on fait.
 Le contenu de Dojo-101 se veut simple et minimaliste, il n'y a rien de techniquement compliqué.
@@ -57,7 +56,7 @@ Dans certains environnements YouTube est blacklisté ou la bande passante est in
 
 ### Pourquoi ne pas faire directement un site Web ?
 
-Tous simplement parce que la conversion du markdown en html comporte certains risques (XSS notamment) et que je n'ai pas encore eu la bande passante pour traiter correctement ce point.
+La conversion du markdown en html comporte certains risques (XSS notamment), je ne traite pas cet aspect du projet.
 
 ## Vous aimez Dojo-101 ?
 
