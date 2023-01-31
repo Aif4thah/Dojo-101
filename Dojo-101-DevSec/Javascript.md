@@ -2,7 +2,7 @@
 
 ## sécurité
 
-cf. `injection`, `XSS`, `CSRF` etc. dans les dossiers `pentest` et `DevSec`
+voir aussi `injection`, `XSS`, `CSRF` etc. dans les dossiers `pentest` et `DevSec`
 
 
 ## afficher
@@ -272,3 +272,8 @@ Name: <input type="text" name="fname">
 ```javascript
 document.getElementById("myForm").submit();
 ```
+
+
+## faille de sécu:
+
+session cookie less secure: 
