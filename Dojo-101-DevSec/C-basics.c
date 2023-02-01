@@ -1,20 +1,18 @@
-# C
+/* C
 
 ## compilation sans protection:
 
-```bash
 gcc -fno-stack-protector -z execstack source.c
-```
+
 
 ## pbm de librairie 32bits:
 
-```bash
 sudo apt-get install gcc-multilib
-```
 
-## memento pointeur:
+*/
 
-```c
+// memento pointeur:
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -78,6 +76,6 @@ p2=     0x7ffffcf45570
 &p1=    0x7ffffcf45560
 &p2=    0x7ffffcf45568
 */
-```
+
 
 

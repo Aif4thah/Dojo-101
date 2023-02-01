@@ -1,45 +1,40 @@
-# Javascript basics
+/* Javascript basics
 
-## sécurité
+sécurité: voir aussi `injection`, `XSS`, `CSRF` etc. dans les dossiers `pentest` et `DevSec`
 
-voir aussi `injection`, `XSS`, `CSRF` etc. dans les dossiers `pentest` et `DevSec`
+*/
 
+//afficher en console
 
-## afficher
-
-console
-
-```javascript
 console.log("hello");
-```
 
-page web
 
-```javascript
+//afficher en DOM (page web)
+
+
 document.write('...Hello again!');
-```
 
-## variables
 
-```javascript
+// variables
+
+
 var aVariable;
-```
 
-block scope
 
-```javascript
+// vairable block scope
+
  let myVariable;
-```
 
-constante
 
-```javascript
+// constante
+
+
 const MY_VARIABLE = 123;
-```
 
-## arrays
 
-```javascript
+// arrays
+
+
 let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan"];
 iceCreamFlavors[3] // Pistachio
 iceCreamFlavors[4] = "Butter Pecan"; //Changes "Neapolitan" to "Butter Pecan"
@@ -49,20 +44,21 @@ delete iceCreamFlavors[iceCreamFlavors.length-1]; //supprime
 iceCreamFlavor.splice(2,1); // supprime array.splice(<position index, <number of elements to remove>)
 
 
-```
 
-## objets
+// objets
 
-```javascript
+
 const obj = { a: 3 };
 obj.a = 5;
-```
 
-## type
+
+/* types
 
 string, number, bigint, boolean, undefined, and symbol.
 
-### operateur int
+*/
+
+/* operateur int
 
 | Symbol | Description | Example |
 |-------|--------------|----------|
@@ -72,58 +68,59 @@ string, number, bigint, boolean, undefined, and symbol.
 | / | Division | 1 / 2 //expected answer is 0.5 |
 | % | Remainder |  % 2 //expected answer is 1 |
 
-### concatenation de strings
+*/
 
-```javascript
+
+// concatenation de strings
+
+
 let myString1 = "Hello";
 let myString2 = "World";
 myString1 + ", " + myString2 + "!"; //Hello, World!
-```
 
-### boolean
 
-```javascript
+//# boolean
+
+
 let myFalseBool = false
-```
 
-## fonctions
 
-```javascript
+// fonctions
+
+
 function displayGreeting(name, salutation='Hello') {
   console.log(`${salutation}, ${name}`);
 }
-```
 
-```javascript
+
 function createGreetingMessage(name) {
   const message = `Hello, ${name}`;
   return message;
 }
-```
 
-### Anonymous functions
 
-```javascript
+// Anonymous functions
+
+
 setTimeout(
     function() { // anonymous function
         console.log('Done!');
     },
     3000 // 3000 milliseconds (3 seconds)
 )
-```
 
-```javascript
+
 setTimeout(
     () => { // anonymous function
         console.log('Done!');
     },
     3000 // 3000 milliseconds (3 seconds)
 )
-```
 
-## conditions
 
-### operateurs
+// conditions
+
+/* operateurs
 
 | Symbol| Description | Example |
 |--------|---------|-------|
@@ -137,9 +134,10 @@ setTimeout(
 | \|\| |	Logical OR: Compares two Boolean expressions. Returns true if at least one side is true.	| (5 > 6) \|\| (5 < 6) //One side is false, other is true. Returns true |
 | !|  Logical NOT: Returns the opposite value of a Boolean expression.	| !(5 > 6) // 5 is not greater than 6, but "!" will return true |
 
-### if else
+*/
+// if else
 
-```javascript
+
 let currentMoney = 1000;
 let laptopPrice = 1500;
 
@@ -150,47 +148,41 @@ if (currentMoney >= laptopPrice) {
     //Condition was true. Code in this block will run.
     console.log("Can't afford a new laptop, yet!");
 }
-```
 
-### boocle
 
-for: 
-
-```javascript
+// boucle for
+ 
 for (let i = 0; i < 10; i++ ) {
   console.log(i);
 }
-```
 
-while
 
-```javascript
+// boucle while
+
 //Counting up to 10
 let i = 0;
 while (i < 10) {
  console.log(i);
  i++;
 }
-```
 
-foreach
 
-```javascript
+// foreach
+
 let numbers = [1, 2, 3, 4, 5];
 numbers.forEach(number => console.log(number)); // 1 2 3 4 5
-```
 
 
-### find
 
-```javascript
+// find
+
 let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan", "Mint Chip"];
 iceCreamFlavors.find(flavor => flavor === "Chocolate") // "Chocolate"
-```
 
-### filter
 
-```javascript
+// filter
+
+
 let iceCreamFlavors = [
   { name: "Chocolate", type: "Chocolate" }, 
   { name: "Strawberry", type: "fruit"}, 
@@ -200,12 +192,12 @@ let iceCreamFlavors = [
   { name: "Mint Chip", type: "Chocolate"}
 ];
 iceCreamFlavors.filter(flavor => flavor.type === "Chocolate") // [{ name: "Chocolate", type: "Chocolate" }, { name: "Neapolitan", type: "Chocolate"}, { name: "Mint Chip", type: "Chocolate"}]
-```
 
 
-### modifier les objets: map
 
-```javascript
+// modifier les objets: map
+
+
 let iceCreamFlavors = [
   { name: "Chocolate", type: "Chocolate" }, 
   { name: "Strawberry", type: "fruit"}, 
@@ -218,39 +210,35 @@ iceCreamFlavors.map(flavor => {
   flavor.price = 1;
   return flavor;
 }) // every item now has a new property price: 1
-```
 
-## XHR
 
-### GET
 
-```javascript
+// XHR GET
+
+
 function reqListener() {
   console.log(this.responseText);
 }
-
 const req = new XMLHttpRequest();
 req.addEventListener("load", reqListener);
 req.open("GET", "http://www.example.org/example.txt");
 req.send();
-```
 
-### POST
 
-```javascript
+// XHR POST
+
+
 var xhr = new XMLHttpRequest();
 xhr.open("POST", yourUrl, true);
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.send(JSON.stringify({
     value: value
 }));
-```
 
-## forms
 
-### valider un formulaire
+// valider un formulaire
 
-```javascript
+
 function validateForm() {
   let x = document.forms["myForm"]["fname"].value;
   if (x == "") {
@@ -258,22 +246,15 @@ function validateForm() {
     return false;
   }
 }
-```
 
-```html
+
+/*html
 <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
 Name: <input type="text" name="fname">
 <input type="submit" value="Submit">
 </form>
-```
+*/
 
-### soumettre
+// soumettre le formulaire automatiquement
 
-```javascript
 document.getElementById("myForm").submit();
-```
-
-
-## faille de sécu:
-
-session cookie less secure: 

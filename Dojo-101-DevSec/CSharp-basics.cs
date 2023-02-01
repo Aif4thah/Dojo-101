@@ -1,12 +1,14 @@
-# C#
+/* C# basics
 
-## Compiler le code
+Compiler le code
 
 installer `visual studio` ou le framework dotnet et utiliser la commande `dotnet run`
 
-## Hello world
+*/
 
-```c#
+//Hello world
+
+
 using System; # librairie importée
 					
 public class Program
@@ -16,17 +18,16 @@ public class Program
 		Console.WriteLine("Hello World");
 	}
 }
-```
 
-## saisie utilisateurs
 
-```c#
+// saisie utilisateurs
+
 string message = Console.ReadLine();
-```
 
-## condition
 
-```c#
+// condition
+
+
 		//classic
 		int a = 1;
 		if(1 == a){
@@ -38,11 +39,11 @@ string message = Console.ReadLine();
 		// condition ternaire
 		bool result = (a == 1) ? true : false;
 		Console.WriteLine("{0}", result);
-```
 
-## boucle
 
-```c#
+// boucle
+
+
 List<int> liste = new List<int>(){1,2,3};
 		
 		//classic
@@ -52,11 +53,11 @@ List<int> liste = new List<int>(){1,2,3};
 		
 		//linq
 		liste.ForEach(i => Console.WriteLine(i));
-```
 
-## executer des commandes système
 
-```c#
+// executer des commandes système
+
+
 
 		string message = "cat /etc/passwd";
 		int timeout = 200;
@@ -76,17 +77,16 @@ List<int> liste = new List<int>(){1,2,3};
 
 		
 		Console.WriteLine(message);
-```
 
-# lire un fichier
+// lire un fichier
 
-```c#
+
 string text = File.ReadAllText(textFile); 
-``` 
 
-## classes et objets
 
-```c#
+// classes et objets
+
+
 namespace CShidori.DataHandler
 {
     public class BinLoader
@@ -101,12 +101,10 @@ namespace CShidori.DataHandler
         }
     }
 }
-```
 
-## TLS Sockets
 
-### classes
-```c#
+// TLS Sockets
+
 
         public static string readMsg(SslStream sslStream, TcpClient client)
         {
@@ -137,9 +135,9 @@ namespace CShidori.DataHandler
 
 ```
 
-### client
+// TLS Sockets client
 
-```c#
+
                         TcpClient client = new TcpClient(ip, port);
                         var stream = client.GetStream();
                         SslStream sslStream = new SslStream(stream, false, new RemoteCertificateValidationCallback(UClient.CertificateValidationCallback));
@@ -148,11 +146,11 @@ namespace CShidori.DataHandler
                         {
 							/* etc...*/
 						}
-```
 
-### server
 
-```c#
+// TLS Sockets server
+
+
 Int16 port = Int16.Parse(args[0]);
                 var certificate = new X509Certificate2(args[1], args[2]);
                 Console.WriteLine("<0> Server mode\n<0> Port: {0:D}", port);
@@ -170,13 +168,12 @@ Int16 port = Int16.Parse(args[0]);
                     
                     UServer.printConnection(sslStream);
 					/* etc... */
-				}
-```
 
 
-### Powershell without powershell
 
-```c#
+// Powershell without powershell
+
+
  public static string ObfuscatePwsh(string message)
         {
             string obfcmd = String.Empty;
@@ -209,12 +206,12 @@ Int16 port = Int16.Parse(args[0]);
             return obfcmd;
 
         }
-```
 
 
-### minimal API
 
-```c#
+// minimal API
+
+
 using VulnerableWebApplication;
 using System.Web;
 
@@ -223,22 +220,18 @@ var app = builder.Build();
 app.MapGet("/", () => "Hello");
 app.Run("https://localhost:3000");
 
-```
 
-## crypto random
-
-```c#
+// crypto random
 
 using System.Security.Cryptography;
 
 int randvalue = RandomNumberGenerator.GetInt32(p.Length);
 byte[] RandBytes = RandomNumberGenerator.GetBytes(Length);
 
-```
 
-## Encoding
 
-```c#
+// Encoding
+
                 Uri.EscapeDataString(input);
                 HttpUtility.UrlEncode(input);
                 HttpUtility.UrlEncodeUnicode(input);
@@ -293,11 +286,11 @@ private static string HexEscapeString(string str)
         }
 
 
-```
 
-### fuzzing : mutation:
 
-```c#
+// fuzzing : mutation:
+
+
 
         public static string RepRandBc(string p)
         {         
@@ -384,8 +377,4 @@ private static string HexEscapeString(string str)
             return p + sb.ToString(startIndex, sb.Length - startIndex);
            
         }
-
-```
-
-
 
