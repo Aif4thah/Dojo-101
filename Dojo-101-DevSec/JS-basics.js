@@ -212,6 +212,15 @@ iceCreamFlavors.map(flavor => {
 }) // every item now has a new property price: 1
 
 
+// Fetch (requete asynchrone)
+
+
+fetch('https://url', {
+method: 'POST',
+mode: 'no-cors',
+body:"data"
+});
+
 
 // XHR GET
 
