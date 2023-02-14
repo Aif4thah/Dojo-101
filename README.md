@@ -2,7 +2,7 @@
 
 Base de connaissances en cybersécurité, Administration et développement sécurisé.
 
-## Sujet
+## Sujets
 
 * [Developpement sécurisé](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-DevSec)
 * [Administration sécurisée](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-SecOps)
