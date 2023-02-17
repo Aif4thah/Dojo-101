@@ -344,6 +344,9 @@ certmgr.msc # export the generated certificate as password protected .pfx file
 
 Get-CimInstance -ClassName Win32_BIOS
 
+### requete cim
+
+Get-CimInstance -ClassName Win32_Service 
 
 ### compiler et utiliser une dll
 
