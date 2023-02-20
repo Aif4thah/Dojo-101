@@ -9,13 +9,17 @@ Base de connaissances en cybersécurité, Administration et développement sécu
 * [Pentest](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Pentest)
 * [Forensic](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Forensic)
 
+Plus d'information sur [taisen.fr](https://taisen.fr)
+
 ## Licence
 
 GNU GENERAL PUBLIC LICENSE version 3
 
 ## Avis de non-responsabilité
 
-Les informations de ce projet sont partagées par souci de transparence et parce que la cybersécurité appartient à tous. L'utilisation de ces informations et outils reste sous l'entière responsabilité de la personne physique ou morale qui les met en oeuvre.
+Les informations de ce projet sont partagées afin d'assurer la transparence de **prestations professionnelles** et le respect des **licences open sources**. L'utilisation de ces informations et outils reste sous l'entière responsabilité de la personne physique ou morale qui les met en oeuvre, notamment concernant le **respect du cadre légal et la maitrise des actions réalisées**.
+
+*Autrement dit, la cybersécurité, comme toutes sciences, appartient à tous. Mais attention, le risque d'enfreindre la loi et de causer des dommages est réel. Renseignez-vous avant toute utilisation et soyez prudent!*
 
 ## Usage
 
