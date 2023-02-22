@@ -10,7 +10,6 @@ https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool
 - Élévation de privilège
 
 
-
 Catégories de contrôles de sécurité
 Chaque catégorie de menaces est associée à un contrôle de sécurité destiné à vous aider à atténuer ou éliminer les risques
 
@@ -27,6 +26,7 @@ Chaque catégorie de menaces est associée à un contrôle de sécurité destin�
 
 
 ## ELEMENTS
+
 - Processus (rond) : Activité qui modifie ou redirige l’entrée vers une sortie
 - Entité Externe (carré): Processus, magasin de données ou même applications à part entière en dehors de votre contrôle
 - Magasin de données (2 barres horizontales): Stockage de données permanent ou temporaire

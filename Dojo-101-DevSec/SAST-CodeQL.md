@@ -101,3 +101,13 @@ Query Console : https://lgtm.com/
 Documentation : https://codeql.github.com/docs/codeql-cli/
 Binaires : https://github.com/github/codeql-cli-binaries
 Queries : https://github.com/github/codeql
+
+
+## Retour d'experience
+
+C/C++ -> non testé
+C# -> testé: un test uniquement, 1 « false négative »
+Go -> non testé – projet spécifique
+Java -> bon niveau, besoin de règles spécifiques Spring
+JavaScript / TypeScript -> bon niveau
+Python -> un test uniquement, multiples « false négatives »

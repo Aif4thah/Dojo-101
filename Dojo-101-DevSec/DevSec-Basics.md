@@ -1,3 +1,25 @@
+# Devellopement sécurisée / DevSec basics
+
+## OWASP top 10
+
+https://owasp.org/Top10/ 
+
+## SANS TOP 20
+
+https://www.softwaretestinghelp.com/sans-top-20-security-vulnerabilities/ 
+
+## notions de vulnérabilité
+
+Risque = Impact * Vraisemblance
+
+Vulnérabilité = Faiblesse du SI
+
+Menace = Cause potentielle de l’incident
+
+Impact = Gravité, portée de l’incident sur les échelles et critères DICT
+
+Risque = Vuln + Menace + Impact
+
 ## threats modeling	
 
 1. What are we working on?
