@@ -1,4 +1,5 @@
 ## wifi
+
 2.1 Enabling monitor mode
 Before capturing any traffic, it is necessary to enable the monitoring mode on the 802.11 interface wlan0.
 This is typically done using iwconfig
