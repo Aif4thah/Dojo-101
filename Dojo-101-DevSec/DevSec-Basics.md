@@ -59,3 +59,13 @@ Risque = Vuln + Menace + Impact
 2. Standards			
 2. Guidelines (not mandatory)			
 3. Procedures
+
+## suivi des besoins sécurité
+
+1. Besoin de sécurité identifié par la sécurité
+2. Animation d'Atelier par la sécurité pour le projet
+3. Intégration au Backlog du projet
+4. Implémentation par le projet
+5. Recette sécurité par la sécurité
+6. Evaluation du risque résiduel par la sécurité
+retour à 1
