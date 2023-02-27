@@ -24,6 +24,10 @@ Les informations de ce projet sont partagées afin d'assurer la transparence de 
 
 ## Usage
 
+
+![Alt Text](./demo.gif)
+
+
 1. télécharger le projet
 2. Ouverture du répertoire téléchargé dans un éditeur de texte moderne (`VScode`) afin de pouvoir rechercher, visualiser (`ctrl`+`shift` +`V`) et éventuellement modifier l'ensemble des fichiers
 
