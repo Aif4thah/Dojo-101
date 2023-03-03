@@ -14,7 +14,7 @@
 
 ## Conception
 
-* Audit d'architecture
+* Audit de code
 * Ateliers de sensiblisations sécurité
 
 ## Déploiement

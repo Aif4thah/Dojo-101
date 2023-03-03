@@ -9,11 +9,15 @@ installer `visual studio` ou le framework dotnet et utiliser la commande `dotnet
 //Hello world
 
 
-using System; # librairie importée
+using System; // librairie importée
+using System.Collections.Generic;
+using System.Net.Sockets;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 					
 public class Program
 {
-	public static void Main() # fonction
+	public static void Main(string[] args) // fonction
 	{
 		Console.WriteLine("Hello World");
 	}
@@ -44,15 +48,58 @@ string message = Console.ReadLine();
 // boucle
 
 
-List<int> liste = new List<int>(){1,2,3};
+        List<int> liste = new List<int>(){1,2,3};
 		
 		//classic
-		foreach(var i in liste){
-			Console.WriteLine(i);
+		foreach(var l in liste){
+			Console.WriteLine(l);
 		}
 		
 		//linq
 		liste.ForEach(i => Console.WriteLine(i));
+
+
+
+// lire un fichier
+
+        string text = File.ReadAllText(textFile);
+        Console.WriteLine(text);
+
+// fonction async
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Method1();
+        Method2();
+        Console.ReadKey();
+    }
+
+    public static async Task Method1()
+    {
+        await Task.Run(() =>
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                Console.WriteLine(" Method 1");
+                // Do something
+                Task.Delay(100).Wait();
+            }
+        });
+    }
+
+
+    public static void Method2()
+    {
+        for (int i = 0; i < 25; i++)
+        {
+            Console.WriteLine(" Method 2");
+            // Do something
+           Task.Delay(100).Wait();
+        }
+    }
+}
 
 
 // executer des commandes système
@@ -74,7 +121,6 @@ List<int> liste = new List<int>(){1,2,3};
                 cmd.StandardInput.Close();
                 cmd.WaitForExit(timeout);
                 message = cmd.StandardOutput.ReadToEnd();
-
 		
 		Console.WriteLine(message);
 
@@ -137,16 +183,39 @@ namespace CShidori.DataHandler
 
 // TLS Sockets client
 
+                    // valider automatiquement un certificat TLS:
 
-                        TcpClient client = new TcpClient(ip, port);
+
+   public static class UClient
+                        {
+                            public static bool CertificateValidationCallback(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
+                            {
+                                //Be aware that there is no PKI, the authentication method is manual
+                                X509Certificate2 cert2 = new X509Certificate2(certificate);
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("CN:{0}\nExpirDate:{1}\nPubKey:{2}\nThumprint:{3}\n",
+                                    cert2.Issuer, cert2.GetExpirationDateString(), cert2.GetPublicKeyString(), cert2.Thumbprint);
+                                Console.WriteLine("YOU HAVE FEW SECONDS TO KILL THE PROCESS AND REJECT THE RISK...");
+                                Console.WriteLine("(accepted)");
+                                Console.ResetColor();
+
+                                return true;
+                            }
+                        }
+
+public class Program
+{
+	                     
+	
+	public static void Main()
+	{
+		                TcpClient client = new TcpClient("185.87.66.119", 443);
                         var stream = client.GetStream();
                         SslStream sslStream = new SslStream(stream, false, new RemoteCertificateValidationCallback(UClient.CertificateValidationCallback));
                         sslStream.AuthenticateAsClient("client", null, System.Security.Authentication.SslProtocols.Tls12, false);
-						while (true)
-                        {
-							/* etc...*/
-						}
-
+						Console.WriteLine("connected");
+	}
+}
 
 // TLS Sockets server
 
@@ -168,6 +237,7 @@ Int16 port = Int16.Parse(args[0]);
                     
                     UServer.printConnection(sslStream);
 					/* etc... */
+                }
 
 
 

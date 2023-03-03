@@ -1,6 +1,6 @@
 # SAST Tools:
 
-- SAST = 50% des vulns max
+- SAST = trouve 50% des vulns max ( plutot 30% en moyenne)
 - Avoir les binaire en plus du code source réduit la quantité de false négative
 
 # ASVS (en français)
@@ -32,3 +32,7 @@ https://www.sonarlint.org/
 # CodeQL
 
 https://codeql.github.com/
+
+# scan de code avec GPT3
+
+https://github.com/chris-koch-penn/gpt3_security_vulnerability_scanner

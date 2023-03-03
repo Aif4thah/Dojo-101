@@ -2,11 +2,11 @@
 
 ## Gain
 
-20dB à 1Ghz, 
+Generalement 20dB à 1Ghz 
 
 ## attention 
 
-utiliser également un "dc blocker" pour éviter le retour de tension dans la clé SDR.
+utiliser également un `dc blocker` pour éviter le retour de tension dans la clé SDR.
 
 ## exemple de materiel
 

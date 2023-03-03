@@ -1,6 +1,6 @@
 
 	#creation d'un Access Point
-	echo -e "/!\ KALI MUST BE SET IN AIPLANE MODE/WIFI DISABLED BEFORE.\nthe nat configuration of iptables is not flush for do that: iptables -t nat -D PREROUTING 1 "
+	echo -e "/!\ KALI MUST BE SET IN AIRPLANE MODE/WIFI DISABLED BEFORE.\nthe nat configuration of iptables is not flush for do that: iptables -t nat -D PREROUTING 1 "
 	echo -e "syntax: AP1 <bssid/mac> <essid/APname> <canal> <iface>"
 	ifconfig $4 down
 	iwconfig $4 mode monitor
