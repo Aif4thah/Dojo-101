@@ -1,3 +1,7 @@
+# pratiquer
+
+practice makes perfect
+
 # newsletters
 
 ## SANS newsletters
@@ -10,11 +14,10 @@ https://news.infosecgur.us/
 
 # Referentiels
 
-ANSSI
-OWASP
-MITRE
-SANS
-Expérience et formation personnelle
+* ANSSI
+* OWASP
+* MITRE
+* SANS
 
 # vulnerabilités
 
@@ -25,7 +28,7 @@ https://www.cisa.gov/uscert/ncas
 
 https://www.exploit-db.com/
 
-# exploit recent / google dorks
+# exploits recents / google dorks
 
 site:hackerone.com inurl:/reports/
 https://hackerone.com/reports/XXXXXX
