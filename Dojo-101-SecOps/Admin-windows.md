@@ -1,5 +1,37 @@
 # Misc Admin Windows
 
+
+## Pincipaux processus
+
+| Nom | Description |
+---------------------
+| IDLE | Ce processus ne sert qu’à comptabiliser le temps d’inactivité du CPU |
+| System | process Contient la majorité de l’espace d’adressage du kernel |
+| Session manager | Smss.Exe |
+| Windows subsystem | Csrss.exe |
+| Session 0 init | Wininit.exe |
+| Logon | Winlogon.exe |
+| Gestionnaire services | Services.Exe |
+| Local security Authentication Service | Lsass.Exe | 
+
+
+## security components
+
+
+* SRM – Security Reference Monitor
+
+* Lsass – Local Security Authority Subsystem Service 
+
+* SAM – Security Accounts Manager 
+
+* Winlogon / credential providers
+
+* Netlogon 
+
+* KSecDD – Kernel Security Device Driver
+
+* Applocker
+
 ## changer la langue:
 
 ```powershell

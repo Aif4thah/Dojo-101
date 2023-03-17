@@ -48,7 +48,7 @@ if($var.Contains('a')){ $true }else{ $false }
 
 
 1..100 |%{ $_  }
-ls |% { $_.FullName }
+ls |%{ $_.FullName }
 
 
 ## chercher une commande
@@ -83,8 +83,16 @@ $json |ConvertFrom-Json
 
 Test-NetConnection -Port 443 google.fr
 Test-NetConnection google.fr -TraceRoute
+
+## Web
+
 iwr https://google.fr
 iwr https://raw.githubusercontent.com/Aif4thah/CShidori/main/LICENSE -outfile .\LICENSE
+
+### url decode
+
+Add-Type -AssemblyName System.Web
+[System.Web.HttpUtility]::UrlDecode("%27%20or%20%271%27%3D%271")
 
 ## Excrite, lire
 
@@ -118,9 +126,9 @@ Get-Service | where Status -eq "running"
 Get-Service -name bthserv | select -property name,status,starttype
 
 
-## process
+## processus
 
-ps
+get-process |ft *
 
 
 ## user
@@ -139,8 +147,6 @@ Get-EventLog -LogName *
 
 get-psdrive
 Get-ItemProperty -path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0
-
-
 
 
 ## sécurité de la mémoire
