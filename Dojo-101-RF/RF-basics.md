@@ -2,9 +2,19 @@
 
 ## definitions
 
-λ : longueur d'onde
-v ou f : frequence
-T: temps
+| terme | definition |
+|-------|---------|
+| λ | longueur d'onde |
+| v ou f | frequence |
+| T | temps |
+| E | Emission |
+| R | Reception
+| if_freq | fréquence intermediaire avant E ou Apres R |
+| lo_freq | frequance de l'oscilateur local |
+| LO + FI | Frequence E/R |
+| LNA | Low noise ampli. (ampli en entrée de reception) |
+| VGA | Variable Gain Amplifiers |
+| Base band | signal utile |
 
 ## SDR software define radio
 

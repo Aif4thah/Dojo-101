@@ -52,3 +52,8 @@ rejeu:
 hackrf_transfer -s <sample-rate-mhz> -f <frequence> -t <file>
 ```
 
+## Emission avec Pothos SDR et SoapySDR API
+
+selectionner le hackrf:
+
+`Device Args` : `{"driver":"hackrf"}`
