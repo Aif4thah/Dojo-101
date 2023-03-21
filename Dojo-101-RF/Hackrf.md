@@ -68,7 +68,7 @@ Peu pertinent sans ampli.
 hackrf_transfer -R -a 1 -s [<sample-rate>] -f <frequence> -t <file>
 ```
 
-## Emission avec SoapySDR API
+## Emission avec SoapySDR API from Pothos SDR
 
 sélectionner le hackrf dans les propriétés de SoapySDR:
 
