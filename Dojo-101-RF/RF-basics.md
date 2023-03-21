@@ -53,3 +53,20 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 3. Choisir un plotter, ex: `plotters / wave monitor`
 4. relier la source -> plotter
 5. Activer la topologie (roue dentée dans la barre de taches)
+
+## format de fichiers
+
+.cu4: Complex (I/Q), Unsigned integer, 4-bit per value (8 bit per sample)
+.cs4: Signed integer
+.cu8 (.data .complex16u): 8-bit per value (16 bit per sample) - Complex 8-bit unsigned integer samples  (RTL-SDR)
+.cs8 (.complex16s)
+.cu12: 12-bit per value (24 bit per sample)
+.cs12
+.cu16: 16-bit per value (32 bit per sample)
+.cs16: Complex 16-bit signed integer samples (BladeRF)
+.cu32: 32-bit per value (64 bit per sample)
+.cs32
+.cu64: 64-bit per value (128 bit per sample)
+.cs64
+.cf32 (.cfile .complex): Float, 32-bit per value (64 bit per sample) - Complex 32-bit floating point samples (GNURadio, osmocom_fft)
+.cf64: Double Float, 64-bit per value (128 bit per sample)

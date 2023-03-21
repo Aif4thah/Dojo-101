@@ -8,6 +8,7 @@
 | Gamme de Fréquences | 1-6000Mhz |
 | Échantillonage CAN | 20 Msps 8 bits |
 
+
 ## Leds
 
 When HackRF One is plugged in to a USB host, four LEDs should turn on: 3V3, 1V8, RF, and USB. 
@@ -30,6 +31,10 @@ When HackRF One is plugged in to a USB host, four LEDs should turn on: 3V3, 1V8,
 * SDRSharps / SDR# / AirSpy : analyse de spectre
 * Universal Radio Hacker : analyse de spectre et capture
 
+## fichiers de capture
+
+*.cs8 - (.complex16s) Complex 8-bit signed integer samples
+
 ## update firmware
 
 hackrf_spiflash -w hackrf_one_usb.bin
@@ -43,17 +48,25 @@ hackrf_cpldjtag -x sgpio_if/default.xsvf
 Trouver la porteuse avec la documentation de la cible et/ou un analyseur de spectre puis capturer:
 
 ```sh
-hackrf_transfer -s <sample-rate-mhz> -f <frequence> -r <file>
+hackrf_transfer [-s <sample-rate>] -f <frequence> -r <file>
 ```
 
 rejeu:
 
 ```sh
-hackrf_transfer -s <sample-rate-mhz> -f <frequence> -t <file>
+hackrf_transfer [-s <sample-rate>] -f <frequence> -t <file>
+```
+
+## Jamming / Brouillage
+
+Peu pertinent sans ampli.
+
+```sh
+hackrf_transfer -R -a 1 -s [<sample-rate>] -f <frequence> -t <file>
 ```
 
 ## Emission avec Pothos SDR et SoapySDR API
 
-selectionner le hackrf:
+sélectionner le hackrf dans les propriétés de SoapySDR:
 
 `Device Args` : `{"driver":"hackrf"}`
