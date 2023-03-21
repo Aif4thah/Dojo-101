@@ -19,6 +19,7 @@ When HackRF One is plugged in to a USB host, four LEDs should turn on: 3V3, 1V8,
 
 ## Binaires pré compilés Windows
 
+* Radioconda
 * PothosSDR
 
 ## Drivers windows
@@ -30,6 +31,8 @@ When HackRF One is plugged in to a USB host, four LEDs should turn on: 3V3, 1V8,
 * hackrf_*.exe : binaires cli
 * SDRSharps / SDR# / AirSpy : analyse de spectre
 * Universal Radio Hacker : analyse de spectre et capture
+* PothosSDR : flow
+* GNU Radio / Radioconda : flow
 
 ## fichiers de capture
 
@@ -65,7 +68,7 @@ Peu pertinent sans ampli.
 hackrf_transfer -R -a 1 -s [<sample-rate>] -f <frequence> -t <file>
 ```
 
-## Emission avec Pothos SDR et SoapySDR API
+## Emission avec SoapySDR API
 
 sélectionner le hackrf dans les propriétés de SoapySDR:
 
