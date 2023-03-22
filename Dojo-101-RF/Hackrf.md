@@ -36,7 +36,11 @@ When HackRF One is plugged in to a USB host, four LEDs should turn on: 3V3, 1V8,
 
 ## fichiers de capture
 
-*.cs8 - (.complex16s) Complex 8-bit signed integer samples
+* extension : .cs8 - (.complex16s) 
+* type : Complex 8-bit signed integer samples (Complex = pairs of I/Q values)
+* convert from CU8 : +127
+
+Pour stocker le signal on utilse des nombres complexes sous forme I+jQ, exemple: [0.123 + j0.512, 0.0312 + j0.4123, 0.1423 + j0.06512, …]
 
 ## update firmware
 
