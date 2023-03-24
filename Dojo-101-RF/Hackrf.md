@@ -30,7 +30,7 @@ When HackRF One is plugged in to a USB host, four LEDs should turn on: 3V3, 1V8,
 
 * hackrf_*.exe : binaires cli
 * SDRSharps / SDR# / AirSpy : analyse de spectre
-* Universal Radio Hacker : analyse de spectre et capture
+* Universal Radio Hacker : analyse de spectre, analyse de capture et generation de fichiers
 * PothosSDR : flow
 * GNU Radio / Radioconda : flow
 
@@ -42,6 +42,25 @@ When HackRF One is plugged in to a USB host, four LEDs should turn on: 3V3, 1V8,
 
 Pour stocker le signal on utilse des nombres complexes sous forme I+jQ, exemple: [0.123 + j0.512, 0.0312 + j0.4123, 0.1423 + j0.06512, …]
 
+### convertir les fichiers:
+
+Convert the file from unsigned 8-bit integers to 32-bit floats. This can be done with:
+
+```powershell
+
+PS > C:\Program` Files` `(x86`)\sox-14-4-2\sox.exe .\wifi-like.s8 wifilike.f32
+
+C:\Program Files (x86)\sox-14-4-2\sox.exe WARN raw: `.\wifi-like.s8': sample rate not specified; trying 8kHz
+C:\Program Files (x86)\sox-14-4-2\sox.exe WARN raw: `.\wifi-like.s8': # channels not specified; trying mono
+
+PS > ls *.f32
+
+ Répertoire : C:\Users\vaca\OneDrive\Documents\Projets-InfoSec\Keisei-sanshoku\ER\OpenER
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        24/03/2023     09:19     1858076672 wifilike.f32
+```
+
 ## update firmware
 
 hackrf_spiflash -w hackrf_one_usb.bin
@@ -49,6 +68,18 @@ hackrf_spiflash -w hackrf_one_usb.bin
 ## update cpld
 
 hackrf_cpldjtag -x sgpio_if/default.xsvf
+
+## analyse de spectre
+
+```sh
+hackrf_sweep.exe -f <freq_min>:<freq_max> -N <nombre de passes>
+```
+
+exemple pour 2,440Ghz:
+
+```sh
+hackrf_sweep.exe -f 2439:2440 -N 15
+```
 
 ## replay attack
 
