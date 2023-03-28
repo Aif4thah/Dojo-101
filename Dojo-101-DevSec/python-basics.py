@@ -4,6 +4,43 @@
 
 #!/usr/bin/env python3
 
+## Conditions
+
+"""
+Les conditions en Python 3 sont similaires à celles des autres langages de programmation. 
+Vous pouvez utiliser les opérateurs de comparaison suivants pour évaluer les expressions booléennes:
+
+== : égal à
+!= : différent de
+< : inférieur à
+> : supérieur à
+<= : inférieur ou égal à
+>= : supérieur ou égal à
+
+"""
+
+x = 5
+if x > 2:
+    print("x est plus grand que 2")
+else:
+    print("x est plus petit ou égal à 2")
+
+## Conditions ternaires
+
+x = 5
+y = "plus grand que 2" if x > 2 else "plus petit ou égal à 2"
+
+
+## Boucles for
+
+for i in range(5):
+    print(i)
+
+## Boucles foreach
+
+fruits = ["pomme", "banane", "cerise"]
+for fruit in fruits:
+    print(fruit)
 
 ## linux time:
 
