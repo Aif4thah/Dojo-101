@@ -51,7 +51,7 @@
 |8| ---.. |
 |9| ----. |
 
-## hackrf
+## émission avec hackrf
 
 projet [morse_synth.py](https://gist.github.com/jboone/de67df55a2059dcebcdb)
 
@@ -62,3 +62,7 @@ projet [morse_synth.py](https://gist.github.com/jboone/de67df55a2059dcebcdb)
 python .\Morse.py TEST test.cs8
 hackrf_transfer -s 8000000 -x 16 -a 1 -f 144050000 -b 1750000 -t test.cs8
 ```
+
+## réception avec SDR Sharp
+
+Lire le code morse dans le spectrogramme 
