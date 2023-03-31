@@ -67,7 +67,7 @@ hackrf_spiflash -w hackrf_one_usb.bin
 
 ## update cpld
 
-hackrf_cpldjtag -x sgpio_if/default.xsvf
+hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
 
 ## analyse de spectre
 
