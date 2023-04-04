@@ -10,7 +10,8 @@ $msgchiffre = Chiffrer-message -Message "test" -Key $aes -IVs $iv
 $msgchiffre
 Dechiffrer-message -EncryptedString $msgchiffre -Key $aes -IVs $iv
 
-/!\ attention: contrairement à la clé les IV ne devrait pas être réutilisés.
+/!\ attention: contrairement à la clé, les IV ne doivent pas être réutilisés.
+Ce script est utilisé à titre éducatif et n'est pas là pour garantir la confidentialité d'échanges en production.
 
 #>
 

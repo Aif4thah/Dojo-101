@@ -27,9 +27,9 @@
 # Use with hackrf_transfer as follows to transmit at 144.05MHz:
 #
 #     hackrf_transfer -s 8000000 -x 16 -a 0 -f 144050000 -b 1750000 -t baseband.cs8
+#
 
 import sys
-
 import numpy
 
 if len(sys.argv) != 3:
@@ -133,3 +133,4 @@ output_int[0::2] = numpy.round(output.real)
 output_int[1::2] = numpy.round(output.imag)
 
 output_int.tofile(sys.argv[2])
+

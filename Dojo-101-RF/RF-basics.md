@@ -94,3 +94,14 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 
 * .cf64: Double Float, 64-bit per value (128 bit per sample)
 
+## Numpy
+
+exemples de signal Discrete Fourier Transform (DFT)
+
+```python
+signal = numpy.random.random(10) + 1j * numpy.random.random(10)
+
+signal = numpy.exp(1j * 2 * numpy.pi * (2.5 / 128) * numpy.arange(128))
+
+```
+
