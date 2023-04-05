@@ -28,6 +28,12 @@
 
 * Fréquence FM
 
+* USB : Upper Side Band = Bande Latérale Supérieure
+
+* LSB : Lower Side Band = Bande Latérale Inférieure
+
+* SSB : Single Side Band = Bande Latérale Unique (BLU)
+
 * Déplacement de frequence FSK, ex: RFID 
 
 * Changement de phase PSK et en quadrature QPSK -> BPSK est la forme la plus simple du PSK. Elle utilise deux phases qui sont séparées de 180° ; on l'appelle également 2-PSK. Cette modulation est la plus robuste de toutes les PSK car il faut une grande déformation du signal pour que le démodulateur se trompe sur le symbole reçu.
@@ -99,6 +105,7 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 exemples de signal Discrete Fourier Transform (DFT)
 
 ```python
+
 signal = numpy.random.random(10) + 1j * numpy.random.random(10)
 
 signal = numpy.exp(1j * 2 * numpy.pi * (2.5 / 128) * numpy.arange(128))
