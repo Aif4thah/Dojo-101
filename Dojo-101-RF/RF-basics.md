@@ -1,4 +1,4 @@
-# RF basics
+# RF et SDR basics
 
 ## definitions
 
@@ -99,6 +99,25 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 * .cf32 (.cfile .complex): Float, 32-bit per value (64 bit per sample) - Complex 32-bit floating point samples (GNURadio, osmocom_fft)
 
 * .cf64: Double Float, 64-bit per value (128 bit per sample)
+
+### convertir les fichiers:
+
+Convert the file from unsigned 8-bit integers to 32-bit floats. This can be done with:
+
+```powershell
+
+PS > C:\Program` Files` `(x86`)\sox-14-4-2\sox.exe .\wifi-like.s8 wifilike.f32
+
+C:\Program Files (x86)\sox-14-4-2\sox.exe WARN raw: `.\wifi-like.s8': sample rate not specified; trying 8kHz
+C:\Program Files (x86)\sox-14-4-2\sox.exe WARN raw: `.\wifi-like.s8': # channels not specified; trying mono
+
+PS > ls *.f32
+
+ Répertoire : C:\Users\vaca\OneDrive\Documents\Projets-InfoSec\Keisei-sanshoku\ER\OpenER
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        24/03/2023     09:19     1858076672 wifilike.f32
+```
 
 ## Numpy
 
