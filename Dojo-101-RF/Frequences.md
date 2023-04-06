@@ -212,6 +212,5 @@ FCF groupe
 
 ## Internet
 
-## WRN World Radio Network
+[WRN World Radio Network](https://www.encompass.tv/solutions/radio/)
 
-encompass.tv/solutions/radio/
