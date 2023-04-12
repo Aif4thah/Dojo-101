@@ -20,6 +20,10 @@ https://www.microsoft.com/en-us/download/details.aspx?id=55319
 en complement de la politique de sécurité local (SecPol.msc)
 #>
 
+#taille des logs
+
+Limit-EventLog -LogName "Security" -MaximumSize (4*1024*1024*1024)
+
 #execution policy (powershell -ep bypass t'façon)
 Set-ExecutionPolicy -ExecutionPolicy Restricted
 

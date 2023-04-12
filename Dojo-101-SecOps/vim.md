@@ -1,4 +1,7 @@
 ## vim
+
+
+```
 copier coller: shift+select pour pouvoir coller ailleurs, shift clic droit ou molette pour coller
 
 Sauvegarder un fichier - quitter vi
@@ -178,4 +181,6 @@ C'était très utile avec les anciens terminaux et les liaisons réseau erratiqu
     rafraîchit l'affichage et place le curseur au milieu
 %-
     rafraîchit l'affichage et place le curseur en bas
+
+```
 

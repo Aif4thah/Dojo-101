@@ -51,7 +51,12 @@
 |8| ---.. |
 |9| ----. |
 
-## émission avec hackrf
+## mise en oeuvre
+
+* n'importe quelle radio (ex.: jouer avec la pédale du combiné ou du talkie-walkie)
+* n'importe quel signal lumineux, sifflet, outil, etc..
+
+## Automatisation d'emission de signal Morse avec hackrf
 
 projet [morse_synth.py](https://gist.github.com/jboone/de67df55a2059dcebcdb)
 
@@ -65,5 +70,5 @@ hackrf_transfer -s 8000000 -x 16 -a 1 -f 144050000 -b 1750000 -t test.cs8
 
 ## réception avec SDR Sharp
 
-Lire le code morse dans le spectrogramme (Waterfall)
+Ecouter / Lire le code morse dans le spectrogramme (Waterfall)
 
