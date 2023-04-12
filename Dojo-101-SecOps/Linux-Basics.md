@@ -15,10 +15,10 @@ apt-get install --fix-missing
 apt-get install --fix-broken
 ```
 
-## info_fichiers
+## fichiers
 
 ```shell
-$ file executable.2772.exe 
+file executable.2772.exe 
 executable.2772.exe: PE32 executable (GUI) Intel 80386 (stripped to external PDB), for MS Windows
 ```
 
@@ -40,7 +40,6 @@ xxd -r -p input.hex output.bin
 hexdump -C
 ```
 
-
 ## Nvidia GPU Hashact
 
 ```shell
@@ -52,14 +51,13 @@ hashcat -I
 
 ouvrir l'explorateur de fichier: xdg-open .
 
-
 ## runlevel linux
 
 ### runlevel 3 au grub:
 ajouter 3 apres “quiet” dans le GRUB
 
 
-## Fichiers
+## Archives
 
 ### Compress file
 ```shell
@@ -101,9 +99,11 @@ tar zxvf compressed.tar.gz
 for i in *.tar.gz; do tar -xzvf $i; done
 ```
 
-## ## usb
+## créer clé usb bootable
 
-dmesg pour identifier la clé (dans l'éxemble /dev/sdb) Ne pas monter la clé ou faire un unmount
+`dmesg` pour identifier la clé (ex. /dev/sdb) 
+
+Ne pas monter la clé ou faire un unmount
 
 ```sh
 dd if=kali-linux-blablabla.iso of=/dev/sdb
@@ -160,7 +160,9 @@ Now, if you’ll open MyFile, you’ll se that it contains the text  you’ve en
 cat <<EOF > print.sh
 ```
 
-# IP Linux
+## Reseau
+
+### IP
 
 ```sh
 ip addr add 192.168.1.5/24 dev eth0
@@ -172,14 +174,7 @@ ifconfig wlan0 down
 route add default gw 192.168.1.254
 ```
 
-
-
-## route
-
-Display Current Routing Table Using ip command
-By using the ip command, you can set up and view static route. For example, to display the current routing table you can type the command:
-
-### lister et ajouter
+### routage
 
 ```shell
 $ ip route show
@@ -197,10 +192,11 @@ $ ip route add 192.168.55.0/24 via 192.168.1.254 dev eth1
 $ route add -net 192.168.55.0 netmask 255.255.255.0 gw 192.168.1.254 dev eth1
 ```
 
-## SSH re-install VM
+## SSH
 
-Ne pas garder les cléfs par défaut sur les serveur ssh (attaque man in the middle)
+Ne pas garder les cléfs par défaut sur les serveur ssh des VM téléchargée
 
+```sh
 cd /etc/ssh/
 mkdir default_kali_keys
 mv ssh_host_* default_kali_keys/
@@ -213,17 +209,18 @@ cd default_kali_keys/
 md5sum *
 
 systemctl restart ssh
+```
 
 ### ssh X11
 
 pour du graphique activer le Forward X11 et
 
+```
     ForwardX11 yes
     ForwardX11Trusted no
+```
 
-(trusted = moins secure)
-
-lancer ssh -X coté client
+lancer `ssh -X` coté client
 
 
 ## smbclient
@@ -244,28 +241,20 @@ apt-get install logcheck
 sudo -u logcheck logcheck -o
 sudo -u logcheck logcheck -o > /data/$(date +"%m-%d-%Y-%T").log
 
-### pbm de bout
+## pbm de boot
 
-## Boot
+### Option interessante à ajouter au GRUB (presser "e" au boot ou éditer)
 
-```
-> Option interessant à ajouter au GRUB (presser "e" au boot ou éditer le
-> "acpi=off" -> désactive énormément de chose dont la gestion de l'alim et acceleration materiel
-> "nouveau.blacklist=1" -> désactive les drivers nouveaux
-> "nomodeset" -> n'utilise pas les module graphique du kernel durant le boot jusqu'au chargement de X)
-> 
-> 
-> Pbm d'écran / compatibilité nouveau /nvidia:
-> 1- booter avec nomodeset ou nouveau.blacklist=1
-> 2- installer le package nvidia-driver
-> 3- rebooter (sans options supplémentaire, nouveau sera shooté automatiquement)
+"acpi=off" -> désactive énormément de chose dont la gestion de l'alim et acceleration materiel
+"nouveau.blacklist=1" -> désactive les drivers nouveaux
+"nomodeset" -> n'utilise pas les module graphique du kernel durant le boot jusqu'au chargement de X)
 
-pour les probleme de driver nvidia cf "Nvidia GPU"
+### Pbm d'écran / compatibilité nouveau /nvidia:
 
-si freeze: utiliser les tty (ctrl+alt+<1,2,3,4...>)
+1- booter avec nomodeset ou nouveau.blacklist=1
+2- installer le package nvidia-driver
+3- rebooter (sans options supplémentaire, nouveau sera shooté automatiquement)
 
-ou démarrer sans interface graphique: cf "runlevel"
+### pour les probleme de driver nvidia cf "Nvidia GPU"
 
-aucun service en écoute sur le réseau apres install sauf client dhcp:
-systemctl disable rpcbind
-```
+si freeze: utiliser les tty (ctrl+alt+<1,2,3,4...>) ou démarrer sans interface graphique: cf "runlevel"
