@@ -14,11 +14,25 @@
 |Extremely high frequency (EHF)| 30 GHz–300 GHz|
 |Uncategorized | 300 GHz–3,000 GHz |
 
-## Retex
 
-Télécommandes: 433.92 MHz
-DECT: 1888 à 1900 Mhz
-FM: 87,5 MHz à 108 MHz
+## Bandes libres en France
+
+Source: [ARCEP](https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/le-guichet-start-up-et-innovation/le-portail-bandes-libres.html)
+
+| Fréquences | Utilisations notables|
+|------------|----------------------|
+| 13 553 – 13 576 kHz | RFID, NFC |
+| 169,4 – 169,8125 MHz | Wize |
+| 433,05 – 434,79 MHz | Talkies-walkies, télécommandes, LoRa|
+| 863 – 868,6 MHz | z-Wave, Sigfox, LoRa, RFID UHF, Zigbee|
+| 868,7 – 869,2 MHz	 ||
+| 869,3 – 869,65 MHz	 ||
+| 869,7 – 870 MHz	 ||
+| 2400 – 2483,5 MHz	| Wi-Fi, Bluetooth, Zigbee, Thread|
+| 5150 – 5350 MHz	||
+| 5470 – 5725 MHz ||
+
+
 
 ## Fréquences d'urgence, détresse et essentielles - France et Europe HF VHF UHF
 

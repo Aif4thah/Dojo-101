@@ -15,6 +15,23 @@
 | LNA | Low noise ampli. (ampli en entrée de reception) |
 | VGA | Variable Gain Amplifiers |
 | Base band | signal utile |
+| Procédure | c’est un ensemble de règles qui fixent la forme et la succession des émissions, dans le but de garantir la REGULARITE et la RAPIDITE d’acheminement du trafic et d’assurer la SECURITE des transmissions. L’inobservation de ces règles provoque l’inefficacité, des indiscrétions, de la confusion et un manque de rapidité opérationnelle. |
+| Station | c’est un ensemble d’appareils et de personnels placés sous l’autorité d’un chef de station, mis à la disposition d’une ou plusieurs autorités en vue de réaliser une ou plusieurs liaisons. |
+| Réseau | C’est un ensemble de stations (radio, FH, TG) qui travaillent entre elles suivants les mêmes règles imposées et les mêmes caractéristiques (fréquences, indicatifs, modulation).
+| Indicatif | n appelle indicatif, un ensemble de lettres ou de chiffres, ou de lettres et de chiffres mélangés pouvant désigner soit une station (ou un groupe de stations) soit une autorité (ou un groupe d’autorités). | 
+
+
+
+## Mise en oeuvre
+
+1. Vérifier l’arrêt puis,
+2. ANTACAL : ANTenne ACcessoires ALimentation
+
+```
+Pour les ER avec forte puissance d'émission:
+NE JAMAIS EMETTRE SANS ANTENNE
+NE JAMAIS TOUCHER L’ANTENNE EN EMISSION
+```
 
 ## SDR software define radio
 
@@ -121,7 +138,7 @@ Mode                 LastWriteTime         Length Name
 
 ## Numpy
 
-exemples de signal Discrete Fourier Transform (DFT)
+exemples de "signal Discrete Fourier Transform" (DFT)
 
 ```python
 

@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 function write_iq():
-
+    
     """
     In Python, and numpy specifically, we use the tofile() function to store a numpy array to a file. 
     Here is a short example of creating a simple BPSK signal plus noise and saving it to a file in the same directory we ran our script from:
@@ -27,7 +27,7 @@ function write_iq():
     r.tofile('bpsk_in_noise.iq') # Save to file
 
 function read_iq():
-
+    
     """
     Now examine the details of the file produced and check how many bytes it is. 
     It should be num_symbols * 8 because we used np.complex64, which is 8 bytes per sample, 4 bytes per float (2 floats per sample).

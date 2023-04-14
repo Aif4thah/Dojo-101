@@ -1,4 +1,4 @@
-# Initiation au scripting powershell
+# powershell basics: Initiation au scripting powershell
 
 ## clavier en français
 
@@ -17,6 +17,11 @@ $PsVersionTable.PSVersion
 $var = 'chaine de charactères'
 $var.gettype() #obtenir le type
 $var |gm #lister les membres (proprietés et fonctions)
+
+
+# tableau
+
+$var = @( 1,2,3 )
 
 
 ## saisies utilisateurs
@@ -43,6 +48,9 @@ write-host ("[!] ceci est la valeur de ma variable : {0}" -f $var) -ForegroundCo
 
 if($var.Contains('a')){ $true }else{ $false }
 
+## condition ternaire pwsh 7
+
+$var.Contains('a') ? $true : $false
 
 ## la boucle (quick and dirty)
 
@@ -55,7 +63,8 @@ ls |%{ $_.FullName }
 
 
 gcm *bitlocker*
-
+help Unlock-BitLocker
+alias %
 
 ## formater un resultat
 
@@ -81,8 +90,19 @@ $json |ConvertFrom-Json
 
 ## Réseau
 
+## IP
+
+Get-NetIPAddress
+
+## cartes réseaux 
+
+Get-NetAdapter
+Get-NetAdapter -ifIndex 21 |Get-NetConnectionProfile
+
+### test de connection 
 Test-NetConnection -Port 443 google.fr
 Test-NetConnection google.fr -TraceRoute
+442..443 |%{Test-NetConnection -Port $_ google.fr  } | where -Property "TcpTestSucceeded" -eq $true
 
 ## Web
 
@@ -103,8 +123,13 @@ gc test.ps1
 
 ## Lire les permission
 
+### NTFS
+
 get-acl .\test.ps1 |fl
 
+### SMB
+
+Get-SmbShare c$ |Get-SmbShareAccess
 
 ## Execution policy
 
@@ -131,10 +156,10 @@ Get-Service -name bthserv | select -property name,status,starttype
 get-process |ft *
 
 
-## user
+## users
 
 Get-LocalUser
-
+Get-LocalGroup Admin* |Get-LocalGroupMember
 
 ## logs
 
@@ -142,7 +167,7 @@ Get-LocalUser
 Get-EventLog -LogName *
 
 
-## registry
+## volume registry
 
 
 get-psdrive

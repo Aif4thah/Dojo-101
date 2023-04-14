@@ -52,13 +52,13 @@ hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
 
 ## analyse de spectre
 
-```sh
+```powershell
 hackrf_sweep.exe -f <freq_min>:<freq_max> -N <nombre de passes>
 ```
 
 exemple pour 2,440Ghz:
 
-```sh
+```powershell
 hackrf_sweep.exe -f 2439:2440 -N 15
 ```
 
