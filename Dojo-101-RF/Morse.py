@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 # Copyright (C) 2015 Jared Boone, ShareBrained Technology
+# Copyright (C) 2023 Michael Vacarella, Taisen Solutions
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -24,9 +25,9 @@
 #
 #     morse_synth.py MYCALLSIGN baseband.cs8
 #
-# Use with hackrf_transfer as follows to transmit at 144.05MHz:
+# Use with hackrf_transfer as follows to transmit :
 #
-#     hackrf_transfer -s 8000000 -x 16 -a 0 -f 144050000 -b 1750000 -t baseband.cs8
+#     hackrf_transfer -s 8000000 -x 16 -a 0 -f 433500000 -b 1750000 -t baseband.cs8
 #
 
 import sys
@@ -80,6 +81,19 @@ character_to_symbols_map = {
 	'9': '----.',
 	'0': '-----',
 	' ': ' ',
+	'É': '..-..',
+	'.': '.-.-.-',
+	',': '--..--',
+	':': '---...',
+	'?': '..--..',
+	'\'': '.----.',
+	'-': '-....-',
+	'|': '-..-.',
+	'(': '-.--.-',
+	')': '-.--.-',
+	'À':'.--.-',
+	'<' : '-.-.-', # begin transmission
+	'>' : '.-.-.' # end transmission
 }
 
 def make_baseband_samples_dc(on, length_units):
@@ -96,7 +110,7 @@ def make_baseband_samples(amplitude, length_units):
 	return numpy.exp(w * 1j) * amplitude
 
 dot_units = 1
-dash_units = 3
+dash_units = dot_units*3
 space_internal_units = 1
 space_letters_units = 3
 space_words_units = 7
@@ -116,7 +130,7 @@ symbol_to_baseband_map = {
 # Start with a little silence.
 output = [baseband_space]
 
-for character in message.upper():
+for character in '<'+message.upper()+'>':
 	symbols = character_to_symbols_map[character]
 	for symbol in symbols:
 		output.append(symbol_to_baseband_map[symbol])

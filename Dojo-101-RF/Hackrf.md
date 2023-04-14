@@ -44,11 +44,15 @@ Pour stocker le signal on utilse des nombres complexes sous forme I+jQ, exemple:
 
 ## update firmware
 
+```sh
 hackrf_spiflash -w hackrf_one_usb.bin
+```
 
 ## update cpld
 
+```sh
 hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
+```
 
 ## analyse de spectre
 
@@ -76,9 +80,9 @@ rejeu:
 hackrf_transfer [-s <sample-rate>] -f <frequence> -t <file>
 ```
 
-## Jamming / Brouillage
+## Jamming
 
-Peu pertinent sans ampli.
+Pour du Lab. Aucune utilité du fait de la faible puissance d'emission
 
 ```sh
 hackrf_transfer -R -a 1 -s [<sample-rate>] -f <frequence> -t <file>
@@ -88,4 +92,7 @@ hackrf_transfer -R -a 1 -s [<sample-rate>] -f <frequence> -t <file>
 
 sélectionner le hackrf dans les propriétés de SoapySDR:
 
-`Device Args` : `{"driver":"hackrf"}`
+Device Args : 
+```json
+{"driver":"hackrf"}
+```
