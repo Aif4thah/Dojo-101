@@ -97,7 +97,7 @@
 
 ## Automatisation de transmissions Morse avec hackrf
 
-projet initial [morse_synth.py](https://gist.github.com/jboone/de67df55a2059dcebcdb) et modifié via le script `Morse.py`
+projet initial [morse_synth.py](https://gist.github.com/jboone/de67df55a2059dcebcdb), modifié via le script `Morse.py`
 
 * installer python
 * `pip install numpy`
@@ -107,11 +107,14 @@ python .\Morse.py TEST test.cs8
 hackrf_transfer -s 8000000 -x 16 -a 1 -f 144050000 -b 1750000 -t test.cs8
 ```
 
+* Lire le fichier avec `Universal Radio Hacker` avant l'envoi permet d'en vérifier le contenu.
+
 ## réception avec SDR Sharp
 
 Écouter / lire le code morse dans le spectrogramme (Waterfall)
 
 ## réception avec Universal radio hacker
 
-Enregistrer la reception dans un fichier binaire (IQ) et puis visualiser le signal
+* Enregistrer la reception dans un fichier binaire (IQ) et puis visualiser le signal
+
 
