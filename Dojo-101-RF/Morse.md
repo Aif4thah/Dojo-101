@@ -97,7 +97,7 @@
 
 ## Automatisation de transmissions Morse avec hackrf
 
-projet [morse_synth.py](https://gist.github.com/jboone/de67df55a2059dcebcdb)
+projet initial [morse_synth.py](https://gist.github.com/jboone/de67df55a2059dcebcdb) et modifié via le script `Morse.py`
 
 * installer python
 * `pip install numpy`
