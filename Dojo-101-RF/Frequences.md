@@ -32,6 +32,18 @@ Source: [ARCEP](https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobil
 | 5150 – 5350 MHz	||
 | 5470 – 5725 MHz ||
 
+## Radios classiques
+
+| Modulation | Frequences |
+|------------|------------|
+| FM |  87.5 à 107.9 MHz |
+| AM | 150 kHz à 281 kHz |
+| AM | 520 à 1620 kHz |
+| AM |  2,3 à 26,1 MHz |
+
+## RNT (Radio Numérique Terrestre)
+
+| DAB+ | 174 à 240 MHz |
 
 
 ## Fréquences d'urgence, détresse et essentielles - France et Europe HF VHF UHF

@@ -74,8 +74,12 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 
 ## Tools
 
-[PothosSDR](https://www.pothosware.com/)
-[SoapySDR](https://github.com/pothosware/SoapySDR/wiki)
+* [SDRSharp (SDR#)](https://airspy.com/download/) : analyse de spectre et démodulations audio (analogique)
+* [SDRAngel](https://www.sdrangel.org/), Universal Radio Hacker : analyse de spectre, analyse de capture / fichiers pour démoduler des signaux numériques
+* [PothosSDR](https://www.pothosware.com/) : flow
+* [GNU Radio](https://www.gnuradio.org/) / Radioconda : flow
+* [SoapySDR](https://github.com/pothosware/SoapySDR/wiki) : API
+* [qt-Dab](https://github.com/JvanKatwijk/qt-dab/releases) : Radio Numerique Terrestre (RNT DAB+)
 
 ### Test avec PothosFlow
 

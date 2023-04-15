@@ -17,22 +17,19 @@ When HackRF One is plugged in to a USB host, four LEDs should turn on: 3V3, 1V8,
 * The USB LED indicates that the HackRF One is communicating with the host over USB.
 * The RX and TX LEDs indicate that a receive or transmit operation is currently in progress.
 
-## Binaires pré compilés Windows
+## Binaires pré-compilés Windows
 
-* Radioconda
-* PothosSDR
+* Radioconda (exe et dll)
+* PothosSDR (exe et dll)
+* SDRSharp (dll)
 
 ## Drivers windows
 
-1. Utiliser Zadig pour installer WinUSB
+* Utiliser Zadig pour installer WinUSB
 
-## Tools
+## Command Line
 
-* hackrf_*.exe : binaires cli
-* SDRSharps / SDR# / AirSpy : analyse de spectre
-* Universal Radio Hacker : analyse de spectre, analyse de capture et generation de fichiers
-* PothosSDR : flow
-* GNU Radio / Radioconda : flow
+* hackrf_*.exe : binaires cli pour hackrf
 
 ## fichiers de capture
 
