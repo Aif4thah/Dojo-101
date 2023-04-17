@@ -79,7 +79,7 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 * [PothosSDR](https://www.pothosware.com/) : flow
 * [GNU Radio](https://www.gnuradio.org/) / Radioconda : flow
 * [SoapySDR](https://github.com/pothosware/SoapySDR/wiki) : API
-* [qt-Dab](https://github.com/JvanKatwijk/qt-dab/releases) : Radio Numerique Terrestre (RNT DAB+)
+* [qt-Dab](https://github.com/JvanKatwijk/qt-dab/releases) : Radio Numerique Terrestre (RNT DAB+) - rester en version 2.7 pour windows
 
 ### Test avec PothosFlow
 

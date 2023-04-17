@@ -110,7 +110,7 @@ hackrf_transfer -s 8000000 -x 16 -a 1 -f 144050000 -b 1750000 -t test.cs8
 
 ## réception avec SDR Sharp
 
-Écouter / lire le code morse dans le spectrogramme (Waterfall)
+Écouter (CW) / lire le code morse dans le spectrogramme (Waterfall)
 
 ## réception avec Universal radio hacker
 

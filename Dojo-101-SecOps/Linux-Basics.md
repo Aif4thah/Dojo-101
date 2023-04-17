@@ -1,11 +1,63 @@
 # Linux Basics
 
+## Montages / Volume
+
+| Montage | Options recommandées | Description |
+|---------|---------|-------------|
+| / | aucune | root |
+| /boot | nosuid,nodev,noexec | Contient le noyau et le chargeur de démarrage. |
+| /tmp | nosuid,nodev,noexec | fichiers temporaires |
+| /home | nosuid,nodev,noexec | repertoires utilisateurs
+| /dev | aucune | peripheriques |
+| /var |  nosuid,nodev,noexec | variables et logs |
+
+
 ## Clavier
 
 ```shell
 setxkbmap fr  #ne marche que lorsque X est lancé
 loadkeys fr
 ```
+
+## environnement
+
+```sh
+env
+cat .bashrc
+findmnt
+alias
+```
+
+## partitions
+
+```sh
+findmnt
+gparted
+```
+
+## services
+
+```sh
+systemctl list-units
+systemctl status
+```
+
+## rpc et sockets
+
+```sh
+rpcinfo
+lsof
+ss
+```
+
+## trouver des fichiers / binaire
+
+```sh
+find / -name flag.txt
+locate ls
+which ls
+```
+
 
 ##  apt debug Dependences
 
@@ -18,13 +70,13 @@ apt-get install --fix-broken
 ## fichiers
 
 ```shell
-file executable.2772.exe 
-executable.2772.exe: PE32 executable (GUI) Intel 80386 (stripped to external PDB), for MS Windows
+$ file executable.2772.exe 
+$ objdump -d /usr/bin/sh 
 ```
 
 ## hexa
 
-### editeur sous kali: 
+### éditeur sous kali: 
 
 * hexeditor
 * bless
@@ -40,6 +92,31 @@ xxd -r -p input.hex output.bin
 hexdump -C
 ```
 
+### permission
+
+#### permission par défaut
+
+```sh
+touch test
+umask 0077
+chmod 700 test
+chmod +x test
+```
+
+### capabilities (rarement utilisé)
+
+```sh
+cat /proc/9491/status | grep Cap
+CapInh:    0000000000000000
+CapPrm:    0000000000003000
+CapEff:    0000000000000000
+CapBnd:    0000003fffffffff
+CapAmb:    0000000000000000
+
+capsh --decode=0000000000003000
+0x0000000000003000=cap_net_admin,cap_net_raw
+```
+
 ## Nvidia GPU Hashact
 
 ```shell
@@ -47,13 +124,14 @@ apt install -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit nvidia-msi
 hashcat -I
 ```
 
-## file explorer linux
+## file explorer Linux
 
-ouvrir l'explorateur de fichier: xdg-open .
+Ouvrir l'explorateur de fichier: xdg-open .
 
-## runlevel linux
+## runlevel Linux
 
 ### runlevel 3 au grub:
+
 ajouter 3 apres “quiet” dans le GRUB
 
 
@@ -99,9 +177,15 @@ tar zxvf compressed.tar.gz
 for i in *.tar.gz; do tar -xzvf $i; done
 ```
 
-## créer clé usb bootable
+## information kernel
 
-`dmesg` pour identifier la clé (ex. /dev/sdb) 
+`dmesg` 
+
+grepper pour chercher une pour identifier une information particulière 
+
+ex: /dev/sdb pour trouver sa clé usb 
+
+## usb
 
 Ne pas monter la clé ou faire un unmount
 

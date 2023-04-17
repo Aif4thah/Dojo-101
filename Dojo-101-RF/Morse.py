@@ -23,7 +23,7 @@
 # Run to generate a file that contains baseband data you can later transmit
 # with hackrf_transfer:
 #
-#     morse_synth.py MYCALLSIGN baseband.cs8
+#     python morse_synth.py MYCALLSIGN baseband.cs8
 #
 # Use with hackrf_transfer as follows to transmit :
 #
