@@ -19,6 +19,12 @@ setxkbmap fr  #ne marche que lorsque X est lancé
 loadkeys fr
 ```
 
+## miscs
+
+```sh
+apt install binutils
+```
+
 ## environnement
 
 ```sh
@@ -70,8 +76,9 @@ apt-get install --fix-broken
 ## fichiers
 
 ```shell
-$ file executable.2772.exe 
-$ objdump -d /usr/bin/sh 
+file executable.2772.exe 
+objdump -d /usr/bin/sh
+strings <executable ou l'on cherche des chaines de chars>
 ```
 
 ## hexa
@@ -311,19 +318,25 @@ lancer `ssh -X` coté client
 
 ### sous xfce:
 
+```sh
 thunar smb://10.10.10.178/Data
+```
 
 ###  impacket:
 
+```sh
 /usr/share/doc/python3-impacket/examples/smbclient.py C.Smith:xRxRxPANCAK3SxRxRx@10.10.10.178
+```
 
 ## Logs
 
 ### logcheck
 
+```sh
 apt-get install logcheck
 sudo -u logcheck logcheck -o
 sudo -u logcheck logcheck -o > /data/$(date +"%m-%d-%Y-%T").log
+```
 
 ## pbm de boot
 
@@ -335,9 +348,9 @@ sudo -u logcheck logcheck -o > /data/$(date +"%m-%d-%Y-%T").log
 
 ### Pbm d'écran / compatibilité nouveau /nvidia:
 
-1- booter avec nomodeset ou nouveau.blacklist=1
-2- installer le package nvidia-driver
-3- rebooter (sans options supplémentaire, nouveau sera shooté automatiquement)
+1. booter avec nomodeset ou nouveau.blacklist=1
+2. installer le package nvidia-driver
+3. rebooter (sans options supplémentaire, nouveau sera shooté automatiquement)
 
 ### pour les probleme de driver nvidia cf "Nvidia GPU"
 
