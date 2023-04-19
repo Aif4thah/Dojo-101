@@ -77,14 +77,6 @@ rejeu:
 hackrf_transfer [-s <sample-rate>] -f <frequence> -t <file>
 ```
 
-## Jamming
-
-Pour du Lab. Aucune utilité du fait de la faible puissance d'emission
-
-```sh
-hackrf_transfer -R -a 1 -s [<sample-rate>] -f <frequence> -t <file>
-```
-
 ## Emission avec SoapySDR API from Pothos SDR
 
 sélectionner le hackrf dans les propriétés de SoapySDR:

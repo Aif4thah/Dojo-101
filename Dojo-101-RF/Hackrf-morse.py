@@ -23,7 +23,7 @@
 # Run to generate a file that contains baseband data you can later transmit
 # with hackrf_transfer:
 #
-#     python morse_synth.py MYCALLSIGN baseband.cs8
+#     python Hackrf-morse.py MYCALLSIGN baseband.cs8
 #
 # Use with hackrf_transfer as follows to transmit :
 #
@@ -38,10 +38,6 @@ if len(sys.argv) != 3:
 	sys.exit(0)
 
 message = sys.argv[1]
-
-sample_rate = 8000000
-unit_seconds = 0.1
-amplitude = 127
 
 character_to_symbols_map = {
 	'A': '.-',
@@ -96,11 +92,6 @@ character_to_symbols_map = {
 	'>' : '.-.-.' # end transmission
 }
 
-def make_baseband_samples_dc(on, length_units):
-	length_samples = int(round(unit_seconds * length_units * sample_rate))
-	# Why multiply by two?
-	# Need I and Q components of complex vector for each sample.
-	return numpy.ones((length_samples * 2,), dtype=numpy.int8) * on
 
 def make_baseband_samples(amplitude, length_units):
 	frequency = 1000.0
@@ -108,6 +99,10 @@ def make_baseband_samples(amplitude, length_units):
 	k = 2 * numpy.pi * frequency / sample_rate
 	w = k * numpy.arange(length_samples)
 	return numpy.exp(w * 1j) * amplitude
+
+sample_rate = 8000000
+unit_seconds = 0.1
+amplitude = 127
 
 dot_units = 1
 dash_units = dot_units*3
