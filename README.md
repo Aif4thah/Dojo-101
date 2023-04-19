@@ -1,6 +1,9 @@
 # DOJO-101
+by [taisen.fr](https://taisen.fr)
 
-Base de connaissances en cybersécurité, Administration et développement sécurisé.
+**Base de connaissances en cybersécurité, Administration et développement sécurisé.**
+
+![banner](./Dojo101.jfif)
 
 ## Sujets
 
@@ -10,7 +13,6 @@ Base de connaissances en cybersécurité, Administration et développement sécu
 * [Forensic](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Forensic)
 * [RF](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-RF)
 
-Plus d'information sur [taisen.fr](https://taisen.fr)
 
 ## Licence
 
@@ -35,7 +37,7 @@ This repository, together with its tools, is provided by Taisen-Solution on an �
 ## Usage
 
 
-![Alt Text](./demo.gif)
+![demo](./demo.gif)
 
 
 1. télécharger le projet
