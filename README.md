@@ -3,7 +3,7 @@ by [taisen.fr](https://taisen.fr)
 
 **Base de connaissances en cybersécurité, Administration et développement sécurisé.**
 
-![banner](./Dojo101.jfif)
+![banner](./Dojo101.png)
 
 ## Sujets
 
