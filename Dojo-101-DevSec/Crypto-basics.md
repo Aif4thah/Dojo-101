@@ -8,13 +8,108 @@ Lorsque le chiffrement symétrique est mis en œuvre, la même clé permet de ch
  
 ### Algo
 
-* 3DES (obsolètes)
+* 3DES (obsolète)
 * Rijndael, AES
 
 ### Use case
 
 * Pour la mise en œuvre de chiffrement de surface, par exemple la mise en œuvre de la technologie Bitlocker
 * Lors de revues liées aux choix de suites cryptographiques (dont TLS)
+
+### exemple
+
+```powershell
+
+<# utilisation:
+
+$aes = Generer-cle
+$iv = generer-iv                                      
+$msgchiffre = Chiffrer-message -Message "test" -Key $aes -IVs $iv
+$msgchiffre
+Dechiffrer-message -EncryptedString $msgchiffre -Key $aes -IVs $iv
+
+/!\ attention: contrairement à la clé, les IV ne doivent pas être réutilisés.
+Ce script est utilisé à titre éducatif et n'est pas là pour garantir la confidentialité d'échanges en production.
+
+#>
+
+
+
+function Generer-cle {
+
+    $AESKey = New-Object Byte[] 32
+    [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($AESKey)
+    return $AESKey
+
+}
+
+
+function Generer-IV {
+
+    $IV = New-Object Byte[] 16
+    [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($IV)
+    return $IV
+
+}
+
+
+function Chiffrer-message
+{
+    param(
+    [Parameter(Mandatory=$true, Position=0)]
+    [ValidateNotNullOrEmpty()]
+    [string] $Message,
+
+    [Parameter(Mandatory=$true, Position=1)]
+    [System.Byte[]] $Key,
+  
+    [Parameter(Mandatory=$true, Position=2)]
+    [Byte[]] $IVs
+
+    )
+
+$AES = New-Object System.Security.Cryptography.AesCryptoServiceProvider
+$AES.Key = $Key
+$AES.IV = $IVs
+$AES.Mode = "CBC"
+$Encryptor = $AES.CreateEncryptor()
+$EncryptedBytes = $Encryptor.TransformFinalBlock([Text.Encoding]::UTF8.GetBytes($Message), 0, $Message.Length)
+return [BitConverter]::ToString($EncryptedBytes) -replace '-', ''
+
+}
+
+
+## déchiffrement
+
+function Dechiffrer-message
+{
+    param(
+    [Parameter(Mandatory=$true, Position=0)]
+    [ValidateNotNullOrEmpty()]
+    [string] $EncryptedString,
+
+    [Parameter(Mandatory=$true, Position=1)]
+    [System.Byte[]] $Key,
+
+    [Parameter(Mandatory=$true, Position=2)]
+    [Byte[]] $IVs
+
+    )
+
+$EncryptedBytes = [byte[]]::new($EncryptedString.Length / 2)
+for ($i = 0; $i -lt $EncryptedBytes.Length; $i++) {
+    $EncryptedBytes[$i] = [Convert]::ToByte($EncryptedString.Substring($i * 2, 2), 16)
+}
+$AES = New-Object System.Security.Cryptography.AesCryptoServiceProvider
+$AES.Key = $Key
+$AES.Mode = "CBC"
+$AES.IV = $IVs
+$Decryptor = $AES.CreateDecryptor()
+$DecryptedBytes = $Decryptor.TransformFinalBlock($EncryptedBytes, 0, $EncryptedBytes.Length)
+return [Text.Encoding]::UTF8.GetString($DecryptedBytes)
+
+}
+```
 
 ## Chiffrement asymétrique :
 
@@ -34,6 +129,25 @@ Le chiffrement asymétrique est composé d’une clé privée et d’une clé pu
 * Lors de revues liées aux choix de suites cryptographiques (TLS, SSH, PGP…)
 * Stockage des secrets
 
+### exemple
+
+```powershell
+$params = @{
+    Subject = 'CN=PowerShell Code Signing Cert'
+    Type = 'CodeSigning'
+    CertStoreLocation = 'Cert:\CurrentUser\My'
+    HashAlgorithm = 'sha256'
+}
+$cert = New-SelfSignedCertificate @params
+
+echo "write-host test" > test.ps1
+PS C:\Users\vaca\Downloads> Set-AuthenticodeSignature .\test.ps1 $cert
+gc .\test.ps1
+@(Get-ChildItem cert:\CurrentUser\My -codesigning)[0] |fl *
+.\test.ps1 #verification signature ( fail si le certificat n'est pas trusté)
+```
+
+
 ## Hash (Condensats)
 
 ### Principe 
@@ -49,6 +163,12 @@ le condensat (ou hash), est obtenu grâce à opération mathématique à sens un
 
 * Pour le stockage de secret, par exemple des mots de passe en base de données
 * Lors de revues liées aux choix de suites cryptographiques (HMAC, Oauth/JWT, TLS)
+
+### exemple
+
+```powershell
+Get-FileHash -Algorithm SHA512 <fichier>
+```
 
 ## Génération d'aléas:
 

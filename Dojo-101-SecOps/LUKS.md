@@ -7,11 +7,13 @@ Le paquet cryptsetup doit être installé :
 sudo apt-get install cryptsetup
 ```
 
-## Voir les volumes chiffrés
+## Voir les volumes chiffrés et leur état
 
 ```sh
 lsblk --fs
+sudo cryptsetup luksDump /dev/sda4
 ```
+
 
 ## Initialisation
 
@@ -22,10 +24,10 @@ sudo tail -f /var/log/messages
 ```
 Lors du branchement du disque, plusieurs lignes similaires à celles-ci doivent apparaître :
 ```
-Jul 20 21:25:29 pc kernel: [  678.139988] sd 7:0:0:0: [sdb] 976754645 4096-byte logical blocks: (4.00 TB/3.63 TiB)
+Jul 20 21:25:29 pc kernel: [678.139988] sd 7:0:0:0: [sdb] 976754645 4096-byte logical blocks: (4.00 TB/3.63 TiB)
 ```
 
-## Effacer le disque
+## (optionnel) Effacer le disque
 
 ```sh
 sudo dd if=/dev/zero of=/dev/sdb bs=4K
@@ -79,11 +81,6 @@ sudo cryptsetup luksRemoveKey /dev/sdb
 sudo cryptsetup luksChangeKey /dev/sdb
 ```
 
-## État
-
-```sh
-sudo cryptsetup luksDump /dev/sda4
-```
 
 ## sauvegarde des headers (indispensable pour la recovery)
 

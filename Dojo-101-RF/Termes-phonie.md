@@ -42,7 +42,7 @@ S : sierra
 
 T : tango
 
-U : uniforme
+U : uniform
 
 V: victor
 
@@ -52,7 +52,7 @@ X : x-ray
 
 Y : yankee
 
-Z : zoulou
+Z : zulu
 
 
 

@@ -23,6 +23,7 @@
 # Run to generate a file that contains baseband data you can later transmit
 # with hackrf_transfer:
 #
+#     .\venv\Scripts\activate
 #     python Hackrf-morse.py MYCALLSIGN baseband.cs8
 #
 # Use with hackrf_transfer as follows to transmit :
@@ -125,7 +126,7 @@ symbol_to_baseband_map = {
 # Start with a little silence.
 output = [baseband_space]
 
-for character in '<'+message.upper()+'>':
+for character in '<'+message.upper()+'>': # add "<" and ">" to respect procedure
 	symbols = character_to_symbols_map[character]
 	for symbol in symbols:
 		output.append(symbol_to_baseband_map[symbol])

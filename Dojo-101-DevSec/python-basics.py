@@ -4,6 +4,10 @@
 
 #!/usr/bin/env python3
 
+## dependances
+
+#$ pip install <package>
+
 ## Conditions
 
 """

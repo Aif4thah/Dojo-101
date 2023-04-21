@@ -12,6 +12,10 @@
 | /var |  nosuid,nodev,noexec | variables et logs |
 
 
+```sh
+cat /etc/fstab 
+```
+
 ## Clavier
 
 ```shell
@@ -46,6 +50,8 @@ gparted
 ```sh
 systemctl list-units
 systemctl status
+systemctl disable ssh.service 
+systemctl stop ssh.service 
 ```
 
 ## rpc et sockets
@@ -101,7 +107,7 @@ hexdump -C
 
 ### permission
 
-#### permission par défaut
+#### permission POSIX
 
 ```sh
 touch test
@@ -237,6 +243,7 @@ curl -d '{ "name": "Princess Leia" }' \
 ## Effacement avec shred
 
 ```sh
+shred test
 find <dir> -type f -exec shred {} \;
 ```
 

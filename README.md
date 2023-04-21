@@ -57,7 +57,7 @@ Le contenu est mis à jour régulièrement, pensez à faire un `git pull` avant 
 
 ## Si vous souhaitez contribuer
 
-* Fork + Pull request
+* [Fork](https://docs.github.com/fr/get-started/quickstart/fork-a-repo) + [Pull request](https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
 * Ajout au format Markdown / Text / Scripts
 * Dois déjà avoir été utilisé (CTF, formation, production)
 * Keep it simple stupid (KISS)

@@ -54,7 +54,7 @@ AuthorizedKeysFile	.ssh/authorized_keys
 
 # To disable tunneled clear text passwords, change to no here!
 PasswordAuthentication no
-#PermitEmptyPasswords no
+PermitEmptyPasswords no
 
 # Change to yes to enable challenge-response passwords (beware issues with
 # some PAM modules and threads)
@@ -86,7 +86,7 @@ UsePAM yes
 AllowAgentForwarding no
 AllowTcpForwarding no
 #GatewayPorts no
-X11Forwarding yes
+X11Forwarding no
 #X11DisplayOffset 10
 #X11UseLocalhost yes
 #PermitTTY yes
@@ -128,5 +128,5 @@ Ciphers aes256-ctr,aes192-ctr,aes128-ctr
 # plus sûr que les anciennes implémentations (mac-then-encrypt)
 MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com
 
-AllowUsers michael@192.168.1.0/24
+AllowUsers vaca@192.168.1.0/24
 

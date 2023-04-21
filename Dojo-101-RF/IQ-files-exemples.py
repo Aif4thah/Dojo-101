@@ -3,7 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-function write_iq():
+def write_iq():
     
     """
     In Python, and numpy specifically, we use the tofile() function to store a numpy array to a file. 
@@ -26,7 +26,7 @@ function write_iq():
     print(type(r[0])) # Verify it's 64
     r.tofile('bpsk_in_noise.iq') # Save to file
 
-function read_iq():
+def read_iq():
     
     """
     Now examine the details of the file produced and check how many bytes it is. 
