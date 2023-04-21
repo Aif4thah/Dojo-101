@@ -23,6 +23,7 @@ def write_iq(iqfile):
     # Now save to an IQ file
     r = r.astype(np.complex64) # Convert to 64
     r.tofile(iqfile +'.iq') # Save to file
+    #samples = np.fromfile('bpsk_in_noise.iq', np.complex64) # to Read the file further
 
     # file for hackrf one
     output_int = np.empty((len(r) * 2,), dtype=np.int8)
