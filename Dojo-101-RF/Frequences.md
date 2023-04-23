@@ -45,6 +45,12 @@ Source: [ARCEP](https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobil
 
 | DAB+ | 174 à 240 MHz |
 
+## TETRA (Terrestrial Trunked Radio)
+
+| Systèmes | Frequence |
+|----------|-----------|
+| Secours | 380-395 MHz |
+| Public  | 395-470 MHz |
 
 ## Fréquences d'urgence, détresse et essentielles - France et Europe HF VHF UHF
 
