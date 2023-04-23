@@ -76,7 +76,7 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 
 ## Tools
 
-* [SDRSharp (SDR#)](https://airspy.com/download/) : analyse de spectre et démodulations audio (analogique)
+* [SDRSharp (SDR#)](https://airspy.com/download/) : analyse de spectre et démodulations audio (analogique) et plugins pour numérique
 * [SDRAngel](https://www.sdrangel.org/), Universal Radio Hacker : analyse de spectre, analyse de capture / fichiers pour démoduler des signaux numériques
 * [PothosSDR](https://www.pothosware.com/) : flow
 * [GNU Radio](https://www.gnuradio.org/) / Radioconda : flow
