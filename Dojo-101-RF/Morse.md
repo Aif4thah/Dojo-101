@@ -66,12 +66,14 @@
 | , | --..-- ||
 | : | ---... ||
 | ? | ..--.. | demande la retransmission d'un message incompris |
+| ! | -.-.-- ||
 | ' | .----. ||
 | - | -....- ||
 | \| | -..-. ||
 | ( | -.--.- ||
 | ) | -.--.- ||
 | à | .--.- ||
+| @ | .--.-. ||
 | souligné | ..--.- | avant et après la partie soulignée |
 | double trait | -...- ||
 
@@ -79,14 +81,20 @@
 
 | msg | code | Observation|
 |------|------|------------|
-| compris | ...-. ||
+| compris | ...-.- ||
+| reçu | .-. ||
+| compris | ...-.- ||
 | erreur | ........ ||
+| repetez | .-..--.- ||
 | fin de transmission | .-.-. ||
 | à vous | -.- ||
 | Attente | .-... ||
+| transmettez | -.-- ||
+| attendez | .-...- |
 | Fin de travail | ...-.- ||
 | Signal de commencement | -.-.- | commencement de toute transmission |
 | séparatif | .-..- | pour la transmission de chiffres / nombres / coordonnées |
+| stop | -...- ||
 
 
 ## mise en oeuvre

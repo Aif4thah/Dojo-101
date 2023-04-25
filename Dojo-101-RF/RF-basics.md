@@ -70,8 +70,11 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 ## Antennes
 
 * Verticales omnidirectionnelles à λ/2 ou λ/4
+
 * Directionnelles avec directeurs, radiateur et réflecteur ex: Yagi
+
 * Parabolique (ex: reception sattelite)
+
 * Loop et cadre magnétique (ex: RFID)
 
 ## Tools
@@ -155,4 +158,3 @@ signal = numpy.exp(1j * 2 * numpy.pi * (2.5 / 128) * numpy.arange(128))
 ```
 
 voir les scripts pour aller plus loin
-

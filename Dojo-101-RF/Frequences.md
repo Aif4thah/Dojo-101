@@ -54,6 +54,26 @@ Source: [ARCEP](https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobil
 
 ## Fréquences d'urgence, détresse et essentielles - France et Europe HF VHF UHF
 
+[OLDU](http://oldu.fr/com/)
+
+* VHF Maritime : 156,800 MHz (Canal 16) - VHF Air : 121,500 MHz et 243 MHz
+
+* CB : 27,065 Mhz (Canal 9)
+
+* CROSS : Centre régional opérationnel de surveillance et de sauvetage
+Métropole bande marine VHF entre 156,025 et 162,525 MHz en modulation de fréquence
+Et bande marine entre 1 605 kHz et 4 000 kHz en plusieurs sous bandes
+
+* Samu : bande des 150 Mhz - ~154.525 Mhz - 152-156 Mhz fréquence sortie relais - Véhicules/Fixes au-dessus 4,6 Mhz.
+
+* Sapeur Pompiers : 85.500 et 86.600 Mhz (France sauf Paris) - Canaux Plan Rouge UHF : 465.650 Mhz et 465.750 Mhz.
+
+* Vol libre : FFLV - Fréquence 143.9875 MHz
+
+* Secours Montagne : Mont Blanc, 3 relais, 154.4625 MHz - Auvergne, 2 relais 80 Mhz et 150 MHz (à mettre à jour)
+Haute Savoie, Val d'Aoste, Valais Suisse : canal E 161,300 MHz (relayé par infrastructures spécialisées, SDIS 74 pour France)
+
+
 Source: [Groupe FCF](https://groupefcf.org/)
 
 | NOM DE LA FREQUENCE	| FREQUENCE	| MODULATION |	SERVICE |	PAYS |
@@ -85,164 +105,33 @@ Source: [Groupe FCF](https://groupefcf.org/)
 ||5.680 | USB |	Aeronautique Maritime |	International |
 || 6.215 || Aeronautique Maritime |	International |
 
-### Complément FCf
-
-* cf `Baofeng_UV-5R_V1-2.csv`
-
-* fichier lisez moi:
-
-```
-** En aucun cas le groupe FCF sera tenu responsable d'une mauvaise utilisation des fréquences radio; toutes les fréquences 
-proposés sur ce codeplug sont uniquement réservé à de l'écoute ** 
-
-
-fichier .img uniquement compatible avec UV5R et certains variants à utiliser avec le menu [ouvrir / sauvegarder]
-fichier .csv compatible avec n'importe qu'elle radio couvrant les fréquences 136-174 MHz et 400-470 MHz,
-pensez à l'utiliser avec les menus [importer / exporter]
-
-
-LEXIQUE : 
-
-T = CTCSS uniquement en émission 
-* = détresse 
-! = appel 
-!* = canal d'appel et de détresse 
-
-*bande PMR446 pour plus d'info http://fcf77.wifeo.com/la-norme-pmr446.php*
-
-
-0: PMR8 TX 18 avec sous canal 18 uniquement en émission (TX) le canal 8 est celui destiné
- à l'appel sur la bande PMR446 le sous canal 18 est destiné à de la détresse en France, 
-la réception est quand à elle ouverte à toute communications car aucun sous canal en RX.
-
-1: Canal 1 PMR446
-2: Canal 2 PMR446
-3: Canal 3 PMR446 
-4: Canal 4 PMR446 
-5: Canal 5 PMR446
-6: Canal 6 PMR446
-8: Canal 8 PMR446 
-9: Canal 9 PMR446
-10: Canal 10 PMR446
-11: Canal 11 PMR446
-12: Canal 12 PMR446
-13: Canal 13 PMR446
-14: Canal 14 PMR446
-15: Canal 15 PMR446 
-16: Canal 16 PMR446
-17: Canal 1 avec sous canal 1 souventprogrammé par défaut sur les talkie-walkies du commerce 
-18: Canal 1-2 CSC Canal Sécrité Chasse (comme le .12) 
-19: Canal 1-9 CSR Canal Sécurité Route (comme le canal 19 CB) 
-20: Canal 1-12 Canal communication d'urgences europe 
-21: Canal 2-2 PMR446 
-22: Canal 2-8 Canal Camping-Car 
-23: Canal 3-3 survie prévoyance destiné aux relais 
-24: Canal 3-13 survie prévoyance destiné aux relais 
-25: Canal 3-23 survie prévoyance destiné aux relais 
-26: Canal 3-33 survie prévoyance appel, communications direct 
-27: Canal 4-4 pratiquants 4x4, sorite 
-28: Canal 4-14 Canal Sécurité Drônes entre pratiquants FPV afin déviter tout danger
-alerte météo ou autres 
-
-29: Canal 5-5 Radioscoutisme 
-30: Canal 6-6 destiné aux relais expérimentaux aussi appellé R1 
-31: Canal 6-16 destiné aux relais expérimentaux aussi appellé R2 
-32: Canal 6-26 destiné aux relais expérimentaux aussi appellé R3 
-33: Canal 6-36 destiné aux relais expérimentaux aussi appellé R4
-34: Canal 7-7 RRM Radio Rando Montagne destiné aux communications entre pratiquants
-de la rando, bivouac, bushcraft, alpinisme ou toutes autres pratiques en extérieur, 
-peut aussi être utilisé pour de la détresse entre pratiquants mais également 
-pour les communications de sécurité http://77rrm.fr/ 
-
-35: Canal 8-8 destiné à l'appel entre pratiquants PMR446 
-36: Canal 8-18 destiné à la détresse réservé à la veille de celle-ci, pour lancer 
-un appel de détrese -> Mémoire 0
-
-
-*bande VFB pour plus d'infos http://fcf77.wifeo.com/vfb-169-mhz.php*
-
-
-37: Canal 1 VFB destiné aux appelles et à la détresse 
-38: Canal 2 VFB 
-39: Canal 3 VFB destiné à la survie prévoyance 
-40: Canal 4 VFB destiné au Packet radio APRS 
-41: Canal 5 VFB 
-42: Canal 6 VFB destiné aux relais expérimentaux 
-43: Canal 7 VFB Canal (M) ontagne semblable au 7-7 RRM de la bande PMR446 
-
-
-*bande VHF marine pour plus d'info http://fcf77.wifeo.com/vhf-marine.php*
-
-
-44: Canal 9 VHF marine veillé par les capitaineries des ports de plaisance
-45: Canal 10 VHF marine destiné aux communications fluviales, Marine Nationale 
-46: Canal 11 VHF marine 
-47: Canal 12 VHF marine 
-48: Canal 13 VHF marine 
-49: Canal 14 VHF marine dégagement du canal 15 VHF marine 
-50: Canal 15 VHF marine surveillance des plages, postes de secours 
-51: Canal 16 VHF marine d'appel, de sécurité, d'urgence et de détresse, ce canal est veillé par
-toutes les VHF marines en double veille ainsi que par toutes les capitaineries, ports
-Marine Nationale, secours en mer, CROSS etc.. 
-
-52: Canal 17 VHF marine 
-53: Canal 18 VHF marine 
-54: Canal 67 VHF marine communications entre navires, canal de dégagement secours en mer
-55: Canal 68 VHF marine communications entre navires, canal de dégagement secours en mer
-56: Canal 69 VHF marine communications entre navires, canal de dégagement secours en mer
-57: Canal 70 VHF marine uniquement ASN Appel Selectif Numérique, appel de détresse numérique
-58: Canal 71 VHF marine communications entre navires, canal de dégagement secours en mer
-59: Canal 72 VHF marine communications entre navires, canal de dégagement secours en mer 
-60: Canal 73 VHF marine communications entre navires, canal de dégagement secours en mer 
-61: Canal 74 VHF marine communications entre navires, canal de dégagement secours en mer 
-62: Canal 77 VHF marine communications entre navires
-
-
-*fréquence FFVL parapente 
-pour plus d'info https://federation.ffvl.fr/pages/fr-quences-et-postes-radio-pour-vol-libre*
-
-
-63: Canal FFVL Fédération Française de Vol Libre, parapente, canal de sécurité, d'info météo 
-de détresse entre pratiquants 
-
-
-*fréquence Canal E mergency 
-pour plus d'info http://fcf77.wifeo.com/canal-emergency-montagne.php*
-
-
-64: Canal E mergency destiné aux communications de sécurité, d'rugence et de détresse 
-dans la zone des alpes Haute Savoie, ce canal est gratuit mais nous vous recommandons 
-de passer via un revendeur de matériel radio pro agréé dispo sur le guide (lien du dessus) 
-
-
-*bande radioamateur usage soumis à licence, pour les fréquences LPD433 en service partagé
-avec les radioamateurs pour plus d'info http://fcf77.wifeo.com/la-norme-lpd433.php*
-
-65: Canal 1 VHF ADRASEC destiné à de la détresse 
-66: Canal 2 VHF ADRASEC 
-67: Canal 3 VHF ADRASEC 
-68: Canal 18 bande LPD433 canal d'appel radioamateurs partagé avec LPD433
-69: Canal 20 bande LPD433 canal communications d'urgence partagé avec LPD433
-70: Canal d'appel VHF service radioamateurs 
-71: Canal ISS VHF International Spacial Station destiné aux communications simplex 
-entre l'ISS et la terre dans le cadre de communications avec des écoles ou de l'envoie
-d'images en mode SSTV en mode PD120 
-72: Canal ISS UHF International Spacial Station destiné aux communications simplex 
-entre l'ISS et la terre dans le cadre de communications avec des écoles
-73: Canal de sortie du relais transpondeur ambarqué sur l'ISS, 
-fréquence d'entrée 145.990 + CT 67.0 Hz, contact radioamateur via le relais.
-Assez souvent écoutable depuis le sol avec un simple portatif.
-74: Canal 1 UHF destiné aux communications d'urgence service radioamateur 
-75: Canal 2 UHF destiné aux communications d'urgence service radioamateur 
-76: Canal 3 UHF destiné aux communications d'urgence service radioamateur
-
-
-************ n'hésitez pas à nous proposer d'autres fréquences utiles et ludiques***********
-
-FCF groupe
-```
-
 ## Internet
 
 [WRN World Radio Network](https://www.encompass.tv/solutions/radio/)
+[Radio.fr](https://www.radio.fr/app)
+
+## Emetteurs nationaux de secours
+
+[OLDU](http://oldu.fr/com/)
+
+Les radios FM ont une propagation limitée en distance (~50 km). En cas de sinistre ou perturbation du réseau électrique :
+Les émetteurs suivants permettent une réception sur les basses fréquences LF/GO (LowFrequency/GrandesOndes) en AM (Modulation d'Amplitude)
+
+* France : Emetteur de Roumoules (RMC - Alpes)
+Fréquence 216 KHz - Longueur Onde 1389 m - Puissance 1500 kW (6h-20h sinon 900 kW) - Emission de 5h à 24h
+
+* Allemagne : Émetteur Felsberg-Berus (Europe 1 - Sarre)
+Fréquence 183 Khz - Longueur Onde 1647 m - Puissance 1500 kW - Emission de 4h à 1h50
+
+* Luxembourg : Émetteur Beidweiler (RTL - Junglinster)
+Fréquence 234 Khz - Longueur Onde 1282 m - Puissance 2000 kW
+
+* France : Emetteur d'Issoudun (TDF - Indres)
+Puissance 500 kW
+
+* France : Emetteur Allouis (France Inter - Cher). (Au 31/12/2016, l’émetteur a cesse la diffusion France Inter)
+Fréquence 162 KHz - Longueur Onde 1852m - Puissance 2000 kW (réduite à 1000 kW la nuit)
+
+
+
 
