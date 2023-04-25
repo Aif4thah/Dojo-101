@@ -33,6 +33,7 @@
 
 import sys
 import numpy
+import matplotlib.pyplot as plt
 
 if len(sys.argv) != 3:
 	print("Usage: <command> <message> <output file>")
@@ -137,9 +138,16 @@ for character in '<'+message.upper()+'>': # add "<" and ">" to respect procedure
 
 # Append a little extra silence at the end.
 output.append(baseband_space)
-
 output = numpy.concatenate(output) * amplitude
 
+# verify
+try:
+	plt.plot(output)
+	plt.show()
+except:
+	pass
+
+# write
 output_int = numpy.empty((len(output) * 2,), dtype=numpy.int8)
 output_int[0::2] = numpy.round(output.real)
 output_int[1::2] = numpy.round(output.imag)
