@@ -16,8 +16,8 @@ def write_iq(iqfile):
     r = x_symbols
 
     # NOISE (comment if not needed)
-    # n = (np.random.randn(num_symbols) + 1j*np.random.randn(num_symbols))/np.sqrt(2) # AWGN with unity power
-    # r = x_symbols + n * np.sqrt(0.01) # noise power of 0.01
+    n = (np.random.randn(num_symbols) + 1j*np.random.randn(num_symbols))/np.sqrt(2) # AWGN with unity power
+    r = x_symbols + n * np.sqrt(0.01) # noise power of 0.01
 
     # plot
     print(r)
