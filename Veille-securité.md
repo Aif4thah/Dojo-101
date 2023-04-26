@@ -4,13 +4,11 @@ practice makes perfect
 
 # newsletters
 
-## SANS newsletters
+[SANS](https://www.sans.org/newsletters/)
 
-https://www.sans.org/newsletters/
+[Defense/Cyper Scoop](https://cyberscoop.com/subscribe/)
 
-## Kindred
-
-https://news.infosecgur.us/
+[Kindred](https://news.infosecgur.us/)
 
 # Referentiels
 
