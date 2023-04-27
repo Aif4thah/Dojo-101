@@ -12,11 +12,6 @@
 * Audit d'architecture
 * Ateliers de sensiblisations sécurité
 
-## Conception
-
-* Audit de code
-* Ateliers de sensiblisations sécurité
-
 ## Déploiement
 
 * Audit d'intrusion

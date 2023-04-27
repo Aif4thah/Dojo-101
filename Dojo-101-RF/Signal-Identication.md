@@ -1,4 +1,4 @@
-# indentification de signal
+# indentification de signal SIGINT
 
 ## methode:
 
