@@ -81,7 +81,6 @@ sudo cryptsetup luksRemoveKey /dev/sdb
 sudo cryptsetup luksChangeKey /dev/sdb
 ```
 
-
 ## sauvegarde des headers (indispensable pour la recovery)
 
 ```sh

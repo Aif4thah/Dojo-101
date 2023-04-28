@@ -28,6 +28,7 @@
 
 1. Vérifier l’arrêt puis,
 2. ANTACAL : ANTenne ACcessoires ALimentation
+3. Utiliser des cables blindés sous peine d'avoir un signal de mauvaise qualité
 
 ```
 Pour les ER avec forte puissance d'émission:
