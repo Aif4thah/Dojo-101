@@ -14,6 +14,14 @@
 |Extremely high frequency (EHF)| 30 GHz–300 GHz|
 |Uncategorized | 300 GHz–3,000 GHz |
 
+## Satellites
+
+Satellites NOAA et Meteor :
+Noaa 18 sur 137,9125 MHz
+NOAA 19 sur 137.100 MHz
+NOAA 15 sur 137.620 MHz
+meteor M1 137.100 MHz
+meteor m2 137.900 MHz
 
 ## Bandes libres en France
 

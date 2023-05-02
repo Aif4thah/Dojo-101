@@ -13,7 +13,7 @@
 
 
 ```sh
-cat /etc/fstab 
+cat /etc/fstab
 ```
 
 ## Clavier

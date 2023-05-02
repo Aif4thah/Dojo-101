@@ -106,8 +106,16 @@ Test-NetConnection google.fr -TraceRoute
 
 ## Web
 
-iwr https://google.fr
+Invoke-WebRequest https://google.fr
 iwr https://raw.githubusercontent.com/Aif4thah/CShidori/main/LICENSE -outfile .\LICENSE
+
+## API
+
+$headers = @{
+    'x-apikey' = $VTApiKey   
+}
+Invoke-RestMethod -Headers $headers "https://www.virustotal.com/api/v3/search?query=$hash"
+
 
 ### url decode
 
@@ -126,6 +134,12 @@ gc test.ps1
 ### NTFS
 
 get-acl .\test.ps1 |fl
+(Get-Acl .\test.ps1).Access
+
+### copier des permission
+
+Get-Acl -Path ".\test1.txt" | Set-Acl -Path ".\test2.txt"
+
 
 ### SMB
 
