@@ -12,6 +12,7 @@
 | /var |  nosuid,nodev,noexec | variables et logs |
 
 ```sh
+lsblk
 cat /etc/fstab
 ```
 
@@ -25,7 +26,7 @@ loadkeys fr
 ## miscs
 
 ```sh
-apt install binutils
+apt install binutils net-tools -y
 ```
 
 ## environnement
@@ -84,6 +85,12 @@ apt-get install --fix-broken
 file executable.2772.exe 
 objdump -d /usr/bin/sh
 strings <executable ou l'on cherche des chaines de chars>
+```
+
+## integrité
+
+```sh
+sha256sum test
 ```
 
 ## hexa

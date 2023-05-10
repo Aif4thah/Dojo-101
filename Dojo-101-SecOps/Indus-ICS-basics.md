@@ -37,7 +37,6 @@ https://www.commoncriteriaportal.org/
 * qualification standard, basée sur une évaluation Critères Communs EAL 3+
 * qualification renforcée, basée sur une évaluation Critère Communs EAL 4+
 
-
 ## démarche de sécurisation
 
 0. défense périmetrique (convertisseur vers / depuis TCP/IP)

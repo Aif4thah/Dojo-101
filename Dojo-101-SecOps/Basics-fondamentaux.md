@@ -1,4 +1,4 @@
-# Fondamentaux SSI - Bacics
+# Fondamentaux SSI - Basics
 
 # SI
 

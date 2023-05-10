@@ -276,8 +276,6 @@ Get-NetFirewallProfile
 Get-NetConnectionProfile 
 gcm *Firewall*
 
-
-
 ## Configuration de Windows Defender
 
 Get-MpPreference
