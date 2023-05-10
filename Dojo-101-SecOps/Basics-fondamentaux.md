@@ -50,7 +50,7 @@ Risque = Impact * Vraissemblance
 * RGPD : Données personnelles
 * PCI : bancaire
 * HDS : Données de Santé
-* ISO27001 : normes
+* ISO2700X : normes SMSI
 * RGS : Administration
 
 # Vulnérabilité

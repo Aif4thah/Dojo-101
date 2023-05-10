@@ -58,7 +58,6 @@ Le contenu est mis à jour régulièrement, pensez à faire un `git pull` avant 
 
 * [Fork](https://docs.github.com/fr/get-started/quickstart/fork-a-repo)
 * Ajout du contenu au format Markdown/Text/Scripts - Keep It Simple Stupid
-* Dois déjà avoir été utilisé - CTF/formation/production
 * [Pull request](https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
 
 ## ❤ Aidez-moi à garder Dojo-101 libre et open source
