@@ -22,10 +22,10 @@ Risque = Vuln + Menace + Impact
 
 ## threats modeling	
 
-1. What are we working on?
-2. What can go wrong?
-3. What are we going to do about it?
-3. Did we do a good job?
+1. What are we working on ?
+2. What can go wrong ?
+3. What are we going to do about it ?
+3. Did we do a good job ?
 
 * Assess Scope - What are we working on? This might be as small as a sprint, or as large as a whole system.
 * Identify what can go wrong - This can be as simple as a brainstorm, or as structured as using STRIDE, Kill Chains, or Attack Trees.

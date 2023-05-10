@@ -11,7 +11,6 @@
 | /dev | aucune | peripheriques |
 | /var |  nosuid,nodev,noexec | variables et logs |
 
-
 ```sh
 cat /etc/fstab
 ```
