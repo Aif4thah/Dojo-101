@@ -4,12 +4,9 @@
 
 * système d’information :  ensemble organisé de ressources (matériel, logiciels, personnel, données et procédures) permettant de traiter et de diffuser de l’information.
 
-* Sécurité d’un système d’information - ensemble des moyens techniques et non techniques de
-protection, permettant à un système d’information de résister à des événements susceptibles de
-compromettre la disponibilité, l’intégrité ou la confidentialité des données, traitées ou transmises et des
-services connexes que ces systèmes offrent ou rendent accessibles.
+* Sécurité d’un système d’information - ensemble des moyens techniques et non techniques de protection, permettant à un système d’information de résister à des événements susceptibles de compromettre la disponibilité, l’intégrité ou la confidentialité des données, traitées ou transmises et des services connexes que ces systèmes offrent ou rendent accessibles.
 
-* Actifs (Assets : tout ce qui à de la valeur au sein du SI)
+* Actifs (Assets) : tout ce qui à de la valeur au sein du SI
 
 # DICP
 

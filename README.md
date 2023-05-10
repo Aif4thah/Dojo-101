@@ -9,11 +9,11 @@ by [TAISEN SOLUTIONS](https://taisen.fr)
 
 ## Base de connaissances en cybersécurité
 
-* [Developpement sécurisé](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-DevSec)
+* [Développement sécurisé](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-DevSec)
 * [Administration sécurisée](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-SecOps)
 * [Pentest](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Pentest)
 * [Forensic](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Forensic)
-* [RF](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-RF)
+* [Radiofréquences](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-RF)
 
 ## Avis de non-responsabilité
 
@@ -36,7 +36,9 @@ This repository, together with its tools, is provided by Taisen-Solution on an �
 ![demo](./demo.gif)
 
 1. télécharger le projet
-2. Ouverture du répertoire téléchargé dans un éditeur de texte moderne (`VScode`) afin de pouvoir rechercher, visualiser (`ctrl`+`shift` +`V`) et éventuellement modifier l'ensemble des fichiers
+2. Ouverture du répertoire entier dans un éditeur de texte moderne (ex: `VScode`)
+3. rechercher par mots clé dans l'ensemble des fichiers (ex: `basics`, `windows`, `linux`)
+4. visualiser le contenu au format html (`ctrl`+`shift` +`V`)
 
 ## Script d'installation
 
