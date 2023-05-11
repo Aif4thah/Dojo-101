@@ -25,7 +25,14 @@
 Vulnérabilité : Faute, par malveillance ou maladresse, dans les spécifications, la conception, la réalisation, l’installation ou la configuration d’un système, ou dans la façon de l’utiliser. Remarques : Une vulnérabilité peut être utilisée par un code d’exploitation et conduire à une intrusion dans le système. (faiblesse sur le SI)
 
 Risque = Menace * Vulnérabilité * Impact
-Risque = Impact * Vraissemblance 
+Risque = Impact * Vraissemblance
+
+# Traitement du risque
+
+* écarter
+* attenuer
+* transferer
+* accepter
 
 # cadre juridique
 

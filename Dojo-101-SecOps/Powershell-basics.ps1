@@ -23,6 +23,12 @@ $var |gm #lister les membres (proprietés et fonctions)
 
 $var = @( 1,2,3 )
 
+## afficher
+
+write-host "coucou $a" -foregroundColor Cyan
+write-host 'coucou $a' -foregroundColor Cyan
+write-host ("[!] ceci est la valeur de ma variable : {0}" -f $var) -ForegroundColor Cyan
+
 
 ## saisies utilisateurs
 
@@ -36,11 +42,6 @@ $var = (read-host ">>>").ToString()
 
 $Secure = Read-Host "saisissez un secret" -AsSecureString
 
-
-## afficher
-
-
-write-host ("[!] ceci est la valeur de ma variable : {0}" -f $var) -ForegroundColor Cyan
 
 
 ## conditions et booléens
@@ -61,7 +62,6 @@ ls |%{ $_.FullName }
 
 ## chercher une commande
 
-
 gcm *bitlocker*
 help Unlock-BitLocker
 alias %
@@ -73,20 +73,16 @@ get-date
 get-date |ft *
 get-date |fl *
 
-## Transformer un resultat
+## Transformer un objet
 
 
 get-date |ConvertTo-Csv
-get-date |ConvertTo-Json
-get-date |ConvertTo-html
+get-date | ConvertTo-html
 
+## Manipuler les fichiers et les objets
 
-## Transformer en objet
-
-
-$json = get-date |ConvertTo-Json
-$json |ConvertFrom-Json
-
+Get-PSDrive |ConvertTo-Json > test.json
+cat .\test.json | ConvertFrom-Json
 
 ## Réseau
 
@@ -245,7 +241,7 @@ Set-ItemProperty -Path "registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\C
 Set-ItemProperty -Path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -name ClearPageFileAtShutdown -Value 1
 
 
-## Désactivation du sous-sytème linux:
+## Désactivation du sous-sytème linux
 
 Disable-WindowsOptionalFeature -online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart -Remove
 

@@ -1,4 +1,4 @@
-# Firewalld
+# Linux Firewalld
 
 contribution d'Antoine BARLOT
 

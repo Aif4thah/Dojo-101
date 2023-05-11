@@ -1,4 +1,4 @@
-# Firewall iptables
+# Firewall Linux iptables
  
 ## contenu du fichier Firewall.cfg:
 
