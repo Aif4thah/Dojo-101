@@ -8,7 +8,7 @@ Set-WinUserLanguageList -Force 'fr-FR'
 
 ## version
 
-
+$PsVersionTable
 $PsVersionTable.PSVersion
 
 
@@ -190,7 +190,6 @@ Get-ItemProperty -path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Con
 Get-Processmitigation
 Set-Processmitigation -System -Enable DEP,BottomUp,SEHOP #pas d'autres options pour limiter les effets de bord ; pose pbm avec virtualbox ? 
 Set-ProcessMitigation -System -Remove ; Set-ProcessMitigation -System -Reset #restauration de la conf par défaut 
-
 
 
 ## désactivation des « null sessions » :
