@@ -38,4 +38,9 @@
 
 ## Vulns connues
 
-MIFARE Classic : weak key qui permet de cloner / usurper facilement les badges
+### MIFARE Classic
+
+weak key qui permet de cloner / usurper facilement les badges
+brute force et export possible vers `proxmark` depuis Android avec `Mifaire Classic Tools`
+
+
