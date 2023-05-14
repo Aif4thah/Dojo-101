@@ -47,10 +47,6 @@ Uniquement pour partition MBR
 commande pour shooter grub / reparer le bootmgr / bcd :
 `bootsect /nt60 <drive name>: /mbr`
 
-## tool pour les taches rebarbatives
-
-`powertoys` et `devtoys`
-
 ### Pour réparer léenregistrement de démarrage :
 
 	Saisissez et exécutez la commande :
