@@ -107,10 +107,14 @@ iwr https://raw.githubusercontent.com/Aif4thah/CShidori/main/LICENSE -outfile .\
 
 ## API
 
-$headers = @{
-    'x-apikey' = $VTApiKey   
-}
+### headers
+
+$headers = @{'x-apikey' = $VTApiKey }
 Invoke-RestMethod -Headers $headers "https://www.virustotal.com/api/v3/search?query=$hash"
+
+### body
+
+Invoke-RestMethod -method Post -uri https://localhost:3000/Auth -Body '{"user":"test", "passwd":"test"}' -ContentType application/json
 
 
 ### url decode

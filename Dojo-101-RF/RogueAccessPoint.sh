@@ -1,3 +1,4 @@
+function AP1 {
 
 	#creation d'un Access Point
 	echo -e "/!\ KALI MUST BE SET IN AIRPLANE MODE/WIFI DISABLED BEFORE.\nthe nat configuration of iptables is not flush for do that: iptables -t nat -D PREROUTING 1 "
