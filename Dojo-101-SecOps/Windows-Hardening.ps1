@@ -14,6 +14,7 @@ Set-Processmitigation -System -Enable DEP,ForceRelocateImages,BottomUp,CFG,SEHOP
 Get-ProcessMitigation |select ProcessName |%{ Set-Processmitigation -Name $_.ProcessName -Enable DEP,BottomUp,SEHOP}
 Set-Processmitigation -Name chrome.exe -Enable DEP,BottomUp,CFG,SEHOP
 Set-Processmitigation -Name msedge.exe -Enable DEP,BottomUp,CFG,SEHOP
+Set-Processmitigation -Name Code.exe -Enable DEP,BottomUp,CFG,SEHOP
 
 # pour reset: #Set-ProcessMitigation -System -Remove ; Set-ProcessMitigation -System -Reset #restauration de la conf par défaut 
 
