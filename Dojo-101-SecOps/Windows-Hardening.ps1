@@ -11,8 +11,7 @@ Set-ExecutionPolicy -ExecutionPolicy Restricted
 
 #Protection de la mémoire
 Set-Processmitigation -System -Enable DEP,ForceRelocateImages,BottomUp,CFG,SEHOP
-Set-Processmitigation -Name keepass.exe -Enable DEP,ForceRelocateImages,BottomUp,CFG,SEHOP
-Get-ProcessMitigation |select processname |%{ Set-Processmitigation -Name $_ -Enable DEP,BottomUp,SEHOP }
+Get-ProcessMitigation |select ProcessName |%{ Set-Processmitigation -Name $_.ProcessName -Enable DEP,BottomUp,SEHOP}
 Set-Processmitigation -Name chrome.exe -Enable DEP,BottomUp,CFG,SEHOP
 Set-Processmitigation -Name msedge.exe -Enable DEP,BottomUp,CFG,SEHOP
 
@@ -119,7 +118,7 @@ cd 'C:\Program Files\PowerShell\7'
 powercfg /hibernate off
 
 # remove pagefile.sys at shutdown
-set-ItemProperty -Path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -Name ClearPageFileAtShutdown -Value 1
+Set-ItemProperty -Path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -Name ClearPageFileAtShutdown -Value 1
 
 # enable Memory integrity / virtualization-based security (VBS)
 New-ItemProperty -path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard"  -name "EnableVirtualizationBasedSecurity" -Value 1 -PropertyType "DWord" -ea SilentlyContinue
