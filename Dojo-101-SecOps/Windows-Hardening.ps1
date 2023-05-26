@@ -11,9 +11,12 @@ Set-ExecutionPolicy -ExecutionPolicy Restricted
 
 #Protection de la mémoire
 Set-Processmitigation -System -Enable DEP,ForceRelocateImages,BottomUp,CFG,SEHOP
-Get-ProcessMitigation -system |select processname |%{ Set-Processmitigation -Name $_ -Enable DEP,BottomUp,SEHOP }
+Set-Processmitigation -Name keepass.exe -Enable DEP,ForceRelocateImages,BottomUp,CFG,SEHOP
+Get-ProcessMitigation |select processname |%{ Set-Processmitigation -Name $_ -Enable DEP,BottomUp,SEHOP }
+Set-Processmitigation -Name chrome.exe -Enable DEP,BottomUp,CFG,SEHOP
+Set-Processmitigation -Name msedge.exe -Enable DEP,BottomUp,CFG,SEHOP
 
-#Set-ProcessMitigation -System -Remove ; Set-ProcessMitigation -System -Reset #restauration de la conf par défaut 
+# pour reset: #Set-ProcessMitigation -System -Remove ; Set-ProcessMitigation -System -Reset #restauration de la conf par défaut 
 
 #désactivation des « null sessions » :
 Set-ItemProperty registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters -name RestrictNullSessAccess -value 1
