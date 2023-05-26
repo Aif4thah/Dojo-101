@@ -6,11 +6,13 @@ en complement de la politique de sécurité local (SecPol.msc)
 #taille des logs
 Limit-EventLog -LogName "Security" -MaximumSize (4*1024*1024*1024)
 
-#execution policy (powershell -ep bypass t'façon)
+#execution policy
 Set-ExecutionPolicy -ExecutionPolicy Restricted
 
 #Protection de la mémoire
-#Set-Processmitigation -System -Enable DEP,BottomUp,SEHOP #pas d'autres options pour limiter les effets de bord ; pose pbm avec virtualbox ? 
+Set-Processmitigation -System -Enable DEP,ForceRelocateImages,BottomUp,CFG,SEHOP
+Get-ProcessMitigation -system |select processname |%{ Set-Processmitigation -Name $_ -Enable DEP,BottomUp,SEHOP }
+
 #Set-ProcessMitigation -System -Remove ; Set-ProcessMitigation -System -Reset #restauration de la conf par défaut 
 
 #désactivation des « null sessions » :
@@ -116,4 +118,20 @@ powercfg /hibernate off
 # remove pagefile.sys at shutdown
 set-ItemProperty -Path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -Name ClearPageFileAtShutdown -Value 1
 
+# enable Memory integrity / virtualization-based security (VBS)
+New-ItemProperty -path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard"  -name "EnableVirtualizationBasedSecurity" -Value 1 -PropertyType "DWord" -ea SilentlyContinue
+Set-ItemProperty -path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard"  -name "EnableVirtualizationBasedSecurity" -Value 1
 
+New-ItemProperty -path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard"  -name "RequirePlatformSecurityFeatures" -Value 1 -PropertyType "DWord" -ea SilentlyContinue
+Set-ItemProperty -path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard"  -name "RequirePlatformSecurityFeatures" -Value 1
+
+New-ItemProperty -path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard"  -name "Locked" -Value 0 -PropertyType "DWord" -ea SilentlyContinue
+Set-ItemProperty -path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard"  -name "Locked" -Value 0
+
+New-ItemProperty -path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" -name "Enabled" -Value 1 -PropertyType "DWord" -ea SilentlyContinue
+Set-ItemProperty -path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" -name "Enabled" -Value 1
+
+New-ItemProperty -path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" -name "Locked" -Value 0 -PropertyType "DWord" -ea SilentlyContinue
+Set-ItemProperty -path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" -name "Locked" -Value 0
+
+get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard
