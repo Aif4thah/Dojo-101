@@ -1,11 +1,26 @@
 # Drones
 
+## Definitions
+
+DSSS : Direct-Sequence Spread Spectrum
+FHSS : Frequency Hopping Spread Spectrum
+OFDM : Orthogonal Frequency Division Multiplexing
+
 ## civil
+
+### Sigint
+
+| Frequency | 433Mhz | 868Mhz | 2.4Ghz | 5Ghz |
+|-----|--------|---------|-------|-----|
+| Control | No | No | DSSS+FHSS/DSSS/OFDM | OFDM |
+| Video | No | No | OFDM | OFDM, FM |
+| Telemetry | Divers | OFDM OFDM,DSSS | OFDM |
 
 ### Control
 
 | Brand | Frequency | Modulation | Technology |
 |-----|--------|---------|-------|
+| DJI Mavic 3 |  2.4Ghz/5.8Ghz | FHSS/DSSS ||
 | DJI Phantom | 2.4Ghz/5.8Ghz | FHSS/DSSS | FASST/Lightbridge |
 | Futaba | 2.4Ghz | FHSS/DSSS | FASST |
 | Spektrum | 2.4Ghz | FHSS/DSSS | DSMX |
@@ -19,20 +34,13 @@
 
 | Brand | Frequency | Modulation | Technology |
 |-----|--------|---------|-------|
+| DJI Mavic | 2.4Ghz/5.8Ghz | OFDM ||
 | DJI Phantom | 2.4Ghz | OFDM | Lightbridge/Wi-Fi |
 | Immersion | 2.4Ghz | FM ||
 | Yuneec | 5.8Ghz | OFDM | Wi-Fi |
 | Connex | 5.8Ghz | OFDM ||
 | Immersion | 5.8Ghz | FM ||
 | Boscam | 5.8Ghz | FM ||
-
-### Sigint
-
-| Frequency | 433Mhz | 868Mhz | 2.4Ghz | 5Ghz |
-|-----|--------|---------|-------|-----|
-| Control | No | No | DSSS+FHSS/DSSS/OFDM | OFDM |
-| Video | No | No | OFDM | OFDM, FM |
-| Telemetry | Divers | OFDM OFDM,DSSS | OFDM |
 
 ### Protocols
 
@@ -72,7 +80,6 @@
 | Effective Pixels | 20 MP  |
 | Video Resolution | 6K/30fps and 4K/60fps  |
 | Flight Time | 40 minutes  |
-| Aperture | f/2.8 to f/11  |
 
 
 #### Ryze Tech Tello
