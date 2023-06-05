@@ -60,7 +60,18 @@ Source: [ARCEP](https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobil
 | Secours | 380-395 MHz |
 | Public  | 395-470 MHz |
 
+##  APRS (Automatic Position Reporting System)
+
+France: 144.800 MHz
+
+## POCSAG (Post Office Code Standardisation Advisory Group)
+
+Sapeurs-Pompiers : 173.5125 MHz 
+privées: 466.025, 466.050, 466.075, 466.175, 466.20625 et 466.23125 MHz
+
 ## Fréquences d'urgence, détresse et essentielles - France et Europe HF VHF UHF
+
+### OLDU
 
 [OLDU](http://oldu.fr/com/)
 
@@ -113,6 +124,37 @@ Source: [Groupe FCF](https://groupefcf.org/)
 ||5.680 | USB |	Aeronautique Maritime |	International |
 || 6.215 || Aeronautique Maritime |	International |
 
+### Guerre de France
+
+[Guerre de france](https://guerredefrance.fr/Documents/RADIOLOCALE.pdf)
+
+```txt
+137,000 à 138,000 MHz Réseaux privés 
+138,000 à 144,000 MHz Usage militaire 
+143,9875 à 144,000 MHz Fréquence réservée "vol libre" 
+144,000 à 146,000 MHz Trafic amateur, bande des "2 mètres" 
+146,000 à 156,000 MHz Trafic aéronautique 
+151,005 à 152,990 MHz Réseaux privés 
+152,000 à 152,020 MHz Radiomessagerie sur site 
+152,570 à 152,655 MHz Appareils faible portée non spécifiques 
+152,990 à 155,995 MHz Réseaux privés 
+154,980 à 155,180 MHz Liaisons fixes d'abonnés isolés 
+155,995 à 162,995 MHz Réseaux privés en dehors des côtes 
+156,025 à 157,425 MHz Trafic maritime et fluvial, bande "VHF marine" 
+160,625 à 160,950 MHz Trafic maritime et fluvial, bande "VHF marine" 
+161,550 à 162,025 MHz Trafic maritime et fluvial, bande "VHF marine" 
+162,500 à 162,525 MHz Trafic maritime et fluvial, bande "VHF marine" 
+164,800 à 168,900 MHz Réseaux privés 
+169,410 à 173,815 MHz Radiomessagerie norme ERMES 
+169,795 à 173,495 MHz Réseaux privés 
+173,500 à 174,000 MHz Police, pompiers, SAMU
+
+- Canal 0 : 143,98750 FFVL ( parapentes )
+- Canal 16 : 156,800 SOS international (fréquence veillée par les services de secours)
+- 145,500 : Appels mobiles en FM (pour les radios amateurs)
+```
+
+
 ## Internet
 
 [WRN World Radio Network](https://www.encompass.tv/solutions/radio/)
@@ -139,7 +181,6 @@ Puissance 500 kW
 
 * France : Emetteur Allouis (France Inter - Cher). (Au 31/12/2016, l’émetteur a cesse la diffusion France Inter)
 Fréquence 162 KHz - Longueur Onde 1852m - Puissance 2000 kW (réduite à 1000 kW la nuit)
-
 
 
 
