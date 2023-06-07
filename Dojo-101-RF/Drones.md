@@ -1,10 +1,5 @@
 # Drones
 
-## Definitions
-
-DSSS : Direct-Sequence Spread Spectrum
-FHSS : Frequency Hopping Spread Spectrum
-OFDM : Orthogonal Frequency Division Multiplexing
 
 ## civil
 
@@ -15,6 +10,8 @@ OFDM : Orthogonal Frequency Division Multiplexing
 | Control | No | No | DSSS+FHSS/DSSS/OFDM | OFDM |
 | Video | No | No | OFDM | OFDM, FM |
 | Telemetry | Divers | OFDM OFDM,DSSS | OFDM |
+
+voir `Wifi` pour les Modulations à 2.4 et 5 Ghz
 
 ### Control
 

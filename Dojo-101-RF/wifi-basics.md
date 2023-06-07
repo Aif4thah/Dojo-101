@@ -1,5 +1,13 @@
 # Wifi basics
 
+## Modulation
+
+ASK, FSK, PSK
+OFDM : Orthogonal Frequency Division Multiplexing
+DSSS : Direct-Sequence Spread Spectrum
+FHSS : Frequency Hopping Spread Spectrum
+
+
 ## Cryptographie
 
 | Normes | Authent | Algorithmes | IV (bits) | Clé (bits) |

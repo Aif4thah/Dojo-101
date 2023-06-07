@@ -40,9 +40,13 @@ NE JAMAIS TOUCHER L’ANTENNE EN EMISSION
 
 `Antenna` <-> `Ampli + filter` <-> `Analog/Digit` <-> `Modem error correction` <-> `Encryption` <-> `Network routing GUI` <-> `User`
 
+## Sans modulation
+
+* Morse (lent mais robuste) 
+
 ## Modulations
 
-* Amplitude AM, et en quadrature QAM, ex: TNT
+* Amplitude AM, et en quadrature QAM, ex: TNT, Amplitude-Shift Keying: ASK
 
 * Binaire (On-Off Key), ex: télécommandes
 
@@ -61,8 +65,6 @@ NE JAMAIS TOUCHER L’ANTENNE EN EMISSION
 * Gaussian minimum-shift keying ex: GSM
 
 * Orthogonal Frequency-division multiplexing (OFDM), ex: UMTS,LTE, CPL, Wifi
-
-* Pas de modulation mais plus robuste: Morse
 
 ## Encodage
 
