@@ -61,6 +61,7 @@ Risque = Impact * Vraissemblance
 
 * N° CVE
 * Score CVSS
+* Reference CWE
 
 # à lire et à comprendre:
 

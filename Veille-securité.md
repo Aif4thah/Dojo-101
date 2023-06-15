@@ -1,33 +1,30 @@
 # pratiquer
 
-practice makes perfect
+"""practice makes perfect"""
 
 # newsletters
 
 [SANS](https://www.sans.org/newsletters/)
 
-[Defense/Cyper Scoop](https://cyberscoop.com/subscribe/)
+# Referentiels et bonne pratiques
 
-[Kindred](https://news.infosecgur.us/)
-
-# Referentiels
-
-* ANSSI
+* [ANSSI](https://www.ssi.gouv.fr/)
+* [SANS](https://www.sans.org/fr_fr/)
 * OWASP
 * MITRE
-* SANS
 
 # vulnerabilités
 
-https://www.cert.ssi.gouv.fr/
+[CERT-FR](https://www.cert.ssi.gouv.fr/)
 
-https://www.cisa.gov/uscert/ncas
+[CERT-US](https://www.cisa.gov/uscert/ncas)
 
 # exploits
 
-https://www.exploit-db.com/
+[exploid-db](https://www.exploit-db.com/)
 
 # exploits recents / google dorks
 
-site:hackerone.com inurl:/reports/
-https://hackerone.com/reports/XXXXXX
+`site:hackerone.com inurl:/reports/`
+
+`https://hackerone.com/reports/<XXXXXX>`

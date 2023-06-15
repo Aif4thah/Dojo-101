@@ -1,11 +1,9 @@
 # DOJO-101
 
-by [TAISEN SOLUTIONS](https://taisen.fr)
-
 [![License: GNU GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Aif4thah/Dojo-101/pulls)
 
-![banner](./Dojo101.png)
+~~knowledge~~ **Sharing** is power.
 
 ## Base de connaissances en cybersécurité
 
