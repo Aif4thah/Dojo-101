@@ -14,7 +14,9 @@
 
 ## Evidence / Preuve
 
-...
+...Capture: Snipping tool
+
+...Video: Xbox game bar: `Windows + G`
 
 ## Steps to reproduce / Étapes de reproduction
 

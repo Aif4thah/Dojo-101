@@ -1,7 +1,7 @@
 # SAST Tools:
 
-- SAST = trouve 50% des vulns max ( plutot 30% en moyenne)
-- Avoir les binaire en plus du code source réduit la quantité de false négative
+- SAST = trouve 50% des vulns max (30% en moyenne)
+- Avoir les binaires en plus du code source réduit la quantité de false négative (et pour certains outils ils sont indispensable)
 
 # ASVS (en français)
 
@@ -20,6 +20,7 @@ https://github.com/spotbugs/spotbugs
 (depuis Spotbugs -> edition -> preferences -> plugins)
 
 https://find-sec-bugs.github.io/
+
 
 # SonarQube
 

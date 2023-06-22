@@ -8,15 +8,21 @@
 4. Changer de frequence
 5. moyen de communication
 
-## pour tester la résistance à une attaque par brouillage en **laboratoire UNIQUEMENT**
+## Tester la résistance à une attaque par brouillage - en **laboratoire UNIQUEMENT**
 
 ### hackrf
 
+### Wifi
+
+Exemple de test de brouillage pour du Wifi 5Ghz - canal 36
+
 ```sh
-hackrf_transfer -d <id> -x 47 -a 1 -f 2400000000 -c 127
+hackrf_transfer -b 28000000 -p 1 -x 47 -a 1 -f 5180000000 -c 127
 ```
 
-### création de fichier IQ
+Un materiel disposant de contremesure changera de canal ou de frequence.
+
+### création de fichier IQ destiné au brouillage
 
 ```python
 #!/usr/bin/env python
@@ -66,3 +72,8 @@ output_int[0::2] = numpy.round(output.real)
 output_int[1::2] = numpy.round(output.imag)
 output_int.tofile(sys.argv[1])
 ```
+
+## Wifi
+
+1. Identifier la frequence (2.4 ou 5 GHz)
+2. Identifier le canal
