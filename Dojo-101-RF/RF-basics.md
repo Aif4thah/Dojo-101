@@ -40,31 +40,26 @@ NE JAMAIS TOUCHER L’ANTENNE EN EMISSION
 
 `Antenna` <-> `Ampli + filter` <-> `Analog/Digit` <-> `Modem error correction` <-> `Encryption` <-> `Network routing GUI` <-> `User`
 
-## Sans modulation
-
-* Morse (lent mais robuste) 
-
 ## Modulations
 
-* Amplitude AM, et en quadrature QAM, ex: TNT, Amplitude-Shift Keying: ASK
+| Type | Designation | Description | Cas d'usage |
+|------|-------------|-------------|-------------|
+| Amplitude | AM | modulation d'amplitude | Radio Analogique "grandes ondes"|
+| Amplitude | ASK | Shift Keying | |
+| Frequence | FM | modulation de freq. | Radio Analogique |
+| Frequence | FSK | Shift Keying | RFID |
+| Frequence | GFSK | guaussian (signal plus propre) | Bluetooth |
+| Phase | BPSK | simple 2 état à 180° |  |
+| Phase | QPSK | Quadrature |  |
+| Phase | GMSK| Gaussian minimum-shift keying  | GSM |
+| Amplitude+Phase | QAM | Quadrature - completé par nombre de bits | TNT |
+| autre | OFDM | Orthogonal Frequency-division multiplexing | sous porteuse espacé en Freq qui utilisent d'autres modulations (BPSK, QPSK, QAM-16, QAM-64…) | UMTS,LTE, CPL, Wifi |
+| autre | Morse | lent mais robuste | Armée |
+| autre | OOK | Binaire (On-Off Key) | télécommandes |
+| autre | USB | Upper Side Band = Bande Latérale Supérieure ||
+| autre | LSB | Lower Side Band = Bande Latérale Inférieure ||
+| autre | SSB | Single Side Band = Bande Latérale Unique (BLU) ||
 
-* Binaire (On-Off Key), ex: télécommandes
-
-* Fréquence FM
-
-* USB : Upper Side Band = Bande Latérale Supérieure
-
-* LSB : Lower Side Band = Bande Latérale Inférieure
-
-* SSB : Single Side Band = Bande Latérale Unique (BLU)
-
-* Déplacement de frequence FSK, ex: RFID 
-
-* Changement de phase PSK et en quadrature QPSK -> BPSK est la forme la plus simple du PSK. Elle utilise deux phases qui sont séparées de 180° ; on l'appelle également 2-PSK. Cette modulation est la plus robuste de toutes les PSK car il faut une grande déformation du signal pour que le démodulateur se trompe sur le symbole reçu.
-
-* Gaussian minimum-shift keying ex: GSM
-
-* Orthogonal Frequency-division multiplexing (OFDM), ex: UMTS,LTE, CPL, Wifi
 
 ## Encodage
 

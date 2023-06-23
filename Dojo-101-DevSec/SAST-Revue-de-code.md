@@ -426,10 +426,9 @@ s angular.element()
 ```
 
 
-
 # Compilation options:
 
-## Java.Security.Policy - Java Security Manager
+## Java.Security.Policy - Java SecurityManager (obsolète aujourd'hui)
 
 1. i.e custom policy: `java -Djava.security.manager -Djava.security.policy=jvm.policy -jar target/spring-petclinic-1.4.2.jar`
 2. default JRE policy: `%JAVA_HOME%/lib/security/java.policy`

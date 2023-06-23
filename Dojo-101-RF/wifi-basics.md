@@ -149,4 +149,5 @@ sudo aireplay-ng --deauth 30 -a <mac AP> -c <mac Client> wlan1
 ## autres outils
 
 * Kismet
+* WiFi Analyzer (Windows Store)
 * Acrylic Wifi
