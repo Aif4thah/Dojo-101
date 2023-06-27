@@ -14,6 +14,16 @@
 
 [sources](https://www.bluetooth.com/learn-about-bluetooth/tech-overview/)
 
+## canaux
+
+### BLE (Low Energy)
+
+| id | Freq (MHz) |
+|----|------------|
+| 37 | 2402 |
+| 38 | 2426 |
+| 39 | 2480 |
+
 ## analyse avec Wireshark
 
 ### prerequis Windows
