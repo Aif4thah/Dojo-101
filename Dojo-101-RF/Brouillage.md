@@ -1,4 +1,4 @@
-# brouillage - jamming
+# lutte contre le brouillage - jamming
 
 ## recommandation en cas de brouillage d'une liaison radio
 
@@ -17,12 +17,12 @@
 Exemple de test de brouillage pour du Wifi 5Ghz - canal 36
 
 ```sh
-hackrf_transfer -b 28000000 -p 1 -x 47 -a 1 -f 5180000000 -c 127
+hackrf_transfer -d <id> -s 20000000 -p 1 -x 47 -a 1 -f 2440000000 -c 127
 ```
 
 Un materiel disposant de contremesure changera de canal ou de frequence.
 
-### création de fichier IQ destiné au brouillage
+### création de fichier IQ destiné aux tests de brouillage
 
 ```python
 #!/usr/bin/env python

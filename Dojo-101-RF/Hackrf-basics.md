@@ -71,10 +71,21 @@ Trouver la porteuse avec la documentation de la cible et/ou un analyseur de spec
 hackrf_transfer [-s <sample-rate>] -f <frequence> -r <file>
 ```
 
+exemple avec ampli LNA (l) et vga (g)
+```sh
+hackrf_transfer -s 20000000 -l 32 -g 8 -f 2446000000 -r test.cs8
+```
+
 rejeu:
 
 ```sh
 hackrf_transfer [-s <sample-rate>] -f <frequence> -t <file>
+```
+
+exemple avec ampli en sortie (a) et ampli vga (x):
+
+```sh
+hackrf_transfer -R -a 1 -x 32 -s 20000000 -f 2441000000 -t test.cs8
 ```
 
 ## Emission avec SoapySDR API from Pothos SDR
