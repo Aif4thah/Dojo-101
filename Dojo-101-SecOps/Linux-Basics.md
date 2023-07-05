@@ -73,6 +73,8 @@ which ls
 
 ##  apt debug Dependences
 
+notament après l'installation de package (.deb) manuellement (`pdkg -i`)
+
 ```shell
 apt --fix-broken install
 apt-get install --fix-missing
@@ -136,6 +138,26 @@ capsh --decode=0000000000003000
 0x0000000000003000=cap_net_admin,cap_net_raw
 ```
 
+### Auditer les permissions
+
+#### monitorer un repertoire:
+
+```sh
+apt install auditd
+systemctl status auditd.service
+auditctl -w /home/michael/Downloads/Vulnerable-Light-Apps/VulnerableWebApp/ -p xwa -k vulnapp
+#auditctl -a always,exit -F dir=/home/michael/Downloads/Vulnerable-Light-Apps/VulnerableWebApp/ -F perm=wax
+auditctl -l
+ausearch -k vulnapp | aureport -f -i
+```
+
+### monitorer un user:
+
+```sh
+auditctl -a always,exit -S openat -F auid=1000 -k user1000
+ausearch -k user1000 | aureport -f -i
+```
+
 ## Nvidia GPU Hashact
 
 ```shell
@@ -145,7 +167,7 @@ hashcat -I
 
 ## file explorer Linux
 
-Ouvrir l'explorateur de fichier: xdg-open .
+Ouvrir l'explorateur de fichier: `xdg-open`
 
 ## runlevel Linux
 

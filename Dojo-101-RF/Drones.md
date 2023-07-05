@@ -1,7 +1,42 @@
 # Drones
 
+## Detection
 
-## civil
+### écoute et analyse de la communication
+
+* Wifi Access Point (sniffing de la communication wifi avec carte en mode `monitor`)
+* Signature spécifique: env. 30 émissions / secondes (plus qu'une communication Wifi classique - 10 Tx/sec), on peut considérer que `Si ( Tx > 100Hz ) alors { Drone }`
+* Bande utilisée parfois beaucoup plus large (drones bas de gamme ?)
+* Variation de la puissance d'émission selon la distance
+* Si antenne directionnelle: changement de direction
+
+### radar actif
+
+* réflexion du signal par les hélices: For example, if the propeller rotates with the speed around 7500 to 10500 RPM, we expect to see the signature of the drone on the frequency band less than 200Hz
+
+* détection des vibrations du drone: In active approach, the
+system sends out a wireless signal and observes the reflected
+component caused by drone body vibration (peut aussi se faire de manière passive)
+
+### capture avec HackRF
+
+#### spectre
+
+exemple pour la bande des 2.4GHz
+
+```sh
+hackrf_sweep -f 2400:2500 -n 8192 -w 600000 -r capture.csv
+```
+
+#### signal
+
+une fois le canal wifi identifié on ajuste -f avec la frequence exacte.
+
+```sh
+hackrf_transfer -s 20000000 -l 32 -g 8 -f <freq.> -r capture.cs8
+```
+
+## Drones civils
 
 ### Sigint
 
@@ -44,6 +79,7 @@ voir `Wifi` pour les Modulations à 2.4 et 5 Ghz
 * Navlink
 * FrSky
 * CrossFire
+
 
 ### Quelques specs
 
@@ -96,4 +132,5 @@ voir `Wifi` pour les Modulations à 2.4 et 5 Ghz
 
 [sources pour les modulations](https://digitalcommons.odu.edu/cgi/viewcontent.cgi?article=1161&context=ece_etds)
 [sigint](https://www.sigidwiki.com/wiki/Quadcopter_Telemetry_Signal)
+[colorado.edu](https://home.cs.colorado.edu/~rhan/Papers/p17-nguyen.pdf)
 

@@ -2,9 +2,11 @@
 
 ## clavier en français
 
-
 Set-WinUserLanguageList -Force 'fr-FR'
 
+## installation sous linux
+# apt install powershell
+# pwsh 
 
 ## version
 
