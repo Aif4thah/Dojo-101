@@ -8,6 +8,14 @@
 4. Changer de frequence
 5. moyen de communication
 
+## jammer pour attaque par rejeu
+
+Pour des technologies utilisant des codes tournants:
+
+1. Brouiller le récepteur
+2. Capturer le signal de l'émetteur (sans que le récepteur le capte)
+3. Rejouer le signal capturé
+
 ## Tester la résistance à une attaque par brouillage - en **laboratoire UNIQUEMENT**
 
 ### hackrf
