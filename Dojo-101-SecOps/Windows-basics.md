@@ -4,7 +4,7 @@
 ## Pincipaux processus
 
 | Nom | Description |
----------------------
+|-----|-------------|
 | IDLE | Ce processus ne sert qu’à comptabiliser le temps d’inactivité du CPU |
 | System | process Contient la majorité de l’espace d’adressage du kernel |
 | Session manager | Smss.Exe |

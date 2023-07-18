@@ -57,7 +57,7 @@ $var.Contains('a') ? $true : $false
 
 ## la boucle (quick and dirty)
 
-
+foreach( $a in $var ){ write-host $a -ForegroundColor grey }
 1..100 |%{ $_  }
 ls |%{ $_.FullName }
 
@@ -117,7 +117,6 @@ Invoke-RestMethod -Headers $headers "https://www.virustotal.com/api/v3/search?qu
 ### body
 
 Invoke-RestMethod -method Post -uri https://localhost:3000/Auth -Body '{"user":"test", "passwd":"test"}' -ContentType application/json
-
 
 ### url decode
 
