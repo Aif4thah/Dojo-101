@@ -83,5 +83,7 @@ output_int.tofile(sys.argv[1])
 
 ## Wifi
 
-1. Identifier la frequence (2.4 ou 5 GHz)
+1. Identifier la fréquence (2.4 ou 5 GHz)
 2. Identifier le canal
+3. Brouiller uniquement ce même canal
+4. Étudier la réaction de la cible (changement de canal ? perte de dispo ? etc.)
