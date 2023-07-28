@@ -9,10 +9,10 @@
 
 ### High frequency - 13 MHz
 
-* ISO 15693
-* ISO 14443
-* ISO 1800-3
 * NFC
+* ISO 15693
+* ISO 14443 (NXP, Mifare-plus)
+* ISO 1800-3
 
 ## Active RF
 

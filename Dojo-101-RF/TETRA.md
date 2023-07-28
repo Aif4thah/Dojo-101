@@ -14,3 +14,13 @@
 5. ouvrir le plugin et coher "demodulator"
 6. placer les "ligne" au milieu de chaque diagram (0, π/2 etc...)
 7. écouter (rien d'intéligible si chiffrement)
+
+### vulnérabilités connues
+
+Perte de confidentialité dévoilée en Juillet 2023:
+
+* CVE-2022-24400
+* CVE-2022-24401
+* CVE-2022-24402
+* CVE-2022-24403
+* CVE-2022-24404

@@ -52,10 +52,11 @@ Risque = Impact * Vraissemblance
 * LPM : Loi de programmation militaire (OIV)
 * NIS : Network Information Security (OSE)
 * RGPD : Données personnelles
-* PCI : bancaire
+* PCI : bancaire (payement)
 * HDS : Données de Santé
 * ISO2700X : normes SMSI
 * RGS : Administration
+* DORA : entités financières
 
 # Vulnérabilité
 
