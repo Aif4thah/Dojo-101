@@ -1,34 +1,43 @@
-# pratiquer
+# Veille
 
-*practice makes perfect*
+## Minimum
 
-# newsletters
+### LA PRATIQUE
 
-[SANS](https://www.sans.org/newsletters/)
+*practice makes perfect*. 
 
-# Referentiels et bonnes pratiques
+Mieux vaut pratiquer les sujets qui nous plaisent qu'être bombardé d'informations qui ne nous concernent pas en continu
+
+### Newsletters
+
+* [SANS](https://www.sans.org/newsletters/)
+
+### Vulnérabilités
+
+* [CERT-FR](https://www.cert.ssi.gouv.fr/)
+* [CERT-US](https://www.cisa.gov/uscert/ncas)
+
+
+## Aller chercher les informations utiles lorsque nécessaire
+
+### Référentiels et bonnes pratiques
 
 * [ANSSI](https://www.ssi.gouv.fr/)
 * [SANS](https://www.sans.org/fr_fr/)
 * [OWASP](https://owasp.org/)
 * [MITRE](https://www.mitre.org/focus-areas/cybersecurity)
 
-# vulnerabilités
+### Tools et morceaux de code
 
-[CERT-FR](https://www.cert.ssi.gouv.fr/)
-[CERT-US](https://www.cisa.gov/uscert/ncas)
+* [github](https://github.com/)
 
-# tools et morceaux de code
+### Exploits
 
-[github](https://github.com/)
+* [exploid-db](https://www.exploit-db.com/)
 
-# exploits
-
-[exploid-db](https://www.exploit-db.com/)
-
-# exploits recents / google dorks
+### Exploits recents / google dorks
 
 `site:hackerone.com inurl:/reports/`
-`https://github.com/search?q=exploit&type=repositories`
+`https://github.com/search?q=<exploit>&type=repositories`
 `https://hackerone.com/reports/<XXXXXX>`
 
