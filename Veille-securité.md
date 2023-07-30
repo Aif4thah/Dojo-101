@@ -11,9 +11,15 @@ Mieux vaut pratiquer les sujets qui nous plaisent qu'être bombardé d'informati
 * [CERT-FR](https://www.cert.ssi.gouv.fr/)
 * [CERT-US](https://www.cisa.gov/uscert/ncas)
 
-## Les News
+## Les News et le partage d'information
 
-Suivre quelques hashtags (#cybersecurity, #hacking, #electronicWarfare...) sans y passer trop de temps:
+Suivre quelques hashtags sans y passer trop de temps:
 
-* Mastodon, Twitter & co. (Techniques, dernières nouvelles)
-* LinkedIn (Business, Professionnel)
+* Mastodon, Twitter & co. (veille technique, exploits, dernières nouvelles, anecdotes)
+* LinkedIn (Business, Professionnel, veille technique)
+
+#infosec
+#cybersecurity
+#hacking
+#electronicwarfare
+etc.
