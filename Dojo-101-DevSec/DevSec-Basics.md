@@ -8,6 +8,22 @@ https://owasp.org/Top10/
 
 https://www.softwaretestinghelp.com/sans-top-20-security-vulnerabilities/ 
 
+### Référentiels et bonnes pratiques
+
+* [ANSSI](https://www.ssi.gouv.fr/)
+* [OWASP](https://owasp.org/)
+
+### Tools et morceaux de code
+
+* [github](https://github.com/)
+
+### Exploits
+
+* [exploid-db](https://www.exploit-db.com/)
+* `site:hackerone.com inurl:/reports/`
+* `https://github.com/search?q=<exploit>&type=repositories`
+* `https://hackerone.com/reports/<XXXXXX>`
+
 ## notions de vulnérabilité
 
 Risque = Impact * Vraisemblance

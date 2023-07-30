@@ -64,6 +64,9 @@ Risque = Impact * Vraissemblance
 * Score CVSS
 * Reference CWE
 
-# à lire et à comprendre:
+## Aller chercher les informations utiles lorsque nécessaire
 
-* bulletins du CERT-FR
+### Référentiels et bonnes pratiques
+
+* [ANSSI](https://www.ssi.gouv.fr/)
+* [SANS](https://www.sans.org/fr_fr/)
