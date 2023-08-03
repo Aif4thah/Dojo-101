@@ -15,7 +15,7 @@ Mieux vaut pratiquer les sujets qui nous plaisent qu'être bombardé d'informati
 
 ## News, tendances et informations publiques
 
-Suivre quelques hashtags/comptes sur **1 seul réseau social, sans y passer trop de temps**
+Suivre quelques hashtags/comptes sur **1 seul réseau social / 5 à 20 minutes par jour maximum**
 
 * LinkedIn (Business, Professionnel, veille technique)
 * Mastodon, Twitter & co. (veille technique, exploits, dernières nouvelles, anecdotes) - parfois accessibles sans compte
