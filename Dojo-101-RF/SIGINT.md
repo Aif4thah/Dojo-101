@@ -31,4 +31,6 @@ Source: https://www.aresvalley.com/artemis/
 [Artemis.exe](https://www.aresvalley.com/artemis/)
 [Artemis Github](https://github.com/AresValley/Artemis)
 
+## automatisation via logiciels
 
+[SigDigger](https://github.com/BatchDrake/SigDigger)

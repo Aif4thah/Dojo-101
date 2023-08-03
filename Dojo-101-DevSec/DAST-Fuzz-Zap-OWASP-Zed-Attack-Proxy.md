@@ -4,17 +4,23 @@ utilisé en alternative de Burp (cf pentest) car gratuit
 
 besoin du Java JDK sous windows (JRE ne suffit pas)
 
+Zap contient des Wordlists de fuzzing par défaut
+
 ## Documentation
 
-https://www.zaproxy.org/docs/desktop/start/
-https://www.zaproxy.org/docs/desktop/addons/fuzzer/
+* [start](https://www.zaproxy.org/docs/desktop/start/)
+* [fuzz](https://www.zaproxy.org/docs/desktop/addons/fuzzer/)
 
 ## Fuzzing
 
-Click droit sur la requete puis fuzz / generer du bruit
+1. Click droit sur la requete puis fuzz / generer du bruit
 
-fichier -> charger un fichier des seclists
-processeurs -> encoder son payload
+2. Au choix:
+
+* fichiers fuzzer -> listes de fuzzing par défaut
+* fichier -> charger un fichier des [seclists](https://github.com/danielmiessler/SecLists)
+
+3. processeurs -> encoder son payload
 
 # si plusieurs parametre
 
