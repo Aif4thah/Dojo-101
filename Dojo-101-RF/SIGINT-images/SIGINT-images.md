@@ -17,7 +17,7 @@
 |Téléphonie - 4G LTE (bandes montante et descendante)| 800 | ![11](./11-800Mhz.png) |
 |Drone - commandes + camera (DJI Tello)| 2442 | ![12](./12-2442Mhz.png) ![12-1](./12-Drone-DJI-Tello-Camera-telemetrie-cmd.png) ![12-2](./12-Drone-DJI-Tello-Perte-de-signal-et-arret.png) |
 |NFC NXP - Mifare+ ISO 14443-4 (lecture de clé Yubikey avec l'application mobile yubico)| 13.550 | ![13](./13-13Mhz.png) |
-|Télécommande de voiture téléguidée| 27 | ![27](./14-27Mhz.png) |
+|Télécommande de voiture téléguidée| 27 | ![14](./14-27Mhz.png) |
 
 
 

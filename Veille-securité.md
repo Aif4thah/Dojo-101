@@ -1,5 +1,7 @@
 # Veille
 
+Veille minimaliste et efficace
+
 ## La pratique
 
 *practice makes perfect*. 
@@ -11,15 +13,18 @@ Mieux vaut pratiquer les sujets qui nous plaisent qu'être bombardé d'informati
 * [CERT-FR](https://www.cert.ssi.gouv.fr/)
 * [CERT-US](https://www.cisa.gov/uscert/ncas)
 
-## Les News et le partage d'information
+## News, tendances et informations publiques
 
-Suivre quelques hashtags sans y passer trop de temps:
+Suivre quelques hashtags/comptes sur **1 seul réseau social, sans y passer trop de temps**
 
-* Mastodon, Twitter & co. (veille technique, exploits, dernières nouvelles, anecdotes)
 * LinkedIn (Business, Professionnel, veille technique)
+* Mastodon, Twitter & co. (veille technique, exploits, dernières nouvelles, anecdotes) - parfois accessibles sans compte
 
+```
 #infosec
 #cybersecurity
 #hacking
 #electronicwarfare
+#sdr
 etc.
+```
