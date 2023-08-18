@@ -55,8 +55,7 @@ NE JAMAIS TOUCHER L’ANTENNE EN EMISSION
 | Phase | GMSK| Gaussian minimum-shift keying  | GSM |
 | Amplitude+Phase | QAM | Quadrature - completé par nombre de bits | TNT |
 | autre | OFDM | Orthogonal Frequency-division multiplexing | sous porteuse espacé en Freq qui utilisent d'autres modulations (BPSK, QPSK, QAM-16, QAM-64…) | UMTS,LTE, CPL, Wifi |
-| autre | Morse | lent mais robuste | Armée |
-| autre | OOK | Binaire (On-Off Key) | télécommandes |
+| autre | OOK | Binaire (On-Off Key) | télécommandes et morse |
 | autre | USB | Upper Side Band = Bande Latérale Supérieure ||
 | autre | LSB | Lower Side Band = Bande Latérale Inférieure ||
 | autre | SSB | Single Side Band = Bande Latérale Unique (BLU) ||
@@ -75,6 +74,10 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 * Parabolique (ex: reception sattelite)
 
 * Loop et cadre magnétique (ex: RFID)
+
+## informations sur les produits
+
+* [FCC](https://www.fcc.gov/)
 
 ## Tools
 

@@ -5,7 +5,7 @@
 
 ~~knowledge~~ **Sharing** is power.
 
-## Base de connaissances en cybersécurité
+## Base de connaissances et procédures de cybersécurité
 
 * [Développement sécurisé](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-DevSec)
 * [Administration sécurisée](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-SecOps)
@@ -55,6 +55,8 @@ Ce projet contient des signatures pouvant entrainer des faux positifs. Vous pouv
 Le contenu est mis à jour régulièrement, pensez à faire un `git pull` avant de l'utiliser.
 
 ## Contributions
+
+Pour contribuer, dites "comment vous avez fait", pas "comment il faut faire"
 
 * [Fork](https://docs.github.com/fr/get-started/quickstart/fork-a-repo)
 * Ajout du contenu au format Markdown/Text/Scripts - Keep It Simple Stupid
