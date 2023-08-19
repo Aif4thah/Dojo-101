@@ -2,7 +2,7 @@
 
 ## avantages
 
-* Pas de modulation, juste "émission ou non". 
+* juste "émission ou non" (Modulation OOK / CW) 
 * plus de portée et de résistance aux perturbations
 
 ## inconvénients
