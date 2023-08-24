@@ -74,9 +74,15 @@ FHSS : Frequency Hopping Spread Spectrum
 |140    | 5.700           | 
 
 
+## enumeration sommaire windows
+
+```Batch
+netsh wlan show networks
+```
+
 ## PINEAPPLE MARK VII
 
-Très simple d'utilisation
+[produit](https://shop.hak5.org/products/wifi-pineapple)
 
 une fois branché: http://172.16.42.1:1471/#/Login
 
@@ -101,10 +107,9 @@ possibilité de faire:
 * un portail captif pour récuperer les mots de passess
 
 
-
 ## aicrack-ng
 
-Enabling monitor mode
+Enabling monitor mode, **la carte wifi doit etre compatible!**
 
 Before capturing any traffic, it is necessary to enable the monitoring mode on the 802.11 interface wlan0.
 

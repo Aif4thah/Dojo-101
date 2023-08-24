@@ -75,28 +75,23 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 
 * Loop et cadre magnétique (ex: RFID)
 
-## informations sur les produits
+## informations sur les produits et les protocoles
 
 * [FCC](https://www.fcc.gov/)
 
 ## Tools
 
 * [SDRSharp (SDR#)](https://airspy.com/download/) : analyse de spectre et démodulations audio (analogique) et plugins pour numérique
+* [GNU Radio](https://www.gnuradio.org/) / [Radioconda](https://github.com/ryanvolz/radioconda) : flow mod / demod
 * [SDRAngel](https://www.sdrangel.org/), Universal Radio Hacker : analyse de spectre, analyse de capture / fichiers pour démoduler des signaux numériques
 * [PothosSDR](https://www.pothosware.com/) : flow
-* [GNU Radio](https://www.gnuradio.org/) / Radioconda : flow
 * [SoapySDR](https://github.com/pothosware/SoapySDR/wiki) : API
 * [qt-Dab](https://github.com/JvanKatwijk/qt-dab/releases) : Radio Numerique Terrestre (RNT DAB+) - rester en version 2.7 pour windows
+* [URH](https://github.com/jopohl/urh): Analyse / reverse
+* [Inspectrum](https://github.com/ryanvolz/radioconda) fourni avec radioconda : Analyse 
 
-### Test avec PothosFlow
 
-1. lancer `PothosFlow`
-2. Choisir une source, ex: `audio / audios source`
-3. Choisir un plotter, ex: `plotters / wave monitor`
-4. relier la source -> plotter
-5. Activer la topologie (roue dentée dans la barre de taches)
-
-## format de fichiers
+## formats de fichiers
 
 * IQ = écriture en nombre complexe (I+jQ)
 
