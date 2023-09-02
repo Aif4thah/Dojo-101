@@ -73,6 +73,7 @@ FHSS : Frequency Hopping Spread Spectrum
 |136    | 5.680           | 
 |140    | 5.700           | 
 
+6GHz : interdit en France
 
 ## enumeration sommaire windows
 
@@ -107,7 +108,13 @@ possibilité de faire:
 * un portail captif pour récuperer les mots de passess
 
 
-## aicrack-ng
+## Hidden AP
+
+Le mode *monitor* permet de sniffer plus que les beacons et de détecter les wifi "cachés".
+
+On peut aussi les débecter par analyse de spectre et antenne directionnelle pour trouver la source d'émission.
+
+### aicrack-ng 
 
 Enabling monitor mode, **la carte wifi doit etre compatible!**
 
@@ -153,6 +160,6 @@ sudo aireplay-ng --deauth 30 -a <mac AP> -c <mac Client> wlan1
 
 ## autres outils
 
+* Acrylic Wifi
 * Kismet
 * WiFi Analyzer (Windows Store)
-* Acrylic Wifi
