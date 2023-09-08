@@ -1,5 +1,6 @@
 # Minimal fuzzing List dojo 101
 
+<z>"z'z`%}})z${{z\
 https://127.0.0.1/
 <script src=//127.0.0.1/test.js>
 *
