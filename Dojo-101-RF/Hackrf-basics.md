@@ -96,3 +96,9 @@ Device Args :
 ```json
 {"driver":"hackrf"}
 ```
+
+## Librairies python
+
+[pyhackRF](https://github.com/dressel/pyhackrf/tree/master#quick-example)
+
+

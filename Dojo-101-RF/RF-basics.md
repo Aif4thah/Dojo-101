@@ -142,6 +142,7 @@ Mode                 LastWriteTime         Length Name
 -a----        24/03/2023     09:19     1858076672 wifilike.f32
 ```
 
+
 ## Numpy
 
 exemples de "signal Discrete Fourier Transform" (DFT)
@@ -155,3 +156,10 @@ signal = numpy.exp(1j * 2 * numpy.pi * (2.5 / 128) * numpy.arange(128))
 ```
 
 voir les scripts pour aller plus loin
+
+## 
+
+
+## SDR disponible en RX depuis internet
+
+[WebSDR](http://websdr.org/)

@@ -201,6 +201,12 @@ Le code de l’application, lorsque disponible, peut ensuite être passé en rev
 | Choosen plaintext attack | L’auditeur peut définir le contenu du message en clair chiffré et a pour objectif de trouver la clé de chiffrement à partir de cet élément. |
 | Known plaintext attack | L’auditeur connait le contenu du message en clair chiffré et a pour objectif de trouver la clé de chiffrement à partir de cet élément. |
 
+
+# exemple de chiffrement post-quantique
+
+[SPHINCS+](https://sphincs.org/)
+
+
 ## refs
 
 * Serious Cryptography de Jean-Philippe Aumasson (ISBN-13: 9781593278267)
