@@ -1,22 +1,28 @@
 # Veille
 
-Veille minimaliste et efficace
 
-## La pratique
+## Organismes officiels: veille et Alertes
 
-*practice makes perfect*. Mieux vaut pratiquer les sujets qui nous plaisent qu'être bombardé d'informations non-nécessaires en continu
+* Objectif: connaitre les incise majeure
+* Fréquence: 1x/semaine
+* Durée: 10 min
+* Sources Fr: [CERT-FR](https://www.cert.ssi.gouv.fr/)
+* Alternatives: [CERT-US](https://www.cisa.gov/uscert/ncas), [CERT-JP](https://www.jpcert.or.jp/english/)
 
-## Organismes officiels de veille et d'alertes
 
-Choisir le plus approprié et controler **1 fois par semaine** (sauf besoin spécifique)
+## Organismes officiels: guides et bonnes pratiques
 
-* [CERT-FR](https://www.cert.ssi.gouv.fr/)
-* [CERT-US](https://www.cisa.gov/uscert/ncas)
-* [CERT-JP](https://www.jpcert.or.jp/english/)
+* Objectif: connaitre les bonnes pratiques
+* Fréquence: 1x/trimestre
+* Durée: 30 min
+* Sources Fr: [ANSSI](https://www.ssi.gouv.fr/)
+* Atlernativues: [CISA](https://www.cisa.gov/), [ACSC](https://www.cyber.gov.au/)
 
-### Facultatif: News, tendances et informations publiques
 
-Suivre quelques hashtags / comptes / Tags sur **1 seul réseau social, 10 minutes par jour ouvré au maximum**
+### Facultatif: News, tendances et autres informations publiques
+
+fréquence: de temps en temps
+durée: 15 min **MAXIMUM**
 
 * LinkedIn (Business, Professionnel, veille technique)
 * Mastodon, Twitter, Reddit, Youtube, Discord & co. (veille technique, exploits, dernières nouvelles, anecdotes) - parfois accessibles sans compte
