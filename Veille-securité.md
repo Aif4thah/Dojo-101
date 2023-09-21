@@ -1,7 +1,5 @@
 # Veille minimaliste
 
-Principe: ***inutile d'être surchargé d'information lorsqu'elles ne nous concernent pas immédiatement***
-
 ## Organismes officiels: veille et Alertes
 
 * Objectif: connaitre les dernières vulnérabilités majeures
