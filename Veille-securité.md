@@ -1,5 +1,10 @@
 # Veille minimaliste
 
+## Principe: 
+
+Mieux vaut approfondir un sujet de fond qui nous intéresse de temps en temps qu'être bombardé d'infos inutiles en continu.
+Pour cela il faut éliminer l'inutile.
+
 ## Organismes officiels: veille et Alertes
 
 * Objectif: connaitre les dernières vulnérabilités majeures
