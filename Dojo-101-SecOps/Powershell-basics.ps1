@@ -86,11 +86,19 @@ get-date | ConvertTo-html
 Get-PSDrive |ConvertTo-Json > test.json
 cat .\test.json | ConvertFrom-Json
 
+# Storage
+
+get-disk
+get-volume
+get-psdrive
+Get-SmbShare
+
 ## Réseau
 
 ## IP
 
 Get-NetIPAddress
+Get-NetIPAddress |% { $_.IPAddress }
 
 ## cartes réseaux 
 
