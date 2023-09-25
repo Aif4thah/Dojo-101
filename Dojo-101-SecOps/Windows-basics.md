@@ -1,7 +1,7 @@
 # Windows basics
 
 
-## Pincipaux processus
+## Principaux processus
 
 | Nom | Description |
 |-----|-------------|
@@ -15,7 +15,7 @@
 | Local security Authentication Service | Lsass.Exe | 
 
 
-## security components (liste non exhaustive)
+## Security components (liste non exhaustive)
 
 * Gestionnaire d'identification (applications et compte microsoft)
 
@@ -91,7 +91,7 @@ shell:common startup = %programdata%\Microsoft\Windows\Start Menu\Programs\Start
 shell:start menu = start menu in Windows-10
 shell:common start menu =All user start menu in Windows-10 
 
-## Role AD:
+## Roles AD:
 
 Contrôleur de domaine
 PdC (synchro heure)
@@ -191,7 +191,7 @@ pour Windows server: aller dans le server manager, et configurer en mode: active
 
 1. sur le cluster: edit setting -> DRS
 2. chaque groupe correspond é une salle, il faut répartir les VM entres ses groupes pour assurer une redondance.
-	- ATTENTION il faut s'assurer que la VM soit déjà sur le bon datastore avec de lui attribuer un groupe (la migration ne sera pas automatique)
+	- ATTENTION il faut s'assurer que la VM soit déjà sur le bon datastore avant de lui attribuer un groupe car la migration ne sera pas automatique
 
 ## Voir qui est connecté en RDP sur une machine depuis l'AD:
 
@@ -242,7 +242,7 @@ Outils d'administration > Remote Desktop service Manager
 `rsop.msc` -> ATTENTION apres changement d'OU les parametre de l'ancienne GPO ne disparaisse pas forcement !
 `gpresult /z`
 
-## Gerer les objet AD: 
+## Gerer les objets AD: 
 
 `adsiedit.msc`
 
