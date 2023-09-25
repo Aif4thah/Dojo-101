@@ -34,7 +34,7 @@ Observations / explications complémentaires
 
 ## Critères de performance
 
-* pertinance des mesure de sécurité
+* pertinance des mesures de sécurité
 * respect du contexte et des cas d'usage
 * réalisation des actes techniques
 
