@@ -6,8 +6,9 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3", merc
 
 ## ressources
 
-[Guide ANSSI Nomadisme](https://www.ssi.gouv.fr/guide/recommandations-sur-le-nomadisme-numerique/)
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [Guide ANSSI Nomadisme](https://www.ssi.gouv.fr/guide/recommandations-sur-le-nomadisme-numerique/)
+
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
 ## contexte
 
