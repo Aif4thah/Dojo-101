@@ -38,7 +38,7 @@ lecture de la procédure
 
 # Livrables
 
-Capture d'écran des commandes `uname -a`, `date`, et resutlat des scan nmap
+captures décran des commandes `uname -a`, `date`, et resutlat des scan nmap
 
 Procédure de configuration et de vérification au format markdown
 

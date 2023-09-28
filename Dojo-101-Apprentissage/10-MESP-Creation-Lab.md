@@ -31,7 +31,7 @@ Binôme ou seul (au choix)
 
 # Modalités d'évaluation
 
-Capture d'écran des commandes `id && uname -a` pour linux et `Get-ComputerInfo` pour Windows
+captures décran des commandes `id && uname -a` pour linux et `Get-ComputerInfo` pour Windows
 
 # Livrables
 

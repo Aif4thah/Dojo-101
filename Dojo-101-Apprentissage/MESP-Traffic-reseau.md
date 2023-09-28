@@ -53,7 +53,7 @@ Lecture du livrable
 
 # Livrables
 
-Réponse aux questions et capture d'écran des captures Wireshark et de la chaine de confiance du certificat
+Réponse aux questions et captures décran des captures Wireshark et de la chaine de confiance du certificat
 
 # Critères de performance
 

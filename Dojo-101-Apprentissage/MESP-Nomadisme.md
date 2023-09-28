@@ -12,9 +12,9 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3", merc
 
 ## contexte
 
-* Depuis le confinement, le dirigeant de l’entreprise Azerty, spécialisée dans le prêt à porter, utilise son PC personnel (Windows 10) à des fins professionnelles. 
+* Depuis le confinement, le dirigeant d'une entreprise de 20 personnes, spécialisée dans le prêt à porter, utilise son PC personnel (Windows 10) à des fins professionnelles. 
 * À date, ce matériel n’est pas managé par votre entreprise, vous devez néanmoins durcir la configuration de ce « nouveau poste de travail ».
-* Ce matériel doit toujours pouvoir se connecter à n’importe quel réseaux et L’utilisateur insiste fortement pour conserver les droits administrateur.
+* Ce matériel doit toujours pouvoir se connecter à n’importe quel réseaux et l’utilisateur insiste fortement pour conserver les droits administrateur.
 
 ## Modalités pédagogiques
 
@@ -29,7 +29,7 @@ Implémenter (sur une VM) les mesures appropriées
 
 Envoyer un « PV » de recette à l’examinateur décrivant: 
 Les mesures de sécurité
-Les preuves de la bonne implémentation (Screenshot)
+Les preuves de la bonne implémentation (Screenshot avec commande `date;hostname`)
 Observations / explications complémentaires
 
 ## Critères de performance

@@ -38,7 +38,7 @@ bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter s
 
 # Livrables
 
-1. Capture d'écran de la commande `Get-ComputerInfo`
+1. captures décran de la commande `Get-ComputerInfo`
 2. Fournir une procédure d'installation au format mardown
 
 # Critères de performance
