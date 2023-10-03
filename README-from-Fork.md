@@ -64,3 +64,7 @@ Pour contribuer, dites "comment vous avez fait", pas "comment il faut faire"
 
 * [Ethereum donation](https://etherscan.io/address/0xcC424e30Ff6eEAb4E6B3A900c5446038F858b314)
 * [Buy me a coffee](https://www.buymeacoffee.com/taisensolutions)
+
+## Comment j'ai réalisé mon pull request
+
+Afin de réaliser mon pull request, j'ai au préalable fork le repository, puis je l'ai clone (fork à partir de GitHub sur le navigateur, puis clone en ligne de commande avec la commmande git clone)
