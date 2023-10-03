@@ -81,4 +81,6 @@ Pendant la procédure de fork, répondre "yes" à la demande de clonage local po
 
 * Effectuer les modifications désirées dans votre éditeur de code, enregistrer le fichier avec les modifications.
 
-* Mettre les modification en staging avec `git add [fichier créé]` et `git rm [fichier à supprimer]`, ajouter un commentaire de commit avec `git commit -m [commentaire]`, et enfin pousser ces modification dans le dépôt avec `git push`
+* Mettre les modification en staging avec `git add [fichier créé]` et `git rm [fichier à supprimer]`, ajouter un commentaire de commit avec `git commit -m "[commentaire]"`, et enfin pousser ces modification dans le dépôt avec `git push`
+
+* Sur le dépôt forké, aller dans le menu "pull request" et suivre la procédure pour envoyer une demande.
