@@ -1,6 +1,6 @@
 # Première soutenance : remise de la première partie du mémoire projet 
 
-Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3", merci d'en tenir compte d'en vos usages.
+Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
 1. Commencer la rédaction du rapport
 
