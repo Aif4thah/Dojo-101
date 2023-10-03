@@ -1,4 +1,4 @@
-# Réaliser une pull request sur GitHub
+## Réaliser une pull request sur GitHub
 ## Fork du dépôt
 On commence par forker le dépôt pour lequel on souhaite contribuer. Cela crée une copie du dépôt dans votre compte GitHub. Vous pouvez le faire en vous rendant sur la page du dépôt et en cliquant sur le bouton "Fork" en haut à droite.
 ## On clone le Fork sur sa machine locale
