@@ -59,11 +59,11 @@
 * RGS : Administration
 * DORA : entités financières
 
-# Vulnérabilité
+# Vulnérabilités
 
-* N° CVE
-* Score CVSS
-* Reference CWE
+* N° CVE : identifiant unique pour une vuln.
+* Score CVSS : évaluation de vulnérabilité
+* Reference CWE : mauvaise pratique
 
 ## Aller chercher les informations utiles lorsque nécessaire
 
