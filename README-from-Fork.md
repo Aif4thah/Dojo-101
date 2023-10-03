@@ -18,13 +18,28 @@ pour y apporter des modifications sans affecter le projet d'origine. Il est poss
 
  ![Alt text](image-3.png)
 
- ensuite je copie le fichier README.md et je le modifie dans visual Code 
+ Ensuite je copie le fichier README.md et je le modifie dans visual Code 
 
 #### Comment faire une *pull request* depuis un *fork* ?
 
  Je sauvegarde mes modifications et je push les modifications pour les sauvegarder dans mon folk ensuite je commit sur mon repo (github)  
 
-![Alt text](image-6.png)
+![Alt text](image-7.png)
+
+Et je push sur l'origine
+
+![Alt text](image-8.png)
 ##### Créer une pull request sur Aif4thah/Dojo-101 afin de me demander d'ajouter le fichier "README-from-Fork.md" sur mon dépôt
 
-Ensuite je me connecte sur Github et je vais retrouver ce qui a été changé
+Ensuite je me connecte sur Github et je vais retrouver ce qui a été changé 
+
+![Alt text](image-9.png)
+
+Je me rends sur mon fork et je crée une nouvelle Pull Request vers le Projet d'origine
+
+![Alt text](image-12.png)
+
+
+
+
+Et VOILA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
