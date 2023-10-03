@@ -2,7 +2,7 @@
 
 ## faire verifier du code*
 
-* attation chatGPT peut se tromper ;)
+* attention ChatGPT peut se tromper ;)
 
 ## question 
 
