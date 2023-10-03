@@ -2,11 +2,11 @@
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
-# ressources
+## Ressources
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
-# contexte
+## Contexte
 
 Yersinia: https://www.kali.org/tools/yersinia/ 
 Comprendre ce que fait l’outil
@@ -19,15 +19,15 @@ Attaques CDP (si Cisco)
 
 
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 Binôme ou seul (au choix)
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 
-# Livrables
+## Livrables
 
 
-# Critères de performance
+## Critères de performance
 

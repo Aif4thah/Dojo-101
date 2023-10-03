@@ -6,12 +6,12 @@ Durée: 5 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
-# Ressources
+## Ressources
 
 [Guide EBIOS RM](https://www.ssi.gouv.fr/guide/la-methode-ebios-risk-manager-le-guide/)
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
-# Contexte
+## Contexte
 
 1. Donnez les définitions des critères de sécurité "DICT" (1pt)
 
@@ -49,22 +49,22 @@ Afin de mener cette analyse:
 
 * Vous trouverez les échelles page 26 (diapositive 15) de la méthode EBIOS RISK MANAGER
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 Groupe de 4 Personnes
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 Lecture du rapport et présentation à l'oral
 
-# Livrables
+## Livrables
 
 * les couples SR/OV (tableau)
 * Les scénarii stratégiques (schémas)
 * un plan de traitement du risque (bruts -> résiduels) comportant à minima 5 scénarii de risques et 5 mesures de sécurité
 
 
-# Critères de performance
+## Critères de performance
 
 - respect de la méthode EBIOS RM: 4 points
 - Formalisme et synthétisme: 4 points

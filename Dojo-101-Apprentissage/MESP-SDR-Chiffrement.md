@@ -6,18 +6,18 @@ Durée estimée: 1 jour
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
-# Ressources
+## Ressources
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
 Dossier Toolbox RF
 
 
-# Contexte
+## Contexte
 
 Vous devez transmettre un message sans qu'il puisse être intercepté par un tiers
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 Binôme
 
@@ -32,15 +32,15 @@ Binôme
 5. Comment pourrait-on s'assurer de l'authenticité de ce message ?
 
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 Relecture des scripts
 
-# Livrables
+## Livrables
 
 Scripts ou commandes permettant de vérifier l'intégrité et l'authenticité du message
 
-# Critères de performance
+## Critères de performance
 
 Pertinence de la réponse aux besoins d'intégrité et d'authenticité
 

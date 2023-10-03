@@ -6,12 +6,12 @@ Durée estimée: 3 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
-# ressources
+## Ressources
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 [Vulnerable-Light-App](https://github.com/Aif4thah/Vulnerable-Light-Apps)
 
-# contexte
+## Contexte
 
 1. Installer 3 machines virtuelles (VM) : Un contrôleur de domaine (Windows Serveur) + 1 Windows + 1 Linux
 2. Faire les mises à jour de sécurité
@@ -25,17 +25,17 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
     * Partage SMB ou NFS
 
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 Binôme ou seul (au choix)
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 captures décran des commandes `id && uname -a` pour linux et `Get-ComputerInfo` pour Windows
 
-# Livrables
+## Livrables
 
 Le Lab fonctionnel
 
-# Critères de performance
+## Critères de performance
 

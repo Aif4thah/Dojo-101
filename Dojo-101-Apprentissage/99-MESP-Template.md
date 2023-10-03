@@ -3,7 +3,7 @@
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
 
-# Ressources
+## Ressources
 
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
@@ -11,23 +11,23 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 
 
-# Contexte
+## Contexte
 
 
 
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 
 
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 
-# Livrables
+## Livrables
 
 
-# Critères de performance
+## Critères de performance
 
 
 

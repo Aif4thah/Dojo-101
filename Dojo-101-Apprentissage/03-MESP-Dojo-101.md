@@ -6,7 +6,7 @@ Durée estimée: 1 jour
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
-# Ressources
+## Ressources
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 [github-desktop](https://desktop.github.com/)
@@ -14,14 +14,14 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 [Markdown Wikipedia](https://fr.wikipedia.org/wiki/Markdown)
 
 
-# Contexte
+## Contexte
 
 Durant votre formation, j'utilise Dojo-101 comme base de connaissance. Vous y trouverez tout le nécessaire et bien plus.
 
 Il est nécessaire que vous vous appropriiez le `markdown` (langage texte très simple qui se convertit facilement en HTML) et quelques commandes `git`
 
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 Partie 1:
 
@@ -36,21 +36,22 @@ Partie 2:
 
 7. Qu'est-ce qu'un *fork* (github) ?
 8. Forker le projet, cloner votre fork et copier le fichier README.md, appellez le "README-from-Fork.md"
-9. Dans ce fichier, décrivez au format markdown la méthode que vous utilisez pour réaliser votre pull request (l'idée c'est de vous initier à la rédaction au format markdown).
-10. Comment faire une *pull request* depuis un *fork* ?
-11. Créer une pull request sur Aif4thah/Dojo-101 afin de me demander d'ajouter le fichier "README-from-Fork.md" sur mon dépôt
+9. Dans ce fichier, décrivez au format markdown la méthode que vous utilisez pour réaliser votre pull request (l'idée c'est de vous initier à la rédaction au format markdown)
+10. Pousser les changements sur votre fork
+11. Comment faire une *pull request* depuis un *fork* ?
+12. Créer une pull request sur Aif4thah/Dojo-101 afin de me demander d'ajouter le fichier "README-from-Fork.md" sur mon dépôt
 
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 Relecture des réponses aux questions
 
-# Livrables
+## Livrables
 
 * réponses aux questions
 * Pull request
 
-# Critères de performance
+## Critères de performance
 
 Réussir à se documenter et à trouver les informations recherchées
 Réussir à creer une pull request

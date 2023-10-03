@@ -6,14 +6,14 @@ Durée: 2 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
-# Ressources
+## Ressources
 
 [Guide ANSSI](https://www.ssi.gouv.fr/guide/recommandations-pour-un-usage-securise-dopenssh/)
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
 
-# Contexte
+## Contexte
 
 0. Déployer une VM Linux
 
@@ -34,20 +34,20 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 8. Changer le port par défaut
 
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 Binôme ou seul (au choix)
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 lecture de la procédure
 
-# Livrables
+## Livrables
 
 Captures d'écran des commandes `uname -a`, `date`, et résultats des vérifications (Logs et commandes)
 
 Procédure de configuration et de vérification au format markdown
 
-# Critères de performance
+## Critères de performance
 
 Réussite de l'exercice et pertinence de la procédure

@@ -4,7 +4,7 @@ Software Defined Radio
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
-# Ressources
+## Ressources
 
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
@@ -12,25 +12,25 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 Dossier Toolbox RF
 
 
-# Contexte
+## Contexte
 
 
 
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 Identifier la fréquence de rayonnement du câble HDMI
 Acquérir l’image afin de récupérer les informations affichées à l’écran
 
 
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 
-# Livrables
+## Livrables
 
 
-# Critères de performance
+## Critères de performance
 
 
 

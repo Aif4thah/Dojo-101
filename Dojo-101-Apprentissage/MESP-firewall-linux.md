@@ -6,11 +6,11 @@ Durée estimée: 2 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
-# ressources
+## Ressources
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
-# contexte
+## Contexte
 
 1. Déployer une machine Linux
 
@@ -28,20 +28,20 @@ Dropper ICMP
 3. Vérifier à l'aide de l'outil **nmap** que le firewall fonctionne correctement
 
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 Binôme ou seul (au choix)
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 lecture de la procédure
 
-# Livrables
+## Livrables
 
 captures décran des commandes `uname -a`, `date`, et resutlat des scan nmap
 
 Procédure de configuration et de vérification au format markdown
 
-# Critères de performance
+## Critères de performance
 
 Réussite de l'exercice et pertinence de la procédure

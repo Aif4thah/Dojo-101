@@ -6,7 +6,7 @@ Durée: 5 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
-# Ressources
+## Ressources
 
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
@@ -15,12 +15,12 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 [Markdown:](https://github.com/nirae/Memento-Syntax-Markdown/blob/master/memo.md)
 
 
-# Contexte
+## Contexte
 
 Notre startup a récemment commencé à travailler avec des clients internationaux. Nous avons besoin d’un moyen sécurisé pour accéder à nos ressources internes depuis l’extérieur de notre réseau. Nous comptons sur vous.
 
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 Techno au choix:
 
@@ -36,16 +36,16 @@ LAN: 10.0.0.0/24
 WAN : 192.168.1.0/24
 
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 Lecture du livrable
 
-# Livrables
+## Livrables
 
 Documenter au format `markdown` ou `scripter` la mise en place et l'hardening (Authentification, permissions, Suites de chiffrement crypto)
 de la solution retenue 
 
-# Critères de performance
+## Critères de performance
 
 La concision
 la clarté (du script ou de la doc .md)

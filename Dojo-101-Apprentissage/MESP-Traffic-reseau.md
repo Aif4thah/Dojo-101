@@ -6,12 +6,12 @@ Durée: 5 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
-# ressources
+## Ressources
 
 [Wireshark](https://www.wireshark.org/download.html)
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
-# contexte
+## Contexte
 
 à partir du Lab installé, ajouter les services nécessaires et répondre aux questions suivantes 
 
@@ -43,19 +43,19 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 Binôme ou seul (au choix)
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 Lecture du livrable
 
-# Livrables
+## Livrables
 
 Réponse aux questions et captures décran des captures Wireshark et de la chaine de confiance du certificat
 
-# Critères de performance
+## Critères de performance
 
 Pertinence des réponses
 

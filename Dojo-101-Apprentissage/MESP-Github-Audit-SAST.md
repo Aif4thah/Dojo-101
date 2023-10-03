@@ -6,18 +6,18 @@ Durée: 4 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
-# Ressources
+## Ressources
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 [Vulnerable-Web-App](https://github.com/Aif4thah/Vulnerable-Light-Apps)
 
 
-# Contexte
+## Contexte
 
 En tant qu'ingénieur DevSecOps vous devez démontrer la faisabilité des tests SAST à vos équipes. Pour cela vous allez mettre en place l'audit de code automatisé pour l'application cible "Vulnérable Web App".
 
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 * Forker le projet Github
 * Mettre en place le scan des dépendances à l'aide d'un des outils suivants: dependancy check, Snyk.io, depandabot
@@ -27,15 +27,15 @@ En tant qu'ingénieur DevSecOps vous devez démontrer la faisabilité des tests 
 Conseil: Appuyez-vous sur les interfaces Web / Graphique et les ressources Github / Microsoft clé en main.
 
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 Analyse du fork Github
 
-# Livrables
+## Livrables
 
 URL du projet (fork) Github avec une description du travail effectué dans le README.md
 
-# Critères de performance
+## Critères de performance
 
 Bonne réalisation des modalités pédagogiques
 

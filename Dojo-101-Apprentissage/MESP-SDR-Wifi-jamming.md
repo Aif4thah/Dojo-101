@@ -5,7 +5,7 @@ Software Defined Radio
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
 
-# Ressources
+## Ressources
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
@@ -13,7 +13,7 @@ Dossier Toolbox RF
 
 Video jam wifi
 
-# Contexte
+## Contexte
 
 1. Identifier le canal Wifi de la cible 
 2. Trouver la fréquence correspondante
@@ -23,18 +23,18 @@ Video jam wifi
 * La puissance du HackRF étant limitée, il faut placer l’antenne à proximité (1 à 3 mètres)
 
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 Binôme ou seul (au choix)
 
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 
-# Livrables
+## Livrables
 
 
-# Critères de performance
+## Critères de performance
 
 
 # HW

@@ -6,18 +6,18 @@ Durée estimée: 2 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
-# ressources
+## Ressources
 
 [MSCT](https://learn.microsoft.com/fr-fr/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10)
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
-# contexte
+## Contexte
 
 Un de vos collaborateurs par à l'étranger et il vous est demandé de lui fournir une machine vierge de toute donnée, 
 bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter ses mails sur Office 365 durant son déplacement.
 
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 0. Installer une Machine Windows (VM) cliente et ne PAS joindre l'Active Directory.
 
@@ -33,14 +33,14 @@ bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter s
 
 6. Renforcer la configuration Antivirus
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 
-# Livrables
+## Livrables
 
 1. captures décran de la commande `Get-ComputerInfo`
 2. Fournir une procédure d'installation au format mardown
 
-# Critères de performance
+## Critères de performance
 
 Pertinence des mesures de sécurité et concision de la procédure

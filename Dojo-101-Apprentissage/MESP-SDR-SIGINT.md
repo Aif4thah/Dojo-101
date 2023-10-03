@@ -4,7 +4,7 @@ Software Defined Radio
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
-# Ressources
+## Ressources
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 Démo/vidéo analyse de spectre
@@ -13,12 +13,12 @@ Dossier Toolbox RF
 
 
 
-# Contexte
+## Contexte
 
 
 
 
-# Modalités pédagogiques
+## Modalités pédagogiques
 
 Binôme ou seul (au choix)
 
@@ -31,13 +31,13 @@ Binôme ou seul (au choix)
 4. Écouter la radio FM et/ou le Traffic Aérien (AM)
 
 
-# Modalités d'évaluation
+## Modalités d'évaluation
 
 
-# Livrables
+## Livrables
 
 
-# Critères de performance
+## Critères de performance
 
 # Hardware
 
