@@ -4,7 +4,7 @@ Vous êtes chargé de renforcer le niveau de sécurité des serveurs Linux
 
 Durée: 2 jours
 
-Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3", merci d'en tenir compte d'en vos usages.
+Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
 # Ressources
 
@@ -44,7 +44,7 @@ lecture de la procédure
 
 # Livrables
 
-Capture d'écran des commandes `uname -a`, `date`, et résultats des vérifications (Logs et commandes)
+Captures d'écran des commandes `uname -a`, `date`, et résultats des vérifications (Logs et commandes)
 
 Procédure de configuration et de vérification au format markdown
 

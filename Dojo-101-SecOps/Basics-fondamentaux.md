@@ -8,7 +8,7 @@
 
 * Actifs (Assets) : tout ce qui à de la valeur au sein du SI
 
-# DICP
+# DICP ("CIA triad" en anglais)
 
 * Disponibilité : que les données soient bien accessibles
 
@@ -20,17 +20,18 @@
 
 * Authentitication : L’authentification a pour but de vérifier l’identité dont une entité se réclame.
 
+
 # Risque
 
-Vulnérabilité : Faute, par malveillance ou maladresse, dans les spécifications, la conception, la réalisation, l’installation ou la configuration d’un système, ou dans la façon de l’utiliser. Remarques : Une vulnérabilité peut être utilisée par un code d’exploitation et conduire à une intrusion dans le système. (faiblesse sur le SI)
-
-Risque = Menace * Vulnérabilité * Impact
-Risque = Impact * Vraissemblance
+* Vulnérabilité : Faute, par malveillance ou maladresse, dans les spécifications, la conception, la réalisation, l’installation ou la configuration d’un système, ou dans la façon de l’utiliser. 
+* Remarques : Une vulnérabilité peut être utilisée par un code d’exploitation et conduire à une intrusion dans le système. (faiblesse sur le SI)
+* Risque = Menace * Vulnérabilité * Impact
+* Risque = Impact * Vraissemblance
 
 # Traitement du risque
 
 * écarter
-* attenuer
+* attenuer (mitigate)
 * transferer
 * accepter
 
