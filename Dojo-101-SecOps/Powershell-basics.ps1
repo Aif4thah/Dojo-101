@@ -43,7 +43,7 @@ $var = (read-host ">>>").ToString()
 
 
 $Secure = Read-Host "saisissez un secret" -AsSecureString
-
+Get-Credential
 
 
 ## conditions et booléens
