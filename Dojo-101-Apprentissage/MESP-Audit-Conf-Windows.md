@@ -11,6 +11,8 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * Guide CIS / ANSSI
 * Referentiel PASSI
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [bloudhound](https://github.com/BloodHoundAD/BloodHound)
+* [Sharphound](https://github.com/BloodHoundAD/SharpHound)
 
 ## Contexte
 

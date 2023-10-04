@@ -43,7 +43,7 @@ $var = (read-host ">>>").ToString()
 
 
 $Secure = Read-Host "saisissez un secret" -AsSecureString
-
+Get-Credential
 
 
 ## conditions et booléens
@@ -51,7 +51,7 @@ $Secure = Read-Host "saisissez un secret" -AsSecureString
 
 if($var.Contains('a')){ $true }else{ $false }
 
-## condition ternaire pwsh 7
+## condition ternaire (pwsh => 7)
 
 $var.Contains('a') ? $true : $false
 
@@ -98,7 +98,7 @@ Get-SmbShare
 ## IP
 
 Get-NetIPAddress
-Get-NetIPAddress |% { $_.IPAddress }
+(Get-NetIPAddress).IPAddress
 
 ## cartes réseaux 
 
@@ -113,7 +113,7 @@ Test-NetConnection google.fr -TraceRoute
 ## Web
 
 Invoke-WebRequest https://google.fr
-iwr https://raw.githubusercontent.com/Aif4thah/CShidori/main/LICENSE -outfile .\LICENSE
+iwr https://raw.githubusercontent.com/Aif4thah/dojo-101/main/LICENSE -outfile .\LICENSE
 
 ## API
 
@@ -133,7 +133,6 @@ Add-Type -AssemblyName System.Web
 [System.Web.HttpUtility]::UrlDecode("%27%20or%20%271%27%3D%271")
 
 ## Excrite, lire
-
 
 write "write-host 'coucou' -foregroundColor Cyan" > test.ps1
 gc test.ps1
@@ -427,5 +426,6 @@ $BasicTestObject.Multiply(5, 2)
 
 $job = Start-Job -ScriptBlock { Get-WinEvent -Log System }
 $job | Select-Object -Property *
+Stop-Job $job
 
 

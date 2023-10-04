@@ -2,7 +2,7 @@
 
 Ce lab vous servira pour les mises en situations professionnelles
 
-Durée estimée: 3 jours
+Durée estimée: 2 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
@@ -10,6 +10,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 [Vulnerable-Light-App](https://github.com/Aif4thah/Vulnerable-Light-Apps)
+[Badblood](https://github.com/davidprowe/BadBlood)
 
 ## Contexte
 
@@ -18,12 +19,12 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 3. Pour la Workstation Windows: Joindre le domaine
 4. Créer un utilisateur admin (root/administrateur) et un utilisateur standard et local sur chaque machine
 5. Mettre en place les services sur l’AD et configurer la Workstation pour leur utilisation
-    * DNS
-    * DHCP
-    * Web : Vulnerable-light-app ->
-    * SSH et WinRM
-    * Partage SMB ou NFS
+    * DNS : celui de votre Domaine AD
+    * Web : Vulnerable-light-app : le service doit être disponible sur la boucle locale de votre machine Windows ou Linux
+    * SSH et WinRM : accessible aux administrateurs uniquement sur Windows et Linux
+    * Partage SMB: un partage "Readonly" accessible à tous en lecture, un partage "rw" accessible à tous en lecture et écriture sur le serveur Windows
 
+6. execution du script badblood: `. ./invoke-badblood.ps1`
 
 ## Modalités pédagogiques
 
@@ -31,11 +32,16 @@ Binôme ou seul (au choix)
 
 ## Modalités d'évaluation
 
-captures décran des commandes `id && uname -a` pour linux et `Get-ComputerInfo` pour Windows
+Fourniture d'un script qui vérifie 
+* le statut des services installés (DNS, Web, Partage, SSH / WinRM)
+* affiche le nombre d'utilisateurs contenus dans l'AD
 
 ## Livrables
 
-Le Lab fonctionnel
+* le script
+* le résultat du script (Screenshot)
 
 ## Critères de performance
+
+Le lab est opérationnel
 
