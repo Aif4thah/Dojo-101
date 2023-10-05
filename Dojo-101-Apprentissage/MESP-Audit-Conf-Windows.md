@@ -8,10 +8,11 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Ressources
 
-* Guide CIS / ANSSI
-* Referentiel PASSI
+* [Guide CIS](https://github.com/cismirror/old-benchmarks-archive)
+* [Guides ANSSI](https://www.ssi.gouv.fr/administration/bonnes-pratiques/)
+* [Referentiel PASSI](https://www.ssi.gouv.fr/actualite/publication-du-referentiel-dexigences-applicable-aux-prestataires-daudit-de-la-securite-des-systemes-dinformation-passi/)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-* [bloudhound](https://github.com/BloodHoundAD/BloodHound)
+* [bloodhound](https://github.com/BloodHoundAD/BloodHound)
 * [Sharphound](https://github.com/BloodHoundAD/SharpHound)
 
 ## Contexte

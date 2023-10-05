@@ -70,15 +70,18 @@ alias %
 
 ## formater un resultat
 
-
 get-date
 get-date |ft *
 get-date |fl *
 
+## comparer un resultat
+
+$a = ps; code ; $b = ps
+Compare-Object -ReferenceObject $a -DifferenceObject $b
+
 ## Transformer un objet
 
-
-get-date |ConvertTo-Csv
+get-date | ConvertTo-Csv
 get-date | ConvertTo-html
 
 ## Manipuler les fichiers et les objets
