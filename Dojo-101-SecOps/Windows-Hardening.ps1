@@ -9,6 +9,15 @@ Limit-EventLog -LogName "Security" -MaximumSize (4*1024*1024*1024)
 #execution policy
 Set-ExecutionPolicy -ExecutionPolicy Restricted
 
+#Protection du Disque
+
+if(!(Get-BitLockerVolume -MountPoint "C:").VolumeStatus -eq "FullyEncrypted"){
+
+#$SecureString = ConvertTo-SecureString (read-host) -AsPlainText -Force
+#Enable-BitLocker -MountPoint "C:" -EncryptionMethod Aes256 -UsedSpaceOnly -Pin $SecureString -TPMandPinProtector
+
+}
+
 #Protection de la mémoire
 Set-Processmitigation -System -Enable DEP,ForceRelocateImages,BottomUp,CFG,SEHOP
 Get-ProcessMitigation |select ProcessName |%{ Set-Processmitigation -Name $_.ProcessName -Enable DEP,BottomUp,SEHOP}
@@ -90,6 +99,7 @@ Netsh advfirewall firewall add rule name="Block wscript.exe netconns" program="%
 Netsh advfirewall firewall add rule name="Block cscript.exe netconns" program="%systemroot%\system32\cscript.exe" protocol=tcp dir=out enable=yes action=block profile=any
 Netsh advfirewall firewall add rule name="Block runscripthelper.exe netconns" program="%systemroot%\system32\runscripthelper.exe" protocol=tcp dir=out enable=yes action=block profile=any
 Netsh advfirewall firewall add rule name="Block hh.exe netconns" program="%systemroot%\system32\hh.exe" protocol=tcp dir=out enable=yes action=block profile=any
+
 
 #Configuration de Windows Defender
 setx /M MP_FORCE_USE_SANDBOX 1 #sandboxing

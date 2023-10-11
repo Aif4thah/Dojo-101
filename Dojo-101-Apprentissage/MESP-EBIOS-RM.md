@@ -13,19 +13,6 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Contexte
 
-1. Donnez les définitions des critères de sécurité "DICT" (1pt)
-
-2. citez 3 réglementations liées à la sécurité des systèmes d'information, en précisant leurs domaines d'application (1 pt)
-
-3. Quelles sont les 4 grandes étapes de la norme ISO 27001 ? (1pt)
-
-4. Qu'est-ce que le RGS ? (1 pt)
-
-5. Qu'est-ce que la "déclaration d'applicabilité" ? (1pt)
-
-6. Qu'est-ce que le risque résiduel ? (1pt)
-
-
 Vous êtes le RSSI d'une Startup de 6 personnes spécialisée dans l'obtention de la certification ISO27001 pour ses clients.
 
 Le système d'information se compose de:
@@ -66,7 +53,7 @@ Lecture du rapport et présentation à l'oral
 
 ## Critères de performance
 
-- respect de la méthode EBIOS RM: 4 points
-- Formalisme et synthétisme: 4 points
-- Pertinence de risques identifiés: 4 points
-- Pertinence des mesures de sécurité retenues: 4 points
+- respect de la méthode EBIOS RM
+- Formalisme et synthétisme
+- Pertinence de risques identifiés
+- Pertinence des mesures de sécurité retenues
