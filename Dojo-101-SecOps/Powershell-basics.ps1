@@ -189,8 +189,8 @@ Get-LocalGroup Admin* |Get-LocalGroupMember
 
 ## logs
 
-
-Get-EventLog -LogName *
+Get-EventLog -List
+Get-EventLog -LogName "Security"
 
 
 ## volume registry
