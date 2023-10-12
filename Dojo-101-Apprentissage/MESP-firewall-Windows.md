@@ -19,11 +19,13 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 3. Configurer une politique par défaut "Drop" pour les flux entrants
 
-3. Supprimer les règles inutiles ou trop permissives concernant le trafic entrant
+4. Supprimer les règles inutiles ou trop permissives concernant le trafic entrant
 
-4. à l'aide du MITRE Attack, créer des règles "deny" pertinentes concernant les flux sortants (10 minimum)
+5. à l'aide du MITRE Attack, créer des règles "deny" pertinentes concernant les flux sortants (10 minimum)
 
-3. Vérifier à l'aide de l'outil **nmap**, ou d'autres commandes que le firewall fonctionne correctement
+6. Vérifier à l'aide de l'outil **nmap**, ou d'autres commandes que le firewall fonctionne correctement
+
+7. Désactiver les réponses ICMP et les message TCP Reset lorsqu'il n'y a pas d'applications sur le port concerné
 
 
 ## Modalités pédagogiques

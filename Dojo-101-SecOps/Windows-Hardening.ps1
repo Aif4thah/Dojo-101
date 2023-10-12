@@ -144,15 +144,16 @@ if(1 -ne (get-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Termina
 
 write-host "[*]Configuration de Windows Defender"
 setx /M MP_FORCE_USE_SANDBOX 1
-Set-MpPreference -DisablePrivacyMode $true -DisableRealtimeMonitoring $false -DisableIntrusionPreventionSystem $false 
+Set-MpPreference -DisableRealtimeMonitoring $false -DisableIntrusionPreventionSystem $false 
 Set-MpPreference -UnknownThreatDefaultAction Quarantine -HighThreatDefaultAction Quarantine -SevereThreatDefaultAction Quarantine -ModerateThreatDefaultAction Quarantine  -LowThreatDefaultAction NoAction 
-Set-MpPreference -EnableNetworkProtection Enabled
-Set-MpPreference -QuarantinePurgeItemsAfterDelay 0
+Set-MpPreference -EnableNetworkProtection Enabled -AllowSwitchToAsyncInspection $true
+Set-MpPreference -QuarantinePurgeItemsAfterDelay 30
 Set-MpPreference -MAPSReporting Advanced
 Set-MpPreference -DisableAutoExclusions $false
 Set-MpPreference -SubmitSamplesConsent 1
+Set-MpPreference -ControlledFolderAccessProtectedFolders (ls $HOME\p*nd*e).FullName -EnableControlledFolderAccess Enabled
 Set-MpPreference -ControlledFolderAccessAllowedApplications 'C:\Users\michael\AppData\Local\Programs\Microsoft VS Code\Code.exe', 'C:\Windows\System32\Robocopy.exe', 'C:\Windows\explorer.exe', 'C:\Program Files\PowerShell\7\pwsh.exe'
-Set-MpPreference -EnableControlledFolderAccess 1
+Set-MpPreference -SignatureScheduleDay Everyday
 
 write-host "[*]configuration de l'UAC au niveau 3"
 if( 2 -ne (Get-ItemProperty "registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System")."ConsentPromptBehaviorAdmin"){
@@ -202,10 +203,9 @@ if((Get-ItemProperty "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Cont
 
 
 write-host "[*]Configuration Pare-feu"
-Set-NetFirewallProfile -Profile * -Enabled True –NotifyOnListen True
-netsh advfirewall set currentprofile logging filename %systemroot%\system32\LogFiles\Firewall\pfirewall.log
-netsh advfirewall set currentprofile logging maxfilesize 4096
-netsh advfirewall set currentprofile logging droppedconnections enable
+Set-NetFirewallProfile -Profile * -Enabled True –NotifyOnListen True -DefaultInboundAction Block -DefaultOutboundAction Allow
+Set-NetFirewallProfile -Profile * -LogFileName %SystemRoot%\System32\LogFiles\Firewall\pfirewall.log -LogBlocked true -LogIgnored true -LogAllowed true -LogMaxSizeKilobytes 32767
+Set-NetFirewallProfile -Profile * -AllowLocalFirewallRules True -AllowUnicastResponseToMulticast False -EnableStealthModeForIPsec True
 Set-NetConnectionProfile -InterfaceAlias * -NetworkCategory Public
 
 if((Get-NetFirewallRule -DisplayName "Block notepad.exe netconns"| measure).count -le 0){
@@ -233,7 +233,7 @@ if((Get-NetFirewallRule -DisplayName "Block hh.exe netconns" | measure).count -l
     Netsh advfirewall firewall add rule name="Block hh.exe netconns" program="%systemroot%\system32\hh.exe" protocol=tcp dir=out enable=yes action=block profile=any
 }
 
-write-host "[*]Désactivation des règles en doublon dans le pare-feu"
+write-host "[*]Désactivation des règles en doublon dans le pare-feu (peux prendre un peu temps)"
 
 Get-NetFirewallRule |select -Property DisplayName |%{
     if ((Get-NetFirewallRule -DisplayName $_.DisplayName | measure).Count -gt 1){
@@ -243,10 +243,12 @@ Get-NetFirewallRule |select -Property DisplayName |%{
            if($null -eq (Compare-Object ($r1|Get-NetFirewallPortFilter) ($r2|Get-NetFirewallPortFilter) -Property Protocol,LocalPort,RemotePort)){
                 if($null -eq (Compare-Object ($r1|Get-NetFirewallAddressFilter) ($r2|Get-NetFirewallAddressFilter) -Property RemoteAddress,LocalAddress)){
                     if($null -eq (Compare-Object ($r1|Get-NetFirewallApplicationFilter) ($r2|Get-NetFirewallApplicationFilter) -Property Program )){
+                        write-host "$r2" -ForegroundColor Cyan
                         if($null -eq (Compare-Object ($r1|Get-NetFirewallServiceFilter) ($r2|Get-NetFirewallServiceFilter) -Property Service )){
                             if($null -eq (Compare-Object ($r1|Get-NetFirewallInterfaceFilter) ($r2|Get-NetFirewallInterfaceFilter) -Property InterfaceAlias )){
                                 if($null -eq (Compare-Object ($r1|Get-NetFirewallSecurityFilter) ($r2|Get-NetFirewallSecurityFilter) -Property LocalUser,Authentication,RemoteUser,RemoteMachine,Encryption )){
-                                            $r2 |Disable-NetFirewallRule -Confirm
+                                    $r2 
+                                    $r2 |Disable-NetFirewallRule -Confirm
                                 }
                             }
                         }
