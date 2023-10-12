@@ -2,7 +2,7 @@
 
 Vous devez mener une AdR EBIOS RM d'un projet infra commandé par la MOA
 
-Durée: 5 jours
+Durée: 4 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
 
@@ -10,6 +10,8 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 [Guide EBIOS RM](https://www.ssi.gouv.fr/guide/la-methode-ebios-risk-manager-le-guide/)
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+[Mitre Attack](https://attack.mitre.org/)
+
 
 ## Contexte
 
