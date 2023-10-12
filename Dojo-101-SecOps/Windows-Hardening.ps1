@@ -154,6 +154,7 @@ Set-MpPreference -SubmitSamplesConsent 1
 Set-MpPreference -ControlledFolderAccessProtectedFolders (ls $HOME\p*nd*e).FullName -EnableControlledFolderAccess Enabled
 Set-MpPreference -ControlledFolderAccessAllowedApplications 'C:\Users\michael\AppData\Local\Programs\Microsoft VS Code\Code.exe', 'C:\Windows\System32\Robocopy.exe', 'C:\Windows\explorer.exe', 'C:\Program Files\PowerShell\7\pwsh.exe'
 Set-MpPreference -SignatureScheduleDay Everyday
+Set-MpPreference -RemediationScheduleDay 0
 
 write-host "[*]configuration de l'UAC au niveau 3"
 if( 2 -ne (Get-ItemProperty "registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System")."ConsentPromptBehaviorAdmin"){
