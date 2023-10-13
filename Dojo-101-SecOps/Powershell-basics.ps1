@@ -25,6 +25,11 @@ $var |gm #lister les membres (proprietés et fonctions)
 
 $var = @( 1,2,3 )
 
+## hashtable
+
+$hash = @{ Number = 1; Shape = "Square"; Color = "Blue"}
+
+
 ## afficher
 
 write-host "coucou $a" -foregroundColor Cyan
@@ -89,7 +94,7 @@ get-date | ConvertTo-html
 Get-PSDrive |ConvertTo-Json > test.json
 cat .\test.json | ConvertFrom-Json
 
-# Storage
+## Storage
 
 get-disk
 get-volume
@@ -139,6 +144,7 @@ Add-Type -AssemblyName System.Web
 
 write "write-host 'coucou' -foregroundColor Cyan" > test.ps1
 gc test.ps1
+gc test.ps1 | Format-Hex
 
 
 ## Lire les permission

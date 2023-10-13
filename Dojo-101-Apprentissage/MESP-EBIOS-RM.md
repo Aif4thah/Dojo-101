@@ -20,8 +20,10 @@ Vous êtes le RSSI d'une Startup de 6 personnes spécialisée dans l'obtention d
 Le système d'information se compose de:
 
 * 4 machines nomades pour les consultants, basés à Paris et mobiles dans toute la France
-* 2 Postes fixes pour le directeur et la responsable RH, basés à Aix-en-Provence
+* 2 Postes fixes pour le directeur et le responsable RH, basés à Aix-en-Provence
 * 1 Application cloud fournissant aux clients tous les éléments concernant le suivi de l'avancement de leurs certifications ainsi que le détail des analyses de risques menées par les consultants
+
+Chaque utilisateur utilise le service VPN de sont choix. L'application cloud est exposée sur internet, protégée par un WAF et une authentification par login + mot de passe (les comptes sont dans la BDD de l'application). 
 
 En tant que responsable de la gestion des risques, vous avez pour mission de mener une analyse EBIOS RM afin d'établir un premier plan de traitement des risques.
 
