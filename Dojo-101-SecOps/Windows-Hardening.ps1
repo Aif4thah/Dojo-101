@@ -152,7 +152,7 @@ Set-MpPreference -MAPSReporting Advanced
 Set-MpPreference -DisableAutoExclusions $false
 Set-MpPreference -SubmitSamplesConsent 1
 Set-MpPreference -ControlledFolderAccessProtectedFolders (ls $HOME\p*nd*e).FullName -EnableControlledFolderAccess Enabled
-Set-MpPreference -ControlledFolderAccessAllowedApplications 'C:\Users\michael\AppData\Local\Programs\Microsoft VS Code\Code.exe', 'C:\Windows\System32\Robocopy.exe', 'C:\Windows\explorer.exe', 'C:\Program Files\PowerShell\7\pwsh.exe'
+Set-MpPreference -ControlledFolderAccessAllowedApplications "${HOME}\AppData\Local\Programs\Microsoft VS Code\Code.exe", 'C:\Windows\System32\Robocopy.exe', 'C:\Windows\explorer.exe',
 Set-MpPreference -SignatureScheduleDay Everyday
 Set-MpPreference -RemediationScheduleDay 0
 

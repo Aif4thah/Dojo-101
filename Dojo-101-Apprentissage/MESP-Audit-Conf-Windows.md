@@ -14,6 +14,9 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [bloodhound](https://github.com/BloodHoundAD/BloodHound)
 * [Sharphound](https://github.com/BloodHoundAD/SharpHound)
+* [Nuclei](https://github.com/projectdiscovery/nuclei)
+* [Privesc](https://github.com/carlospolop/PEASS-ng)
+
 
 ## Contexte
 

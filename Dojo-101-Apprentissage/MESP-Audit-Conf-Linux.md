@@ -12,6 +12,9 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * [Guides ANSSI](https://www.ssi.gouv.fr/administration/bonnes-pratiques/)
 * [Referentiel PASSI](https://www.ssi.gouv.fr/actualite/publication-du-referentiel-dexigences-applicable-aux-prestataires-daudit-de-la-securite-des-systemes-dinformation-passi/)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [Nuclei](https://github.com/projectdiscovery/nuclei)
+* [Privesc](https://github.com/carlospolop/PEASS-ng)
+
 
 ## Contexte
 
