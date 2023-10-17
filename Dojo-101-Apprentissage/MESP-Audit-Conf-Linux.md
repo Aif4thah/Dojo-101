@@ -32,6 +32,7 @@ Relecture par le formateur du rapport d'audit finalisé
 ## Livrables
 
 * Diagramme de Gant ou Kanban détaillant la méthodologie que vous allez appliquer
+* Sorties de tous les outils cités en Ressources
 * Rapport d'audit répondant aux exigences du référentiel PASSI 
 
 

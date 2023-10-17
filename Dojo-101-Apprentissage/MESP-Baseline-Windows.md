@@ -40,6 +40,7 @@ bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter s
 
 1. captures décran de la commande `Get-ComputerInfo`
 2. Fournir une procédure d'installation au format mardown
+3. Comparatif des LGPO / GPO de la baseline avec celles appliquées
 
 ## Critères de performance
 
