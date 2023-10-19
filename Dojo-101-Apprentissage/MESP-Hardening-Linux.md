@@ -10,8 +10,10 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Ressources
 
-* Guide CIS / ANSSI
+* [Guide CIS](https://github.com/cismirror/old-benchmarks-archive)
+* [Guides ANSSI](https://www.ssi.gouv.fr/administration/bonnes-pratiques/)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [Ansible](https://www.ansible.com/)
 
 ## Contexte
 
@@ -33,7 +35,8 @@ Relecture par le formateur de la procédure de durcissement
 
 ## Livrables
 
-procédure de durcissement
+* procédure de durcissement (sans Ansible)
+* PlayBook Ansible
 
 ## Critères de performance
 

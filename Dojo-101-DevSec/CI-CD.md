@@ -7,3 +7,10 @@ trouver le plugins et le configurer: exemple package sonarqube pour Jenkins pour
 ## tests unitaires
 
 tester la sécurité lors des tests unitaires (fuzzing)
+
+## Github Workflow / Action pour la sécurité
+
+* DependencyCheck
+* CodeQL
+* Nuclei
+* SonardQube
