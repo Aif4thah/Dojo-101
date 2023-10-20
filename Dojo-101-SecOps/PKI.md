@@ -20,6 +20,13 @@
 
 * HSM: Hardware Security Module
 
+## points à prendre en compte pour la sécurité
+
+* La durée de validité des certificats et les algorithmes de chiffrements choisis
+* L’impact de la compromission d’une clé privée (cliente ou serveur) sur le reste de l’IGC et de fait le choix de l’autorité de certification ainsi que les méthodes de révocation en fonction du besoin.
+* Le stockage et le cloisonnement des secrets
+* Le cas échéant, les protocoles d’enrôlement
+* Les erreurs d’implémentation ou de configuration
 
 ## emplacement des certificats
 
@@ -42,3 +49,40 @@ openssl x509 -in certificate.crt -text -noout
 Get-PfxCertificate .\cert.cer |fl *
 ```
 
+## Exemple d'architecture PKI
+                       
+                                   +#####################                  
+                                   #+#------------------+###               
+                                   #-#                      #              
+                                   #-#                      #              
+                                   #-#                      #              
+                                   #-#    AC RACINE         #              
+                                   #-#                      #              
+                                   ###                      #              
+                                     #                      #              
+                                              #                            
+                         +---------++++++++++-+-++++++++------------       
+                         #                                          #        
+              -###################### .                 ######################+.                                           
+              .--                      -                #-                      ..                                         
+              .-+     .   -###      .  -                #-          ###.     .  ..                                         
+              .-+                      -                +-.                     ..                                         
+              .-+  AC Intermerdiaire   -                #-. AC Intermerdiaire  ..                                         
+              .-+      .      . .   +  -                #-.  .   -      . -  .  ..                                         
+              -##          A           -                ##.          B         ..                                         
+                .                      -                                         .                                         
+                 +...... . ...........+.                  +-....................#                                          
+             ....  ..... # ..........                                #       
+           #                        #                                #
+.######################     #######################       ######################-                                            
+-##                     +#  #-#                     #     #+#                     #                                          
+.##                   .  +  #-#                  .   #    #+                      #                                        
+.##  ..  #    .#      .  +  #-#  ..  #   .#      .   #    ##. ..  #     #.     .  #                                         
+.##   . CERTIFICAT  .    +  #-#      CERTIFICAT  .   #    ##.  .  CERTIFICAT  ..  #                                      
+.##  .   SERVICE A       +  #-# ...   SERVICE B      #    ##.  .   CLIENT 1   ..  #                                         
+-##  .                   +  #+#                      #    ##. .. .  ... ..    .. .#                                     
+ ## ....             ..  +   ## ...              .   #    ##- ....            ..  #                                         
+                         #    #                      #     -                     #                                         
+    ....................        ....................        ....................                                           
+                                       
+                           
