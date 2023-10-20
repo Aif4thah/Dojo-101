@@ -1,6 +1,6 @@
 # PKI (Public key infrastructure) / IGC Infrastructure de gestion de clés
 
-## definition
+## Definitions
 
 * Autorité de certification (AC): Agit comme racine de confiance dans une infrastructure à clé publique et fournit des services qui authentifient l’identité des personnes, des ordinateurs et d’autres entités dans un réseau. (source: microsoft)
 
@@ -20,7 +20,7 @@
 
 * HSM: Hardware Security Module
 
-## points à prendre en compte pour la sécurité
+## Points à prendre en compte pour la sécurité
 
 * La durée de validité des certificats et les algorithmes de chiffrements choisis
 * L’impact de la compromission d’une clé privée (cliente ou serveur) sur le reste de l’IGC et de fait le choix de l’autorité de certification ainsi que les méthodes de révocation en fonction du besoin.
@@ -28,7 +28,7 @@
 * Le cas échéant, les protocoles d’enrôlement
 * Les erreurs d’implémentation ou de configuration
 
-## emplacement des certificats
+## Emplacements des certificats
 
 ### Certstore Windows
 
@@ -50,7 +50,8 @@ Get-PfxCertificate .\cert.cer |fl *
 ```
 
 ## Exemple d'architecture PKI
-                       
+
+```txt                     
                                    +#####################                  
                                    #+#------------------+###               
                                    #-#                      #              
@@ -84,5 +85,5 @@ Get-PfxCertificate .\cert.cer |fl *
  ## ....             ..  +   ## ...              .   #    ##- ....            ..  #                                         
                          #    #                      #     -                     #                                         
     ....................        ....................        ....................                                           
-                                       
+```                                    
                            
