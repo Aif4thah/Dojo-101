@@ -17,6 +17,7 @@ Il vous est demandé de procéder à l'analyse des protocoles utilisés sur le r
 
 à partir du Lab installé, ajouter les services nécessaires et répondre aux questions suivantes 
 
+0. Quels sont les flags TCP ? 
 1. Capturer le processus DORA du protocole DHCP
 2. qu’est ce que le DHCP Starvation / snooping ? Rogue DHCP ?
 3. Que ce passe lors du « ipconfig /release » (windows) ? D’un point de vue sécurité quel peut etre l'enjeu ? 
@@ -31,17 +32,17 @@ Il vous est demandé de procéder à l'analyse des protocoles utilisés sur le r
 12. Qu’est-ce qu’une PKI ?
 13. Capturer un mot de passe FTP ou Telnet (mettre en place les services si nécessaire)
 14. Comment mettre en place la confidentialité pour ce service ? 
-15. Capturer un handshake TLS – puis déchiffrer le trafic avec votre certificat
-16. Qu’est-ce qu’une autorité de certification (AC) racine ? Qu'est qu'une AC intermediaire ?
-17. Connectez-vous sur https://taisen.fr et affichez la chaine de confiance du certificat
-18. Capturer une authentification Kerberos (mettre en place le service si nécessaire)
-19. Capturer une authentification RDP (mettre en place le service si nécessaire)
-20. Quelles sont les attaques connues sur NetLM ?
-21. Capturer une authentification WinRM (Vous pouvez utiliser EvilWinRM si nécessaire côté client.)
-22. Capturer une authentification SSH ou SFTP (mettre en place le service si nécessaire)
-23. Intercepter un fichier au travers du protocole SMB
-24. Comment proteger l'authenticité et la confidentialité d'un partage SMB ?
-25. Quels sont les flags TCP ? 
+15. Capturer un handshake TLS
+16. Déchiffrer le trafic TLS avec votre certificat et/ou votre clé de session
+17. Qu’est-ce qu’une autorité de certification (AC) racine ? Qu'est qu'une AC intermediaire ?
+18. Connectez-vous sur https://taisen.fr et affichez la chaine de confiance du certificat
+19. Capturer une authentification Kerberos (mettre en place le service si nécessaire)
+20. Capturer une authentification RDP (mettre en place le service si nécessaire)
+21. Quelles sont les attaques connues sur NetLM ?
+22. Capturer une authentification WinRM (Vous pouvez utiliser EvilWinRM si nécessaire côté client.)
+23. Capturer une authentification SSH ou SFTP (mettre en place le service si nécessaire)
+24. Intercepter un fichier au travers du protocole SMB
+25. Comment proteger l'authenticité et la confidentialité d'un partage SMB ?
 
 
 ## Modalités pédagogiques
