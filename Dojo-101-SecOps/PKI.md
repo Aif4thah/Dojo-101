@@ -12,13 +12,13 @@
 
 * Serveur d’archivage de clé : Enregistre les clés privées chiffrées dans la base de données de certificats pour une récupération après perte. (source: microsoft)
 
-* AC Racine :
+* AC Racine : En cryptographie et en sécurité informatique, un certificat racine est un certificat électronique non signé ou auto-signé qui identifie une autorité de certification (AC)
 
-* AC Intermediaire :
+* AC Intermediaire : Le certificat intermédiaire est un certificat délivré en tant que couche intermédiaire entre l'autorité de certification et le certificat final de l'utilisateur. Il sert d'outil d'authentification pour indiquer à un navigateur qu'un certificat est à l'origine d'une source sûre et valide, le certificat racine de l'AC
 
-* Chaine de confiance: 
+* Chaine de confiance: Une chaîne de confiance garantit la sécurité, l'évolutivité et la conformité aux normes des autorités de certification. Il garantit également la confidentialité, la confiance et la sécurité pour ceux qui s'appuient sur des certificats d'entité finale, tels que les opérateurs de sites Web et les utilisateurs.
 
-* HSM: Hardware Security Module
+* HSM: Un Hardware Security Module ou HSM est un matériel électronique offrant un service de sécurité qui consiste à générer, stocker et protéger des clefs cryptographiques.
 
 ## Points à prendre en compte pour la sécurité
 
