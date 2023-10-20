@@ -42,7 +42,7 @@ Cela résume le fonctionnement de base du protocole TLS pour établir une connex
 
 ## Déchiffrer le traffic
 
-La méthode que nous utiliserons est la méthode suivante, testée sur Windows 11
+La méthode que nous utiliserons la méthode suivante, testée sur Windows 11
 
 ### Étape 1 : Paramétrer votre système
 
