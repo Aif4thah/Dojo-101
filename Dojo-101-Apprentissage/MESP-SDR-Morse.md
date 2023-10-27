@@ -1,0 +1,38 @@
+# Communiquer en mode dégradé (morse)
+
+Software Defined Radio 
+
+Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
+
+## Ressources
+
+[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+
+Dossier Toolbox RF
+
+## Contexte
+
+
+## Modalités pédagogiques
+
+Binôme ou seul (au choix)
+
+1. Transformer son message en code morse dans un fichier cs8 (IQ)
+
+2. L’envoyer à l’aide du HackRF
+
+3. Recevoir le code morse et récupérer le message 
+
+
+## Modalités d'évaluation
+
+
+## Livrables
+
+
+## Critères de performance
+
+# Hardware
+
+HackRF
+Hub et adaptateur USB
