@@ -63,3 +63,15 @@ Si pbm avec les hooks
 ```shell
 Git commit --no-verify
 ```
+
+## Historique et suppression des secrets
+
+```sh
+git checkout --orphan latest_branch
+git add -A
+git commit -am "Init" 
+git branch -D main # suppression
+git branch -m main # renommage de la branche en main
+git push -f origin main #push vers la branche main
+git gc --aggressive --prune=all # supression des anciens fichiers
+```

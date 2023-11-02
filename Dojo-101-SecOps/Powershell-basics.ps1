@@ -107,6 +107,7 @@ Get-SmbShare
 
 Get-NetIPAddress
 (Get-NetIPAddress).IPAddress
+Get-NetIPAddress |select -Property Ipaddress,AddressFamily |? AddressFamily -eq "IPV4"
 
 ## cartes réseaux 
 

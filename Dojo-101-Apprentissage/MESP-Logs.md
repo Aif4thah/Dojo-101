@@ -1,0 +1,41 @@
+# Journalisation (Logs)
+
+Mise forme des logs et création d'un puits de logs
+
+Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
+
+durée: 2 jour
+
+## Ressources
+
+[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+
+[auditpol](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/auditpol)
+
+[Guide ANSSI](https://www.ssi.gouv.fr/guide/recommandations-de-securite-pour-la-mise-en-oeuvre-dun-systeme-de-journalisation/)
+
+## Contexte
+
+Afin de préparer l'arrivée du SIEM vous êtes chargé de mettre en place un puits de logs. 
+Vous êtes libre quant au choix de la technologie.
+
+1. S'assurer que tous les événements importants pour la sécurité figurent dans les logs (succès et erreur d'authentification, escalade de privilèges, accès aux dossiers sensibles, etc.)
+
+2. Mettre en place ce puits dans une nouvelle machine du Lab, les logs Windows et Linux seront collectés
+
+
+## Modalités pédagogiques
+
+Seul ou en binôme
+
+## Modalités d'évaluation
+
+Lecture du livrable
+
+## Livrables
+
+Procédure d'installation et preuves (screenshot)
+
+## Critères de performance
+
+Pertinence des éléments présents dans le puits de logs

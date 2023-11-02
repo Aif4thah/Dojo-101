@@ -1,13 +1,22 @@
-# DOJO-101
+
+<p align="center">
+    <img src="./Dojo-101.jpg" alt="Dojo-101" style="width: 400px;" />
+</p>
 
 [![License: GNU GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Aif4thah/Dojo-101/pulls)
+[![Donate Ethereum](https://img.shields.io/badge/ETH-donate-4E8EE9.svg?style=flat-square&logo=ethereum)](https://etherscan.io/address/0xcC424e30Ff6eEAb4E6B3A900c5446038F858b314)
+[![Buy me a coffee](https://img.shields.io/badge/buy%20me%20a-coffee-yellow)](https://www.buymeacoffee.com/taisensolutions)
+
+Dojo-101 est le résultat de plus de 10 ans de capitalisation d'expérience en cybersécurité. 
+Minimaliste et en français, ce projet est ouvert à tous. 
+Il est fait pour être téléchargé et utilisé localement avec votre éditeur de texte préféré.
 
 ## Éthique et avis de non-responsabilité
 
 * [À lire avant tout usage](./CODE_OF_CONDUCT.md)
 
-## Base de connaissances et procédures de cybersécurité
+## Thématiques
 
 * [Développement sécurisé](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-DevSec)
 * [Administration sécurisée](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-SecOps)
@@ -43,8 +52,3 @@ code .\Dojo-101\
 ## Sécurité
 
 * [À propos de la sécurité du projet](./SECURITY.md)
-
-## ❤ Aidez-moi à garder Dojo-101 libre et open source
-
-* [Ethereum donation](https://etherscan.io/address/0xcC424e30Ff6eEAb4E6B3A900c5446038F858b314)
-* [Buy me a coffee](https://www.buymeacoffee.com/taisensolutions)

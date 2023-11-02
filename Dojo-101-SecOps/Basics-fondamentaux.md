@@ -2,37 +2,37 @@
 
 # SI
 
-* système d’information :  ensemble organisé de ressources (matériel, logiciels, personnel, données et procédures) permettant de traiter et de diffuser de l’information.
+* **système d’information** :  ensemble organisé de ressources (matériel, logiciels, personnel, données et procédures) permettant de traiter et de diffuser de l’information.
 
-* Sécurité d’un système d’information - ensemble des moyens techniques et non techniques de protection, permettant à un système d’information de résister à des événements susceptibles de compromettre la disponibilité, l’intégrité ou la confidentialité des données, traitées ou transmises et des services connexes que ces systèmes offrent ou rendent accessibles.
+* **Sécurité d’un système d’information** - ensemble des moyens techniques et non techniques de protection, permettant à un système d’information de résister à des événements susceptibles de compromettre la disponibilité, l’intégrité ou la confidentialité des données, traitées ou transmises et des services connexes que ces systèmes offrent ou rendent accessibles.
 
-* Actifs (Assets) : tout ce qui à de la valeur au sein du SI
+* **Actifs** (Assets) : tout ce qui à de la valeur au sein du SI
 
 # DICP ("CIA triad" en anglais)
 
-* Disponibilité : que les données soient bien accessibles
+* **Disponibilité** : ***que les données soient bien accessibles***
 
-* Intégrité : Garantie que le système et l’information traitée ne sont modifiés que par une action volontaire et légitime. (que les données n'ont pas été altérées ou modifiées)
+* **Intégrité** : Garantie que le système et l’information traitée ne sont modifiés que par une action volontaire et légitime. ***que les données n'ont pas été altérées ou modifiées***
 
-* Confidentialité : Propriété d’une information qui n’est ni disponible, ni divulguée aux personnes, entités ou processus non autorisés.( accessibles aux seules personnes autorisées)
+* **Confidentialité** : Propriété d’une information qui n’est ni disponible, ni divulguée aux personnes, entités ou processus non autorisés. ***accessibles aux seules personnes autorisées***
 
-* Preuve
+* **Preuve**, Tracabililité, Non-répudiation
 
-* Authentitication : L’authentification a pour but de vérifier l’identité dont une entité se réclame.
+* **Authentitication** : L’authentification a pour but de vérifier l’identité dont une entité se réclame. ***La personne est bien celle qu'elle prétend être.***
+
 
 
 # Risque
 
-* Vulnérabilité : Faute, par malveillance ou maladresse, dans les spécifications, la conception, la réalisation, l’installation ou la configuration d’un système, ou dans la façon de l’utiliser. 
-* Remarques : Une vulnérabilité peut être utilisée par un code d’exploitation et conduire à une intrusion dans le système. (faiblesse sur le SI)
-* Risque = Menace * Vulnérabilité * Impact
-* Risque = Impact * Vraissemblance
+* **Vulnérabilité** : Faute, par malveillance ou maladresse, dans les spécifications, la conception, la réalisation, l’installation ou la configuration d’un système, ou dans la façon de l’utiliser. 
+* **Remarques** : Une vulnérabilité peut être utilisée par un code d’exploitation et conduire à une intrusion dans le système. (faiblesse sur le SI)
+* **Risque** = Menace * Vulnérabilité * Impact = Impact * Vraissemblance
 
 # Traitement du risque
 
 * écarter
-* attenuer (mitigate)
-* transferer
+* atténuer (mitigate)
+* transférer
 * accepter
 
 # cadre juridique
@@ -62,12 +62,12 @@
 # Vulnérabilités
 
 * N° CVE : identifiant unique pour une vuln.
-* Score CVSS : évaluation de vulnérabilité
+* Score CVSS : évaluation d'une vulnérabilité
 * Reference CWE : mauvaise pratique
 
 ## Aller chercher les informations utiles lorsque nécessaire
 
 ### Référentiels et bonnes pratiques
 
-* [ANSSI](https://www.ssi.gouv.fr/)
+* [ANSSI](https://cyber.gouv.fr/)
 * [SANS](https://www.sans.org/fr_fr/)

@@ -9,6 +9,9 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 ## Ressources
 
 [MSCT](https://learn.microsoft.com/fr-fr/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10)
+
+[auditpol](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/auditpol)
+
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
 ## Contexte
@@ -21,7 +24,7 @@ bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter s
 
 0. Installer une Machine Windows (VM) cliente et ne PAS joindre l'Active Directory.
 
-1. Pratiquer les cmdlets
+1. Lire la documentation
 
 2. Se documenter sur LGPO
 
@@ -33,14 +36,23 @@ bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter s
 
 6. Renforcer la configuration Antivirus
 
+7. Utiliser auditpol pour logger les erreurs d'authentification et les escalades de privilèges
+
+8. Prouver la bonne configuration d'auditpol en retrouvant les evenements dans les logs
+
+
+
 ## Modalités d'évaluation
 
+Lecture des livrables
 
 ## Livrables
 
-1. captures décran de la commande `Get-ComputerInfo`
-2. Fournir une procédure d'installation au format mardown
-3. Comparatif des LGPO / GPO de la baseline avec celles appliquées
+1. Comparatif des LGPO / GPO de la baseline avec celles appliquées
+2. Résultat de la commange `Get-BitLockerVolume`
+3. Résultat de la commande `Get-MpPreference`
+4. Résultat de la commande `auditpol.exe /get /category:*` 
+5. Captures des logs avec échec d'authentification et escalade de privilèges
 
 ## Critères de performance
 
