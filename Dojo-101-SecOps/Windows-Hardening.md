@@ -9,10 +9,13 @@ On peut ensuite analyzer et comparer les GPO.
 
 [Download](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
 
-## Editer la politique de sécurité locale ou la GPO (Administration de parc)
+### exemple pour un windows 11 standalone
+
+```powershell
+.\Baseline-LocalInstall.ps1 -Win11NonDomainJoined
+```
+
+## Alternative: Editer manuellement la politique de sécurité locale ou la GPO du domaine AD
 
 `Gpedit.msc` ou `SecPol.msc`
 
-## Script (Personnalisable)
-
-cf. script hardening powershell

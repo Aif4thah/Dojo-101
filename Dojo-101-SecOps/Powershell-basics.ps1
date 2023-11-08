@@ -141,6 +141,15 @@ Invoke-RestMethod -method Post -uri https://localhost:3000/Auth -Body '{"user":"
 Add-Type -AssemblyName System.Web
 [System.Web.HttpUtility]::UrlDecode("%27%20or%20%271%27%3D%271")
 
+### base 64
+
+[Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes("write coucou"))
+[System.Text.Encoding]::Unicode.GetString([convert]::FromBase64String("dwByAGkAdABlACAAYwBvAHUAYwBvAHUA"))
+
+#### execution de base 64 directement
+
+powershell -encodedCommand dwByAGkAdABlACAAYwBvAHUAYwBvAHUA
+
 ## Excrite, lire
 
 write "write-host 'coucou' -foregroundColor Cyan" > test.ps1
@@ -439,3 +448,28 @@ $job | Select-Object -Property *
 Stop-Job $job
 
 
+### firewall, exemple avec suppression des règles en doublon
+
+Get-NetFirewallRule | select -Property DisplayName | % {
+    if ((Get-NetFirewallRule -DisplayName $_.DisplayName | measure).Count -gt 1) {
+        $r1 = (Get-NetFirewallRule -DisplayName $_.DisplayName)[0]
+        $r2 = (Get-NetFirewallRule -DisplayName $_.DisplayName)[1]
+        if ($null -eq (Compare-Object $r1 $r2 -Property Profile, Enabled, Direction, Action, Group)) {
+            if ($null -eq (Compare-Object ($r1 | Get-NetFirewallPortFilter) ($r2 | Get-NetFirewallPortFilter) -Property Protocol, LocalPort, RemotePort)) {
+                if ($null -eq (Compare-Object ($r1 | Get-NetFirewallAddressFilter) ($r2 | Get-NetFirewallAddressFilter) -Property RemoteAddress, LocalAddress)) {
+                    if ($null -eq (Compare-Object ($r1 | Get-NetFirewallApplicationFilter) ($r2 | Get-NetFirewallApplicationFilter) -Property Program )) {
+                        write-host "$r2" -ForegroundColor Cyan
+                        if ($null -eq (Compare-Object ($r1 | Get-NetFirewallServiceFilter) ($r2 | Get-NetFirewallServiceFilter) -Property Service )) {
+                            if ($null -eq (Compare-Object ($r1 | Get-NetFirewallInterfaceFilter) ($r2 | Get-NetFirewallInterfaceFilter) -Property InterfaceAlias )) {
+                                if ($null -eq (Compare-Object ($r1 | Get-NetFirewallSecurityFilter) ($r2 | Get-NetFirewallSecurityFilter) -Property LocalUser, Authentication, RemoteUser, RemoteMachine, Encryption )) {
+                                    $r2 
+                                    $r2 | Disable-NetFirewallRule -Confirm
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

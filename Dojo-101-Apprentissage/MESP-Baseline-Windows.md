@@ -4,7 +4,7 @@ Savoir protéger ses informations sur sa machine personnelle Windows
 
 Durée estimée: 2 jours
 
-Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
+Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
 
@@ -24,22 +24,21 @@ bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter s
 
 0. Installer une Machine Windows (VM) cliente et ne PAS joindre l'Active Directory.
 
-1. Lire la documentation
+1. Utiliser auditpol pour logger les erreurs d'authentification et les escalades de privilèges
 
-2. Se documenter sur LGPO
+2. Prouver la bonne configuration d'auditpol en retrouvant les evenements dans les logs
 
-3. Comprendre puis exécuter le script de durcissement
+3. Lire la documentation MSCT
 
-4. Vérifier la configuration avec PolicyAnalyzer
+4. Se documenter sur LGPO
 
-5. Activer le chiffrement de surface
+5. Comprendre puis exécuter le script de durcissement
 
-6. Renforcer la configuration Antivirus
+6. Vérifier la configuration avec PolicyAnalyzer
 
-7. Utiliser auditpol pour logger les erreurs d'authentification et les escalades de privilèges
+7. Activer le chiffrement de surface
 
-8. Prouver la bonne configuration d'auditpol en retrouvant les evenements dans les logs
-
+8. Renforcer la configuration Antivirus
 
 
 ## Modalités d'évaluation

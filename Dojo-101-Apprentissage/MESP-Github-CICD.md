@@ -4,7 +4,7 @@ Mise en place de tests SAST sur un dépôt Github
 
 Durée: 4 jours
 
-Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
+Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
 
@@ -13,10 +13,9 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 [CodeQL](https://codeql.github.com/)
 [Nuclei](https://blog.projectdiscovery.io/implementing-nuclei-into-your-github-ci-cd-for-scanning-live-web-applications/)
 
-
 ## Contexte
 
-En tant qu'ingénieur DevSecOps vous devez démontrer la faisabilité des tests SAST à vos équipes. Pour cela vous allez mettre en place l'audit de code automatisé pour l'application cible "Vulnérable Web App".
+En tant qu'ingénieur DevSecOps vous devez démontrer la faisabilité des tests SAST à vos équipes. Pour cela vous allez mettre en place l'audit de code automatisé pour l'application cible "Vulnérable Web App"
 
 ## Modalités pédagogiques
 
@@ -28,7 +27,6 @@ En tant qu'ingénieur DevSecOps vous devez démontrer la faisabilité des tests 
 * Ajuster les tests pour qu'ils soient les plus pertinents possibles
 
 Conseil: Lorsque possible, appuyez-vous sur les interfaces Web / Graphique et les ressources Github clé en main.
-
 
 ## Modalités d'évaluation
 
@@ -42,5 +40,4 @@ Fichiers Yaml des actions / Workflow CI/CD
 ## Critères de performance
 
 Bonne réalisation des modalités pédagogiques
-
 

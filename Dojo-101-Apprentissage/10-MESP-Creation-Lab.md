@@ -4,7 +4,7 @@ Ce lab vous servira pour les mises en situations professionnelles
 
 Durée estimée: 2 jours
 
-Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
+Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
 
@@ -20,7 +20,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 4. Créer un utilisateur admin (root/administrateur) et un utilisateur standard et local sur chaque machine
 5. Mettre en place les services sur l’AD et configurer la Workstation pour leur utilisation
     * DNS : celui de votre Domaine AD
-    * Web : Vulnerable-light-app : le service doit être disponible sur la boucle locale de votre machine Windows et Linux, lorsque necessaire vous modifierez le `program.cs` pour exposer votre machine dans le lab
+    * Web : Vulnerable-light-app : le service doit être disponible sur la boucle locale de votre machine Windows ou Linux.
     * SSH et WinRM : accessible aux administrateurs uniquement sur Windows et Linux
     * Partage SMB: un partage "Readonly" accessible à tous en lecture, un partage "rw" accessible à tous en lecture et écriture sur le serveur Windows
 

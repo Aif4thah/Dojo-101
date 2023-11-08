@@ -1,6 +1,5 @@
 # Gestion de crise
 
-
 ## Les parties prenantes de la gestion de crise:
 
 La Direction
@@ -19,18 +18,19 @@ Direction des Systèmes d’information ;
 Direction Juridique ;
 Direction Gestion des risques;…
 
-## Déclenchement de la cellule de crise:
+## Déclenchement de la cellule de crise
 
-### Lorsque les processus sont définis:
+### Lorsque les processus sont définis
+
 Suite à la qualification d’un incident de sécurité
 Suite au suivi des processus en place
 
-### …Si non :
+### …Si non
+
 Suite aux impacts de l’incident 
 Alerte donnée par le métier
 
-
-## Outils de gestion de crise: 
+## Outils de gestion de crise
 
 Mettre en place un Template de timeline (ex: fichier Excel)
 Mettre en place un annuaire

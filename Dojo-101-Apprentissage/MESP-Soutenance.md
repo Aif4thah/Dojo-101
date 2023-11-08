@@ -1,6 +1,6 @@
 # Première soutenance : remise de la première partie du mémoire projet 
 
-Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte d'en vos usages.
+Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Commencer la rédaction du rapport
 
@@ -27,7 +27,7 @@ Par exemple (ce n'est qu'un exemple):
 * bullets points -> Titre de niveau 3
 * figures -> diagrammes, synoptique, etc. présent dans le rapport
 
-# Deuxième soutenance: remise du rapport ET DES SUPPORTS
+# Deuxième soutenance: remise du rapport et des supports
 
 ## Assurez-vous d'avoir fini la première partie
 
