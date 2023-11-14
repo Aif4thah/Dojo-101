@@ -9,7 +9,7 @@
 [![Buy me a coffee](https://img.shields.io/badge/buy%20me%20a-coffee-yellow)](https://www.buymeacoffee.com/taisensolutions)
 
 Dojo-101 est le résultat de plus de 10 ans de capitalisation d'expérience en cybersécurité. 
-Minimaliste et en français, ce projet est ouvert à tous. 
+Minimaliste, utilisable hors-ligne et en français, ce projet est ouvert à tous. 
 Il est fait pour être téléchargé et utilisé localement avec votre éditeur de texte préféré.
 
 ## Éthique et avis de non-responsabilité

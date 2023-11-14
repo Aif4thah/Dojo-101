@@ -11,6 +11,8 @@ Lorsque le chiffrement symétrique est mis en œuvre, la même clé permet de ch
 * 3DES (obsolète)
 * Rijndael, AES
 
+En complément de l'algo, les modes de chiffrement doivent être choisis avec soin.
+
 ### Use case
 
 * Chiffrement de données
@@ -19,40 +21,83 @@ Lorsque le chiffrement symétrique est mis en œuvre, la même clé permet de ch
 
 ### exemple
 
+en python
+
+```bash
+pip install cryptography
+```
+
+```python
+
+import base64
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+from cryptography.hazmat.primitives import padding
+from cryptography.hazmat.backends import default_backend
+import secrets
+
+# Générer une clé AES256
+def genere_cle_AES256():
+    cle = secrets.token_bytes(32)
+    return cle
+
+# Générer un IV
+def genere_IV():
+    iv = secrets.token_bytes(16)
+    return iv
+
+# Chiffrer une chaîne de caractères
+def chiffre_message(cle, iv, message):
+    padder = padding.PKCS7(128).padder()
+    message = message.encode()
+    message = padder.update(message) + padder.finalize()
+    cipher = Cipher(algorithms.AES(cle), modes.CBC(iv), backend=default_backend())
+    encryptor = cipher.encryptor()
+    ct = encryptor.update(message) + encryptor.finalize()
+    return ct
+
+# Déchiffrer un message
+def dechiffre_message(cle, iv, ct):
+    cipher = Cipher(algorithms.AES(cle), modes.CBC(iv), backend=default_backend())
+    decryptor = cipher.decryptor()
+    message = decryptor.update(ct) + decryptor.finalize()
+    unpadder = padding.PKCS7(128).unpadder()
+    message = unpadder.update(message) + unpadder.finalize()
+    return message.decode()
+
+k = genere_cle_AES256()
+c = chiffre_message(k,i,'test')
+dechiffre_message(k,i,c)
+
+```
+
+
+en powershell:
+
 ```powershell
-
-<# utilisation:
-
+<# Utilisation:
 $aes = Generer-cle
 $iv = generer-iv                                      
 $msgchiffre = Chiffrer-message -Message "test" -Key $aes -IVs $iv
 $msgchiffre
 Dechiffrer-message -EncryptedString $msgchiffre -Key $aes -IVs $iv
-
 /!\ attention: contrairement à la clé, les IV ne doivent pas être réutilisés.
-Ce script est utilisé à titre éducatif et n'est pas là pour garantir la confidentialité d'échanges en production.
-
-#>
-
-
+Ce script est utilisé à titre éducatif et n'est pas là pour garantir la confidentialité d'échanges en production.#>
 
 function Generer-cle {
 
     $AESKey = New-Object Byte[] 32
     [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($AESKey)
     return $AESKey
-
 }
-
 
 function Generer-IV {
 
     $IV = New-Object Byte[] 16
     [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($IV)
     return $IV
-
 }
-
 
 function Chiffrer-message
 {
@@ -66,7 +111,6 @@ function Chiffrer-message
   
     [Parameter(Mandatory=$true, Position=2)]
     [Byte[]] $IVs
-
     )
 
 $AES = New-Object System.Security.Cryptography.AesCryptoServiceProvider
@@ -75,8 +119,8 @@ $AES.IV = $IVs
 $AES.Mode = "CBC"
 $Encryptor = $AES.CreateEncryptor()
 $EncryptedBytes = $Encryptor.TransformFinalBlock([Text.Encoding]::UTF8.GetBytes($Message), 0, $Message.Length)
-return [BitConverter]::ToString($EncryptedBytes) -replace '-', ''
 
+return [BitConverter]::ToString($EncryptedBytes) -replace '-', ''
 }
 
 
@@ -94,7 +138,6 @@ function Dechiffrer-message
 
     [Parameter(Mandatory=$true, Position=2)]
     [Byte[]] $IVs
-
     )
 
 $EncryptedBytes = [byte[]]::new($EncryptedString.Length / 2)
@@ -108,7 +151,6 @@ $AES.IV = $IVs
 $Decryptor = $AES.CreateDecryptor()
 $DecryptedBytes = $Decryptor.TransformFinalBlock($EncryptedBytes, 0, $EncryptedBytes.Length)
 return [Text.Encoding]::UTF8.GetString($DecryptedBytes)
-
 }
 ```
 
@@ -139,13 +181,9 @@ $params = @{
     CertStoreLocation = 'Cert:\CurrentUser\My'
     HashAlgorithm = 'sha256'
 }
-$cert = New-SelfSignedCertificate @params
-
-echo "write-host test" > test.ps1
-PS C:\Users\vaca\Downloads> Set-AuthenticodeSignature .\test.ps1 $cert
+New-SelfSignedCertificate @params
+Set-AuthenticodeSignature .\test.ps1 ((Get-ChildItem cert:\CurrentUser\My -codesigning)[0])
 gc .\test.ps1
-@(Get-ChildItem cert:\CurrentUser\My -codesigning)[0] |fl *
-.\test.ps1 #verification signature ( fail si le certificat n'est pas trusté)
 ```
 
 
@@ -167,11 +205,27 @@ le condensat (ou hash), est obtenu grâce à opération mathématique à sens un
 
 ### exemple
 
+en python
+
+```python
+import hashlib
+hashlib.sha256('test'.encode()).hexdigest()
+```
+
+en powershell
+
 ```powershell
 Get-FileHash -Algorithm SHA512 <fichier>
 ```
 
-## Génération d'aléas:
+## Génération d'aléas
+
+| Caractéristique | RNG (Random Number Generator) | PRNG (Pseudo Random Number Generator) |
+|----|----|----|
+| Source d'entropie | Externe | Interne |
+| Prédictibilité | Impossible | Possible |
+| Uniformité | Uniforme | Uniforme si "seed" correcte |
+| Sécurité | Idéal | Non-Idéal |
 
 ### Le niveau d’exigence est élevé 	
 
@@ -188,9 +242,9 @@ Le code de l’application, lorsque disponible, peut ensuite être passé en rev
 
 * La vérification à partir de la documentation que le PRNG est appelé avec la bonne configuration et avec les contrôles de sécurité adéquats.
 
-* L’absence de comportement biaisé, par exemple la valeur de « seed » fixe lors de l’appel à un DRBG.
+* L’absence de comportement biaisé, par exemple la valeur de « seed » fixe lors de l’appel à un DRNG (Deterministic R?G).
 
-* Le calcul théorique de l’entropie obtenue en bits log2(possibilités d’un élementnombre d’élements)
+* Le calcul théorique de l’entropie obtenue en bits log2(possibilités d’un élément / nombre d’éléments)
 
 * Dans une moindre mesure : les sources de l’entropie utilisées par le « random number génération » (RNG). Dans le cas du mouvement de la souris, il faudra s’assurer de son mouvement. Dans le cas d’écriture disque, prendre en compte la machine utilisée, etc.
 
@@ -207,8 +261,10 @@ Le code de l’application, lorsque disponible, peut ensuite être passé en rev
 
 [SPHINCS+](https://sphincs.org/)
 
+[python pypcx](https://github.com/sphincs/pyspx)
 
-## refs
+
+## References
 
 * Serious Cryptography de Jean-Philippe Aumasson (ISBN-13: 9781593278267)
 * Crypto Dictionnay de Jean-Philippe Aumasson (ISBN-13: 9781718501409)

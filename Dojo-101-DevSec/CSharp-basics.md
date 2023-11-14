@@ -1,11 +1,22 @@
-/* C# basics
-Compiler le code
+# C# basics
+
+## Compiler le code
+
 installer `visual studio` ou le framework dotnet et utiliser la commande `dotnet run`
+
+## commentaires
+
+```c#
+//commentaires
+/*
+commentaires
 */
+```
 
-//Hello world
+## Hello world
 
-using System; // librairie importée
+```c#
+using System; ##  librairie importée
 using System.Collections.Generic;
 using System.Net.Sockets;
 using System.Net.Security;
@@ -13,22 +24,23 @@ using System.Security.Cryptography.X509Certificates;
 
 public class Program
 {
-    public static void Main(string[] args) // fonction
+    public static void Main(string[] args) ##  fonction
     {
         Console.WriteLine("Hello World");
     }
 }
+```
 
+##  saisie utilisateurs
 
-// saisie utilisateurs
-
+```c#
 string message = Console.ReadLine();
 
 
-// condition
+##  condition
 
 
-//classic
+```c#
 int a = 1;
 if (1 == a)
 {
@@ -38,35 +50,46 @@ else
 {
     Console.WriteLine("faux");
 }
+```
 
-// condition ternaire
+##  condition ternaire
+
+```c#
 bool result = (a == 1) ? true : false;
 Console.WriteLine("{0}", result);
+```
 
+##  boucle
 
-// boucle
-
-
+```c#
 List<int> liste = new List<int>() { 1, 2, 3 };
+```
 
-//classic
+## classic
+
+```c#
 foreach (var l in liste)
 {
     Console.WriteLine(l);
 }
+```
 
-//linq
+## linq
+
+```c#
 liste.ForEach(i => Console.WriteLine(i));
+```
 
+##  lire un fichier
 
-
-// lire un fichier
-
+```c#
 string text = File.ReadAllText(textFile);
 Console.WriteLine(text);
+```
 
-// fonction async
+##  fonction async
 
+```c#
 class Program
 {
     static void Main(string[] args)
@@ -83,7 +106,7 @@ class Program
             for (int i = 0; i < 100; i++)
             {
                 Console.WriteLine(" Method 1");
-                // Do something
+                ##  Do something
                 Task.Delay(100).Wait();
             }
         });
@@ -95,17 +118,17 @@ class Program
         for (int i = 0; i < 25; i++)
         {
             Console.WriteLine(" Method 2");
-            // Do something
+            ##  Do something
             Task.Delay(100).Wait();
         }
     }
 }
+```
+
+##  executer des commandes système
 
 
-// executer des commandes système
-
-
-
+```c#
 string message = "cat /etc/passwd";
 int timeout = 200;
 System.Diagnostics.Process cmd = new Process();
@@ -123,16 +146,17 @@ cmd.StandardInput.Close();
 message = cmd.StandardOutput.ReadToEnd();
 
 Console.WriteLine(message);
+```
 
-// lire un fichier
+##  lire un fichier
 
-
+```c#
 string text = File.ReadAllText(textFile);
+```
 
+##  classes et objets
 
-// classes et objets
-
-
+```c#
 namespace CShidori.DataHandler
 {
     public class BinLoader
@@ -147,11 +171,11 @@ namespace CShidori.DataHandler
         }
     }
 }
+```
 
+##  TLS Sockets client+server (classes communes)
 
-// TLS Sockets
-
-
+```c#
 public static string readMsg(SslStream sslStream, TcpClient client)
 {
     byte[] buffer = new byte[client.ReceiveBufferSize];
@@ -181,16 +205,14 @@ public static bool CertificateValidationCallback(object sender, X509Certificate 
 
 ```
 
-// TLS Sockets client
+##  TLS Sockets client
 
-                    // valider automatiquement un certificat TLS:
-
-
-   public static class UClient
+```c#
+public static class UClient
 {
     public static bool CertificateValidationCallback(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
     {
-        //Be aware that there is no PKI, the authentication method is manual
+        ## Be aware that there is no PKI, the authentication method is manual
         X509Certificate2 cert2 = new X509Certificate2(certificate);
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("CN:{0}\nExpirDate:{1}\nPubKey:{2}\nThumprint:{3}\n",
@@ -216,15 +238,16 @@ public class Program
         Console.WriteLine("connected");
     }
 }
+```
 
-// TLS Sockets server
+##  TLS Sockets server
 
-
+```c#
 Int16 port = Int16.Parse(args[0]);
 var certificate = new X509Certificate2(args[1], args[2]);
 Console.WriteLine("<0> Server mode\n<0> Port: {0:D}", port);
 
-//Start Tcp Listener, wait for client and get SSL stream
+## Start Tcp Listener, wait for client and get SSL stream
 var listener = new TcpListener(IPAddress.Any, port);
 listener.Start();
 
@@ -238,12 +261,12 @@ while (true)
     UServer.printConnection(sslStream);
     /* etc... */
 }
+```
 
 
+##  Powershell without powershell
 
-// Powershell without powershell
-
-
+```c#
 public static string ObfuscatePwsh(string message)
 {
     string obfcmd = String.Empty;
@@ -276,32 +299,33 @@ public static string ObfuscatePwsh(string message)
     return obfcmd;
 
 }
+```
 
 
+##  minimal API
 
-// minimal API
-
-
+```c#
 using VulnerableWebApplication;
 using System.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 app.MapGet("/", () => "Hello");
-app.Run("https://localhost:3000");
+app.Run("https:## localhost:3000");
+```
 
+##  crypto random
 
-// crypto random
-
+```c#
 using System.Security.Cryptography;
 
 int randvalue = RandomNumberGenerator.GetInt32(p.Length);
 byte[] RandBytes = RandomNumberGenerator.GetBytes(Length);
+```
 
+##  Encoding
 
-
-// Encoding
-
+```c#
 Uri.EscapeDataString(input);
 HttpUtility.UrlEncode(input);
 HttpUtility.UrlEncodeUnicode(input);
@@ -326,7 +350,7 @@ private static string AsciiEncode(string str)
         try
         {
             int val = Convert.ToInt32(c);
-            if (val < 128) //if ASCCI not extended
+            if (val < 128) ## if ASCCI not extended
             {
                 htmlASCIIEncoded += "&#" + val.ToString() + ";";
             }
@@ -345,7 +369,7 @@ private static string AsciiHexEncode(string str)
         try
         {
             int val = Convert.ToInt32(c);
-            if (val < 128) //if ASCCI not extended
+            if (val < 128) ## if ASCCI not extended
             {
                 htmlASCIIHexEncoded += "&#x" + val.ToString("X") + ";";
             }
@@ -354,14 +378,14 @@ private static string AsciiHexEncode(string str)
     }
     return htmlASCIIHexEncoded;
 }
+```
 
 
 
-
-// fuzzing : mutation:
-
+##  fuzzing : mutation:
 
 
+```c#
 public static string RepRandBc(string p)
 {
     int randvalue = RandomNumberGenerator.GetInt32(p.Length);
@@ -445,11 +469,13 @@ public static string RepeatStr(string p)
     int startIndex = RandomNumberGenerator.GetInt32(sb.Length);
 
     return p + sb.ToString(startIndex, sb.Length - startIndex);
-
 }
+```
 
-// Regex
+##  Regex
 
+```c#
 string Pattern = @" -(\d\d).\d\d";
 Match Match = Regex.Match(line, Pattern);
 if (Match.Success) { }
+```

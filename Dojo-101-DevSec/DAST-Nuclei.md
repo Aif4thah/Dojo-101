@@ -5,8 +5,13 @@
 
 * mettre à jour les templates: `.\nuclei.exe -ut`
 
+## tester un seul template
 
-## Custom templates
+```powershell
+.\nuclei.exe -config projet.yml -list urls.txt -t .\templates\vla-cwe434.yaml -duc
+```
+
+## Custom templates et workflows
 
 0. Exemple de fichier projet.yaml et urls.txt
 
@@ -31,7 +36,7 @@ https://<site1>
 https://<site2>
 ```
 
-1. definir un workflow
+1. définir un workflow
 
 fichier: workflow.yaml
 
@@ -52,7 +57,7 @@ workflows:
 fichier:  vla-cwe23.yaml
 
 ```yaml
-id: vla
+id: CWE23
 
 info:
   name: CWE 23 Relative Path Traversal
@@ -84,3 +89,4 @@ requests:
 ```powershell
 .\nuclei.exe -config projet.yml -list urls.txt -w .\workflow.yaml -duc -me Result
 ```
+

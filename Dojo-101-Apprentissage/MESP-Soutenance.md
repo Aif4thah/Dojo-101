@@ -1,13 +1,13 @@
-# Première soutenance : remise de la première partie du mémoire projet 
+# Première soutenance (à blanc) : remise de la première partie du mémoire projet 
 
-Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Commencer la rédaction du rapport
 
-    * plan : Chapitres (qui correspond à une exigence du CDC) > Sujets (technique ou fonctionnel) > points abordés
-    * le résumé/abstract
-    * présentation du contexte (l'entreprise, l'équipe, environnement technique),
-    * le tableau de synthèse complété qui match avec le plan et l'expérience que vous devez mettre en avant
+* plan : Chapitres (qui correspond à une exigence du CDC) > Sujets (technique ou fonctionnel) > points abordés
+* le résumé/abstract
+* présentation du contexte (l'entreprise, l'équipe, environnement technique),
+* le tableau de synthèse complété qui match avec le plan et l'expérience que vous devez mettre en avant
+
 
 ## Police: Time New Roman
 
@@ -18,7 +18,9 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * Pas de souligné pas de gras
 
 
-## Une fois ce travail réalisé commencez à faire des slides (PPT) en accord avec votre plan. Faites simple pour que votre présentation reste naturelle et s'appuie sur votre rapport:
+## Une fois ce travail réalisé commencez à faire des slides (PPT) en accord avec votre plan.
+
+Faites simple pour que votre présentation reste naturelle et s'appuie sur votre rapport:
 
 Par exemple (ce n'est qu'un exemple): 
 
@@ -27,11 +29,14 @@ Par exemple (ce n'est qu'un exemple):
 * bullets points -> Titre de niveau 3
 * figures -> diagrammes, synoptique, etc. présent dans le rapport
 
+
 # Deuxième soutenance: remise du rapport et des supports
 
-## Assurez-vous d'avoir fini la première partie
 
-## Rédiger le mémoire: les explications doivent être concises et compréhensibles par une personne qui a des bases techniques, mais ne connait pas votre entreprise.
+1. Assurez-vous d'avoir fini la première partie
+
+2. Rédiger le mémoire: les explications doivent être concises et compréhensibles par une personne qui a des bases techniques, mais ne connait pas votre entreprise.
+
 
 ## Pour les points importants, créer des "figures":
 
@@ -41,17 +46,20 @@ Par exemple (ce n'est qu'un exemple):
     * Synoptique (processus)
     * Schéma (infrastructure réseau, logiciel)
 
+
 ## Compléter les slides
 
     * Inserer les figures dans la présentation
     * pour chaque Titre de niveau 2 et 3, assurez-vous d'avoir les bullets points ou les phrases présentant les éléments importants
     * créez-vous des notes (fonction PowerPoint) que vous seuls verrez afin d'être certains de ne rien oublier le jour J
 
+
 ## Préparez votre matériel pour le jour J
 
     * backup de vos documents (clé USB, Cloud)
     * chargeurs et câbles HDMI pour votre PC
     * Login mot de passe pour la presentation
+
 
 ## Guidelines for writing an Abstract
 
@@ -72,16 +80,10 @@ Your key message.
 
 A summary of your key findings.
 
-An explanation of why your findings and key message contribute to the field/s and more specifically to the company's needs
-
-In other words, an abstract includes points covering these questions.
-
-What is your paper about?
-
-Why is it important?
-
-How did you do it?
-
-What did you find?
-
-Why are your findings important?
+* An explanation of why your findings and key message contribute to the field/s and more specifically to the company's needs
+* In other words, an abstract includes points covering these questions.
+* What is your paper about?
+* Why is it important?
+* How did you do it?
+* What did you find?
+* Why are your findings important?

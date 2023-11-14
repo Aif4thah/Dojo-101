@@ -44,6 +44,7 @@
 |Z| --.. |
 
 ### chiffres
+
 | char | code | code court|
 |------|------|-----------|
 |0| ----- | - |
@@ -83,7 +84,6 @@
 |------|------|------------|
 | compris | ...-.- ||
 | reçu | .-. ||
-| compris | ...-.- ||
 | erreur | ........ ||
 | repetez | .-..--.- ||
 | fin de transmission | .-.-. ||
@@ -123,4 +123,3 @@ hackrf_transfer -s 8000000 -x 16 -a 1 -f 144050000 -b 1750000 -t test.cs8
 ## réception avec Universal radio hacker
 
 * Enregistrer la réception dans un fichier binaire (IQ) et puis visualiser le signal
-

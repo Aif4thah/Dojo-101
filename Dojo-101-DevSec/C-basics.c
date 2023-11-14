@@ -1,9 +1,8 @@
-/* C
+/* C basics
 
 ## compilation sans protection:
 
 gcc -fno-stack-protector -z execstack source.c
-
 
 ## pbm de librairie 32bits:
 
@@ -76,6 +75,3 @@ p2=     0x7ffffcf45570
 &p1=    0x7ffffcf45560
 &p2=    0x7ffffcf45568
 */
-
-
-
