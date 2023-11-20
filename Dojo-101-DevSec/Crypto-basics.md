@@ -21,6 +21,8 @@ En complément de l'algo, les modes de chiffrement doivent être choisis avec so
 
 ### exemple
 
+/!\ Attention: contrairement à la clé, les IVs ne doivent pas être réutilisés. Ce script est utilisé à titre éducatif et n'est pas là pour garantir la confidentialité d'échanges en production.#>
+
 en python
 
 ```bash
@@ -36,16 +38,6 @@ from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 from cryptography.hazmat.primitives import padding
 from cryptography.hazmat.backends import default_backend
 import secrets
-
-# Générer une clé AES256
-def genere_cle_AES256():
-    cle = secrets.token_bytes(32)
-    return cle
-
-# Générer un IV
-def genere_IV():
-    iv = secrets.token_bytes(16)
-    return iv
 
 # Chiffrer une chaîne de caractères
 def chiffre_message(cle, iv, message):
@@ -66,38 +58,16 @@ def dechiffre_message(cle, iv, ct):
     message = unpadder.update(message) + unpadder.finalize()
     return message.decode()
 
-k = genere_cle_AES256()
+k = secrets.token_bytes(32) # generation d'une cle AES
+i = secrets.token_bytes(16) # generation d'IVs
 c = chiffre_message(k,i,'test')
 dechiffre_message(k,i,c)
-
 ```
 
 
 en powershell:
 
 ```powershell
-<# Utilisation:
-$aes = Generer-cle
-$iv = generer-iv                                      
-$msgchiffre = Chiffrer-message -Message "test" -Key $aes -IVs $iv
-$msgchiffre
-Dechiffrer-message -EncryptedString $msgchiffre -Key $aes -IVs $iv
-/!\ attention: contrairement à la clé, les IV ne doivent pas être réutilisés.
-Ce script est utilisé à titre éducatif et n'est pas là pour garantir la confidentialité d'échanges en production.#>
-
-function Generer-cle {
-
-    $AESKey = New-Object Byte[] 32
-    [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($AESKey)
-    return $AESKey
-}
-
-function Generer-IV {
-
-    $IV = New-Object Byte[] 16
-    [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($IV)
-    return $IV
-}
 
 function Chiffrer-message
 {
@@ -113,14 +83,14 @@ function Chiffrer-message
     [Byte[]] $IVs
     )
 
-$AES = New-Object System.Security.Cryptography.AesCryptoServiceProvider
-$AES.Key = $Key
-$AES.IV = $IVs
-$AES.Mode = "CBC"
-$Encryptor = $AES.CreateEncryptor()
-$EncryptedBytes = $Encryptor.TransformFinalBlock([Text.Encoding]::UTF8.GetBytes($Message), 0, $Message.Length)
+    $AES = New-Object System.Security.Cryptography.AesCryptoServiceProvider
+    $AES.Key = $Key
+    $AES.IV = $IVs
+    $AES.Mode = "CBC"
+    $Encryptor = $AES.CreateEncryptor()
+    $EncryptedBytes = $Encryptor.TransformFinalBlock([Text.Encoding]::UTF8.GetBytes($Message), 0, $Message.Length)
 
-return [BitConverter]::ToString($EncryptedBytes) -replace '-', ''
+    return [BitConverter]::ToString($EncryptedBytes) -replace '-', ''
 }
 
 
@@ -140,18 +110,24 @@ function Dechiffrer-message
     [Byte[]] $IVs
     )
 
-$EncryptedBytes = [byte[]]::new($EncryptedString.Length / 2)
-for ($i = 0; $i -lt $EncryptedBytes.Length; $i++) {
-    $EncryptedBytes[$i] = [Convert]::ToByte($EncryptedString.Substring($i * 2, 2), 16)
+    $EncryptedBytes = [byte[]]::new($EncryptedString.Length / 2)
+    for ($i = 0; $i -lt $EncryptedBytes.Length; $i++) {
+        $EncryptedBytes[$i] = [Convert]::ToByte($EncryptedString.Substring($i * 2, 2), 16)
+    }
+    $AES = New-Object System.Security.Cryptography.AesCryptoServiceProvider
+    $AES.Key = $Key
+    $AES.Mode = "CBC"
+    $AES.IV = $IVs
+    $Decryptor = $AES.CreateDecryptor()
+    $DecryptedBytes = $Decryptor.TransformFinalBlock($EncryptedBytes, 0, $EncryptedBytes.Length)
+    return [Text.Encoding]::UTF8.GetString($DecryptedBytes)
 }
-$AES = New-Object System.Security.Cryptography.AesCryptoServiceProvider
-$AES.Key = $Key
-$AES.Mode = "CBC"
-$AES.IV = $IVs
-$Decryptor = $AES.CreateDecryptor()
-$DecryptedBytes = $Decryptor.TransformFinalBlock($EncryptedBytes, 0, $EncryptedBytes.Length)
-return [Text.Encoding]::UTF8.GetString($DecryptedBytes)
-}
+
+[Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes(($k = New-Object Byte[] 32)) # generation d'une cle AES
+[Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes(($i = New-Object Byte[] 16)) # generation d'IVs
+$msgchiffre = Chiffrer-message -Message "test" -Key $k -IVs $i
+$msgchiffre
+Dechiffrer-message -EncryptedString $msgchiffre -Key $k -IVs $i
 ```
 
 ## Chiffrement asymétrique :
@@ -169,10 +145,12 @@ Le chiffrement asymétrique est composé d’une clé privée et d’une clé pu
 ### Use case
 
 * La signature de documents, de code ou de message (dont certificats X509 en combinaison avec RSA/ECDSA, avec un secret pour les signatures HMAC pour les Tokens JWT etc...)
-* Lors de revues liées aux choix de suites cryptographiques (TLS, SSH, PGP…)
+* Utilisé avec d'autres protocoles dans des suites cryptographiques (TLS, SSH, PGP…)
 * Stockage des secrets
 
 ### exemple
+
+Certificats X509:
 
 ```powershell
 $params = @{
@@ -201,9 +179,11 @@ le condensat (ou hash), est obtenu grâce à opération mathématique à sens un
 ### Use case 
 
 * Pour le stockage de secret, par exemple des mots de passe en base de données
-* Lors de revues liées aux choix de suites cryptographiques (HMAC, Oauth/JWT, TLS)
+* Utilisé avec d'autres protocoles dans des suites cryptographiques (HMAC, Oauth/JWT, TLS)
 
 ### exemple
+
+#### hashage
 
 en python
 
@@ -212,11 +192,38 @@ import hashlib
 hashlib.sha256('test'.encode()).hexdigest()
 ```
 
+
 en powershell
 
 ```powershell
 Get-FileHash -Algorithm SHA512 <fichier>
 ```
+
+#### Signature à base de hashs
+
+en python:
+
+```python
+import hashlib
+import hmac
+secret = b"<secret>"
+msg = "<message to sign>"
+(hmac.new(secret, msg.encode(), hashlib.sha256)).hexdigest()
+```
+
+en powershell:
+
+```powershell
+$secret = "<secret>"
+$message = "<votre message"
+$hmacsha = New-Object System.Security.Cryptography.HMACSHA256
+$hmacsha.key = [Text.Encoding]::ASCII.GetBytes($secret)
+$signature = $hmacsha.ComputeHash([Text.Encoding]::ASCII.GetBytes($message))
+$signature = [Convert]::ToBase64String($signature)
+write-host -ForegroundColor Cyan $signature
+```
+
+
 
 ## Génération d'aléas
 
@@ -242,7 +249,7 @@ Le code de l’application, lorsque disponible, peut ensuite être passé en rev
 
 * La vérification à partir de la documentation que le PRNG est appelé avec la bonne configuration et avec les contrôles de sécurité adéquats.
 
-* L’absence de comportement biaisé, par exemple la valeur de « seed » fixe lors de l’appel à un DRNG (Deterministic R?G).
+* L’absence de comportement biaisé, par exemple la valeur de « seed » fixe lors de l’appel à un DRNG (Deterministic RNG).
 
 * Le calcul théorique de l’entropie obtenue en bits log2(possibilités d’un élément / nombre d’éléments)
 
@@ -259,10 +266,21 @@ Le code de l’application, lorsque disponible, peut ensuite être passé en rev
 
 # exemple de chiffrement post-quantique
 
-[SPHINCS+](https://sphincs.org/)
+[SPHINCS+ pypcx](https://github.com/sphincs/pyspx)
 
-[python pypcx](https://github.com/sphincs/pyspx)
+```python
+import pyspx.shake_128f as sphincs
+import secrets
 
+# Key generation
+seed = secrets.token_bytes(sphincs.crypto_sign_SEEDBYTES)
+public_key, secret_key = sphincs.generate_keypair(seed)
+
+# Sign message and verify
+message = b"<message>"
+signature = sphincs.sign(message, secret_key)
+sphincs.verify(message, signature, public_key)
+```
 
 ## References
 

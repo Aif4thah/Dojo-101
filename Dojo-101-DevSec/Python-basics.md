@@ -29,6 +29,7 @@ a = 1
 type(a)
 dir(a)
 
+a = "chaine de chars"
 a.__len__()
 a.upper()
 help(str)
@@ -247,20 +248,6 @@ string.digits
 #'0123456789'
 ```
 
-## hash
-
-```python
-import hashlib
-hashlib.sha256('test'.encode()).hexdigest()
-```
-
-## signature HMAC
-
-```python
-import hashlib
-(hmac.new(b'secret', 'data_a_signer'.encode(), hashlib.sha256)).hexdigest()
-```
-
 ## fonction
 
 ```python
@@ -274,4 +261,11 @@ multipar2(4)
 ```python
 if __name__ == "__main__":
     pass
+```
+
+## multithreading
+
+```python
+import threading
+threading.Thread( target = <fonction>, args = [ <argument> ] ).start()
 ```
