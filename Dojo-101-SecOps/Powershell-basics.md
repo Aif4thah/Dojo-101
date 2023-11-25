@@ -12,7 +12,7 @@ Set-WinUserLanguageList -Force 'fr-FR'
 #commentaire
 <#
 commentaires
->
+#>
 ```
 
 ## installation sous linux
@@ -201,12 +201,19 @@ Add-Type -AssemblyName System.Web
 powershell -encodedCommand dwByAGkAdABlACAAYwBvAHUAYwBvAHUA
 ```
 
-## Excrite, lire
+## Ecrire, lire
 
 ```powershell
 write "write-host 'coucou' -foregroundColor Cyan" > test.ps1
 gc test.ps1
 gc test.ps1 | Format-Hex
+```
+
+## regex
+
+```powershell
+$regex =  "(http|https)://([A-Za-z0-9._%-]*)(/([A-Za-z0-9._%-]*)*)?/"
+$urls = gc ./resultats/*  | Select-String -Pattern $regex -AllMatches | % { $_.Matches } | % { $_.Value }
 ```
 
 ## Lire les permissions
@@ -385,6 +392,7 @@ gcm *Firewall*
 ## Configuration de Windows Defender
 
 ```powershell
+Get-MpComputerStatus
 Get-MpPreference
 ```
 

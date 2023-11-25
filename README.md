@@ -12,6 +12,13 @@ Dojo-101 est le résultat de plus de 10 ans de capitalisation d'expérience en c
 Minimaliste, utilisable hors-ligne et en français, ce projet est ouvert à tous. 
 Il est fait pour être téléchargé et utilisé localement avec votre éditeur de texte préféré.
 
+## Contactez-moi
+
+Si vous avez des questions sur ce projet, ou si vous êtes intéressé par mes services, n'hésitez pas à me contacter :
+
+* Email : michael.vacarella@protonmail.com
+* LinkedIn : https://www.linkedin.com/in/mvacarella/
+
 ## Éthique et avis de non-responsabilité
 
 * [À lire avant tout usage](./CODE_OF_CONDUCT.md)
