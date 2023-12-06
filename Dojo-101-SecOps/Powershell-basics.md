@@ -209,10 +209,16 @@ gc test.ps1
 gc test.ps1 | Format-Hex
 ```
 
+en cas de pbm d'encodage:
+
+```powershell
+$content |Set-Content -Path $urlsFfuffed -Encoding utf8
+$content | Add-Content -Path $urlsFfuffed -Encoding ascii
+```
 ## regex
 
 ```powershell
-$regex =  "(http|https)://([A-Za-z0-9._%-]*)(/([A-Za-z0-9._%-]*)*)?/"
+$regex =  "(http|https)://([A-Za-z0-9._%-]*)(/([A-Za-z0-9._%-]*)*)?"
 $urls = gc ./resultats/*  | Select-String -Pattern $regex -AllMatches | % { $_.Matches } | % { $_.Value }
 ```
 

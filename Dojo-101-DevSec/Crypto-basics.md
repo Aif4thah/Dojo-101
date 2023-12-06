@@ -21,7 +21,7 @@ En complément de l'algo, les modes de chiffrement doivent être choisis avec so
 
 ### exemple
 
-/!\ Attention: contrairement à la clé, les IVs ne doivent pas être réutilisés. Ce script est utilisé à titre éducatif et n'est pas là pour garantir la confidentialité d'échanges en production.#>
+/!\ Attention: contrairement à la clé, les IVs ne doivent pas être réutilisés. Ce script est utilisé à titre éducatif et n'est pas là pour garantir la confidentialité d'échanges en production.
 
 en python
 
@@ -281,8 +281,3 @@ message = b"<message>"
 signature = sphincs.sign(message, secret_key)
 sphincs.verify(message, signature, public_key)
 ```
-
-## References
-
-* Serious Cryptography de Jean-Philippe Aumasson (ISBN-13: 9781593278267)
-* Crypto Dictionnay de Jean-Philippe Aumasson (ISBN-13: 9781718501409)

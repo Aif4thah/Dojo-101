@@ -22,13 +22,13 @@ bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter s
 
 ## Modalités pédagogiques
 
-0. Installer une Machine Windows (VM) cliente et ne PAS joindre l'Active Directory.
+0. Installer une Machine Windows (VM) cliente et ne **PAS** joindre l'Active Directory.
 
 1. Utiliser auditpol pour logger les erreurs d'authentification et les escalades de privilèges
 
 2. Prouver la bonne configuration d'auditpol en retrouvant les evenements dans les logs
 
-3. Lire la documentation MSCT
+3. Lire la documentation MSCT et le télécharger
 
 4. Se documenter sur LGPO
 
@@ -40,6 +40,8 @@ bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter s
 
 8. Renforcer la configuration Antivirus
 
+9. Votre configuration Auditpol initiale est elle persistante ? Pourquoi ?
+
 
 ## Modalités d'évaluation
 
@@ -47,7 +49,7 @@ Lecture des livrables
 
 ## Livrables
 
-1. Comparatif des LGPO / GPO de la baseline avec celles appliquées
+1. Comparatif des LGPO / GPO de la baseline avec celles appliquées à l'aide de l'outil `PolicyAnalyzer`
 2. Résultat de la commange `Get-BitLockerVolume`
 3. Résultat de la commande `Get-MpPreference`
 4. Résultat de la commande `auditpol.exe /get /category:*` 
