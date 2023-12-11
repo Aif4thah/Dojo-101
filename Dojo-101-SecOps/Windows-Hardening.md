@@ -2,7 +2,7 @@
 
 ## Microsoft Security Compliance Toolkit (baseline)
 
-* Permets appliquer une GPO localement (même sans domaine AD, grace à LGPO.exe) avec les recommandations de Microsoft. 
+* Permets d'appliquer une GPO localement (même sans domaine AD, grace à LGPO.exe) avec les recommandations de Microsoft. 
 * On peut ensuite analyzer et comparer les GPO.
 * Des scripts pour MS365 et Edge sont également disponibles.
 
