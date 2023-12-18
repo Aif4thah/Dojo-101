@@ -9,8 +9,8 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 ## Ressources
 
 * [Guide CIS](https://github.com/cismirror/old-benchmarks-archive)
-* [Guides ANSSI](https://www.ssi.gouv.fr/administration/bonnes-pratiques/)
-* [Referentiel PASSI](https://www.ssi.gouv.fr/actualite/publication-du-referentiel-dexigences-applicable-aux-prestataires-daudit-de-la-securite-des-systemes-dinformation-passi/)
+* [Guides ANSSI](https://cyber.gouv.fr/publications/recommandations-de-securite-relatives-un-systeme-gnulinux)
+* [Referentiel PASSI](https://cyber.gouv.fr/referentiels-dexigences-pour-la-qualification)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [Nuclei](https://github.com/projectdiscovery/nuclei)
 * [Privesc](https://github.com/carlospolop/PEASS-ng)

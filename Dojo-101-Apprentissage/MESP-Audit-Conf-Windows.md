@@ -10,8 +10,8 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 * [Guide ANSSI AD](https://cyber.gouv.fr/publications/recommandations-pour-ladministration-securisee-des-si-reposant-sur-ad)
 * [Guide CIS](https://github.com/cismirror/old-benchmarks-archive)
-* [Guides ANSSI](https://www.ssi.gouv.fr/administration/bonnes-pratiques/)
-* [Referentiel PASSI](https://www.ssi.gouv.fr/actualite/publication-du-referentiel-dexigences-applicable-aux-prestataires-daudit-de-la-securite-des-systemes-dinformation-passi/)
+* [Guides ANSSI](https://cyber.gouv.fr/publications)
+* [Referentiel PASSI](https://cyber.gouv.fr/referentiels-dexigences-pour-la-qualification)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [bloodhound](https://github.com/BloodHoundAD/BloodHound)
 * [Sharphound](https://github.com/BloodHoundAD/SharpHound)

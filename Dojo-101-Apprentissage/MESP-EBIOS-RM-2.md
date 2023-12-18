@@ -8,7 +8,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Ressources
 
-[Guide EBIOS RM](https://www.ssi.gouv.fr/guide/la-methode-ebios-risk-manager-le-guide/)
+[Guide EBIOS RM](https://cyber.gouv.fr/publications/la-methode-ebios-risk-manager-le-guide)
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 [Mitre Attack](https://attack.mitre.org/)
 

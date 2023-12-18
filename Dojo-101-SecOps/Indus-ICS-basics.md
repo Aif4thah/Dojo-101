@@ -15,20 +15,18 @@
 
 ## Guide ANSSI
 
-Guides ANSSI:
-https://www.ssi.gouv.fr/guide/la-cybersecurite-des-systemes-industriels/
+[Guides ANSSI](https://cyber.gouv.fr/publications)
 
-## Normes
+### Normes
 
 * IEC-62443
 
 ## Profil de protection et certification CSPN
 
-https://www.ssi.gouv.fr/guide/profils-de-protection-pour-les-systemes-industriels/
+[PP ANSSI](https://cyber.gouv.fr/publications/profils-de-protection-pour-les-systemes-industriels)
 
 ### Certifications critères communs (CC):
 
-https://www.ssi.gouv.fr/administration/produits-certifies/cc/
 https://www.commoncriteriaportal.org/
 
 ### certification CC et équivalence RGS

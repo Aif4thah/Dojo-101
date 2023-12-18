@@ -8,9 +8,8 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Ressources
 
-[Guide ANSSI](https://www.ssi.gouv.fr/guide/recommandations-pour-un-usage-securise-dopenssh/)
-
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [Guides ANSSI](https://cyber.gouv.fr/publications)
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
 
 ## Contexte

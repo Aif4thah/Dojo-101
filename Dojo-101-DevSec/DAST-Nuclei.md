@@ -90,3 +90,10 @@ requests:
 .\nuclei.exe -config projet.yml -list urls.txt -w .\workflow.yaml -duc -me Result
 ```
 
+## ne tester que les services Up
+
+[httpx](https://github.com/projectdiscovery/httpx/releases)
+
+```powershell
+.\httpx.exe -list urls.txt | .\\nuclei.exe -config projet.yml -w .\workflow.yaml -duc
+```

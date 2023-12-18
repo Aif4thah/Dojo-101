@@ -8,11 +8,9 @@ durée: 2 jour
 
 ## Ressources
 
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-
-[auditpol](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/auditpol)
-
-[Guide ANSSI](https://www.ssi.gouv.fr/guide/recommandations-de-securite-pour-la-mise-en-oeuvre-dun-systeme-de-journalisation/)
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [auditpol](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/auditpol)
+* [Guide ANSSI](https://cyber.gouv.fr/publications)
 
 ## Contexte
 
