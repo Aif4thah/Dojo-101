@@ -1,4 +1,5 @@
 # **Solution WireGuard : Client to site**
+
 Mise en place sur Debian 11
 
 Update :
@@ -6,16 +7,18 @@ Update :
 apt-get update
 ``` 
  ## Installation :
- ``` 
+
+``` 
  apt-get install wireguard
- ``` 
+``` 
 Génération de clées privée et public :
 ```
 wg genkey | sudo tee /etc/wireguard/wg-private.key | wg pubkey | sudo tee /etc/wireguard/wg-public.key
 ```
 
  Créer et editer un fichier de configuration
- ```
+
+```
  nano /etc/wireguard/wire.conf
 ```
 
@@ -118,6 +121,7 @@ Status: active
 ``` 
 
 #### **Configuration Client** 
+
 Le lien de téléchargement du client est ici : https://download.wireguard.com/windows-client/wireguard-installer.exe
 
 Il suffit ensuite de suivre les instruction puis de lancer le client. Ensuite cliquer sur "Ajouter le tunnel" puis "Ajouter un tunnel vide".
