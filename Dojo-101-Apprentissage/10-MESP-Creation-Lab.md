@@ -32,14 +32,14 @@ Binôme ou seul (au choix)
 
 ## Modalités d'évaluation
 
-Fourniture d'un script qui vérifie 
+Fourniture d'un script ou des captures d'écran qui présente : 
 * le statut des services installés (DNS, Web, Partage, SSH / WinRM)
-* affiche le nombre d'utilisateurs contenus dans l'AD
+* le nombre d'utilisateurs contenus dans l'AD
 
 ## Livrables
 
-* le script
-* le résultat du script (Screenshot)
+* le script, le cas échéant
+* le résultat du script ou captures d'écran
 
 ## Critères de performance
 
