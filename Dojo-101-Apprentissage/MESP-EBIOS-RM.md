@@ -61,3 +61,8 @@ Lecture du rapport et présentation à l'oral
 - Formalisme et synthétisme
 - Pertinence de risques identifiés
 - Pertinence des mesures de sécurité retenues
+
+
+## Pour finir
+
+Si vous avez apprécié ce cours, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)

@@ -87,3 +87,8 @@ A summary of your key findings.
 * How did you do it?
 * What did you find?
 * Why are your findings important?
+
+
+## Pour finir
+
+Si vous avez apprécié ce cours, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)

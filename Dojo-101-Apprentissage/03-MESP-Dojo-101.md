@@ -56,3 +56,6 @@ Relecture des réponses aux questions
 Réussir à se documenter et à trouver les informations recherchées
 Réussir à creer une pull request
 
+## Pour finir
+
+Si vous avez apprécié ce cours, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)

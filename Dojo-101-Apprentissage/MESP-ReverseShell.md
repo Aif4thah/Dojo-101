@@ -50,3 +50,8 @@ Furtivité : Un bon reverse shell doit être capable de se cacher efficacement p
 Stabilité : Il doit être capable de maintenir une connexion stable avec l’attaquant, même en cas de conditions réseau défavorables. Il doit également être résilient face aux redémarrages du système.
 
 Fonctionnalités : Un bon reverse shell doit offrir un ensemble complet de fonctionnalités qui permettent à l’attaquant d’exécuter des commandes à distance, de télécharger et d’uploader des fichiers, et d’effectuer d’autres actions sur le système cible.
+
+
+## Pour finir
+
+Si vous avez apprécié ce cours, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)

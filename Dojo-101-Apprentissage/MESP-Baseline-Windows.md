@@ -58,3 +58,7 @@ Lecture des livrables
 ## Critères de performance
 
 Pertinence des mesures de sécurité et concision de la procédure
+
+## Pour finir
+
+Si vous avez apprécié ce cours, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)

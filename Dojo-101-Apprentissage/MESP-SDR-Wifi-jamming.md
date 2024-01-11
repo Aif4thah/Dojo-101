@@ -41,3 +41,7 @@ Binôme ou seul (au choix)
 
 HackRF (Facultatif: antenne directionnelle)
 Point d’accès Wifi
+
+## Pour finir
+
+Si vous avez apprécié ce cours, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)

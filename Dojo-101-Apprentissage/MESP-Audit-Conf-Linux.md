@@ -52,3 +52,7 @@ Communiquer par écrit avec les professionnels et les utilisateurs de l’inform
     - Synthèse managériale compréhensible pour un personnel non technique
     - détails des vulnérabilités clair et technique
     - Lisibilité globale du document
+
+## Pour finir
+
+Si vous avez apprécié ce cours, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)

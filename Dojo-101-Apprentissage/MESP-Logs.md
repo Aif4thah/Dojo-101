@@ -37,3 +37,7 @@ Procédure d'installation et preuves (screenshot)
 ## Critères de performance
 
 Pertinence des éléments présents dans le puits de logs
+
+## Pour finir
+
+Si vous avez apprécié ce cours, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)

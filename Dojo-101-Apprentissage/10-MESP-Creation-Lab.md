@@ -39,9 +39,12 @@ Fourniture d'un script ou des captures d'écran qui présente :
 ## Livrables
 
 * le script, le cas échéant
-* le résultat du script ou captures d'écran
+* le résultat du script ou les captures d'écran
 
 ## Critères de performance
 
 Le lab est opérationnel
 
+## Pour finir
+
+Si vous avez apprécié ce cours, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)

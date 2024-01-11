@@ -36,3 +36,8 @@ Binôme ou seul (au choix)
 
 HackRF
 Hub et adaptateur USB
+
+
+## Pour finir
+
+Si vous avez apprécié ce cours, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)
