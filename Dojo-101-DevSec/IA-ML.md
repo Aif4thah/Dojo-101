@@ -24,3 +24,8 @@
 * ML -> permet notamment de publier une API à partir du modèle ML entrainé
 * IA -> dont la recherche cognitive qui permet d'indexer et rechercher des données (notamment à partir de texte afin de sortir le sentiment global et les mots clés)
 * Bots et applications C# / Python
+
+## Mistral AI
+
+* [site](https://mistral.ai/)
+* API

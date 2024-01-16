@@ -54,4 +54,4 @@ Fonctionnalités : Un bon reverse shell doit offrir un ensemble complet de fonct
 
 ## Pour finir
 
-Si vous avez apprécié ce cours, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)
+Si vous avez apprécié ce cours et souhaitez valoriser votre travail, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)

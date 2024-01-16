@@ -4,13 +4,13 @@
 
 | Couche OSI | Couche TCP/IP | Exemples de protocoles |
 |---------|--------------|-------------|
-| 7 | Application |	Application | HTTP, FTP, SMTP, DNS |
-| 6 | Présentation	| Application |	SSL, TLS |
-| 5 | Session | Application |	NetBIOS, RPC |
-| 4 | Transport | Transport |TCP, UDP |
-| 3 | Réseau | Internet | IP, ICMP, ARP |
-| 2 | Liaison de données | réseau | Ethernet, PPP |
-| 1 | Physique | réseau | Ethernet, Wi-Fi |
+| 7 Application |	Application | HTTP, FTP, SMTP, DNS |
+| 6 Présentation	| Application |	SSL, TLS |
+| 5 Session | Application |	NetBIOS, RPC |
+| 4 Transport | Transport |TCP, UDP |
+| 3 Réseau | Internet | IP, ICMP, ARP |
+| 2 Liaison de données | réseau | Ethernet, PPP |
+| 1 Physique | réseau | Ethernet, Wi-Fi |
 
 
 ## Classes d’adresses IPv4
@@ -35,8 +35,8 @@
 
 ### Plages privées
 
-* Classe A : 10.0.0.0 à 10.255.255.2551234
-* Classe B : 172.16.0.0 à 172.31.255.2551234
+* Classe A : 10.0.0.0 à 10.255.255.255
+* Classe B : 172.16.0.0 à 172.31.255.255
 * Classe C : 192.168.0.0 à 192.168.255.255
 
 ### Boucles locales
@@ -54,11 +54,11 @@
 
 ### exemple de notation
 
-Adresse complète : FE80:0000:0000:0000:0202:B3FF:FE1E:8329
-Adresse avec suppression des zéros : FE80::0202:B3FF:FE1E:8329
-Adresse normale : 2001:db8:3333:4444:5555:6666:7777:8888
-Adresse avec des segments de zéros : 2001:db8:: (implique que les six derniers segments sont zéro)
-Adresse avec des segments de zéros au début : ::1234:5678 (implique que les six premiers segments sont zéro)
+* Adresse complète : FE80:0000:0000:0000:0202:B3FF:FE1E:8329
+* Adresse avec suppression des zéros : FE80::0202:B3FF:FE1E:8329
+* Adresse normale : 2001:db8:3333:4444:5555:6666:7777:8888
+* Adresse avec des segments de zéros : 2001:db8:: (implique que les six derniers segments sont zéro)
+* Adresse avec des segments de zéros au début : ::1234:5678 (implique que les six premiers segments sont zéro)
 
 ### Plages privées
 
@@ -71,7 +71,13 @@ Adresse avec des segments de zéros au début : ::1234:5678 (implique que les si
 
 ## Exemple de calcul d’adresse réseau avec CIDR
 
-Adresse IP : 192.168.1.1 => 11000000.10101000.00000001.00000001
-Masque de sous-réseau : /24 => 11111111.11111111.11111111.00000000
-Adresse réseau : 11000000.10101000.00000001.00000000 => 192.168.1.0
-L’adresse réseau pour 192.168.1.1/24 est donc 192.168.1.0.
+* Adresse IP : 192.168.1.1 => 11000000.10101000.00000001.00000001
+* Masque de sous-réseau : /24 => 11111111.11111111.11111111.00000000
+* Adresse réseau : 11000000.10101000.00000001.00000000 => 192.168.1.0
+* L’adresse réseau pour 192.168.1.1/24 est donc 192.168.1.0.
+
+## Misc
+
+TCP Handshake : Syn, Syn-Ack, Ack
+afficher la table de routage sous windows: `route print`
+afficher le cache ARP: `arp -a`

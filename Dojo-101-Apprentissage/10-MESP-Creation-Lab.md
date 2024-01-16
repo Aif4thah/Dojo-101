@@ -9,8 +9,10 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 ## Ressources
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-[Vulnerable-Light-App](https://github.com/Aif4thah/Vulnerable-Light-Apps)
+[Vulnerable-Light-App](https://github.com/Aif4thah/VulnerableLightApp)
 [Badblood](https://github.com/davidprowe/BadBlood)
+[ISO Microsoft](https://www.microsoft.com/fr-fr/evalcenter)
+[ISO Linux Debian](https://www.debian.org/index.fr.html)
 
 ## Contexte
 
@@ -47,4 +49,4 @@ Le lab est opérationnel
 
 ## Pour finir
 
-Si vous avez apprécié ce cours, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)
+Si vous avez apprécié ce cours et souhaitez valoriser votre travail, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)

@@ -12,7 +12,7 @@ Inspect the unknown signal with many useful tools: compare the waterfall, listen
 
 3. Identification
 
-When only a few signal candidates remain on the top list, try to cross every piece of information you have in combination with the most detailed description readily available on sigidwiki.com...now should be easy to understand what you are looking for​.
+When only a few signal candidates remain on the top list, try to cross every piece of information you have in combination with the most detailed description readily available on sigidwiki.com... now should be easy to understand what you are looking for​.
 
 Source: https://www.aresvalley.com/artemis/
 
@@ -34,3 +34,7 @@ Source: https://www.aresvalley.com/artemis/
 ## automatisation via logiciels
 
 [SigDigger](https://github.com/BatchDrake/SigDigger)
+
+## voir aussi
+
+Le dossier SIGINT-images de ce projet
