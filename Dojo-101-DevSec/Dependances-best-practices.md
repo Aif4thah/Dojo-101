@@ -28,11 +28,19 @@ afin de spécifier le dépot privé
 
 faire un `--clear-sources` puis spécifier le dépot privé avec `sources`
 
-### nuget / .NET / c#
+### dotnet / nuget / .NET / c#
+
+Ajouter une source pour télécharger les paquets
+
+```sh
+dotnet nuget add source "https://api.nuget.org/v3/index.json" --name "Microsoft"
+```
 
 configurer `packageSources` dans `nuget.config`
 <clear /> supprime l'héritage
 <add /> ajoute un dépot
+
+
 
 ### maven / java
 

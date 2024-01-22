@@ -14,6 +14,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [Nuclei](https://github.com/projectdiscovery/nuclei)
 * [Privesc](https://github.com/carlospolop/PEASS-ng)
+* [Privesc bins](https://gtfobins.github.io/)
 
 
 ## Contexte

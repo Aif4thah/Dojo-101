@@ -4,6 +4,13 @@
 
 installer `visual studio` ou le framework dotnet et utiliser la commande `dotnet run`
 
+
+## Commande dotnet pour les dépendances
+
+```sh
+dotnet nuget add source "https://api.nuget.org/v3/index.json" --name "Microsoft"
+```
+
 ## commentaires
 
 ```c#

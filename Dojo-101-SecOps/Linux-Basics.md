@@ -13,6 +13,7 @@
 
 ```sh
 lsblk
+findmnt
 cat /etc/fstab
 ```
 
@@ -34,7 +35,6 @@ apt install binutils net-tools -y
 ```sh
 env
 cat .bashrc
-findmnt
 alias
 ```
 
@@ -141,6 +141,11 @@ hexdump -C
 
 ### permission
 
+```shell
+id
+whoami
+```
+
 #### permission POSIX
 
 ```sh
@@ -153,15 +158,8 @@ chmod +x test
 ### capabilities (rarement utilisé)
 
 ```sh
-cat /proc/9491/status | grep Cap
-CapInh:    0000000000000000
-CapPrm:    0000000000003000
-CapEff:    0000000000000000
-CapBnd:    0000003fffffffff
-CapAmb:    0000000000000000
-
+cat /proc/1/status | grep Cap
 capsh --decode=0000000000003000
-0x0000000000003000=cap_net_admin,cap_net_raw
 ```
 
 ### Auditer les permissions
@@ -187,7 +185,7 @@ ausearch -k user1000 | aureport -f -i
 ## Nvidia GPU Hashact
 
 ```shell
-apt install -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit nvidia-msi
+apt install -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit
 hashcat -I
 ```
 

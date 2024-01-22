@@ -29,9 +29,9 @@ Questions:
 1. Capturer le processus DORA du protocole DHCP
 2. qu’est ce que le DHCP Starvation / snooping ? Rogue DHCP ?
 3. Que ce passe lors du « ipconfig /release » (windows) ? D’un point de vue sécurité quel peut etre l'enjeu ? 
-4. Quelle fonctionnalité propose CISCO pour se prémunir de ce type d’attaque ? 
+4. Quelle fonctionnalité propose CISCO pour se prémunir des attaques DHCP ? 
 5. Capturer une requête DNS et sa réponse
-6. Qu’est-ce que le DSN Spoofing ? Comment s’en protéger ?
+6. Qu’est-ce que le DNS Spoofing ? Comment s’en protéger ?
 7. Qu’est-ce que DNS Sec ? DNS over TLS / HTTPS ?
 8. Dans quels cas trouve-t-on du DNS sur TCP ?
 9. Capturer un flux HTTP

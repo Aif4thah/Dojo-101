@@ -8,7 +8,7 @@
 ## tester un seul template
 
 ```powershell
-.\nuclei.exe -config projet.yml -list urls.txt -t .\templates\vla-cwe434.yaml -duc
+.\nuclei.exe -config projet.yml -t .\templates\vla-cwe1104.yaml -l .\urls.txt -duc
 ```
 
 ## Custom templates et workflows
@@ -95,5 +95,5 @@ requests:
 [httpx](https://github.com/projectdiscovery/httpx/releases)
 
 ```powershell
-.\httpx.exe -list urls.txt | .\\nuclei.exe -config projet.yml -w .\workflow.yaml -duc
+.\httpx.exe -list urls.txt | .\nuclei.exe -config projet.yml -w .\workflow.yaml -duc
 ```

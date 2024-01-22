@@ -6,6 +6,12 @@
 2. Machine learning -> Apprentissage et modèles prédictifs / probabilistes
 3. IA -> simule l'intelligence humaine à partir du ML
 
+### protection du model
+
+* Informer de spécificité de la mission / requete
+* Préciser répondre en tant que <...>
+* Donner des tâches 1,2,3...
+
 ## Chat GPT - OpenAI / Microsoft - Copilot
 
 * Questions generalistes
@@ -28,4 +34,7 @@
 ## Mistral AI
 
 * [site](https://mistral.ai/)
-* API
+* API facturé à l'usage
+* ou en auto-hébergé
+
+

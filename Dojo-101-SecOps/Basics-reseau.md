@@ -78,6 +78,7 @@
 
 ## Misc
 
-TCP Handshake : Syn, Syn-Ack, Ack
-afficher la table de routage sous windows: `route print`
-afficher le cache ARP: `arp -a`
+* TCP Handshake : Syn, Syn-Ack, Ack
+* afficher la table de routage sous windows: `route print`
+* afficher la table de routage sous linux: `ip route`
+* afficher le cache ARP: `arp -a`
