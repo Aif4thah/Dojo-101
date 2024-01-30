@@ -8,10 +8,9 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Ressources
 
-[MSCT](https://learn.microsoft.com/fr-fr/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10)
-[auditpol](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/auditpol)
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-[Privesc bins](https://lolbas-project.github.io/)
+* [MSCT](https://learn.microsoft.com/fr-fr/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10)
+* [auditpol](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/auditpol)
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
 ## Contexte
 

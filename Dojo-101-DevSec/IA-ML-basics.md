@@ -1,10 +1,24 @@
-# Intelligence artificielle et Machine learning
+# Intelligence artificielle et Machine learning - basics
+
 
 ## Concepts
 
-1. Data -> Analyse et Statistiques
-2. Machine learning -> Apprentissage et modèles prédictifs / probabilistes
-3. IA -> simule l'intelligence humaine à partir du ML
+**Data** : Analyse et Statistiques
+**Machine learning** : Apprentissage et modèles prédictifs / probabilistes
+**IA** simule l'intelligence humaine à partir du ML
+**Word Embedding** : éthode de représentation des mots pour l’apprentissage automatique
+
+
+### Principe du Word Embedding
+
+Initialisation: Chaque mot unique dans le corpus de texte est associé à un vecteur de nombres aléatoires.
+
+Contexte: L’algorithme examine ensuite chaque mot dans le contexte des mots qui l’entourent dans le corpus.
+
+Ajustement: Les vecteurs sont ajustés de manière à ce que les mots qui apparaissent dans des contextes similaires aient des vecteurs plus proches les uns des autres.
+
+Résultat: À la fin de ce processus, chaque mot est représenté par un vecteur qui encode quelque chose de son sens.
+
 
 ### protection du model
 
@@ -12,11 +26,13 @@
 * Préciser répondre en tant que <...>
 * Donner des tâches 1,2,3...
 
+
 ## Chat GPT - OpenAI / Microsoft - Copilot
 
 * Questions generalistes
 * Faire vérifier un bout de code
 * toujours besoin de vérifier les infos
+
 
 ## ML.NET - Technologie .NET pour le Machine Learning
 
@@ -25,11 +41,13 @@
 * On met en forme les données, et donne notre objectif
 * la feature nous propose l'algorithme le plus adéquat
 
+
 ## Azure ML et Azure AI services
 
 * ML -> permet notamment de publier une API à partir du modèle ML entrainé
 * IA -> dont la recherche cognitive qui permet d'indexer et rechercher des données (notamment à partir de texte afin de sortir le sentiment global et les mots clés)
 * Bots et applications C# / Python
+
 
 ## Mistral AI
 

@@ -401,7 +401,7 @@ sudo -u logcheck logcheck -o > /data/$(date +"%m-%d-%Y-%T").log
 
 ### Option interessante à ajouter au GRUB (presser "e" au boot ou éditer)
 
-"acpi=off" -> désactive énormément de chose dont la gestion de l'alim et acceleration materiel
+"acpi=off" -> désactive énormément de choses dont la gestion de l'alim et acceleration materiel
 "nouveau.blacklist=1" -> désactive les drivers nouveaux
 "nomodeset" -> n'utilise pas les module graphique du kernel durant le boot jusqu'au chargement de X)
 
