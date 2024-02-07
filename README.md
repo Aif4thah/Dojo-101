@@ -63,7 +63,7 @@ code .\Dojo-101\
 
 ## Crédits
 
- * Logo réalisé par [@zendessin](designbyzen.fr )
+ * Logo réalisé par [@zendessin](https://www.designbyzen.fr/)
 
 
 
