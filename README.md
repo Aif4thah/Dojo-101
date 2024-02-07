@@ -1,6 +1,6 @@
 
 <p align="center">
-    <img src="./Dojo-101.jpg" alt="Dojo-101" style="width: 400px;" />
+    <img src="./dojo101Dark.png" alt="Dojo-101" style="width: 400px;" />
 </p>
 
 [![License: GNU GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -60,3 +60,10 @@ code .\Dojo-101\
 ## Sécurité
 
 * [À propos de la sécurité du projet](./SECURITY.md)
+
+## Crédits
+
+ * Logo réalisé par [@zendessin](designbyzen.fr )
+
+
+
