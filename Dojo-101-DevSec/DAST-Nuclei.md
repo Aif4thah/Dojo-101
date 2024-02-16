@@ -8,7 +8,7 @@
 ## tester un seul template
 
 ```powershell
-.\nuclei.exe -config projet.yml -t .\templates\vla-cwe1104.yaml -l .\urls.txt -duc
+\nuclei.exe -list urls.txt -t .\template.yaml
 ```
 
 ## Custom templates et workflows
@@ -90,10 +90,50 @@ requests:
 .\nuclei.exe -config projet.yml -list urls.txt -w .\workflow.yaml -duc -me Result
 ```
 
-## ne tester que les services Up
+## Ne tester que les services Up
 
 [httpx](https://github.com/projectdiscovery/httpx/releases)
 
 ```powershell
 .\httpx.exe -list urls.txt | .\nuclei.exe -config projet.yml -w .\workflow.yaml -duc
+```
+
+## Reprendre un scan interrompu
+
+```sh
+nuclei -l urls.txt -resume /path/to/resume-file.cfg
+```
+
+## Lire un fichier contenant une réponse http ou du code
+
+```yml
+id: CodeReview
+
+info:
+  name: Trouver un hash md5
+  author: Michael
+  severity: high
+  tags: CWE
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        name: CWE-326 Inadequate Encryption Strength
+        regex:
+          - "^[a-fA-F0-9]{32}$"
+```
+
+spécifier le chemin du fichier:
+
+```sh
+.\nuclei.exe -t <template.yaml> -target <chemin/fichier>
+```
+
+## Signer son template
+
+```sh
+.\nuclei.exe -t <template.yaml> -sign
 ```
