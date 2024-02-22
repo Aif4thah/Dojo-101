@@ -36,6 +36,7 @@ apt install binutils net-tools -y
 env
 cat .bashrc
 alias
+echo $HOME
 ```
 
 ## partitions
