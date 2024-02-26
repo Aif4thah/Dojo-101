@@ -13,7 +13,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * [Guides ANSSI](https://cyber.gouv.fr/publications)
 * [Referentiel PASSI](https://cyber.gouv.fr/referentiels-dexigences-pour-la-qualification)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-* [bloodhound](https://github.com/BloodHoundAD/BloodHound)
+* [bloodhound](https://github.com/SpecterOps/BloodHound)
 * [Sharphound](https://github.com/BloodHoundAD/SharpHound)
 * [PingCastle](https://www.pingcastle.com/)
 * [Nuclei](https://github.com/projectdiscovery/nuclei)

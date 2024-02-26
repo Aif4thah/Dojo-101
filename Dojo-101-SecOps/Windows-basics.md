@@ -289,4 +289,6 @@ Côté client:
 
 c:\windows\system32\drivers\etc\hosts
 
+## Misc / Production
 
+* [PowerToys](https://learn.microsoft.com/fr-fr/windows/powertoys/install)
