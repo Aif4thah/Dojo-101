@@ -1,5 +1,15 @@
 # Git and Github Basics
 
+## Definitions
+
+* VCS : version control system 
+* SCM : software configuration management
+
+## Type de compte
+
+* Personal
+* Organization
+* Enterprise
 
 ## Trunk-based development workflow
 
@@ -13,6 +23,16 @@
 ## Forking Worflow
 
 * fork : copie du repo coté serveur
+
+## Commandes de base
+
+```bash
+git status
+git add # start keeping track of changes in certain files
+git commint # save your work to a snapshot
+git log
+git help
+```
 
 ## commandes de configuration, commit et push
 

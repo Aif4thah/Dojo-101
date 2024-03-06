@@ -1,16 +1,29 @@
 # integrer la sécurité aux CI/CD
 
-## plugins
+## CI - Intégration continue
 
-trouver le plugins et le configurer: exemple package sonarqube pour Jenkins pour un test SAST
+* Analyse et scan de la sécurité du code source
+* Analyse et scan de dépendances
+* Tests d’intégration (unitaires, E2E)
 
-## tests unitaires
+## CD - Déploiement continu
 
-tester la sécurité lors des tests unitaires (fuzzing)
+* Gestion et scan des secrets
+* Test de l'application
+* Audit des permissions
 
-## Github Workflow / Action pour la sécurité
+## Github Workflows/Actions ou plguins pour la sécurité
 
 * DependencyCheck
 * CodeQL
 * Nuclei
 * SonardQube
+
+## tests unitaires
+
+* Test inputs utilisateurs
+* Fuzzings
+
+## tests E2E
+
+* Contournements / mauvais respect des workflows
