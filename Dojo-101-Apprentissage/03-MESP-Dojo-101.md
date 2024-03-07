@@ -39,8 +39,7 @@ Partie 2:
 9. Dans ce fichier, décrivez au format markdown la méthode que vous utilisez pour réaliser votre pull request (l'idée c'est de vous initier à la rédaction au format markdown)
 10. Pousser les changements sur votre fork
 11. Comment faire une *pull request* depuis un *fork* ?
-12. Créer une pull request sur Aif4thah/Dojo-101 afin de me demander d'ajouter le fichier "README-from-Fork.md" sur mon dépôt
-
+12. Créer une pull request sur Aif4thah/Dojo-101 afin de me demander d'ajouter le fichier "README-from-Fork.md" sur mon dépôt (Pour cela vous devez au préalable Forker, cloner, commit changes et push vers votre fork).
 
 ## Modalités d'évaluation
 

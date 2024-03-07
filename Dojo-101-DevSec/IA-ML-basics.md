@@ -33,6 +33,9 @@ Résultat: À la fin de ce processus, chaque mot est représenté par un vecteur
 * Faire vérifier un bout de code
 * toujours besoin de vérifier les infos
 
+### Github Copilot
+
+* Disponible pour Visual Studio Code, Visual Studio, Neovim, JetBrains
 
 ## ML.NET - Technologie .NET pour le Machine Learning
 
