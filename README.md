@@ -8,9 +8,9 @@
 [![Donate Ethereum](https://img.shields.io/badge/ETH-donate-4E8EE9.svg?style=flat-square&logo=ethereum)](https://etherscan.io/address/0xcC424e30Ff6eEAb4E6B3A900c5446038F858b314)
 [![Buy me a coffee](https://img.shields.io/badge/buy%20me%20a-coffee-yellow)](https://www.buymeacoffee.com/taisensolutions)
 
-Dojo-101 est un projet de capitalisation d'expérience en cybersécurité.
-Minimaliste, utilisable hors-ligne et en français, ce projet est ouvert à tous. 
-Il est fait pour être téléchargé et utilisé localement avec votre éditeur de texte préféré.
+Dojo-101 est un projet de capitalisation d'expérience et de connaissances en cybersécurité.
+
+Minimaliste, utilisable hors-ligne et principalement en français, sa raison d'être est le partage gratuit de la connaissance.
 
 ## Contact
 
@@ -43,6 +43,8 @@ Si vous avez des questions sur ce projet ou mes services, n'hésitez pas à me c
 
 ## Installation
 
+Pour Windows et VScode :
+
 ```powershell
 winget install git.git
 git clone https://github.com/Aif4thah/Dojo-101.git
@@ -64,6 +66,7 @@ code .\Dojo-101\
 ## Crédits
 
  * Logo réalisé par [@designbyzen](https://www.designbyzen.fr/)
+ * **Merci** à tous les contributeurs (visibles sur la page d'accueil GitHub de ce projet).
 
 
 
