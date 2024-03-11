@@ -1,4 +1,4 @@
-# Nuclei pour le test unitaire
+# Nuclei pour les tests unitaires, d'intefration et End-to-end
 
 
 ## MCO des templates par défaut

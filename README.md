@@ -12,6 +12,12 @@ Dojo-101 est un projet de capitalisation d'expérience et de connaissances en cy
 
 Minimaliste, utilisable hors-ligne et principalement en français, sa raison d'être est le partage gratuit de la connaissance.
 
+[Avant tout usage, merci de prendre connaissance de l'avis de non-responsabilité du projet](./CODE_OF_CONDUCT.md)
+
+## Principe
+
+![Principe](./Capitalisation.drawio.svg)
+
 ## Contact
 
 Si vous avez des questions sur ce projet ou mes services, n'hésitez pas à me contacter :
@@ -19,10 +25,6 @@ Si vous avez des questions sur ce projet ou mes services, n'hésitez pas à me c
  [![Site Web](https://img.shields.io/badge/Website-3776AB?style=for-the-badge)](https://taisen.fr)
  [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mvacarella/)
  [![Email](https://img.shields.io/badge/Email-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:michael.vacarella@protonmail.com)
-
-## Éthique et avis de non-responsabilité
-
-* [À lire avant tout usage](./CODE_OF_CONDUCT.md)
 
 ## Thématiques
 
