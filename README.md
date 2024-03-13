@@ -18,14 +18,6 @@ Minimaliste, utilisable hors-ligne et principalement en français, sa raison d'�
 
 ![Principe](./Capitalisation.drawio.svg)
 
-## Contact
-
-Si vous avez des questions sur ce projet ou mes services, n'hésitez pas à me contacter :
-
- [![Site Web](https://img.shields.io/badge/Website-3776AB?style=for-the-badge)](https://taisen.fr)
- [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mvacarella/)
- [![Email](https://img.shields.io/badge/Email-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:michael.vacarella@protonmail.com)
-
 ## Thématiques
 
 * [Développement sécurisé](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-DevSec)
@@ -67,8 +59,10 @@ code .\Dojo-101\
 
 ## Crédits
 
- * Logo réalisé par [@designbyzen](https://www.designbyzen.fr/)
- * **Merci** à tous les contributeurs (visibles sur la page d'accueil GitHub de ce projet).
+* Projet maintenu par [Michael Vacarella](https://github.com/Aif4thah)
+* Logo réalisé par [@designbyzen](https://www.designbyzen.fr/)
+* **Merci** à tous les contributeurs (visibles sur la page d'accueil GitHub de ce projet).
+
 
 
 
