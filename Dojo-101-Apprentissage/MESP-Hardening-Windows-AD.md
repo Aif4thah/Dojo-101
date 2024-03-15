@@ -14,6 +14,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * [Guides ANSSI](https://cyber.gouv.fr/publications)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [Ansible](https://www.ansible.com/)
+* [powershell DSC](https://learn.microsoft.com/fr-fr/powershell/dsc/overview?view=dsc-2.0)
 
 ## Contexte
 
@@ -31,7 +32,7 @@ Relecture par le formateur de la procédure de durcissement
 ## Livrables
 
 * procédure de durcissement (sans Ansible)
-* PlayBook Ansible
+* PlayBook Ansible ou (fichier PowershellDSC) poussé sur Github
 
 ## Critères de performance
 

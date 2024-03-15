@@ -141,5 +141,5 @@ spécifier le chemin du fichier:
 ## voir les requêtes
 
 ```powershell
-.\nuclei.exe -u https://localhost:3000 -t .\Vulnerable-Light-App\templates\vla-cwe89.yaml -v -debug
+.\nuclei.exe -u https://localhost:3000 -t .\VulnerableLightApp\templates\vla-cwe89.yaml -v -debug
 ```

@@ -170,8 +170,8 @@ capsh --decode=0000000000003000
 ```sh
 apt install auditd
 systemctl status auditd.service
-auditctl -w /home/michael/Downloads/Vulnerable-Light-Apps/VulnerableWebApp/ -p xwa -k vulnapp
-#auditctl -a always,exit -F dir=/home/michael/Downloads/Vulnerable-Light-Apps/VulnerableWebApp/ -F perm=wax
+auditctl -w /home/michael/Downloads/VulnerableLightApp/VulnerableWebApp/ -p xwa -k vulnapp
+#auditctl -a always,exit -F dir=/home/michael/Downloads/VulnerableLightApp/VulnerableWebApp/ -F perm=wax
 auditctl -l
 ausearch -k vulnapp | aureport -f -i
 ```

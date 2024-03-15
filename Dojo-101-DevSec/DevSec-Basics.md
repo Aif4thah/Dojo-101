@@ -13,16 +13,9 @@ https://www.softwaretestinghelp.com/sans-top-20-security-vulnerabilities/
 * [ANSSI](https://cyber.gouv.fr)
 * [OWASP](https://owasp.org/)
 
-### Tools et morceaux de code
+### Rechercher des vulns spécifiques
 
-* [github](https://github.com/)
-
-### Exploits
-
-* [exploid-db](https://www.exploit-db.com/)
-* `site:hackerone.com inurl:/reports/`
-* `https://github.com/search?q=<exploit>&type=repositories`
-* `https://hackerone.com/reports/<XXXXXX>`
+* [cvemap](https://github.com/projectdiscovery/cvemap)
 
 ## notions de vulnérabilité
 

@@ -36,14 +36,14 @@
 
 [more info here](https://learn.microsoft.com/en-us/training/modules/github-introduction-products/2-what-are-github-products)
 
-### Features
+## Features générales
 
 * Copilote (IA)
 * CodeSpace (VM & storage lié à une extension de l'éditeur)
 * Projects (Boards (Kanban), Data, Insight (Indicateurs), Automation (API, Github Actions))
 * InnerSource -> application des pratiques OpenSource sur des dépots privés d'entreprises
 
-### Securité
+## Features de Securité
 
 * PSSI dans `SECURITY.md`
 * **Security advisories** pour discuter ou corriger une vuln
@@ -54,7 +54,7 @@
 * Scan du code (CodeQL)
 * Scan des secrets 
 
-### Authent
+## Authentification
 
 * Login / passwd
 * Token (PAT : *personal access token*)
@@ -152,7 +152,7 @@ Si pbm avec les hooks
 Git commit --no-verify
 ```
 
-## Historique et suppression des secrets
+## Suppression de l'historique (perfectible)
 
 ```sh
 git checkout --orphan latest_branch

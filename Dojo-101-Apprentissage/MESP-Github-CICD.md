@@ -8,11 +8,13 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Ressources
 
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-[Vulnerable-Web-App](https://github.com/Aif4thah/Vulnerable-Light-Apps)
-[CodeQL](https://codeql.github.com/)
-[Nuclei](https://blog.projectdiscovery.io/implementing-nuclei-into-your-github-ci-cd-for-scanning-live-web-applications/)
-[Pentest-Ground](https://pentest-ground.com)
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [Vulnerable-Web-App](https://github.com/Aif4thah/VulnerableLightApp)
+* [CodeQL](https://codeql.github.com/)
+* [Nuclei](https://blog.projectdiscovery.io/implementing-nuclei-into-your-github-ci-cd-for-scanning-live-web-applications/)
+* [Github security on MS learn](https://learn.microsoft.com/en-us/collections/rqymc6yw8q5rey)
+* [Pentest-Ground](https://pentest-ground.com)
+* [Blog Github Security](https://github.blog/category/security/)
 
 ## Contexte
 

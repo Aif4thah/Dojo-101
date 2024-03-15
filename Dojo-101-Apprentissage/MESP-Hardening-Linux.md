@@ -36,7 +36,7 @@ Relecture par le formateur de la procédure de durcissement
 ## Livrables
 
 * procédure de durcissement (sans Ansible)
-* PlayBook Ansible
+* PlayBook Ansible poussé sur Github
 
 ## Critères de performance
 

@@ -2,7 +2,7 @@
 
 déploiment de vuln-light-apps dans un microservice Docker
 
-Durée: 3 jours
+Durée: 10 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
@@ -10,7 +10,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-[vulns-light-apps](https://github.com/Aif4thah/Vulnerable-Light-Apps)
+[vulns-light-apps](https://github.com/Aif4thah/VulnerableLightApp)
 
 
 ## Contexte
@@ -28,7 +28,8 @@ Ce container sera ensuite utilisé par les équipes afin de mener leurs tests.
 4. Créer un docker file
 5. Automatiser l'installation et le lancement de vuln-light-apps
 6. Pousser votre travail sur un repo github
-
+7. Le déploiement et les tests doivent se faire automatiquement
+8. Mettre à disposition votre containe (Hub / Registry)
 
 
 ## Modalités d'évaluation
