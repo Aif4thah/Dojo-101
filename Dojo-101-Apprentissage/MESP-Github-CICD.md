@@ -10,6 +10,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [Vulnerable-Web-App](https://github.com/Aif4thah/VulnerableLightApp)
+* [Chaine DevOps](https://learn.microsoft.com/fr-fr/azure/cloud-adoption-framework/ready/considerations/devops-toolchain#azure-devops-and-github-toolchain)
 * [CodeQL](https://codeql.github.com/)
 * [Nuclei](https://blog.projectdiscovery.io/implementing-nuclei-into-your-github-ci-cd-for-scanning-live-web-applications/)
 * [Github security on MS learn](https://learn.microsoft.com/en-us/collections/rqymc6yw8q5rey)
@@ -18,7 +19,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Contexte
 
-En tant qu'ingénieur DevSecOps vous devez démontrer la faisabilité des tests SAST à vos équipes. Pour cela vous allez mettre en place l'audit de code automatisé pour l'application cible "Vulnérable Web App"
+En tant qu'ingénieur DevSecOps vous devez démontrer la faisabilité des tests SAST / DAST / IAST à vos équipes. Pour cela vous allez mettre en place l'audit de code automatisé pour l'application cible "Vulnérable Web App"
 
 ## Modalités pédagogiques
 

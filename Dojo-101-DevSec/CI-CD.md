@@ -1,5 +1,9 @@
 # integrer la sécurité aux CI/CD
 
+## Refs
+
+[Chaine DevOps](https://learn.microsoft.com/fr-fr/azure/cloud-adoption-framework/ready/considerations/devops-toolchain#azure-devops-and-github-toolchain)
+
 ## CI - Intégration continue
 
 * Analyse et scan de la sécurité du code source
@@ -27,3 +31,5 @@
 ## tests E2E
 
 * Contournements / mauvais respect des workflows
+
+
