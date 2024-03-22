@@ -12,6 +12,7 @@ https://www.softwaretestinghelp.com/sans-top-20-security-vulnerabilities/
 
 * [ANSSI](https://cyber.gouv.fr)
 * [OWASP](https://owasp.org/)
+* [Chaine DevOps](https://learn.microsoft.com/fr-fr/azure/cloud-adoption-framework/ready/considerations/devops-toolchain#azure-devops-and-github-toolchain)
 
 ### Rechercher des vulns spécifiques
 
