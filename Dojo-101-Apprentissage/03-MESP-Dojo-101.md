@@ -23,23 +23,23 @@ Il est nécessaire que vous vous appropriiez le `markdown` (langage texte très 
 
 ## Modalités pédagogiques
 
-Partie 1:
+### Partie 1: découverte de github
 
-1. Parcourir le projet via votre navigateur Web et lire le fichier "Veille-sécurité.md"
+0. Parcourir le projet via votre navigateur Web et lire le "README" 
+1. Trouver le fichier "Basics-fondamentaux.md" grâce à la barre de recherche.
 2. Cloner le projet dans un dossier local à l'aide la commande *git clone* ou *GitHub Desktop*
 3. à l'aide de *VSCode*, recherchez tous les fichiers contenant le mot clé *GPO* 
 4. Quel fichier donne la commande permettant d'*éditer la politique de sécurité locale* ?
 5. presser *ctrl+shift+v* pour visualiser le fichier au *format html*
 6. Mettre à jour votre dossier local en faisant un git pull
 
-Partie 2:
+### Partie 2: contribuer à un projet Open Source
 
-7. Qu'est-ce qu'un *fork* (github) ?
-8. Forker le projet, cloner votre fork et copier le fichier README.md, appellez le "README-from-Fork.md"
-9. Dans ce fichier, décrivez au format markdown la méthode que vous utilisez pour réaliser votre pull request (l'idée c'est de vous initier à la rédaction au format markdown)
+7. Qu'est-ce qu'un *fork* (dans le contexte git/github) ?
+8. Forker le projet, cloner votre fork et copier le fichier README.md, appellez-le "README-from-Fork.md"
+9. Dans ce fichier, décrivez au format markdown les étapes à réaliser pour créer une pull request à partir d'un fork.
 10. Pousser les changements sur votre fork
-11. Comment faire une *pull request* depuis un *fork* ?
-12. Créer une pull request sur Aif4thah/Dojo-101 afin de me demander d'ajouter le fichier "README-from-Fork.md" sur mon dépôt (Pour cela vous devez au préalable Forker, cloner, commit changes et push vers votre fork).
+11. Créer une pull request sur Aif4thah/Dojo-101 afin de me demander d'ajouter le fichier "README-from-Fork.md" sur mon dépôt (pour cela vous devez au préalable Forker, cloner, commit changes et push vers votre fork).
 
 ## Modalités d'évaluation
 
