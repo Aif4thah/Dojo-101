@@ -51,4 +51,4 @@ Rédiger un Write-Up
 
 ## Pour finir
 
-Si vous avez apprécié ce cours et souhaitez valoriser votre travail, n'hésitez pas à ajoutez une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)
+Si vous avez apprécié ce cours et souhaitez valoriser votre travail, n'hésitez pas à ajouter une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)

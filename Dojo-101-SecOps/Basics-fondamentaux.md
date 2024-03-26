@@ -59,6 +59,19 @@
 * RGS : Administration
 * DORA : entités financières
 
+## La documentation en entreprise (concept anglo-saxon)
+
+### Mandatory 
+
+* Policies : General Management statement
+* Standards : Specific Mandatory Controls
+* Procedures : Step By Step Instructions
+
+### Discretionary
+
+* Guidelines : Best Practices / Recommendations
+* Baselines : Minimal implementation
+
 ## Vulnérabilités
 
 * N° CVE : identifiant unique pour une vuln. base [Nist NVD](https://nvd.nist.gov/vuln)
