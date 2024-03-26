@@ -74,10 +74,10 @@
 
 ## Vulnérabilités
 
-* N° CVE : identifiant unique pour une vuln. base [Nist NVD](https://nvd.nist.gov/vuln)
+* N° CVE : identifiant unique pour une vuln. base [Nist NVD](https://www.cve.org/)
 * Score CVSS : évaluation d'une vulnérabilité [First Calculator](https://www.first.org/cvss/)
 * Reference CWE : mauvaise pratique [MITRE CWE](https://cwe.mitre.org/)
-* Score EPSS : Exploit Prediction Scoring System
+* Score EPSS : Exploit Prediction Scoring System [First EPSS](https://www.first.org/epss/user-guide)
 
 ### Lister les dernières CVE avec cvemap
 
