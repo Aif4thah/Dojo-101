@@ -16,7 +16,7 @@ Minimaliste, utilisable hors-ligne et principalement en français 🇫🇷, sa r
 
 ## 💡 Principe
 
-![Principe](./Capitalisation.drawio.svg)
+![Principe](./Capitalisation.drawio.png)
 
 ## 👉 C'est parti !
 
