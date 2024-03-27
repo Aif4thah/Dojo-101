@@ -52,12 +52,12 @@ Lecture du rapport et présentation à l'oral
 ## Livrables
 
 * les couples SR/OV (tableau)
-* Les scénarii stratégiques (schémas)
-* un plan de traitement du risque (bruts -> résiduels) comportant à minima 5 scénarii de risques et 5 mesures de sécurité
+* Les scénario stratégiques (schémas)
+* Un plan de traitement du risque (bruts -> résiduels) comportant à minima 5 scénarios de risques et 5 mesures de sécurité
 
 ## Critères de performance
 
-- respect de la méthode EBIOS RM
+- Respect de la méthode EBIOS RM
 - Formalisme et synthétisme
 - Pertinence de risques identifiés
 - Pertinence des mesures de sécurité retenues
