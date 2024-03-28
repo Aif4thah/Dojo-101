@@ -27,7 +27,7 @@ les délais exacts seront déterminés selon le Lab et les participants
 
 * T0 : installer une VM Windows serveur dans un hyperviseur à jour, lui-même sur une machine physique de test, vierge de toutes données et à jour.
 
-* T1 : télécharger l'application vulnérable et exposez la sur le réseau du Lab. Elle doit être accessible aux autres groupes, vous avez le droit de choisir les ports TCP entre 80 et 1100.
+* T1 : télécharger l'application vulnérable et exposez la sur le réseau du Lab. Elle doit être accessible aux autres groupes, choisissez les ports TCP entre 80 et 3000 et n'en changez plus.
 
 * T2 : sans modifier l'application, configurer l'OS pour être en mesure de détecter les attaques. Vous pouvez configurer les Logs, la stratégie d'audit, utiliser un IDS, un SIEM.
 
@@ -49,6 +49,7 @@ les délais exacts seront déterminés selon le Lab et les participants
 * Chaque connexion TCP/UDP `victime -> attaquant` déclenchée par un exploit rapporte **1 point**
 * Chaque création de fichiers pourtant le nom de l'attaquant sur la machine de la victime rapporte **2 points**
 * Chaque détection d'intrusion rapporte **1 point**
+* Une perte de disponibilité de votre service de plus de 30 secondes constatée par un attaquant = **-10 points**
 
 
 
