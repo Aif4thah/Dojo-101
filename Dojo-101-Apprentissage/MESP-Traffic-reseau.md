@@ -18,13 +18,13 @@ Il vous est demandé de procéder à l'analyse des protocoles utilisés sur le r
 
 à partir du Lab installé, ajouter les services nécessaires et répondre aux questions suivantes 
 
-Préambule / Rappel :
+### Rappels
 
 * Quelle est votre adresse IP ? Quelle est sa classe (IPv4) ?
 * Quel est votre masque de sous-réseau ?
 * Quelle est l'adresse de votre passerelle ?
 
-Questions:
+### Questions
 
 0. Quels sont les flags TCP ? 
 1. Capturer le processus DORA du protocole DHCP

@@ -29,7 +29,7 @@ les délais exacts seront déterminés selon le Lab et les participants
 
 * T1 : télécharger l'application vulnérable sur votre VM et exposez la sur le réseau du Lab. 
     * Elle doit être accessible aux autres groupes en permanence 
-    * Choisissez les ports TCP entre 80 et 3000 et n'en changez plus.
+    * Choisissez un port TCP entre 80 et 3000 et n'en changez plus.
     * Créer un fichier `flag.txt` sur votre bureau, qui contiendra un GUID
 
 * T2 : sans modifier l'application, configurer l'OS pour être en mesure de détecter les attaques. Vous pouvez configurer les Logs, la stratégie d'audit, utiliser un IDS, un SIEM.

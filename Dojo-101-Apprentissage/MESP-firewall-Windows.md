@@ -8,12 +8,15 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Ressources
 
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-[Mitre Attack](https://attack.mitre.org/)
-[nmap](https://nmap.org/)
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [Mitre Attack](https://attack.mitre.org/)
+* [nmap](https://nmap.org/)
+* [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
 
 
 ## Contexte
+
+### Partie 1 : Durcissement OS
 
 1. Déployer une machine Windows
 
@@ -28,6 +31,14 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 6. Vérifier à l'aide de l'outil **nmap**, ou d'autres commandes que le firewall fonctionne correctement
 
 7. Désactiver les réponses ICMP et les message TCP Reset lorsqu'il n'y a pas d'applications sur le port concerné
+
+### Partie 2 : Hébergement d'application
+
+8. Lancer VulnerableLightApp et ouvrir un flux entrant pour HTTPS
+
+9. Configurer le firewall pour réduire le risque de SSRF sur TCP et UDP
+
+10. S'assurer que les IP effectuant des requêtes vers l'application soient dans les journaux d'événements (logs)
 
 
 ## Modalités pédagogiques
