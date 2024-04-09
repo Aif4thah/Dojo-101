@@ -8,13 +8,14 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Ressources
 
-[Wireshark](https://www.wireshark.org/download.html)
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-[HTTP, TLS et certificats X509](https://github.com/Aif4thah/VulnerableLightApp)
+* [Wireshark](https://www.wireshark.org/download.html)
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [HTTP, TLS et certificats X509](https://github.com/Aif4thah/VulnerableLightApp)
+* [HTTP MDN](https://developer.mozilla.org/fr/docs/Web/HTTP)
 
 ## Contexte
 
-A l'aide d'un script dans le langage de votre choix (Defaut = Python)
+A l'aide d'un script dans le langage de votre choix
 
 * Réaliser une requête Web GET sur un site Web (Defaut = https://taisen.fr)
 * Afficher l'IP et le nom du serveur DNS qui résout le nom de domaine

@@ -9,8 +9,8 @@ durée: 2 jour
 ## Ressources
 
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-* [auditpol](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/auditpol)
 * [Guide ANSSI](https://cyber.gouv.fr/publications)
+* [Windows Event Forwarding](https://learn.microsoft.com/fr-fr/windows/security/operating-system-security/device-management/use-windows-event-forwarding-to-assist-in-intrusion-detection)
 
 ## Contexte
 
