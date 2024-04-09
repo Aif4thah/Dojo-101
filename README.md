@@ -29,8 +29,6 @@ Les fichiers comportant le mot "bascis" contiennent les éléments ensuite consi
 * [les bases de la Radio](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-RF/RF-basics.md)
 * [les bases de GitHub](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Github-basics.md)
 
-Vous pouvez ensuite parcourir les fiches selon vos envies.
-
 ## ⚔️ Thématiques
 
 * [Développement sécurisé](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-DevSec)
@@ -66,6 +64,10 @@ Le contenu est mis à jour régulièrement, pensez à faire un `git pull` avant 
 ## 🚨 Sécurité
 
 * [À propos de la sécurité du projet](./SECURITY.md)
+
+## 🌱 Apprentissage
+
+* [Mises en situations professionnelles](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Apprentissage)
 
 ## 🏆 Crédits
 

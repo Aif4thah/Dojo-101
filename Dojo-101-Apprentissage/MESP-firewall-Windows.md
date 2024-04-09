@@ -21,17 +21,17 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 1. Déployer une machine Windows
 
-2. Lister les règles firewall grace à powershell ou la GUI
+2. Lister les règles firewall grâce à powershell ou la GUI
 
 3. Configurer une politique par défaut "Drop" pour les flux entrants 
 
-4. Supprimer / Désactiver les règles inutiles ou trop permissives concernant le trafic entrant
+4. Supprimer / désactiver les règles inutiles ou trop permissives concernant le trafic entrant
 
-5. à l'aide du MITRE Attack, créer des règles "deny" pertinentes concernant les flux sortants (10 minimum) (hint: certains binaires de devrais pas utiliser le firewall)
+5. à l'aide du MITRE Attack et LOLBas, identifier les binaires qui ne devraient pas pouvoir accéder au réseau et créer des règles "deny" pertinentes concernant les flux sortants (5 minimum)
 
 6. Vérifier à l'aide de l'outil **nmap**, ou d'autres commandes que le firewall fonctionne correctement
 
-7. Désactiver les réponses ICMP et les message TCP Reset lorsqu'il n'y a pas d'applications sur le port concerné
+7. Désactiver les réponses ICMP et les messages TCP Reset lorsqu'il n'y a pas d'applications sur le port concerné
 
 ### Partie 2 : Hébergement d'application
 
