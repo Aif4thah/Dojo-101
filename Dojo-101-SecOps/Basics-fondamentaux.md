@@ -301,7 +301,7 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 * Keylogger : enregistrement des frappes au clavier (logiciel ou materiel)
 * Tempest : Compromissions par rayonnement éléctro magnetique
 
-### exemple de materiel
+### exemple de materiels
 
 * [Great Scott Gadgets Throwing Star LAN Tap Kit ](https://www.amazon.fr/Great-Scott-Gadgets-Throwing-Star/dp/B07GYWZPXG)
 * [Rubber Ducky](https://shop.hak5.org/products/usb-rubber-ducky)
