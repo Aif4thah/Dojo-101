@@ -1,6 +1,6 @@
 # Fondamentaux SSI - Basics
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Introduction
 
@@ -19,7 +19,7 @@ Les enjeux ne sont pas seulement financiers : les emplois, l’image et la stabi
 * Deni de services
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -32,7 +32,7 @@ Les enjeux ne sont pas seulement financiers : les emplois, l’image et la stabi
 * **Actifs** (Assets) : tout ce qui a de la valeur au sein du SI
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## La surface d'attaque
@@ -46,7 +46,7 @@ Tout ce que vous exposez à vos adversaire
 * l'Humain
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Les attaquants
@@ -74,7 +74,7 @@ Tout ce que vous exposez à vos adversaire
 * **Intérêts étatiques et mercenariat** : espionnage et enjeux régaliens
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Les vulnérabilités
@@ -97,7 +97,7 @@ Faiblesse au sein du système d'information
 .\cvemap.exe -l 100
 ```
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### Pourquoi y a t-il autant de vulns ?
 
@@ -146,7 +146,7 @@ check:
     syscall
 ```
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -168,7 +168,7 @@ Niveau de risque en fonction de la gravité (ordonnée ) et de la vraissemblance
 
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -181,7 +181,7 @@ Niveau de risque en fonction de la gravité (ordonnée ) et de la vraissemblance
 * accepter : laisser le risque tel quel est assumer l'impact d'une exploitation par un attaquant
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -198,7 +198,7 @@ Niveau de risque en fonction de la gravité (ordonnée ) et de la vraissemblance
 * **Authentitication** : L’authentification a pour but de vérifier l’identité dont une entité se réclame. ***La personne est bien celle qu'elle prétend être.***
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Cadre juridique
@@ -210,7 +210,7 @@ Niveau de risque en fonction de la gravité (ordonnée ) et de la vraissemblance
 * Lorsque les infractions prévues aux deux premiers alinéas ont été commises à l'encontre d'un système de traitement automatisé de données à caractère personnel mis en œuvre par l'Etat, la peine est portée à **7 ans d'emprisonnement et à 300 000 € d'amende**.
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### Les émissions radio
 
@@ -223,7 +223,7 @@ Niveau de risque en fonction de la gravité (ordonnée ) et de la vraissemblance
 * En dehors de dérogations encadrées pour des services de l’État, la possession, l’utilisation, la cession à titre commercial ou gratuit, la publicité illicites de brouilleurs sont strictement interdites (article L. 33-3-1 du CPCE). Ce sont des délits soumis à une sanction pénale pouvant aller jusqu’à **6 mois de prison et 30 000 euros d’amende** (L. 39-1 du CPCE).
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### Le RGPD
 
@@ -241,7 +241,7 @@ Il est obligatoire de :
 * le montant des sanctions pécuniaires peut s'élever jusqu'à **20 millions d'euros ou dans le cas d'une entreprise jusqu'à 4 % du chiffre d'affaires annuel mondial**
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Gouvernance
@@ -251,7 +251,7 @@ Il est obligatoire de :
 * SOC : Security operation center, utilise un SIEM pour la supervision de la sécurité.
 * AdR : Analyse de risque
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Normes et cadre réglementaire
 
@@ -264,7 +264,7 @@ Il est obligatoire de :
 * RGS : Administration
 * DORA : entités financières
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -281,7 +281,7 @@ Il est obligatoire de :
 * Guidelines : Best Practices / Recommendations
 * Baselines : Minimal implementation
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## La sécurité physique
@@ -297,7 +297,7 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 * Limiter les attaques par ingénierie sociale
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### Les risques
 
@@ -308,7 +308,7 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 * Keylogger : enregistrement des frappes au clavier (logiciel ou materiel)
 * Tempest : Compromissions par rayonnement éléctro magnetique
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### exemple de materiels
 
@@ -318,7 +318,7 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 * [Flipper zero](https://flipperzero.one/)
 * [Wfi PineApple](https://shop.hak5.org/products/wifi-pineapple)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Les mots de passe
 
@@ -326,13 +326,14 @@ Toujours le principal point d'entrée pour l'attaquant
 
 * Gestionnaire de mots de passe individuel pour les comptes personnels (ex: Keepass)
 * Gestionnaire de mots de passe partagée pour les comptes de service
-* Si possible on complète par du MFA
+* Autant que possible on complète par du MFA
 
-Le minimum syndical : 12 chars avec maj, min, digit, spéciaux
-Avec les gerstionnaire de mots de passe: 20 chars
+* Le minimum syndical : 12 chars avec maj, min, digit, spéciaux
+* Avec les gerstionnaire de mots de passe: 20 chars
+* Comptes de services : +30 chars
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Les smartphones
@@ -345,7 +346,7 @@ Les problématiques spécifiques aux Smartphones
 * Backdoor Fabricant : micro activable légalement
 * Pas toujours à jour: Krack, 5Ghoul
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## L'ingénierie sociale
@@ -362,7 +363,7 @@ Les problématiques spécifiques aux Smartphones
 * Urgence
 * Sabotage
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ### Phishing
@@ -383,7 +384,7 @@ Phishing à partir de `https://www.securite-solutions.fr/login`, où est le piè
 * https://www.securite-sоlution.fr/login (« o » cyrillique)
 ```
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Le Cloud
@@ -395,7 +396,7 @@ Consiste à utiliser des ressources distantes le plus souvent au travers d’int
 * Hybride : Public + Privé
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### Les responsabilités
 
@@ -414,7 +415,7 @@ Répartition des responsabilités entre le fournisseur de services cloud (CSP):
 | **Réseau** | CSP | CSP | CSP |
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Les réflexes en cas d'incidents
 
@@ -423,7 +424,7 @@ Répartition des responsabilités entre le fournisseur de services cloud (CSP):
 * Alerter le RSSI et N+1 par un autre canal
 * [CERT-FR les bons réflexes en cas d'incident](https://www.cert.ssi.gouv.fr/les-bons-reflexes-en-cas-dintrusion-sur-un-systeme-dinformation/)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Référentiels et bonnes pratiques
@@ -431,10 +432,10 @@ Répartition des responsabilités entre le fournisseur de services cloud (CSP):
 * [ANSSI](https://cyber.gouv.fr/)
 * [Guide d'hygiène](https://cyber.gouv.fr/publications/guide-dhygiene-informatique)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-## démonstration d'attaques 
+## Démonstration d'attaques 
 
 * [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
