@@ -1,5 +1,6 @@
 # Fondamentaux SSI - Basics
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Introduction
 
@@ -18,8 +19,7 @@ Les enjeux ne sont pas seulement financiers : les emplois, l’image et la stabi
 * Deni de services
 
 
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -32,8 +32,12 @@ Les enjeux ne sont pas seulement financiers : les emplois, l’image et la stabi
 * **Actifs** (Assets) : tout ce qui a de la valeur au sein du SI
 
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## La surface d'attaque
+
+Tout ce que vous exposez à vos adversaire
 
 * L'architecture
 * Les serveurs
@@ -42,7 +46,7 @@ Les enjeux ne sont pas seulement financiers : les emplois, l’image et la stabi
 * l'Humain
 
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Les attaquants
@@ -70,16 +74,30 @@ Les enjeux ne sont pas seulement financiers : les emplois, l’image et la stabi
 * **Intérêts étatiques et mercenariat** : espionnage et enjeux régaliens
 
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Les vulnérabilités
+
+Faiblesse au sein du système d'information
+
+[CERT-FR](https://www.cert.ssi.gouv.fr/)
 
 * N° CVE : identifiant unique pour une vuln. base [Nist NVD](https://www.cve.org/)
 * Score CVSS : évaluation d'une vulnérabilité [First Calculator](https://www.first.org/cvss/)
 * Reference CWE : mauvaise pratique [MITRE CWE](https://cwe.mitre.org/)
 * Score EPSS : Exploit Prediction Scoring System [First EPSS](https://www.first.org/epss/user-guide)
 
+### Lister les dernières CVE avec cvemap
+
+[cvemap](https://github.com/projectdiscovery/cvemap)
+[API KEY](https://cloud.projectdiscovery.io/?ref=api_key)
+```powershell
+.\cvemap.exe -auth
+.\cvemap.exe -l 100
+```
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### Pourquoi y a t-il autant de vulns ?
 
@@ -128,18 +146,7 @@ check:
     syscall
 ```
 
-
-
-### Lister les dernières CVE avec cvemap
-
-[cvemap](https://github.com/projectdiscovery/cvemap)
-[API KEY](https://cloud.projectdiscovery.io/?ref=api_key)
-```powershell
-.\cvemap.exe -auth
-.\cvemap.exe -l 100
-```
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -149,10 +156,19 @@ check:
 * **Remarques** : Une vulnérabilité peut être utilisée par un code d’exploitation et conduire à une intrusion dans le système. (faiblesse sur le SI)
 * **Risque** = `Menace * Vulnérabilité * Impact` = `Impact * Vraissemblance` = `Gravité * Facilité d'exploitation`
 
+Niveau de risque en fonction de la gravité (ordonnée ) et de la vraissemblance (abscisse):
+
+|  | Faible | Moyenne | Élevée | Critique |
+| --- | --- | --- | --- | --- |
+| **Très improbable** | Faible | Faible | Moyen | Élevé |
+| **Improbable** | Faible | Moyen | Élevé | Très élevé |
+| **Probable** | Moyen | Élevé | Très élevé | Critique |
+| **Très probable** | Élevé | Très élevé | Critique | Critique |
 
 
 
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -165,10 +181,7 @@ check:
 * accepter : laisser le risque tel quel est assumer l'impact d'une exploitation par un attaquant
 
 
-
-
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -185,12 +198,7 @@ check:
 * **Authentitication** : L’authentification a pour but de vérifier l’identité dont une entité se réclame. ***La personne est bien celle qu'elle prétend être.***
 
 
-
-
-
-
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Cadre juridique
@@ -199,7 +207,10 @@ check:
 
 * Le fait d'accéder ou de se maintenir, frauduleusement, dans tout ou partie d'un système de traitement automatisé de données est puni de 3 ans d'emprisonnement et de 100 000 € d'amende.
 * Lorsqu'il en est résulté soit la suppression ou la modification de données contenues dans le système, soit une altération du fonctionnement de ce système, la peine est de 5 ans d'emprisonnement et de 150 000 € d'amende.
-* Lorsque les infractions prévues aux deux premiers alinéas ont été commises à l'encontre d'un système de traitement automatisé de données à caractère personnel mis en œuvre par l'Etat, la peine est portée à 7 ans d'emprisonnement et à 300 000 € d'amende.
+* Lorsque les infractions prévues aux deux premiers alinéas ont été commises à l'encontre d'un système de traitement automatisé de données à caractère personnel mis en œuvre par l'Etat, la peine est portée à **7 ans d'emprisonnement et à 300 000 € d'amende**.
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### Les émissions radio
 
@@ -209,11 +220,14 @@ check:
 
 * Les brouillages de fréquences autorisées causés par l’utilisation non conforme d’équipements radioélectriques, électriques ou électroniques sont des délits soumis à une sanction pénale pouvant aller jusqu’à 6 mois de prison et 30 000 euros d’amende (L. 39-1 du CPCE).
 
-* En dehors de dérogations encadrées pour des services de l’État, la possession, l’utilisation, la cession à titre commercial ou gratuit, la publicité illicites de brouilleurs sont strictement interdites (article L. 33-3-1 du CPCE). Ce sont des délits soumis à une sanction pénale pouvant aller jusqu’à 6 mois de prison et 30 000 euros d’amende (L. 39-1 du CPCE).
+* En dehors de dérogations encadrées pour des services de l’État, la possession, l’utilisation, la cession à titre commercial ou gratuit, la publicité illicites de brouilleurs sont strictement interdites (article L. 33-3-1 du CPCE). Ce sont des délits soumis à une sanction pénale pouvant aller jusqu’à **6 mois de prison et 30 000 euros d’amende** (L. 39-1 du CPCE).
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### Le RGPD
 
-* RGPD -> données personnelles : Une donnée personnelle est toute information se rapportant à une personne physique identifiée ou identifiable. ex:  Nom, numéro de téléphone ou de plaque d’immatriculation, un identifiant tel que le numéro de sécurité sociale, une adresse postale ou courriel, mais aussi la voix ou l’image. ou croisement de données: une femme vivant à telle adresse, née tel jour et membre dans telle association
+**données personnelles** : Une donnée personnelle est toute information se rapportant à une personne physique identifiée ou identifiable. ex:  Nom, numéro de téléphone ou de plaque d’immatriculation, un identifiant tel que le numéro de sécurité sociale, une adresse postale ou courriel, mais aussi la voix ou l’image. ou croisement de données: une femme vivant à telle adresse, née tel jour et membre dans telle association
 
 Il est obligatoire de : 
 
@@ -224,21 +238,20 @@ Il est obligatoire de :
     * Indiquer une durée de conservation des données.
 
 
-* le montant des sanctions pécuniaires peut s'élever jusqu'à 20 millions d'euros ou dans le cas d'une entreprise jusqu'à 4 % du chiffre d'affaires annuel mondial
+* le montant des sanctions pécuniaires peut s'élever jusqu'à **20 millions d'euros ou dans le cas d'une entreprise jusqu'à 4 % du chiffre d'affaires annuel mondial**
 
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-
-
-
-
-## Définitions
+## Gouvernance
 
 * PSSI : Politique SSI
 * SMSI : Système de management de la Sécurité de l'information (ISO27001)
 * SOC : Security operation center, utilise un SIEM pour la supervision de la sécurité.
 * AdR : Analyse de risque
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Normes et cadre réglementaire
 
@@ -251,9 +264,7 @@ Il est obligatoire de :
 * RGS : Administration
 * DORA : entités financières
 
-
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -270,16 +281,10 @@ Il est obligatoire de :
 * Guidelines : Best Practices / Recommendations
 * Baselines : Minimal implementation
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-
-
-
-
-
-
-
-### La sécurité physique
+## La sécurité physique
 
 La sécurité physique est la première couche de sécurité d’une entreprise, son but est de:
 
@@ -292,6 +297,8 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 * Limiter les attaques par ingénierie sociale
 
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 ### Les risques
 
 * Tailgating : suivre quelqu'un pour passer une porte
@@ -301,6 +308,8 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 * Keylogger : enregistrement des frappes au clavier (logiciel ou materiel)
 * Tempest : Compromissions par rayonnement éléctro magnetique
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 ### exemple de materiels
 
 * [Great Scott Gadgets Throwing Star LAN Tap Kit ](https://www.amazon.fr/Great-Scott-Gadgets-Throwing-Star/dp/B07GYWZPXG)
@@ -309,11 +318,9 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 * [Flipper zero](https://flipperzero.one/)
 * [Wfi PineApple](https://shop.hak5.org/products/wifi-pineapple)
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
-
-
-### Les mots de passe
+## Les mots de passe
 
 Toujours le principal point d'entrée pour l'attaquant
 
@@ -325,10 +332,10 @@ Le minimum syndical : 12 chars avec maj, min, digit, spéciaux
 Avec les gerstionnaire de mots de passe: 20 chars
 
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-
-### Les téléphones
+## Les smartphones
 
 Les problématiques spécifiques aux Smartphones
 
@@ -338,11 +345,10 @@ Les problématiques spécifiques aux Smartphones
 * Backdoor Fabricant : micro activable légalement
 * Pas toujours à jour: Krack, 5Ghoul
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-
-
-### Ingénierie sociale
+## L'ingénierie sociale
 
 #### MICE
 
@@ -356,11 +362,12 @@ Les problématiques spécifiques aux Smartphones
 * Urgence
 * Sabotage
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ### Phishing
 
-Phishing à partir de « https://www.securite-solutions.fr/login » ou est le piège ? 
+Phishing à partir de `https://www.securite-solutions.fr/login`, où est le piège ? 
 
 ```txt
 * https://www.securite-solutions.fr.it/login
@@ -376,13 +383,10 @@ Phishing à partir de « https://www.securite-solutions.fr/login » ou est le
 * https://www.securite-sоlution.fr/login (« o » cyrillique)
 ```
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-
-
-
-
-### Le Cloud
+## Le Cloud
 
 Consiste à utiliser des ressources distantes le plus souvent au travers d’internet
 
@@ -391,11 +395,26 @@ Consiste à utiliser des ressources distantes le plus souvent au travers d’int
 * Hybride : Public + Privé
 
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### Les responsabilités
+
+Répartition des responsabilités entre le fournisseur de services cloud (CSP):
+
+|  | **IaaS** | **PaaS** | **SaaS** |
+|---|---|---|---|
+| **Applications** | Client | Client | CSP |
+| **Données** | Client | Client | CSP |
+| **Runtime** | Client | CSP | CSP |
+| **Middleware** | Client | CSP | CSP |
+| **Système d'exploitation** | Client | CSP | CSP |
+| **Virtualisation** | CSP | CSP | CSP |
+| **Serveurs** | CSP | CSP | CSP |
+| **Stockage** | CSP | CSP | CSP |
+| **Réseau** | CSP | CSP | CSP |
 
 
-
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Les réflexes en cas d'incidents
 
@@ -404,8 +423,7 @@ Consiste à utiliser des ressources distantes le plus souvent au travers d’int
 * Alerter le RSSI et N+1 par un autre canal
 * [CERT-FR les bons réflexes en cas d'incident](https://www.cert.ssi.gouv.fr/les-bons-reflexes-en-cas-dintrusion-sur-un-systeme-dinformation/)
 
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Référentiels et bonnes pratiques
@@ -413,8 +431,10 @@ Consiste à utiliser des ressources distantes le plus souvent au travers d’int
 * [ANSSI](https://cyber.gouv.fr/)
 * [Guide d'hygiène](https://cyber.gouv.fr/publications/guide-dhygiene-informatique)
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
-## démonstration 
+## démonstration d'attaques 
 
 * [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
