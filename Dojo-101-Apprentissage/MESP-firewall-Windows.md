@@ -1,4 +1,4 @@
-# Configurer le fw sur une machine Linux
+# Configurer le fw sur une machine Windows
 
 Il vous est demandé de configurer le firewall d'un serveur Linux selon les modalités ci-après
 
@@ -10,6 +10,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [Mitre Attack](https://attack.mitre.org/)
+* [LOLbas](https://lolbas-project.github.io/)
 * [nmap](https://nmap.org/)
 * [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
 
@@ -20,13 +21,13 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 1. Déployer une machine Windows
 
-2. Lister les règles firewall grace à powershell et la GUI
+2. Lister les règles firewall grace à powershell ou la GUI
 
-3. Configurer une politique par défaut "Drop" pour les flux entrants
+3. Configurer une politique par défaut "Drop" pour les flux entrants 
 
-4. Supprimer les règles inutiles ou trop permissives concernant le trafic entrant
+4. Supprimer / Désactiver les règles inutiles ou trop permissives concernant le trafic entrant
 
-5. à l'aide du MITRE Attack, créer des règles "deny" pertinentes concernant les flux sortants (10 minimum)
+5. à l'aide du MITRE Attack, créer des règles "deny" pertinentes concernant les flux sortants (10 minimum) (hint: certains binaires de devrais pas utiliser le firewall)
 
 6. Vérifier à l'aide de l'outil **nmap**, ou d'autres commandes que le firewall fonctionne correctement
 
