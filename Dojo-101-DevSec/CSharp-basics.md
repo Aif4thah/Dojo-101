@@ -38,6 +38,12 @@ public class Program
 }
 ```
 
+## les chaines de chars
+
+```
+$"/todoitems/{todo.Id}", todo
+```
+
 ##  saisie utilisateurs
 
 ```c#
@@ -81,7 +87,7 @@ foreach (var l in liste)
 }
 ```
 
-## linq
+## linq & Queries
 
 ```c#
 liste.ForEach(i => Console.WriteLine(i));
@@ -92,6 +98,15 @@ liste.ForEach(i => Console.WriteLine(i));
 ```c#
 string text = File.ReadAllText(textFile);
 Console.WriteLine(text);
+```
+
+## Minimal API
+
+```c#
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+app.MapGet("/", () => "Hello World!");
+app.Run();
 ```
 
 ##  fonction async
@@ -132,7 +147,7 @@ class Program
 }
 ```
 
-##  executer des commandes système
+##  Executer des commandes système
 
 
 ```c#
@@ -155,13 +170,13 @@ message = cmd.StandardOutput.ReadToEnd();
 Console.WriteLine(message);
 ```
 
-##  lire un fichier
+##  Lire un fichier
 
 ```c#
 string text = File.ReadAllText(textFile);
 ```
 
-##  classes et objets
+##  Classes et objets
 
 ```c#
 namespace CShidori.DataHandler
@@ -309,7 +324,7 @@ public static string ObfuscatePwsh(string message)
 ```
 
 
-##  minimal API
+##  Minimal API
 
 ```c#
 using VulnerableWebApplication;
@@ -321,7 +336,7 @@ app.MapGet("/", () => "Hello");
 app.Run("https:## localhost:3000");
 ```
 
-##  crypto random
+##  Crypto & random
 
 ```c#
 using System.Security.Cryptography;
@@ -389,7 +404,7 @@ private static string AsciiHexEncode(string str)
 
 
 
-##  fuzzing : mutation:
+##  Fuzzing & mutation 
 
 
 ```c#

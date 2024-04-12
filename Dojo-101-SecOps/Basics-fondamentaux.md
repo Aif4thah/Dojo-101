@@ -53,7 +53,7 @@ Tout ce que vous exposez à vos adversaire
 
 ### Les profils
 
-* White Hat / Ethical Hacker : respecte le cadre légal (Pentest, Red Team, Bug Bouty, Divulgation responsable)
+* White Hat / Ethical Hacker : respecte le cadre légal (Pentest, Red Team, Bug Bounty, Divulgation responsable)
 * Black Hat : intention de nuire ou de gagner de l'argent
 * Grey Hat : Parfois éthique, parfois non...
 * Script Kiddies : Peu de connaissance, mais utilisation d'outils "clé en main"
