@@ -36,15 +36,8 @@ Relecture par le formateur de la procédure de durcissement
 
 ## Critères de performance
 
-Participer à l’élaboration et à la mise en œuvre de la politique de sécurité
-
-     - Pertinence des préconisations
-
-Communiquer par écrit avec les professionnels et les utilisateurs de l’informatique.
-
-    - Synthèse managériale compréhensible pour un personnel non technique
-    - détails des vulnérabilités clair et technique
-    - Lisibilité globale du document
+* Procédure claire, concise et d'un bon niveau technique
+* Playbooks (ou autres fichiers de configuration) lisibles et pertinents, basés sur des références éprouvées ou faisant autorité (ex: ANSSI)
 
 ## Pour finir
 
