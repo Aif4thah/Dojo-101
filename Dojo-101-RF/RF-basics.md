@@ -37,6 +37,18 @@ NE JAMAIS EMETTRE SANS ANTENNE
 NE JAMAIS TOUCHER L’ANTENNE EN EMISSION
 ```
 
+## Fréquence et longueur d'onde
+
+Permets notamment d'en déduire la taille de l'antenne
+
+`λ = c/f = c*T` 
+
+* λ est la longueur d'onde en mètre (m),
+* c la célérité de propagation de l'onde en mètre par seconde (m.s-1) = 299,792,458 mètres par seconde 
+* f la fréquence (Hz)
+* T la période (s).
+
+
 ## SDR software define radio
 
 `Antenna` <-> `Ampli + filter` <-> `Analog/Digit` <-> `Modem error correction` <-> `Encryption` <-> `Network routing GUI` <-> `User`
