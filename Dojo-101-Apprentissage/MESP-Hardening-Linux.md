@@ -14,29 +14,32 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * [Guides ANSSI](https://cyber.gouv.fr/publications)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [Ansible](https://www.ansible.com/)
+* [Ansible Quick Start](https://docs.ansible.com/ansible/latest/getting_started/index.html)
+* [Chaine DevOps](https://learn.microsoft.com/fr-fr/azure/cloud-adoption-framework/ready/considerations/devops-toolchain#azure-devops-and-github-toolchain)
+
 
 ## Contexte
 
 Vous êtes un auditeur de sécurité pour une entreprise de développement de logiciels. L’entreprise utilise une infrastructure Windows Active Directory (AD) pour gérer les identités et les accès des utilisateurs. L’infrastructure AD est composée de deux contrôleurs de domaine et d’un serveur membre Linux intégré au domaine. L’entreprise a également développé une API REST personnalisée qui est utilisée par plusieurs applications internes. Votre tâche consiste à auditer la sécurité de l’infrastructure AD, du serveur Linux et de l’API REST pour identifier les vulnérabilités et les risques potentiels.
 
-Methodologie: Referentiel PASSI
+Votre tâche consiste à appliquer les bonnes pratiques de sécurité suite à l'audit (MESP Audit), soit manuellement, soit par script, soit à l'aide d'une solution de type Infrastructure as Code (IaC).
 
-Referentiel d'audit: CIS
-
-Gestes professionnels: https://github.com/Aif4thah/Dojo-101
 
 ## Modalités pédagogiques
 
 Binôme ou seul (au choix)
 
+
 ## Modalités d'évaluation
 
 Relecture par le formateur de la procédure de durcissement
+
 
 ## Livrables
 
 * procédure de durcissement (sans Ansible)
 * PlayBook Ansible poussé sur Github
+
 
 ## Critères de performance
 
