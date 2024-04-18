@@ -1,5 +1,6 @@
 # Ansible
 
+
 ## Installation les binaires (Ubuntu)
 
 ```sh
@@ -21,10 +22,38 @@ le rôle est alors installé dans `~/.ansible/roles/`
 `default` contient les variables
 `tasks` contient les actions à effectuer
 
-Le rôle peut ensuite être ajusté manuellement.
+Le rôle peut ensuite être ajusté manuellement
+
+## Organisation du role
+
+```txt
+roles/
+    common/               # this hierarchy represents a "role"
+        tasks/            #
+            main.yml      #  <-- tasks file can include smaller files if warranted
+        handlers/         #
+            main.yml      #  <-- handlers file
+        templates/        #  <-- files for use with the template resource
+            ntp.conf.j2   #  <------- templates end in .j2
+        files/            #
+            bar.txt       #  <-- files for use with the copy resource
+            foo.sh        #  <-- script files for use with the script resource
+        vars/             #
+            main.yml      #  <-- variables associated with this role
+        defaults/         #
+            main.yml      #  <-- default lower priority variables for this role
+        meta/             #
+            main.yml      #  <-- role dependencies
+        library/          # roles can also include custom modules
+        module_utils/     # roles can also include custom module_utils
+        lookup_plugins/   # or other types of plugins, like lookup in this case
+```
+
 
 
 ## vérifier les tasks d'un playbook
+
+On appel généralement la conf via le playbook : `playbook` -> `role` > `tasks`
 
 ```sh
 ansible-playbook -i "localhost," -c local --list-tasks playbook.yml
@@ -61,3 +90,5 @@ ansible-playbook -i "localhost," -c local --check playbook.yml
 
 Certains requirements peuvent entrainer des erreurs et arrêter les checks 
 L'option `--step` permet des tests manuels sans modification du template
+
+

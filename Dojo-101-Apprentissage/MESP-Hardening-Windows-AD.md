@@ -35,12 +35,16 @@ Relecture par le formateur de la procédure de durcissement
 ## Livrables
 
 * procédure de durcissement (sans Ansible)
-* PlayBook Ansible ou (fichier PowershellDSC) poussé sur Github
+* PlayBook (+rôle) Ansible ou (fichier PowershellDSC) poussé sur Github (meme si il a été localement)
+* Le rôle est conforme aux vulns trouvées lors de l'audit (MESP-audit-conf*)
+* La solution tourne dans le Lab et l'enrichie (MESP-création-Lab)
 
 ## Critères de performance
 
 * Procédure claire, concise et d'un bon niveau technique
-* Playbooks (ou autres fichiers de configuration) lisibles et pertinents, basés sur des références éprouvées ou faisant autorité (ex: ANSSI)
+* Le rôle (ou équivalent) corrige les vulns trouvées lors de l'audit (MESP-audit-conf*)
+* La solution tourne dans le Lab et l'enrichit (MESP-création-Lab)
+* Le niveau de sécurité n'est pas dégradé du fait des scripts ou de la solution IaC
 
 ## Pour finir
 
