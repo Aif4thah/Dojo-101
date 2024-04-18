@@ -422,7 +422,8 @@ Répartition des responsabilités entre le fournisseur de services cloud (CSP):
 * Débrancher du réseau
 * Ne pas éteindre
 * Alerter le RSSI et N+1 par un autre canal
-* [CERT-FR les bons réflexes en cas d'incident](https://www.cert.ssi.gouv.fr/les-bons-reflexes-en-cas-dintrusion-sur-un-systeme-dinformation/)
+* [CERT-FR : les bons réflexes en cas d'incident](https://www.cert.ssi.gouv.fr/les-bons-reflexes-en-cas-dintrusion-sur-un-systeme-dinformation/)
+* [ANSSI : Gestion de crise](https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
