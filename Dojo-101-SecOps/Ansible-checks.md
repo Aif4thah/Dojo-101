@@ -1,5 +1,7 @@
 # Ansible
 
+Ansible pour une utilisation quick and dirty en audit ou en POC
+
 ## En local sous Linux
 
 ### Installation les binaires (Ubuntu)
@@ -118,9 +120,26 @@ Service
     CertificateThumbprint
     AllowRemoteAccess = true
 
+### Push de la conf
 
+```sh
+ansible-playbook -i inventory.yml role.yml -vvv
+```
 
-Pour aller plus loin sécuriser la connexion : ` winrm quickconfig -transport:https`
+## Pour aller plus loin sécuriser la connexion : 
+
+### HTTPS
+
+```batch
+Winrm quickconfig -transport:https
+```
+
+### Utilisation du vault ansible
+
+```sh
+ansible-vault encrypt files/secrets/credentials.yml
+```
+
 
 ## Debug
 
