@@ -1,7 +1,8 @@
 # Ansible
 
+## En local sous Linux
 
-## Installation les binaires (Ubuntu)
+### Installation les binaires (Ubuntu)
 
 ```sh
 apt update
@@ -11,7 +12,7 @@ apt install ansible
 ```
 
 
-## téléchargement du rôle ansible
+### téléchargement du rôle ansible
 
 ```sh
 ansible-galaxy search <role>
@@ -24,7 +25,106 @@ le rôle est alors installé dans `~/.ansible/roles/`
 
 Le rôle peut ensuite être ajusté manuellement
 
-## Organisation du role
+
+
+
+### vérifier les tasks d'un playbook
+
+On appelle généralement la conf via le playbook : `playbook` -> `role` > `tasks`
+
+```sh
+ansible-playbook -i "localhost," -c local --list-tasks playbook.yml
+```
+
+
+### créer le snippet
+
+Le playbook va ensuite spécier le rôle à appliquer.
+
+playbook.yml
+
+```yml
+- hosts: all
+  roles:
+    - { role: <role> }
+```
+
+
+### deployer la configation à partir du playbook
+
+```sh
+ansible-playbook -i "localhost," -c local playbook.yml
+```
+
+
+### check la configation à partir du playbook
+
+```sh
+ansible-playbook -i "localhost," -c local --check playbook.yml
+```
+
+
+## Push vers une machine Windows
+
+### Exemple de winrm en basic (non sécurisé)
+
+inventory.yml coté Linux-Ansible
+
+```yml
+[windows]
+VULN.LAN
+
+[windows:vars]
+ansible_user=Ansible
+ansible_password=azerty1234+-
+ansible_connection=winrm
+ansible_port=5985
+ansible_winrm_scheme=http
+ansible_winrm_transport=basic
+```
+
+Conf winRM coté windows **non sécurisé!**
+
+```powershell
+winrm set winrm/config/service/auth '@{Basic="true"}'
+winrm set winrm/config/service '@{AllowUnencrypted="true"}'
+Get-Service winrm |Restart-Service
+```
+
+La conf winRM downgradé ressemble alors à ça :
+
+Service
+    RootSDDL = O:NSG:BAD:P(A;;GA;;;BA)(A;;GR;;;IU)S:P(AU;FA;GA;;;WD)(AU;SA;GXGW;;;WD)
+    MaxConcurrentOperations = 4294967295
+    MaxConcurrentOperationsPerUser = 1500
+    EnumerationTimeoutms = 240000
+    MaxConnections = 300
+    MaxPacketRetrievalTimeSeconds = 120
+    **AllowUnencrypted = true**
+    Auth
+        **Basic = true**
+        Kerberos = true
+        Negotiate = true
+        Certificate = false
+        CredSSP = false
+        CbtHardeningLevel = Relaxed
+    DefaultPorts
+        **HTTP = 5985**
+        HTTPS = 5986
+    IPv4Filter = *
+    IPv6Filter = *
+    EnableCompatibilityHttpListener = false
+    EnableCompatibilityHttpsListener = false
+    CertificateThumbprint
+    AllowRemoteAccess = true
+
+
+
+Pour aller plus loin sécuriser la connexion : ` winrm quickconfig -transport:https`
+
+## Debug
+
+### Organisation du rôle
 
 ```txt
 roles/
@@ -49,46 +149,7 @@ roles/
         lookup_plugins/   # or other types of plugins, like lookup in this case
 ```
 
-
-
-## vérifier les tasks d'un playbook
-
-On appel généralement la conf via le playbook : `playbook` -> `role` > `tasks`
-
-```sh
-ansible-playbook -i "localhost," -c local --list-tasks playbook.yml
-```
-
-
-## créer le snippet
-
-Le playbook va ensuite spécier le role à appliquer.
-
-playbook.yml
-
-```yml
-- hosts: all
-  roles:
-    - { role: <role> }
-```
-
-
-## deployer la configation à partir du playbook
-
-```sh
-ansible-playbook -i "localhost," -c local playbook.yml
-```
-
-
-## check la configation à partir du playbook
-
-```sh
-ansible-playbook -i "localhost," -c local --check playbook.yml
-```
-
-## Debug
+### Check étape par étape
 
 Certains requirements peuvent entrainer des erreurs et arrêter les checks 
 L'option `--step` permet des tests manuels sans modification du template
-
-
