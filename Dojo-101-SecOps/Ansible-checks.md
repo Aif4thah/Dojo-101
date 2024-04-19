@@ -1,12 +1,12 @@
 # Ansible
 
-Ansible pour une utilisation quick and dirty en audit ou en POC
+Ansible pour une utilisation quick and dirty en POC
 
 ## En local sous Linux
 
 ### Installation les binaires (Ubuntu)
 
-```sh
+```bash
 apt update
 apt install software-properties-common
 apt-add-repository --yes --update ppa:ansible/ansible
@@ -16,7 +16,7 @@ apt install ansible
 
 ### téléchargement du rôle ansible
 
-```sh
+```bash
 ansible-galaxy search <role>
 ansible-galaxy install <role>,<version>
 ```
@@ -34,7 +34,7 @@ Le rôle peut ensuite être ajusté manuellement
 
 On appelle généralement la conf via le playbook : `playbook` -> `role` > `tasks`
 
-```sh
+```bash
 ansible-playbook -i "localhost," -c local --list-tasks playbook.yml
 ```
 
@@ -54,21 +54,21 @@ playbook.yml
 
 ### deployer la configation à partir du playbook
 
-```sh
+```bash
 ansible-playbook -i "localhost," -c local playbook.yml
 ```
 
 
 ### check la configation à partir du playbook
 
-```sh
+```bash
 ansible-playbook -i "localhost," -c local --check playbook.yml
 ```
 
 
 ## Push vers une machine Windows
 
-### Exemple de winrm en basic (non sécurisé)
+### Exemple de winrm en basic (NON SÉCURISÉ)
 
 inventory.yml coté Linux-Ansible
 
@@ -78,14 +78,14 @@ VULN.LAN
 
 [windows:vars]
 ansible_user=Ansible
-ansible_password=azerty1234+-
+ansible_password=<your passwd>
 ansible_connection=winrm
 ansible_port=5985
 ansible_winrm_scheme=http
 ansible_winrm_transport=basic
 ```
 
-Conf winRM coté windows **non sécurisé!**
+Conf winRM rapide et **non sécurisé!** coté windows 
 
 ```powershell
 winrm set winrm/config/service/auth '@{Basic="true"}'
@@ -93,8 +93,9 @@ winrm set winrm/config/service '@{AllowUnencrypted="true"}'
 Get-Service winrm |Restart-Service
 ```
 
-La conf winRM downgradé ressemble alors à ça :
+résultat:
 
+```yml
 Service
     RootSDDL = O:NSG:BAD:P(A;;GA;;;BA)(A;;GR;;;IU)S:P(AU;FA;GA;;;WD)(AU;SA;GXGW;;;WD)
     MaxConcurrentOperations = 4294967295
@@ -102,16 +103,16 @@ Service
     EnumerationTimeoutms = 240000
     MaxConnections = 300
     MaxPacketRetrievalTimeSeconds = 120
-    **AllowUnencrypted = true**
+    AllowUnencrypted = true
     Auth
-        **Basic = true**
+        Basic = true
         Kerberos = true
         Negotiate = true
         Certificate = false
         CredSSP = false
         CbtHardeningLevel = Relaxed
     DefaultPorts
-        **HTTP = 5985**
+        HTTP = 5985
         HTTPS = 5986
     IPv4Filter = *
     IPv6Filter = *
@@ -119,24 +120,25 @@ Service
     EnableCompatibilityHttpsListener = false
     CertificateThumbprint
     AllowRemoteAccess = true
+```
 
 ### Push de la conf
 
-```sh
+```bash
 ansible-playbook -i inventory.yml role.yml -vvv
 ```
 
-## Pour aller plus loin sécuriser la connexion : 
+## Pour aller plus loin et sécuriser la connexion : 
 
 ### HTTPS
 
-```batch
+```powershell
 Winrm quickconfig -transport:https
 ```
 
 ### Utilisation du vault ansible
 
-```sh
+```bash
 ansible-vault encrypt files/secrets/credentials.yml
 ```
 
