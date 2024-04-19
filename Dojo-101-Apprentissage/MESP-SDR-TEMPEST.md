@@ -14,25 +14,25 @@ Dossier Toolbox RF
 
 ## Contexte
 
-
+* Identifier la fréquence de rayonnement du câble HDMI
+* Acquérir l’image afin de récupérer les informations affichées à l’écran
 
 
 ## Modalités pédagogiques
 
-Identifier la fréquence de rayonnement du câble HDMI
-Acquérir l’image afin de récupérer les informations affichées à l’écran
-
-
+Binôme
 
 ## Modalités d'évaluation
 
+* présentation ou Livrable
 
 ## Livrables
 
+* screenshots
 
 ## Critères de performance
 
-
+* réussite
 
 # Hardware
 

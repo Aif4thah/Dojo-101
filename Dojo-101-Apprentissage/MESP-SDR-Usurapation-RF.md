@@ -23,19 +23,21 @@ Fichier CS8
 4. Identifier les différences entre le signal usurpé et l’authentique (porteuse, répétition, largeur de bande…)
 
 
-
 ## Modalités pédagogiques
 
-Binôme ou seul (au choix)
-
+Binôme
 
 ## Modalités d'évaluation
 
+* présentation ou Livrable
 
 ## Livrables
 
+* screenshots
 
 ## Critères de performance
+
+* réussite
 
 # HW
 

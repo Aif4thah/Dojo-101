@@ -12,11 +12,6 @@ Dossier Toolbox RF
 
 ## Contexte
 
-
-## Modalités pédagogiques
-
-Binôme ou seul (au choix)
-
 1. Transformer son message en code morse dans un fichier cs8 (IQ)
 
 2. L’envoyer à l’aide du HackRF
@@ -24,13 +19,21 @@ Binôme ou seul (au choix)
 3. Recevoir le code morse et récupérer le message 
 
 
+## Modalités pédagogiques
+
+Binôme
+
 ## Modalités d'évaluation
 
+* présentation ou Livrable
 
 ## Livrables
 
+* screenshots
 
 ## Critères de performance
+
+* réussite
 
 # Hardware
 

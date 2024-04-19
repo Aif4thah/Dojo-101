@@ -25,17 +25,19 @@ Video jam wifi
 
 ## Modalités pédagogiques
 
-Binôme ou seul (au choix)
-
+Binôme
 
 ## Modalités d'évaluation
 
+* présentation ou Livrable
 
 ## Livrables
 
+* screenshots
 
 ## Critères de performance
 
+* réussite
 
 # HW
 

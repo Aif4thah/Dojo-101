@@ -6,21 +6,15 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Ressources
 
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-Démo/vidéo analyse de spectre
-Démo/vidéo antenne directionnelle
-Dossier Toolbox RF
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* Démo/vidéo analyse de spectre
+* Démo/vidéo antenne directionnelle
+* Dossier Toolbox RF pour une utilisation locale
+* [ou SDR en ligne](http://websdr.org/)
 
 
 
 ## Contexte
-
-
-
-
-## Modalités pédagogiques
-
-Binôme ou seul (au choix)
 
 1. Installer l’outillage
 
@@ -31,19 +25,28 @@ Binôme ou seul (au choix)
 4. Écouter la radio FM et/ou le Traffic Aérien (AM)
 
 
+## Modalités pédagogiques
+
+Binôme ou seul (au choix)
+
+
 ## Modalités d'évaluation
 
+N/A
 
 ## Livrables
 
+* Pull Request sur Dojo-101 des signaux non-repertoriés (fichier SIGINT.md)
 
 ## Critères de performance
 
+* Réussite
+
 # Hardware
 
-HackRF
-Hub et adaptateur USB
-Câble HDMI + écran
+* HackRF
+* Hub et adaptateur USB
+* Câble HDMI + écran
 
 
 ## Pour finir
