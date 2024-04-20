@@ -268,9 +268,9 @@ demarrer -> executer -> perfmon
 
 `Get-Acl -Path C:\Folder1 | Set-Acl -Path C:\Folder2`
 
-## tester WINRM:
+## Lister les listener WinRM:
 
-winrm enumerate winrm/config/listener
+`winrm enumerate winrm/config/listener`
 
 ## WINRM hors du domaine 
 

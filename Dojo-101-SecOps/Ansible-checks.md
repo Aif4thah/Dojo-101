@@ -1,6 +1,6 @@
 # Ansible
 
-Ansible pour une utilisation quick and dirty en POC
+**Attention : une partie de ce document est dédié à du Proof of Concept et ne respecte pas les bonnes pratiques de sécurité**
 
 ## En local sous Linux
 
@@ -26,8 +26,6 @@ le rôle est alors installé dans `~/.ansible/roles/`
 `tasks` contient les actions à effectuer
 
 Le rôle peut ensuite être ajusté manuellement
-
-
 
 
 ### vérifier les tasks d'un playbook
@@ -128,13 +126,22 @@ Service
 ansible-playbook -i inventory.yml role.yml -vvv
 ```
 
-## Pour aller plus loin et sécuriser la connexion : 
+## Axe pour la sécurisation : 
 
 ### HTTPS
 
+générer un certificat et activer HTTPS (port 5986) 
+
 ```powershell
-Winrm quickconfig -transport:https
+winrm quickconfig -transport:HTTPS
 ```
+
+désactiver les paramètres non sécurisés coté serveur et vérifier :
+
+```powershell
+winrm enumerate winrm/config/listener
+```
+
 
 ### Utilisation du vault ansible
 
