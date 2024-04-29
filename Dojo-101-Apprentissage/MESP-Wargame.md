@@ -29,10 +29,11 @@ les délais exacts seront déterminés selon le Lab et les participants
 
 * T0 : installer une VM Windows serveur dans un hyperviseur à jour, lui-même sur une machine physique de test, vierge de toutes données et à jour.
 
-* T1 : télécharger l'application vulnérable sur votre VM et exposez la sur le réseau du Lab. 
-    * Elle doit être accessible aux autres groupes en permanence 
-    * Choisissez un port TCP entre 80 et 3000 et n'en changez plus.
-    * Créer un fichier `flag.txt` sur votre bureau, qui contiendra un GUID
+* T1 : télécharger l'application vulnérable sur votre VM et exposez la sur le réseau du Lab : 
+    * Choisissez un port TCP entre 80 et 3000 qui sera utilisé par l'application et n'en changez plus.
+    * Le service doit être accessible aux autres groupes en permanence.
+    * Le firewall est désactivé, l'antivirus est absent ou configuré par défaut, pas de Waf.
+    * Créer un fichier `flag.txt` sur votre bureau, qui contiendra un GUID ( commande pwsh : `New-Guid`)
 
 * T2 : sans modifier l'application, configurer l'OS pour être en mesure de détecter les attaques. Vous pouvez configurer les Logs, la stratégie d'audit, utiliser un IDS, un SIEM.
 
