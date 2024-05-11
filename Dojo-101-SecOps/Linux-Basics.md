@@ -42,8 +42,11 @@ echo $HOME
 ## partitions
 
 ```sh
+fdisk -l
+lsblck
 findmnt
 gparted
+df
 ```
 
 ## services
@@ -297,7 +300,8 @@ curl -d '{ "name": "Princess Leia" }' \
 
 ```sh
 shred test
-find <dir> -type f -exec shred {} \;
+find <dir> -type f -exec shred {} \; # suppression recursives
+shred -f -n 10 /var/log/auth.log* # change les permissions (-f) et fait 10 passes (-n)
 ```
 
 ## cat in file
@@ -324,6 +328,14 @@ ifconfig wlan0 down
 
 route add default gw 192.168.1.254
 ```
+
+### Wireless
+
+`ifconfig` to see details of wireless interfaces
+`iwconfig` to only see your wireless interfaces
+`iwlist wlan0 scan` to see all the Wi-Fi APs in your area. (Will include key data about each AP)
+`ncmli dev wifi` will do the same as above. (Key data)
+`nmcli dev wifi connect AP-ESSID password APpassword` to connect to an AP
 
 ### routage
 
@@ -366,9 +378,9 @@ systemctl restart ssh
 
 pour du graphique activer le Forward X11 et
 
-```
-    ForwardX11 yes
-    ForwardX11Trusted no
+```txt
+ForwardX11 yes
+ForwardX11Trusted no
 ```
 
 lancer `ssh -X` coté client
@@ -415,3 +427,12 @@ sudo -u logcheck logcheck -o > /data/$(date +"%m-%d-%Y-%T").log
 ### pour les probleme de driver nvidia cf "Nvidia GPU"
 
 si freeze: utiliser les tty (ctrl+alt+<1,2,3,4...>) ou démarrer sans interface graphique: cf "runlevel"
+
+
+### modules
+
+### To add or a module use :
+`modprobe -a <module name>`
+
+### To remove a module use :
+`modprobe -r <module name>`

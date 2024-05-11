@@ -1,5 +1,17 @@
 # Wifi basics
 
+## definitions
+
+*AP* = Access Point
+*ESSID* = (Extended Service Set Identifier)
+*BSSID* = (Basic Service Set Identifier)
+*SSID* = (Service Set Identifier)
+*Channels* = Can operate from 1 to 14, and in the US from 1 to 11.
+*Power* = How far you are from the signal
+*Security* = WEP, WPA1, WPA2, WPA3
+*Modes* = Managed, Master, Master
+*Frequency* = 2.4GHHz or 5GHz
+
 ## Modulation
 
 ASK, FSK, PSK
@@ -123,10 +135,10 @@ Before capturing any traffic, it is necessary to enable the monitoring mode on t
 This is typically done using iwconfig
 
 ```sh
-$ iface = wlan0
-$ sudo ifconfig $iface down
-$ sudo iwconfig $iface mode monitor
-$ sudo ifconfig $iface up
+iface = wlan0
+sudo ifconfig $iface down
+sudo iwconfig $iface mode monitor
+sudo ifconfig $iface up
 ```
 
 Where wlan0 is the name of your wireless interface supporting the monitor mode. From this point,
@@ -135,15 +147,20 @@ If you are encountering errors or a strange behavior with your monitoring interf
 "unblocking" the interface with the following commands:
 
 ```sh
-$ nmcli nm wifi off
-$ sudo rfkill unblock all
+nmcli nm wifi off
+sudo rfkill unblock all
 ```
+
+### capture quick and dirty
+
+`airodump-ng wlan0mon`
+
 
 ### capture dans un fichier :
 
 ```sh
-$ airodump-ng --essid <nom AP> -c <channel> -w capture-file wlan1
-$ airodump-ng --bssid <mac AP> -c <channel> -w capture-file wlan1
+airodump-ng --essid <nom AP> -c <channel> -w capture-file wlan1
+airodump-ng --bssid <mac AP> -c <channel> -w capture-file wlan1
 ```
 
 ### deauth (broadcast):

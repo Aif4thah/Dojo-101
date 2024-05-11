@@ -41,3 +41,11 @@
 ## Tools pour HackRF
 
 * [BTLE](https://github.com/JiaoXianjun/BTLE)
+
+## Tools sous linux
+
+`apt-get install bluez`
+
+* `hciconfig`: equivalent of ifconfig for bluetooth
+* `hcitool`: provides us with device name, device ID, device class and device clock info which enables the devices to work synchronously
+* `hcidump`: Used to sniff bluetooth communications, meaning we can capture data sent over bluetooth.
