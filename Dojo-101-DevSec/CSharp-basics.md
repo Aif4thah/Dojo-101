@@ -40,15 +40,19 @@ public class Program
 
 ## les chaines de chars
 
-```
-$"/todoitems/{todo.Id}", todo
+Interpolation et format
+
+```c#
+$"/todoitems/{todo.Id}", todo;
+$"Hello, {name}! Today is {date.DayOfWeek}, it's {date:HH:mm} now.";
+Console.WriteLine("Hello, {0}! Today is {1}, it's {2:HH:mm} now.", name, date.DayOfWeek, date); 
 ```
 
 ##  saisie utilisateurs
 
 ```c#
 string message = Console.ReadLine();
-
+```
 
 ##  condition
 
