@@ -41,8 +41,8 @@ Lecture des livrables
 ## Livrables
 
 
-Captures wireshark (screenshot des parties intéressantes avec explication)
-Script python
+* Captures wireshark (screenshot des parties intéressantes avec explication)
+* Script python
 
 ## Critères de performance
 
