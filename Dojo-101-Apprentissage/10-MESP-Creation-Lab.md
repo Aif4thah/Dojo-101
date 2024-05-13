@@ -13,20 +13,23 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 [Badblood](https://github.com/davidprowe/BadBlood)
 [ISO Microsoft](https://www.microsoft.com/fr-fr/evalcenter)
 [ISO Linux Debian](https://www.debian.org/index.fr.html)
+[WinRM](https://learn.microsoft.com/fr-fr/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)
 
 ## Contexte
 
+0. Télécharger les images (ISO ou VM) Windows et Linux et vérifier leurs intégrités (Hashs ou Signatures) 
 1. Installer 3 machines virtuelles (VM) : Un contrôleur de domaine (Windows Serveur) + 1 Windows (client) + 1 Linux
 2. Faire les mises à jour de sécurité
-3. Pour la Workstation Windows: Joindre le domaine (Attention à la licence)
+3. Pour la Workstation Windows: Joindre le domaine (attention à la licence)
 4. Créer un utilisateur admin (root/administrateur) + un utilisateur standard (non-admin) et local sur chaque machine
 5. Mettre en place les services sur l’AD et configurer la Workstation pour leur utilisation
-    * DNS : celui présent par défaut Domaine AD
-    * Web : VulnerableLightApp : le service doit être disponible sur la boucle locale de votre machine Windows. 
-    * SSH et WinRM : respectivement sous Linux et Windows, accessible uniquement aux administrateurs de l'AD et membre du groupe sudoers du serveur Linux
-    * 2 Partages SMB ou Samba : 1 partage "Readonly" et un partage accessible en écriture sans authentification. 
+    * DNS (Windows) : celui présent par défaut Domaine AD
+    * Web (Windows) : VulnerableLightApp doit être lancé et accessible via le réseau 
+    * SSH (linux) : accessible aux membres du groupe sudoers
+    * WinRM (Windows) : accessible uniquement aux administrateurs de l'AD et 
+    * 2 Partages SMB (Windows) ou Samba (Linux) : 1 partage "Readonly" + 1 partage accessible en écriture, sans authentification. 
 
-6. execution du script badblood: `. ./invoke-badblood.ps1`
+6. exécution du script badblood: `. ./invoke-badblood.ps1`
 
 ## Modalités pédagogiques
 
@@ -40,21 +43,22 @@ Attention les éléments mis en place contiennent des vulnérabilités (indispen
 
 ## Modalités d'évaluation
 
-vérification des captures d'écrans
+vérification des captures d'écran
 
 ## Livrables
 
 * Captures d'écran
 
+    * Vérification des intégrités des images téléchargées avant l'installation
     * le statut des services DNS et Web
-    * connexions SSH et WinRM réussie (Connexion + commande `whoami` ou `id`)
+    * connexions SSH et WinRM réussies (Connexion + commande `whoami`)
     * Permissions et statut du partage SMB ou Samba
     * le nombre d'utilisateurs contenus dans l'AD
 
 
 ## Critères de performance
 
-Le lab est opérationnel
+Le Lab est opérationnel
 
 ## Pour finir
 
