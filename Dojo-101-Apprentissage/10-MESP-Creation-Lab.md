@@ -16,15 +16,15 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Contexte
 
-1. Installer 3 machines virtuelles (VM) : Un contrôleur de domaine (Windows Serveur) + 1 Windows + 1 Linux
+1. Installer 3 machines virtuelles (VM) : Un contrôleur de domaine (Windows Serveur) + 1 Windows (client) + 1 Linux
 2. Faire les mises à jour de sécurité
-3. Pour la Workstation Windows: Joindre le domaine
-4. Créer un utilisateur admin (root/administrateur) et un utilisateur standard et local sur chaque machine
+3. Pour la Workstation Windows: Joindre le domaine (Attention à la licence)
+4. Créer un utilisateur admin (root/administrateur) + un utilisateur standard (non-admin) et local sur chaque machine
 5. Mettre en place les services sur l’AD et configurer la Workstation pour leur utilisation
-    * DNS : celui de votre Domaine AD
-    * Web : VulnerableLightApp : le service doit être disponible sur la boucle locale de votre machine Windows ou Linux.
-    * SSH et WinRM : accessible aux administrateurs uniquement sur Windows et Linux
-    * Partage SMB: un partage "Readonly" accessible à tous en lecture, un partage "rw" accessible à tous en lecture et écriture sur le serveur Windows
+    * DNS : celui présent par défaut Domaine AD
+    * Web : VulnerableLightApp : le service doit être disponible sur la boucle locale de votre machine Windows. 
+    * SSH et WinRM : respectivement sous Linux et Windows, accessible uniquement aux administrateurs de l'AD et membre du groupe sudoers du serveur Linux
+    * 2 Partages SMB ou Samba : 1 partage "Readonly" et un partage accessible en écriture sans authentification. 
 
 6. execution du script badblood: `. ./invoke-badblood.ps1`
 
@@ -32,16 +32,25 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 Binôme ou seul (au choix)
 
+Attention les éléments mis en place contiennent des vulnérabilités (indispensables pour l'apprentissage), il faudra par précaution:
+
+ * Mettre à jour l'hyperviseur
+ * Limiter l'exposition à l'hôte ou au réseau local
+ * Supprimer immédiatement les VM en cas de doute sur leur intégrité
+
 ## Modalités d'évaluation
 
-Fourniture d'un script ou des captures d'écran qui présente : 
-* le statut des services installés (DNS, Web, Partage, SSH / WinRM)
-* le nombre d'utilisateurs contenus dans l'AD
+vérification des captures d'écrans
 
 ## Livrables
 
-* le script, le cas échéant
-* le résultat du script ou les captures d'écran
+* Captures d'écran
+
+    * le statut des services DNS et Web
+    * connexions SSH et WinRM réussie (Connexion + commande `whoami` ou `id`)
+    * Permissions et statut du partage SMB ou Samba
+    * le nombre d'utilisateurs contenus dans l'AD
+
 
 ## Critères de performance
 
