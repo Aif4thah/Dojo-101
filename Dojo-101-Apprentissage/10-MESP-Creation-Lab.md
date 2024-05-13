@@ -24,7 +24,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 4. Créer un utilisateur admin (root/administrateur) + un utilisateur standard (non-admin) et local sur chaque machine
 5. Mettre en place les services sur l’AD et configurer la Workstation pour leur utilisation
     * DNS (Windows) : celui présent par défaut Domaine AD
-    * Web (Windows) : VulnerableLightApp doit être lancé et accessible via le réseau 
+    * Web (Windows) : VulnerableLightApp doit être lancé et accessible via le réseau - le binaire contient déja un serveur Web (Kestrel)
     * SSH (linux) : accessible aux membres du groupe sudoers
     * WinRM (Windows) : accessible uniquement aux administrateurs de l'AD et 
     * 2 Partages SMB (Windows) ou Samba (Linux) : 1 partage "Readonly" + 1 partage accessible en écriture, sans authentification. 
@@ -38,8 +38,10 @@ Binôme ou seul (au choix)
 Attention les éléments mis en place contiennent des vulnérabilités (indispensables pour l'apprentissage), il faudra par précaution:
 
  * Mettre à jour l'hyperviseur
- * Limiter l'exposition à l'hôte ou au réseau local
+ * Isoler au maximum le serveur Windows une fois que le nécessaire est installé
+ * Limiter l'exposition des VM à l'hôte ou au réseau local, les éteindre lorsqu'on ne s'en sert pas.
  * Supprimer immédiatement les VM en cas de doute sur leur intégrité
+
 
 ## Modalités d'évaluation
 

@@ -48,7 +48,7 @@ Relecture des réponses aux questions
 ## Livrables
 
 * Pull request
-* réponses aux questions + n° de la pull request
+* Réponses aux questions + n° de la pull request
 
 ## Critères de performance
 
