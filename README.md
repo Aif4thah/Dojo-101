@@ -4,10 +4,8 @@
 </p>
 
 [![License: GNU GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-![GitHub last commit](https://img.shields.io/github/last-commit/Aif4thah/Dojo-101)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Aif4thah/Dojo-101/pulls)
-[![Donate Ethereum](https://img.shields.io/badge/ETH-donate-4E8EE9.svg?style=flat-square&logo=ethereum)](https://etherscan.io/address/0xcC424e30Ff6eEAb4E6B3A900c5446038F858b314)
-[![Buy me a coffee](https://img.shields.io/badge/buy%20me%20a-coffee-yellow)](https://www.buymeacoffee.com/taisensolutions)
+![GitHub last commit](https://img.shields.io/github/last-commit/Aif4thah/Dojo-101)
 
 Dojo-101 est un projet de capitalisation d'expérience et de connaissances en cybersécurité.
 
