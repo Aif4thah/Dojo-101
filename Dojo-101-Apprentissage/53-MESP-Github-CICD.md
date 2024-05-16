@@ -19,7 +19,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Contexte
 
-En tant qu'ingénieur DevSecOps vous devez démontrer la faisabilité des tests SAST / DAST / IAST à vos équipes. Pour cela vous allez mettre en place l'audit de code automatisé pour l'application cible "Vulnérable Web App"
+En tant qu'ingénieur DevSecOps vous devez démontrer la faisabilité des tests SAST / DAST / IAST à vos équipes. Pour cela vous allez mettre en place l'audit de code automatisé pour l'application cible "VulnérableLightApp"
 
 ## Modalités pédagogiques
 
@@ -27,7 +27,7 @@ En tant qu'ingénieur DevSecOps vous devez démontrer la faisabilité des tests 
 * Mettre en place le scan des dépendances à l'aide d'un des outils suivants: dependancy check, Snyk.io, depandabot
 * Mettre en place les tests SAST à l'aide de CodeQL
 * Mettre en place les tests DAST à l'aide de Nuclei
-* Afin d'automatiser les scans, créer ou identifier les worflows github
+* Afin d'automatiser les scans, créer les worflows appropriés
 * Ajuster les tests pour qu'ils soient les plus pertinents possibles
 
 Conseil: Lorsque possible, appuyez-vous sur les interfaces Web / Graphique et les ressources Github clé en main.
