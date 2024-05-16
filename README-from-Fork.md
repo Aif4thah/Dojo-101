@@ -74,7 +74,17 @@ Le contenu est mis à jour régulièrement, pensez à faire un `git pull` avant 
 * Logo réalisé par [@designbyzen](https://www.designbyzen.fr/)
 * **Merci** à tous les contributeurs 😍
 
-### Comment faire une pull request depuis un fork
+## Comment faire une pull request depuis un fork
 
-eeeeuuuh
 
+* Forker votre Repo
+* Clonez le sur VSC
+* Faites vos changements
+* Appliquez les sur votre Repo Remote
+### Sur votre navigateur 
+
+* Naviguez sur le Repo de votre Fork
+* Sélectionnez "Contribute" puis "Pull Request"
+* Entrez un titre et une description
+* Selectionnez vos autorisations de modification
+* Validez
