@@ -1,4 +1,4 @@
-# Devellopement sécurisée / DevSec basics
+# Développement sécurisé / DevSec basics
 
 ## OWASP top 10
 

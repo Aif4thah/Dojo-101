@@ -2,7 +2,7 @@
 
 Analyse du trafic à l'aide de Wireshark
 
-Durée: 1.5 jours
+Durée: 2 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
@@ -53,6 +53,8 @@ Il vous est demandé de procéder à l'analyse des protocoles utilisés sur le r
 24. Intercepter un fichier au travers du protocole SMB
 25. Comment proteger l'authenticité et la confidentialité d'un partage SMB ?
 
+* Bonus 1 : Déchiffrer le traffic TLS en important la clé privée du certificat dans Wireshark
+* Bonus 2 : Reconstituer un fichier qui à transité sur le réseau à l'aide de Wireshark
 
 ## Modalités pédagogiques
 
