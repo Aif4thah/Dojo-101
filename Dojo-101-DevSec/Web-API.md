@@ -68,6 +68,14 @@ Attacking GraphQL   291
 
 ### exemples
 
+#### récupération du shéma (introspection)
+
+```json
+{
+    "query": "{__schema{queryType{name}}}"
+}
+```
+
 #### exemple type d'injection GraphQL retournant le fichier /etc/passwd
 
 ```sh

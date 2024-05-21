@@ -9,7 +9,7 @@
 
 Dojo-101 est un projet de capitalisation d'expérience et de connaissances en cybersécurité.
 
-Minimaliste, utilisable hors-ligne et principalement en français 🇫🇷, sa raison d'être est le partage gratuit de la connaissance.
+Utilisable hors-ligne à l'aide d'un simple éditeur de texte, sa raison d'être est le partage gratuit de la connaissance.
 
 ⚠️ [Avant tout usage, merci de prendre connaissance de l'avis de non-responsabilité du projet](./CODE_OF_CONDUCT.md)
 
