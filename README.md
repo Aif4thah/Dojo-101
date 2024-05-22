@@ -11,11 +11,13 @@ Dojo-101 est un projet de capitalisation d'expérience et de connaissances en cy
 
 Utilisable hors-ligne à l'aide d'un simple éditeur de texte, sa raison d'être est le partage gratuit de la connaissance.
 
-⚠️ [Avant tout usage, merci de prendre connaissance de l'avis de non-responsabilité du projet](./CODE_OF_CONDUCT.md)
+> ⚠️ [Avant tout usage, merci de prendre connaissance de l'avis de non-responsabilité du projet](./CODE_OF_CONDUCT.md)
+
 
 ## 💡 Principe
 
 ![Principe](./Capitalisation.drawio.png)
+
 
 ## 👉 C'est parti !
 
@@ -28,6 +30,7 @@ Les fichiers comportant le mot "bascis" contiennent les éléments ensuite consi
 * [les bases de la Radio](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-RF/RF-basics.md)
 * [les bases de GitHub](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Github-basics.md)
 
+
 ## ⚔️ Thématiques
 
 * [Développement sécurisé](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-DevSec)
@@ -36,25 +39,23 @@ Les fichiers comportant le mot "bascis" contiennent les éléments ensuite consi
 * [Forensic](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Forensic)
 * [Radiofréquences](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-RF)
 
-## 💾 Usage
+
+## ⬇️ Installation
+
+0.  Si vous êtes sous Windows (client) et n'avez pas git d'installé : `winget install git.git `
+1. `git clone https://github.com/Aif4thah/Dojo-101.git` 
+2. Le contenu est mis à jour régulièrement, pensez à faire un `git pull` avant de l'utiliser.
 
 
-1. Télécharger le projet
-2. Ouverture du répertoire entier dans un éditeur de texte moderne (ex: `VScode`)
-3. Rechercher par mot-clé dans l'ensemble des fichiers (ex: `basics`, `windows`, `linux`)
-4. Visualiser le contenu au format html (`ctrl`+`shift` +`V`)
+## 📖 Usage
 
-Exemple avec Windows et VScode :
+Ce projet est fait pour ne pas dépendre de logiciels tiers, votre éditeur de texte ou de code suffit pour lire et modifier les notes.
 
-```powershell
-winget install git.git
-git clone https://github.com/Aif4thah/Dojo-101.git
-code .\Dojo-101\
-```
+À titre d'exemple, on peut ouvrir le répertoire `DOJO-101` avec [VSCodium](https://github.com/VSCodium/vscodium) pour :
 
-![demo](./demo.gif)
+* Rechercher par mot-clé dans l'ensemble des fichiers (ex: `basics`, `Windows`, `Linux`)
+* Lire le contenu au format `HTML` (`ctrl`+`shift` +`V`)
 
-Le contenu est mis à jour régulièrement, pensez à faire un `git pull` avant de l'utiliser.
 
 ## 🤝 Contributions
 
