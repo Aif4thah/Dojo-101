@@ -39,17 +39,17 @@ Binôme ou seul (au choix)
 
 ## Modalités d'évaluation
 
-Lecture du livrable
+Execution du livrable
 
 
 ## Livrables
 
-Réponse aux questions avec captures décran des captures Wireshark et de la chaine de confiance du certificat
+le Script (avec le(s) nom(s) en commentaire)
 
 
 ## Critères de performance
 
-Pertinence et justesse des réponses
+Le script fonctionne
 
 
 ## Pour finir

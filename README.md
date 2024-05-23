@@ -69,12 +69,14 @@ Ce projet est fait pour ne pas dépendre de logiciels tiers, votre éditeur de t
 
 * [Mises en situations professionnelles](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Apprentissage)
 
+## Tester ses compétences
+
+Développée en parallèle, cette application contient de nombreuses vulnérabilités pour tester vos connaissances :
+
+* [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
+
 ## 🏆 Crédits
 
 * Projet maintenu par [Michael Vacarella](https://github.com/Aif4thah)
 * Logo réalisé par [@designbyzen](https://www.designbyzen.fr/)
 * **Merci** à tous les contributeurs 😍
-
-
-
-
