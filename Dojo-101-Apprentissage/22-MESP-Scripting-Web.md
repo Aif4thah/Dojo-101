@@ -1,4 +1,4 @@
-# Analyser la sécurité du trafic réseau
+# Scripter l'analyse de traffic Réseau et Web
 
 Analyse d'une requête Réseau et Web grace au scripting
 
@@ -8,14 +8,15 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Ressources
 
-* [Wireshark](https://www.wireshark.org/download.html)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [HTTP, TLS et certificats X509](https://github.com/Aif4thah/VulnerableLightApp)
 * [HTTP MDN](https://developer.mozilla.org/fr/docs/Web/HTTP)
+* [PEP20](https://peps.python.org/pep-0020/)
+
 
 ## Contexte
 
-A l'aide d'un script dans le langage de votre choix
+A l'aide d'un script :
 
 * Réaliser une requête Web GET sur un site Web (Defaut = https://taisen.fr)
 * Afficher l'IP et le nom du serveur DNS qui résout le nom de domaine
@@ -28,22 +29,28 @@ A l'aide d'un script dans le langage de votre choix
 * Afficher les noms de certificats de la chaine de confiance
 * Afficher la liste des IP équipements réseaux traversés pour atteindre le site Web
 
+Langages recommandés : `Powershell`, `Bash` ou `Python`.
+
 
 ## Modalités pédagogiques
 
 Binôme ou seul (au choix)
 
+
 ## Modalités d'évaluation
 
 Lecture du livrable
+
 
 ## Livrables
 
 Réponse aux questions avec captures décran des captures Wireshark et de la chaine de confiance du certificat
 
+
 ## Critères de performance
 
 Pertinence et justesse des réponses
+
 
 ## Pour finir
 

@@ -8,8 +8,9 @@ En tant que consultant cybersécurité, votre expertise est requise quant au cho
 
 ## Ressources
 
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-[JWT.IO](https://jwt.io/)
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [JWT.IO](https://jwt.io/)
+* [RFC 6750](https://datatracker.ietf.org/doc/html/rfc6750)
 
 ## Contexte
 
