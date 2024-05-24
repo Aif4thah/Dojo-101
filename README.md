@@ -7,76 +7,81 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Aif4thah/Dojo-101/pulls)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Aif4thah/Dojo-101)
 
-Dojo-101 est un projet de capitalisation d'expérience et de connaissances en cybersécurité.
+Dojo-101 is a project for capturing experience and knowledge in cybersecurity.
 
-Utilisable hors-ligne à l'aide d'un simple éditeur de texte, sa raison d'être est le partage gratuit de la connaissance.
+Usable offline with a simple text editor, its purpose is to freely share knowledge.
 
-> ⚠️ [Avant tout usage, merci de prendre connaissance de l'avis de non-responsabilité du projet](./CODE_OF_CONDUCT.md)
+### Language :
+
+[![fr](https://img.shields.io/badge/Français-🇫🇷-blue.svg)](./README-FR.md)
+[![en](https://img.shields.io/badge/English-🇬🇧-red.svg)](./README.md)
+
+> ⚠️ [Before using, please read the project’s disclaimer](./CODE_OF_CONDUCT.md)
 
 
-## 💡 Principe
+## 💡 Principle
 
 ![Principe](./Capitalisation.drawio.png)
 
 
-## 👉 C'est parti !
+## 👉 Let’s get started!
 
-Les fichiers comportant le mot "bascis" contiennent les éléments ensuite considérés comme des prérequis. Voici quelques suggestions :
+Files containing the word “basics” contain elements that are subsequently considered prerequisites. Here are some suggestions:
 
-* [Les bases de la cyber](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Basics-fondamentaux.md)
-* [les bases de Linux](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Linux-Basics.md)
-* [les bases de powershell](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Powershell-basics.md)
-* [les bases de python](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Python-basics.md)
-* [les bases de la Radio](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-RF/RF-basics.md)
-* [les bases de GitHub](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Github-basics.md)
+* [Cyber basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Basics-fondamentaux.md)
+* [Linux basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Linux-Basics.md)
+* [Powershell basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Powershell-basics.md)
+* [Python basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Python-basics.md)
+* [Radio basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-RF/RF-basics.md)
+* [GitHub basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Github-basics.md)
 
 
-## ⚔️ Thématiques
+## ⚔️ Themes
 
-* [Développement sécurisé](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-DevSec)
-* [Administration sécurisée](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-SecOps)
+* [Secure development](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-DevSec)
+* [Secure administration](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-SecOps)
 * [Pentest](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Pentest)
 * [Forensic](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Forensic)
-* [Radiofréquences](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-RF)
+* [Radio frequencies](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-RF)
 
 
 ## ⬇️ Installation
 
-0.  Si vous êtes sous Windows (client) et n'avez pas git d'installé : `winget install git.git `
+0.  If you are using Windows (client) and do not have Git installed : `winget install git.git `
 1. `git clone https://github.com/Aif4thah/Dojo-101.git` 
-2. Le contenu est mis à jour régulièrement, pensez à faire un `git pull` avant de l'utiliser.
+2. The content is regularly updated, so remember to do a `git pull` before using it.
 
 
 ## 📖 Usage
 
-Ce projet est fait pour ne pas dépendre de logiciels tiers, votre éditeur de texte ou de code suffit pour lire et modifier les notes.
+This project is designed not to depend on third-party software; your text or code editor is sufficient for reading and modifying the notes.
 
-À titre d'exemple, on peut ouvrir le répertoire `DOJO-101` avec [VSCodium](https://github.com/VSCodium/vscodium) pour :
+As an example, you can open `DOJO-101` directory with [VSCodium](https://github.com/VSCodium/vscodium) to :
 
-* Rechercher par mot-clé dans l'ensemble des fichiers (ex: `basics`, `Windows`, `Linux`)
-* Lire le contenu au format `HTML` (`ctrl`+`shift` +`V`)
+* Search by keyword across all files (e.g., `basics`, `Windows`, `Linux`)
+* Read the content in HTML format  `HTML` (`ctrl`+`shift` +`V`)
 
 
 ## 🤝 Contributions
 
-* [Recommandations pour les contributeurs](./CONTRIBUTING)
+* [Contributor guidelines](./CONTRIBUTING)
 
 ## 🚨 Sécurité
 
-* [À propos de la sécurité du projet](./SECURITY.md)
+* [About project security](./SECURITY.md)
 
 ## 🌱 Apprentissage
 
-* [Mises en situations professionnelles](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Apprentissage)
+* [Professional scenarios](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Apprentissage)
 
 ## Tester ses compétences
 
-Développée en parallèle, cette application contient de nombreuses vulnérabilités pour tester vos connaissances :
+Developed in parallel, this application contains numerous vulnerabilities for testing your knowledge :
 
 * [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
 
 ## 🏆 Crédits
 
-* Projet maintenu par [Michael Vacarella](https://github.com/Aif4thah)
-* Logo réalisé par [@designbyzen](https://www.designbyzen.fr/)
-* **Merci** à tous les contributeurs 😍
+* Project maintained by [Michael Vacarella](https://github.com/Aif4thah)
+* Logo created by [@designbyzen](https://www.designbyzen.fr/)
+* **Thank** you to all contributors 😍

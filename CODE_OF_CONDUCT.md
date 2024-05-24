@@ -1,6 +1,6 @@
 # Éthique
 
-## Avis de non-responsabilité
+## Avis de non-responsabilité (Fr)
 
 Les informations de ce projet sont partagées afin d'assurer la transparence de **prestations professionnelles** et le respect des **licences open sources**. L'utilisation de ces informations et outils reste sous l'entière responsabilité de la personne physique ou morale qui les met en oeuvre, notamment concernant le **respect du cadre légal et la maitrise des actions réalisées**.
 
@@ -12,7 +12,7 @@ En cas de doute, voici une liste non exhaustive de ressources:
 * [ANFR](https://www.anfr.fr/accueil)
 * [Légifrance](https://www.legifrance.gouv.fr/)
 
-## Disclaimer
+## Disclaimer (En)
 
 This repository, together with its tools, is provided by Taisen-Solutions on an “as is” basis. Taisen-Solutions makes no representations or warranties of any kind, express or implied, as to the operation of the information, content, materials, tools, services and/or products included on the repository. Taisen-Solution disclaims, to the full extent permissible by applicable law, all warranties, express or implied, including but not limited to, implied warranties of merchantability and fitness for a particular purpose.
 
