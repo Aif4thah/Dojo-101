@@ -84,4 +84,4 @@ Developed in parallel, this application contains numerous vulnerabilities for te
 
 * Project maintained by [Michael Vacarella](https://github.com/Aif4thah)
 * Logo created by [@designbyzen](https://www.designbyzen.fr/)
-* **Thank** you to all contributors 😍
+* **Thank you** to all contributors 😍

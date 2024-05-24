@@ -1,15 +1,25 @@
-# Fondamentaux SSI - Basics
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## Les fondamentaux de la cybersécurité
+
+* Sensibilisation proposée par [Taisen-Solutions](https://taisen.fr)
+
+* Support sous [License: GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0)
+
+* Ce contenu fait partie des `Basics` du projet [DOJO-101](https://github.com/Aif4thah/Dojo-101/)
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Introduction
 
-**Les pertes mondiales imputables aux attaques informatiques ont atteint les 1000 milliards de dollars en 2020, ce qui représente plus de 1% du PIB mondial**
+Les pertes mondiales imputables aux attaques informatiques dépassent les **1000 milliards/an** de dollars depuis 2020, ce qui représente plus de **1% du PIB mondial**
 
 Depuis ce chiffre est en constante augmentation...
 
 Les enjeux ne sont pas seulement financiers : les emplois, l’image et la stabilité de l’entreprise dépendent de la sécurité de ses actifs.
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Les attaques les plus courantes:
 
@@ -200,6 +210,18 @@ Niveau de risque en fonction de la gravité (ordonnée ) et de la vraissemblance
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+## Le STRIDE (les menaces plutôt que les DICP)
+
+* Spoofing (usurpation)
+* Tampering (falsification)
+* Répudiation (répudiation)
+* Information Disclosure (fuite de données)
+* Déni de service
+* Élévation de privilège
+
+[source Microsoft](https://docs.microsoft.com/fr-fr/azure/security/develop/threat-modeling-tool-threats)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Cadre juridique
 
@@ -310,7 +332,7 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### exemple de materiels
+### Exemple de materiels
 
 * [Great Scott Gadgets Throwing Star LAN Tap Kit ](https://www.amazon.fr/Great-Scott-Gadgets-Throwing-Star/dp/B07GYWZPXG)
 * [Rubber Ducky](https://shop.hak5.org/products/usb-rubber-ducky)
@@ -414,6 +436,39 @@ Répartition des responsabilités entre le fournisseur de services cloud (CSP):
 | **Stockage** | CSP | CSP | CSP |
 | **Réseau** | CSP | CSP | CSP |
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+## Les audits
+
+Les activités couvertes par le référentiel PASSI :
+
+- audit d’architecture (ARCHI);
+- audit de configuration (CONF);
+- audit de code source (CODE);
+- test d’intrusion (PENTEST);
+- audit organisationnel et physique (ORGAPHY)
+
+[Source PASSI](https://cyber.gouv.fr/actualites/appel-public-commentaires-sur-la-mise-jour-du-referentiel-passi)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+## Intégration des prestations dans le Software Development LifeCycle (SDLC)
+
+| Exigences | Conception | Développement | Déploiement | Maintenance |
+|---|---|---|---|---|
+|Analyse de risques| Audit d'architecture | Audit de Code | Test d'intrusion | Contrôles de sécurité |
+|Modélisation de menaces| Ateliers de sensibilisations sécurité | Audit de Configuration | | Audits périodiques |
+|Expression de besoin sécurité | | | | |
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## Référentiels et bonnes pratiques
+
+* [ANSSI](https://cyber.gouv.fr/)
+* [Guide d'hygiène](https://cyber.gouv.fr/publications/guide-dhygiene-informatique)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -425,18 +480,12 @@ Répartition des responsabilités entre le fournisseur de services cloud (CSP):
 * [CERT-FR : les bons réflexes en cas d'incident](https://www.cert.ssi.gouv.fr/les-bons-reflexes-en-cas-dintrusion-sur-un-systeme-dinformation/)
 * [ANSSI : Gestion de crise](https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-## Référentiels et bonnes pratiques
-
-* [ANSSI](https://cyber.gouv.fr/)
-* [Guide d'hygiène](https://cyber.gouv.fr/publications/guide-dhygiene-informatique)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-## Démonstration d'attaques 
+## Pour aller plus loin 
 
-* [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
+* [Supports Dojo-101](https://github.com/Aif4thah/Dojo-101/)
+* [Démonstation d'attaques](https://github.com/Aif4thah/VulnerableLightApp)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
