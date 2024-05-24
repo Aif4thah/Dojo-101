@@ -13,7 +13,7 @@ Usable offline with a simple text editor, its purpose is to freely share knowled
 
 ### Language :
 
-[![fr](https://img.shields.io/badge/Français-🇫🇷-blue.svg)](./README-FR.md)
+[![fr](https://img.shields.io/badge/Français-🇫🇷-blue.svg)](./README-fr.md)
 [![en](https://img.shields.io/badge/English-🇬🇧-red.svg)](./README.md)
 
 > ⚠️ [Before using, please read the project’s disclaimer](./CODE_OF_CONDUCT.md)
