@@ -66,21 +66,21 @@ As an example, you can open `DOJO-101` directory with [VSCodium](https://github.
 
 * [Contributor guidelines](./CONTRIBUTING)
 
-## 🚨 Sécurité
+## 🚨 Security
 
 * [About project security](./SECURITY.md)
 
-## 🌱 Apprentissage
+## 🌱 Learning
 
 * [Professional scenarios](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Apprentissage)
 
-## 🧪 Tester ses compétences
+## 🧪 Test your skills
 
 Developed in parallel, this application contains numerous vulnerabilities for testing your knowledge :
 
 * [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
 
-## 🏆 Crédits
+## 🏆 Credits
 
 * Project maintained by [Michael Vacarella](https://github.com/Aif4thah)
 * Logo created by [@designbyzen](https://www.designbyzen.fr/)
