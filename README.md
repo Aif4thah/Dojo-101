@@ -74,7 +74,7 @@ As an example, you can open `DOJO-101` directory with [VSCodium](https://github.
 
 * [Professional scenarios](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Apprentissage)
 
-## Tester ses compétences
+## 🧪 Tester ses compétences
 
 Developed in parallel, this application contains numerous vulnerabilities for testing your knowledge :
 
