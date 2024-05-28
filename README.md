@@ -59,7 +59,7 @@ This project is designed not to depend on third-party software; your text or cod
 As an example, you can open `DOJO-101` directory with [VSCodium](https://github.com/VSCodium/vscodium) to :
 
 * Search by keyword across all files (e.g., `basics`, `Windows`, `Linux`)
-* Read the content in HTML format  `HTML` (`ctrl`+`shift` +`V`)
+* Read the content in `HTML` format (`ctrl`+`shift` +`V`)
 
 
 ## 🤝 Contributions
