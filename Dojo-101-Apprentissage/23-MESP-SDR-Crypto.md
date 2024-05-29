@@ -2,6 +2,8 @@
 
 Introduction à la cryptographie / Software Defined Radio Optionnel
 
+Vous devez transmettre un message sans qu'il puisse être intercepté par un tiers
+
 Durée estimée: 3 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
@@ -15,8 +17,6 @@ Dossier Toolbox RF
 
 
 ## Contexte
-
-Vous devez transmettre un message sans qu'il puisse être intercepté par un tiers
 
 0. Générer et partager une clé de chiffrement AES256 ainsi que les IV avec le destinataire
 
