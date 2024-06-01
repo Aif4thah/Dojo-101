@@ -1,4 +1,4 @@
-# Leurre et usurpation RF
+# Leurre et usurpation (spoofing) RF
 
 Software Defined Radio 
 
@@ -8,19 +8,19 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 ## Ressources
 
 
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
-Dossier Toolbox RF
+* Dossier Toolbox RF
 
-Fichier CS8
+* Fichier CS8 - contenu dans Toolbox RF ou transmis pas le formateur
 
 
 ## Contexte
 
 1. Analyser ce que contient le fichier cs8
 2. Rejouer le signal capturé d’un appareil sur les ondes
-3. Observer la signature usurpée à l’analyseur de spectre
-4. Identifier les différences entre le signal usurpé et l’authentique (porteuse, répétition, largeur de bande…)
+3. Observer la signature usurpée à l’analyseur de spectre ou écouter si le fichier contient de la voix
+4. Identifier les éventuelles différences entre le signal usurpé et l’authentique grace aux données SIGINT et à vos propre tests. (porteuse, répétition, largeur de bande…)
 
 
 ## Modalités pédagogiques
@@ -29,7 +29,7 @@ Binôme
 
 ## Modalités d'évaluation
 
-* présentation ou Livrable
+* présentation orale ou Livrable
 
 ## Livrables
 
@@ -37,7 +37,8 @@ Binôme
 
 ## Critères de performance
 
-* réussite
+* réussite de la transmission
+* Pertinance de l'analyse
 
 # HW
 
