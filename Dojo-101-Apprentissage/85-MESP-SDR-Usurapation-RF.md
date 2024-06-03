@@ -18,8 +18,11 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 ## Contexte
 
 1. Analyser ce que contient le fichier cs8
+
 2. Rejouer le signal capturé d’un appareil sur les ondes
+
 3. Observer la signature usurpée à l’analyseur de spectre ou écouter si le fichier contient de la voix
+
 4. Identifier les éventuelles différences entre le signal usurpé et l’authentique grace aux données SIGINT et à vos propre tests. (porteuse, répétition, largeur de bande…)
 
 

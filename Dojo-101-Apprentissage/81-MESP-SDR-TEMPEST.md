@@ -7,14 +7,19 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 ## Ressources
 
 
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
-Dossier Toolbox RF
+* Dossier Toolbox RF
+
+* [Application "phybox"](https://phyphox.org/)
 
 
 ## Contexte
 
+* Constater les émissions éléctromagnétique du câble HDMI et des autres appareils à proximité à l'aide du magnétomètre
+
 * Identifier la fréquence de rayonnement du câble HDMI
+
 * Acquérir l’image afin de récupérer les informations affichées à l’écran
 
 

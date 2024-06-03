@@ -34,6 +34,11 @@ L'entreprise est soumise aux réglementations suivantes :
     * les utilisateurs doivent être sensibilisés tous les ans à la cybersécurité
     * l'Analyse de risque devra être mise à jour tous les ans.
 
+L'entreprise s'appuie sur les réferentiels suivants : 
+
+* L'OWASP ASVS v4 - Traduction Française
+* Les guides ANSSI
+
 Les fournisseurs de l'entreprise sont des entreprises taiwanaises. Ses clients sont Français.
 
 En tant que responsable de la gestion des risques, vous avez pour mission de mener une analyse EBIOS RM afin d'établir un premier plan de traitement des risques.
