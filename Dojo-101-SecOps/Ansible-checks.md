@@ -39,7 +39,7 @@ ansible-playbook -i "localhost," -c local --list-tasks playbook.yml
 
 ### créer le snippet
 
-Le playbook va ensuite spécier le rôle à appliquer.
+Le playbook va ensuite spécifer le rôle à appliquer.
 
 playbook.yml
 
@@ -91,7 +91,8 @@ winrm set winrm/config/service '@{AllowUnencrypted="true"}'
 Get-Service winrm |Restart-Service
 ```
 
-résultat:
+
+Conf winrm affiché en sortie :
 
 ```yml
 Service
@@ -119,6 +120,7 @@ Service
     CertificateThumbprint
     AllowRemoteAccess = true
 ```
+
 
 ### Push de la conf
 
