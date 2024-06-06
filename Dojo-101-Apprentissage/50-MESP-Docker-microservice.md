@@ -9,9 +9,10 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 ## Ressources
 
 
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-[vulns-light-apps](https://github.com/Aif4thah/VulnerableLightApp)
-
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [vulns-light-apps](https://github.com/Aif4thah/VulnerableLightApp)
+* [docker](https://www.docker.com/)
+* [terraform](https://www.terraform.io/)
 
 ## Contexte
 
@@ -31,6 +32,7 @@ Ce container sera ensuite utilisé par les équipes afin de mener leurs tests.
 7. Le déploiement et les tests doivent se faire automatiquement
 8. Mettre à disposition votre containe (Hub / Registry)
 
+Pour aller plus loin : réaliser un déploiement à l'aide de Terraform
 
 ## Modalités d'évaluation
 

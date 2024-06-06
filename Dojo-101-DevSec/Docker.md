@@ -133,5 +133,52 @@ $ docker build .
 ```
 
 
+## Aller plus loin
+
+### Terraform
+
+[source](https://developer.hashicorp.com/terraform/tutorials/docker-get-started/infrastructure-as-code)
+
+fichier `terraform.tf` (provider + version)
+
+```json
+terraform {
+  required_providers {
+    docker = {
+      source  = "kreuzwerker/docker"
+      version = "~> 3.0.2"
+    }
+  }
+  required_version = "~> 1.7"
+}
+```
+
+fichier `main.tf` (configuration)
+
+```json
+provider "docker" {}
+
+resource "docker_image" "nginx" {
+  name         = "nginx:latest"
+  keep_locally = false
+}
+
+resource "docker_container" "nginx" {
+  image = docker_image.nginx.image_id
+  name  = "tutorial"
+  ports {
+    internal = 80
+    external = 8000
+  }
+}
+```
+
+
+```sh
+terraform init
+terraform apply
+```
+
+Le container est ensuite déployé sur la machine, on peu le vérifier via `docker ps`. `terraform destroy` permet de supprimer les containers.
 
 
