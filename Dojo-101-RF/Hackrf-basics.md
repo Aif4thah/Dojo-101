@@ -1,5 +1,9 @@
 # HackRF
 
+* [Github project](https://github.com/greatscottgadgets/hackrf)
+
+* [OFFICIAL DOCUMENTATION](https://hackrf.readthedocs.io/en/latest/)
+
 ## Caractéristiques
 
 | chars | valeur |
@@ -19,6 +23,12 @@ When HackRF One is plugged in to a USB host, four LEDs should turn on: 3V3, 1V8,
 
 ## Binaires pré-compilés Windows
 
+### officiel
+
+* Depuis les builds du projet : [exemple](https://github.com/greatscottgadgets/hackrf/actions/runs/9349835099)
+
+### autres moyens
+
 * Radioconda (exe et dll)
 * PothosSDR (exe et dll)
 * SDRSharp (dll)
@@ -27,9 +37,9 @@ When HackRF One is plugged in to a USB host, four LEDs should turn on: 3V3, 1V8,
 
 * Utiliser Zadig pour installer WinUSB
 
-## Command Line
+## Firmware
 
-* hackrf_*.exe : binaires cli pour hackrf
+* Depuis les release du projet : [exemple](https://github.com/greatscottgadgets/hackrf/releases/tag/v2024.02.1)
 
 ## fichiers de capture
 
@@ -41,11 +51,15 @@ Pour stocker le signal on utilse des nombres complexes sous forme I+jQ, exemple:
 
 ## update firmware
 
+Verifier qu'une monté en version soit nécessaire avec `.\hackrf_info.exe`
+
 ```sh
 hackrf_spiflash -w hackrf_one_usb.bin
 ```
 
-## update cpld
+débrancher et rebrancher le hackRF puis verfiifer l'upgrade à l'aide de `.\hackrf_info.exe`
+
+## seulement en cas de problème : update cpld
 
 ```sh
 hackrf_cpldjtag -x firmware/cpld/sgpio_if/default.xsvf
@@ -87,6 +101,10 @@ exemple avec ampli en sortie (a) et ampli vga (x):
 ```sh
 hackrf_transfer -R -a 1 -x 32 -s 20000000 -f 2441000000 -t test.cs8
 ```
+
+## Reception avec SDR# (GUI sous Windows)
+
+[SDR#](https://airspy.com/download/)
 
 ## Emission avec SoapySDR API from Pothos SDR
 
