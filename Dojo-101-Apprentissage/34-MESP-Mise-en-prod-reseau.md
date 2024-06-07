@@ -11,8 +11,8 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 [Guide ANSSI TLS: anssi-guide-recommandations_de_securite_relatives_a_tls-v1.2](https://cyber.gouv.fr/publications)
-[Guide CIS Benchark ou ANSSI sur l'OS ou la solution choisie](https://github.com/cismirror/old-benchmarks-archive)
-[Markdown:](https://github.com/nirae/Memento-Syntax-Markdown/blob/master/memo.md)
+[Guide ANSSI sur l'OS ou la solution choisie](https://cyber.gouv.fr/)
+[Markdown](https://github.com/nirae/Memento-Syntax-Markdown/blob/master/memo.md)
 
 
 ## Contexte

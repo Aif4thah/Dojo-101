@@ -33,7 +33,7 @@ Importe des GPO intitulées "MSFT*" dans "Objets de strategie de groupe". Elle s
 
 ## Alternative: éditer manuellement la politique de sécurité locale ou la GPO du domaine AD
 
-à l'aide d'un guide ANSSI, CIS etc.
+à l'aide d'un guide ANSSI, CIS ou autre
 
 `Gpedit.msc` ou `SecPol.msc`
 

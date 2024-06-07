@@ -10,7 +10,6 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Ressources
 
-* [Guide CIS](https://github.com/cismirror/old-benchmarks-archive)
 * [Guides ANSSI](https://cyber.gouv.fr/publications)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [Ansible](https://www.ansible.com/)
