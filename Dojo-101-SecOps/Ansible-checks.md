@@ -92,7 +92,7 @@ MSCT.LOCAL
 
 [windows:vars]
 ansible_user=Ansible
-ansible_password=azerty1234+-
+ansible_password=<your passwd>
 ansible_connection=winrm
 ansible_port=5985
 ansible_winrm_transport=ntlm
