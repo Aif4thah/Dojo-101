@@ -66,7 +66,10 @@ ansible-playbook -i "localhost," -c local --check playbook.yml
 
 ## Push vers une machine Windows
 
-### Exemple de winrm en basic (NON SÉCURISÉ)
+> Attention c'est conf sont pour du POC, la bonne pratique est d'avoir un serveur dans le domaine de s'appuyer sur Kerberos.
+
+
+### Exemple hors prod 1 : winrm en basic (NON SÉCURISÉ CAR SECRET EN CLAIR)
 
 inventory.yml coté Linux-Ansible
 
@@ -83,7 +86,26 @@ ansible_winrm_scheme=http
 ansible_winrm_transport=basic
 ```
 
-Conf winRM rapide et **non sécurisé!** coté windows 
+### Exemple hors prod 2 d'authent winrm en NTLM (mieu mais toujoursNON SÉCURISÉ pour des compte à privilèges)
+
+```yml
+[windows]
+MSCT.LOCAL
+
+[windows:vars]
+ansible_user=Ansible
+ansible_password=azerty1234+-
+ansible_connection=winrm
+ansible_port=5985
+ansible_winrm_transport=ntlm
+```
+
+
+### Conf coté serveur pour ces authentification (Non recommandé en prod) :
+
+### Conf WINRM
+
+Conf winRM rapide et **peu sécurisé selon l'authent choisie** coté windows, configurer le chiffrement et les certificats rèste recommandé ! 
 
 ```powershell
 winrm set winrm/config/service/auth '@{Basic="true"}'
@@ -121,6 +143,21 @@ Service
     AllowRemoteAccess = true
 ```
 
+### exemple conf Winrm en Kerberos
+
+```YML
+[windows]
+VULN.LAN
+
+[windows:vars]
+ansible_user=Ansible
+ansible_password=azerty1234+-
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+ansible_port=5985
+ansible_become_methode=runas
+ansible_winrm_transport=kerberos
+```
 
 ### Push de la conf
 

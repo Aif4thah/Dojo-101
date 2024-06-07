@@ -12,6 +12,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * [Chaine DevOps](https://learn.microsoft.com/fr-fr/azure/cloud-adoption-framework/ready/considerations/devops-toolchain#azure-devops-and-github-toolchain)
 * [Github security on MS learn](https://learn.microsoft.com/en-us/collections/rqymc6yw8q5rey)
 * [Blog Github Security](https://github.blog/category/security/)
+* [Snyk](https://docs.snyk.io/)
 
 
 ## Contexte
