@@ -2,6 +2,7 @@
 
 ## **Correction sous windows**
 
+[from @Jrb62](https://github.com/Jrb62/Formation-AIS-et-DevOps/tree/main/Ansible)
 
 ### **Liste des actions réalisé par le playbook** : 
 

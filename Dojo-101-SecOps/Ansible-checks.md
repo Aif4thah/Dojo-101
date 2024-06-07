@@ -1,7 +1,5 @@
 # Ansible
 
-**Attention : une partie de ce document est dédié à du Proof of Concept et ne respecte pas les bonnes pratiques de sécurité**
-
 ## En local sous Linux
 
 ### Installation les binaires (Ubuntu)
@@ -86,7 +84,7 @@ ansible_winrm_scheme=http
 ansible_winrm_transport=basic
 ```
 
-### Exemple hors prod 2 d'authent winrm en NTLM (mieu mais toujoursNON SÉCURISÉ pour des compte à privilèges)
+### Exemple hors prod 2 d'authent winrm en NTLM (mieu mais toujours NON SÉCURISÉ pour des compte à privilèges)
 
 ```yml
 [windows]
