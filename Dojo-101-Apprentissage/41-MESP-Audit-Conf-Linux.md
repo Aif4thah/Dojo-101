@@ -8,7 +8,6 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Ressources
 
-* [Guide CIS](https://github.com/cismirror/old-benchmarks-archive)
 * [Guides ANSSI](https://cyber.gouv.fr/publications/)
 * [Referentiel PASSI](https://cyber.gouv.fr/referentiels-dexigences-pour-la-qualification)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)

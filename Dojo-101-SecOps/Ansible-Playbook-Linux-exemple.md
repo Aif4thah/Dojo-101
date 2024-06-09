@@ -2,7 +2,7 @@
 
 ## **Correction sous Linux**
 
-[from @Zennael](https://github.com/Zennael/AIS/blob/main/Audit%20de%20s%C3%A9curit%C3%A9/Linux/correction-audit-linux.md)
+[from @Jrb62](https://github.com/Jrb62/Formation-AIS-et-DevOps/tree/main/Ansible)
 
 ### Liste des actions réalisé par le playbook : 
 
