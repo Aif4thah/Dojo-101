@@ -64,27 +64,10 @@ ansible-playbook -i "localhost," -c local --check playbook.yml
 
 ## Push vers une machine Windows
 
-> Attention c'est conf sont pour du POC, la bonne pratique est d'avoir un serveur dans le domaine de s'appuyer sur Kerberos.
+> Attention ces conf sont pour du POC, la bonne pratique est d'avoir un serveur dans le domaine et de s'appuyer sur Kerberos.
 
 
-### Exemple hors prod 1 : winrm en basic (NON SÉCURISÉ CAR SECRET EN CLAIR)
-
-inventory.yml coté Linux-Ansible
-
-```yml
-[windows]
-VULN.LAN
-
-[windows:vars]
-ansible_user=Ansible
-ansible_password=<your passwd>
-ansible_connection=winrm
-ansible_port=5985
-ansible_winrm_scheme=http
-ansible_winrm_transport=basic
-```
-
-### Exemple hors prod 2 d'authent winrm en NTLM (mieu mais toujours NON SÉCURISÉ pour des compte à privilèges)
+### Exemple hors prod : d'authent winrm en NTLM (mieu mais toujours NON SÉCURISÉ pour des compte à privilèges)
 
 ```yml
 [windows]
@@ -191,7 +174,7 @@ ansible-vault encrypt files/secrets/credentials.yml
 
 ### Organisation du rôle
 
-```txt
+```
 roles/
     common/               # this hierarchy represents a "role"
         tasks/            #
