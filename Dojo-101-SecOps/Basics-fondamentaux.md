@@ -89,7 +89,7 @@ Tout ce que vous exposez à vos adversaire
 
 ## Les vulnérabilités
 
-Faiblesse au sein du système d'information
+Faiblesses au sein du système d'information
 
 [CERT-FR](https://www.cert.ssi.gouv.fr/)
 
@@ -98,14 +98,7 @@ Faiblesse au sein du système d'information
 * Reference CWE : mauvaise pratique [MITRE CWE](https://cwe.mitre.org/)
 * Score EPSS : Exploit Prediction Scoring System [First EPSS](https://www.first.org/epss/user-guide)
 
-### Lister les dernières CVE avec cvemap
 
-[cvemap](https://github.com/projectdiscovery/cvemap)
-[API KEY](https://cloud.projectdiscovery.io/?ref=api_key)
-```powershell
-.\cvemap.exe -auth
-.\cvemap.exe -l 100
-```
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

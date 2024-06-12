@@ -1,8 +1,11 @@
 # Ansible
 
+
 ## En local sous Linux
 
+
 ### Installation les binaires (Ubuntu)
+
 
 ```bash
 apt update
@@ -14,6 +17,7 @@ apt install ansible
 
 ### téléchargement du rôle ansible
 
+
 ```bash
 ansible-galaxy search <role>
 ansible-galaxy install <role>,<version>
@@ -23,6 +27,7 @@ le rôle est alors installé dans `~/.ansible/roles/`
 `default` contient les variables
 `tasks` contient les actions à effectuer
 
+
 Le rôle peut ensuite être ajusté manuellement
 
 
@@ -30,14 +35,14 @@ Le rôle peut ensuite être ajusté manuellement
 
 On appelle généralement la conf via le playbook : `playbook` -> `role` > `tasks`
 
+
 ```bash
 ansible-playbook -i "localhost," -c local --list-tasks playbook.yml
 ```
 
-
 ### créer le snippet
 
-Le playbook va ensuite spécifer le rôle à appliquer.
+Le playbook va ensuite spécifier le rôle à appliquer.
 
 playbook.yml
 
@@ -47,46 +52,49 @@ playbook.yml
     - { role: <role> }
 ```
 
+### déployer la configuration à partir du playbook
 
-### deployer la configation à partir du playbook
 
 ```bash
 ansible-playbook -i "localhost," -c local playbook.yml
 ```
 
 
-### check la configation à partir du playbook
+### check la configuration à partir du playbook
+
 
 ```bash
 ansible-playbook -i "localhost," -c local --check playbook.yml
 ```
 
-
 ## Push vers une machine Windows
 
-> Attention ces conf sont pour du POC, la bonne pratique est d'avoir un serveur dans le domaine et de s'appuyer sur Kerberos.
+
+> Attention ces confs sont pour du POC, la bonne pratique est d'avoir un serveur dans le domaine et de s'appuyer sur Kerberos.
 
 
-### Exemple hors prod : d'authent winrm en NTLM (mieu mais toujours NON SÉCURISÉ pour des compte à privilèges)
+### Exemple hors prod : d'authent winrm en NTLM (mieux, mais toujours NON SÉCURISÉ pour des comptes à privilèges)
 
 ```yml
 [windows]
 MSCT.LOCAL
 
+
 [windows:vars]
 ansible_user=Ansible
-ansible_password=<your passwd>
+ansible_password=█████████
 ansible_connection=winrm
 ansible_port=5985
 ansible_winrm_transport=ntlm
 ```
 
+### Conf côté serveur pour ces authentifications (non recommandé en prod) :
 
-### Conf coté serveur pour ces authentification (Non recommandé en prod) :
 
 ### Conf WINRM
 
-Conf winRM rapide et **peu sécurisé selon l'authent choisie** coté windows, configurer le chiffrement et les certificats rèste recommandé ! 
+Conf winRM rapide et **peu sécurisé selon l'authent choisie** côté windows, configurer le chiffrement et les certificats reste recommandé ! 
+
 
 ```powershell
 winrm set winrm/config/service/auth '@{Basic="true"}'
@@ -94,8 +102,8 @@ winrm set winrm/config/service '@{AllowUnencrypted="true"}'
 Get-Service winrm |Restart-Service
 ```
 
-
 Conf winrm affiché en sortie :
+
 
 ```yml
 Service
@@ -124,21 +132,6 @@ Service
     AllowRemoteAccess = true
 ```
 
-### exemple conf Winrm en Kerberos
-
-```YML
-[windows]
-VULN.LAN
-
-[windows:vars]
-ansible_user=Ansible
-ansible_password=azerty1234+-
-ansible_connection=winrm
-ansible_winrm_server_cert_validation=ignore
-ansible_port=5985
-ansible_become_methode=runas
-ansible_winrm_transport=kerberos
-```
 
 ### Push de la conf
 
@@ -146,17 +139,40 @@ ansible_winrm_transport=kerberos
 ansible-playbook -i inventory.yml role.yml -vvv
 ```
 
+
 ## Axe pour la sécurisation : 
+
+
+### Kerberos
+
+
+```YML
+[windows]
+VULN.LAN
+
+
+[windows:vars]
+ansible_user=Ansible
+ansible_password=█████████
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+ansible_port=5985
+ansible_winrm_transport=kerberos
+```
 
 ### HTTPS
 
+
 générer un certificat et activer HTTPS (port 5986) 
+
 
 ```powershell
 winrm quickconfig -transport:HTTPS
 ```
 
-désactiver les paramètres non sécurisés coté serveur et vérifier :
+
+désactiver les paramètres non sécurisés côté serveur et vérifier :
+
 
 ```powershell
 winrm enumerate winrm/config/listener
@@ -165,14 +181,16 @@ winrm enumerate winrm/config/listener
 
 ### Utilisation du vault ansible
 
+
 ```bash
 ansible-vault encrypt files/secrets/credentials.yml
 ```
 
-
 ## Debug
 
+
 ### Organisation du rôle
+
 
 ```
 roles/
@@ -197,7 +215,9 @@ roles/
         lookup_plugins/   # or other types of plugins, like lookup in this case
 ```
 
+
 ### Check étape par étape
 
 Certains requirements peuvent entrainer des erreurs et arrêter les checks 
 L'option `--step` permet des tests manuels sans modification du template
+

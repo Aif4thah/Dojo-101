@@ -16,7 +16,12 @@ https://www.softwaretestinghelp.com/sans-top-20-security-vulnerabilities/
 
 ### Rechercher des vulns spécifiques
 
-* [cvemap](https://github.com/projectdiscovery/cvemap)
+[cvemap](https://github.com/projectdiscovery/cvemap)
+[API KEY](https://cloud.projectdiscovery.io/?ref=api_key)
+```powershell
+.\cvemap.exe -auth
+.\cvemap.exe -l 100
+```
 
 ## notions de vulnérabilité
 
