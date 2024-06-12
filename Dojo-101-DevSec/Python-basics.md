@@ -1,9 +1,10 @@
-# python
+# python basics
 
 ## shebang linux
 
 ```python
 #!/usr/bin/env python3
+# -*- coding:utf-8 -*-
 ```
 
 ## install dependances from sh / pwsh

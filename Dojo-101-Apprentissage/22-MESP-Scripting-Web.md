@@ -9,7 +9,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 ## Ressources
 
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-* [HTTP, TLS et certificats X509](https://github.com/Aif4thah/VulnerableLightApp)
+* [HTTP, TLS et certificats X509](https://developer.mozilla.org/fr/docs/Glossary/Digital_certificate)
 * [HTTP MDN](https://developer.mozilla.org/fr/docs/Web/HTTP)
 * [PEP20](https://peps.python.org/pep-0020/)
 
@@ -29,12 +29,12 @@ A l'aide d'un script :
 * Afficher les noms de certificats de la chaine de confiance
 * Afficher la liste des IP équipements réseaux traversés pour atteindre le site Web
 
-Langages recommandés : `Powershell`, `Bash` ou `Python`.
+Langages recommandés : `Powershell`, `Python`.
 
 
 ## Modalités pédagogiques
 
-Binôme ou seul (au choix)
+Script Individuel
 
 
 ## Modalités d'évaluation
