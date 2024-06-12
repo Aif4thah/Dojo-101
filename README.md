@@ -61,7 +61,9 @@ As an example, you can open `DOJO-101` directory with [VSCodium](https://github.
 * Search by keyword across all files (e.g., `basics`, `Windows`, `Linux`)
 * Read the content in `HTML` format (`ctrl`+`shift` +`V`)
 
-![VScodium-demo](./VScodium-demo.gif)
+<p align="center">
+    <img src="./VScodium-demo.gif" alt="Dojo-101-vscodium" style="width: 500px;" />
+</p>
 
 
 ## 🤝 Contributions

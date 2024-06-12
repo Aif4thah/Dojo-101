@@ -61,7 +61,9 @@ Ce projet est fait pour ne dépendre d'**aucun logiciels tiers**, votre éditeur
 * Rechercher par mot-clé dans l'ensemble des fichiers (ex: `basics`, `Windows`, `Linux`)
 * Lire le contenu au format `HTML` (`ctrl`+`shift` +`V`)
 
-![VScodium-demo](./VScodium-demo.gif)
+<p align="center">
+    <img src="./VScodium-demo.gif" alt="Dojo-101-vscodium" style="width: 500px;" />
+</p>
 
 
 ## 🤝 Contributions
