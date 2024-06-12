@@ -54,12 +54,14 @@ Files containing the word “basics” contain elements that are subsequently co
 
 ## 📖 Usage
 
-This project is designed not to depend on third-party software; your text or code editor is sufficient for reading and modifying the notes.
+This project is designed to not depend on **any third-party software**; your text/code editor is the only tool you need to searching, reading or modifying.
 
 As an example, you can open `DOJO-101` directory with [VSCodium](https://github.com/VSCodium/vscodium) to :
 
 * Search by keyword across all files (e.g., `basics`, `Windows`, `Linux`)
 * Read the content in `HTML` format (`ctrl`+`shift` +`V`)
+
+![VScodium-demo](./VScodium-demo.gif)
 
 
 ## 🤝 Contributions

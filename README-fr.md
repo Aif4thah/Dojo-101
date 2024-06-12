@@ -54,12 +54,14 @@ Les fichiers comportant le mot "bascis" contiennent les éléments ensuite consi
 
 ## 📖 Usage
 
-Ce projet est fait pour ne pas dépendre de logiciels tiers, votre éditeur de texte ou de code suffit pour lire et modifier les notes.
+Ce projet est fait pour ne dépendre d'**aucun logiciels tiers**, votre éditeur de texte ou de code suffit pour rechercher lire et modifier les notes.
 
 À titre d'exemple, on peut ouvrir le répertoire `DOJO-101` avec [VSCodium](https://github.com/VSCodium/vscodium) pour :
 
 * Rechercher par mot-clé dans l'ensemble des fichiers (ex: `basics`, `Windows`, `Linux`)
 * Lire le contenu au format `HTML` (`ctrl`+`shift` +`V`)
+
+![VScodium-demo](./VScodium-demo.gif)
 
 
 ## 🤝 Contributions
