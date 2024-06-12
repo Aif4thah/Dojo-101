@@ -162,6 +162,20 @@ urllib.parse.unquote(encodedStr)
 'Hellö Wörld@Python'
 ```
 
+## socket
+
+Connection sur la couche TCP/UDP
+
+```python
+import socket
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.connect(('taisen.fr',443))
+sock.send(b'test')
+sock.recv(1024)
+sock.close()
+```
+
+
 ## url encode:
 
 ```python
