@@ -423,6 +423,16 @@ cd 'C:\Program Files\PowerShell\7'
 .\RegisterManifest.ps1
 ```
 
+## Installer et utiliser un module vu sur powershell Gallery
+
+```powershell
+Import-Module PowerShellGet
+Install-Module -Name AOVPNTools
+gcm -Module AOVPNTools
+Get-TlsCertificate -Hostname taisen.fr
+```
+
+
 ## déclarer une fonction
 
 ```powershell

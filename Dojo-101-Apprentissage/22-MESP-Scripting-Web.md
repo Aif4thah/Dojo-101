@@ -18,16 +18,29 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 A l'aide d'un script :
 
-* Réaliser une requête Web GET sur un site Web (Defaut = https://taisen.fr)
-* Afficher l'IP et le nom du serveur DNS qui résout le nom de domaine
-* Afficher l'IP et le port Source
-* Afficher l'IP et le port de destination
-* Afficher les Headers, si le header est connu, alors afficher son utilité
-* Afficher le Content-Type, s'il est générique, afficher son utilité
-* Stocker dans une variable de type tableau / Array les différentes balises Web
-* Afficher les différents éléments du certificat
-* Afficher les noms de certificats de la chaine de confiance
-* Afficher la liste des IP équipements réseaux traversés pour atteindre le site Web
+
+1. Réaliser une requête Web GET sur un site Web (Défaut = https://taisen.fr)
+
+2. Afficher l'IP et le nom du serveur DNS qui résout le nom de domaine
+
+3. Afficher l'IP et le port Source
+
+4. Afficher l'IP et le port de destination
+
+5. Afficher les Headers qui ont un lien avec la sécurité
+
+6. Afficher le Content-Type, s'il est générique, afficher son utilité
+
+7. Stocker dans une variable de type tableau, liste ou dictionnaire les différentes balises Web
+
+8. à partir de la question précédente, afficher le titre de niveau 1 (balise <h1>)
+
+9. Afficher la clé publique du certificat
+
+10. Afficher le nom de l'autorité qui a signé le certificat
+
+11. Afficher la liste des IP des équipements réseau traversés pour atteindre le site Web
+
 
 Langages recommandés : `Powershell`, `Python`.
 
