@@ -33,7 +33,7 @@ A l'aide d'un script :
 
 7. Stocker dans une variable de type tableau, liste ou dictionnaire les différentes balises Web
 
-8. à partir de la question précédente, afficher le titre de niveau 1 (balise <h1>)
+8. à partir de la question précédente, afficher le titre de niveau 1 (balise `h1`)
 
 9. Afficher la clé publique du certificat
 
