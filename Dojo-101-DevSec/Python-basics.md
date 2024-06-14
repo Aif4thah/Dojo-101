@@ -26,14 +26,13 @@ commentaires
 ## variable
 
 ```python
-a = 1
+a = "chaine de chars"
 type(a)
 dir(a)
-
-a = "chaine de chars"
+help(str)
 a.__len__()
 a.upper()
-help(str)
+
 ```
 
 ## Conditions
@@ -190,14 +189,6 @@ urllib.parse.quote('&')
 import http.client
 ```
 
-### exemples de paramètres
-
-```python
-h1 = http.client.HTTPConnection('www.python.org')
-h2 = http.client.HTTPConnection('www.python.org:80')
-h3 = http.client.HTTPConnection('www.python.org', 80)
-h4 = http.client.HTTPConnection('www.python.org', 80, timeout=10)
-```
 ### GET
 
 ```python
@@ -217,7 +208,7 @@ conn = http.client.HTTPSConnection('enirdd6d0146.x.pipedream.net')
 conn.request("POST", "/", '{ "name": "Princess Leia" }', {'Content-Type': 'application/json'})
 ```
 
-## request:
+## request + BeautifulSoup
 
 ### POST
 
@@ -227,6 +218,17 @@ url = "http://staging-order.mango.htb"
 headers = {'Content-type': 'application/x-www-form-urlencoded'}
 post_data = "username=admin&password=admin&login=login"
 r = requests.post(url, data=post_data, headers=headers, allow_redirects=False)
+```
+
+### Parser le html
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+response = requests.get("http://taisen.fr")
+soup = BeautifulSoup(response.text, 'html.parser')
+print(soup.find('h1').text)
 ```
 
 ## conversion char / Unicode / ascci:
