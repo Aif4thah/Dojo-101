@@ -34,6 +34,7 @@ Files containing the word “basics” contain elements that are subsequently co
 * [Python basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Python-basics.md)
 * [Radio basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-RF/RF-basics.md)
 * [GitHub basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Github-basics.md)
+* [AI Basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/IA-ML-basics.md)
 
 
 ## ⚔️ Themes
