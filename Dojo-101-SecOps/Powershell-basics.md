@@ -1,4 +1,4 @@
-# powershell basics: Initiation au scripting powershell
+# powershell basics
 
 ## clavier en français
 
@@ -37,7 +37,7 @@ $var.gettype() #obtenir le type
 $var |gm #lister les membres (proprietés et fonctions)
 ```
 
-# tableau
+## tableau
 
 ```powershell
 $var = @( 1,2,3 )
@@ -409,7 +409,7 @@ Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\C
 Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System -Name "PromptOnSecureDesktop" -Value 1
 ```
 
-# verification que le "always install with elevated" est désactivé
+## verification que le "always install with elevated" est désactivé
 
 ```powershell
 remove-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Installer -name AlwaysInstallElevated -ea SilentlyContinue
