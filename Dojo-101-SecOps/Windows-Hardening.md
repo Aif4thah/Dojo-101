@@ -1,14 +1,26 @@
 ﻿# Durcissement / Hardening Windows
 
-## Microsoft Security Compliance Toolkit (baseline)
+## Ressources
 
-* Permets d'appliquer une GPO localement (même sans domaine AD, grace à LGPO.exe) avec les recommandations de Microsoft. 
-* On peut ensuite analyzer et comparer les GPO.
+* [Guide ANSSI AD](https://cyber.gouv.fr/publications/recommandations-pour-ladministration-securisee-des-si-reposant-sur-ad)
+* [bloodhound](https://github.com/SpecterOps/BloodHound)
+* [Sharphound](https://github.com/BloodHoundAD/SharpHound)
+* [PingCastle](https://www.pingcastle.com/)
+* [ORAD](https://github.com/ANSSI-FR/ORADAD)
+* [Nuclei](https://github.com/projectdiscovery/nuclei)
+* [Privesc](https://github.com/carlospolop/PEASS-ng)
+* [Privesc bins](https://lolbas-project.github.io/)
+
+
+## Microsoft Security Compliance Toolkit (MSCT)
+
+* [MSCT](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10)
+* [Download](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
+
+
+* Permets d'appliquer une **basline** par GPO localement (même sans domaine AD, grace à LGPO.exe) avec les recommandations de Microsoft. 
+* On peut ensuite **Auditer** en comparant la GPO actuelle et la GPO recommandée.
 * Des scripts pour MS365 et Edge sont également disponibles.
-
-[MSCT](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10)
-
-[Download](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
 
 
 ### exemple pour un windows 11 standalone 
@@ -18,6 +30,7 @@ Avec "Windows 11 Security Baseline" et "LGPO":
 ```powershell
 .\Baseline-LocalInstall.ps1 -Win11NonDomainJoined
 ```
+
 Une GPO locale sera importée, y compris sur une édition Famille.
 
 
@@ -28,12 +41,17 @@ Avec Windows Server 2022 Security Baseline
 ```powershell
 .\Baseline-ADImport.ps1
 ```
-Importe des GPO intitulées "MSFT*" dans "Objets de strategie de groupe". Elle sont ensuite à appliquer.
+
+Importe des GPO intitulées "MSFT*" dans "Objets de strategie de groupe". Elles sont ensuite à appliquer.
 
 
-## Alternative: éditer manuellement la politique de sécurité locale ou la GPO du domaine AD
-
-à l'aide d'un guide ANSSI, CIS ou autre
+## Manuellement
 
 `Gpedit.msc` ou `SecPol.msc`
+
+## Automatisation
+
+* GPO
+* Ansible
+* Powershell DSC
 

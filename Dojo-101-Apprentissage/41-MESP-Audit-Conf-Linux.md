@@ -11,6 +11,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * [Guides ANSSI](https://cyber.gouv.fr/publications/)
 * [Referentiel PASSI](https://cyber.gouv.fr/referentiels-dexigences-pour-la-qualification)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [Lynis](https://cisofy.com/lynis/)
 * [Nuclei](https://github.com/projectdiscovery/nuclei)
 * [Privesc](https://github.com/carlospolop/PEASS-ng)
 * [Privesc bins](https://gtfobins.github.io/)
