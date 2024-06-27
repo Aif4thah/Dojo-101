@@ -314,7 +314,7 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### Les risques
+### Les risques liés à la sécurité phyisque
 
 * Tailgating : suivre quelqu'un pour passer une porte
 * PiggyBacking : demander l'ouverture d'une porte
@@ -366,7 +366,7 @@ Les problématiques spécifiques aux Smartphones
 
 ## L'ingénierie sociale
 
-#### MICE
+### MICE
 
 * Monnaie (Money)
 * Idéologie
@@ -401,14 +401,46 @@ Phishing à partir de `https://www.securite-solutions.fr/login`, où est le piè
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+## Isolation et Virtualisation
+
+| Principe | Description | Exemple |
+|----|----|---|
+| Isolation de contexte | séparer les environnements d’exécution, assurant que les ressources (mémoire, CPU, etc.) entre les applications | Sandbox, sécurité basée sur la virtualisation (VBS) |
+| Para-Virtualisation | Les OS sons conscient de la virtualisation et communique avec l'hyperviseur via une couche d'abstraction | Hyper-V, VMWare Vsphere / ESXi |
+| Hyper-Virtualisation | Isolation entre les Machines virtuelles (VM) / OS virtualisé, aucune modification des VM pour gagner en performance | QEMU sans module Kqemu |
+| Virtualisation d’entrées/sorties (I/O) | répartition des ressources entre les VM | MS Storage Spaces Direct : Agrège les disques durs locaux pour créer un stockage partagé haute performance | 
+| Systemes Unikernel et micro serveur | Serveur Headless, Microsoft | Nano Server |
+| Containeur | Les applicaitons et leurs dépendances disposent d'environements isolé via une virtualisation au niveau de l'OS | Docker |
+
+[Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## Risques lié à la virtualisation
+
+* Risque accru de compromission des systèmes
+
+* Accroissement du risque d’indisponibilité
+
+* Complexification de l’administration et de la mise en œuvre
+
+* Complexification de la supervision
+
+[Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## Le Cloud
 
 Consiste à utiliser des ressources distantes le plus souvent au travers d’internet
 
-* Public : ressources partagées et détenu par des tiers
-* Privé : systèmes réservés au client
-* Hybride : Public + Privé
+| Principe | Description |
+|----|----|
+| Public | ressources partagées et détenu par des tiers |
+| Privé | systèmes réservés au client |
+| Hybride | Public + Privé |
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
