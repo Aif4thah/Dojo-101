@@ -431,6 +431,20 @@ Phishing à partir de `https://www.securite-solutions.fr/login`, où est le piè
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+## Le "Zero Trust"
+
+Politique permettant de vérifier
+
+* Les identités (utilisateurs)
+
+* Les Devices (PC, Smartphone, IoT)
+
+* Les Accès (IP sources)
+
+* Les services (Conditions selon la requête utilisateur)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## Le Cloud
 
@@ -445,7 +459,7 @@ Consiste à utiliser des ressources distantes le plus souvent au travers d’int
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### Les responsabilités
+## Les responsabilités dans un contexte Cloud
 
 Répartition des responsabilités entre le fournisseur de services cloud (CSP):
 
