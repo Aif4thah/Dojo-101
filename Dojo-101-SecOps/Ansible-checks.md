@@ -1,7 +1,110 @@
 # Ansible
 
+## Arborescence d'un rôle ansible
 
-## En local sous Linux
+```
+roles/
+    common/               # this hierarchy represents a "role"
+        tasks/            #
+            main.yml      #  <-- tasks file can include smaller files if warranted
+        handlers/         #
+            main.yml      #  <-- handlers file
+        templates/        #  <-- files for use with the template resource
+            ntp.conf.j2   #  <------- templates end in .j2
+        files/            #
+            bar.txt       #  <-- files for use with the copy resource
+            foo.sh        #  <-- script files for use with the script resource
+        vars/             #
+            main.yml      #  <-- variables associated with this role
+        defaults/         #
+            main.yml      #  <-- default lower priority variables for this role
+        meta/             #
+            main.yml      #  <-- role dependencies
+        library/          # roles can also include custom modules
+        module_utils/     # roles can also include custom module_utils
+        lookup_plugins/   # or other types of plugins, like lookup in this case
+```
+
+## Sécurisation : 
+
+## Vault
+
+### Chiffrer les fichiers sensibles à l'aide du Vault (chiffrement au repos uniquement)
+
+fichier `inv.yml` **contenant des secrets** en clair :
+
+```yml
+[windows]
+WIN-M0QSK6K1QJ7.MSCT.LOCAL
+
+[windows:vars]
+ansible_user=Ansible@MSCT.LOCAL
+ansible_password="<donnée sensible à chiffrer ici>"
+ansible_connection=winrm
+ansible_port=5985
+ansible_winrm_transport=kerberos
+``` 
+
+Chiffrement du fichier à l'aide du vault, demandera un mot de passe
+
+```bash
+Ansible-vault encrypt inv.yml
+```
+
+Contenu du fichier après chiffrement :
+
+```yml
+$ANSIBLE_VAULT;1.1;AES256
+65633265613764343435663334363862633466326364383465323536333138623861613735376633
+6630646532373063363735366666613331623435396165300a386234323066633866333839353138
+35323232366530333333396639366130356333626464323939656139623336383465353231653938
+3333383665663866610a633839633531383865646265626537396663633634393534666661303931
+35616435616361623135346131323231653634323561343833313066363261313963663463333961
+63653663353438313531343861366333383366653934623739303766653736663130613135313466
+65356364366632306362313363363864666361393333303261396466336632396339333864356230
+63646530303836343733616563303338626334356137613462666463353639653432656663373864
+63306563333236626432376665646139393934626332303932323035393064353730613839613131
+34643862346331316234653833633862333734653737376631663764663131323765306161386637
+32333861356336363661633661373632316134373332383337306264386130396136663232376265
+30633833353566663036353737303166656536343063333439326338356336616565373964383538
+32653439663339653732316265636130653661646531353862343862633263326438336536656436
+6365323235346131343764646161616637363430356532303137
+```
+
+Execution du playbook sans déchiffrer les données sensibles
+
+```bash
+ansible-playbook --ask-vault-pass -i inv.yml -vvv rol.yml
+```
+
+Si besoin, déchiffrement du fichier :
+
+```bash
+ansible-vault decrypt inv-crypt.yml
+```
+
+### WinRM
+
+générer un certificat et activer HTTPS (port 5986) 
+
+```powershell
+winrm quickconfig -transport:HTTPS
+```
+
+### Kerberos
+
+inventory.yml
+
+```yml
+<SNIP>
+ansible_winrm_transport: kerberos
+<SNIP>
+``` 
+
+
+
+
+## Utilisation en local sous Linux (POC)
 
 
 ### Installation les binaires (Ubuntu)
@@ -67,13 +170,15 @@ ansible-playbook -i "localhost," -c local playbook.yml
 ansible-playbook -i "localhost," -c local --check playbook.yml
 ```
 
-## Push vers une machine Windows
+
+
+## Push vers WINDOWS (POC depuis Linux, hors domaine AD)
 
 
 > Attention ces confs sont pour du POC, la bonne pratique est d'avoir un serveur dans le domaine et de s'appuyer sur Kerberos.
 
 
-### Exemple hors prod : d'authent winrm en NTLM (mieux, mais toujours NON SÉCURISÉ pour des comptes à privilèges)
+### NTLM
 
 ```yml
 [windows]
@@ -88,13 +193,16 @@ ansible_port=5985
 ansible_winrm_transport=ntlm
 ```
 
-### Conf côté serveur pour ces authentifications (non recommandé en prod) :
+### Push de la conf
+
+```bash
+ansible-playbook -i inventory.yml role.yml -vvv
+```
 
 
-### Conf WINRM
+## Debug
 
-Conf winRM rapide et **peu sécurisé selon l'authent choisie** côté windows, configurer le chiffrement et les certificats reste recommandé ! 
-
+### Downgrade sécurité winRM pour débug (plus de chiffrement et mdp en clair)
 
 ```powershell
 winrm set winrm/config/service/auth '@{Basic="true"}'
@@ -130,99 +238,6 @@ Service
     EnableCompatibilityHttpsListener = false
     CertificateThumbprint
     AllowRemoteAccess = true
-```
-
-
-### Push de la conf
-
-```bash
-ansible-playbook -i inventory.yml role.yml -vvv
-```
-
-
-## Axe pour la sécurisation : 
-
-### WINRM en HTTPS
-
-générer un certificat et activer HTTPS (port 5986) 
-
-```powershell
-winrm quickconfig -transport:HTTPS
-```
-
-
-
-### Kerberos et Vault Ansible
-
-## Configuration de l'inventaire 
-
-inventory.yml :
-
-```yml
-windows:
-  hosts:
-    WIN-10LV8UMI99T:
-      ansible_host: WIN-10LV8UMI99T.ansible.lab
-```
-
-
-## Configuration du group_vars
-
-/home/ansible/project/group_vars/windows.yml :
-
-```yml
-ansible_user: ansible@ANSIBLE.LAB
-ansible_password: '{{ vault_ansible_password_windows }}'
-ansible_connection: winrm
-ansible_port: 5985
-ansible_winrm_transport: kerberos
-ansible_become_method: runas
-ansible_become_user: Administrateur
-ansible_become_password: '{{ vault_ansible_become_password_windows }}'
-``` 
-
-## Configuration du dossier Vault et du fichier credentials.yml
-
-vault/credentials.yml :
-
-```yml
-vault_ansible_become_password_windows: "<mot de passe>"
-vault_ansible_password_windows: "<mot de passe>"
-```
-
-## Chiffrer le fichier credentials.yml
-
-```bash
-ansible-vault encrypt credentials.yml
-```
-
-## Debug
-
-
-### Organisation du rôle
-
-
-```
-roles/
-    common/               # this hierarchy represents a "role"
-        tasks/            #
-            main.yml      #  <-- tasks file can include smaller files if warranted
-        handlers/         #
-            main.yml      #  <-- handlers file
-        templates/        #  <-- files for use with the template resource
-            ntp.conf.j2   #  <------- templates end in .j2
-        files/            #
-            bar.txt       #  <-- files for use with the copy resource
-            foo.sh        #  <-- script files for use with the script resource
-        vars/             #
-            main.yml      #  <-- variables associated with this role
-        defaults/         #
-            main.yml      #  <-- default lower priority variables for this role
-        meta/             #
-            main.yml      #  <-- role dependencies
-        library/          # roles can also include custom modules
-        module_utils/     # roles can also include custom module_utils
-        lookup_plugins/   # or other types of plugins, like lookup in this case
 ```
 
 
