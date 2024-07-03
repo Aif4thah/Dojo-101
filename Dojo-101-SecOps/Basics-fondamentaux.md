@@ -406,7 +406,7 @@ Phishing à partir de `https://www.securite-solutions.fr/login`, où est le piè
 | Principe | Description | Exemple |
 |----|----|---|
 | Isolation de contexte | séparer les environnements d’exécution, assurant que les ressources (mémoire, CPU, etc.) entre les applications | Sandbox, sécurité basée sur la virtualisation (VBS) |
-| Para-Virtualisation | Les OS sons conscient de la virtualisation et communique avec l'hyperviseur via une couche d'abstraction | Hyper-V, VMWare Vsphere / ESXi |
+| Para-Virtualisation | Les OS sont conscient de la virtualisation et communique avec l'hyperviseur via une couche d'abstraction | Hyper-V, VMWare Vsphere / ESXi |
 | Hyper-Virtualisation | Isolation entre les Machines virtuelles (VM) / OS virtualisé, aucune modification des VM pour gagner en performance | QEMU sans module Kqemu |
 | Virtualisation d’entrées/sorties (I/O) | répartition des ressources entre les VM | MS Storage Spaces Direct : Agrège les disques durs locaux pour créer un stockage partagé haute performance | 
 | Systemes Unikernel et micro serveur | Serveur Headless, Microsoft | Nano Server |

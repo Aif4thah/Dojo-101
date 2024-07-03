@@ -27,4 +27,3 @@ lynis audit system
 ## Automatisation
 
 * Ansible
-

@@ -1,18 +1,21 @@
 # Deploiment d'un container Docker
 
-déploiment de vuln-light-apps dans un microservice Docker
+Déploiment de code dans un microservice Docker
 
-Durée: 10 jours
+Durée: 8 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
 
-
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [vulns-light-apps](https://github.com/Aif4thah/VulnerableLightApp)
-* [docker](https://www.docker.com/)
+* [Docker](https://www.docker.com/)
+* [Exemple Kanban](https://www.jetbrains.com/fr-fr/youtrack/)
+* [Docker Hub](https://hub.docker.com/)
 * [terraform](https://www.terraform.io/)
+
+
 
 ## Contexte
 
@@ -24,25 +27,44 @@ Ce container sera ensuite utilisé par les équipes afin de mener leurs tests.
 ## Modalités pédagogiques
 
 1. Installer Docker
-2. Vérifier que docker fonctionne
-3. Choisir votre container
-4. Créer un docker file
-5. Automatiser l'installation et le lancement de vuln-light-apps
-6. Pousser votre travail sur un repo github
-7. Le déploiement et les tests doivent se faire automatiquement
-8. Mettre à disposition votre containe (Hub / Registry)
 
-Pour aller plus loin : réaliser un déploiement à l'aide de Terraform
+2. Vérifier que docker fonctionne (container Hello World)
+
+3. Prendre connaissance du projet Vulnerable-light-App
+
+4. Planifier dans un KanBan comment va se faire la mise en container de l'application.
+
+    * Passer en revue les étapes suivantes et créer une liste de tâche (story).
+
+    * Mettez un poid ou une difficulté (chiffre entier) sur chaque story.
+
+    * Attribuez vous les stories au sein du groupe.
+
+5. Créer un docker file
+
+6. Automatiser l'installation et le lancement de vuln-light-apps
+
+7. Pousser votre travail sur un repo github
+
+8. Les tests de build doivent se faire automatiquement lors du push sur GitHub
+
+9. Mettre à disposition votre container (Docker Hub / Registry)
+
+10. Pour aller plus loin : réaliser un déploiement à l'aide de Terraform
 
 ## Modalités d'évaluation
+
+Test du container depuis une machine Linux
 
 
 ## Livrables
 
-Projet Github
+un projet Github / Groupe
 
 
 ## Critères de performance
+
+La commande `docker run <container> -p 3000:3000` fonctionne.
 
 
 ## Pour finir
