@@ -13,7 +13,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * [Docker](https://www.docker.com/)
 * [Exemple Kanban](https://www.jetbrains.com/fr-fr/youtrack/)
 * [Docker Hub](https://hub.docker.com/)
-* [terraform](https://www.terraform.io/)
+* [Terraform](https://www.terraform.io/)
 
 
 
@@ -39,6 +39,8 @@ Ce container sera ensuite utilisé par les équipes afin de mener leurs tests.
     * Mettez un poid ou une difficulté (chiffre entier) sur chaque story.
 
     * Attribuez vous les stories au sein du groupe.
+
+    * Utilser les colonnes "à venir", "en cours", "en test", "terminé" pour suivre l'avancement du Brief
 
 5. Créer un docker file
 

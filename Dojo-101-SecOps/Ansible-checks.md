@@ -142,48 +142,58 @@ ansible-playbook -i inventory.yml role.yml -vvv
 
 ## Axe pour la sécurisation : 
 
-
-### Kerberos
-
-
-```YML
-[windows]
-VULN.LAN
-
-
-[windows:vars]
-ansible_user=Ansible
-ansible_password=█████████
-ansible_connection=winrm
-ansible_winrm_server_cert_validation=ignore
-ansible_port=5985
-ansible_winrm_transport=kerberos
-```
-
-### HTTPS
-
+### WINRM en HTTPS
 
 générer un certificat et activer HTTPS (port 5986) 
-
 
 ```powershell
 winrm quickconfig -transport:HTTPS
 ```
 
 
-désactiver les paramètres non sécurisés côté serveur et vérifier :
 
+### Kerberos et Vault Ansible
 
-```powershell
-winrm enumerate winrm/config/listener
+## Configuration de l'inventaire 
+
+inventory.yml :
+
+```yml
+windows:
+  hosts:
+    WIN-10LV8UMI99T:
+      ansible_host: WIN-10LV8UMI99T.ansible.lab
 ```
 
 
-### Utilisation du vault ansible
+## Configuration du group_vars
 
+/home/ansible/project/group_vars/windows.yml :
+
+```yml
+ansible_user: ansible@ANSIBLE.LAB
+ansible_password: '{{ vault_ansible_password_windows }}'
+ansible_connection: winrm
+ansible_port: 5985
+ansible_winrm_transport: kerberos
+ansible_become_method: runas
+ansible_become_user: Administrateur
+ansible_become_password: '{{ vault_ansible_become_password_windows }}'
+``` 
+
+## Configuration du dossier Vault et du fichier credentials.yml
+
+vault/credentials.yml :
+
+```yml
+vault_ansible_become_password_windows: "<mot de passe>"
+vault_ansible_password_windows: "<mot de passe>"
+```
+
+## Chiffrer le fichier credentials.yml
 
 ```bash
-ansible-vault encrypt files/secrets/credentials.yml
+ansible-vault encrypt credentials.yml
 ```
 
 ## Debug
