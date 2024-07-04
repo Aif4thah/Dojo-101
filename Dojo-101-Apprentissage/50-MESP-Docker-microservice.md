@@ -54,28 +54,34 @@ Ce container sera ensuite utilisé par les équipes afin de mener leurs tests.
 
 9. Mettre à disposition votre container (Docker Hub / Registry)
 
-10. Appliquer les bonnes pratiques de sécurité issues du Guide ANSSI et exporter les logs sur la machine hôte
+10. Appliquer les bonnes pratiques de sécurité issues du Guide ANSSI 
 
-11. Pour aller plus loin : réaliser un déploiement à l'aide de Terraform
+11. Exporter les logs sur la machine hôte afin de garder les traces en cas de suppression de containers
+
+12. Pour aller plus loin : réaliser un déploiement à l'aide de Terraform
 
 
 ## Modalités d'évaluation
 
+* Test du container depuis une machine Linux
 
-Test du container depuis une machine Linux
+* Relecture des preuves de bonnes pratique de sécurité
 
 
 ## Livrables
-
 
  * un projet Github / Groupe, le repos doit contenir les Push/Merge/Pull Request de chaque utilisateur du groupe.
 
  * Identifiant de container / commande docker permettant de tester son fonctionnement.
 
+ * Preuves de l'application des bonnes pratiques de sécurité et de la configuration des logs sur l'hôte
+
 
 ## Critères de performance
 
-La commande `docker run <container> -p 3000:3000` fonctionne.
+* La commande `docker run <container> -p 3000:3000` fonctionne.
+
+* Les mesures de sécurité sont appliquées
 
 
 ## Pour finir
