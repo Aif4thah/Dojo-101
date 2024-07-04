@@ -1,10 +1,11 @@
-# Deploiment d'un container Docker
+# Déploiement d'un container Docker
 
-Déploiment de code dans un microservice Docker
+Déploiement de code dans un microservice Docker
 
 Durée: 8 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
+
 
 ## Ressources
 
@@ -13,6 +14,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * [Docker](https://www.docker.com/)
 * [Exemple Kanban](https://www.jetbrains.com/fr-fr/youtrack/)
 * [Docker Hub](https://hub.docker.com/)
+* [Guide ANSSI](https://cyber.gouv.fr/publications/recommandations-de-securite-relatives-au-deploiement-de-conteneurs-docker)
 * [Terraform](https://www.terraform.io/)
 
 
@@ -36,32 +38,39 @@ Ce container sera ensuite utilisé par les équipes afin de mener leurs tests.
 
     * Passer en revue les étapes suivantes et créer une liste de tâche (story).
 
-    * Mettez un poid ou une difficulté (chiffre entier) sur chaque story.
+    * Mettez un poids ou une difficulté (chiffre entier) sur chaque story.
 
-    * Attribuez vous les stories au sein du groupe.
+    * Attribuez-vous les stories au sein du groupe.
 
-    * Utilser les colonnes "à venir", "en cours", "en test", "terminé" pour suivre l'avancement du Brief
+    * Utiliser les colonnes "à venir", "en cours", "en test", "terminé" pour suivre l'avancement du Brief
 
 5. Créer un docker file
 
 6. Automatiser l'installation et le lancement de vuln-light-apps
 
-7. Pousser votre travail sur un repo github
+7. Pousser votre travail sur un repo github.
 
 8. Les tests de build doivent se faire automatiquement lors du push sur GitHub
 
 9. Mettre à disposition votre container (Docker Hub / Registry)
 
-10. Pour aller plus loin : réaliser un déploiement à l'aide de Terraform
+10. Appliquer les bonnes pratiques de sécurité issues du Guide ANSSI et exporter les logs sur la machine hôte
+
+11. Pour aller plus loin : réaliser un déploiement à l'aide de Terraform
+
 
 ## Modalités d'évaluation
+
 
 Test du container depuis une machine Linux
 
 
 ## Livrables
 
-un projet Github / Groupe
+
+ * un projet Github / Groupe, le repos doit contenir les Push/Merge/Pull Request de chaque utilisateur du groupe.
+
+ * Identifiant de container / commande docker permettant de tester son fonctionnement.
 
 
 ## Critères de performance
@@ -71,4 +80,6 @@ La commande `docker run <container> -p 3000:3000` fonctionne.
 
 ## Pour finir
 
+
 Si vous avez apprécié ce cours et souhaitez valoriser votre travail, n'hésitez pas à ajouter une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)
+
