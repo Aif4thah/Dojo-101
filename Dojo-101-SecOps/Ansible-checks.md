@@ -83,6 +83,24 @@ Si besoin, déchiffrement du fichier :
 ansible-vault decrypt inv-crypt.yml
 ```
 
+### Configuration du dossier Vault et du fichier credentials.yml
+
+```bash
+mkdir /home/ansible/nom_du_projet/vault
+nano vault/credentials.yml
+```
+
+```bash
+ansible_become_password: <password>
+vault_ansible_user: <user>
+```
+
+Chiffrer le fichier credentials.yml
+
+```bash
+ansible-vault encrypt credentials.yml
+```
+
 ### WinRM
 
 générer un certificat et activer HTTPS (port 5986) 
