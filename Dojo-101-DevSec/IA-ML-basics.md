@@ -1,18 +1,35 @@
 # Intelligence artificielle et Machine learning - basics
 
+## ressources
+
+[Guide ANSSI](https://cyber.gouv.fr/publications/recommandations-de-securite-pour-un-systeme-dia-generative)
 
 
 ## Concepts
 
+| Concept IA | définition |
+|-------|------------|
+| IA | simule l'intelligence humaine à partir du ML |
+| ML | Machine learning, Apprentissage et modèles prédictifs / probabilistes |
+| IA générative | Sous-ensemble axé sur la création de contenu (texte, image...) |
+| LLM | Large Language Model, entrainé sur un large ensemble de données pour simuler un langage humain |
+| SLM | Petit modèle de donnée |
+| Data | Analyse et Statistiques |
+| Word Embedding | Méthode de représentation des mots pour l’apprentissage automatique |
 
-* **Data** : Analyse et Statistiques
-* **Machine learning** : Apprentissage et modèles prédictifs / probabilistes
-* **IA** simule l'intelligence humaine à partir du ML
-* **Word Embedding** : Méthode de représentation des mots pour l’apprentissage automatique
+
+## Cycle de vie
+
+1. Entrainement : création du modèle, affinage, tests, etc.
+
+
+2. Déploiement : **Test et Audit de sécurité**, build, intégration, mise en prod
+
+
+3. Production : MCO/MCS (Maintien en conditions opérationnelles et de sécurité)
 
 
 ### Principe du Word Embedding
-
 
 * Initialisation: Chaque mot unique dans le corpus de texte est associé à un vecteur de nombres aléatoires.
 
@@ -23,15 +40,15 @@
 * Résultat: À la fin de ce processus, chaque mot est représenté par un vecteur qui encode quelque chose de son sens.
 
 
+## Attaques et vulnérabilités
 
-## Vulnérabilités
-
+* Porter atteinte aux Critères D.I.C.T.
 
 * Injections (Saisies utilisateurs non nettoyées, XSS, CSRF prompt injection, etc.)
 
-* Modèles / données corrompus (data poisonning) 
+* Inféction,  corruption du modèle, data poisonning 
 
-* Fonctionnalité non prévue
+* Manipulation / Fonctionnalité non prévue
 
 * Fuite de données sensible du fait du Modèle ou de l'absence de restriction
 
@@ -93,7 +110,7 @@
 ## Mistral AI
 
 
-* [site](https://mistral.ai/)
+* [site MISTRAL AI](https://mistral.ai/)
 
 * API facturé à l'usage
 
