@@ -14,6 +14,8 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 * [reflexes incidents](https://www.cert.ssi.gouv.fr/les-bons-reflexes-en-cas-dintrusion-sur-un-systeme-dinformation/)
 
+* [Éthique et cadre légal](https://github.com/Aif4thah/Dojo-101/blob/main/CODE_OF_CONDUCT.md)
+
 
 ## Contexte
 
