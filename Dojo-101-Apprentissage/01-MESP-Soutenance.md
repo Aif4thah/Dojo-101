@@ -57,6 +57,7 @@ Faites simple pour que votre présentation reste naturelle et s'appuie sur votre
 * Prenez quelques notes au quotidiens sur ce que vous voudriez rédiger ensuite (points clés).
 
 
+<br><br><br>
 
 ## Deuxième soutenance: remise du rapport et des supports
 

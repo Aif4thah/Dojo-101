@@ -85,6 +85,8 @@ ansible-vault decrypt inv-crypt.yml
 
 ### Configuration du dossier Vault et du fichier credentials.yml
 
+[From Jojlg](https://github.com/jojlg)
+
 ```bash
 mkdir /home/ansible/nom_du_projet/vault
 nano vault/credentials.yml
@@ -118,6 +120,233 @@ inventory.yml
 ansible_winrm_transport: kerberos
 <SNIP>
 ``` 
+
+
+
+
+## Playbooks exemple
+
+[from @Jrb62](https://github.com/Jrb62/Formation-AIS-et-DevOps/tree/main/Ansible)
+
+### Checks Linux
+
+| N°  | Action                                                 |
+|-----|--------------------------------------------------------|
+| 1   | Mettre à jour et mettre à niveau les paquets apt       |
+| 2   | Installer les paquets nécessaires                      |
+| 3   | Activer UFW et autoriser uniquement SSH et HTTP        |
+| 4   | Définir les politiques par défaut de UFW               |
+| 5   | Configurer fail2ban                                    |
+| 6   | Configurer les mises à jour automatiques               |
+| 7   | S'assurer que le serveur OpenSSH est installé          |
+| 8   | Renforcer la configuration SSH                         |
+| 9   | Redémarrer le service SSH                              |
+| 10  | Ajouter un utilisateur non-root avec des privilèges sudo|
+| 11  | Définir le mot de passe pour le nouvel utilisateur     |
+| 12  | Désactiver l'accès SSH root                            |
+| 13  | S'assurer que le groupe sudo peut utiliser sudo sans mot de passe |
+| 14  | Activer UFW (gestionnaire)                             |
+
+
+### Playbook Linux
+
+```yml
+---
+- name: Ubuntu Server
+  hosts: all
+  become: yes
+  tasks:
+
+    - name: Update and upgrade apt packages
+      apt:
+        update_cache: yes
+        upgrade: dist
+        autoremove: yes
+
+    - name: Install necessary packages
+      apt:
+        name: 
+          - ufw
+          - fail2ban
+          - unattended-upgrades
+        state: present
+
+    - name: Enable UFW and allow only SSH and HTTP
+      ufw:
+        rule: allow
+        port: "{{ item }}"
+        proto: tcp
+      with_items:
+        - 22
+        - 80
+      notify: enable_ufw
+
+    - name: Set UFW default policies
+      ufw:
+        state: enabled
+        policy: "{{ item.policy }}"
+      with_items:
+        - { policy: 'deny', direction: 'incoming' }
+        - { policy: 'allow', direction: 'outgoing' }
+
+    - name: Configure fail2ban
+      copy:
+        dest: /etc/fail2ban/jail.local
+        content: |
+          [sshd]
+          enabled = true
+          port = ssh
+          logpath = %(sshd_log)s
+          maxretry = 5
+          bantime = 3600
+
+    - name: Configure unattended-upgrades
+      copy:
+        dest: /etc/apt/apt.conf.d/50unattended-upgrades
+        content: |
+          Unattended-Upgrade::Allowed-Origins {
+              "${distro_id}:${distro_codename}";
+              "${distro_id}:${distro_codename}-security";
+          };
+          Unattended-Upgrade::Automatic-Reboot "true";
+
+    - name: Ensure OpenSSH Server is installed
+      apt:
+        name: openssh-server
+        state: present
+
+    - name: Harden SSH configuration
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: "{{ item.regexp }}"
+        line: "{{ item.line }}"
+      with_items:
+        - { regexp: '^#?PermitRootLogin', line: 'PermitRootLogin no' }
+        - { regexp: '^#?PasswordAuthentication', line: 'PasswordAuthentication no' }
+        - { regexp: '^#?ChallengeResponseAuthentication', line: 'ChallengeResponseAuthentication no' }
+        - { regexp: '^#?UsePAM', line: 'UsePAM yes' }
+        - { regexp: '^#?X11Forwarding', line: 'X11Forwarding no' }
+        - { regexp: '^#?AllowTcpForwarding', line: 'AllowTcpForwarding no' }
+        - { regexp: '^#?MaxAuthTries', line: 'MaxAuthTries 3' }
+
+    - name: Restart SSH service
+      service:
+        name: ssh
+        state: restarted
+
+    - name: Add a non-root user with sudo privileges
+      user:
+        name: myuser
+        state: present
+        groups: sudo
+        append: yes
+        createhome: yes
+        shell: /bin/bash
+
+    - name: Set password for the new user
+      user:
+        name: myuser
+        password: "{{ 'mysecurepassword' | password_hash('sha512') }}"
+
+    - name: Disable root SSH access
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^PermitRootLogin'
+        line: 'PermitRootLogin no'
+
+    - name: Ensure sudo group can use sudo without password
+      lineinfile:
+        path: /etc/sudoers
+        state: present
+        regexp: '^%sudo'
+        line: '%sudo   ALL=(ALL:ALL) NOPASSWD:ALL'
+
+  handlers:
+    - name: enable_ufw
+      ufw:
+        state: enabled
+```
+
+### Checks Windows
+
+| N°  | Action                                                      |
+|-----|-------------------------------------------------------------|
+| 1   | S'assurer que WinRM est configuré                           |
+| 2   | Définir la politique de mot de passe                        |
+| 3   | Désactiver le compte invité                                 |
+| 4   | Désactiver NTLMv1                                           |
+| 5   | Activer la pré-authentification Kerberos pour tous les comptes utilisateurs |
+| 6   | S'assurer que tous les comptes administrateurs ont la pré-authentification Kerberos activée |
+| 7   | Détecter les utilisateurs avec des droits administratifs indirects |
+| 8   | Mesures de sécurité de base - Désactiver le compte administrateur par défaut |
+| 9   | Mesures de sécurité de base - Activer le pare-feu            |
+| 10  | Mesures de sécurité de base - Activer Windows Defender       |
+
+
+### playbook Windows
+
+```yml
+---
+- name: Windows Server Domain Controller
+  hosts: windows
+  gather_facts: no
+  tasks:
+
+     - name: Ensure WinRM is configured
+       win_service:
+          name: WinRM
+          start_mode: auto
+          state: started
+
+     - name: Set password policy
+       win_shell: |
+         Import-Module ActiveDirectory
+         Set-ADDefaultDomainPasswordPolicy -Identity "AIS.FR" -MinPasswordLength 12
+       register: set_password_policy
+
+     - name: Disable guest account
+       win_user:
+         name: guest
+         state: absent
+
+     - name: Disable NTLMv1
+       win_shell: |
+         Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LmCompatibilityLevel -Value 5
+       register: disable_ntlmv1
+
+     - name: Enable Kerberos preauthentication for all user accounts
+       win_shell: |
+         Import-Module ActiveDirectory
+         Get-ADUser -Filter * -Properties KerberosEncryptionType | Set-ADUser -KerberosEncryptionType AES128,AES256
+       register: kerberos_pre_auth
+
+     - name: Ensure all administrator accounts have Kerberos preauthentication enabled
+       win_shell: |
+         Import-Module ActiveDirectory
+         Get-ADUser -Filter {memberof -recursiveMatch "CN=Administrateurs,CN=Builtin,DC=AIS,DC=FR"} -Properties   KerberosEncryptionType | Set-ADUser -KerberosEncryptionType AES128,AES256
+       register: admin_kerberos_pre_auth
+
+     - name: Detect users with indirect admin rights
+       win_shell: |
+         Import-Module ActiveDirectory
+         Get-ADUser -Filter {memberof -recursiveMatch "CN=Administrateurs,CN=Builtin,DC=AIS,DC=FR"} -Properties MemberOf | Select-Object -Property SamAccountName, MemberOf
+       register: indirect_admin_users
+
+     - name: Basic security measures - Disable default administrator account
+       win_user:
+         name: Administrator
+         state: absent
+
+     - name: Basic security measures - Enable firewall
+       win_feature:
+         name: Windows-Defender
+         state: present
+
+     - name: Basic security measures - Enable Windows Defender
+       win_shell: |
+         Set-MpPreference -DisableRealtimeMonitoring $false
+
+```
 
 
 
@@ -187,6 +416,7 @@ ansible-playbook -i "localhost," -c local playbook.yml
 ```bash
 ansible-playbook -i "localhost," -c local --check playbook.yml
 ```
+
 
 
 
