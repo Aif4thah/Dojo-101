@@ -52,9 +52,7 @@ Trouver le problème et proposer une solution.
 
 8. Nous avons intercepté le message suivant: `b'\xd72U\xc03.\xda\x99Q\xb5\x020\xc4\xb8\x16\xc6\xfa-\xb9U+\xda\\\x126L\xf3~\xbd8\x12q\x02?\x80\xeaVI\xa9\xe1'`. 
 
-Nous avons pu soudoyer un "key custodian" pour qu'il nous livre les informations suivantes:
-
-La première partie de la **Clé de 16 octets** est: `b'12345678'` et l'algorithme utilisé est celui-ci:
+La première partie de la **Clé de 16 octets** est: `b'12345678bien'` et l'algorithme utilisé est celui-ci:
 
 ```python
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
