@@ -10,6 +10,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 * [MSCT](https://learn.microsoft.com/fr-fr/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10)
 * [auditpol](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/auditpol)
+* [MS Security Blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
 ## Contexte
@@ -24,19 +25,19 @@ bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter s
 
 1. Configurer **auditpol** pour logger les erreurs d'authentification et les escalades de privilèges
 
-2. Prouver la bonne configuration d'auditpol en retrouvant les evenements dans les logs
+2. Prouver la bonne configuration d'auditpol en retrouvant les événements dans les logs
 
 3. Lire la documentation **Microsoft Security Compliance Toolkit** et télécharger la version correspondante à vote OS.
 
-4. Se documenter sur **LGPO** et comparer votre GPO actuelle à celle recommandée grace à **PolicyAnalyzer**.
+4. Se documenter sur **LGPO** et comparer votre GPO actuelle à celle recommandée grâce à **PolicyAnalyzer**.
 
-5. Comprendre puis exécuter le script de durcissement.
+5. Comprendre puis exécuter la baseline correspondante (script fourni) à votre OS.
 
 6. Vérifier la configuration avec **PolicyAnalyzer**
 
 7. Activer le chiffrement de surface (**bitlocker** recommandé)
 
-8. Renforcer la configuration **Antivirus** à l'aide de powershell
+8. Renforcer la configuration **Antivirus** à l'aide de powershell (le niveau de sécurité doit etre supérieur à celui par défaut)
 
 9. Votre configuration **Auditpol** initiale est elle persistante ? Pourquoi ?
 

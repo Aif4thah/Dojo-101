@@ -82,6 +82,15 @@ for fruit in fruits:
 [print(i) for i in range(4)]
 ```
 
+## Exception et gestion des erreurs
+
+```python
+try:
+    1/0
+except Exception as err:
+    print(type(err).__name__)
+```
+
 ## linux time:
 
 ```python
