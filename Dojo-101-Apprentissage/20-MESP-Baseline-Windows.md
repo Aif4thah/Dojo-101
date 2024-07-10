@@ -22,23 +22,23 @@ bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter s
 
 0. Installer une Machine Windows (VM) cliente et ne **PAS** joindre l'Active Directory.
 
-1. Utiliser auditpol pour logger les erreurs d'authentification et les escalades de privilèges
+1. Configurer **auditpol** pour logger les erreurs d'authentification et les escalades de privilèges
 
 2. Prouver la bonne configuration d'auditpol en retrouvant les evenements dans les logs
 
-3. Lire la documentation MSCT et le télécharger
+3. Lire la documentation **Microsoft Security Compliance Toolkit** et télécharger la version correspondante à vote OS.
 
-4. Se documenter sur LGPO
+4. Se documenter sur **LGPO** et comparer votre GPO actuelle à celle recommandée grace à **PolicyAnalyzer**.
 
-5. Comprendre puis exécuter le script de durcissement
+5. Comprendre puis exécuter le script de durcissement.
 
-6. Vérifier la configuration avec PolicyAnalyzer
+6. Vérifier la configuration avec **PolicyAnalyzer**
 
-7. Activer le chiffrement de surface
+7. Activer le chiffrement de surface (**bitlocker** recommandé)
 
-8. Renforcer la configuration Antivirus
+8. Renforcer la configuration **Antivirus** à l'aide de powershell
 
-9. Votre configuration Auditpol initiale est elle persistante ? Pourquoi ?
+9. Votre configuration **Auditpol** initiale est elle persistante ? Pourquoi ?
 
 
 ## Modalités d'évaluation
@@ -47,11 +47,11 @@ Lecture des livrables
 
 ## Livrables
 
-1. Comparatif des LGPO / GPO de la baseline avec celles appliquées à l'aide de l'outil `PolicyAnalyzer`
+1. Comparatifs `PolicyAnalyzer` avant et apres le durcissement.
 2. Résultat de la commange `Get-BitLockerVolume`
 3. Résultat de la commande `Get-MpPreference`
 4. Résultat de la commande `auditpol.exe /get /category:*` 
-5. Captures des logs avec échec d'authentification et escalade de privilèges
+5. Captures des logs (ou resultat powershell) avec échec d'authentification et escalade de privilèges
 
 ## Critères de performance
 
