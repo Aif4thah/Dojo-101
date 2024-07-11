@@ -17,22 +17,33 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Contexte
 
-0. Générer et partager une clé de chiffrement AES256 ainsi que les IV avec le destinataire
+0. Parmi ces algorithmes, lesquels ne devraient plus être utilisés ?
 
-1. Comment générer une clé de chiffrement de manière sure ? Quel est le risque si les IV sont toujours les mêmes ?
+    * AES 256 avec mécanisme XTS
+    * AES 128 avec ECB
+    * 3DES
+    * SHA2
+    * SHA1
+    * MD5
+    * RSA avec OAEP
+    * RSA avec PKCS1
 
-2. Chiffrer un message et l’envoyer
+1. Grâce à un script, générer une clé de chiffrement **AES256** ainsi que les IV avec le destinataire. Partagez là avec votre destinataire en essayant de préserver sa confidentialité.
 
-3. Recevoir et déchiffrer le message
+2. Comment générer une **clé de chiffrement** de manière sure ? Quel est le risque si les **IV** sont toujours les mêmes ?
 
-4. Comment pourrait-on s'assurer de l'intégrité du message et de l'authenticité du destinataire ? Ajouter cette fonctionnalité à l'aide d'un script ou d'un outil en CLI.
+3. Chiffrer un message et l’envoyer en morse à l'aide du **HackRF** (cours en distanciel : utilisez la messagerie)
 
-5. Reprendre la question 4 avec un alogrythme post quantique
+4. Recevoir et déchiffrer le message
 
-6. le message suivant a été intercepté: `"prggr grpuavdhr f'nccryyr yr puvsserzrag qr prnfre, vy a'rfg cyhf hgvyvft nhwbheq'uhv, pne crh ftphevft"`,
+5. Comment pourrait-on s'assurer de l'intégrité du message et de l'authenticité du destinataire ? Ajouter cette fonctionnalité à l'aide d'un script ou d'un outil en CLI.
+
+6. Reprendre la question 4 avec un algorithme postquantique
+
+7. le message suivant a été intercepté: `"prggr grpuavdhr f'nccryyr yr puvsserzrag qr prnfre, vy a'rfg cyhf hgvyvft nhwbheq'uhv, pne crh ftphevft"`,
 il semble vulnérable à une attaque en fréquences ou une attaque par force brute. Déchiffrez-le !
 
-7. Nous suspectons qu'un adversaire a implémenté une backdoor dans notre logiciel de messagerie sécurisé, pourtant nous utilisons AES-CBC, voici les logs :
+8. Nous suspectons qu'un adversaire a implémenté une backdoor dans notre logiciel de messagerie sécurisé, pourtant nous utilisons AES-CBC, voici les logs :
 
 ```txt
 Bob: '>s\x06\x14\x0c\xa7\xa6\x88\xd5[+i\xcc/J\xf7'
@@ -50,7 +61,7 @@ Bob: '\xde@=\x1ed\xc0Qe\x0fK=\x1c\xb3$\xd9\xcb'
 ```
 Trouver le problème et proposer une solution.
 
-8. Nous avons intercepté le message suivant: `b'\xd72U\xc03.\xda\x99Q\xb5\x020\xc4\xb8\x16\xc6\xfa-\xb9U+\xda\\\x126L\xf3~\xbd8\x12q\x02?\x80\xeaVI\xa9\xe1'`. 
+9. Nous avons intercepté le message suivant: `b'\xd72U\xc03.\xda\x99Q\xb5\x020\xc4\xb8\x16\xc6\xfa-\xb9U+\xda\\\x126L\xf3~\xbd8\x12q\x02?\x80\xeaVI\xa9\xe1'`. 
 
 La première partie de la **Clé de 16 octets** est: `b'12345678bien'` et l'algorithme utilisé est celui-ci:
 
