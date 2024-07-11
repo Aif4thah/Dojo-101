@@ -47,7 +47,7 @@ Les enjeux ne sont pas seulement financiers : les emplois, l’image et la stabi
 
 ## La surface d'attaque
 
-Tout ce que vous exposez à vos adversaire
+Tout ce que vous exposez à vos adversaires
 
 * L'architecture
 * Les serveurs
@@ -159,7 +159,7 @@ check:
 * **Remarques** : Une vulnérabilité peut être utilisée par un code d’exploitation et conduire à une intrusion dans le système. (faiblesse sur le SI)
 * **Risque** = `Menace * Vulnérabilité * Impact` = `Impact * Vraissemblance` = `Gravité * Facilité d'exploitation`
 
-Niveau de risque en fonction de la gravité (ordonnée ) et de la vraissemblance (abscisse):
+Niveau de risque en fonction de la gravité (ordonnée ) et de la vraisemblance (abscisse):
 
 |  | Faible | Moyenne | Élevée | Critique |
 | --- | --- | --- | --- | --- |
@@ -216,9 +216,9 @@ Niveau de risque en fonction de la gravité (ordonnée ) et de la vraissemblance
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-## Cadre juridique
+## Cadre juridique des systèmes de traitement automatisé de données (STAD)
 
-### articles 323-1 et suivants du Code pénal – version du 26/01/2023
+### articles 323-1 et suivants du Code pénal
 
 * Le fait d'accéder ou de se maintenir, frauduleusement, dans tout ou partie d'un système de traitement automatisé de données est puni de 3 ans d'emprisonnement et de 100 000 € d'amende.
 * Lorsqu'il en est résulté soit la suppression ou la modification de données contenues dans le système, soit une altération du fonctionnement de ce système, la peine est de 5 ans d'emprisonnement et de 150 000 € d'amende.
@@ -229,13 +229,13 @@ Niveau de risque en fonction de la gravité (ordonnée ) et de la vraissemblance
 
 ### Les émissions radio
 
-* L’ ANFR en application de l’article L.43 du Code des postes et communications électroniques (CPCE), veille à ce que les sites et les réseaux radioélectriques soient conformes à la réglementation et instruit les cas de brouillage qui lui sont signalés.
+* L' ANFR en application de l’article L.43 du Code des postes et communications électroniques (CPCE), veille à ce que les sites et les réseaux radioélectriques soient conformes à la réglementation et instruis les cas de brouillage qui lui sont signalés.
 
 * Les utilisations de fréquences ou d’équipements radioélectriques en dehors des conditions réglementaires sont des délits soumis à une sanction pénale pouvant aller jusqu’à 6 mois de prison et 30 000 euros d’amende (L. 39-1 du CPCE).
 
 * Les brouillages de fréquences autorisées causés par l’utilisation non conforme d’équipements radioélectriques, électriques ou électroniques sont des délits soumis à une sanction pénale pouvant aller jusqu’à 6 mois de prison et 30 000 euros d’amende (L. 39-1 du CPCE).
 
-* En dehors de dérogations encadrées pour des services de l’État, la possession, l’utilisation, la cession à titre commercial ou gratuit, la publicité illicites de brouilleurs sont strictement interdites (article L. 33-3-1 du CPCE). Ce sont des délits soumis à une sanction pénale pouvant aller jusqu’à **6 mois de prison et 30 000 euros d’amende** (L. 39-1 du CPCE).
+* En dehors de dérogations encadrées pour des services de l’État, la possession, l’utilisation, la cession à titre commercial ou gratuit, la publicité illicite de brouilleurs sont strictement interdites (article L. 33-3-1 du CPCE). Ce sont des délits soumis à une sanction pénale pouvant aller jusqu’à **6 mois de prison et 30 000 euros d’amende** (L. 39-1 du CPCE).
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -258,6 +258,17 @@ Il est obligatoire de :
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+## Le cas (très particulier) du lanceur d'alerte
+
+* Extrait de l'**Art. L. 2321-4 du code de la défense** : Pour les besoins de la sécurité des systèmes d’information, l’obligation prévue à l’article 40 du code de procédure pénale n’est pas applicable à l’égard d’une personne de bonne foi qui **transmet à la seule autorité nationale** de sécurité des systèmes d’information une information sur l’existence d’une vulnérabilité concernant la sécurité d’un système de traitement automatisé de données.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## Les éditeurs de logiciels
+
+* Extrait de l'**Art. L2321-4-1 du Code de la défense** : En cas de vulnérabilité significative affectant un de leurs produits ou en cas d'incident informatique compromettant la sécurité de leurs systèmes d'information et susceptible d'affecter significativement un de leurs produits, **les éditeurs de logiciels notifient à l'autorité nationale de sécurité des systèmes d'information** cette vulnérabilité ou cet incident ainsi que l'analyse de ses causes et de ses conséquences.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Gouvernance
 
@@ -314,18 +325,18 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### Les risques liés à la sécurité phyisque
+### Les risques liés à la sécurité physique
 
 * Tailgating : suivre quelqu'un pour passer une porte
 * PiggyBacking : demander l'ouverture d'une porte
-* Shoulder Surfing : regarder le mot de passe d'un autre (par dessus son épaule)
-* Wiretapping : écoute via le réseau (logiciel ou materiel)
-* Keylogger : enregistrement des frappes au clavier (logiciel ou materiel)
-* Tempest : Compromissions par rayonnement éléctro magnetique
+* Shoulder Surfing : regarder le mot de passe d'un autre (par-dessus son épaule)
+* Wiretapping : écoute via le réseau (logiciel ou matériel)
+* Keylogger : enregistrement des frappes au clavier (logiciel ou matériel)
+* Tempest : Compromissions par rayonnement electro magnétique
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### Exemple de materiels
+### Exemple de matériels
 
 * [Great Scott Gadgets Throwing Star LAN Tap Kit ](https://www.amazon.fr/Great-Scott-Gadgets-Throwing-Star/dp/B07GYWZPXG)
 * [Rubber Ducky](https://shop.hak5.org/products/usb-rubber-ducky)
@@ -344,7 +355,7 @@ Toujours le principal point d'entrée pour l'attaquant
 * Autant que possible on complète par du MFA
 
 * Le minimum syndical : 12 chars avec maj, min, digit, spéciaux
-* Avec les gerstionnaire de mots de passe: 20 chars
+* Avec les gestionnaires de mots de passe: 20 chars
 * Comptes de services : +30 chars
 
 
@@ -406,11 +417,11 @@ Phishing à partir de `https://www.securite-solutions.fr/login`, où est le piè
 | Principe | Description | Exemple |
 |----|----|---|
 | Isolation de contexte | séparer les environnements d’exécution, assurant que les ressources (mémoire, CPU, etc.) entre les applications | Sandbox, sécurité basée sur la virtualisation (VBS) |
-| Para-Virtualisation | Les OS sont conscient de la virtualisation et communique avec l'hyperviseur via une couche d'abstraction | Hyper-V, VMWare Vsphere / ESXi |
+| Para-Virtualisation | Les OS sont conscients de la virtualisation et communiquent avec l'hyperviseur via une couche d'abstraction | Hyper-V, VMWare Vsphere / ESXi |
 | Hyper-Virtualisation | Isolation entre les Machines virtuelles (VM) / OS virtualisé, aucune modification des VM pour gagner en performance | QEMU sans module Kqemu |
 | Virtualisation d’entrées/sorties (I/O) | répartition des ressources entre les VM | MS Storage Spaces Direct : Agrège les disques durs locaux pour créer un stockage partagé haute performance | 
 | Systemes Unikernel et micro serveur | Serveur Headless, Microsoft | Nano Server |
-| Containeur | Les applicaitons et leurs dépendances disposent d'environements isolé via une virtualisation au niveau de l'OS | Docker |
+| Containeur | Les applicaitons et leurs dépendances disposent d'environnements isolés via une virtualisation au niveau de l'OS | Docker |
 
 [Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
 
@@ -525,6 +536,6 @@ Les activités couvertes par le référentiel PASSI :
 ## Pour aller plus loin 
 
 * [Supports Dojo-101](https://github.com/Aif4thah/Dojo-101/)
-* [Démonstation d'attaques](https://github.com/Aif4thah/VulnerableLightApp)
+* [Démonstration d'attaques](https://github.com/Aif4thah/VulnerableLightApp)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

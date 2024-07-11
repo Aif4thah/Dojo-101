@@ -2,6 +2,8 @@
 // Compilation : rustc.exe .\Rust-security.rs
 // author: @Taisen-Solutions
 
+// Autre ressource : guide ANSSI : https://anssi-fr.github.io/rust-guide/
+
 use std::thread;
 use std::sync::{Arc, Mutex};
 
