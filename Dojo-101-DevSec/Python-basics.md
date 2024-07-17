@@ -35,6 +35,16 @@ a.upper()
 
 ```
 
+## saisies utilisateur et affichage
+
+```python
+var = input("saisie : ")
+print(f"{var.__len__()} caractères saisis")
+```
+
+Il faut néanmoins rester prudents avec les saisies utilisateurs.
+
+
 ## Conditions
 
 ```python
