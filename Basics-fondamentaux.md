@@ -286,6 +286,7 @@ Il est obligatoire de :
 * ISO2700X : normes SMSI
 * RGS : Administration
 * DORA : entités financières
+* II901 : instruction interministérielle 901 (Diffusion Restreinte)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -307,14 +308,15 @@ Il est obligatoire de :
 
 ## la classification des SI hébergeant des données sensibles
 
-* SI de classe 0 : SI public (p. ex. Internet) ou SI connecté à un SI public (p. ex. SI usuel) qui ne
+* Classe 0 : SI public (p. ex. Internet) ou SI connecté à un SI public (p. ex. SI usuel) qui ne
 respecte pas les exigences de la classe 1.
 
-* SI de classe 1 : SI sensible (ou Diffusion Restreinte) connecté à Internet au travers d’une passerelle sécurisée
-satisfaisant les exigences de sécurité définies dans l’II 901 (instruction interministérielle 901).
+* Classe 1 : SI sensible / DR, connecté à Internet au travers d’une passerelle sécurisée (rupture de flux entre deux dispositifs de filtrage, produits qualifiés)
+satisfaisant les exigences de sécurité définies dans l’II 901.
 
-* SI de classe 2 : SI sensible (ou Diffusion Restreinte) physiquement isolé d’Internet.
+* Classe 2 : SI sensible / DR physiquement isolé d’Internet.
 
+Dans la pratique, cette  classification est faite dans le cadre d'une stratégie d'homologation.
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

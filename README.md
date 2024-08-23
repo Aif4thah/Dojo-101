@@ -28,7 +28,7 @@ Usable offline with a simple text editor, its purpose is to freely share knowled
 
 Files containing the word “basics” contain elements that are subsequently considered prerequisites. Here are some suggestions:
 
-* [Cyber basics](https://github.com/Aif4thah/Dojo-101/blob/main/Basics-fondamentaux.md)
+* [Cyber basics (french)](https://github.com/Aif4thah/Dojo-101/blob/main/Basics-fondamentaux.md)
 * [Linux basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Linux-Basics.md)
 * [Powershell basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Powershell-basics.md)
 * [Python basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Python-basics.md)
