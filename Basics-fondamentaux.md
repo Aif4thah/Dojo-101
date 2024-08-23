@@ -174,8 +174,6 @@ Niveau de risque en fonction de la gravité (ordonnée ) et de la vraisemblance 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-
-
 ## Le traitement du risque
 
 * écarter : par exemple, l'arrêt d'un service obsolète
@@ -185,7 +183,6 @@ Niveau de risque en fonction de la gravité (ordonnée ) et de la vraisemblance 
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 
 
 ## Critères de sécurité (DICP)
@@ -258,13 +255,13 @@ Il est obligatoire de :
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-## Le cas (très particulier) du lanceur d'alerte
+### Le cas du lanceur d'alerte
 
 * Extrait de l'**Art. L. 2321-4 du code de la défense** : Pour les besoins de la sécurité des systèmes d’information, l’obligation prévue à l’article 40 du code de procédure pénale n’est pas applicable à l’égard d’une personne de bonne foi qui **transmet à la seule autorité nationale** de sécurité des systèmes d’information une information sur l’existence d’une vulnérabilité concernant la sécurité d’un système de traitement automatisé de données.
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-## Les éditeurs de logiciels
+## Le cas des éditeurs de logiciels
 
 * Extrait de l'**Art. L2321-4-1 du Code de la défense** : En cas de vulnérabilité significative affectant un de leurs produits ou en cas d'incident informatique compromettant la sécurité de leurs systèmes d'information et susceptible d'affecter significativement un de leurs produits, **les éditeurs de logiciels notifient à l'autorité nationale de sécurité des systèmes d'information** cette vulnérabilité ou cet incident ainsi que l'analyse de ses causes et de ses conséquences.
 
@@ -293,7 +290,6 @@ Il est obligatoire de :
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-
 ## La documentation en entreprise (concept anglo-saxon)
 
 ### Mandatory 
@@ -309,8 +305,20 @@ Il est obligatoire de :
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+## la classification des SI hébergeant des données sensibles
 
-## La sécurité physique
+* SI de classe 0 : SI public (p. ex. Internet) ou SI connecté à un SI public (p. ex. SI usuel) qui ne
+respecte pas les exigences de la classe 1.
+
+* SI de classe 1 : SI sensible (ou Diffusion Restreinte) connecté à Internet au travers d’une passerelle sécurisée
+satisfaisant les exigences de sécurité définies dans l’II 901 (instruction interministérielle 901).
+
+* SI de classe 2 : SI sensible (ou Diffusion Restreinte) physiquement isolé d’Internet.
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## L'isolation physique
 
 La sécurité physique est la première couche de sécurité d’une entreprise, son but est de:
 
@@ -333,6 +341,36 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 * Wiretapping : écoute via le réseau (logiciel ou matériel)
 * Keylogger : enregistrement des frappes au clavier (logiciel ou matériel)
 * Tempest : Compromissions par rayonnement electro magnétique
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## Isolation logique et Virtualisation
+
+| Principe | Description | Exemple |
+|----|----|---|
+| Isolation de contexte | séparer les environnements d’exécution, assurant que les ressources (mémoire, CPU, etc.) entre les applications | Sandbox, sécurité basée sur la virtualisation (VBS) |
+| Para-Virtualisation | Les OS sont conscients de la virtualisation et communiquent avec l'hyperviseur via une couche d'abstraction | Hyper-V, VMWare Vsphere / ESXi |
+| Hyper-Virtualisation | Isolation entre les Machines virtuelles (VM) / OS virtualisé, aucune modification des VM pour gagner en performance | QEMU sans module Kqemu |
+| Virtualisation d’entrées/sorties (I/O) | répartition des ressources entre les VM | MS Storage Spaces Direct : Agrège les disques durs locaux pour créer un stockage partagé haute performance | 
+| Systemes Unikernel et micro serveur | Serveur Headless, Microsoft | Nano Server |
+| Containeur | Les applicaitons et leurs dépendances disposent d'environnements isolés via une virtualisation au niveau de l'OS | Docker |
+
+[Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### Les risques liés à la virtualisation
+
+* Risque accru de compromission des systèmes
+
+* Accroissement du risque d’indisponibilité
+
+* Complexification de l’administration et de la mise en œuvre
+
+* Complexification de la supervision
+
+[Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -409,35 +447,6 @@ Phishing à partir de `https://www.securite-solutions.fr/login`, où est le piè
 
 * https://www.securite-sоlution.fr/login (« o » cyrillique)
 ```
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-## Isolation et Virtualisation
-
-| Principe | Description | Exemple |
-|----|----|---|
-| Isolation de contexte | séparer les environnements d’exécution, assurant que les ressources (mémoire, CPU, etc.) entre les applications | Sandbox, sécurité basée sur la virtualisation (VBS) |
-| Para-Virtualisation | Les OS sont conscients de la virtualisation et communiquent avec l'hyperviseur via une couche d'abstraction | Hyper-V, VMWare Vsphere / ESXi |
-| Hyper-Virtualisation | Isolation entre les Machines virtuelles (VM) / OS virtualisé, aucune modification des VM pour gagner en performance | QEMU sans module Kqemu |
-| Virtualisation d’entrées/sorties (I/O) | répartition des ressources entre les VM | MS Storage Spaces Direct : Agrège les disques durs locaux pour créer un stockage partagé haute performance | 
-| Systemes Unikernel et micro serveur | Serveur Headless, Microsoft | Nano Server |
-| Containeur | Les applicaitons et leurs dépendances disposent d'environnements isolés via une virtualisation au niveau de l'OS | Docker |
-
-[Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-## Risques lié à la virtualisation
-
-* Risque accru de compromission des systèmes
-
-* Accroissement du risque d’indisponibilité
-
-* Complexification de l’administration et de la mise en œuvre
-
-* Complexification de la supervision
-
-[Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

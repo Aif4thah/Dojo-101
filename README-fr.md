@@ -28,7 +28,7 @@ Utilisable hors-ligne à l'aide d'un simple éditeur de texte, sa raison d'être
 
 Les fichiers comportant le mot "bascis" contiennent les éléments ensuite considérés comme des prérequis. Voici quelques suggestions :
 
-* [Les bases de la cyber](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Basics-fondamentaux.md)
+* [Les bases de la cyber](https://github.com/Aif4thah/Dojo-101/blob/main/Basics-fondamentaux.md)
 * [les bases de Linux](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Linux-Basics.md)
 * [les bases de powershell](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Powershell-basics.md)
 * [les bases de python](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Python-basics.md)
