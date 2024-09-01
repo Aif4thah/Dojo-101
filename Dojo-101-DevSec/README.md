@@ -1,18 +1,18 @@
 # Développement sécurisé / DevSec basics
 
-## OWASP top 10
-
-https://owasp.org/Top10/ 
-
-## SANS TOP 20
-
-https://www.softwaretestinghelp.com/sans-top-20-security-vulnerabilities/ 
 
 ### Référentiels et bonnes pratiques
 
-* [ANSSI](https://cyber.gouv.fr)
-* [OWASP](https://owasp.org/)
+* [projets OWASP](https://owasp.org/projects/)
+* [Guides ANSSI](https://cyber.gouv.fr)
 * [Chaine DevOps](https://learn.microsoft.com/fr-fr/azure/cloud-adoption-framework/ready/considerations/devops-toolchain#azure-devops-and-github-toolchain)
+
+
+### énumeration des vulnréabilités et mauvaise pratiques
+
+[OWASP top 10](https://owasp.org/Top10/) 
+[SANS TOP 20](https://www.softwaretestinghelp.com/sans-top-20-security-vulnerabilities/)
+[liste des CWE](https://cwe.mitre.org/)
 
 ### Rechercher des vulns spécifiques
 
