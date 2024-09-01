@@ -26,7 +26,7 @@ Usable offline with a simple text editor, its purpose is to freely share knowled
 
 ## 👉 Let’s get started!
 
-README Files or files containing the key-word `basics` contain elements that are subsequently considered prerequisites. Here are some suggestions:
+README Files and those containing the keyword `basics` contain elements that are subsequently considered prerequisites. Here are some suggestions:
 
 * [Cyber basics (french)](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/README.md)
 * [Linux basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Linux-Basics.md)
