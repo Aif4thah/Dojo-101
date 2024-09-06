@@ -25,6 +25,8 @@ Vous faites partie de la purple team de l'entreprise. Afin de former les équipe
 
 Ce container sera ensuite utilisé par les équipes afin de mener leurs tests.
 
+NB: *ce contexte est issu du Lab déjà mis en place*
+
 
 ## Modalités pédagogiques
 

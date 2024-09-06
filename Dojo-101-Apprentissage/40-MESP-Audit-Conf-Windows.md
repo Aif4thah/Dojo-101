@@ -25,11 +25,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 Vous êtes un auditeur de sécurité pour ABC, une entreprise de 30 salariés spécialisée dans le développement de logiciels. L’entreprise utilise une infrastructure Windows Active Directory (AD) pour gérer les identités et les accès des utilisateurs. L’infrastructure AD est composée d'un seul controleur de domaine et d’un serveur Linux non intégré au domaine. L’entreprise a également développé une API REST personnalisée qui est utilisée par plusieurs applications internes. Votre tâche consiste à auditer la sécurité de l’infrastructure AD, du serveur Linux et de l’API REST pour identifier les vulnérabilités et les risques potentiels.
 
-Methodologie: Referentiel PASSI
-
-Referentiel d'audit: CIS
-
-Gestes professionnels: https://github.com/Aif4thah/Dojo-101
+NB: *ce contexte est issu du Lab déjà mis en place*
 
 ## Modalités pédagogiques
 

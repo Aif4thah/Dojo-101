@@ -21,6 +21,7 @@ Vous êtes un auditeur de sécurité pour une entreprise de développement de lo
 
 Votre tâche consiste à appliquer les bonnes pratiques de sécurité suite à l'audit (MESP Audit), soit manuellement, soit par script, soit à l'aide d'une solution de type Infrastructure as Code (IaC).
 
+NB: *ce contexte est issu du Lab déjà mis en place*
 
 ## Modalités pédagogiques
 

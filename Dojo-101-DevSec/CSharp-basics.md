@@ -11,6 +11,10 @@ installer `visual studio` ou le framework dotnet et utiliser la commande `dotnet
 dotnet nuget add source "https://api.nuget.org/v3/index.json" --name "Microsoft"
 ```
 
+## Gestion des secrets applicatifs
+
+En l'absence d'autres solutions dans les process "DevOps", l'outil par défaut est `dotnet user-secrets` qui remplace les secrets du fichier `appsettings.json` dans un fichier local `%AppData%\Microsoft\UserSecrets\`
+
 ## commentaires
 
 ```c#
@@ -48,7 +52,7 @@ $"Hello, {name}! Today is {date.DayOfWeek}, it's {date:HH:mm} now.";
 Console.WriteLine("Hello, {0}! Today is {1}, it's {2:HH:mm} now.", name, date.DayOfWeek, date); 
 ```
 
-##  saisie utilisateurs
+##  saisie utilisateur
 
 ```c#
 string message = Console.ReadLine();

@@ -22,6 +22,7 @@ Vous etes SysAdmin. L’entreprise utilise une infrastructure Windows Active Dir
 
 Votre tâche consiste à appliquer les bonnes pratiques de sécurité suite à l'audit (MESP Audit), soit manuellement, soit par script, soit à l'aide d'une solution de type Infrastructure as Code (IaC).
 
+NB: *ce contexte est issu du Lab déjà mis en place*
 
 ## Modalités pédagogiques
 
