@@ -74,7 +74,7 @@
 * Deploy
 * Merge
 
-## repo permissions level
+## Permissions
 
 * Read : Recommended for non-code contributors who want to view or discuss your project. This level is good for anyone that needs to view the content within the repository but doesn't need to actually make contributions or changes.
 * Triage : Recommended for contributors who need to proactively manage issues and pull requests without write access. This level could be good for some project managers who manage tracking issues but don't make any changes.
@@ -163,3 +163,64 @@ git branch -m main # renommage de la branche en main
 git push -f origin main #push vers la branche main
 git gc --aggressive --prune=all # supression des anciens fichiers
 ```
+
+## Actions
+
+This workflow will build a .NET project, [more information here](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net)
+
+```yml
+name: .NET
+
+on:
+  push:
+    branches: [ "main" ]
+    tags:
+      - '*'
+  pull_request:
+    branches: [ "main" ]
+    tags:
+      - '*'
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+    - name: Display dotnet version
+      run: dotnet --version
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Publish
+      run: dotnet publish -c Release -o ./publish
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: ./publish/
+```
+
+
+## Gestion des secret
+
+Ils peuvent être gérés depuis `Settings` -> `Security` -> `Secrets and variables`.
+
+Ils sont ensuite déclarés comme ceci dans le fichier du workflow afin d'être injectés :
+
+```yml
+steps:
+  - shell: pwsh
+    env:
+      SUPER_SECRET: ${{ secrets.SuperSecret }}
+    run: |
+      example-command "$env:SUPER_SECRET"
+```
+
+[Documentation Github](https://docs.github.com/fr/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions)

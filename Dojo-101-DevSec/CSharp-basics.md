@@ -13,7 +13,14 @@ dotnet nuget add source "https://api.nuget.org/v3/index.json" --name "Microsoft"
 
 ## Gestion des secrets applicatifs
 
-En l'absence d'autres solutions dans les process "DevOps", l'outil par défaut est `dotnet user-secrets` qui remplace les secrets du fichier `appsettings.json` dans un fichier local `%AppData%\Microsoft\UserSecrets\`
+En l'absence d'autres solutions dans les process "DevOps", l'outil par défaut est `dotnet user-secrets` :
+
+```sh
+dotnet user-secrets init
+```
+
+Les valeurs du fichier `appsettings.json` sont alors injectées (écrasées) par le fichier `secrets.json` présent localement dans le dossier `%AppData%\Microsoft\UserSecrets\`.
+
 
 ## commentaires
 
