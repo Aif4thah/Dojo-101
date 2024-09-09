@@ -24,6 +24,15 @@ Usable offline with a simple text editor, its purpose is to freely share knowled
 ![Principe](./Capitalisation.drawio.png)
 
 
+## ⚔️ Themes
+
+* [Secure development](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-DevSec)
+* [Secure administration](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-SecOps)
+* [Pentest](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Pentest)
+* [Forensic](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Forensic)
+* [Radio frequencies](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-RF)
+
+
 ## 👉 Let’s get started!
 
 README Files and those containing the keyword `basics` contain elements that are subsequently considered prerequisites. Here are some suggestions:
@@ -37,34 +46,33 @@ README Files and those containing the keyword `basics` contain elements that are
 * [AI Basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/IA-ML-basics.md)
 
 
-## ⚔️ Themes
+## 📒 You need almost nothing.
 
-* [Secure development](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-DevSec)
-* [Secure administration](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-SecOps)
-* [Pentest](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Pentest)
-* [Forensic](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Forensic)
-* [Radio frequencies](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-RF)
+## Offline Usage with a Code Editor :
 
-
-## ⬇️ Installation
-
-0.  If you are using Windows (client) and do not have Git installed : `winget install git.git `
-1. `git clone https://github.com/Aif4thah/Dojo-101.git` 
-2. The content is regularly updated, so remember to do a `git pull` before using it.
-
-
-## 📖 Usage
-
-This project is designed to not depend on **any third-party software**; your text/code editor is the only tool you need to searching, reading or modifying.
-
-As an example, you can open `DOJO-101` directory with [VSCodium](https://github.com/VSCodium/vscodium) to :
+As an example, open `DOJO-101` folder with [VSCode](https://code.visualstudio.com/) then,
 
 * Search by keyword across all files (e.g., `basics`, `Windows`, `Linux`)
 * Read the content in `HTML` format (`ctrl`+`shift` +`V`)
 
 <p align="center">
-    <img src="./VScodium-demo.gif" alt="Dojo-101-vscodium" style="width: 500px;" />
+    <img src="./VSCode-demo.gif" alt="Dojo-101-vscodium" style="width: 800px;" />
 </p>
+
+## Direct Usage on Github :
+
+<p align="center">
+    <img src="./GH-Search-demo.gif" alt="Dojo-101-vscodium" style="width: 800px;" />
+</p>
+
+
+## ⬇️ Installation
+
+0.  If you are using Windows (client) and do not have Git installed : `winget install git.git`
+
+1. `git clone https://github.com/Aif4thah/Dojo-101.git`
+
+2. The content is regularly updated, so remember to do a `git pull` before using it.
 
 
 ## 🤝 Contributions
