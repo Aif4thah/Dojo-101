@@ -255,14 +255,16 @@ Le code de l’application, lorsque disponible, peut ensuite être passé en rev
 
 * Dans une moindre mesure : les sources de l’entropie utilisées par le « random number génération » (RNG). Dans le cas du mouvement de la souris, il faudra s’assurer de son mouvement. Dans le cas d’écriture disque, prendre en compte la machine utilisée, etc.
 
-## attaques
+## Attaques
 
 | Type | Description |
 |------|-------------|
 | Cypher text attack | L’auditeur à accès au message chiffré et a pour objectif de trouver la clé de chiffrement à partir de cet élément. Il s’agit du cas le plus fréquent. |
 | Choosen plaintext attack | L’auditeur peut définir le contenu du message en clair chiffré et a pour objectif de trouver la clé de chiffrement à partir de cet élément. |
 | Known plaintext attack | L’auditeur connait le contenu du message en clair chiffré et a pour objectif de trouver la clé de chiffrement à partir de cet élément. |
-
+| Chosen ciphertext attack |  L’auditeur peut choisir un texte chiffré et obtenir son déchiffrement. L’objectif est de trouver la clé de chiffrement à partir de ces informations. |
+| Brute force attack | L’auditeur essaie toutes les combinaisons possibles de clés jusqu’à trouver la bonne. |
+| Side-channel attack | L’auditeur exploite des informations physiques (comme le temps d’exécution, la consommation d’énergie) pour trouver la clé de chiffrement. |
 
 # exemple de chiffrement post-quantique
 
