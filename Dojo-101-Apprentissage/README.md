@@ -10,7 +10,3 @@
 * 7x : Gouvernance, Gestion des risques et des menaces
 * 8x : Wireless, RF
 * 9x : Hacking, sujets avancés
-
-## apercu du resultat en fin de Formation
-
-![LAB post-brief](./DevSecOps.drawio.png)

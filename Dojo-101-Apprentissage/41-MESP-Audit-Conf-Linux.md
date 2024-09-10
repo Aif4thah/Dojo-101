@@ -1,6 +1,8 @@
 # Audit de sécurité d’un OS Linux
 
-Vous êtes chargé d’auditer la configuration d’une machine Linux. Le rapport d’audit permettra d’identifier les vulnérabilités, leurs criticités ainsi que les préconisations de sécurité conformément au référentiels PASSI (partie exécution de la prestation)
+Vous êtes chargé d’auditer la configuration d’une machine Linux vis-à-vis des bonnes pratiques de l'ANSSI. 
+
+Le rapport d’audit permettra d’identifier les vulnérabilités, leurs criticités ainsi que les préconisations de sécurité conformément au référentiel PASSI (partie exécution de la prestation).
 
 Durée estimée: 6 jours
 
@@ -19,9 +21,18 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Contexte
 
-Vous êtes un auditeur de sécurité pour ABC, une entreprise de 30 salariés spécialisée dans le développement de logiciels. L’entreprise utilise une infrastructure Windows Active Directory (AD) pour gérer les identités et les accès des utilisateurs. L’infrastructure AD est composée d'un seul controleur de domaine et d’un serveur Linux non intégré au domaine. L’entreprise a également développé une API REST personnalisée qui est utilisée par plusieurs applications internes. Votre tâche consiste à auditer la sécurité de l’infrastructure AD, du serveur Linux et de l’API REST pour identifier les vulnérabilités et les risques potentiels.
+Ce contexte est issu du Lab déjà mis en place.
 
-NB: *ce contexte est issu du Lab déjà mis en place*
+* Vous êtes un auditeur de sécurité pour ABC, une entreprise de 30 salariés spécialisée dans le développement de logiciels. 
+
+* L’entreprise utilise une infrastructure Windows Active Directory (AD) pour gérer les identités et les accès des utilisateurs. 
+
+* L’infrastructure AD est composée d'un seul contrôleur de domaine et d’un serveur Linux non intégré au domaine. 
+
+* L’entreprise a également développé une API REST en interne, qui est utilisée par plusieurs applications corporate. 
+
+Dans le cadre de son programme d'audit, vous serez amené à auditer certains composants du SI.
+
 
 ## Modalités pédagogiques
 
@@ -33,16 +44,14 @@ Relecture par le formateur du rapport d'audit finalisé
 
 ## Livrables
 
-* Diagramme de Gant ou Kanban détaillant la méthodologie que vous allez appliquer
-* Sorties de tous les outils cités en Ressources
 * Rapport d'audit répondant aux exigences du référentiel PASSI 
 
 
 ## Critères de performance
 
-Mesurer et analyser le niveau de sécurité de l’infrastructure.
+Participer à la mesure et à l’analyse du niveau de sécurité de l’infrastructure.
 
-     - Pertinence des vulnérabilités identifiées
+     - Pertinence et preuve des vulnérabilités identifiées
      - Justesse de l’évaluation de la criticité et gravité
 
 Participer à l’élaboration et à la mise en œuvre de la politique de sécurité
