@@ -24,10 +24,11 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 4. Créer un utilisateur admin (root/administrateur) + un utilisateur standard (non-admin) et local sur chaque machine
 5. Mettre en place les services sur l’AD et configurer la Workstation pour leur utilisation
     * DNS (Windows) : celui présent par défaut Domaine AD
-    * Web (Windows) : VulnerableLightApp doit être lancé et accessible via le réseau - le binaire contient déja un serveur Web (Kestrel)
-    * SSH (linux) : accessible aux membres du groupe sudoers
     * WinRM (Windows) : accessible uniquement aux administrateurs de l'AD et 
-    * 2 Partages SMB (Windows) ou Samba (Linux) : 1 partage "Readonly" + 1 partage accessible en écriture, sans authentification. 
+    * SMB (Windows) : 1 partage "Readonly" + 1 partage accessible en écriture, sans authentification. 
+    * Web (Linux) : VulnerableLightApp doit être lancé et accessible via le réseau - le binaire contient déja un serveur Web (Kestrel)
+    * SSH (Linux) : accessible aux membres du groupe sudoers
+
 
 6. exécution du script badblood: `. ./invoke-badblood.ps1`
 

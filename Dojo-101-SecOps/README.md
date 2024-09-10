@@ -278,8 +278,8 @@ Il est obligatoire de :
 
 ## Normes et cadre réglementaire
 
-* LPM : Loi de programmation militaire (OIV)
-* NIS : Network Information Security (OSE)
+* LPM : Loi de programmation militaire, qui concerne les opérateurs d'importance vitale (OIV)
+* NIS(2) : Network Information Security, qui concerne les opérateurs de services essentiels (OSE)
 * RGPD : Données personnelles
 * PCI : bancaire (payement)
 * HDS : Données de Santé
@@ -511,17 +511,6 @@ Les activités couvertes par le référentiel PASSI :
 - audit organisationnel et physique (ORGAPHY)
 
 [Source PASSI](https://cyber.gouv.fr/actualites/appel-public-commentaires-sur-la-mise-jour-du-referentiel-passi)
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-## Intégration des prestations dans le Software Development LifeCycle (SDLC)
-
-| Exigences | Conception | Développement | Déploiement | Maintenance |
-|---|---|---|---|---|
-|Analyse de risques| Audit d'architecture | Audit de Code | Test d'intrusion | Contrôles de sécurité |
-|Modélisation de menaces| Ateliers de sensibilisations sécurité | Audit de Configuration | | Audits périodiques |
-|Expression de besoin sécurité | | | | |
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

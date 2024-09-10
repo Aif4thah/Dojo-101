@@ -1,16 +1,24 @@
 # Développement sécurisé / DevSec basics
 
 
-### Référentiels et bonnes pratiques
+## Intégration des prestations dans le Software Development LifeCycle (SDLC)
 
-* [projets OWASP](https://owasp.org/projects/)
+| Exigences | Conception | Développement | Déploiement | Maintenance |
+|---|---|---|---|---|
+|Analyse de risques| Audit d'architecture | Audit de Code | Test d'intrusion | Contrôles de sécurité |
+|Modélisation de menaces| Ateliers de sensibilisations sécurité | Audit de Configuration | | Audits périodiques |
+|Expression de besoin sécurité | | | | |
+
+## Référentiels et bonnes pratiques
+
+* [Projets OWASP](https://owasp.org/projects/)
 
 * [Guides ANSSI](https://cyber.gouv.fr)
 
 * [Chaine DevOps](https://learn.microsoft.com/fr-fr/azure/cloud-adoption-framework/ready/considerations/devops-toolchain#azure-devops-and-github-toolchain)
 
 
-### énumeration des vulnréabilités et mauvaise pratiques
+## énumeration des vulnréabilités et mauvaise pratiques
 
 * [OWASP top 10](https://owasp.org/Top10/)
 
@@ -18,7 +26,7 @@
 
 * [liste des CWE](https://cwe.mitre.org/)
 
-### Rechercher des vulns spécifiques
+## Rechercher des vulns spécifiques
 
 * [cvemap](https://github.com/projectdiscovery/cvemap)
 
@@ -29,7 +37,7 @@
 .\cvemap.exe -l 100
 ```
 
-## notions de vulnérabilité
+## Notions de vulnérabilité
 
 Risque = Impact * Vraisemblance
 
@@ -41,52 +49,79 @@ Impact = Gravité, portée de l’incident sur les échelles et critères DICT
 
 Risque = Vuln + Menace + Impact
 
-## threats modeling	
+## threats modeling	helper
 
 1. What are we working on ?
+
 2. What can go wrong ?
+
 3. What are we going to do about it ?
+
 3. Did we do a good job ?
 
 * Assess Scope - What are we working on? This might be as small as a sprint, or as large as a whole system.
+
 * Identify what can go wrong - This can be as simple as a brainstorm, or as structured as using STRIDE, Kill Chains, or Attack Trees.
+
 * Identify countermeasures or manage risk - Decide what you’re going to do about each threat. That might be to implement a mitigation, or to apply the accept/transfer/eliminate approaches of risk management.
+
 * Assess your work - Did you do a good enough job for the system at hand?
 
 ## CIA Information security:
 
-1. Confidentiality		
-2. Integrity		
-3. Availability		
-4. Authenticity		
+1. Confidentiality
+
+2. Integrity
+
+3. Availability
+
+4. Authenticity
+
 5. Non repudiation		
+
 
 ## Security dilema	
 
 * functionality	
-* Usuability	
-* Security	
+
+* Usuability
+
+* Security
+
 
 ## Type of Policies	
 
-* Promiscuous	
-* Permissive	
-* Prudent	
+* Promiscuous
+
+* Permissive
+
+* Prudent
+
 * Paranoid	
 
 ## Oganisational security Documents			
 
-1. Policies			
-2. Standards			
-2. Guidelines (not mandatory)			
+1. Policies	
+
+2. Standards
+
+2. Guidelines (not mandatory)
+
 3. Procedures
+
 
 ## suivi des besoins sécurité
 
 1. Besoin de sécurité identifié par la sécurité
+
 2. Animation d'Atelier par la sécurité pour le projet
+
 3. Intégration au Backlog du projet
+
 4. Implémentation par le projet
+
+
 5. Recette sécurité par la sécurité
+
 6. Evaluation du risque résiduel par la sécurité
 retour à 1
