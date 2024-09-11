@@ -35,7 +35,7 @@ Ce contexte est issu du Lab déjà mis en place.
 
 * L’entreprise a également développé une API REST en interne, qui est utilisée par plusieurs applications corporate. 
 
-Dans le cadre de son programme d'audit, vous serez amené à auditer certains composants du SI
+Dans le cadre de son programme d'audit, vous serez amené à auditer certains composants du SI.
 
 ## Modalités pédagogiques
 

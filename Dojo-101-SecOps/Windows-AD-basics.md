@@ -56,6 +56,41 @@ name: NTDS.dit
 - Security Groups - These groups are used to specify permissions for a large number of users
 - Distribution Groups - These groups are used to specify email distribution lists. As an attacker these groups are less beneficial to us but can still be beneficial in enumeration
 
+### Connaitre le groupe d'un users:
+
+`dsquery user -name "michael" | dsget user -memberof -expand |findstr /I croadmins`
+	
+### Lister les user d'un group:
+
+`dsquery group -name "group" | dsget group -members -expand`
+
+## Étendue des groupes:	
+	
+### Local ou domaine
+
+Utilisable uniquement dans le domaine local. Un groupe avec une étendue de domaine peut contenir des groupes locaux, globaux ou universels.	
+Ils sont également utilisables sur des machines membres du domaine.
+	
+### Global :
+
+Un groupe global peut être intégré dans tous les domaines approuvés quelques en soit la nature (Domaine Active Directory, Domaine WINNT,
+autres forétsé). Un groupe global ne peut contenir que des objets du domaine.
+
+### Universel :
+
+Un groupe universel peut contenir des membres de n’importe quel domaine de la forêt et être utilisé dans tout domaine de la forêt. 
+La particularité des groupes universels est qu'ils sont stockés directement sur le catalogue global cependant seulement s'ils sont de type sécurité.
+
+## Ajouter un user d'un autre domaine dans un groupe:
+
+Onglet "General" des propriétés du groupe: passé le groupe à "universal" puis "domain local"
+	
+## Attribuer un privilège a un user:
+
+Stratégie de sécurité du contrôleur de domaine -> Paramètres de sécurité/Stratégies locales/Attribution des droits d'utilisateurs
+
+
+
 ## Default Security Groups - 
 
 - Domain Controllers - All domain controllers in the domain
@@ -88,6 +123,22 @@ name: NTDS.dit
 
 - Disable Windows Defender - Disables windows defender across all machine on the domain
 - Digitally Sign Communication (Always) - Can disable or enable SMB signing on the domain controller
+
+## GPO
+
+> ATTENTION apres changement d'OU les parametre de l'ancienne GPO ne disparaisse pas forcement !
+
+`rsop.msc`
+`gpresult /z`
+
+## Gerer les objets AD: 
+
+`adsiedit.msc`
+
+## Tester la connection avec le controleur de domaine:
+
+`nltest /sc_query:<domain>`
+
 
 
 ## Hybrid with Azure

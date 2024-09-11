@@ -33,6 +33,7 @@ Ce contexte est issu du Lab déjà mis en place.
 
 Dans le cadre de son programme d'audit, vous serez amené à auditer certains composants du SI.
 
+*NB : Concernant VulnerableLightApp, la partie applicative (Code) est hors scope, mais la configuration du service, son exposition et les risques pour l'OS sont à auditer)
 
 ## Modalités pédagogiques
 

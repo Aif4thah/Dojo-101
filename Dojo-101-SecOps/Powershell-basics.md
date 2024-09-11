@@ -22,11 +22,16 @@ apt install powershell
 pwsh 
 ```
 
-## version
+## Variable d'environnement
 
 ```powershell
+$pwd
+$env:COMPUTERNAME
+$env:USERNAME
+$env:USERDOMAIN
 $PsVersionTable
 $PsVersionTable.PSVersion
+$pid
 ```
 
 ## variables
@@ -36,6 +41,7 @@ $var = 'chaine de charactères'
 $var.gettype() #obtenir le type
 $var |gm #lister les membres (proprietés et fonctions)
 ```
+
 
 ## tableau
 
@@ -96,6 +102,7 @@ ls |%{ $_.FullName }
 ```powershell
 gcm *bitlocker*
 help Unlock-BitLocker
+help Unlock-BitLocker -ShowWindow
 alias %
 ```
 
@@ -493,9 +500,19 @@ Get-NimporteQuoi
 
 ### intefrité
 
+les hashs : 
+
 ```powershell
 "F68E37DC9CABF2EE8B94D6A5D28AD04BE246CCC2E82911F8F1AC390DCF0EE364" -eq (Get-FileHash .\test -Algorithm SHA256).Hash
 ```
+
+
+Signature des binaires :
+
+```powershell
+ Get-AuthenticodeSignature C:\Windows\System32\cmd.exe
+```
+
 
 ### certificats (quick and dirty)
 
