@@ -8,5 +8,5 @@ edition = "2021"
 [dependencies]
 walkdir = "2.3.2"
 regex = "1.5.4"
-reqwest = { version = "0.11", features = ["blocking", "json"] }
+reqwest = { version = "0.12", features = ["blocking", "json"] }
 
