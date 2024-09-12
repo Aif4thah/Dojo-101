@@ -1,10 +1,10 @@
-# RUST fonctions de sécurité
+# RUST basics et fonctions de sécurité
 
 démo des fonctions de sécurité de RUST
 
 ## Ressources
 
-[guide ANSSI](https://anssi-fr.github.io/rust-guide/)
+[Guide ANSSI](https://anssi-fr.github.io/rust-guide/)
 
 ## Compilation
 
@@ -12,7 +12,33 @@ démo des fonctions de sécurité de RUST
 rustc.exe .\Rust-security.rs
 ```
 
-### Script de démonstation
+## Créer un projet avec dépendances
+
+```powershell
+cargo.exe new myproject
+cargo add regex
+```
+
+Le code sera dans `main.rs`
+Les versions de dépendance sont alors spécifié dans le fichier `Cargo.toml`
+
+## Variables
+
+```rust
+let x = 5; // immuable
+let mut y = 5; // la valeur pourra etre modifiée
+```
+
+## lever une exception
+
+```rust
+panic!("crash and burn");
+```
+
+
+## Sécurité : Mémoire, Type, Threads
+
+Le script ci dessous 
 
 ```rust
 use std::thread;
@@ -96,3 +122,5 @@ fn concurrency() {
     println!("Result: {}", *counter.lock().unwrap());
 }
 ```
+
+### dépendances

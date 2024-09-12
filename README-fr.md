@@ -41,7 +41,7 @@ Les fichiers README et ceux comportant le mot-clé `bascis` contiennent les él�
 * [les bases de Linux](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Linux-Basics.md)
 * [les bases de powershell](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Powershell-basics.md)
 * [les bases de python](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Python-basics.md)
-* [les bases de la Radio](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-RF/RF-basics.md)
+* [les bases des radio-fréquences](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-RF/README.md)
 * [les bases de GitHub](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Github-basics.md)
 * [les bases de IA](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/IA-ML-basics.md)
 
