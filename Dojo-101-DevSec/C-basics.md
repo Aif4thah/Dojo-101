@@ -1,17 +1,20 @@
-/* C basics
+# C basics
 
 ## compilation sans protection:
 
+```sh
 gcc -fno-stack-protector -z execstack source.c
+```
+## package pour les librairies 32bits:
 
-## pbm de librairie 32bits:
-
+```
 sudo apt-get install gcc-multilib
+```
 
-*/
 
-// memento pointeur:
+## memento pointeur:
 
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -75,3 +78,20 @@ p2=     0x7ffffcf45570
 &p1=    0x7ffffcf45560
 &p2=    0x7ffffcf45568
 */
+```
+
+
+## passer root
+
+```c
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+  
+ int main(void) 
+{
+setreuid(geteuid(), geteuid());
+system("/bin/sh");
+return 0;
+}
+```

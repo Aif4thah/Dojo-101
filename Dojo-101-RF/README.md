@@ -74,6 +74,40 @@ Permets notamment d'en déduire la taille de l'antenne
 * f la fréquence (Hz)
 * T la période (s).
 
+```powershell
+function Get-AntSize {
+        <#
+    .SYNOPSIS
+        λ = c/f
+
+    .DESCRIPTION
+        Conversion Frequence -> Longeur d'antenne Quart d'onde
+
+    .PARAMETER frequency
+        Frequence en Hz
+
+    .OUTPUTS
+        Longueur d'ondes en metre et  taille de l'antenne quart d'onde en cm.
+
+    .EXAMPLE
+        $antennaSize = Get-AntennaSize -frequency 915000000 # pour une fréquence de 915 MHz
+    #>
+
+    param (
+        [Parameter(Mandatory=$true)]
+        [double]$frequency
+    )
+
+    $speedOfLight = 299792458 # célérité
+    $wavelength = $speedOfLight / $frequency # calculer la longueur d'onde
+    $antennaSize = ($wavelength / 4) * 100 # pour une antenne quart d'onde et en centimtre
+
+    Write-Host("λ (m) : $wavelength") -ForegroundColor DarkGray
+    Write-Host("Ant (cm) : $antennaSize") -ForegroundColor White
+
+}
+```
+
 
 ## SDR software define radio
 
@@ -97,6 +131,55 @@ Permets notamment d'en déduire la taille de l'antenne
 | autre | USB | Upper Side Band = Bande Latérale Supérieure ||
 | autre | LSB | Lower Side Band = Bande Latérale Inférieure ||
 | autre | SSB | Single Side Band = Bande Latérale Unique (BLU) ||
+
+
+### Exemple de modulation BFSK random via DSP : 
+
+```python
+#!/usr/bin/env python
+# from: https://pysdr.org/content/iq_files.html, modifié pour hackrf
+
+import sys
+import numpy as np
+import matplotlib.pyplot as plt
+
+def write_iq(iqfile):
+    """
+    In Python, and numpy specifically, we use the tofile() function to store a numpy array to a file. 
+    Here is a short example of creating a simple BPSK signal plus noise and saving it to a file in the same directory we ran our script from:
+    """
+
+    num_symbols = 10000
+    x_symbols = np.random.randint(0, 2, num_symbols)*2-1 # -1 and 1's
+    r = x_symbols
+
+    # NOISE (comment if not needed)
+    n = (np.random.randn(num_symbols) + 1j*np.random.randn(num_symbols))/np.sqrt(2) # AWGN with unity power
+    r = x_symbols + n * np.sqrt(0.01) # noise power of 0.01
+
+    # plot
+    print(r)
+    plt.plot(np.real(r), np.imag(r), '.')
+    plt.grid(True)
+    plt.show()
+
+    # Now save to an IQ file
+    r = r.astype(np.complex64) # Convert to 64
+    r.tofile(iqfile +'.iq')
+    """
+    to Read the file:
+    samples = np.fromfile('bpsk_in_noise.iq', np.complex64)
+    """
+
+    # file for hackrf one
+    output_int = np.empty((len(r) * 2,), dtype=np.int8)
+    output_int[0::2] = np.round(r.real)
+    output_int[1::2] = np.round(r.imag)
+    output_int.tofile(iqfile + ".cs8")
+
+if __name__ == "__main__":
+    write_iq("out")
+```
 
 
 ## Encodage
@@ -201,3 +284,101 @@ voir les scripts pour aller plus loin
 ## SDR disponible en RX depuis internet
 
 [WebSDR](http://websdr.org/)
+
+
+### Confidentialité
+
+
+Exemple sommaire de chiffrement d'un message avant envoi:
+
+> attention: contrairement à la clé les IV ne devrait pas être réutilisés.
+
+utilisation:
+
+```powershell
+
+function Generer-cle {
+
+    $AESKey = New-Object Byte[] 32
+    [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($AESKey)
+    return $AESKey
+
+}
+
+
+function Generer-IV {
+
+    $IV = New-Object Byte[] 16
+    [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($IV)
+    return $IV
+
+}
+
+
+function Chiffrer-message
+{
+    param(
+    [Parameter(Mandatory=$true, Position=0)]
+    [ValidateNotNullOrEmpty()]
+    [string] $Message,
+
+    [Parameter(Mandatory=$true, Position=1)]
+    [System.Byte[]] $Key,
+  
+    [Parameter(Mandatory=$true, Position=2)]
+    [Byte[]] $IVs
+
+    )
+
+$AES = New-Object System.Security.Cryptography.AesCryptoServiceProvider
+$AES.Key = $Key
+$AES.IV = $IVs
+$AES.Mode = "CBC"
+$Encryptor = $AES.CreateEncryptor()
+$EncryptedBytes = $Encryptor.TransformFinalBlock([Text.Encoding]::UTF8.GetBytes($Message), 0, $Message.Length)
+return [BitConverter]::ToString($EncryptedBytes) -replace '-', ''
+
+}
+
+
+## déchiffrement
+
+function Dechiffrer-message
+{
+    param(
+    [Parameter(Mandatory=$true, Position=0)]
+    [ValidateNotNullOrEmpty()]
+    [string] $EncryptedString,
+
+    [Parameter(Mandatory=$true, Position=1)]
+    [System.Byte[]] $Key,
+
+    [Parameter(Mandatory=$true, Position=2)]
+    [Byte[]] $IVs
+
+    )
+
+$EncryptedBytes = [byte[]]::new($EncryptedString.Length / 2)
+for ($i = 0; $i -lt $EncryptedBytes.Length; $i++) {
+    $EncryptedBytes[$i] = [Convert]::ToByte($EncryptedString.Substring($i * 2, 2), 16)
+}
+$AES = New-Object System.Security.Cryptography.AesCryptoServiceProvider
+$AES.Key = $Key
+$AES.Mode = "CBC"
+$AES.IV = $IVs
+$Decryptor = $AES.CreateDecryptor()
+$DecryptedBytes = $Decryptor.TransformFinalBlock($EncryptedBytes, 0, $EncryptedBytes.Length)
+return [Text.Encoding]::UTF8.GetString($DecryptedBytes)
+
+}
+```
+
+utilisation :
+
+```powershell
+$aes = Generer-cle
+$iv = generer-iv                                      
+$msgchiffre = Chiffrer-message -Message "test" -Key $aes -IVs $iv
+$msgchiffre
+Dechiffrer-message -EncryptedString $msgchiffre -Key $aes -IVs $iv
+```

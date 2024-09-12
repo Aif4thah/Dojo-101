@@ -1,9 +1,13 @@
-# Authentication
+# Revue de code
+
+Quelques exemples pour une revue de code manuelle, peut compléter une revue SAST automatique.
+
+## Authentication
 
 1. Cleartext password
 2. Weak hashs, Weak Algorithms
 
-```regex
+```txt
 [A-Fa-f0-9]{5,64}
 password
 passwd
@@ -20,6 +24,7 @@ salt
 authent
 user
 form
+admin
 ```
 
 ## spring security
@@ -43,7 +48,7 @@ AuthTokenFilter;
 ```
 
 
-# Session management
+## Session management
 
 1. How sessions are handled
 
@@ -52,7 +57,7 @@ cookie
 session
 ```
 
-# Privilèges
+## Privilèges
 
 1. least privilege policy
 
@@ -66,7 +71,7 @@ runas
 ```
 
 
-# SQL
+## SQL
 
 1. prepared statement
 
@@ -85,7 +90,7 @@ exec
 ```
 
 
-# Inputs
+## Inputs
 
 1. Assume all imput is potentially malicious
 2. Code Injection
@@ -130,12 +135,12 @@ configure(HttpSecurity
 ```
 
 
-# Url:
+## Url:
 
 1. Encryption
 2. Servers/Clients is authenticated ?
 
-```regex
+```txt
 (https?|ftp|file)://(.*)
 url
 URI
@@ -143,11 +148,11 @@ request
 ```
 
 
-# Other Bad Practices:
+## Other Bad Practices:
 
 1. Code injection
 
-```
+```txt
 eval
 toString
 setInterval
@@ -165,9 +170,9 @@ getId
 ```
 
 
-# Process:
+## Process:
 
-```regex
+```txt
 POST
 request
 response
@@ -180,17 +185,25 @@ fwd //le parametre redirige vers une fonction
 ```
 
 
-# Files io:
+## Files io:
 
-```regex
+```txt
 file
-AbsolutePath (peut etre bypassé, utiliser CanonicalPath)
+AbsolutePath
+StreamTokenizer
+Random
+File
+AsStream
+rename
+writer
+Walker
+Dir
 ```
 
 
 # Configurations:
 
-```file
+```txt
 *.xml
 *.yml
 *.conf
@@ -249,6 +262,38 @@ readObject
 Serialize.java //fichier
 @RequestBody //maps the HttpRequest body to a transfer or domain object, enabling automatic deserialization
 @ResponseBody //tells a controller that the object returned is automatically serialized into JSON and passed back into the HttpResponse object.
+serializ
+.*readObject\(.*
+java.beans.XMLDecoder
+com.thoughtworks.xstream.XStream
+.*\.fromXML\(.*\)
+com.esotericsoftware.kryo.io.Input
+.readClassAndObject\(.*
+.readObjectOrNull\(.*
+com.caucho.hessian.io
+com.caucho.burlap.io.BurlapInput
+com.caucho.burlap.io.BurlapOutput
+org.codehaus.castor
+Unmarshaller
+jsonToJava\(.*
+JsonObjectsToJava\/.*
+JsonReader
+ObjectMapper\(
+enableDefaultTyping\(\s*\)
+@JsonTypeInfo\(
+readValue\(.*\,\s*Object\.class
+com.alibaba.fastjson.JSON
+JSON.parseObject
+com.owlike.genson.Genson
+useRuntimeType
+genson.deserialize
+org.red5.io
+deserialize\(.*\,\s*Object\.class
+\.Yaml
+\.load\(.*
+\.loadType\(.*\,\s*Object\.class
+YamlReader
+com.esotericsoftware.yamlbeans'
 ```
 
 
@@ -275,7 +320,7 @@ yaml.load()
 
 # Race Conditions:
 
-```regex
+```txt
 Thread
 Dispose
 ```
@@ -284,7 +329,7 @@ Dispose
 
 # Erreurs trop verbeuses:
 
-```regex
+```txt
 try
 ```
 
@@ -297,9 +342,9 @@ Diagnostic
 ```
 
 
-# BOF (à completer si revue de code en C/C++,Objective C):
+# BOF (à compléter si revue de code en C/C++,Objective C):
 
-```regex
+```txt
 Buff
 ```
 
@@ -313,7 +358,7 @@ Buff
 
 1. find regex in code:
 
-```regex
+```txt
 regex
 pattern
 compile

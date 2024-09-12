@@ -7,13 +7,13 @@ use reqwest::blocking::Client;
 fn main() {
     let current_dir = std::env::current_dir().unwrap();
     let parent_dir = current_dir.parent().unwrap();
-    println!("\n[*] Parent directory: {:?}", parent_dir);
+    println!("\n[*] Dojo 101 path: {:?}", parent_dir);
 
     // 1. Affiche le nombre de fichiers, les fichiers qui ne sont pas au format markdown, et les 5 plus vieux fichiers
     let mut files = vec![];
     let mut non_markdown_files = vec![];
 
-    for entry in WalkDir::new(&parent_dir).min_depth(1).max_depth(3) {
+    for entry in WalkDir::new(&parent_dir).min_depth(2).max_depth(3) {
         let entry = entry.unwrap();
         let path = entry.path();
 
@@ -35,7 +35,7 @@ fn main() {
         }
     }
     
-    println!("\n[*] Number of files with dojo-101 content : {}", files.len());
+    println!("\n[*] Dojo-101 content files : {}", files.len());
     println!("\n[*] Non-markdown files: {:?}", non_markdown_files);
 
     files.sort_by_key(|path| {

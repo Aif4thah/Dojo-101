@@ -1,6 +1,6 @@
 # Audit de sécurité d’un OS Windows en env. AD
 
-Vous êtes chargé d’auditer la configuration d’une machine Windows, vis-à-vis des bonnes pratiques de l'ANSSI et afin de corriger les possibles vulnérabilités
+Vous êtes chargé d’auditer la configuration d’une machine Windows cliente et de son Serveur Active Directory, vis-à-vis des bonnes pratiques de l'ANSSI et afin de corriger les possibles vulnérabilités
 
 Le rapport d’audit permettra d’identifier les vulnérabilités, leurs criticités ainsi que les préconisations de sécurité conformément au référentiel PASSI (partie exécution de la prestation)
 
