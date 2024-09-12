@@ -16,6 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - working-directory: ./quality
     - name: Build
       run: cargo build --verbose
     - name: Run tests
