@@ -16,11 +16,20 @@
  
 | Chemin | Description |
 |--------|-------------|
-| /system | system et applications préinstallées|
+| /boot | Kernel |
+| /system | ROM system et applications préinstallées|
 | /data | données utilisateurs, dont contact et messages |
 | /sdcard | données externes ou internes, fichiers multimédias et documents |
-| /cache | Fichiers temporaires |
-| /data | Données des Applications |
+| /cache | Fichiers et données applicatives temporaires |
+| /data | Données utilisateur |
+| /data/data | Données des applications |
+| /dev | Devices |
+| /mnt/asec | applications chiffrées |
+| /mnt/emmc | carte SD interne |
+| /mnt/sdcard | carte SD externe |
+| /proc | process |
+| /recovery | pour le mode restauration |
+
 
 ## Type d'autorisations d'applications
 
