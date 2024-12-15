@@ -69,11 +69,12 @@
 * La note de rançon dans tous ses formats (txt, hta, html, etc.)
 
 
-## Ajouter le timestamp au prompt : 
+## Ajouter le timestamp au prompt et sauvegarder la session : 
 
 ```powershell
 function prompt {
     $timestamp = Get-Date -Format "yyyy-MM-ddTHH:mm:ss"
     "$timestamp PS > "
 }
+Start-Transcript -Path Artefacts/Timeline.txt
 ```

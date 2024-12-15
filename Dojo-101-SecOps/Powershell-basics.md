@@ -15,6 +15,13 @@ commentaires
 #>
 ```
 
+## Logs et historique
+
+```powershell
+Get-WinEvent -LogName "Microsoft-Windows-PowerShell/Operational"
+Get-Content ~\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+```
+
 ## installation sous linux
 
 ```bash
