@@ -75,7 +75,7 @@ Tout ce que vous exposez à vos adversaires
 
 ```mermaid
 flowchart TD
-    A{Attaquant} -->|A rchitecture | B(Système d'Information cible)
+    A{Attaquant} -->|Architecture | B(Système d'Information cible)
     A --> | Serveurs |B
     A --> | Services |B
     A --> | Applications |B

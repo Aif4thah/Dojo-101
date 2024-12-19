@@ -32,9 +32,9 @@
 
 ## Si la machine est éteinte
 
-1. Ne pas l'allumer.
+1. Ne pas l'allumer
 
-2. Copier le disque.
+2. Copier le disque
 
 ## Copie du Disque
 
@@ -68,6 +68,12 @@
 
 * La note de rançon dans tous ses formats (txt, hta, html, etc.)
 
+
+## Calul d'integrité
+
+```powershell
+Get-FileHash -alg SHA256 .\Artefact.zip
+```
 
 ## Ajouter le timestamp au prompt et sauvegarder la session : 
 
