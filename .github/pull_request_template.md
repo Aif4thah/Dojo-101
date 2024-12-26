@@ -1,0 +1,1 @@
+Please read the [CONTRIBUTING.md file](https://github.com/Aif4thah/Dojo-101/blob/main/CONTRIBUTING.md)
