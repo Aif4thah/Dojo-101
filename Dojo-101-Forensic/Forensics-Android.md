@@ -213,11 +213,14 @@ téléchargement des documents utilisateur
 
 ## Analyse des applications suspectes
 
+
 * Peut se faire localement avec `Google Play Protect` depuis le Play Store
 
 * Revue des permissions localement via `Paramètres` -> `Applications` et `Paramètres` -> `Sécurité et Confidentialité`, mieux vaut privilégier `adb`.
 
 * Signatures des Apps ou Fichiers suspects : à mettre sur `VirusTotal` ou [Pestudio](https://www.winitor.com/download) une fois l'APK téléchargée via `adb`
+
+* Analyse plus complète via [pithus](https://beta.pithus.org/)
 
 ```powershell
 .\adb.exe pull /data/app/chemin/base.apk base.apk
@@ -229,8 +232,6 @@ téléchargement des documents utilisateur
 * [google security checkup](myaccount.google.com/security-checkup)
 
 * [Support Google](https://support.google.com/accounts/answer/6294825?)
-
-
 
 
 

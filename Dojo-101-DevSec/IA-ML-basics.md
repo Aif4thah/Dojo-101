@@ -117,4 +117,8 @@
 * ou en auto hébergée
 
 
+## Tips
 
+### Copilot
+
+* Info sur une conversation Copilot pour remontée de bug : `/id`
