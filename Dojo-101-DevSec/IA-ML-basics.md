@@ -2,7 +2,7 @@
 
 ## ressources
 
-[Guide ANSSI](https://cyber.gouv.fr/publications/recommandations-de-securite-pour-un-systeme-dia-generative)
+* [Guide ANSSI](https://cyber.gouv.fr/publications/recommandations-de-securite-pour-un-systeme-dia-generative)
 
 
 ## Concepts
@@ -48,13 +48,13 @@
 
 * Infection,  corruption du modèle, data poisonning, Injection de contexte (par exemple : faire lire au serveur le contenu d'un fichier sensible ou malveillant qui sera ajouté au modèle et modifiera les réponses de l'IA.)
 
-* Manipulation / Fonctionnalité non prévue
+* Manipulation du modèle / fonctionnalité non prévue : par exemple faire compléter des mots ou des listes, jusqu'a obtenir un comportement imprévu ou non prévu par le modèle.
 
-* Fuite de données sensibles du fait du Modèle ou de l'absence de restriction
+* Fuite de données sensibles ou protegées du fait du Modèle ou de l'absence de restriction
 
 
 
-### protection du modèle
+### protection du modèle pour des requêtes éfficaces
 
 
 * Informer de spécificité de la mission / requete
@@ -67,7 +67,7 @@
 
 
 
-## Chat GPT - OpenAI / Microsoft - Copilot
+## Chat GPT - OpenAI & Microsoft - Copilot
 
 
 * Questions generalistes
@@ -76,9 +76,12 @@
 
 * toujours besoin de vérifier les infos
 
+### Tips
+
+* Info sur une conversation Copilot pour remontée de bug : `/id`
+
 
 ### Github Copilot
-
 
 * Disponible pour Visual Studio Code, Visual Studio, Neovim, JetBrains
 
@@ -116,9 +119,3 @@
 
 * ou en auto hébergée
 
-
-## Tips
-
-### Copilot
-
-* Info sur une conversation Copilot pour remontée de bug : `/id`
