@@ -30,6 +30,8 @@ FHSS : Frequency Hopping Spread Spectrum
 | WPA3 | SAE+FS/PFS | AES-CCMP/AES-GCMP | 48 | 128..256 |
 | WPA3 entreprise | 802.1X/EAP | GCMP | AES |||
 
+> Attention à WPA3-personal, censé renforcer WPA2, certaines vulnérabilités sont connues via le protocole SAE. (ex : CertID VU871675, CVE-2019-9494, CVE-2019-9494, CertID VU871675)
+
 ## Canaux
 
 | Freq | nb | pas |
