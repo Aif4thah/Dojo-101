@@ -17,8 +17,10 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 Vous êtes RSSI (Responsable de la sécurité des Systèmes d'information) pour ABC, une entreprise de 30 salariés spécialisée dans le développement de logiciels. 
 
-* L’entreprise utilise une infrastructure Windows Active Directory (AD) pour gérer les identités et les accès des utilisateurs. 
-* L’infrastructure AD est composée d'un seul contrôleur de domaine et d’un serveur Linux non intégré au domaine. 
+* L’entreprise utilise une infrastructure Windows Active Directory (AD) pour gérer les identités et les accès des utilisateurs.
+
+* L’infrastructure AD est composée d'un seul contrôleur de domaine et d’un serveur Linux non intégré au domaine.
+
 * L’entreprise a également développé une API REST personnalisée qui est utilisée par plusieurs applications internes.
 
 Note: *Le périmètre technique est celui du Lab*
