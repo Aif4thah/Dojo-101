@@ -2,7 +2,7 @@
 
 Vous êtes chargé d'aider les équipes Dev à remédier aux vulnérabilités sur le BackEnd de l'application .NET qui tourne sur notre serveur ultra sensible
 
-Durée: 6 jours
+Durée: 10 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
@@ -43,7 +43,7 @@ Binôme ou seul (au choix)
 
 * Test du script ou des templates
 
-* Lecture du KanBan
+* Lecture du KanBan et du Fork du projet
 
 
 ## Livrables
@@ -51,6 +51,8 @@ Binôme ou seul (au choix)
 * Script ou templates Nuclei
 
 * Kanban
+
+* Lien vers le fork du dépot
 
 
 ## Critères de performance

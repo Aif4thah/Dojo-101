@@ -1,9 +1,10 @@
-# Brouillage et résilience d’un point d’accès Wifi
+# Sécurité des réseaux sans fils 
 
-Software Defined Radio 
+Software Defined Radio, Wifi, Rogue AP, Brouillage
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
+Durée: 1 jour
 
 ## Ressources
 

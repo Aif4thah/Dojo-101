@@ -2,7 +2,7 @@
 
 Vous êtes chargé de procéder à un audit sur le Dépot Github du BackEnd de l'application .NET.
 
-Durée: 3 jours
+Durée: 5 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
