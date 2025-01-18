@@ -7,13 +7,21 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Ressources
 
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
-Dossier Toolbox RF
+* Dossier Toolbox RF
 
-Video jam wifi
+* Fichiers PCAP Wifi
+
+* Video jam wifi
 
 ## Contexte
+
+### Analyse Pcap
+
+1. Analyzer les pcap wifi et documenter les vulnérabilités connues
+
+### jamming 
 
 1. Identifier le canal Wifi de la cible 
 2. Trouver la fréquence correspondante
@@ -22,6 +30,12 @@ Video jam wifi
 
 * La puissance du HackRF étant limitée, il faut placer l’antenne à proximité (1 à 3 mètres)
 
+### Rogue AP
+
+1. Monter un rogue access point avec les moyens du bord (Téléphone, Machine Linux)
+2. Toujours avec les moyens du bord (PC / HackRF) comment le détecter ?
+3. À l'aide de l'antenne directionnelle du HackRF, trouver son emplacement.
+
 
 ## Modalités pédagogiques
 
@@ -29,11 +43,11 @@ Binôme
 
 ## Modalités d'évaluation
 
-* présentation ou Livrable
+* présentation ou livrable
 
 ## Livrables
 
-* screenshots
+* Document pdf ou markdown avec screenshots
 
 ## Critères de performance
 
@@ -41,8 +55,9 @@ Binôme
 
 # HW
 
-HackRF (Facultatif: antenne directionnelle)
-Point d’accès Wifi
+* HackRF (Facultatif: antenne directionnelle)
+
+* Point d’accès Wifi
 
 ## Pour finir
 
