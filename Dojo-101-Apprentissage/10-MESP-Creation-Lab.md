@@ -2,7 +2,7 @@
 
 Ce lab vous servira pour les mises en situations professionnelles
 
-Durée estimée: 2 jours
+Durée estimée: 3 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
@@ -56,9 +56,9 @@ Binôme ou seul (au choix)
 
 > Attention les éléments mis en place contiennent des vulnérabilités (indispensables pour l'apprentissage), il faudra par précaution:
 
+ * Les mots de passe sont dans un gestionnaire de secrets (ex: Keepass)
  * Mettre à jour l'hyperviseur
- * Isoler au maximum le serveur Windows une fois que le nécessaire est installé
- * Limiter l'exposition des VM à l'hôte ou au réseau local, les éteindre lorsqu'on ne s'en sert pas.
+ * Limiter l'exposition des VM à l'hôte ou au réseau local en NAT lors des mises à jour, les éteindre lorsqu'on ne s'en sert pas.
  * Supprimer immédiatement les VM en cas de doute sur leur intégrité
 
 
@@ -68,9 +68,16 @@ vérification des captures d'écran
 
 ## Livrables
 
-* Captures d'écran
+Rédiger un document d'architecture technique (DAT) avec : 
+
+* Un schéma réseau, incluant les VM, l'Hyperviseur et les switchs virtuels
+
+* Un tableau avec la liste des comptes utilisés pour l'administration et l'emplacement du gestionnaire de secrets contenant les mots de passe.
+
+* La présentation des éléments suivants, avec captures d'écran
 
     * Vérification des intégrités des images téléchargées avant l'installation
+    * Mises à jour réussies
     * le statut des services DNS et Web
     * connexions SSH et WinRM réussies (Connexion + commande `whoami`)
     * Permissions et statut du partage SMB ou Samba
