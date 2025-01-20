@@ -1,4 +1,4 @@
-# Sécurité des réseaux sans fils 
+# Sécurité des réseaux sans fils
 
 Software Defined Radio, Wifi, Rogue AP, Brouillage
 
@@ -12,7 +12,7 @@ Durée: 1 jour
 
 * Dossier Toolbox RF
 
-* Fichiers PCAP Wifi
+* Fichiers de captures Wifi
 
 * Video jam wifi
 
@@ -20,22 +20,28 @@ Durée: 1 jour
 
 ### Analyse Pcap
 
-1. Analyzer les pcap wifi et documenter les vulnérabilités connues
+1. Analyzer les fichiers `pcap`
+2. Quelles sont les vulnérabilités connues pour ces protocoles Wifi ?
+3. Quels autres protocoles recommanderiez-vous pour une entreprise ?
 
-### jamming 
+### jamming et résilience 
+
+> La puissance du HackRF étant limitée, il faut placer l’antenne à proximité (quelques mètres) pour réaliser le brouillage
 
 1. Identifier le canal Wifi de la cible 
 2. Trouver la fréquence correspondante
-3. Tester le brouillage* pour empêcher la communication
+3. Tester le brouillage pour empêcher la communication
 4. Observer si la fréquence et le canal de la cible changent
 
-* La puissance du HackRF étant limitée, il faut placer l’antenne à proximité (1 à 3 mètres)
 
 ### Rogue AP
 
+> L'antenne directionnelle contient une âme (centre coaxial) de fortune pour pouvoir être utilisée avec le HackRF, il faut l'enlever pour l'utiliser avec une carte Wifi classique, SVP soyez extrêmement soigneux pour préserver le matériel.
+
 1. Monter un rogue access point avec les moyens du bord (Téléphone, Machine Linux)
-2. Toujours avec les moyens du bord (PC / HackRF) comment le détecter ?
-3. À l'aide de l'antenne directionnelle du HackRF, trouver son emplacement.
+2. Toujours avec les moyens du bord (Carte Wifi / HackRF), comment le détecter ?
+3. Optionnel : À l'aide d'une antenne directionnelle, trouver son emplacement.
+
 
 
 ## Modalités pédagogiques
@@ -52,9 +58,9 @@ Binôme
 
 ## Critères de performance
 
-* réussite
+* réussite des actions demandées.
 
-# HW
+## HardWare
 
 * HackRF (Facultatif: antenne directionnelle)
 
