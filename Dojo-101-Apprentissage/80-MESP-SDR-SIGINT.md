@@ -9,10 +9,16 @@ Durée: 1 jour
 ## Ressources
 
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+
 * Démo/vidéo analyse de spectre
+
 * Démo/vidéo antenne directionnelle
+
 * Dossier Toolbox RF pour une utilisation locale
+
 * [ou SDR en ligne](http://websdr.org/)
+
+* [HackRF](https://greatscottgadgets.com/hackrf/one/)
 
 
 

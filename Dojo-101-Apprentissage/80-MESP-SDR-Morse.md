@@ -10,6 +10,8 @@ Durée: 0.5 jour
 
 * Dossier Toolbox RF
 
+* [HackRF](https://greatscottgadgets.com/hackrf/one/)
+
 
 ## Contexte
 

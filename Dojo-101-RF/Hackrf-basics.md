@@ -4,6 +4,8 @@
 
 * [OFFICIAL DOCUMENTATION](https://hackrf.readthedocs.io/en/latest/)
 
+* [HackRF](https://greatscottgadgets.com/hackrf/one/)
+
 ## Caractéristiques
 
 | chars | valeur |

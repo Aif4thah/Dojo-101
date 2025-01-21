@@ -15,6 +15,8 @@ Durée: 0.5 jour
 
 * [Application "phybox"](https://phyphox.org/)
 
+* [HackRF](https://greatscottgadgets.com/hackrf/one/)
+
 
 ## Contexte
 

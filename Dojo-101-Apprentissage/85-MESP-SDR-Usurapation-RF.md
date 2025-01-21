@@ -15,6 +15,8 @@ Durée: 0.5 jour
 
 * Fichier CS8 - contenu dans Toolbox RF ou transmis pas le formateur
 
+* [HackRF](https://greatscottgadgets.com/hackrf/one/)
+
 
 ## Contexte
 

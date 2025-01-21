@@ -13,6 +13,8 @@ Durée: 0.5 jour
 
 * [PhyBox](https://phyphox.org/)
 
+* [HackRF](https://greatscottgadgets.com/hackrf/one/)
+
 ## Contexte
 
 1. Couper toutes connexions autres que le GPS / Localisation
