@@ -1,6 +1,6 @@
 # Mettre en place un environnement de test (Lab)
 
-Ce lab vous servira pour les mises en situations professionnelles
+L'objectif de ce Lab est de créer un environnement à la fois vulnérable et réaliste par rapport aux services disponibles en entreprise. Nous avons un service Windows AD pour l'administration bureautique et un serveur Linux contenant une application métier.
 
 Durée estimée: 3 jours
 
@@ -14,6 +14,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * [ISO Microsoft](https://www.microsoft.com/fr-fr/evalcenter)
 * [ISO Linux Debian](https://www.debian.org/index.fr.html)
 * [WinRM](https://learn.microsoft.com/fr-fr/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)
+* [Modèles DAT](https://github.com/bflorat/modele-da)
 
 ## Contexte
 
@@ -82,6 +83,8 @@ Rédiger un document d'architecture technique (DAT) avec :
     * connexions SSH et WinRM réussies (Connexion + commande `whoami`)
     * Permissions et statut du partage SMB ou Samba
     * le nombre d'utilisateurs contenus dans l'AD
+
+* Tout autre élément que vous jugerez pertinant
 
 
 ## Critères de performance
