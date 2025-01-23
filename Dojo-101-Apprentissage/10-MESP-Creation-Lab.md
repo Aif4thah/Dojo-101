@@ -84,6 +84,8 @@ Rédiger un document d'architecture technique (DAT) avec :
     * Permissions et statut du partage SMB ou Samba
     * le nombre d'utilisateurs contenus dans l'AD
 
+* Un Diagramme de Gantt ou un Kanban de votre réalisation pour la partie gestion de projet.
+
 * Tout autre élément que vous jugerez pertinant
 
 
