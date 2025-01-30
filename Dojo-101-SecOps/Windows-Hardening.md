@@ -30,10 +30,10 @@
 
 ## Microsoft Security Compliance Toolkit (MSCT)
 
+
 * [MSCT](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10)
 
 * [Download](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
-
 
 * Permets d'appliquer une **baseline** par GPO localement (même sans domaine AD, grâce à LGPO.exe) avec les recommandations de Microsoft. 
 
@@ -41,6 +41,10 @@
 
 * Des scripts pour MS365 et Edge sont également disponibles.
 
+
+### Prérequis 
+
+* RSAT et module GroupPolicy
 
 ### Comparer les GPOs
 

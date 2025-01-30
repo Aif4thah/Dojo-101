@@ -22,9 +22,7 @@
 
 1. Entrainement : création du modèle, affinage, tests, etc.
 
-
 2. Déploiement : **Test et Audit de sécurité**, build, intégration, mise en prod
-
 
 3. Production : MCO/MCS (Maintien en conditions opérationnelles et de sécurité)
 
@@ -46,12 +44,11 @@
 
 * Injections classiques (Saisies utilisateurs non nettoyées, XSS, CSRF prompt injection, etc.)
 
-* Infection,  corruption du modèle, data poisonning, Injection de contexte (par exemple : faire lire au serveur le contenu d'un fichier sensible ou malveillant qui sera ajouté au modèle et modifiera les réponses de l'IA.)
+* Infection,  corruption du modèle, data poisonning, Injection de contexte. Par exemple : faire lire au serveur le contenu d'un fichier sensible ou malveillant qui sera ajouté au modèle et modifiera les réponses de l'IA.
 
-* Manipulation du modèle / fonctionnalité non prévue : par exemple faire compléter des mots ou des listes, jusqu'a obtenir un comportement imprévu ou non prévu par le modèle.
+* Manipulation du modèle / fonctionnalité non prévue. Par exemple faire compléter des mots ou des listes, jusqu'a obtenir des informations ou un comportement non prévu par le modèle.
 
 * Fuite de données sensibles ou protegées du fait du Modèle ou de l'absence de restriction
-
 
 
 ### protection du modèle pour des requêtes éfficaces
@@ -66,9 +63,7 @@
 * Donner des tâches `1. <...>, 2. <...>, 3. <...>`
 
 
-
 ## Chat GPT - OpenAI & Microsoft - Copilot
-
 
 * Questions generalistes
 
@@ -76,10 +71,9 @@
 
 * toujours besoin de vérifier les infos
 
-### Tips
+### Copilot
 
-* Info sur une conversation Copilot pour remontée de bug : `/id`
-
+* Info de session : `/id`
 
 ### Github Copilot
 
@@ -88,7 +82,6 @@
 
 
 ## ML.NET - Technologie .NET pour le Machine Learning
-
 
 * Pour les projets .NET / C#
 
@@ -102,7 +95,6 @@
 
 ## Azure ML et Azure AI services
 
-
 * ML -> permet notamment de publier une API à partir du modèle ML entrainé
 
 * IA -> dont la recherche cognitive qui permet d'indexer et rechercher des données (notamment à partir de texte afin de sortir le sentiment global et les mots clés)
@@ -112,10 +104,8 @@
 
 ## Mistral AI
 
-
 * [site MISTRAL AI](https://mistral.ai/)
 
-* API facturé à l'usage
+* API facturé à l'usage ou en auto hébergée
 
-* ou en auto hébergée
 
