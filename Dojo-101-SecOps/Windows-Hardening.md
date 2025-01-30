@@ -21,6 +21,8 @@
 
 ## Windows StandAlone
 
+* [HardeningKitty](https://github.com/0x6d69636b/windows_hardening)
+
 * [Privesc](https://github.com/carlospolop/PEASS-ng)
 
 * [Privesc bins](https://lolbas-project.github.io/)
@@ -29,7 +31,6 @@
 
 
 ## Microsoft Security Compliance Toolkit (MSCT)
-
 
 * [MSCT](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10)
 
