@@ -274,6 +274,14 @@ volumes:
   caddy-logs:
 ```
 
+### lancement
+
+```sh
+docker compose pull && docker compose up
+```
+
+ou
+
 ```sh
 docker compose up -d
 ```
