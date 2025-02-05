@@ -68,7 +68,10 @@ Binôme ou seul (au choix)
 
 ## Modalités d'évaluation
 
-vérification des captures d'écran
+* Vérification du DAT
+
+* Présentation orale
+
 
 ## Livrables
 
