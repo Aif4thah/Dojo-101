@@ -49,19 +49,21 @@ NB: *ce contexte est issu du Lab déjà mis en place*
 
 6. Automatiser l'installation et le lancement d'un site Web, qui affichera votre "nom-prenom" ou "nom du groupe" lorsqu'on fera une requête web depuis la machine hôte. (techno de votre choix)
 
-7. Pousser votre travail sur un repo github.
+7. Le conteneur devra partager un volume avec l'OS hote pour pouvoir mettre à jour des fichiers.
 
-8. Les tests de build doivent se faire automatiquement lors du push sur GitHub
+8. Pousser votre travail sur un repo github.
 
-9. Optionel : Mettre à disposition votre container (Docker Hub / Registry)
+9. Les tests de build doivent se faire automatiquement lors du push sur GitHub
 
-10. Appliquer les bonnes pratiques de sécurité issues du Guide docker ANSSI 
+10. Optionel : Mettre à disposition votre container (Docker Hub / Registry)
 
-11. Exporter les logs sur la machine hôte afin de garder les traces en cas de suppression de containers
+11. Appliquer les bonnes pratiques de sécurité issues du Guide docker ANSSI 
 
-12. Afficher les métriques et relever la consomation des containers
+12. Exporter les logs sur la machine hôte afin de garder les traces en cas de suppression de containers
 
-13. Optionel : Pour aller plus loin, réaliser le déploiement à l'aide de Terraform
+13. Afficher les métriques et relever la consomation des containers
+
+14. Optionel : Pour aller plus loin, réaliser le déploiement à l'aide de Terraform
 
 
 ## Modalités d'évaluation

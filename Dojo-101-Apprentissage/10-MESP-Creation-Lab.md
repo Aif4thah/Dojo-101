@@ -1,8 +1,11 @@
 # Mettre en place un environnement de test (Lab)
 
-L'objectif de ce Lab est de créer un environnement à la fois vulnérable et réaliste par rapport aux services disponibles en entreprise. Nous avons un service Windows AD pour l'administration bureautique et un serveur Linux contenant une application métier.
+L'objectif de ce Lab est de créer un environnement à la fois vulnérable et réaliste par rapport aux services disponibles en entreprise.
+Nous avons un environnement Windows AD (client et serveur) pour l'administration bureautique et un serveur Linux hébergeant une application métier.
 
-Durée estimée: 3 jours
+> Déployer cette infrastructure n'est en aucun cas une fin en soi : le but est ensuite de la sécuriser. Ce travail est réalisé à l'aide des autres mises en situations professionnelles, en particulier les audits de sécurité.
+
+Durée estimée: 4 jours
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
@@ -27,9 +30,9 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
     * DNS (Windows) : celui présent par défaut Domaine AD
     * WinRM (Windows) : accessible uniquement aux administrateurs de l'AD. 
     * SMB (Windows) : 1 partage "Readonly" + 1 partage accessible en écriture, sans authentification. 
-    * Web (Linux) : VulnerableLightApp doit être lancé et accessible via le réseau - le binaire contient déja un serveur Web (Kestrel)
+    * Web (Linux) : VulnerableLightApp doit être lancé et accessible via le réseau - le binaire contient déjà un serveur Web (Kestrel)
     * SSH (Linux) : accessible aux membres du groupe sudoers
-6. exécution du script badblood: `. ./invoke-badblood.ps1`
+6. exécution du script badblood
 
 
 ```mermaid
@@ -86,7 +89,11 @@ Rédiger un document d'architecture technique (DAT) avec :
 
 * Un Diagramme de Gantt ou un Kanban de votre réalisation pour la partie gestion de projet.
 
-* Tout autre élément que vous jugerez pertinant
+* Progressivement, vous ajouterez au DAT votre travail de sécurisation
+
+    * Audit de configuration des OS
+    * Audit de Code
+    * Implémentation des mesures de sécurité sélectionnées
 
 
 ## Critères de performance
