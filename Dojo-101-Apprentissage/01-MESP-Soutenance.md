@@ -6,9 +6,9 @@
 
 ### Partir du référentiel de formation (ou tableau des compétences attendues)
 
-1. Faire un **tableau de synthèse** qui précisera pour chaque *compétence attendue*, l'expérience acquise en entreprise ou lors de projets réalisés en cours.
+* Faire un **tableau de synthèse** qui précisera pour chaque *compétence attendue*, l'expérience acquise en entreprise ou lors de projets réalisés en cours.
 
-2. Ce tableau vous permettra de savoir ce que vous allez décrire dans le rapport et dans votre présentation, par exemple :
+* Ce tableau vous permettra de savoir ce que vous allez décrire dans le rapport et dans votre présentation, par exemple :
 
 | Ref. | Activité type | Compétence du référentiel | Contexte | Chapitre du rapport |
 |---|---|---|---|---|
@@ -19,37 +19,41 @@
 
 ### Faire le Plan 
 
-3. Identifier les Chapitres (Titre de niveau 1)
+* Identifier les Chapitres (Titre de niveau 1)
 
-4. Identifier les sujets clés (Titre de niveau 2)
+* Identifier les sujets clés (Titre de niveau 2)
 
-5. créer un *sommaire dynamique* 
+* créer un *sommaire dynamique* 
 
 
 ### Commencer à rédiger
 
-6. Rédiger la présentation du contexte (l'entreprise, l'équipe, environnement technique)
+* Rédiger l'introduction et la présentation du contexte 
 
-7. Créer un glossaire et y mettre les termes techniques
+    * l'entreprise : valeur métiers et quelques chiffres (CA, nombre d'employés)
+    * l'équipe : Organigramme, missions
+    * l'environnement technique : schéma réseau simplifié, technologies
 
-8. Créer une page de garde
+* Créer un glossaire et y mettre les termes techniques
 
-Garder une Police simple, par exemple : 
+* Créer une page de garde
 
-* Titre de niveau 1 : Taille 16 bleu numéroté "1"
+* Garder une Police simple, par exemple : 
 
-* Titre ne niveau 2 : Taille 12 noir numéroté "1.1"
+    * Titre de niveau 1 : Taille 16 bleu numéroté "1"
 
-* Titre de niveau 3: Taille 11 noir numéroté "1.1.1"
+    * Titre ne niveau 2 : Taille 12 noir numéroté "1.1"
 
-* Texte: taille 12
+    * Titre de niveau 3: Taille 11 noir numéroté "1.1.1"
 
-* Pas de souligné pas de gras
+    * Texte: taille 12
+
+    * Pas de souligné pas de gras
 
 Les conclusions / résumé / abstract seront à faire plus tard, en toute fin de rédaction
 
 
-### Créer ou rassembler les figures
+### Créer et rassembler les figures
 
 Une fois les sujets identifiés, commencer à réaliser les figures et à les positionner dans votre rapport.
 
@@ -82,8 +86,6 @@ Garder un ** plan identique** votre présentation reste naturelle et s'appuie su
 
 * Copier-Coller des figures -> diagrammes, synoptique, etc. présent dans le rapport
 
-
-<br><br><br>
 
 
 ## Partie 2 : Finalisation du rapport
@@ -137,6 +139,8 @@ A summary of your key findings.
 ### Entrainez-vous à l'oral
 
 * Répétez
+
+* Vérifiez que vous respectez le temps imparti à la présentation
 
 * Anticipez quelques questions
 
