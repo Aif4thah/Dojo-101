@@ -329,6 +329,7 @@ resource "docker_container" "nginx" {
 
 ```sh
 terraform init
+terraform plan
 terraform apply
 ```
 
