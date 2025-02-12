@@ -27,10 +27,10 @@ Usable offline with a simple text editor, its purpose is to freely share knowled
 ```mermaid
 mindmap
   root((**DOJO-101**))
-    **Training**
-        Lab
-        Situation
-        Wargame
+
+      **GRC**
+        ISO27001
+        EBIOS RM
     
     **DevSec**
         Crypto
@@ -90,6 +90,12 @@ mindmap
         Reverse
         Logs
         SIEM
+
+    **Training**
+        Lab
+        Situation
+        Wargame
+
 ```
 
 ## 👉 Let’s get started!
