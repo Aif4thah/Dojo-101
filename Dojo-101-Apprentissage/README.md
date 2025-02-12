@@ -1,4 +1,6 @@
-# Organisation des mises en situations professionnelles
+# Apprentissage
+
+## Organisation des mises en situations professionnelles
 
 * 0x : Introduction
 
@@ -25,13 +27,13 @@
 
 ```mermaid
 flowchart TD
-    A[Prérequis] -->|Se lancer| B{Mises en situations professionelles validant les compétences du référentiel}
+    A[Prérequis] -->|Se lancer| B{Mises en situations professionnelles validant les compétences du référentiel}
     B --> |Essayer| C[Objectifs de formation issus du référentiel]
     B --> |Être accompagné| A
     B --> |Réussir| C
     C --> |Être corrigé| B
-    C --> |Démarche réfléxive| B
-    D>Variables Didactiques] --> |Ajustement du niveau de complexité| B
+    C --> |Démarche réflexive| B
+    D>Variables didactiques] --> |Ajustement du niveau de complexité| B
 ```
 
 ### En distanciel
@@ -96,7 +98,7 @@ On préfère l'expérience et la mise en situation aux cours magistraux.
 
 ## Principe de *variable didactique*
 
-elles sont déterminées par le formateur (et pas laissée aux choix pour les apprenants) afin de déterminer le niveau de compétence à valider
+Elles sont déterminées par le formateur (et pas laissée aux choix pour les apprenants) afin de déterminer le niveau de compétence à valider
 
 != variable contextuelle: élément sur lequel on ne pourra pas jouer lors de la situation d'apprentissage
 
@@ -106,7 +108,7 @@ elles sont déterminées par le formateur (et pas laissée aux choix pour les ap
 
 > Attention à bien partir d'une `Situation emblématique` et des `Compétences du référentiel` pour couvrir toutes les compétences.
 
-## %ontée en compétences
+## Montée en compétences
 
 Les `variables didactiques` permettent d'augmenter la complexité.
 
@@ -116,7 +118,7 @@ Les `variables didactiques` permettent d'augmenter la complexité.
 
 3. transposer
 
-Objectif: tous niveau 3 pour être certifié, **Critère du REAC = Niveau 3**
+Objectif: tout niveau 3 pour être certifié, **Critère du REAC = Niveau 3**
 
 
 ## Principe d'analyses réflexives
