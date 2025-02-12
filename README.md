@@ -22,6 +22,7 @@ Usable offline with a simple text editor, its purpose is to freely share knowled
 * [Pentest](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Pentest)
 * [Forensic](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Forensic)
 * [Radio frequencies](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-RF)
+* [Governance, Risk, and Compliance](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Governance)
 
 
 ```mermaid
