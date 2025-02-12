@@ -98,9 +98,9 @@ On préfère l'expérience et la mise en situation aux cours magistraux.
 
 ## Principe de *variable didactique*
 
-Elles sont déterminées par le formateur (et pas laissée aux choix pour les apprenants) afin de déterminer le niveau de compétence à valider
+* Elles sont déterminées par le formateur (et non laissée au choix des apprenants) afin de déterminer le niveau de compétence à valider
 
-!= variable contextuelle: élément sur lequel on ne pourra pas jouer lors de la situation d'apprentissage
+* Elles diffèrent d'une variable contextuelle: élément sur lequel on ne pourra pas jouer lors de la situation d'apprentissage
 
 ## Situation emblématique
 
