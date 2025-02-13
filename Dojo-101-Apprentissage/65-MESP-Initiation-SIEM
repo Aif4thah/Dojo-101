@@ -42,7 +42,9 @@ Afin de préparer l'arrivée du SIEM dans l'entreprise, vous êtes chargé de me
 
     * Succès d'authentification
 
-5. Rediriger les logs de vulnérableLightApp dans un fichier, puis mettre en forme ce fichier pour l'importer dans le SIEM.
+5. Etudier le projet VulnérableLightApp et sa journalisation. Une fois les logs identifier, étudier la faisabilité d'imbriquer ces Logs au SIEM.
+
+6. Implémenter les logs de VulnérableLightApp au SIEM.
 
 
 ## Modalités pédagogiques

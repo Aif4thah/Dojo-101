@@ -31,27 +31,25 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 
 2. Vérifier que docker fonctionne (container Hello World)
 
-3. Prendre connaissance du projet Vulnerable-light-App, lire son Dockerfile.
+3. Prendre connaissance du projet Vulnerable-light-App, lire son `Dockerfile`.
 
-4. Planifier dans un KanBan comment va se faire la mise en container de ce service Web :
+4. Créer un nouveau dockerfile pour que l'application se lance sur le **port TCP 433**, avec un volume partagé avec la machine hôte
 
-5. Créer un nouveau dockerfile pour que l'application se lance sur le port TCP 433, avec un volume partagé avec la Machine Hote
+5. Automatiser l'installation et le lancement de cette API grâce au `Dockerfile`.
 
-6. Automatiser l'installation et le lancement de cette API.
+6. Utiliser le volume partagé avec l'hôte afin d'y stocker les **journeaux d'évenements**, le but est de conserver les logs même une fois le container détruit.
 
-7. Utiliser le volume partagé avec l'hôte afin d'y stocker les journeaux d'évenements, le but est de conserver les logs même une fois le container détruit.
+7. Pousser votre travail sur un repo github.
 
-8. Pousser votre travail sur un repo github.
+8. Les tests de build doivent se faire automatiquement lors du push sur GitHub via les canaux CI/CD
 
-9. Les tests de build doivent se faire automatiquement lors du push sur GitHub via les canaux CI/CD
+9. Optionel : Mettre à disposition votre container (Docker Hub / Registry)
 
-10. Optionel : Mettre à disposition votre container (Docker Hub / Registry)
+10. Appliquer les bonnes pratiques de sécurité issues du Guide docker ANSSI (container uniquement, pas de sécurisation du code)
 
-11. Appliquer les bonnes pratiques de sécurité issues du Guide docker ANSSI (container uniquement, pas de sécurisation du code)
+11. Afficher les métriques et relever la consomation des containers
 
-12. Afficher les métriques et relever la consomation des containers
-
-14. Optionel : Pour aller plus loin, réaliser le déploiement de 2 containers à l'aide de Terraform
+12. Optionel : Pour aller plus loin, réaliser le déploiement de 2 containers à l'aide de Terraform
 
     * 1 pour l'API Web
 
@@ -69,7 +67,7 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 
 * un projet Github / Groupe, le repos doit contenir les Push/Merge/Pull Request de chaque utilisateur du groupe.
 
-* Preuves de l'application des bonnes pratiques de sécurité et de la configuration des logs sur l'hôte.
+* Preuves de l'application des bonnes pratiques de sécurité et de la présence des logs applicatifs sur l'hôte.
 
 
 ## Critères de performance
