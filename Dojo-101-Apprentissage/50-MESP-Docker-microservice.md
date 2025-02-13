@@ -29,7 +29,7 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 
 1. Installer Docker
 
-2. Vérifier que docker fonctionne (container Hello World)
+2. Vérifier que docker fonctionne (container **Hello World**)
 
 3. Prendre connaissance du projet Vulnerable-light-App, lire son `Dockerfile`.
 
@@ -39,17 +39,17 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 
 6. Utiliser le volume partagé avec l'hôte afin d'y stocker les **journeaux d'évenements**, le but est de conserver les logs même une fois le container détruit.
 
-7. Pousser votre travail sur un repo github.
+7. Pousser votre travail sur un **repo github**.
 
-8. Les tests de build doivent se faire automatiquement lors du push sur GitHub via les canaux CI/CD
+8. Les tests de build doivent se faire automatiquement lors du push sur GitHub via les **canaux CI/CD**.
 
 9. Optionel : Mettre à disposition votre container (Docker Hub / Registry)
 
-10. Appliquer les bonnes pratiques de sécurité issues du Guide docker ANSSI (container uniquement, pas de sécurisation du code)
+10. Appliquer les bonnes pratiques de sécurité issues du **Guide docker ANSSI** (container uniquement, pas de sécurisation du code)
 
-11. Afficher les métriques et relever la consomation des containers
+11. Afficher les **métriques** et relever la consomation des containers
 
-12. Optionel : Pour aller plus loin, réaliser le déploiement de 2 containers à l'aide de Terraform
+12. Optionel : Pour aller plus loin, réaliser le déploiement de 2 containers à l'aide de **Terraform**
 
     * 1 pour l'API Web
 
