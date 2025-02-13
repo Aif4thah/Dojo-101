@@ -4,7 +4,7 @@ Initiation aux solutions SIEM
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
-durée: 3 jours
+durée: 6 jours
 
 ## Ressources
 
@@ -19,6 +19,8 @@ durée: 3 jours
 * [Splunk](https://www.splunk.com/fr_fr)
 
 * [ELK](https://www.elastic.co/fr/security)
+
+* [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
 
 > La liste des SIEM proposée n'est pas exhaustive.
 
@@ -39,6 +41,8 @@ Afin de préparer l'arrivée du SIEM dans l'entreprise, vous êtes chargé de me
     * Échecs d'authentification
 
     * Succès d'authentification
+
+5. Rediriger les logs de vulnérableLightApp dans un fichier, puis mettre en forme ce fichier pour l'importer dans le SIEM.
 
 
 ## Modalités pédagogiques

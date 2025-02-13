@@ -9,7 +9,9 @@ Durée : 5 jours
 ### Ressources
 
 * [Guide ANSSI Nomadisme](https://cyber.gouv.fr/publications)
+
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+
 * [Zero Trust](https://cyber.gouv.fr/publications/le-modele-zero-trust)
 
 ### Contexte
@@ -17,14 +19,14 @@ Durée : 5 jours
 Depuis le confinement, le dirigeant de l'entreprise ABC - une entreprise de 30 salariés spécialisée dans le développement de logiciels utilise son PC personnel pour accéder aux ressources de l'entreprise. 
 
 
-* À date, ce matériel n’est pas managé par votre entreprise, vous devez néanmoins durcir la configuration de ce « nouveau poste de travail ».
+* À date, ce matériel n’est pas managé par votre entrepris et n'est pas joint au domaine, vous devez néanmoins durcir la configuration de ce « nouveau poste de travail ».
 
 * Ce matériel doit toujours pouvoir se connecter à n’importe quels réseaux et l’utilisateur insiste fortement pour conserver les droits administrateur.
 
 
 La société ABC fonctionne actuellement comme suit : 
 
-* L’entreprise utilise une infrastructure Windows Active Directory (AD) pour gérer les identités et les accès des utilisateurs.
+* L’entreprise utilise une infrastructure Windows Active Directory (AD) et MS365 pour gérer les identités et les accès des utilisateurs.
 
 * L’infrastructure AD est composée d'un seul contrôleur de domaine et d’un serveur Linux non intégré au domaine.
 

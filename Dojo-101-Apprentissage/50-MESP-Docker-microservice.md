@@ -10,7 +10,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 ## Ressources
 
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-* [vulns-light-apps](https://github.com/Aif4thah/VulnerableLightApp)
+* [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
 * [Docker](https://www.docker.com/)
 * [Exemple Kanban](https://www.jetbrains.com/fr-fr/youtrack/)
 * [Docker Hub](https://hub.docker.com/)
@@ -20,11 +20,9 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 ## Contexte
 
-Vous faites partie de la purple team de l'entreprise. Afin de former les équipes du SOC à la détection des attaques, il vous est demandé de déployer vuln-light-apps dans un microservice docker.
+Vous faites partie de la PURPLE team de l'entreprise. Afin de former les équipes du SOC à la détection des attaques, il vous est demandé de déployer le projet "vulnerablelightapp" dans un environnement de test docker. 
 
-Ce container sera ensuite utilisé par les équipes afin de mener leurs tests.
-
-NB: *ce contexte est issu du Lab déjà mis en place*
+Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener des tests de détection d'attaques Web.
 
 
 ## Modalités pédagogiques
@@ -35,35 +33,29 @@ NB: *ce contexte est issu du Lab déjà mis en place*
 
 3. Prendre connaissance du projet Vulnerable-light-App, lire son Dockerfile.
 
-4. Planifier dans un KanBan comment va se faire la mise en container d'un nouveau service Web.
+4. Planifier dans un KanBan comment va se faire la mise en container de ce service Web :
 
-    * Passer en revue les étapes suivantes et créer une liste de tâche (story).
+5. Créer un nouveau dockerfile pour que l'application se lance sur le port TCP 433, avec un volume partagé avec la Machine Hote
 
-    * Mettez un poids ou une difficulté (chiffre entier) sur chaque story.
+6. Automatiser l'installation et le lancement de cette API.
 
-    * Attribuez-vous les stories au sein du groupe.
-
-    * Utiliser les colonnes "à venir", "en cours", "en test", "terminé" pour suivre l'avancement du Brief
-
-5. Créer un nouveau dockerfile
-
-6. Automatiser l'installation et le lancement d'un site Web, qui affichera votre "nom-prenom" ou "nom du groupe" lorsqu'on fera une requête web depuis la machine hôte. (techno de votre choix)
-
-7. Le conteneur devra partager un volume avec l'OS hote pour pouvoir mettre à jour des fichiers.
+7. Utiliser le volume partagé avec l'hôte afin d'y stocker les journeaux d'évenements, le but est de conserver les logs même une fois le container détruit.
 
 8. Pousser votre travail sur un repo github.
 
-9. Les tests de build doivent se faire automatiquement lors du push sur GitHub
+9. Les tests de build doivent se faire automatiquement lors du push sur GitHub via les canaux CI/CD
 
 10. Optionel : Mettre à disposition votre container (Docker Hub / Registry)
 
-11. Appliquer les bonnes pratiques de sécurité issues du Guide docker ANSSI 
+11. Appliquer les bonnes pratiques de sécurité issues du Guide docker ANSSI (container uniquement, pas de sécurisation du code)
 
-12. Exporter les logs sur la machine hôte afin de garder les traces en cas de suppression de containers
+12. Afficher les métriques et relever la consomation des containers
 
-13. Afficher les métriques et relever la consomation des containers
+14. Optionel : Pour aller plus loin, réaliser le déploiement de 2 containers à l'aide de Terraform
 
-14. Optionel : Pour aller plus loin, réaliser le déploiement à l'aide de Terraform
+    * 1 pour l'API Web
+
+    * 1 pour lire et afficher les logs
 
 
 ## Modalités d'évaluation
