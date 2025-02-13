@@ -63,6 +63,15 @@
 * Donner des tâches `1. <...>, 2. <...>, 3. <...>`
 
 
+## Mistral AI
+
+* [site MISTRAL AI](https://mistral.ai/)
+
+* [Le Chat Mistral](https://chat.mistral.ai/chat)
+
+* API facturée à l'usage ou en auto hébergée. Abonement pour "Le chat".
+
+
 ## Chat GPT - OpenAI & Microsoft - Copilot
 
 * Questions generalistes
@@ -102,10 +111,5 @@
 * Bots et applications C# / Python
 
 
-## Mistral AI
-
-* [site MISTRAL AI](https://mistral.ai/)
-
-* API facturé à l'usage ou en auto hébergée
 
 
