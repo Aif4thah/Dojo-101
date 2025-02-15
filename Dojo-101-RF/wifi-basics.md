@@ -1,16 +1,30 @@
 # Wifi basics
 
+## Tools
+
+* [Aircrack-ng](https://www.aircrack-ng.org/downloads.html)
+
+* [Acrylic Wifi](https://www.acrylicwifi.com/)
+
+* [Kismet](https://www.kismetwireless.net/)
+
+* [WiFi Pineapple](https://shop.hak5.org/collections/wifi-pentesting)
+
+
 ## definitions
 
-*AP* = Access Point
-*ESSID* = (Extended Service Set Identifier)
-*BSSID* = (Basic Service Set Identifier)
-*SSID* = (Service Set Identifier)
-*Channels* = Can operate from 1 to 14, and in the US from 1 to 11.
-*Power* = How far you are from the signal
-*Security* = WEP, WPA1, WPA2, WPA3
-*Modes* = Managed, Master, Master
-*Frequency* = 2.4GHHz or 5GHz
+| Terme      | Signification |
+|------------|----------------|
+| AP         | Access Point   |
+| ESSID      | Extended Service Set Identifier (Identifiant de Service Étendu) |
+| BSSID      | Basic Service Set Identifier (Identifiant de Service de Base) |
+| SSID       | Service Set Identifier (Identifiant de Service) |
+| Channels   | Peut fonctionner de 1 à 14, et aux États-Unis de 1 à 11 |
+| Power      | Distance par rapport au signal |
+| Security   | WEP, WPA1, WPA2, WPA3 |
+| Modes      | Managed, Master, Master |
+| Frequency  | 2.4GHz ou 5GHz |
+
 
 ## Modulation
 
@@ -97,9 +111,7 @@ netsh wlan show networks
 
 ## PINEAPPLE MARK VII
 
-[produit](https://shop.hak5.org/products/wifi-pineapple)
-
-une fois branché: http://172.16.42.1:1471/#/Login
+une fois branché: `http://172.16.42.1:1471/#/Login`
 
 default passwd: hak5pineapple
 
@@ -128,9 +140,10 @@ Le mode *monitor* permet de sniffer plus que les beacons et de détecter les wif
 
 On peut aussi les débecter par analyse de spectre et antenne directionnelle pour trouver la source d'émission.
 
-### aicrack-ng 
 
-Enabling monitor mode, **la carte wifi doit etre compatible!**
+### Aicrack-ng 
+
+Enabling monitor mode, **la carte wifi doit être compatible!**
 
 Before capturing any traffic, it is necessary to enable the monitoring mode on the 802.11 interface wlan0.
 
@@ -160,6 +173,8 @@ sudo rfkill unblock all
 
 ### capture dans un fichier :
 
+Cette méthode offre notamment la possibilité de capturer les handshakes WPA2 en vue d'une attaque par force brute. 
+
 ```sh
 airodump-ng --essid <nom AP> -c <channel> -w capture-file wlan1
 airodump-ng --bssid <mac AP> -c <channel> -w capture-file wlan1
@@ -177,11 +192,6 @@ sudo aireplay-ng --deauth 30 -a <mac AP> wlan1
 sudo aireplay-ng --deauth 30 -a <mac AP> -c <mac Client> wlan1
 ```
 
-## autres outils
-
-* Acrylic Wifi
-* Kismet
-* WiFi Analyzer (Windows Store)
 
 ## Script pour un rogue access point
 
@@ -271,4 +281,30 @@ function ap { AP2 00:01:C7:4E:15:0D $1 6 $2 $3 ; }
 export -f ap
 function rogue { AP3 00:01:C7:4E:15:0D $1 6 $2 $3 ; } 
 export -f rogue
+```
+
+
+## Antenne Wifi Directionnelle
+
+à partir d'une boite de conserve.
+
+1. le - du cable est connecté à la boite de conserve
+2. le + est isolé et dépasse au milieu de la boite
+
+```txt
+H: 100 mm 
+L: 175 mm
+___________________________________________
+|
+|
+|
+|
+|           |
+| <44 mm>   |   Picot + de 31 mm
+|__________ | _____________________________
+           ||
+           -+
+           || cable ant.
+
+
 ```
