@@ -10,6 +10,8 @@
 
 * [WiFi Pineapple](https://shop.hak5.org/collections/wifi-pentesting)
 
+* [Alfa Card Drivers](https://files.alfa.com.tw/)
+
 
 ## definitions
 
@@ -103,9 +105,42 @@ FHSS : Frequency Hopping Spread Spectrum
 
 6GHz : interdit en France
 
-## enumeration sommaire windows
+## Le mode monitor
 
-```Batch
+Permet la capture et l'analyse du traffic wifi
+
+
+### Linux
+
+Activer le mode `monitor`, (la carte wifi doit être compatible)
+
+```sh
+iface = wlan0
+sudo ifconfig $iface down
+sudo iwconfig $iface mode monitor
+sudo ifconfig $iface up
+```
+
+Debug en cas d'utilisation de la carte qui empêche le passe en mode monitor : 
+
+```sh
+nmcli nm wifi off
+sudo rfkill unblock all
+```
+
+### Windows
+
+* [Npcap](https://npcap.com/#download)
+
+Le binaire se trouve dans `C:\Windows\System32\Npcap`
+
+```powershell
+.\WlanHelper.exe "wi-fi" mode monitor
+```
+
+à défaut d'une carte et de drivers compatibles, il faudra se contenter d'une énumeration sommaire 
+
+```powershell
 netsh wlan show networks
 ```
 
@@ -134,37 +169,16 @@ possibilité de faire:
 * un portail captif pour récuperer les mots de passess
 
 
-## Hidden AP
 
-Le mode *monitor* permet de sniffer plus que les beacons et de détecter les wifi "cachés".
-
-On peut aussi les débecter par analyse de spectre et antenne directionnelle pour trouver la source d'émission.
+## Aicrack-ng 
 
 
-### Aicrack-ng 
+### Hidden AP
 
-Enabling monitor mode, **la carte wifi doit être compatible!**
+* Le mode `monitor` permet de sniffer l'ensemble du traffic (pas uniquement les beacons) et de détecter les wifi "cachés". On peut ensuite utiliser `airodump`
 
-Before capturing any traffic, it is necessary to enable the monitoring mode on the 802.11 interface wlan0.
+* *Alternative pour redescendre sur les couches basses* : on peut aussi proceder par analyse de spectre et antenne directionnelle pour trouver la source d'émission. cf. HackRF.
 
-This is typically done using iwconfig
-
-```sh
-iface = wlan0
-sudo ifconfig $iface down
-sudo iwconfig $iface mode monitor
-sudo ifconfig $iface up
-```
-
-Where wlan0 is the name of your wireless interface supporting the monitor mode. From this point,
-the interface wlan0 is in monitor mode and ready to capture and inject traffic.
-If you are encountering errors or a strange behavior with your monitoring interface, you can try
-"unblocking" the interface with the following commands:
-
-```sh
-nmcli nm wifi off
-sudo rfkill unblock all
-```
 
 ### capture quick and dirty
 
@@ -193,7 +207,7 @@ sudo aireplay-ng --deauth 30 -a <mac AP> -c <mac Client> wlan1
 ```
 
 
-## Script pour un rogue access point
+### Script pour un rogue access point
 
 ```sh
 function AP1 {
