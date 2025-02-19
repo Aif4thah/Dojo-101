@@ -14,6 +14,8 @@
 
 * [Wireshark](https://www.wireshark.org/)
 
+* [HackRF](https://greatscottgadgets.com/hackrf/one/)
+
 
 ## definitions
 
@@ -67,6 +69,8 @@ FHSS : Frequency Hopping Spread Spectrum
 
 
 ## Canaux
+
+Connaitre le lien canal / fréquence permet d'utiliser des outils software defined radio (SDR) en complément des cartes wifi. Cela permet de détecter et trianguler les points d'accès malveillants.
 
 | Freq | nb | pas |
 |------|--------------|-----|
@@ -125,7 +129,7 @@ FHSS : Frequency Hopping Spread Spectrum
 
 ## Le mode monitor
 
-Permet la capture et l'analyse du traffic wifi
+Permets la capture et l'analyse du trafic wifi
 
 
 ### Linux
@@ -138,7 +142,7 @@ iw dev wlan0 set type monitor
 ip link set wlan0 up
 ```
 
-anciens linux :
+anciens Linux :
 
 ```sh
 ifconfig wlan0 down
@@ -173,10 +177,19 @@ Le binaire se trouve dans `C:\Windows\System32\Npcap`
 .\WlanHelper.exe "wi-fi" mode monitor
 ```
 
-à défaut d'une carte et de drivers compatibles, il faudra se contenter d'une énumeration sommaire 
+à défaut d'une carte et de drivers compatibles, il faudra se contenter d'une énumération sommaire 
+
+> se déconnecter de son AP wifi pour lister l'ensemble des réseaux
 
 ```batch
 netsh wlan show networks
+netsh wlan show networks mode=bssid
+netsh wlan show networks mode=ssid
+```
+
+lister les profils de la machine :
+
+```batch
 netsh wlan show profiles
 netsh wlan show profiles name=<SSID>
 ```
@@ -203,18 +216,21 @@ Possibilités de faire des campagnes de différents types pour tester le niveau 
 possibilité de faire:
 
 * un bruteforce des half handshake capturé
-* un portail captif pour récuperer les mots de passess
+* un portail captif pour récupérer les mots de passe
 
 
+## Kismet
+
+Supporte à la fois les `cartes wifi monitorables` et les materiels `SDR` comme le HackRF one.
 
 ## Aicrack-ng 
 
 
 ### Hidden AP
 
-* Le mode `monitor` permet de sniffer l'ensemble du traffic (pas uniquement les beacons) et de détecter les wifi "cachés". On peut ensuite utiliser `airodump`
+* Le mode `monitor` permet de sniffer l'ensemble du trafic (pas uniquement les beacons) et de détecter les wifi "cachés". On peut ensuite utiliser `airodump`
 
-* *Alternative pour redescendre sur les couches basses* : on peut aussi proceder par analyse de spectre et antenne directionnelle pour trouver la source d'émission. cf. HackRF.
+* *Alternative pour redescendre sur les couches basses* : on peut aussi procéder par analyse de spectre et antenne directionnelle pour trouver la source d'émission. cf. HackRF.
 
 
 ### capture quick and dirty
@@ -340,11 +356,11 @@ export -f rogue
 ```
 
 
-## Antenne Wifi Directionnelle
+## Antenne Wifi directionnelle
 
-à partir d'une boite de conserve.
+À partir d'une boite de conserve.
 
-1. le - du cable est connecté à la boite de conserve
+1. le - du câble est connecté à la boite de conserve
 2. le + est isolé et dépasse au milieu de la boite
 
 ```txt
@@ -360,7 +376,7 @@ ___________________________________________
 |__________ | _____________________________
            ||
            -+
-           || cable ant.
+           || câble ant.
 
 
 ```
