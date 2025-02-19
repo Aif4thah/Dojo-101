@@ -55,7 +55,7 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 2. Toujours avec les moyens du bord (Carte Wifi / HackRF), comment le détecter un point d'accès wifi malveillant ou non légitime ?
 3. Optionnel : À l'aide d'une antenne directionnelle, trouver son emplacement.
 
-*Hint: Vous pouvez faire le lien entre les channels des SSID wifi détecté par la carte wifi et la fréquence des signaux analysés à l'aide du HackRF*
+*Hint: Vous pouvez faire le lien entre les channels des SSID wifi détectés par la carte wifi et la fréquence des signaux analysés à l'aide du HackRF*
 
 
 
