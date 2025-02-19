@@ -177,6 +177,8 @@ Le binaire se trouve dans `C:\Windows\System32\Npcap`
 
 ```batch
 netsh wlan show networks
+netsh wlan show profiles
+netsh wlan show profiles name=<SSID>
 ```
 
 ## PINEAPPLE MARK VII

@@ -31,9 +31,10 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 
 ### Protocoles et vulnérabilités
 
+0. Lister les points d'accès wifi qui vous entourent et leurs protocoles d'authentification.
 1. Analyzer les fichiers `pcap`
 2. Quelles sont les vulnérabilités connues pour ces protocoles Wifi (`WPA2` et `WPA3`) ?
-3. Quels autres protocoles recommanderiez-vous pour une entreprise ?
+3. Quels autres protocoles recommanderiez-vous pour une entreprise ? pourquoi ?
 4. Une capture du trafic Wifi a été réalisée à l'aide de l'outil Aircrack-ng. Mettez en place une attaque par force brute afin de `cracker la clé WPA-PSK`.
 
 ### jamming et résilience
