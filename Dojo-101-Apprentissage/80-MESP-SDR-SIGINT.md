@@ -10,19 +10,22 @@ Durée: 1 jour
 
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
+* Dossier Toolbox RF
+
+* Dossier d'images SIGINT
+
 * Démo/vidéo analyse de spectre
 
 * Démo/vidéo antenne directionnelle
 
-* Dossier Toolbox RF pour une utilisation locale
-
-* [ou SDR en ligne](http://websdr.org/)
+* [SDR en ligne](http://websdr.org/)
 
 * [HackRF](https://greatscottgadgets.com/hackrf/one/)
 
 
-
 ## Contexte
+
+> Pour ceux qui n'ont pas de HackRF, s'entrainer avec les images SIGINT ou un SDR en ligne en attendant son tour.
 
 1. Installer l’outillage
 

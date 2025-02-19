@@ -32,12 +32,13 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 ### Protocoles et vulnérabilités
 
 1. Analyzer les fichiers `pcap`
-2. Quelles sont les vulnérabilités connues pour ces protocoles Wifi ?
+2. Quelles sont les vulnérabilités connues pour ces protocoles Wifi (`WPA2` et `WPA3`) ?
 3. Quels autres protocoles recommanderiez-vous pour une entreprise ?
+4. Une capture du trafic Wifi a été réalisée à l'aide de l'outil Aircrack-ng. Mettez en place une attaque par force brute afin de `cracker la clé WPA-PSK`.
 
 ### jamming et résilience
 
-> La puissance du HackRF étant limitée, ce qui nous permet aussi de respecter le cadre légal, il faut placer l’antenne à proximité (quelques mètres) pour réaliser le brouillage
+> La puissance du HackRF étant limitée (pas d'ampli pour respecter le cadre légal), il faut placer l’antenne à proximité (quelques mètres) pour réaliser le brouillage
 
 1. Identifier le canal Wifi de la cible 
 2. Trouver la `fréquence` exacte correspondante
@@ -57,7 +58,7 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 
 ## Modalités pédagogiques
 
-En Binôme, si vous êtes à l'aise vous pouvez trouver un second binôme pour tester vos attaques et contre-mesures
+En Binôme, **si vous êtes à l'aise vous pouvez trouver un second binôme pour tester vos attaques et contre-mesures**
 
 ## Modalités d'évaluation
 
