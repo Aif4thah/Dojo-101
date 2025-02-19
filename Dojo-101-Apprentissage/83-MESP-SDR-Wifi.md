@@ -32,9 +32,9 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 ### Protocoles et vulnérabilités
 
 0. Lister les points d'accès wifi qui vous entourent et leurs protocoles d'authentification.
-1. Analyzer les fichiers `pcap`
-2. Quelles sont les vulnérabilités connues pour ces protocoles Wifi (`WPA2` et `WPA3`) ?
-3. Quels autres protocoles recommanderiez-vous pour une entreprise ? pourquoi ?
+1. Analyzer les fichiers `.pcap`, que contiennent ces captures ?
+2. Quelles sont les vulnérabilités connues pour ces protocoles Wifi (parler à minima de `WPA2` et `WPA3`) ?
+3. Quels autres protocoles recommanderiez-vous pour une entreprise ? Pourquoi ?
 4. Une capture du trafic Wifi a été réalisée à l'aide de l'outil Aircrack-ng. Mettez en place une attaque par force brute afin de `cracker la clé WPA-PSK`.
 
 ### jamming et résilience
@@ -43,8 +43,8 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 
 1. Identifier le canal Wifi de la cible 
 2. Trouver la `fréquence` exacte correspondante
-3. Tester le brouillage pour empêcher la communication
-4. Observer si la fréquence et le canal de la cible changent
+3. Tester le brouillage pour empêcher la communication, jouer avec la puissance et la bande-passante.
+4. Observer si la fréquence et le canal de la cible changent et si le clients continuent à avoir accès au réseau.
 
 
 ### Rogue AP et détection
