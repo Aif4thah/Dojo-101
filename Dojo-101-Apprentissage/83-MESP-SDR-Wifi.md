@@ -52,10 +52,10 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 > Dans l'idéal, un Rogue Access Point se fait passer par un Access Point légitime : même nom, même adresse Mac, etc. Mais si vous n'êtes pas à l'aise, commencer par monter un AP plus facile à identifier.
 
 1. Monter un `rogue access point` avec les moyens du bord (Téléphone, PC)
-2. Toujours avec les moyens du bord (Carte Wifi / HackRF), comment le détecter un point d'accès wifi malveillant ou non légitime ?
-3. Optionnel : À l'aide d'une antenne directionnelle, trouver son emplacement.
+2. Toujours avec les moyens du bord (Carte Wifi / HackRF), comment détecter les points d'accès wifi malveillants ou non légitimes des autres binômes ?
+3. En vous déplaçant et/ou l'aide de l'antenne directionnelle, trouver son emplacement.
 
-*Hint: Vous pouvez faire le lien entre les channels des SSID wifi détectés par la carte wifi et la fréquence des signaux analysés à l'aide du HackRF*
+*Hint: Vous pouvez faire le lien entre les canaux des SSID wifi détectés par la carte wifi et la fréquence des signaux analysés à l'aide du HackRF et mesurer le gain / puissance*
 
 
 
