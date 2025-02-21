@@ -489,13 +489,13 @@ Phishing à partir de `https://www.securite-solutions.fr/login`, où est le piè
 
 Politique permettant de vérifier
 
-* Les identités (utilisateurs)
+* Les Identités (utilisateurs)
 
-* Les Devices (PC, Smartphone, IoT)
+* Les Devices (PC, Smartphone, Serveurs, IoT)
 
 * Les Accès (IP sources)
 
-* Les services (Conditions selon la requête utilisateur)
+* Les Services (Conditions selon la requête utilisateur)
 
 
 

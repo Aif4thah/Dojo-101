@@ -6,6 +6,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 Durée : 5 jours
 
+
 ### Ressources
 
 * [Guide ANSSI Nomadisme](https://cyber.gouv.fr/publications)
@@ -13,6 +14,7 @@ Durée : 5 jours
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
 * [Zero Trust](https://cyber.gouv.fr/publications/le-modele-zero-trust)
+
 
 ### Contexte
 
@@ -37,13 +39,24 @@ La société ABC fonctionne actuellement comme suit :
 
 Binôme ou seul (au choix)
 
+
 ### Modalités d'évaluation
 
-1. Sélectionner 10 mesures de sécurité liée au contexte
+1. Sélectionner 10 mesures de sécurité liée au contexte. Prenez bien en compte les principaux points du Zero Trust, à savoir :
 
-2. Implémenter (sur une VM) les mesures appropriées
+    * Les Identités (utilisateurs)
+
+    * Les Devices (PC, Smartphone, Serveurs, IoT)
+
+    * Les Accès (IP sources)
+
+    * Les Services (Conditions selon la requête utilisateur)
+
+
+2. Implémenter (sur une VM et le Lab) les mesures appropriées.
 
 3. Rédiger un document d'architecture technique (DAT), reprenant le contexte de l'entreprise et conforme aux bonnes pratiques Zero Trust.
+
 
 ### Livrables
 
@@ -55,12 +68,14 @@ Binôme ou seul (au choix)
 
 2. Le DAT. 
 
+
 ### Critères de performance
 
 * pertinence des mesures de sécurité
 * respect du contexte et des cas d'usage
 * réalisation des actes techniques
 * respect de l'état de l'art et des principes "Zero Trust"
+
 
 ## Pour finir
 
