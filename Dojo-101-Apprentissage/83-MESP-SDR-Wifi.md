@@ -37,7 +37,7 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 3. Quels autres protocoles recommanderiez-vous pour une entreprise ? Pourquoi ?
 4. Une capture du trafic Wifi a été réalisée à l'aide de l'outil Aircrack-ng. Mettez en place une attaque par force brute afin de `cracker la clé WPA-PSK`.
 
-### jamming et résilience
+### Jamming et résilience
 
 > La puissance du HackRF étant limitée (pas d'ampli pour respecter le cadre légal), il faut placer l’antenne à proximité (quelques mètres) pour réaliser le brouillage
 
@@ -51,11 +51,14 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 
 > Dans l'idéal, un Rogue Access Point se fait passer par un Access Point légitime : même nom, même adresse Mac, etc. Mais si vous n'êtes pas à l'aise, commencer par monter un AP plus facile à identifier.
 
+
 1. Monter un `rogue access point` avec les moyens du bord (Téléphone, PC)
 2. Toujours avec les moyens du bord (Carte Wifi / HackRF), comment détecter les points d'accès wifi malveillants ou non légitimes des autres binômes ?
 3. En vous déplaçant et/ou l'aide de l'antenne directionnelle, trouver son emplacement.
 
-*Hint: Vous pouvez faire le lien entre les canaux des SSID wifi détectés par la carte wifi et la fréquence des signaux analysés à l'aide du HackRF et mesurer le gain / puissance*
+* *Hint 1: Vous pouvez faire le lien entre les canaux des SSID wifi détectés par la carte wifi et la fréquence des signaux analysés à l'aide du HackRF et mesurer le gain / puissance*
+
+* *Hint 2: Pour ne pas avoir trop d'interférences, mettez vos appareils inutilisés en mode avion*
 
 
 

@@ -17,7 +17,7 @@
 * [HackRF](https://greatscottgadgets.com/hackrf/one/)
 
 
-## definitions
+## Definitions
 
 | Terme      | Signification |
 |------------|----------------|
@@ -70,7 +70,7 @@ FHSS : Frequency Hopping Spread Spectrum
 
 ## Canaux
 
-Connaitre le lien canal / fréquence permet d'utiliser des outils software defined radio (SDR) en complément des cartes wifi. Cela permet de détecter et trianguler les points d'accès malveillants.
+Connaitre le lien canal-fréquence permet d'utiliser des outils software defined radio (SDR) en complément des cartes wifi. Cela permet de détecter et trianguler les points d'accès malveillants.
 
 | Freq | nb | pas |
 |------|--------------|-----|
@@ -79,7 +79,7 @@ Connaitre le lien canal / fréquence permet d'utiliser des outils software defin
 
 ### valeurs
 
-2.4 GHz:
+
 
 | id | Freq (GHz) |
 |----|------|
@@ -97,33 +97,28 @@ Connaitre le lien canal / fréquence permet d'utiliser des outils software defin
 | 12 | 2.467 |
 | 13 | 2.472 |
 | 14 | 2.484 |
-
-5.GHz :
-
-| Canal | Freq (GHz) |
-|-------|-----------------|
-| 32    | 5.160           | 
-| 36    | 5.180           | 
-| 40    | 5.200           | 
-| 44    | 5.220           | 
-| 48    | 5.240           | 
-| 52    | 5.260           | 
-| 56    | 5.280           | 
-| 60    | 5.300           | 
-| 64    | 5.320           | 
-| 68    | 5.340           |
-| 96    | 5.480           |
-|100    | 5.500           | 
-|104    | 5.520           | 
-|108    | 5.540           | 
-|112    | 5.560           | 
-|116    | 5.580           | 
-|120    | 5.600           | 
-|124    | 5.620           | 
-|128    | 5.640           | 
-|132    | 5.660           | 
-|136    | 5.680           | 
-|140    | 5.700           | 
+| 32    | 5.160  |
+| 36    | 5.180  |
+| 40    | 5.200  |
+| 44    | 5.220  |
+| 48    | 5.240  |
+| 52    | 5.260  |
+| 56    | 5.280  |
+| 60    | 5.300  |
+| 64    | 5.320  |
+| 68    | 5.340  |
+| 96    | 5.480  |
+|100    | 5.500  |
+|104    | 5.520  |
+|108    | 5.540  |
+|112    | 5.560  |
+|116    | 5.580  |
+|120    | 5.600  |
+|124    | 5.620  |
+|128    | 5.640  |
+|132    | 5.660  |
+|136    | 5.680  |
+|140    | 5.700  |
 
 > 6GHz : interdit en France
 
@@ -157,7 +152,7 @@ nmcli nm wifi off
 sudo rfkill unblock all
 ```
 
-## puissance
+Pour fixer la puissance d'émission :
 
 ```sh
 iw wlan0 set txpower fixed 3000
@@ -194,37 +189,14 @@ netsh wlan show profiles
 netsh wlan show profiles name=<SSID>
 ```
 
-## PINEAPPLE MARK VII
-
-une fois branché: `http://172.16.42.1:1471/#/Login`
-
-default passwd: hak5pineapple
-
-### Principales attaques
-
-* Deauth
-* Rogue AP / Evil Twin (Clone)
-* Captures Handshakes
-* MITM
-
-### Campagnes
-
-Possibilités de faire des campagnes de différents types pour tester le niveau de sécurité
-
-### Evil Twin
-
-possibilité de faire:
-
-* un bruteforce des half handshake capturé
-* un portail captif pour récupérer les mots de passe
-
 
 ## Kismet
 
 Supporte à la fois les `cartes wifi monitorables` et les materiels `SDR` comme le HackRF one.
 
-## Aicrack-ng 
 
+
+## Aicrack-ng 
 
 ### Hidden AP
 
@@ -232,11 +204,9 @@ Supporte à la fois les `cartes wifi monitorables` et les materiels `SDR` comme 
 
 * *Alternative pour redescendre sur les couches basses* : on peut aussi procéder par analyse de spectre et antenne directionnelle pour trouver la source d'émission. cf. HackRF.
 
-
 ### capture quick and dirty
 
 `airodump-ng wlan0mon`
-
 
 ### capture dans un fichier :
 
@@ -380,3 +350,28 @@ ___________________________________________
 
 
 ```
+
+
+## PINEAPPLE MARK VII
+
+une fois branché: `http://172.16.42.1:1471/#/Login`
+
+default passwd: hak5pineapple
+
+### Principales attaques
+
+* Deauth
+* Rogue AP / Evil Twin (Clone)
+* Captures Handshakes
+* MITM
+
+### Campagnes
+
+Possibilités de faire des campagnes de différents types pour tester le niveau de sécurité
+
+### Evil Twin
+
+possibilité de faire:
+
+* un bruteforce des half handshake capturé
+* un portail captif pour récupérer les mots de passe
