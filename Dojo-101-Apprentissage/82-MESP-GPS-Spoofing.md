@@ -17,13 +17,14 @@ Durée: 0.5 jour
 
 ## Contexte
 
-1. Couper toutes connexions autres que le GPS / Localisation
-2. Analyser les satellites GPS reçus via Phybos et les applications
-3. Préparer un fichier de spoofing avec une position érronée (mais réaliste)
-4. Émettre les signaux GPS à l’aide du HackRF
-5. Analyser le comportement de phybox et des autres applications*
+1. Couper toutes connexions autres que le GPS / Localisation.
+2. Analyser les satellites et signaux GPS reçus via Phybos et les applications.
+3. Si possible, mettez à jour le fichier des éphémérides (*Broadcast ephemeris data* de la NASA.)
+4. Préparer un fichier de spoofing avec une position erronée (mais réaliste). 
+5. Usurper les signaux GPS à l’aide du HackRF à proximité de vos instruments.
+6. Analyser le comportement de phybox et d’autres applications.
 
-> Certaines applications peuvent prendre en compte les dernières positions connues, les wifi et sélectionner certains satellites, a vous de mener vos tests et de voir ce qui réussit ou non.
+> Certaines applications peuvent prendre en compte les dernières positions connues, les points d'accès wifi et sélectionner uniquement certains satellites, a vous de mener vos tests et de voir ce qui réussit ou non.
 
 ## Modalités pédagogiques
 
@@ -45,7 +46,7 @@ Binôme
 # Hardware
 
 HackRF
-Récepteur GPS (Téléphone, Drone, Tracker…)
+Récepteur GPS (Voiture, Téléphone, Drone, Tracker…)
 
 
 ## Pour finir
