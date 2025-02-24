@@ -42,6 +42,8 @@ Binôme ou seul (au choix)
 
 ### Modalités d'évaluation
 
+0. Prendre le temps de lire les ressources et guides ANSSI.
+
 1. Sélectionner 10 mesures de sécurité liée au contexte. Prenez bien en compte les principaux points du Zero Trust, à savoir :
 
     * Les Identités (utilisateurs)
