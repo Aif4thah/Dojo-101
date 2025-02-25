@@ -192,6 +192,8 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 
 * Directionnelles avec directeurs, radiateur et réflecteur ex: Yagi
 
+* Dipôles
+
 * Parabolique (ex: reception sattelite)
 
 * Loop et cadre magnétique (ex: RFID)
