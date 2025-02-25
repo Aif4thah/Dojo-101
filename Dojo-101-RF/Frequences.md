@@ -44,7 +44,7 @@ Source: [ARCEP](https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobil
 | 5150 – 5350 MHz	||
 | 5470 – 5725 MHz ||
 
-## Radios classiques
+## Radios classiques et RNT (Radio Numérique Terrestre)
 
 | Modulation | Frequences |
 |------------|------------|
@@ -52,9 +52,6 @@ Source: [ARCEP](https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobil
 | AM | 150 kHz à 281 kHz |
 | AM | 520 à 1620 kHz |
 | AM |  2,3 à 26,1 MHz |
-
-## RNT (Radio Numérique Terrestre)
-
 | DAB+ | 174 à 240 MHz |
 
 ## TETRA (Terrestrial Trunked Radio)
@@ -70,8 +67,9 @@ France: 144.800 MHz
 
 ## POCSAG (Post Office Code Standardisation Advisory Group)
 
-Sapeurs-Pompiers : 173.5125 MHz 
-privées: 466.025, 466.050, 466.075, 466.175, 466.20625 et 466.23125 MHz
+* Sapeurs-Pompiers : 173.5125 MHz 
+
+* privées: 466.025, 466.050, 466.075, 466.175, 466.20625 et 466.23125 MHz
 
 ## Fréquences d'urgence, détresse et essentielles - France et Europe HF VHF UHF
 
@@ -161,8 +159,9 @@ Source: [Groupe FCF](https://groupefcf.org/)
 
 ## Internet
 
-[WRN World Radio Network](https://www.encompass.tv/solutions/radio/)
-[Radio.fr](https://www.radio.fr/app)
+* [WRN World Radio Network](https://www.encompass.tv/solutions/radio/)
+
+* [Radio.fr](https://www.radio.fr/app)
 
 ## Emetteurs nationaux de secours
 
