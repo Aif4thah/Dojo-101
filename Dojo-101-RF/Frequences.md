@@ -16,12 +16,16 @@
 
 ## Satellites
 
-Satellites NOAA et Meteor :
-Noaa 18 sur 137,9125 MHz
-NOAA 19 sur 137.100 MHz
-NOAA 15 sur 137.620 MHz
-meteor M1 137.100 MHz
-meteor m2 137.900 MHz
+
+| Satellite    | Fréquence   |
+|--------------|-------------------|
+| NOAA 18      | 137.9125 MHz      |
+| NOAA 19      | 137.100  MHz      |
+| NOAA 15      | 137.620  MHz      |
+| Meteor M1    | 137.100  MHz      |
+| Meteor M2    | 137.900  MHz      |
+| Starlink     | 10.950 GHz        |
+
 
 ## Bandes libres en France
 
