@@ -216,33 +216,22 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 
 * IQ = écriture en nombre complexe (I+jQ)
 
-* .cu4: Complex (I/Q), Unsigned integer, 4-bit per value (8 bit per sample)
-
-* .cs4: Signed integer
-
-* .cu8 (.data .complex16u): 8-bit per value (16 bit per sample) - Complex 8-bit unsigned integer samples  (RTL-SDR)
-
-* .cs8 (.complex16s)
-
-* .cu12: 12-bit per value (24 bit per sample)
-
-* .cs12
-
-* .cu16: 16-bit per value (32 bit per sample)
-
-* .cs16: Complex 16-bit signed integer samples (BladeRF)
-
-* .cu32: 32-bit per value (64 bit per sample)
-
-* .cs32
-
-* .cu64: 64-bit per value (128 bit per sample)
-
-* .cs64
-
-* .cf32 (.cfile .complex): Float, 32-bit per value (64 bit per sample) - Complex 32-bit floating point samples (GNURadio, osmocom_fft)
-
-* .cf64: Double Float, 64-bit per value (128 bit per sample)
+| Format | Description |
+|--------|-------------|
+| .cu4   | Complex (I/Q), Unsigned integer, 4-bit per value (8 bit per sample) |
+| .cs4   | Signed integer |
+| .cu8 (.data .complex16u) | 8-bit per value (16 bit per sample) - Complex 8-bit unsigned integer samples (RTL-SDR) |
+| .cs8 (.complex16s) | |
+| .cu12  | 12-bit per value (24 bit per sample) |
+| .cs12  | |
+| .cu16  | 16-bit per value (32 bit per sample) |
+| .cs16  | Complex 16-bit signed integer samples (BladeRF) |
+| .cu32  | 32-bit per value (64 bit per sample) |
+| .cs32  | |
+| .cu64  | 64-bit per value (128 bit per sample) |
+| .cs64  | |
+| .cf32 (.cfile .complex) | Float, 32-bit per value (64 bit per sample) - Complex 32-bit floating point samples (GNURadio, osmocom_fft) |
+| .cf64  | Double Float, 64-bit per value (128 bit per sample) |
 
 ### convertir les fichiers:
 
@@ -278,20 +267,17 @@ signal = numpy.exp(1j * 2 * numpy.pi * (2.5 / 128) * numpy.arange(128))
 
 voir les scripts pour aller plus loin
 
-## 
-
 
 ## SDR disponible en RX depuis internet
 
 [WebSDR](http://websdr.org/)
 
 
-### Confidentialité
-
+## Confidentialité & Chiffrement des communications
 
 Exemple sommaire de chiffrement d'un message avant envoi:
 
-> attention: contrairement à la clé les IV ne devrait pas être réutilisés.
+> Attention il s'agit d'une vulgarisation : contrairement à la clé les IV ne devrait pas être réutilisés.
 
 utilisation:
 
@@ -302,7 +288,6 @@ function Generer-cle {
     $AESKey = New-Object Byte[] 32
     [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($AESKey)
     return $AESKey
-
 }
 
 
@@ -311,7 +296,6 @@ function Generer-IV {
     $IV = New-Object Byte[] 16
     [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($IV)
     return $IV
-
 }
 
 
@@ -337,7 +321,6 @@ $AES.Mode = "CBC"
 $Encryptor = $AES.CreateEncryptor()
 $EncryptedBytes = $Encryptor.TransformFinalBlock([Text.Encoding]::UTF8.GetBytes($Message), 0, $Message.Length)
 return [BitConverter]::ToString($EncryptedBytes) -replace '-', ''
-
 }
 
 
@@ -369,7 +352,6 @@ $AES.IV = $IVs
 $Decryptor = $AES.CreateDecryptor()
 $DecryptedBytes = $Decryptor.TransformFinalBlock($EncryptedBytes, 0, $EncryptedBytes.Length)
 return [Text.Encoding]::UTF8.GetString($DecryptedBytes)
-
 }
 ```
 
@@ -382,3 +364,31 @@ $msgchiffre = Chiffrer-message -Message "test" -Key $aes -IVs $iv
 $msgchiffre
 Dechiffrer-message -EncryptedString $msgchiffre -Key $aes -IVs $iv
 ```
+
+
+## Amplification RF
+
+> Attention à la légalité
+
+appelé également `TCXO`
+
+## Gain
+
+Generalement 20dB à 1Ghz 
+
+## attention 
+
+utiliser également un `DC blocker` pour éviter le retour de tension dans la clé SDR.
+
+* [exemple de tcxo](https://www.nooelec.com/store/lana.html)
+
+
+## Convertisseur en Frequence
+
+à utiliser avec un LNB et 12V
+
+### ka-band & ku-band
+
+* ku : de 12 à 18 Ghz
+
+* ka : de 27 à 40 Ghz
