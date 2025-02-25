@@ -24,13 +24,13 @@ Source: https://www.aresvalley.com/artemis/
 
 ### Internet
 
-[sigidwiki](https://www.sigidwiki.com/wiki/Signal_Identification_Guide)
+* [sigidwiki](https://www.sigidwiki.com/wiki/Signal_Identification_Guide)
 
 ### Artemis
 
-[Artemis.exe](https://www.aresvalley.com/artemis/)
-[Artemis Github](https://github.com/AresValley/Artemis)
+* [Artemis.exe](https://www.aresvalley.com/artemis/)
+* [Artemis Github](https://github.com/AresValley/Artemis)
 
 ## automatisation via logiciels
 
-[SigDigger](https://github.com/BatchDrake/SigDigger)
+* [SigDigger](https://github.com/BatchDrake/SigDigger)

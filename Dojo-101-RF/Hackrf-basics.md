@@ -121,4 +121,11 @@ Device Args :
 
 [pyhackRF](https://github.com/dressel/pyhackrf/tree/master#quick-example)
 
+## Radioconda (GNU Radio)
+
+installation Windows :
+
+1. [release from repo](https://github.com/ryanvolz/radioconda)
+2. Lancer GNU Radio Companion depuis le menu windows
+
 
