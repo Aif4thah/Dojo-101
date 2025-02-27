@@ -12,7 +12,9 @@ Dojo-101 is a project for capturing experience and knowledge in cybersecurity.
 
 Usable offline with a simple text editor, its purpose is to freely share knowledge.
 
->⚠️ This repository and its tools are provided "as is." The author(s) make no representations or warranties, express or implied, regarding the operation of the information, content, materials, tools, services, or products included. The author(s) disclaim, to the full extent permissible by law, all warranties, express or implied, including implied warranties of merchantability and fitness for a particular purpose.
+> ⚠️ **Obvious Disclaimer** : This repository and its tools are provided "as is." The author(s) make no representations or warranties, express or implied, regarding the operation of the information, content, materials, tools, services, or products included. The author(s) disclaim, to the full extent permissible by law, all warranties, express or implied, including implied warranties of merchantability and fitness for a particular purpose.
+
+> 🤝 **Ethical Sponsorship Request** : While this project is open-source and free to use, we kindly ask that if you are using it for commercial purposes or in a business setting, please consider sponsoring the project through GitHub Sponsors. Your support helps maintain and improve the project, ensuring it remains a valuable resource for everyone. Thank you for your understanding and generosity!
 
 
 ## ⚔️ Themes
