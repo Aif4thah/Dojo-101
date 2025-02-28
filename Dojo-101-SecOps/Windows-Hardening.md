@@ -10,7 +10,7 @@
 * [bloodhound](https://github.com/SpecterOps/BloodHound)
 * [Sharphound](https://github.com/BloodHoundAD/SharpHound)
 
-* [Nuclei](https://github.com/projectdiscovery/nuclei)
+* [AdCheck](https://github.com/CobblePot59/ADcheck)
 
 * [SharpView](https://github.com/tevora-threat/SharpView)
 
