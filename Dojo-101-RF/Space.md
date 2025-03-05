@@ -25,7 +25,7 @@
 
 ## Dipole
 
-Peut parfois suffire, bien les paraboliques soient à privilégier.
+Peut parfois suffire, bien que les paraboliques soient à privilégier.
 
 * exemple de dimensions : ~54cm*2; 120°
 
