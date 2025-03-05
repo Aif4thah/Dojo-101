@@ -4,9 +4,9 @@
 
 `BT` le champs magnétique terrestre se mesure sur les 3 axes : BTx, BTy et BTz en micro Tesla : `B(µT)` 
 
-### Android + PhyBox
+### Android + Phyphox
 
-* [PhyBox](https://phyphox.org/)
+* [Phyphox](https://phyphox.org/)
 
 Le magnétométre permet la détection des émissions électro magnétique des appareils éléctroniques
 

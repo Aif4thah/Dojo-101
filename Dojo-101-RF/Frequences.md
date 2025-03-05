@@ -14,18 +14,6 @@
 |Extremely high frequency (EHF)| 30 GHz–300 GHz|
 |Uncategorized | 300 GHz–3,000 GHz |
 
-## Satellites
-
-
-| Satellite    | Fréquence   |
-|--------------|-------------------|
-| NOAA 18      | 137.9125 MHz      |
-| NOAA 19      | 137.100  MHz      |
-| NOAA 15      | 137.620  MHz      |
-| Meteor M1    | 137.100  MHz      |
-| Meteor M2    | 137.900  MHz      |
-| Starlink     | 10.950 GHz        |
-
 
 ## Bandes libres en France
 
