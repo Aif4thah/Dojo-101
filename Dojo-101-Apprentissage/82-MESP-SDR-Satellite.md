@@ -29,7 +29,7 @@ Durée: 2 jours
 1. Rechercher les satellites NOAA et Meteor sur `SpaceTrack`
 2. Installer `SatDump` et configurer ses coordonnées au format décimal (`QTH`) et son compte `SpaceTrack`.
 3. Connecter le `HackRF` ou autres `matériel SDR` avec une antenne de type `Dipole`.
-4. Réussir à planifier un enregistrement lors d'un passage de satellite `NOAA` ou `Meteor`.
+4. Réussir à visualiser le passage d'un satellite `NOAA` ou `Meteor` et à planifier l'enregistrement des données.
 5. Réussir à enregistrer une image transmise par les satellites `NOAA` ou `Meteor`.
 
 
