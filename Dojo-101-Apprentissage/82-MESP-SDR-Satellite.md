@@ -21,7 +21,7 @@ Durée: 2 jours
 
 ## Contexte
 
-> Ce module de formation en est à sa version expérimentale : recevoir et démoduler correctement des signaux satellites à l'aide d'un simple dipôle et d'une configuration manuelle est difficile et peut échouer dans le temps imparti. Normalement cela se fait avec une antenne parabolique qui suit le satellite, car cette dernière offre un gain plus élevé et une meilleure directivité, permettant ainsi de capter des signaux plus faibles et de réduire les interférences.
+> Recevoir et démoduler correctement des signaux satellites à l'aide d'un simple dipôle et d'une configuration manuelle est difficile et peut échouer dans le temps imparti. Normalement cela se fait avec une antenne parabolique qui suit le satellite, car cette dernière offre un gain plus élevé et une meilleure directivité, permettant ainsi de capter des signaux plus faibles et de réduire les interférences.
 
 ### Démodulation de Signal Satellites
 
