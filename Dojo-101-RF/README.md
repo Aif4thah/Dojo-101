@@ -111,7 +111,15 @@ function Get-AntSize {
 
 ## SDR software define radio
 
-`Antenna` <-> `Ampli + filter` <-> `Analog/Digit` <-> `Modem error correction` <-> `Encryption` <-> `Network routing GUI` <-> `User`
+```mermaid
+flowchart TD
+    A{Antenna}
+    B[Ampli + filter]-->A
+    C[Conv. Analog/Digit]-->B
+    D[ModEm / error correction]-->C
+    E(Encryption)-->D
+    F[Voice/Data]-->E
+```
 
 ## Modulations
 
