@@ -39,12 +39,14 @@ Peut parfois suffire, bien que les paraboliques soient à privilégier.
 
 4. Vérifier les satellites, les fréquences, l'enregistrement de fichier et les captures en live (choisir la bonne démodulation)
 
-5. Quand la configuration est ok, cliquer sur `Engage tracking`
+5. Quand la configuration est ok, cliquer sur `Engage tracking`. Le dossier `Live Output` contient les signaux démodulés.
 
 
 ## Sources
 
 * [USRadioGuy](https://usradioguy.com/satdump-for-meteor-noaa-decoding/)
+
+* [a-centauri](https://www.a-centauri.com/articoli/meteor-satellite-reception)
 
 
 
