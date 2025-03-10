@@ -1,6 +1,6 @@
 # Initiation au TEMPEST
 
-Software Defined Radio 
+Introduction au TEMPEST : vol d'image à partir de rayonnements électromagnétiques.
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 

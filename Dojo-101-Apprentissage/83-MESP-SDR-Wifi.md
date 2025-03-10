@@ -1,6 +1,6 @@
 # Sécurité des réseaux sans fils
 
-Software Defined Radio, Wifi, Rogue AP, Brouillage
+Contre-mesures Wifi : brouillage et localisation de points d'accès malveillants.
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 

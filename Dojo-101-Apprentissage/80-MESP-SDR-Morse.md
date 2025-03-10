@@ -1,5 +1,7 @@
 # Communiquer en mode dégradé (morse / Software Defined Radio )
 
+Communication en Morse et Cryptographie : initiation au chiffrement des communications. 
+
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 Durée: 1 jour

@@ -74,6 +74,7 @@ mindmap
         Bluetooth
         Jamming
         HackRF
+        Satellites
 
     **Pentest**
         OSINT
