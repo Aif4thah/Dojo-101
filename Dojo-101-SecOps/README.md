@@ -487,7 +487,7 @@ Phishing à partir de `https://www.securite-solutions.fr/login`, où est le piè
 
 ## Le "Zero Trust"
 
-Politique permettant de vérifier
+Politique permettant de vérifier (ou d'enforcer) avant l'accès aux ressources :
 
 * Les Identités (utilisateurs)
 
