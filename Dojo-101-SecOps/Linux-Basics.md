@@ -6,9 +6,14 @@
 
 ## Authent Centralisée
 
-* Kerberos + LDAP
+| Techno | Description |
+|----------|-------------|
+| Kerberos | Protocole d'authentification réseau sécurisé |
+| LDAP | Service d'annuaire pour stocker les informations d'utilisateurs |
+| FreeIPA | Solution intégrée pour la gestion des identités et des politiques |
+| SSSD | Daemon pour gérer l'accès aux services d'authentification distants |
+| PAM et NSS | Modules d'authentification et de services de noms |
 
-* SSSD
 
 ## Montages / Volume
 
