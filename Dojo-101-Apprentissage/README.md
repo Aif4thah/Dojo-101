@@ -8,7 +8,7 @@
 
 * 2x : Initiation aux protocoles, scripting et outils de sécurité
 
-* 3x : Réseaux, VPN et nomadismes
+* 3x : Réseaux, VPN et nomadismes, Cloud
 
 * 4x : Audit, pentest
 

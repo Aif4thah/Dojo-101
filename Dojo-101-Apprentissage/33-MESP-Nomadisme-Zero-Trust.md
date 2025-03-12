@@ -47,14 +47,10 @@ Binôme ou seul (au choix)
 
 1. Sélectionner 10 mesures de sécurité liée au contexte. Prenez bien en compte les principaux points du Zero Trust, à savoir :
 
-    * Les Identités (utilisateurs)
-
-    * Les Devices (PC, Smartphone, Serveurs, IoT)
-
-    * Les Accès (IP sources)
-
-    * Les Services (Conditions selon la requête utilisateur)
-
+    * Les Identités
+    * Les Devices
+    * Les Accès
+    * Les Services
 
 2. Implémenter (sur une VM et le Lab) les mesures appropriées.
 

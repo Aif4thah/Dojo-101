@@ -493,7 +493,7 @@ Politique permettant de vérifier (ou d'enforcer) avant l'accès aux ressources 
 
 * Les Devices (PC, Smartphone, Serveurs, IoT)
 
-* Les Accès (IP sources)
+* Les Accès (IP, flux)
 
 * Les Services (Conditions selon la requête utilisateur)
 

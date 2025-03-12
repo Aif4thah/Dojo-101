@@ -1,5 +1,15 @@
 # Linux Basics
 
+## Ressources
+
+* [Cheat.sh](https://cheat.sh/)
+
+## Authent Centralisée
+
+* Kerberos + LDAP
+
+* SSSD
+
 ## Montages / Volume
 
 | Montage | Options recommandées | Description |

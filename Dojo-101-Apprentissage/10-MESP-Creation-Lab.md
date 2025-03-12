@@ -16,6 +16,8 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * [Badblood](https://github.com/davidprowe/BadBlood)
 * [ISO Microsoft](https://www.microsoft.com/fr-fr/evalcenter)
 * [ISO Linux Debian](https://www.debian.org/index.fr.html)
+* [Rocky Linux](https://rockylinux.org/fr-FR)
+* [Ubuntu](https://www.ubuntu-fr.org/download/)
 * [WinRM](https://learn.microsoft.com/fr-fr/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)
 * [Modèles DAT](https://github.com/bflorat/modele-da)
 
