@@ -15,6 +15,7 @@ Durée : 5 jours
 
 * [Zero Trust](https://cyber.gouv.fr/publications/le-modele-zero-trust)
 
+* [Modèles DAT](https://github.com/bflorat/modele-da)
 
 ### Contexte
 
@@ -62,13 +63,14 @@ Binôme ou seul (au choix)
 
 ### Livrables
 
-1. Un « PV » de recette à l’examinateur décrivant: 
+1. Un **DAT** minimaliste présentant les mesures adoptées dans le cadre du Zero Trust. 
+
+
+2. Un **PV de recette** décrivant: 
 
     * Les mesures de sécurité
     * Les preuves de la bonne implémentation (Screenshot avec commande `date;hostname`)
     * Vos Observations / explications complémentaires si nécessaires
-
-2. Le DAT. 
 
 
 ### Critères de performance
