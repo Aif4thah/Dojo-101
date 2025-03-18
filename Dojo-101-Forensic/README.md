@@ -31,9 +31,9 @@ flowchart TD
     D --> E[Arret]
     E --> F[Copie du disque]
 
-    A--> |Si éteinte|G[Ne pas allumer]
-    G--> F
-    F--> H(Investigation sur copies...)
+    A --> |Si éteinte|G[Ne pas allumer]
+    G --> F
+    F --> H(Investigation sur copies...)
 ```
 
 ## Copie du Disque
@@ -62,9 +62,9 @@ flowchart TD
 
 * Placer les éléments dans des fichiers .zip avec le mot de passe unique : « infected »
 
-# A MINIMA, éléments à fournir aux services enquêteurs
+## Eléments à fournir impérativement aux services d'enquêteurs
 
-*  Un ensemble de fichiers chiffrés (de types différents)
+* Un ensemble de fichiers chiffrés (de types différents)
 
 * La note de rançon dans tous ses formats (txt, hta, html, etc.)
 
