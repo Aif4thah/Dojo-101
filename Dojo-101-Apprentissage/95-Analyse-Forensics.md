@@ -27,6 +27,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 "*Nous avons détecté une activité anormale sur notre serveur à peine installé ! surement à cause de l'application peu sécurisée...Heuresement, nous avons pu copier le répertoire `/var/log/` avant que tous les journaux n'est été supprimés. Pouvez-vous nous aider à comprendre ce qu'il s'est passé sur cette machine ?*"
 
+> Il y a une 10aines d'événements suspects à investiguer et plusieurs scénarii possibles.
 
 ## Modalités pédagogiques
 
