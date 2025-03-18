@@ -20,21 +20,21 @@
 
 2. Après collecte, toujours travailler sur les copies
 
-## Si la machine est allumée
+## Collecte des preuves
 
-1. Isolation réseau
+```mermaid
+flowchart TD
+    A{Machine compromise}
+    A --> |Si allumée| B[Isoler du réseau]
+    B --> C[Dumper la RAM]
+    C --> D[Déchiffrer le Disque]
+    D --> E[Arret]
+    E --> F[Copie du disque]
 
-2. Capture de la RAM et des artefacts
-
-3. Déchiffrement ou récupération de la clé de chiffrement
-
-4. Arrêt et copie du disque au Lab
-
-## Si la machine est éteinte
-
-1. Ne pas l'allumer
-
-2. Copier le disque
+    A--> |Si éteinte|G[Ne pas allumer]
+    G--> F
+    F--> H(Investigation sur copies...)
+```
 
 ## Copie du Disque
 
