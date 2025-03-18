@@ -31,13 +31,15 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 Vous êtes chargé d'investiguer l'archive transmise afin de :
 
-1. Retracer la timeline des évènements
+1. Trouver les événements suspects (6 à 10 exploits)
 
-2. Comprendre ce qu'il s'est passé
+2. Retracer la `Timeline` des évènements
 
-3. Savoir quels applications, services et compte utilisateur ont été compromis
+3. Comprendre ce qu'il s'est passé
 
-4. Donner vos préconisations
+4. Savoir quels applications, services et comptes utilisateur ont été compromis
+
+5. Donner vos préconisations
 
 ## Modalités d'évaluation
 
