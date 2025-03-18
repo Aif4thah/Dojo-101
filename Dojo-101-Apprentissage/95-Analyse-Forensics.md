@@ -1,12 +1,14 @@
 # Forensic
 
-Vous êtes chargé de défendre votre VM et d'attaquer celles des autres groupes
+Initiation à l'investigation légale
 
 Durée: 3 jours 
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
+
+
 
 * [Target Of Evaluation](https://github.com/Aif4thah/VulnerableLightApp)
 
@@ -18,6 +20,8 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 * [Interpol Guidelines](https://www.interpol.int/content/download/16243/file/Guidelines_to_Digital_Forensics_First_Responders_V7.pdf)
 
+* Artefacts de l'archive *Infected.zip*
+
 
 ## Contexte
 
@@ -26,8 +30,15 @@ Nous avons détecté une activité anormale sur notre serveur. Nous avons pu cop
 
 ## Modalités pédagogiques
 
-Vous êtes chargé d'investiguer l'archive transmise.
+Vous êtes chargé d'investiguer l'archive transmise afin de :
 
+1. Retracer la timeline des évènements
+
+2. Comprendre ce qu'il s'est passé
+
+3. Savoir si le serveur a été compromis (ou non).
+
+4. Donner vos préconisations
 
 ## Modalités d'évaluation
 
