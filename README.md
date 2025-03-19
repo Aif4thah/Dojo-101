@@ -1,6 +1,7 @@
 
 <p align="center">
     <img src="./images/dojo101Dark.png" alt="Dojo-101" style="width: 400px;" />
+    <br>DOJO-101 : Offline Cybersecurity Knowledge Base
 </p>
 
 [![License: GNU GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -8,13 +9,12 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Aif4thah/Dojo-101)
 [![Github Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-30363D?&logo=GitHub-Sponsors&logoColor=EA4AAA)](https://github.com/sponsors/Aif4thah/)
 
-Dojo-101 is a project for capturing experience and knowledge in cybersecurity.
-
-Usable offline with a simple text editor, its purpose is to freely share knowledge.
-
-> ⚠️ **Obvious Disclaimer** : This repository and its tools are provided "as is." The author(s) make no representations or warranties, express or implied, regarding the operation of the information, content, materials, tools, services, or products included. The author(s) disclaim, to the full extent permissible by law, all warranties, express or implied, including implied warranties of merchantability and fitness for a particular purpose.
 
 > 🤝 **Ethical Sponsorship Request** : While this project is open-source and free to use, we kindly ask that if you are using it for commercial purposes or in a business setting, please consider sponsoring the project through GitHub Sponsors. Your support helps maintain and improve the project, ensuring it remains a valuable resource for everyone. Thank you for your understanding and generosity!
+
+> ⚠️ **Disclaimer** : This repository and its tools are provided "as is." The author(s) make no representations or warranties, express or implied, regarding the operation of the information, content, materials, tools, services, or products included. The author(s) disclaim, to the full extent permissible by law, all warranties, express or implied, including implied warranties of merchantability and fitness for a particular purpose.
+
+
 
 
 ## ⚔️ Themes
