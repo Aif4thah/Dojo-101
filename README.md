@@ -66,14 +66,12 @@ mindmap
 
     **RF**
         SDR
-        DSP
         TEMPEST
         SIGINT
         Wifi
         RFID
         Bluetooth
         Jamming
-        HackRF
         Satellites
 
     **Pentest**
@@ -89,7 +87,6 @@ mindmap
 
     **Forensic**
         Acquisition
-        Duplication
         Memory
         Reverse
         Logs
@@ -97,7 +94,6 @@ mindmap
 
     **Training**
         Lab
-        Situation
         Wargame
 
 ```
