@@ -32,7 +32,7 @@ Binôme ou seul (au choix)
 
 1. Reprendre le(s) rapport(s) d'Audits de configuration
 
-2. Identifier la manière dont les mesures de sécurité vont etre appliquées
+2. Identifier la manière dont les mesures de sécurité vont être appliquées
 
 3. Déployer et appliquer vos configurations
 
