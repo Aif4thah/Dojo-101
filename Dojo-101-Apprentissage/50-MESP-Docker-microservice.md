@@ -37,7 +37,7 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 
 5. Automatiser l'installation et le lancement de cette API grâce au `Dockerfile`.
 
-6. Utiliser le volume partagé avec l'hôte afin d'y stocker les **journeaux d'évenements**, le but est de conserver les logs même une fois le container détruit.
+6. Utiliser le volume partagé avec l'hôte afin d'y stocker les **journeaux d'évenements**, le but est de conserver les logs même une fois le container détruit. *le chemin des logs se modifie via les fichiers de configuration de l'application*
 
 7. Pousser votre travail sur un **repo github**.
 
@@ -75,6 +75,8 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 * La commande `docker run <container> -p x:x`, `docker build` ou `docker compose up` fonctionne.
 
 * Les mesures de sécurité sont appliquées
+
+* Les logs applicatif sont bien sur le volume partagé.
 
 
 ## Pour finir
