@@ -310,8 +310,8 @@ Il est obligatoire de :
 
 ## Normes et cadre réglementaire
 
-* LPM : Loi de programmation militaire, qui concerne les opérateurs d'importance vitale (OIV)
-* NIS2 : Network Information Security, qui concerne les opérateurs de services essentiels (OSE)
+* LPM : Loi de programmation militaire, qui concerne les opérateurs d'importance vitale (OIV) et leurs Systèmes d'Information d'Importance Vitale (SIIV)
+* NIS2 : Network Information Security, qui concerne les opérateurs de services essentiels (OSE) et leurs Systèmes d'Information Essentiels (SIE)
 * RGPD : Données personnelles
 * PCI : bancaire (payement)
 * HDS : Données de Santé

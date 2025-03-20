@@ -1,6 +1,6 @@
 # Forensic Windows
 
-## Collecte d'artefact Windows
+## Collecte d'Artefacts Windows
 
 * [FASTIR](https://github.com/SekoiaLab/Fastir_Collector)
 

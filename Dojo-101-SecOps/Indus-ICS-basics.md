@@ -1,7 +1,8 @@
-# indus ICS basics
+# systèmes industriels ICS basics
 
 ## protocoles
 
+* **Open Platform Communications Unified Architecture (OPC UA)** : recommandé ANSSI pour les SIIV et SIE
 * Supervisory Control and Data Acquisition (SCADA)
 * Industrial Automation and Control Systems (IACS)
 * Human Machine Interface (HMI)
@@ -13,17 +14,17 @@
 * Sensors
 * Remote Terminal Units (RTU)
 
-## Guide ANSSI
+## Outils
 
-[Guides ANSSI](https://cyber.gouv.fr/publications)
+* [Fuzzer OPCUA](https://github.com/ANSSI-FR/fuzzysully)
 
-### Normes
+## Normes
 
-* IEC-62443
+* IEC-62443 : Réseaux de communication industriels - Sécurité informatique des réseaux et des systèmes
 
 ## Profil de protection et certification CSPN
 
-[PP ANSSI](https://cyber.gouv.fr/publications/profils-de-protection-pour-les-systemes-industriels)
+* [PP ANSSI](https://cyber.gouv.fr/publications/profils-de-protection-pour-les-systemes-industriels)
 
 ### Certifications critères communs (CC):
 

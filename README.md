@@ -14,6 +14,8 @@
 
 > ⚠️ **Disclaimer** : This repository and its tools are provided "as is." The author(s) make no representations or warranties, express or implied, regarding the operation of the information, content, materials, tools, services, or products included. The author(s) disclaim, to the full extent permissible by law, all warranties, express or implied, including implied warranties of merchantability and fitness for a particular purpose.
 
+> 🇫🇷/🇬🇧 Currently, some sections of Dojo-101 are still in French. The translation will be completed based on client priorities and sponsor support.
+
 
 
 
