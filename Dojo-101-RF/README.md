@@ -378,19 +378,14 @@ Dechiffrer-message -EncryptedString $msgchiffre -Key $aes -IVs $iv
 
 ## Amplification RF
 
-> Attention à la légalité
+> utiliser également un `DC blocker` pour éviter le retour de tension dans le SDR.
 
-appelé également `TCXO`
+* [exemple de d'ampli](https://www.nooelec.com/store/lana.html)
 
-## Gain
 
-Generalement 20dB à 1Ghz 
+## Horloge et synchronisation
 
-## attention 
-
-utiliser également un `DC blocker` pour éviter le retour de tension dans la clé SDR.
-
-* [exemple de tcxo](https://www.nooelec.com/store/lana.html)
+un `TCXO` permet l'utilisation d'une horloge externe
 
 
 ## Convertisseur en Frequence

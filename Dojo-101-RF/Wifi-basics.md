@@ -122,6 +122,13 @@ Connaitre le lien canal-fréquence permet d'utiliser des outils software defined
 
 > 6GHz : interdit en France
 
+
+## WarDraving
+
+* [Wigle](https://wigle.net/)
+
+* [Wigle Android App](https://play.google.com/store/apps/details?id=net.wigle.wigleandroid&hl=fr)
+
 ## Le mode monitor
 
 Permets la capture et l'analyse du trafic wifi

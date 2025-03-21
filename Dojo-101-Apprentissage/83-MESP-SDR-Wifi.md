@@ -18,6 +18,10 @@ Durée: 2 jour
 
 * [Wireshark](https://www.wireshark.org/)
 
+* [Wigle](https://wigle.net/)
+
+* [Wigle Android App](https://play.google.com/store/apps/details?id=net.wigle.wigleandroid&hl=fr)
+
 * Dossier Toolbox RF
 
 * Fichiers de captures Wifi
@@ -59,6 +63,13 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 * *Hint 1: Vous pouvez faire le lien entre les canaux des SSID wifi détectés par la carte wifi et la fréquence des signaux analysés à l'aide du HackRF et mesurer le gain / puissance*
 
 * *Hint 2: Pour ne pas avoir trop d'interférences, mettez vos appareils inutilisés en mode avion*
+
+## WarDriving
+
+> Le WarDriving en voiture n'est pas recommandé, attention à respecter le Code de la route et les autres usagers.
+
+0. Découvrez le site web [Wigle](https://wigle.net/) et sa cartographie des AP Wifi.
+1. À l'aide de l'application de votre choix (Wigle conseillé), parcourez les alentours afin de répertorier et cartographier les points d'accès Wifi
 
 
 
