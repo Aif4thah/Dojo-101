@@ -380,7 +380,41 @@ Dechiffrer-message -EncryptedString $msgchiffre -Key $aes -IVs $iv
 
 > utiliser également un `DC blocker` pour éviter le retour de tension dans le SDR.
 
-* [exemple de d'ampli](https://www.nooelec.com/store/lana.html)
+Le LNA - *Low Noise Amplifier* est conçu pour amplifier le signal reçu, bien qu'il puisse également être utilisé pour amplifier le signal émis (branchement différent)
+
+Les Amplificateurs RF - *Power RF Amp* sont faits pour amplifier la puissance d'émission.
+
+* [exemple Low Noise Amplifier LNA](https://www.nooelec.com/store/lana.html)
+
+
+Pour amplifier le signal reçu :
+
+```mermaid
+flowchart TD
+
+    A[SDR]
+    D[DC Blocker]
+    E[Low Noise Amplifier]
+    F[Antenna]
+
+    B(Power) --> |5V| E 
+    F --> |Amp input| E
+    E --> |Amp output| D
+    D --> |Amplified Input| A
+```
+
+
+Pour amplifier le signal émis :
+
+```mermaid
+flowchart TD
+
+    A[SDR] -->|Output| D[DC Blocker]
+    D -->|Amp Input| E[Low Noise Amplifier]
+    B(Power) --> |5V| E 
+    E -->|Amp Output| F[Antenna]
+```
+  
 
 
 ## Horloge et synchronisation
