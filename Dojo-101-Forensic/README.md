@@ -12,11 +12,11 @@
 
 * Anti-Virus : Détecte et bloque les logiciels malveillants, principalement par analyse de signatures.
 
-* SIEM (Security Information and Event Management) : Solution permettant de gérer et analyser les évènements
+* SIEM (Security Information and Event Management) : Solution permettant de gérer et analyser les évènements.
 
-* EDR (Endpoint Detection and Response) : Signatures, Analyse des événements (comportement, IA), réponds aux menaces
+* EDR (Endpoint Detection and Response) : Signatures, Analyse des événements (comportement, IA), réponse aux menaces.
 
-* XDR (Extended Detection and Response) : Croise les informations entre le réseau et plusieurs Endpoints
+* XDR (Extended Detection and Response) : Croise les informations entre le réseau et plusieurs Endpoints.
 
 
 ## Traffic Light Protocol (TLP)
