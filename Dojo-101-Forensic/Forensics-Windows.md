@@ -45,6 +45,11 @@ C:\Users\Chase\Documents>.\procdump.exe -accepteula -ma <pid>
 
 ## Logs Windows Event:
 
+### Outils de mise en forme des logs
+
+* [sysmon](https://learn.microsoft.com/fr-fr/sysinternals/downloads/sysmon)
+
+
 ### Event ID
 
 | Id | Description  | Log Name |
