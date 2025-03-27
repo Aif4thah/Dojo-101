@@ -5,7 +5,7 @@ Nous avons un environnement Windows AD (client et serveur) pour l'administration
 
 > Déployer cette infrastructure n'est en aucun cas une fin en soi : le but est ensuite de la sécuriser. Ce travail est réalisé à l'aide des autres mises en situations professionnelles, en particulier les audits de sécurité.
 
-Durée estimée: 4 jours
+Poids: 4
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
