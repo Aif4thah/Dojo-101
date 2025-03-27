@@ -94,11 +94,23 @@ flowchart TD
 
 ### Moyens x Ciblage
 
- | Compétences | ciblage | type d'attaque |
- |-------------|---------|----------------|
- | 0 | 0 | Spam |
- | 1 | 0 | attaques opportunistes |
- | 1 | 1 | attaques étatiques ou state sponsored |
+
+ ```mermaid
+quadrantChart
+    title Reach and engagement of campaigns
+    x-axis Low Skills --> High Skills
+    y-axis Low Targeting --> High Targeting
+    quadrant-1 State Sponsored
+    quadrant-2 Failed
+    quadrant-3 Spam
+    quadrant-4 Opportunistic
+    Script Kiddies: [0.3, 0.6]
+    Phishing: [0.45, 0.23]
+    SpyWare: [0.85, 0.85]
+    SpearPhishing: [0.70, 0.69]
+    RansomWare: [0.78, 0.34]
+    Scan: [0.20, 0.34]
+```
 
 
 ### Motivation
@@ -379,45 +391,6 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 
 
 
-## Isolation logique et Virtualisation
-
-| Principe | Description | Exemple |
-|----|----|---|
-| Isolation de contexte | séparer les environnements d’exécution, assurant que les ressources (mémoire, CPU, etc.) entre les applications | Sandbox, sécurité basée sur la virtualisation (VBS) |
-| Para-Virtualisation | Les OS sont conscients de la virtualisation et communiquent avec l'hyperviseur via une couche d'abstraction | Hyper-V, VMWare Vsphere / ESXi |
-| Hyper-Virtualisation | Isolation entre les Machines virtuelles (VM) / OS virtualisé, aucune modification des VM pour gagner en performance | QEMU sans module Kqemu |
-| Virtualisation d’entrées/sorties (I/O) | répartition des ressources entre les VM | MS Storage Spaces Direct : Agrège les disques durs locaux pour créer un stockage partagé haute performance | 
-| Systemes Unikernel et micro serveur | Serveur Headless, Microsoft | Nano Server |
-| Containeur | Les applicaitons et leurs dépendances disposent d'environnements isolés via une virtualisation au niveau de l'OS | Docker |
-
-[Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
-
-
-
-### Les risques liés à la virtualisation
-
-* Risque accru de compromission des systèmes
-
-* Accroissement du risque d’indisponibilité
-
-* Complexification de l’administration et de la mise en œuvre
-
-* Complexification de la supervision
-
-[Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
-
-
-
-### Exemple de matériels
-
-* [Great Scott Gadgets Throwing Star LAN Tap Kit ](https://www.amazon.fr/Great-Scott-Gadgets-Throwing-Star/dp/B07GYWZPXG)
-* [Rubber Ducky](https://shop.hak5.org/products/usb-rubber-ducky)
-* [HackRF](https://www.passion-radio.fr/emetteur-sdr/hackrf-sdr-75.html)
-* [Flipper zero](https://flipperzero.one/)
-* [Wfi PineApple](https://shop.hak5.org/products/wifi-pineapple)
-
-
-
 ## Les mots de passe
 
 Toujours le principal point d'entrée pour l'attaquant
@@ -429,8 +402,6 @@ Toujours le principal point d'entrée pour l'attaquant
 * Le minimum syndical : 12 chars avec maj, min, digit, spéciaux
 * Avec les gestionnaires de mots de passe: 20 chars
 * Comptes de services : +30 chars
-
-
 
 
 
@@ -462,26 +433,36 @@ Les problématiques spécifiques aux Smartphones
 * Sabotage
 
 
-
-
 ### Phishing
 
 Phishing à partir de `https://www.securite-solutions.fr/login`, où est le piège ? 
 
 ```txt
-* https://www.securite-solutions.fr.it/login
+https://www.securite-solutions.fr.it/login
 
-* https://www.securite-solutions.fr?p=<script>https://bidule.io?login</script>
+https://www.securite-solutions.fr?p=<script>https://bidule.io?login</script>
 
-* https://www.securite-solutions/fr/login (plus de TLD, la machine utilisera les suffixes par défaut du bail DHCP)
+https://www.securite-solutions/fr/login (plus de TLD, la machine utilisera les suffixes par défaut du bail DHCP)
 
-* https://www.securite-solution.fr/login (solution au singulier)
+https://www.securite-solution.fr/login (solution au singulier)
 
-* https://www.securite-solµtions.fr/login (« u » cyrillique)
+https://www.securite-solµtions.fr/login (« u » cyrillique)
 
-* https://www.securite-sоlution.fr/login (« o » cyrillique)
+https://www.securite-sоlution.fr/login (« o » cyrillique)
 ```
 
+
+### Quelques matériels liés au hacking 
+
+* [Great Scott Gadgets Throwing Star LAN Tap Kit ](https://www.amazon.fr/Great-Scott-Gadgets-Throwing-Star/dp/B07GYWZPXG)
+
+* [Rubber Ducky](https://shop.hak5.org/products/usb-rubber-ducky)
+
+* [HackRF](https://www.passion-radio.fr/emetteur-sdr/hackrf-sdr-75.html)
+
+* [Flipper zero](https://flipperzero.one/)
+
+* [Wfi PineApple](https://shop.hak5.org/products/wifi-pineapple)
 
 
 
@@ -498,6 +479,70 @@ Politique permettant de vérifier (ou d'enforcer) avant l'accès aux ressources 
 * Les Services (Conditions selon la requête utilisateur)
 
 
+## Les Zone démilitarisées (DMZ)
+
+Zone isolée fournissant des services à l'extérieur (Internet / *non-trusté*) mais aussi susceptible de fournir des services aux réseaux locaux (de confiance).
+
+
+* DMZ Classique :
+
+```mermaid
+flowchart TD
+    A{Internet}
+    B[**Firewall 1**]
+    C{**DMZ**}
+    D[**Firewall 2**]
+    E{Internal Network}
+
+    A --> B
+    B --> C
+    D --> C
+    E --> D 
+```
+
+* DMZ à 1 firewall :
+
+```mermaid
+flowchart TD
+    A{Internet}
+    B[**Firewall 1**]
+    C{**DMZ**}
+    E{Internal Network}
+
+    A --> B
+    B --> C
+    E --> B 
+```
+
+> Lorsque le réseau interne peut communiquer avec une machine en DMZ sans passer par le firewall, ou lorsque le réseau interne et la DMZ sont sur le même hyperviseur, ce n'est **PAS une DMZ**.
+
+
+## Isolation logique et Virtualisation
+
+| Principe | Description | Exemple |
+|----|----|---|
+| Isolation de contexte | séparer les environnements d’exécution, assurant que les ressources (mémoire, CPU, etc.) entre les applications | Sandbox, sécurité basée sur la virtualisation (VBS) |
+| Para-Virtualisation | Les OS sont conscients de la virtualisation et communiquent avec l'hyperviseur via une couche d'abstraction | Hyper-V, VMWare Vsphere / ESXi |
+| Hyper-Virtualisation | Isolation entre les Machines virtuelles (VM) / OS virtualisé, aucune modification des VM pour gagner en performance | QEMU sans module Kqemu |
+| Virtualisation d’entrées/sorties (I/O) | répartition des ressources entre les VM | MS Storage Spaces Direct : Agrège les disques durs locaux pour créer un stockage partagé haute performance | 
+| Systemes Unikernel et micro serveur | Serveur Headless, Microsoft | Nano Server |
+| Containeur | Les applicaitons et leurs dépendances disposent d'environnements isolés via une virtualisation au niveau de l'OS | Docker |
+
+[Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
+
+
+
+### Les risques liés à la virtualisation
+
+* Risque accru de compromission des systèmes
+
+* Accroissement du risque d’indisponibilité
+
+* Complexification de l’administration et de la mise en œuvre
+
+* Complexification de la supervision
+
+[Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
 
 
 ## Le Cloud
