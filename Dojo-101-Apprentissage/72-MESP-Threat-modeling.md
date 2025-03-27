@@ -2,7 +2,7 @@
 
 Modélisation des menaces
 
-Durée: 2 jours 
+Poids: 2
 
 
 ## Ressources

@@ -4,7 +4,7 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 
 En tant que spécialiste IT, vous êtes chargé de comprendre et évaluer différents types de vulnérabilité 
 
-Durée: 1j
+Poids: 1
 
 ## Ressources
 

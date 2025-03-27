@@ -4,7 +4,7 @@ Une machine nomade dérogeant à la PSSI doit être sécurisée. Cette situation
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
-Durée : 5 jours
+Poids: 5
 
 
 ### Ressources

@@ -4,7 +4,7 @@ Vous êtes chargé d’auditer la configuration d’une machine Linux vis-à-vis
 
 Le rapport d’audit permettra d’identifier les vulnérabilités, leurs criticités ainsi que les préconisations de sécurité conformément au référentiel PASSI (partie exécution de la prestation).
 
-Durée estimée: 3 jours
+Poids: 3
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 

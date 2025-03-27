@@ -62,10 +62,11 @@ Binôme ou seul (au choix)
 
 > Attention les éléments mis en place contiennent des vulnérabilités (indispensables pour l'apprentissage), il faudra par précaution:
 
- * Les mots de passe sont dans un gestionnaire de secrets (ex: Keepass)
+ * S'assurer que les mots de passe soit dans un gestionnaire de secrets (ex: Keepass)
  * Mettre à jour l'hyperviseur
  * Limiter l'exposition des VM à l'hôte ou au réseau local en NAT lors des mises à jour, les éteindre lorsqu'on ne s'en sert pas.
  * Supprimer immédiatement les VM en cas de doute sur leur intégrité
+ * Éteindre les VM lorsqu'on ne les utilise pas.
 
 
 ## Modalités d'évaluation

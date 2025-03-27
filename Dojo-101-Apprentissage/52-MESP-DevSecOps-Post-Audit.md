@@ -2,7 +2,7 @@
 
 Vous êtes chargé d'aider les équipes Dev à remédier aux vulnérabilités sur le BackEnd de l'application .NET qui tourne sur notre serveur ultra sensible
 
-Durée: 10 jours
+Poids: 10
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 

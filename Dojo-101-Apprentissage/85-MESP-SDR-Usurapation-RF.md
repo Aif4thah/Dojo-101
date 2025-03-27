@@ -4,7 +4,7 @@ Initiation aux Émissions Opérationnelles (écoutes et captures bas niveau, leu
 
 Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
-Durée: 0.5 jour
+Poids: 0.5
 
 ## Ressources
 
