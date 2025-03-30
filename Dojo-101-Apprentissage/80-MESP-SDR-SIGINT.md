@@ -10,6 +10,10 @@ Poids: 1
 
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
+* [Sigid Wiki](https://www.sigidwiki.com/wiki/Signal_Identification_Guide)
+
+* [SDR#](https://airspy.com/download/)
+
 * Dossier Toolbox RF
 
 * Dossier d'images SIGINT
@@ -22,28 +26,35 @@ Poids: 1
 
 * [HackRF](https://greatscottgadgets.com/hackrf/one/)
 
+* [Artemis](https://www.aresvalley.com/)
+
+
 
 ## Contexte
 
-> Pour ceux qui n'ont pas de HackRF, s'entrainer avec les images SIGINT ou un SDR en ligne en attendant son tour.
-
-1. Installer l’outillage
-
-2. Parcourir la documentation RF
-
-3. SIGINT: identifier / écouter les signaux radio
-
-4. Écouter la radio FM et/ou le Traffic Aérien (AM)
+Pour vous initier au SIGINT (Signal intelligence), parcourez le spectre électromagnétique et identifiez les éléments réels qui se cachent derrière les signaux capturés.
 
 
 ## Modalités pédagogiques
 
 Binôme ou seul (au choix)
 
+> Pour ceux qui n'ont pas de HackRF, s'entrainer avec les images SIGINT ou un SDR en ligne en attendant son tour.
+
+1. Installer l’outillage SDR (Hardware et logiciel)
+
+2. Écouter la radio FM et/ou le Traffic Aérien (AM)
+
+3. **Cherchez des signaux inconnus** : Toute recherche fructueuse commence par cette première étape cruciale ! Essayez d'obtenir un maximum d'informations : fréquence, bande passante, mode, etc. Même le plus petit détail peut être décisif !
+
+4. **Inspection ces signaux** : Inspectez le signal inconnu à l'aide de nombreux outils utiles : comparez la cascade, écoutez un échantillon audio pour découvrir des similitudes ou utilisez les fonctions de filtrage avancées pour réduire les erreurs potentielles.
+
+5. **Identifier à quoi correspondent les signaux** : Lorsqu'il ne reste que quelques signaux candidats en tête de liste, essayez de croiser chaque information dont vous disposez avec la description la plus détaillée disponible (sur sigidwiki.com par éxemple), vous devriez maintenant comprendre facilement ce que vous recherchez.
+
 
 ## Modalités d'évaluation
 
-N/A
+* Présentation / Rapport
 
 ## Livrables
 
@@ -51,12 +62,16 @@ N/A
 
 ## Critères de performance
 
-* Réussite
+* Les signaux ont été identifiés avec une méthodologie adéquate
 
 # Hardware
 
 * HackRF
+
+* DC Blocker et LNA
+
 * Hub et adaptateur USB
+
 * Câble HDMI + écran
 
 
