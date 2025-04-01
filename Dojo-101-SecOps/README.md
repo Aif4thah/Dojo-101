@@ -205,7 +205,7 @@ flowchart TD
 
 Niveau de risque en fonction de la gravité (ordonnée ) et de la vraisemblance (abscisse):
 
-|  | Faible | Moyenne | Élevée | Critique |
+| Faible | Moyenne | Élevée | Critique |
 | --- | --- | --- | --- | --- |
 | **Très improbable** | Faible | Faible | Moyen | Élevé |
 | **Improbable** | Faible | Moyen | Élevé | Très élevé |
