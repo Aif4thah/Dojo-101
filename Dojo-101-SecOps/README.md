@@ -113,14 +113,12 @@ quadrantChart
 ```
 
 
-### Motivation
+### les motivations des attaquants
 
 * **Gain** : monétisation des informations et/ou déni de service
 * **Hacktivisme** : communication, idéologie
 * **Concurrence** : nuire à ses adversaires
 * **Intérêts étatiques et mercenariat** : espionnage et enjeux régaliens
-
-
 
 
 
@@ -136,8 +134,6 @@ quadrantChart
 * Score CVSS : évaluation d'une vulnérabilité [First Calculator](https://www.first.org/cvss/)
 * Reference CWE : mauvaise pratique [MITRE CWE](https://cwe.mitre.org/)
 * Score EPSS : Exploit Prediction Scoring System [First EPSS](https://www.first.org/epss/user-guide)
-
-
 
 
 ### Pourquoi y a t-il autant de vulns ?
@@ -188,9 +184,6 @@ check:
 ```
 
 
-
-
-
 ## Les Risques
 
 ```mermaid
@@ -199,31 +192,7 @@ flowchart TD
     B--> |Induit| C[Impact]
 ```
 
-
 * **Risque** = `Menace * Vulnérabilité * Impact` = `Impact * Vraissemblance` = `Gravité * Facilité d'exploitation`
-
-
-Niveau de risque en fonction de la gravité (ordonnée ) et de la vraisemblance (abscisse):
-
-| Faible | Moyenne | Élevée | Critique |
-| --- | --- | --- | --- |
-| **Très improbable** | Faible | Faible | Moyen | Élevé |
-| **Improbable** | Faible | Moyen | Élevé | Très élevé |
-| **Probable** | Moyen | Élevé | Très élevé | Critique |
-| **Très probable** | Élevé | Très élevé | Critique | Critique |
-
-
-
-
-## Le traitement du risque
-
-* écarter : par exemple, l'arrêt d'un service obsolète
-* atténuer (mitigate) : par exemple, la mise en place d'un Firewall applicatif (WAF)
-* transférer : par exemple, la migration vers un service cloud qui s'engage contractuellement à couvrir ce risque
-* accepter : laisser le risque tel quel est assumer l'impact d'une exploitation par un attaquant
-
-
-
 
 
 ## Critères de sécurité (DICP)
@@ -237,7 +206,6 @@ Niveau de risque en fonction de la gravité (ordonnée ) et de la vraisemblance 
 * **Preuve**, Tracabililité, Non-répudiation
 
 * **Authentitication** : L’authentification a pour but de vérifier l’identité dont une entité se réclame. ***La personne est bien celle qu'elle prétend être.***
-
 
 
 
@@ -263,8 +231,6 @@ Niveau de risque en fonction de la gravité (ordonnée ) et de la vraisemblance 
 * Lorsque les infractions prévues aux deux premiers alinéas ont été commises à l'encontre d'un système de traitement automatisé de données à caractère personnel mis en œuvre par l'Etat, la peine est portée à **7 ans d'emprisonnement et à 300 000 € d'amende**.
 
 
-
-
 ### Les émissions radio
 
 * L' ANFR en application de l’article L.43 du Code des postes et communications électroniques (CPCE), veille à ce que les sites et les réseaux radioélectriques soient conformes à la réglementation et instruis les cas de brouillage qui lui sont signalés.
@@ -274,8 +240,6 @@ Niveau de risque en fonction de la gravité (ordonnée ) et de la vraisemblance 
 * Les brouillages de fréquences autorisées causés par l’utilisation non conforme d’équipements radioélectriques, électriques ou électroniques sont des délits soumis à une sanction pénale pouvant aller jusqu’à 6 mois de prison et 30 000 euros d’amende (L. 39-1 du CPCE).
 
 * En dehors de dérogations encadrées pour des services de l’État, la possession, l’utilisation, la cession à titre commercial ou gratuit, la publicité illicite de brouilleurs sont strictement interdites (article L. 33-3-1 du CPCE). Ce sont des délits soumis à une sanction pénale pouvant aller jusqu’à **6 mois de prison et 30 000 euros d’amende** (L. 39-1 du CPCE).
-
-
 
 
 ### Le RGPD
@@ -301,11 +265,9 @@ Il est obligatoire de :
 * Extrait de l'**Art. L. 2321-4 du code de la défense** : Pour les besoins de la sécurité des systèmes d’information, l’obligation prévue à l’article 40 du code de procédure pénale n’est pas applicable à l’égard d’une personne de bonne foi qui **transmet à la seule autorité nationale** de sécurité des systèmes d’information une information sur l’existence d’une vulnérabilité concernant la sécurité d’un système de traitement automatisé de données.
 
 
-
 ## Le cas des éditeurs de logiciels
 
 * Extrait de l'**Art. L2321-4-1 du Code de la défense** : En cas de vulnérabilité significative affectant un de leurs produits ou en cas d'incident informatique compromettant la sécurité de leurs systèmes d'information et susceptible d'affecter significativement un de leurs produits, **les éditeurs de logiciels notifient à l'autorité nationale de sécurité des systèmes d'information** cette vulnérabilité ou cet incident ainsi que l'analyse de ses causes et de ses conséquences.
-
 
 
 ## Gouvernance
@@ -314,7 +276,6 @@ Il est obligatoire de :
 * SMSI : Système de management de la Sécurité de l'information (ISO27001)
 * SOC : Security operation center, utilise un SIEM pour la supervision de la sécurité.
 * AdR : Analyse de risque
-
 
 
 ## Normes et cadre réglementaire
@@ -330,37 +291,6 @@ Il est obligatoire de :
 * II901 : instruction interministérielle 901 (Diffusion Restreinte)
 
 
-
-
-## La documentation en entreprise (concept anglo-saxon)
-
-### Mandatory 
-
-* Policies : General Management statement
-* Standards : Specific Mandatory Controls
-* Procedures : Step By Step Instructions
-
-### Discretionary
-
-* Guidelines : Best Practices / Recommendations
-* Baselines : Minimal implementation
-
-
-
-## la classification des SI hébergeant des données sensibles
-
-* Classe 0 : SI public (p. ex. Internet) ou SI connecté à un SI public (p. ex. SI usuel) qui ne
-respecte pas les exigences de la classe 1.
-
-* Classe 1 : SI sensible / DR, connecté à Internet au travers d’une passerelle sécurisée (rupture de flux entre deux dispositifs de filtrage, produits qualifiés)
-satisfaisant les exigences de sécurité définies dans l’II 901.
-
-* Classe 2 : SI sensible / DR physiquement isolé d’Internet.
-
-Dans la pratique, cette  classification est faite dans le cadre d'une stratégie d'homologation.
-
-
-
 ## L'isolation physique
 
 La sécurité physique est la première couche de sécurité d’une entreprise, son but est de:
@@ -374,8 +304,6 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 * Limiter les attaques par ingénierie sociale
 
 
-
-
 ### Les risques liés à la sécurité physique
 
 * Tailgating : suivre quelqu'un pour passer une porte
@@ -384,8 +312,6 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 * Wiretapping : écoute via le réseau (logiciel ou matériel)
 * Keylogger : enregistrement des frappes au clavier (logiciel ou matériel)
 * Tempest : Compromissions par rayonnement electro magnétique
-
-
 
 
 ## Les mots de passe
@@ -401,7 +327,6 @@ Toujours le principal point d'entrée pour l'attaquant
 * Comptes de services : +30 chars
 
 
-
 ## Les smartphones
 
 Les problématiques spécifiques aux Smartphones
@@ -411,8 +336,6 @@ Les problématiques spécifiques aux Smartphones
 * Toujours sur soi : pro et perso
 * Backdoor Fabricant : micro activable légalement
 * Pas toujours à jour: Krack, 5Ghoul
-
-
 
 
 ## L'ingénierie sociale
@@ -459,7 +382,7 @@ https://www.securite-sоlution.fr/login (« o » cyrillique)
 
 * [Flipper zero](https://flipperzero.one/)
 
-* [Wfi PineApple](https://shop.hak5.org/products/wifi-pineapple)
+* [Wifi PineApple](https://shop.hak5.org/products/wifi-pineapple)
 
 
 
@@ -479,7 +402,6 @@ Politique permettant de vérifier (ou d'enforcer) avant l'accès aux ressources 
 ## Les Zone démilitarisées (DMZ)
 
 Zone isolée fournissant des services à l'extérieur (Internet / *non-trusté*) mais aussi susceptible de fournir des services aux réseaux locaux (de confiance).
-
 
 * DMZ Classique :
 
@@ -553,42 +475,6 @@ Consiste à utiliser des ressources distantes le plus souvent au travers d’int
 | Hybride | Public + Privé |
 
 
-
-
-## Les responsabilités dans un contexte Cloud
-
-Répartition des responsabilités entre le fournisseur de services cloud (CSP):
-
-|  | **IaaS** | **PaaS** | **SaaS** |
-|---|---|---|---|
-| **Applications** | Client | Client | CSP |
-| **Données** | Client | Client | CSP |
-| **Runtime** | Client | CSP | CSP |
-| **Middleware** | Client | CSP | CSP |
-| **Système d'exploitation** | Client | CSP | CSP |
-| **Virtualisation** | CSP | CSP | CSP |
-| **Serveurs** | CSP | CSP | CSP |
-| **Stockage** | CSP | CSP | CSP |
-| **Réseau** | CSP | CSP | CSP |
-
-
-
-
-## Les audits
-
-Les activités couvertes par le référentiel PASSI :
-
-- audit d’architecture (ARCHI);
-- audit de configuration (CONF);
-- audit de code source (CODE);
-- test d’intrusion (PENTEST);
-- audit organisationnel et physique (ORGAPHY)
-
-[Source PASSI](https://cyber.gouv.fr/actualites/appel-public-commentaires-sur-la-mise-jour-du-referentiel-passi)
-
-
-
-
 ## Référentiels et bonnes pratiques
 
 * [ANSSI](https://cyber.gouv.fr/)
@@ -609,6 +495,6 @@ Les activités couvertes par le référentiel PASSI :
 
 ## Pour aller plus loin 
 
-* [Supports Dojo-101](https://github.com/Aif4thah/Dojo-101/)
+* [Autres README Dojo-101](https://github.com/Aif4thah/Dojo-101/)
 * [Démonstration d'attaques](https://github.com/Aif4thah/VulnerableLightApp)
 

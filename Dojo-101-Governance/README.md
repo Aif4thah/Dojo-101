@@ -1,5 +1,73 @@
 # Governance, Risk, and Compliance (GRC)
 
+## Homologation du SI
+
+### Lignes de maitrise
+
+1. Opérationnel (DSI)
+2. Support - gestion des risques (RSSI)
+3. Contrôle (Comité d'Homologation)
+4. Contrôle externe
+
+
+## La documentation en entreprise (concept anglo-saxon)
+
+### Mandatory 
+
+* Policies : General Management statement
+* Standards : Specific Mandatory Controls
+* Procedures : Step By Step Instructions
+
+### Discretionary
+
+* Guidelines : Best Practices / Recommendations
+* Baselines : Minimal implementation
+
+
+## la classification des SI hébergeant des données sensibles
+
+Dans la pratique, cette  classification est faite dans le cadre d'une stratégie d'homologation.
+
+| Classe | Description |
+|----|----|
+| Classe 0 | SI public (p. ex. Internet) ou SI connecté à un SI public (p. ex. SI usuel) qui ne respecte pas les exigences de la classe 1. |
+| Classe 1 | SI sensible / DR, connecté à Internet au travers d’une passerelle sécurisée (rupture de flux entre deux dispositifs de filtrage, produits qualifiés) satisfaisant les exigences de sécurité définies dans l’II 901. |
+| Classe 2 | SI sensible / DR physiquement isolé d’Internet. |
+
+*DR : Diffusion Restreinte*
+
+
+## Autorités d'Homologation
+
+| Règlementation | Autorité d'Homologation |
+|---|---|
+| IGI1300 | ANSSI |
+| II 2100 (OTAN) | ANSSI |
+| IGI 2102 (EU) | ANSSI |
+| II901 | Pas d'exigence |
+| PSSIE | Pas d'exigence |
+| IGI 1337 | Pas d'exigence |
+| RGS | Pas d'exigence |
+| LPM | Pas d'exigence |
+
+
+## Les responsabilités dans un contexte Cloud
+
+Répartition des responsabilités entre le fournisseur de services cloud (CSP):
+
+|  | **IaaS** | **PaaS** | **SaaS** |
+|---|---|---|---|
+| **Applications** | **Client** | **Client** | CSP |
+| **Données** | **Client** | **Client** | CSP |
+| **Runtime** | **Client** | CSP | CSP |
+| **Middleware** | **Client** | CSP | CSP |
+| **Système d'exploitation** | **Client** | CSP | CSP |
+| **Virtualisation** | CSP | CSP | CSP |
+| **Serveurs** | CSP | CSP | CSP |
+| **Stockage** | CSP | CSP | CSP |
+| **Réseau** | CSP | CSP | CSP |
+
+
 ## ISO 27001
 
 ### Processus Global
@@ -89,11 +157,33 @@ flowchart TD
     5--> |Cycle Stratégique| 1 
 ```
 
-### Homologation du SI
 
-#### Lignes de maitrise
+### Le traitement du risque
 
-1. Opérationnel (DSI)
-2. Support (RSSI)
-3. Contrôle (Comité d'Homologation)
-4. Contrôle Externe
+Exemple de niveau de risque en fonction de la gravité (ordonnée) et de la vraisemblance (abscisse):
+
+| | Faible | Moyenne | Élevée | Critique |
+| --- | --- | --- | --- | --- |
+| **Très improbable** | Faible | Faible | Moyen | Élevé |
+| **Improbable** | Faible | Moyen | Élevé | Très élevé |
+| **Probable** | Moyen | Élevé | Très élevé | Critique |
+| **Très probable** | Élevé | Très élevé | Critique | Critique |
+
+
+* écarter : par exemple, l'arrêt d'un service obsolète
+* atténuer (mitigate) : par exemple, la mise en place d'un Firewall applicatif (WAF)
+* transférer : par exemple, la migration vers un service cloud qui s'engage contractuellement à couvrir ce risque
+* accepter : laisser le risque tel quel est assumer l'impact d'une exploitation par un attaquant
+
+
+## Les audits de sécurité
+
+Les activités couvertes par le référentiel PASSI :
+
+- audit d’architecture (ARCHI);
+- audit de configuration (CONF);
+- audit de code source (CODE);
+- test d’intrusion (PENTEST);
+- audit organisationnel et physique (ORGAPHY)
+
+[Source PASSI](https://cyber.gouv.fr/actualites/appel-public-commentaires-sur-la-mise-jour-du-referentiel-passi)

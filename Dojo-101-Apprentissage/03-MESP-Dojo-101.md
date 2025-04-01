@@ -26,7 +26,7 @@ Il est nécessaire que vous vous appropriiez le `markdown` (langage texte très 
 ### Partie 1: découverte de github
 
 0. Parcourir le projet via votre navigateur Web et lire le "README" 
-1. Trouver le fichier "PowerShell-Basics" grâce à la barre de recherche.
+1. Trouver le fichier "PowerShell-Basics.md" grâce à la barre de recherche.
 2. Cloner le projet dans un dossier local à l'aide la commande *git clone* ou *GitHub Desktop*
 3. à l'aide de *VSCode*, recherchez tous les fichiers contenant le mot clé *GPO* 
 4. Quel fichier donne la commande permettant d'*éditer la politique de sécurité locale* ?
