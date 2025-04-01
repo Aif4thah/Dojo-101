@@ -89,3 +89,11 @@ flowchart TD
     5--> |Cycle Stratégique| 1 
 ```
 
+### Homologation du SI
+
+#### Lignes de maitrise
+
+1. Opérationnel (DSI)
+2. Support (RSSI)
+3. Contrôle (Comité d'Homologation)
+4. Contrôle Externe
