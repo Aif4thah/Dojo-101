@@ -39,6 +39,7 @@ $env:USERDOMAIN
 $PsVersionTable
 $PsVersionTable.PSVersion
 $pid
+ls variable:
 ```
 
 ## variables
@@ -261,7 +262,7 @@ Get-SmbShare c$ |Get-SmbShareAccess
 
 ```powershell
 Get-ExecutionPolicy
-Set-ExecutionPolicy -ExecutionPolicy Restricted
+Set-ExecutionPolicy -ExecutionPolicy Restricted # en admin
 ```
 
 ## Contournement de l'executionPolicy
@@ -269,7 +270,16 @@ Set-ExecutionPolicy -ExecutionPolicy Restricted
 ```powershell
 powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -File test.ps1
 gc .\test.ps1 |iex
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
 ```
+
+
+## Update
+
+```powershell
+Get-Hotfix
+```
+
 
 ## services
 
