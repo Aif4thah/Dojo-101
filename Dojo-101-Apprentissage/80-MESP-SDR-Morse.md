@@ -17,7 +17,7 @@ Poids: 1
 
 ## Contexte
 
-Chiffrer et échanger des messages en Morse sur les ondes radio.
+Protéger et échanger des messages confidentiels en Morse sur les ondes radio.
 
 
 ## Modalités pédagogiques
