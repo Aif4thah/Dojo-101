@@ -10,28 +10,48 @@ Poids: 1
 
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
-* Dossier Toolbox RF
+* `Dossier Toolbox RF`
 
 * [HackRF](https://greatscottgadgets.com/hackrf/one/)
 
 
 ## Contexte
 
-
-1. Transformer son message (*une question de votre choix*) en code morse dans un fichier cs8 (IQ)
-
-2. L’envoyer à l’aide du HackRF à votre correspondant
-
-3. Recevoir le code morse et récupérer le message (*la réponse à votre question*)
-
-4. Communiquer une clé de chiffrement à son correspondant (ex: AES256)
-
-5. Échanger des messages chiffrés
+Chiffrer et échanger des messages en Morse sur les ondes radio.
 
 
 ## Modalités pédagogiques
 
 * Binôme
+
+### étape 1
+
+1. Équipe 1 et 2 : créer ensemble une clé de chiffrement (ex: AES256)
+
+### étape 2
+
+2. Équipe 1 : Chiffrer son message
+
+3. Équipe 1 : Transformer son message (*une question de votre choix*) en code morse dans un fichier `CS8` (IQ)
+
+4. Équipe 1 : L’envoyer à l’aide du HackRF à votre correspondant
+
+### étape 3
+
+5. Équipe 2 : Recevoir le code morse (capture CS8 du HackRF ou SDR#)
+
+6. Équipe 2 : Déchiffrer le message
+
+7. Équipe 2 : Chiffrer le message contenant votre réponse et le convertir en code morse dans un fichier `CS8` (IQ)
+
+8. Équipe 2 : L’envoyer à l’aide du HackRF à votre correspondant
+
+### étape 4
+
+9. Équipe 1 : Recevoir le code morse (capture CS8 du HackRF ou SDR#)
+
+10. Équipe 1 : Déchiffrer le message
+
 
 
 ## Modalités d'évaluation
