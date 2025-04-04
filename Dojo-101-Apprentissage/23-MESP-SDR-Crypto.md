@@ -1,6 +1,6 @@
 # Communiquer en préservant la confidentialité des informations
 
-Introduction à la cryptographie / Software Defined Radio Optionnel
+Initiation à la cryptographie / Software Defined Radio Optionnel
 
 Vous devez transmettre un message sans qu'il puisse être intercepté par un tiers
 
@@ -28,11 +28,11 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
     * RSA avec OAEP
     * RSA avec PKCS1
 
-1. Grâce à un script, générer une clé de chiffrement **AES256** ainsi que les IV avec le destinataire. Partagez là avec votre destinataire en essayant de préserver sa confidentialité.
+1. Générer une clé de chiffrement **AES256** ainsi que les IV avec le destinataire. Partagez là avec votre destinataire en essayant de préserver sa confidentialité.
 
 2. Comment générer une **clé de chiffrement** de manière sure ? Quel est le risque si les **IV** sont toujours les mêmes ?
 
-3. Chiffrer un message et l’envoyer en morse à l'aide du **HackRF** (cours en distanciel : utilisez la messagerie)
+3. Chiffrer un message et l’envoyer en morse à l'aide des scripts pour **HackRF** (cours en distanciel : utilisez la messagerie pour transmettre votre fichier .CS8)
 
 4. Recevoir et déchiffrer le message
 
