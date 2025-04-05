@@ -4,7 +4,7 @@
 
 Les pertes mondiales imputables aux attaques informatiques dépassent les **1000 milliards/an** de dollars depuis 2020, ce qui représente plus de **1% du PIB mondial**
 
-Depuis ce chiffre est en constante augmentation : *15%/an*
+Depuis ce chiffre est en constante augmentation : ~*15%/an*
 
 Les enjeux ne sont pas seulement financiers : les emplois, l’image et la stabilité de l’entreprise dépendent de la sécurité de ses actifs.
 
@@ -45,9 +45,13 @@ pie title Modes Opératoires CESIN 2024
 ## Les principaux vercteurs d'attaques
 
 * **Mail** (ex: phishing)
+
 * **Exploitation de vulnérabilité** (ex: application)
+
 * **Site malveillant** (ex: lien vers un site compromis)
+
 * **Accès à distance** (ex: RDP)
+
 * **Accès physique** (ex: clé USB)
 
 ## Causes des cyberattaques
@@ -87,8 +91,11 @@ flowchart TD
 ### Les profils
 
 * White Hat / Ethical Hacker : respecte le cadre légal (Pentest, Red Team, Bug Bounty, Divulgation responsable)
+
 * Black Hat : intention de nuire ou de gagner de l'argent
+
 * Grey Hat : Parfois éthique, parfois non...
+
 * Script Kiddies : Peu de connaissance, mais utilisation d'outils "clé en main"
 
 
@@ -116,8 +123,11 @@ quadrantChart
 ### les motivations des attaquants
 
 * **Gain** : monétisation des informations et/ou déni de service
+
 * **Hacktivisme** : communication, idéologie
+
 * **Concurrence** : nuire à ses adversaires
+
 * **Intérêts étatiques et mercenariat** : espionnage et enjeux régaliens
 
 
@@ -131,8 +141,11 @@ quadrantChart
 ### Identification et évaluation
 
 * N° CVE : identifiant unique pour une vuln. base [Nist NVD](https://www.cve.org/)
+
 * Score CVSS : évaluation d'une vulnérabilité [First Calculator](https://www.first.org/cvss/)
+
 * Reference CWE : mauvaise pratique [MITRE CWE](https://cwe.mitre.org/)
+
 * Score EPSS : Exploit Prediction Scoring System [First EPSS](https://www.first.org/epss/user-guide)
 
 
@@ -212,10 +225,15 @@ flowchart TD
 ## Le STRIDE (les menaces plutôt que les DICP)
 
 * Spoofing (usurpation)
+
 * Tampering (falsification)
+
 * Répudiation (répudiation)
+
 * Information Disclosure (fuite de données)
+
 * Déni de service
+
 * Élévation de privilège
 
 [source Microsoft](https://docs.microsoft.com/fr-fr/azure/security/develop/threat-modeling-tool-threats)
@@ -249,9 +267,13 @@ flowchart TD
 Il est obligatoire de : 
 
     * Recueillir l'accord préalable des clients.
+
     * Informer les clients de leurs droits d'accès, de rectification, d'opposition et de suppression des informations collectées.
+
     * Veiller à la sécurité des systèmes d'information.
+
     * Assurer la confidentialité des données.
+
     * Indiquer une durée de conservation des données.
 
 
@@ -273,21 +295,32 @@ Il est obligatoire de :
 ## Gouvernance
 
 * PSSI : Politique SSI
+
 * SMSI : Système de management de la Sécurité de l'information (ISO27001)
+
 * SOC : Security operation center, utilise un SIEM pour la supervision de la sécurité.
+
 * AdR : Analyse de risque
 
 
 ## Normes et cadre réglementaire
 
 * LPM : Loi de programmation militaire, qui concerne les opérateurs d'importance vitale (OIV) et leurs Systèmes d'Information d'Importance Vitale (SIIV)
+
 * NIS2 : Network Information Security, qui concerne les opérateurs de services essentiels (OSE) et leurs Systèmes d'Information Essentiels (SIE)
+
 * RGPD : Données personnelles
+
 * PCI : bancaire (payement)
+
 * HDS : Données de Santé
+
 * ISO2700X : normes SMSI
+
 * RGS : Administration
+
 * DORA : entités financières
+
 * II901 : instruction interministérielle 901 (Diffusion Restreinte)
 
 
@@ -307,10 +340,15 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 ### Les risques liés à la sécurité physique
 
 * Tailgating : suivre quelqu'un pour passer une porte
+
 * PiggyBacking : demander l'ouverture d'une porte
+
 * Shoulder Surfing : regarder le mot de passe d'un autre (par-dessus son épaule)
+
 * Wiretapping : écoute via le réseau (logiciel ou matériel)
+
 * Keylogger : enregistrement des frappes au clavier (logiciel ou matériel)
+
 * Tempest : Compromissions par rayonnement electro magnétique
 
 
@@ -319,11 +357,15 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 Toujours le principal point d'entrée pour l'attaquant
 
 * Gestionnaire de mots de passe individuel pour les comptes personnels (ex: Keepass)
+
 * Gestionnaire de mots de passe partagée pour les comptes de service
+
 * Autant que possible on complète par du MFA
 
 * Le minimum syndical : 12 chars avec maj, min, digit, spéciaux
+
 * Avec les gestionnaires de mots de passe: 20 chars
+
 * Comptes de services : +30 chars
 
 
@@ -331,10 +373,14 @@ Toujours le principal point d'entrée pour l'attaquant
 
 Les problématiques spécifiques aux Smartphones
 
-* Connecté simultanément à de multiples réseaux : 5G, Wifi, Bluetouth 
+* Connecté simultanément à de multiples réseaux : 5G, Wifi, Bluetouth
+
 * Droits donnés aux applications : l’appli lampe torche lit les messages...
+
 * Toujours sur soi : pro et perso
+
 * Backdoor Fabricant : micro activable légalement
+
 * Pas toujours à jour: Krack, 5Ghoul
 
 
@@ -447,7 +493,7 @@ flowchart TD
 | Systemes Unikernel et micro serveur | Serveur Headless, Microsoft | Nano Server |
 | Containeur | Les applicaitons et leurs dépendances disposent d'environnements isolés via une virtualisation au niveau de l'OS | Docker |
 
-[Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
+* [Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
 
 
 
@@ -478,6 +524,7 @@ Consiste à utiliser des ressources distantes le plus souvent au travers d’int
 ## Référentiels et bonnes pratiques
 
 * [ANSSI](https://cyber.gouv.fr/)
+
 * [Guide d'hygiène](https://cyber.gouv.fr/publications/guide-dhygiene-informatique)
 
 
@@ -485,9 +532,13 @@ Consiste à utiliser des ressources distantes le plus souvent au travers d’int
 ## Les réflexes en cas d'incidents
 
 * Débrancher du réseau
+
 * Ne pas éteindre
+
 * Alerter le RSSI et N+1 par un autre canal
+
 * [CERT-FR : les bons réflexes en cas d'incident](https://www.cert.ssi.gouv.fr/les-bons-reflexes-en-cas-dintrusion-sur-un-systeme-dinformation/)
+
 * [ANSSI : Gestion de crise](https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber)
 
 *Voir partie Forensic du projet*
@@ -496,5 +547,6 @@ Consiste à utiliser des ressources distantes le plus souvent au travers d’int
 ## Pour aller plus loin 
 
 * [Autres README Dojo-101](https://github.com/Aif4thah/Dojo-101/)
+
 * [Démonstration d'attaques](https://github.com/Aif4thah/VulnerableLightApp)
 
