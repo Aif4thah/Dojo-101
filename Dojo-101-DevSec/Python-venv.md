@@ -4,28 +4,34 @@ Permets d'installer et maitriser ses dépendances avec pip
 
 ## creer
 
-```powershell
+```bash
 python -m venv venv
 .\venv\Scripts\activate
 pip freeze > requirements.txt
 ```
 
-## installer localement
+## (ré)installer localement
 
-```powershell
+```bash
 pip install -r requirements.txt
 ```
 
 ## retourner dans son venv
 
-```powershell
+```bash
 .\venv\Scripts\activate
 ```
 
-## préciser une version dans le requirement.txt
+## Upgrade des dépendances
 
-exemple: 
-
+```bash
+pip install --upgrade -r requirements.txt
 ```
+
+## préciser une version
+
+contenu du fichier : `requirement.txt` 
+
+```txt
 Numpy == 1.24
 ```
