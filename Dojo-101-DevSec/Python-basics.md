@@ -7,6 +7,14 @@
 # -*- coding:utf-8 -*-
 ```
 
+## Version
+
+```python
+import sys
+sys.version
+```
+
+
 ## install dependances from sh / pwsh
 
 ```bash

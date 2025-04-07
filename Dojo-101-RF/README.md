@@ -221,6 +221,27 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 * [URH](https://github.com/jopohl/urh): Analyse / reverse
 * [Inspectrum](https://github.com/ryanvolz/radioconda) fourni avec radioconda : Analyse 
 
+## signaux
+
+### Formule du signal sinusoïdal : 
+
+
+s(t) = A sin (w * t + phi)
+
+* s : signal
+* t : temps
+* A : Amplitude (V)
+* wt + phi : Phase instantanée (rad)
+* phi : phase à l'originae (rad)
+
+### Stockage en nombre complexe
+
+I (axe y) : Partie Imaginaire : Ampliture en phase, `cos(phi)`
+Q (axe x): partie réele : Amplitude en Quadrature, coté initial, `sin(phi)`
+
+* phi : angle de phase du signal 
+* Apmplitude totale via pythagore : Racine carré(I^2 + Q^2) 
+
 
 ## formats de fichiers
 
@@ -272,7 +293,6 @@ exemples de "signal Discrete Fourier Transform" (DFT)
 signal = numpy.random.random(10) + 1j * numpy.random.random(10)
 
 signal = numpy.exp(1j * 2 * numpy.pi * (2.5 / 128) * numpy.arange(128))
-
 ```
 
 voir les scripts pour aller plus loin
@@ -280,7 +300,7 @@ voir les scripts pour aller plus loin
 
 ## SDR disponible en RX depuis internet
 
-[WebSDR](http://websdr.org/)
+* [WebSDR](http://websdr.org/)
 
 
 ## Confidentialité & Chiffrement des communications

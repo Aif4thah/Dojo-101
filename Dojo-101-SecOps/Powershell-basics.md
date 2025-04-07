@@ -309,6 +309,16 @@ Get-EventLog -List
 Get-EventLog -LogName "Security"
 ```
 
+### succès et echecs d'authent
+
+```powershell
+Get-WinEvent -FilterHashtable @{
+LogName='Security'
+Id=4625,4624
+StartTime = [datetime]::Now.AddHours(-10000)
+}
+```
+
 ## volume registry
 
 ```powershell

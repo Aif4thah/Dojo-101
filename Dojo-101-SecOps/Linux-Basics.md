@@ -15,23 +15,6 @@
 | PAM et NSS | Modules d'authentification et de services de noms |
 
 
-## Montages / Volume
-
-| Montage | Options recommandées | Description |
-|---------|---------|-------------|
-| / | aucune | root |
-| /boot | nosuid,nodev,noexec | Contient le noyau et le chargeur de démarrage. |
-| /tmp | nosuid,nodev,noexec | fichiers temporaires |
-| /home | nosuid,nodev,noexec | repertoires utilisateurs
-| /dev | aucune | peripheriques |
-| /var |  nosuid,nodev,noexec | variables et logs |
-
-```sh
-lsblk
-findmnt
-cat /etc/fstab
-```
-
 ## Clavier
 
 ```shell
@@ -39,7 +22,7 @@ setxkbmap fr  #ne marche que lorsque X est lancé
 loadkeys fr
 ```
 
-## miscs
+## misc
 
 ```sh
 apt install binutils net-tools -y
@@ -54,11 +37,22 @@ alias
 echo $HOME
 ```
 
-## partitions
+## Disques, Volumes et Montages
+
+| Montage | Options recommandées | Description |
+|---------|---------|-------------|
+| / | aucune | root |
+| /boot | nosuid,nodev,noexec | Contient le noyau et le chargeur de démarrage. |
+| /tmp | nosuid,nodev,noexec | fichiers temporaires |
+| /home | nosuid,nodev,noexec | repertoires utilisateurs
+| /dev | aucune | peripheriques |
+| /var |  nosuid,nodev,noexec | variables et logs |
 
 ```sh
+lsblk
+findmnt
+cat /etc/fstab
 fdisk -l
-lsblck
 findmnt
 gparted
 df
@@ -128,6 +122,23 @@ apt-get install --fix-broken
 
 ## fichiers
 
+| lettre | description |
+|-----|-----|
+| - | regular file | 
+| b | block special file | 
+| c | character special file | 
+| C | high performance ("contiguous data") file  | 
+| d | directory | 
+| D | door (Solaris 2.5 and up) | 
+| l | symbolic link | 
+| M | off-line ("migrated") file (Cray DMF) | 
+| n | network special file (HP-UX)  | 
+| p | FIFO (named pipe) | 
+| P | port (Solaris 10 and up) | 
+| s | socket | 
+| ? | some other file type | 
+
+
 ```shell
 file executable.2772.exe 
 objdump -d /usr/bin/sh
@@ -147,7 +158,7 @@ sha256sum test
 * hexeditor
 * bless
 
-### mettre du code exa dans un fichier binaire: 
+### mettre du code hexa dans un fichier binaire: 
 
 ```shell
 xxd -r -p input.hex output.bin
