@@ -100,6 +100,15 @@ for fruit in fruits:
 [print(i) for i in range(4)]
 ```
 
+## Boucle while
+
+```python
+i = 0
+while i < 10:
+    print(i)
+    i = i + 1
+```
+
 ## Exception et gestion des erreurs
 
 ```python

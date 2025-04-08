@@ -4,7 +4,9 @@
 ## Ressources
 
 * [Binaires](https://github.com/github/codeql-cli-binaries)
+
 * [Queries](https://github.com/github/codeql)
+
 * [Github Actions](https://github.com/github/codeql-action)
 
 
@@ -62,7 +64,7 @@ ex c#
 
 Différents formats sont possibles pour les résultats, en voici un extrait au format JSON avec notre fichier et la ligne comportant une vulnérabilité de type injection SQL :
 
-```PowerShell
+```json
     "results" : [ {
       "ruleId" : "java/sql-injection",
       "ruleIndex" : 54,
@@ -75,18 +77,23 @@ Différents formats sont possibles pour les résultats, en voici un extrait au f
             "startColumn" : 44,
             "endColumn" : 45
           }
-
 ```
 
 Une fois cette première étape effectuée, la recherche de vulnérabilité peut être poursuivie par des requêtes CodeQL plus spécifiques, une lecture manuelle du code ou encore des tests dynamiques.
 
 
-### Retour d'experience
+## Retours d'experience
 
-C/C++ -> non testé
-C# -> testé: un test uniquement, 1 « false négative »
-Go -> non testé – projet spécifique
-Java -> bon niveau, besoin de règles spécifiques Spring
-JavaScript / TypeScript -> bon niveau
-Python -> un test uniquement, multiples « false négatives »
+### Logs verbeux via les CI/CD Github
 
+ajouter `debug: true` au fichier de workflow.
+
+```yml
+<…SNIP…>
+    # Initializes the CodeQL tools for scanning.
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v3
+      with:
+        debug: true
+<…SNIP…>
+```
