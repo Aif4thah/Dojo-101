@@ -1,10 +1,22 @@
 # Cryptographie basics
 
+## Ressources
+
+* [NIST SP 800-57 part 1 Recommendation for Key Management](https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final)
+
 ## Chiffrement symétrique
 
 ### Principe
 
 Lorsque le chiffrement symétrique est mis en œuvre, la même clé permet de chiffrer et déchiffrer. Ce type de chiffrement est généralement utilisé pour la confidentialité des informations.
+
+```mermaid
+graph TD
+    A[Message clair] -->|Clé secrète| B{Chiffrement}
+    B --> C[Message chiffré]
+    C -->|Clé secrète| D{Déchiffrement}
+    D --> E[Message clair]
+```
  
 ### Algo
 
@@ -136,6 +148,14 @@ Dechiffrer-message -EncryptedString $msgchiffre -Key $k -IVs $i
 
 Le chiffrement asymétrique est composé d’une clé privée et d’une clé publique. L’une pouvant déchiffrer ce que la seconde a chiffré. Ce type de chiffrement est généralement utilisé pour l’authentification et la non-répudiation. 
 
+```mermaid
+graph TD
+    A[Message clair] -->|Clé publique| B{Chiffrement}
+    B --> C[Message chiffré]
+    C -->|Clé privée| D{Déchiffrement}
+    D --> E[Message clair]
+```
+
 ### Algo
 
 * DSA
@@ -166,6 +186,12 @@ gc .\test.ps1
 
 
 ## Hash (Condensats)
+
+```mermaid
+graph TD
+    A[Message clair] --> B{Fonction de hachage}
+    B --> C[Hachage]
+```
 
 ### Principe 
 
