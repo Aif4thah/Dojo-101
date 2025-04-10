@@ -15,11 +15,8 @@
 
 > [!NOTE]
 > While this project is open-source and free to use, we kindly ask that if you are using it for commercial purposes or in a business setting, please consider sponsoring the project through GitHub Sponsors. Your support helps maintain and improve the project, ensuring it remains a valuable resource for everyone. Thank you for your understanding and generosity.
-
-> [!NOTE]
+>
 > Some sections of Dojo-101 are still in French. The translation will be completed based on client priorities.
-
-
 
 
 ## ⚔️ Themes

@@ -2,9 +2,10 @@
 
 Initiation aux Émissions Opérationnelles (écoutes et captures bas niveau, leurres et usurpation).
 
-Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
-
 Poids: 1
+
+> [!NOTE] 
+> Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
 

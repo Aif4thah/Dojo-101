@@ -106,7 +106,7 @@ On préfère l'expérience et la mise en situation aux cours magistraux.
 
 `situation professionnelle réelle` -> `situation emblématique` -> `situations d'Apprentissage`
 
-> Attention à bien partir d'une `Situation emblématique` et des `Compétences du référentiel` pour couvrir toutes les compétences.
+Attention à bien partir d'une `Situation emblématique` et des `Compétences du référentiel` pour couvrir toutes les compétences.
 
 ## Montée en compétences
 

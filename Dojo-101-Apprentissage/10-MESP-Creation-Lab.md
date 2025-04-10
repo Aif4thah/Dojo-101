@@ -3,12 +3,10 @@
 L'objectif de ce Lab est de créer un environnement à la fois vulnérable et réaliste par rapport aux services disponibles en entreprise.
 Nous avons un environnement Windows AD (client et serveur) pour l'administration bureautique et un serveur Linux hébergeant une application métier.
 
-> [!NOTE]
-> Déployer cette infrastructure n'est en aucun cas une fin en soi : le but est ensuite de la sécuriser. Ce travail est réalisé à l'aide des autres mises en situations professionnelles, en particulier les audits de sécurité.
-
 Poids: 4
 
-Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
+> [!NOTE] 
+> Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
 
@@ -23,6 +21,9 @@ Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et le
 * [Modèles DAT](https://github.com/bflorat/modele-da)
 
 ## Contexte
+
+> [!TIPS]
+> Déployer cette infrastructure n'est en aucun cas une fin en soi : le but est ensuite de la sécuriser. Ce travail est réalisé à l'aide des autres mises en situations professionnelles, en particulier les audits de sécurité.
 
 0. Télécharger les images (ISO ou VM) Windows et Linux et vérifier leurs intégrités (Hashs ou Signatures) 
 1. Installer 3 machines virtuelles (VM) : Un contrôleur de domaine (Windows Serveur) + 1 Windows (client) + 1 Linux

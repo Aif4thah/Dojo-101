@@ -1,10 +1,11 @@
 # Découverte des attaques sur la couche 2 OSI
 
-Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
+En tant que Pentester, vous devez prouver la possibilité de mener des attaques L2 sur le LAN.
 
 Poids: 1
 
-En tant que Pentester, vous devez prouver la possibilité de mener des attaques L2 sur le LAN.
+> [!NOTE] 
+> Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
 

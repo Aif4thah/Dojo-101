@@ -2,9 +2,10 @@
 
 Communication en Morse et Cryptographie : initiation au chiffrement des communications. 
 
-Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
-
 Poids: 1
+
+> [!NOTE] 
+> Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
 
@@ -19,8 +20,10 @@ Poids: 1
 
 ## Contexte
 
-Protéger et échanger des messages confidentiels en Morse sur les ondes radio.
+> [!CAUTION]
+> Utiliser le LaNa peut endommager le SDR, Utiliser le **DC BLOCKER Obligatoirement** entre le SDR et l'ampli !
 
+Protéger et échanger des messages confidentiels en Morse sur les ondes radio.
 
 ## Modalités pédagogiques
 
