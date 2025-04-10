@@ -307,6 +307,7 @@ voir les scripts pour aller plus loin
 
 Exemple sommaire de chiffrement d'un message avant envoi:
 
+> [!WARNING]
 > Attention il s'agit d'une vulgarisation : contrairement à la clé les IV ne devrait pas être réutilisés.
 
 utilisation:
@@ -398,6 +399,7 @@ Dechiffrer-message -EncryptedString $msgchiffre -Key $aes -IVs $iv
 
 ## Amplification RF
 
+> [!WARNING]
 > utiliser également un `DC blocker` pour éviter le retour de tension dans le SDR.
 
 Le LNA - *Low Noise Amplifier* est conçu pour amplifier le signal reçu, bien qu'il puisse également être utilisé pour amplifier le signal émis (branchement différent)

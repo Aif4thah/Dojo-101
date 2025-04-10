@@ -126,7 +126,8 @@ Stratégie de sécurité du contrôleur de domaine -> Paramètres de sécurité/
 
 ## GPO
 
-> ATTENTION âpre changement d'OU les paramètres de l'ancienne GPO ne disparaisse pas forcement !
+> [!WARNING]  
+> Apres un changement d'OU les paramètres de l'ancienne GPO ne disparaisse pas forcement !
 
 `rsop.msc`
 `gpresult /z`

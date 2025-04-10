@@ -12,6 +12,7 @@
 ```bash
 mount  -o loop,ro,noexec img.dd  /mnt
 ```
+> [!TIP]
 > ne remplace pas duplicateur avec un bloqueur Hardware en écriture.
 
 

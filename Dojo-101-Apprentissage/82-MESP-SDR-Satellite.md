@@ -23,6 +23,7 @@ Poids: 2
 
 ## Contexte
 
+> [!TIP]
 > Recevoir et démoduler correctement des signaux satellites à l'aide d'un simple dipôle et d'une configuration manuelle est difficile et peut échouer dans le temps imparti. Normalement cela se fait avec une antenne parabolique qui suit le satellite, car cette dernière offre un gain plus élevé et une meilleure directivité, permettant ainsi de capter des signaux plus faibles et de réduire les interférences.
 
 ### Démodulation de Signal Satellites
@@ -44,6 +45,7 @@ Poids: 2
 4. Usurper les signaux GPS à l’aide du `HackRF` à proximité de vos instruments.
 5. `Analyser` le comportement de phyphox et d’autres applications.
 
+> [!TIP]
 > Certaines applications peuvent prendre en compte les dernières positions connues, les points d'accès wifi et sélectionner uniquement certains satellites, a vous de mener vos tests et de voir ce qui réussit ou non.
 
 ## Modalités pédagogiques

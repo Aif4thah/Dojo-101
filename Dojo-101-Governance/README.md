@@ -2,6 +2,10 @@
 
 ## Homologation du SI
 
+### Ressources
+
+[élaboration de PSSI](https://cyber.gouv.fr/publications/pssi-guide-delaboration-de-politiques-de-securite-des-systemes-dinformation)
+
 ### Lignes de maitrise
 
 1. Opérationnel (DSI)

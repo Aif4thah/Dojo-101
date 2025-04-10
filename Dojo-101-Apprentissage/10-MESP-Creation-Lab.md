@@ -3,6 +3,7 @@
 L'objectif de ce Lab est de créer un environnement à la fois vulnérable et réaliste par rapport aux services disponibles en entreprise.
 Nous avons un environnement Windows AD (client et serveur) pour l'administration bureautique et un serveur Linux hébergeant une application métier.
 
+> [!NOTE]
 > Déployer cette infrastructure n'est en aucun cas une fin en soi : le but est ensuite de la sécuriser. Ce travail est réalisé à l'aide des autres mises en situations professionnelles, en particulier les audits de sécurité.
 
 Poids: 4
@@ -60,6 +61,7 @@ flowchart TD
 
 Binôme ou seul (au choix)
 
+> [!WARNING]
 > Attention les éléments mis en place contiennent des vulnérabilités (indispensables pour l'apprentissage), il faudra par précaution:
 
  * S'assurer que les mots de passe soit dans un gestionnaire de secrets (ex: Keepass)

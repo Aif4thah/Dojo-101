@@ -39,6 +39,7 @@ Pour vous initier au SIGINT (Signal intelligence), parcourez le spectre électro
 
 Binôme ou seul (au choix)
 
+> [!TIP]
 > Pour ceux qui n'ont pas de HackRF, s'entrainer avec les images SIGINT ou un SDR en ligne en attendant son tour.
 
 1. Installer l’outillage SDR (Hardware et logiciel)

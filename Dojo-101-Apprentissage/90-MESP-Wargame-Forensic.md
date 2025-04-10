@@ -36,6 +36,7 @@ Votre mission est de défendre votre Machine tout en lançant des attaques sur c
 
 ### Partie Wargame
 
+> [!WARNING]  
 > Interdiction d'attaquer d'autres IP que celles transmises par les adversaires. Les hyperviseurs, les machines physiques, ainsi que les équipements réseau doivent rester intègres.
 
 Binôme ou seul (au choix) :
@@ -80,7 +81,7 @@ Binôme ou seul (au choix) :
 
 ## Modalités d'évaluation
 
-
+> [!IMPORTANT]
 > Chaque vulnérabilité ne peut être exploitée qu'une seule fois sur chaque VM
 
 * Décompte des points :

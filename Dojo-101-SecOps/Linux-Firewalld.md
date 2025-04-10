@@ -113,7 +113,8 @@ sudo firewall-cmd --remove-port= port-number/port-type
     
     = success
 
-> **ATTENTION PENSER A RELOAD LE FIREWALL**
+> [!IMPORTANT]
+penser reload
     
     sudo firewall-cmd --reload
 

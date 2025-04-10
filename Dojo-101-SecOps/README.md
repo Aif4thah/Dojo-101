@@ -15,7 +15,7 @@ pie title Panorama Cybermenace 2023 ANSSI
     "Entreprise stratégique" : 10
     "Établissement de santé" : 10
     "Établissement d’enseignement supérieur" : 5
-    "EPA, EPIC" : 4
+    "EPA, EPIC (mission de service public)" : 4
     "Ministère" : 2
     "Autre" : 2
 ```
@@ -66,9 +66,9 @@ pie title Causes des Cyberattaques CESIN 2024
 
 ## Notions SSI
 
-* **système d’information** :  ensemble organisé de ressources (matériel, logiciels, personnel, données et procédures) permettant de traiter et de diffuser de l’information.
+* **Système d’  Information (SI)** :  ensemble organisé de ressources (matériel, logiciels, personnel, données et procédures) permettant de traiter et de diffuser de l’information.
 
-* **Sécurité d’un système d’information** - ensemble des moyens techniques et non techniques de protection, permettant à un système d’information de résister à des événements susceptibles de compromettre la disponibilité, l’intégrité ou la confidentialité des données, traitées ou transmises et des services connexes que ces systèmes offrent ou rendent accessibles.
+* **Sécurité d’un Système d’Information (SSI)** - ensemble des moyens techniques et non techniques de protection, permettant à un système d’information de résister à des événements susceptibles de compromettre la disponibilité, l’intégrité ou la confidentialité des données, traitées ou transmises et des services connexes que ces systèmes offrent ou rendent accessibles.
 
 * **Actifs** (Assets) : tout ce qui a de la valeur au sein du SI
 
@@ -99,7 +99,7 @@ flowchart TD
 * Script Kiddies : Peu de connaissance, mais utilisation d'outils "clé en main"
 
 
-### Moyens x Ciblage
+### (Moyens & compétences) Vs Ciblage
 
 
  ```mermaid
@@ -140,7 +140,7 @@ quadrantChart
 
 ### Identification et évaluation
 
-* N° CVE : identifiant unique pour une vuln. base [Nist NVD](https://www.cve.org/)
+* N° CVE : identifiant unique pour une vuln. [Nist NVD](https://www.cve.org/), [Tenable Newest CVE](https://www.tenable.com/cve/newest)
 
 * Score CVSS : évaluation d'une vulnérabilité [First Calculator](https://www.first.org/cvss/)
 
@@ -154,7 +154,7 @@ quadrantChart
 Ce qu’on veut faire faire :
 
 ```txt
-«  Pour aller à la gare : aller toujours tout droit, dès que vous voyez un panneau vert : tourner à droite et vous êtes arrivé »
+« Pour aller à la gare : aller toujours tout droit, dès que vous voyez un panneau vert : tourner à droite et vous êtes arrivé »
 ```
 
 Ce qu'on code : 
@@ -205,7 +205,8 @@ flowchart TD
     B--> |Induit| C[Impact]
 ```
 
-* **Risque** = `Menace * Vulnérabilité * Impact` = `Impact * Vraissemblance` = `Gravité * Facilité d'exploitation`
+* **Risque** = `Menace * Vulnérabilité * Impact`
+* Evalusation du **risque** : `Impact * Vraissemblance` ou `Gravité * Facilité d'exploitation`
 
 
 ## Critères de sécurité (DICP)
@@ -234,7 +235,7 @@ flowchart TD
 
 * Déni de service
 
-* Élévation de privilège
+* Élévation de privilèges
 
 [source Microsoft](https://docs.microsoft.com/fr-fr/azure/security/develop/threat-modeling-tool-threats)
 
@@ -354,7 +355,8 @@ La sécurité physique est la première couche de sécurité d’une entreprise,
 
 ## Les mots de passe
 
-Toujours le principal point d'entrée pour l'attaquant
+> [!WARNING]  
+>Toujours le principal point d'entrée pour l'attaquant
 
 * Gestionnaire de mots de passe individuel pour les comptes personnels (ex: Keepass)
 
@@ -381,7 +383,7 @@ Les problématiques spécifiques aux Smartphones
 
 * Backdoor Fabricant : micro activable légalement
 
-* Pas toujours à jour: Krack, 5Ghoul
+* Pas toujours à jour: [Krack](https://fr.wikipedia.org/wiki/KRACK), [5Ghoul](https://asset-group.github.io/disclosures/5ghoul/)
 
 
 ## L'ingénierie sociale
@@ -389,13 +391,17 @@ Les problématiques spécifiques aux Smartphones
 ### MICE
 
 * Monnaie (Money)
+
 * Idéologie
+
 * Contrainte
+
 * Ego (flatterie)
 
-### autres leviers
+...Autres leviers :
 
 * Urgence
+
 * Sabotage
 
 
@@ -430,6 +436,8 @@ https://www.securite-sоlution.fr/login (« o » cyrillique)
 
 * [Wifi PineApple](https://shop.hak5.org/products/wifi-pineapple)
 
+* [OMG Cable](https://lab401.com/fr/products/o-mg-cable)
+
 
 
 ## Le "Zero Trust"
@@ -443,6 +451,8 @@ Politique permettant de vérifier (ou d'enforcer) avant l'accès aux ressources 
 * Les Accès (IP, flux)
 
 * Les Services (Conditions selon la requête utilisateur)
+
+Exemple : NAC (Network Access Control)
 
 
 ## Les Zone démilitarisées (DMZ)
@@ -479,6 +489,27 @@ flowchart TD
     E --> B 
 ```
 
+* plusieurs DMZ avec plusieurs niveau de sécurité
+
+```mermaid
+flowchart TD
+    A{Internet}
+    B[**Firewall 1**]
+    C{**DMZ ext**}
+    D[**Firewall 2**]
+    F[**Firewall 3**]
+    G{DMZ int}
+    E{Internal Network}
+
+    A --> B
+    B --> C
+    C --> D
+    D --> G
+    G --> F
+    F --> E
+```
+
+> [!WARNING]  
 > Lorsque le réseau interne peut communiquer avec une machine en DMZ sans passer par le firewall, ou lorsque le réseau interne et la DMZ sont sur le même hyperviseur, ce n'est **PAS une DMZ**.
 
 
@@ -541,10 +572,12 @@ Consiste à utiliser des ressources distantes le plus souvent au travers d’int
 
 * [ANSSI : Gestion de crise](https://cyber.gouv.fr/anticiper-et-gerer-une-crise-cyber)
 
-*Voir partie Forensic du projet*
+* Voir aussi la partie Forensic du projet
 
 
 ## Pour aller plus loin 
+
+* MESP d'initiation aux vulnérabilités
 
 * [Autres README Dojo-101](https://github.com/Aif4thah/Dojo-101/)
 

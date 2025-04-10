@@ -50,6 +50,7 @@ FHSS : Frequency Hopping Spread Spectrum
 | WPA3 | SAE+FS/PFS | AES-CCMP/AES-GCMP | 48 | 128..256 |
 | WPA3 entreprise | 802.1X/EAP | GCMP | AES |||
 
+> [!IMPORTANT]  
 > Attention à WPA3-personal, censé renforcer WPA2, certaines vulnérabilités sont connues via le protocole SAE. (ex : CertID VU871675, CVE-2019-9494, CVE-2019-9494, CertID VU871675)
 
 ## Standards
@@ -120,6 +121,7 @@ Connaitre le lien canal-fréquence permet d'utiliser des outils software defined
 |136    | 5.680  |
 |140    | 5.700  |
 
+> [!IMPORTANT]  
 > 6GHz : interdit en France
 
 
@@ -181,6 +183,7 @@ Le binaire se trouve dans `C:\Windows\System32\Npcap`
 
 à défaut d'une carte et de drivers compatibles, il faudra se contenter d'une énumération sommaire 
 
+> [!TIP]
 > se déconnecter de son AP wifi pour lister l'ensemble des réseaux
 
 ```batch

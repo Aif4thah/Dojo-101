@@ -422,7 +422,7 @@ ansible-playbook -i "localhost," -c local --check playbook.yml
 
 ## Push vers WINDOWS (POC depuis Linux, hors domaine AD)
 
-
+> [!IMPORTANT]  
 > Attention ces confs sont pour du POC, la bonne pratique est d'avoir un serveur dans le domaine et de s'appuyer sur Kerberos.
 
 

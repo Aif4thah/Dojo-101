@@ -31,7 +31,8 @@ Binôme
 
 ### Mise en forme du signal
 
-> Utiliser le LaNa sans DC block peut endommager le SDR !
+> [!CAUTION]
+> Utiliser le LaNa peut endommager le SDR, Utiliser le **DC BLOCKER Obligatoirement** entre le SDR et l'ampli !
 
 1. à l'aide de l'outil `SDRSharp` jouez avec les amplis `LNA` et `VGA` pour améliorer la qualité du signal reçu.
 
@@ -40,7 +41,8 @@ Binôme
 
 ### Rejeu
 
-> Afin de rester conforme à la réglementation, l'usage d'un ampli externe (LaNA) pour l'émission est interdit.
+> [!IMPORTANT] 
+> Afin de rester conforme à la réglementation, l'usage d'un ampli externe pour l'émission est interdit.
 
 1. Analyser ce que contient le fichier `.cs8` (émission drone et phonie)
 

@@ -10,11 +10,14 @@
 [![Github Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-30363D?&logo=GitHub-Sponsors&logoColor=EA4AAA)](https://github.com/sponsors/Aif4thah/)
 
 
-> 🤝 **Ethical Sponsorship Request** : While this project is open-source and free to use, we kindly ask that if you are using it for commercial purposes or in a business setting, please consider sponsoring the project through GitHub Sponsors. Your support helps maintain and improve the project, ensuring it remains a valuable resource for everyone. Thank you for your understanding and generosity!
+> [!WARNING]
+> This repository and its tools are provided "as is." The author(s) make no representations or warranties, express or implied, regarding the operation of the information, content, materials, tools, services, or products included. The author(s) disclaim, to the full extent permissible by law, all warranties, express or implied, including implied warranties of merchantability and fitness for a particular purpose.
 
-> ⚠️ **Disclaimer** : This repository and its tools are provided "as is." The author(s) make no representations or warranties, express or implied, regarding the operation of the information, content, materials, tools, services, or products included. The author(s) disclaim, to the full extent permissible by law, all warranties, express or implied, including implied warranties of merchantability and fitness for a particular purpose.
+> [!NOTE]
+> While this project is open-source and free to use, we kindly ask that if you are using it for commercial purposes or in a business setting, please consider sponsoring the project through GitHub Sponsors. Your support helps maintain and improve the project, ensuring it remains a valuable resource for everyone. Thank you for your understanding and generosity.
 
-> 🇫🇷/🇬🇧 Currently, some sections of Dojo-101 are still in French. The translation will be completed based on client priorities and sponsor support.
+> [!NOTE]
+> Some sections of Dojo-101 are still in French. The translation will be completed based on client priorities.
 
 
 
@@ -26,7 +29,7 @@
 * [Pentest](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Pentest)
 * [Forensic](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Forensic)
 * [Radio frequencies](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-RF)
-* [Governance, Risk, and Compliance](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Governance)
+* [Governance, Risk and Compliance](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Governance)
 
 
 ```mermaid

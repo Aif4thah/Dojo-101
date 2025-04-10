@@ -164,6 +164,7 @@ bcdboot c:\Windows /l en-us /s : All
 
 ### Images de boot 
 
+> [!TIP]
 > Les images distribuées par Microsoft n'ont pas de partition gpt, il n'est pas possible de booter sur une clé USB en copiant l'image (ok pour un DVD ou une VM). Il faut créer la partition gpt manuellement ou avec un outil (rufus) et désactiver le secureboot pour booter sur la clé (secureboot=produit commercial=Microsoft=pas de signature des logiciels GPLv3)
 
 ### Dual boot
@@ -225,6 +226,7 @@ And startup folder all users:
 
 `net use Y: \\serveur\dossier-public passwd /user:domaine\account /PERSISTENT:YES`
 
+> [!TIP]
 > passwd peut etre remplacé par * pour masquer le mot de passe qui sera demandé
 
 ## Commande pour créer un partage (historique):

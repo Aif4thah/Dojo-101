@@ -171,6 +171,7 @@ téléchargement des documents utilisateur
 
 ### Backup
 
+> [!TIP]
 > Ce type de backup est déprécié par Google.
 
 ```powershell
@@ -298,6 +299,7 @@ Redirection d'appel : `*#21#`
 
 Appel en absence : `*#62#` 
 
+> [!TIP]
 > Pour info, à ne pas faire en forensic : désactiver les redirection :  #002# 
 
 

@@ -33,7 +33,8 @@ En complément de l'algo, les modes de chiffrement doivent être choisis avec so
 
 ### exemple
 
-/!\ Attention: contrairement à la clé, les IVs ne doivent pas être réutilisés. Ce script est utilisé à titre éducatif et n'est pas là pour garantir la confidentialité d'échanges en production.
+> [!WARNING]
+> Attention: contrairement à la clé, les IVs ne doivent pas être réutilisés. Ce script est utilisé à titre éducatif et n'est pas là pour garantir la confidentialité d'échanges en production.
 
 en python
 

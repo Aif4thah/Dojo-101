@@ -43,6 +43,7 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 
 ### Jamming et résilience
 
+> [!TIP]
 > La puissance du HackRF étant limitée (pas d'ampli pour respecter le cadre légal), il faut placer l’antenne à proximité (quelques mètres) pour réaliser le brouillage
 
 1. Identifier le canal Wifi de la cible 
@@ -53,6 +54,7 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 
 ### Rogue AP et détection
 
+> [!TIP]
 > Dans l'idéal, un Rogue Access Point se fait passer par un Access Point légitime : même nom, même adresse Mac, etc. Mais si vous n'êtes pas à l'aise, commencer par monter un AP plus facile à identifier.
 
 
@@ -66,6 +68,7 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 
 ## WarDriving
 
+> [!CAUTION]
 > Le WarDriving en voiture n'est pas recommandé, attention à respecter le Code de la route et les autres usagers.
 
 0. Découvrez le site web [Wigle](https://wigle.net/) et sa cartographie des AP Wifi.

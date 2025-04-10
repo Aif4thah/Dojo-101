@@ -1,5 +1,11 @@
 # python basics
 
+## Ressources Securité
+
+* [pipx](https://github.com/pypa/pipx)
+
+* [bandit](https://bandit.readthedocs.io/en/latest/)
+
 ## shebang linux
 
 ```python

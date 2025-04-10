@@ -88,6 +88,7 @@ flowchart TD
 
 ## Copie du Disque
 
+> [!TIP]
 > privilégier la copie physique afin de garantir l'intégrité des preuves.
 
 * Intérêt forensique de la copie intégrale (recherche d’artefacts),
