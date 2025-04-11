@@ -48,15 +48,15 @@ flowchart TD
     W --> |running| Z{AD DC}
     W --> |running| E{DNS}
     W --> |running| F{WinRM}
-    W --> |running| F{RDP}
-    W --> |running| G{SMB}  
+    W --> |running| R{RDP}
+    W --> |running| G{SMB} 
+    W --> |executed| J>BadBlood] 
 
     L --> |running| H{WEB VLA}
     L --> |running| I{SSH}
 
     C --> |joined| Z
 
-    B --> |executed| J>BadBlood]
 ```
 
 ## Modalités pédagogiques
