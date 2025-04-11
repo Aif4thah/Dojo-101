@@ -41,17 +41,18 @@ Poids: 4
 
 ```mermaid
 flowchart TD
-    A[Hyperviseur] -->|hosts| B(Windows Server)
+    A[Hyperviseur] -->|hosts| W(Windows Server)
     A --> | hosts| C(Windows Client)
-    A --> | hosts| D(Linux Server)
+    A --> | hosts| L(Linux Server)
 
-    B --> |running| Z{AD DC}
-    B --> |running| E{DNS}
-    B --> |running| F{WinRM}  
-    B --> |running| G{SMB}  
+    W --> |running| Z{AD DC}
+    W --> |running| E{DNS}
+    W --> |running| F{WinRM}
+    W --> |running| F{RDP}
+    W --> |running| G{SMB}  
 
-    D --> |running| H{WEB VLA}
-    D --> |running| I{SSH}
+    L --> |running| H{WEB VLA}
+    L --> |running| I{SSH}
 
     C --> |joined| Z
 
