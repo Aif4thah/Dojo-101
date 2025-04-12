@@ -83,16 +83,21 @@ hackrf_sweep.exe -f 2439:2440 -N 15
 
 Trouver la porteuse avec la documentation de la cible et/ou un analyseur de spectre puis capturer:
 
+> [!TIP]
+> Il est nécessaire de jouer avec les ampli LNA et VGA pour envoyer ou recevoir un signal correct.
+
+### capture
+
 ```sh
 hackrf_transfer [-s <sample-rate>] -f <frequence> -r <file>
 ```
 
-exemple avec ampli LNA (l) - avant ampli pour mettre en forme le signal, et VGA (g) - après ampli pour ajuster le "volume"
+exemple avec ampli LNA (l) - avant ampli pour mettre en forme le signal, et VGA (g et x) - après ampli pour ajuster le "volume"
 ```sh
-hackrf_transfer -s 20000000 -l 32 -g 8 -f 2446000000 -r test.cs8
+hackrf_transfer -s 20000000 -l 32 -x 8 -g 8 -f 2446000000 -r test.cs8
 ```
 
-rejeu:
+### rejeu
 
 ```sh
 hackrf_transfer [-s <sample-rate>] -f <frequence> -t <file>
