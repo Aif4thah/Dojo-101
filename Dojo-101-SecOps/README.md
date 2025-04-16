@@ -140,13 +140,17 @@ quadrantChart
 
 ### Identification et évaluation
 
-* N° CVE : identifiant unique pour une vuln. [Nist NVD](https://www.cve.org/), [Tenable Newest CVE](https://www.tenable.com/cve/newest)
+* N° CVE : identifiant unique pour une vuln. [Nist NVD](https://nvd.nist.gov/)
+
+* N° VDB, une alternative au NVD : [VulDB](https://vuldb.com/fr/)
 
 * Score CVSS : évaluation d'une vulnérabilité [First Calculator](https://www.first.org/cvss/)
 
 * Reference CWE : mauvaise pratique [MITRE CWE](https://cwe.mitre.org/)
 
 * Score EPSS : Exploit Prediction Scoring System [First EPSS](https://www.first.org/epss/user-guide)
+
+
 
 
 ### Pourquoi y a t-il autant de vulns ?
