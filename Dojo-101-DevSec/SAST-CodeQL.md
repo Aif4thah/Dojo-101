@@ -10,6 +10,18 @@
 * [Github Actions](https://github.com/github/codeql-action)
 
 
+## Architecture recommandée
+
+```mermaid
+flowchart TD
+    D[Serveurs de Dépots de code] --> |Maintien à jour via CI/CD| B[Serveurs BDD CodeQL]
+    C[Queries code QL] --> |Mise à jours des règles| V 
+    V{Traitement des vulnérabilités}
+    B --> |Détéction| V
+    V --> |Correctif | D
+    V --> |Scans réguliers| B 
+```
+
 ## Scan en local
 
 ### Installation
