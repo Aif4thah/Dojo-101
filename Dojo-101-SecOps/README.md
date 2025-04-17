@@ -142,7 +142,7 @@ quadrantChart
 
 * N° CVE : identifiant unique pour une vuln. [Nist NVD](https://nvd.nist.gov/)
 
-* N° VDB, une alternative au NVD : [VulDB](https://vuldb.com/fr/)
+* Alternative au NVD : [ENISA](https://euvd.enisa.europa.eu/) ou encore [VulDB](https://vuldb.com/fr/)
 
 * Score CVSS : évaluation d'une vulnérabilité [First Calculator](https://www.first.org/cvss/)
 
