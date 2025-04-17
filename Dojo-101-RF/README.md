@@ -14,7 +14,8 @@
 | LO + FI | Frequence E/R |
 | LNA | Low noise ampli. (ampli en entrée de reception) |
 | VGA | Variable Gain Amplifiers |
-| Base band | signal utile |
+| Base band | signal utile ou bande de base |
+| Sample rate | fréquence d'échantillonnage (pour passer d'analogique à numérique) |
 | FFT | Fast Fourier transform, permet de convertir une suite nombres complexes en Frequences |
 | Procédure | c’est un ensemble de règles qui fixent la forme et la succession des émissions, dans le but de garantir la REGULARITE et la RAPIDITE d’acheminement du trafic et d’assurer la SECURITE des transmissions. L’inobservation de ces règles provoque l’inefficacité, des indiscrétions, de la confusion et un manque de rapidité opérationnelle. |
 | Station | c’est un ensemble d’appareils et de personnels placés sous l’autorité d’un chef de station, mis à la disposition d’une ou plusieurs autorités en vue de réaliser une ou plusieurs liaisons. |
