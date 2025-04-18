@@ -20,6 +20,44 @@ import sys
 sys.version
 ```
 
+## python virtual env (venv)
+
+Permets d'installer et maitriser ses dépendances, notament via le fichier `requirement.txt` 
+
+## creer
+
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+pip install <packages>
+pip freeze > requirements.txt
+```
+
+## retourner dans son venv
+
+```bash
+.\venv\Scripts\activate
+```
+
+## (ré)installer localement
+
+```bash
+pip install -r requirements.txt
+```
+
+## retourner dans son venv
+
+```bash
+.\venv\Scripts\activate
+```
+
+## Upgrade des dépendances
+
+```bash
+pip install --upgrade -r requirements.txt
+```
+
+
 
 ## install dependances from sh / pwsh
 
