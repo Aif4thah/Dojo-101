@@ -24,7 +24,7 @@ sys.version
 
 Permets d'installer et maitriser ses dépendances, notament via le fichier `requirement.txt` 
 
-## creer
+### creer
 
 ```bash
 python -m venv venv
@@ -33,25 +33,25 @@ pip install <packages>
 pip freeze > requirements.txt
 ```
 
-## retourner dans son venv
+### retourner dans son venv
 
 ```bash
 .\venv\Scripts\activate
 ```
 
-## (ré)installer localement
+### (ré)installer localement
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## retourner dans son venv
+### retourner dans son venv
 
 ```bash
 .\venv\Scripts\activate
 ```
 
-## Upgrade des dépendances
+### Upgrade des dépendances
 
 ```bash
 pip install --upgrade -r requirements.txt
