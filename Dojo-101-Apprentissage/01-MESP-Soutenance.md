@@ -77,7 +77,7 @@ La plupart du temps, mettre des données personnelles / sensibles (Noms, IP etc.
 
 ### Une fois ce travail réalisé commencez à faire des slides (PPT) en accord avec votre plan.
 
-Garder un ** plan identique** votre présentation reste naturelle et s'appuie sur votre rapport, par exemple :
+Garder un **plan identique** votre présentation reste naturelle et s'appuie sur votre rapport, par exemple :
 
 * Partie -> Titre de niveau 1 
 
