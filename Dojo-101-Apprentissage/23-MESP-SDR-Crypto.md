@@ -12,8 +12,11 @@ Poids: 3
 ## Ressources
 
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+
 * [Guide ANSSI](https://cyber.gouv.fr/publications/mecanismes-cryptographiques)
+
 * [POC CW](https://github.com/Aif4thah/SecCW)
+
 * `Dossier Toolbox RF`
 
 
@@ -30,11 +33,11 @@ Poids: 3
     * RSA avec OAEP
     * RSA avec PKCS1
 
-1. Générer une clé de chiffrement **AES256** ainsi que les IV avec le destinataire. Partagez là avec votre destinataire en essayant de préserver sa confidentialité.
+1. Générer une clé de chiffrement **AES256** ainsi que les IV avec le destinataire. Partagez les avec votre destinataire en essayant de préserver sa confidentialité.
 
 2. Comment générer une **clé de chiffrement** de manière sure ? Quel est le risque si les **IV** sont toujours les mêmes ?
 
-3. Chiffrer un message et l’envoyer en morse à l'aide des scripts pour **HackRF** (cours en distanciel : utilisez la messagerie pour transmettre votre fichier .CS8)
+3. Chiffrer un message et l’envoyer en morse à l'aide des scripts pour **HackRF** fournis en ressources (cours en distanciel : utilisez la messagerie pour transmettre votre fichier .CS8)
 
 4. Recevoir et déchiffrer le message
 
