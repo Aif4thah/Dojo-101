@@ -1,10 +1,8 @@
-# Communiquer en préservant la confidentialité des informations
+# Initiation à la cryptographie et au Software Defined Radio (SDR)
 
-Initiation à la cryptographie / Software Defined Radio Optionnel
+Comment transmettre un message en mode dégradé, sans qu'il puisse être intercepté ?
 
-Vous devez transmettre un message sans qu'il puisse être intercepté par un tiers
-
-Poids: 3
+Poids: 2
 
 > [!NOTE] 
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
@@ -17,10 +15,14 @@ Poids: 3
 
 * [POC CW](https://github.com/Aif4thah/SecCW)
 
+* [HackRF](https://greatscottgadgets.com/hackrf/one/)
+
 * `Dossier Toolbox RF`
 
 
 ## Contexte
+
+### Introduction 
 
 0. Parmi ces algorithmes, lesquels sont de type symétrique, asymétrique, de Hashage ? Lesquels ne devraient plus être utilisés ? 
 
@@ -33,21 +35,58 @@ Poids: 3
     * RSA avec OAEP
     * RSA avec PKCS1
 
-1. Générer une clé de chiffrement **AES256** ainsi que les IV avec le destinataire. Partagez les avec votre destinataire en essayant de préserver sa confidentialité.
 
-2. Comment générer une **clé de chiffrement** de manière sure ? Quel est le risque si les **IV** sont toujours les mêmes ?
+### Partie SDR
 
-3. Chiffrer un message et l’envoyer en morse à l'aide des scripts pour **HackRF** fournis en ressources (cours en distanciel : utilisez la messagerie pour transmettre votre fichier .CS8)
+> [!CAUTION]
+> Utiliser le LaNa peut endommager le SDR, Utiliser le **DC BLOCKER Obligatoirement** entre le SDR et l'ampli !
 
-4. Recevoir et déchiffrer le message
+Protéger et échanger des messages confidentiels en Morse sur les ondes radio.
 
-5. Comment pourrait-on s'assurer de l'intégrité du message et de l'authenticité du destinataire ? Ajouter cette fonctionnalité à l'aide d'un script ou d'un outil en CLI.
+## Modalités pédagogiques
 
-6. Reprendre la question 4 avec un algorithme postquantique
+* Binôme
 
-7. le message suivant a été intercepté: `"prggr grpuavdhr f'nccryyr yr puvsserzrag qr prnfre, vy a'rfg cyhf hgvyvft nhwbheq'uhv, pne crh ftphevft"`, il semble vulnérable à une attaque en fréquences ou une attaque par force brute. Déchiffrez-le !
+#### étape 1
 
-8. Nous suspectons qu'un adversaire a implémenté une backdoor dans notre logiciel de messagerie sécurisé, pourtant nous utilisons AES-CBC (extrait des logs ci-dessous). Trouvez ce qui ne convient pas dans le chiffrement de ces messages.
+1. Équipe 1 et 2 : créer ensemble une clé de chiffrement (ex: AES256)
+
+#### étape 2
+
+2. Équipe 1 : Chiffrer son message
+
+3. Équipe 1 : Transformer son message (*une question de votre choix*) en code morse dans un fichier `CS8` (IQ)
+
+4. Équipe 1 : L’envoyer à l’aide du HackRF à votre correspondant
+
+#### étape 3
+
+5. Équipe 2 : Recevoir le code morse (capture CS8 du HackRF ou SDR#)
+
+6. Équipe 2 : Déchiffrer le message
+
+7. Équipe 2 : Chiffrer le message contenant votre réponse et le convertir en code morse dans un fichier `CS8` (IQ)
+
+8. Équipe 2 : L’envoyer à l’aide du HackRF à votre correspondant
+
+#### étape 4
+
+9. Équipe 1 : Recevoir le code morse (capture CS8 du HackRF ou SDR#)
+
+10. Équipe 1 : Déchiffrer le message
+
+
+
+### Partie générale
+
+
+11. Comment pourrait-on s'assurer de l'intégrité du message et de l'authenticité du destinataire ? Ajouter cette fonctionnalité à l'aide d'un script ou d'un outil en CLI.
+
+12. Reprendre la question 4 avec un algorithme postquantique
+
+13. le message suivant a été intercepté: `"prggr grpuavdhr f'nccryyr yr puvsserzrag qr prnfre, vy a'rfg cyhf hgvyvft nhwbheq'uhv, pne crh ftphevft"`, il semble vulnérable à une attaque en fréquences ou une attaque par force brute. Déchiffrez-le !
+
+14. Nous suspectons qu'un adversaire a implémenté une backdoor dans notre logiciel de messagerie sécurisé, pourtant nous utilisons AES-CBC (extrait des logs ci-dessous). Trouvez ce qui ne convient pas dans le chiffrement de ces messages.
 
 ```txt
 Bob: '>s\x06\x14\x0c\xa7\xa6\x88\xd5[+i\xcc/J\xf7'
@@ -65,7 +104,7 @@ Bob: '\xde@=\x1ed\xc0Qe\x0fK=\x1c\xb3$\xd9\xcb'
 ```
 
 
-9. Nous avons intercepté le message suivant: `b'\xd72U\xc03.\xda\x99Q\xb5\x020\xc4\xb8\x16\xc6\xfa-\xb9U+\xda\\\x126L\xf3~\xbd8\x12q\x02?\x80\xeaVI\xa9\xe1'`. 
+15. Nous avons intercepté le message suivant: `b'\xd72U\xc03.\xda\x99Q\xb5\x020\xc4\xb8\x16\xc6\xfa-\xb9U+\xda\\\x126L\xf3~\xbd8\x12q\x02?\x80\xeaVI\xa9\xe1'`. 
 
 La première partie de la **Clé de 16 octets** est: `b'12345678bien'` et l'algorithme utilisé est celui-ci:
 
@@ -105,17 +144,21 @@ Relecture des scripts
 
 ## Livrables
 
-Scripts ou commandes permettant de vérifier l'intégrité et l'authenticité du message
+* Scripts ou commandes permettant de vérifier l'intégrité et l'authenticité du message
+
+* Réponses aux questions générales
 
 ## Critères de performance
 
-Pertinence des solutions proposées
+* Aquisition des notions en cryptographie
+
+* Pertinence des solutions proposées
 
 # Hardware
 
-HackRF
-Hub et adaptateur USB
-Câble HDMI + écran
+* HackRF
+
+* Amplificateur
 
 
 ## Pour finir
