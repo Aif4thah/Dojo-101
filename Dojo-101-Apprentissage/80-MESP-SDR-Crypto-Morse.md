@@ -41,11 +41,7 @@ Poids: 2
 > [!CAUTION]
 > Utiliser le LaNa peut endommager le SDR, Utiliser le **DC BLOCKER Obligatoirement** entre le SDR et l'ampli !
 
-Protéger et échanger des messages confidentiels en Morse sur les ondes radio.
-
-## Modalités pédagogiques
-
-* Binôme
+Protéger et échanger des messages confidentiels en Morse sur les ondes radio. (Pour les cours sans SDR on s'échangera le fichier `CS8` contenant le signal radio)
 
 #### étape 1
 
@@ -71,7 +67,7 @@ Protéger et échanger des messages confidentiels en Morse sur les ondes radio.
 
 #### étape 4
 
-9. Équipe 1 : Recevoir le code morse (capture CS8 du HackRF ou SDR#)
+9. Équipe 1 : Recevoir le code morse (capture CS8 ou SDR#)
 
 10. Équipe 1 : Déchiffrer le message
 
