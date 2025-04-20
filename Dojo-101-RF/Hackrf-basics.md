@@ -92,9 +92,9 @@ Trouver la porteuse avec la documentation de la cible et/ou un analyseur de spec
 hackrf_transfer [-s <sample-rate>] -f <frequence> -r <file>
 ```
 
-exemple avec ampli LNA (l) - avant ampli pour mettre en forme le signal, et VGA (g et x) - après ampli pour ajuster le "volume"
+exemple avec ampli (a), LNA (l) - avant ampli pour mettre en forme le signal, et VGA (g et x) - après ampli pour ajuster le "volume"
 ```sh
-hackrf_transfer -s 20000000 -l 32 -x 8 -g 8 -f 2446000000 -r test.cs8
+hackrf_transfer -s 20000000 -a 1 -l 32 -x 8 -g 8 -f 2446000000 -r test.cs8
 ```
 
 ### rejeu
@@ -103,7 +103,7 @@ hackrf_transfer -s 20000000 -l 32 -x 8 -g 8 -f 2446000000 -r test.cs8
 hackrf_transfer [-s <sample-rate>] -f <frequence> -t <file>
 ```
 
-exemple avec ampli en sortie (a) et ampli vga (x):
+exemple avec ampli (a) et ampli vga (x):
 
 ```sh
 hackrf_transfer -R -a 1 -x 32 -s 20000000 -f 2441000000 -t test.cs8
