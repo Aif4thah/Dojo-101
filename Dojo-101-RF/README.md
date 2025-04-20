@@ -75,38 +75,18 @@ Permets notamment d'en déduire la taille de l'antenne
 * f la fréquence (Hz)
 * T la période (s).
 
-```powershell
-function Get-AntSize {
-        <#
-    .SYNOPSIS
-        λ = c/f
+```python
+import sys
 
-    .DESCRIPTION
-        Conversion Frequence -> Longeur d'antenne Quart d'onde
+def get_ant_size(frequency):
 
-    .PARAMETER frequency
-        Frequence en Hz
+    speed_of_light = 299792458  # célérité
+    wavelength = speed_of_light / int(frequency)  # calculer la longueur d'onde
+    antenna_size = (wavelength / 4) * 100  # pour une antenne quart d'onde et en centimètres
 
-    .OUTPUTS
-        Longueur d'ondes en metre et  taille de l'antenne quart d'onde en cm.
+    print(f"λ (m) : {wavelength:.6f}")
+    print(f"Ant (cm) : {antenna_size:.6f}")
 
-    .EXAMPLE
-        $antennaSize = Get-AntennaSize -frequency 915000000 # pour une fréquence de 915 MHz
-    #>
-
-    param (
-        [Parameter(Mandatory=$true)]
-        [double]$frequency
-    )
-
-    $speedOfLight = 299792458 # célérité
-    $wavelength = $speedOfLight / $frequency # calculer la longueur d'onde
-    $antennaSize = ($wavelength / 4) * 100 # pour une antenne quart d'onde et en centimtre
-
-    Write-Host("λ (m) : $wavelength") -ForegroundColor DarkGray
-    Write-Host("Ant (cm) : $antennaSize") -ForegroundColor White
-
-}
 ```
 
 
@@ -186,8 +166,6 @@ def write_iq(iqfile):
     output_int[1::2] = np.round(r.imag)
     output_int.tofile(iqfile + ".cs8")
 
-if __name__ == "__main__":
-    write_iq("out")
 ```
 
 
@@ -287,6 +265,16 @@ Mode                 LastWriteTime         Length Name
 
 ## Numpy & co
 
+Lib : 
+
+```python
+import numpy as np
+import pyfftw
+import matplotlib.pyplot as plt
+import sys
+import gc
+```
+
 lire la partie réelle et imaginaire des IQ : 
 
 ```python
@@ -377,13 +365,11 @@ def read_fft(input_file):
     except Exception as e:
         print(f"Error:\n{str(e)}")
 
-
 ```
 
 Amplitude en fonction du temps (S(t))
 
 ```python
-
 
 def read_amplitude(input_file, sampling_rate=8000000): #default sample rate = 8000000 (cf. script qui créé le CS8 à transmettre)
 
@@ -404,7 +390,7 @@ def read_amplitude(input_file, sampling_rate=8000000): #default sample rate = 80
         time = np.linspace(0, len(amplitude) / sampling_rate, num=len(amplitude))
 
         # Optimisation de l'affichage avec échantillonnage
-        step = max(1, len(amplitude) // 4000)  # Afficher 4000 points maximum
+        step = max(1, len(amplitude) // 40000)  # Afficher 40000 points maximum
         plt.figure(figsize=(10, 6))
         plt.plot(time[::step], amplitude[::step], label="Amplitude du Signal", color="purple")
         plt.title("Amplitude du Signal en Fonction du Temps")
@@ -424,6 +410,7 @@ def read_amplitude(input_file, sampling_rate=8000000): #default sample rate = 80
         print("Erreur de type dans les données. Vérifiez le fichier.")
     except Exception as e:
         print(f"Une erreur est survenue :\n{str(e)}")
+
 ```
 
 
@@ -434,96 +421,7 @@ def read_amplitude(input_file, sampling_rate=8000000): #default sample rate = 80
 
 ## Confidentialité & Chiffrement des communications
 
-Exemple sommaire de chiffrement d'un message avant envoi:
-
-> [!WARNING]
-> Attention il s'agit d'une vulgarisation : contrairement à la clé les IV ne devrait pas être réutilisés.
-
-utilisation:
-
-```powershell
-
-function Generer-cle {
-
-    $AESKey = New-Object Byte[] 32
-    [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($AESKey)
-    return $AESKey
-}
-
-
-function Generer-IV {
-
-    $IV = New-Object Byte[] 16
-    [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($IV)
-    return $IV
-}
-
-
-function Chiffrer-message
-{
-    param(
-    [Parameter(Mandatory=$true, Position=0)]
-    [ValidateNotNullOrEmpty()]
-    [string] $Message,
-
-    [Parameter(Mandatory=$true, Position=1)]
-    [System.Byte[]] $Key,
-  
-    [Parameter(Mandatory=$true, Position=2)]
-    [Byte[]] $IVs
-
-    )
-
-$AES = New-Object System.Security.Cryptography.AesCryptoServiceProvider
-$AES.Key = $Key
-$AES.IV = $IVs
-$AES.Mode = "CBC"
-$Encryptor = $AES.CreateEncryptor()
-$EncryptedBytes = $Encryptor.TransformFinalBlock([Text.Encoding]::UTF8.GetBytes($Message), 0, $Message.Length)
-return [BitConverter]::ToString($EncryptedBytes) -replace '-', ''
-}
-
-
-## déchiffrement
-
-function Dechiffrer-message
-{
-    param(
-    [Parameter(Mandatory=$true, Position=0)]
-    [ValidateNotNullOrEmpty()]
-    [string] $EncryptedString,
-
-    [Parameter(Mandatory=$true, Position=1)]
-    [System.Byte[]] $Key,
-
-    [Parameter(Mandatory=$true, Position=2)]
-    [Byte[]] $IVs
-
-    )
-
-$EncryptedBytes = [byte[]]::new($EncryptedString.Length / 2)
-for ($i = 0; $i -lt $EncryptedBytes.Length; $i++) {
-    $EncryptedBytes[$i] = [Convert]::ToByte($EncryptedString.Substring($i * 2, 2), 16)
-}
-$AES = New-Object System.Security.Cryptography.AesCryptoServiceProvider
-$AES.Key = $Key
-$AES.Mode = "CBC"
-$AES.IV = $IVs
-$Decryptor = $AES.CreateDecryptor()
-$DecryptedBytes = $Decryptor.TransformFinalBlock($EncryptedBytes, 0, $EncryptedBytes.Length)
-return [Text.Encoding]::UTF8.GetString($DecryptedBytes)
-}
-```
-
-utilisation :
-
-```powershell
-$aes = Generer-cle
-$iv = generer-iv                                      
-$msgchiffre = Chiffrer-message -Message "test" -Key $aes -IVs $iv
-$msgchiffre
-Dechiffrer-message -EncryptedString $msgchiffre -Key $aes -IVs $iv
-```
+voir partie cryptographie du projet.
 
 
 ## Amplification RF
