@@ -1,5 +1,7 @@
 # frequences
 
+
+
 ## Gammes de Frequences
 
 | Frequency band | Signal  range |
@@ -14,6 +16,18 @@
 |Extremely high frequency (EHF)| 30 GHz–300 GHz|
 |Uncategorized | 300 GHz–3,000 GHz |
 
+### bandes vues par les survivalistes
+
+| **Bande** | **Fréquence** | **Portée** | **Rebond sur les couches de l'atmosphère** | **Remarques** |
+|-----------|---------------|------------|---------------------------------------------|---------------|
+| **FM (VHF II)** | 87,5 - 108 MHz | 100 km (jusqu'à 200 km dans des conditions favorables) | Non | Qualité audio proche de la HIFI, peu sensible aux parasites. Idéale pour les programmes régionaux et nationaux. |
+| **MW (AM)** | 530 - 1600 kHz | 300 - 400 km le jour, 2000 km la nuit | Oui | Se réfléchit sur les hautes couches de l'atmosphère. Bonne pour les fonds de vallées. Antenne intégrée. |
+| **LW (Long Wave)** | 150 - 300 kHz | 2000 km (jour et nuit) | Oui | Onde de sol et réflexion atmosphérique. Stable mais sensible aux parasites. Antenne intégrée. |
+| **SW (Short Wave)** | 3 - 30 MHz | Milliers de km | Oui | Rebondit entre l'ionosphère et la terre. Fréquences à ajuster selon l'heure et la saison. Antenne long fil recommandée. |
+| **DAB/DAB+** | 174 - 240 MHz (VHF III) et 1452 - 1492 MHz (UHF L) | Variable | Non | Qualité audio stable, mais complexité accrue et risque de panne. |
+| **NOAA** | VHF NOAA | N/A | Non | Diffuse des bulletins météos aux USA et au Canada. Inutile en Europe. |
+
+[source resilience-urbaine](https://www.resilience-urbaine.com/materiel-survie/radio-survivaliste-choisir-materiel/)
 
 ## Bandes libres en France
 
@@ -118,31 +132,30 @@ Source: [Groupe FCF](https://groupefcf.org/)
 
 [Guerre de france](https://guerredefrance.fr/Documents/RADIOLOCALE.pdf)
 
-```txt
-137,000 à 138,000 MHz Réseaux privés 
-138,000 à 144,000 MHz Usage militaire 
-143,9875 à 144,000 MHz Fréquence réservée "vol libre" 
-144,000 à 146,000 MHz Trafic amateur, bande des "2 mètres" 
-146,000 à 156,000 MHz Trafic aéronautique 
-151,005 à 152,990 MHz Réseaux privés 
-152,000 à 152,020 MHz Radiomessagerie sur site 
-152,570 à 152,655 MHz Appareils faible portée non spécifiques 
-152,990 à 155,995 MHz Réseaux privés 
-154,980 à 155,180 MHz Liaisons fixes d'abonnés isolés 
-155,995 à 162,995 MHz Réseaux privés en dehors des côtes 
-156,025 à 157,425 MHz Trafic maritime et fluvial, bande "VHF marine" 
-160,625 à 160,950 MHz Trafic maritime et fluvial, bande "VHF marine" 
-161,550 à 162,025 MHz Trafic maritime et fluvial, bande "VHF marine" 
-162,500 à 162,525 MHz Trafic maritime et fluvial, bande "VHF marine" 
-164,800 à 168,900 MHz Réseaux privés 
-169,410 à 173,815 MHz Radiomessagerie norme ERMES 
-169,795 à 173,495 MHz Réseaux privés 
-173,500 à 174,000 MHz Police, pompiers, SAMU
-
-- Canal 0 : 143,98750 FFVL ( parapentes )
-- Canal 16 : 156,800 SOS international (fréquence veillée par les services de secours)
-- 145,500 : Appels mobiles en FM (pour les radios amateurs)
-```
+| **Fréquence (MHz)** | **Usage**| **Remarques**    |
+|---------------------|--------|----------------|
+| 137,000 à 138,000  | Réseaux privés| |
+| 138,000 à 144,000  | Usage militaire | |
+| 143,9875 à 144,000 | Fréquence réservée "vol libre"   | |
+| 144,000 à 146,000  | Trafic amateur, bande des "2 mètres"    | |
+| 146,000 à 156,000  | Trafic aéronautique | |
+| 151,005 à 152,990  | Réseaux privés| |
+| 152,000 à 152,020  | Radiomessagerie sur site   | |
+| 152,570 à 152,655  | Appareils faible portée non spécifiques | |
+| 152,990 à 155,995  | Réseaux privés| |
+| 154,980 à 155,180  | Liaisons fixes d'abonnés isolés | |
+| 155,995 à 162,995  | Réseaux privés en dehors des côtes| |
+| 156,025 à 157,425  | Trafic maritime et fluvial, bande "VHF marine"| |
+| 160,625 à 160,950  | Trafic maritime et fluvial, bande "VHF marine"| |
+| 161,550 à 162,025  | Trafic maritime et fluvial, bande "VHF marine"| |
+| 162,500 à 162,525  | Trafic maritime et fluvial, bande "VHF marine"| |
+| 164,800 à 168,900  | Réseaux privés| |
+| 169,410 à 173,815  | Radiomessagerie norme ERMES| |
+| 169,795 à 173,495  | Réseaux privés| |
+| 173,500 à 174,000  | Police, pompiers, SAMU     | |
+| 143,98750   | Canal 0 : FFVL (parapentes)| |
+| 156,800     | Canal 16 : SOS international     | Fréquence veillée par les services de secours   |
+| 145,500     | Appels mobiles en FM| Pour les radios amateurs     |
 
 
 ## Internet
