@@ -164,14 +164,17 @@ git push -f origin main #push vers la branche main
 git gc --aggressive --prune=all # supression des anciens fichiers
 ```
 
-## Actions / Workflows
+## Actions / Workflows / CI CD
 
 ### Scan de sécurité via les workflows github
 
-Exemple pour Python avec l'outil Bandit
+Exemple pour Python avec l'outil Bandit avec permissions sur le workflow.
 
 ```yml
 name: Analyse de sécurité avec Bandit
+permissions:
+  contents: read
+  pull-requests: write
 
 on:
   push:
