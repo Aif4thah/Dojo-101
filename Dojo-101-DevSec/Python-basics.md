@@ -57,7 +57,14 @@ pip install -r requirements.txt
 pip install --upgrade -r requirements.txt
 ```
 
+## Scan de sécurité
 
+### Bandit
+
+```sh
+pip install bandit
+bandit -r .
+```
 
 ## install dependances from sh / pwsh
 

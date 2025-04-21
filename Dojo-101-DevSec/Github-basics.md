@@ -166,45 +166,44 @@ git gc --aggressive --prune=all # supression des anciens fichiers
 
 ## Actions / Workflows
 
-This workflow will build a .NET project, [more information here](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net)
+### Scan de sécurité via les workflows github
+
+Exemple pour Python avec l'outil Bandit
 
 ```yml
-name: .NET
+name: Analyse de sécurité avec Bandit
 
 on:
   push:
-    branches: [ "main" ]
-    tags:
-      - '*'
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
-    tags:
-      - '*'
+    branches:
+      - main
 
 jobs:
-  build:
-
-    runs-on: windows-latest
+  security-scan:
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
+    - name: Vérifier le code
+      uses: actions/checkout@v3
+
+    - name: Configurer Python
+      uses: actions/setup-python@v4
       with:
-        dotnet-version: 8.0.x
-    - name: Display dotnet version
-      run: dotnet --version
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Publish
-      run: dotnet publish -c Release -o ./publish
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: my-artifact
-        path: ./publish/
+        python-version: '3.x'
+
+    - name: Installer les dépendances
+      run: |
+        python -m venv venv
+        source venv/bin/activate
+        pip install -r requirements.txt
+        pip install bandit
+    - name: Analyse de sécurité avec Bandit
+      run: |
+        source venv/bin/activate
+        bandit -r .
 ```
 
 
