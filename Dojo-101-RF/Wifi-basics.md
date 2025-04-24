@@ -16,6 +16,8 @@
 
 * [HackRF](https://greatscottgadgets.com/hackrf/one/)
 
+* [ESP32 Marauder](https://github.com/justcallmekoko/ESP32Marauder)
+
 
 ## Definitions
 
@@ -52,6 +54,8 @@ FHSS : Frequency Hopping Spread Spectrum
 
 > [!IMPORTANT]  
 > Attention à WPA3-personal, censé renforcer WPA2, certaines vulnérabilités sont connues via le protocole SAE. (ex : CertID VU871675, CVE-2019-9494, CVE-2019-9494, CertID VU871675)
+
+
 
 ## Standards
 
@@ -123,6 +127,17 @@ Connaitre le lien canal-fréquence permet d'utiliser des outils software defined
 
 > [!IMPORTANT]  
 > 6GHz : interdit en France
+
+## Principales attaques
+
+
+* Deauth pour le Deni de service ou capture de hanshakes
+
+* Rogue AP, Evil Twin (Clone) pour la mise en place d'un MITM
+
+* Captures Handshakes pour cracker le mot de passe
+
+* PMKID (attaques similaires au handshake permettant le brute-force offline)
 
 
 ## WarDraving
@@ -366,14 +381,7 @@ ___________________________________________
 
 une fois branché: `http://172.16.42.1:1471/#/Login`
 
-default passwd: hak5pineapple
-
-### Principales attaques
-
-* Deauth
-* Rogue AP / Evil Twin (Clone)
-* Captures Handshakes
-* MITM
+default passwd: `hak5pineapple`
 
 ### Campagnes
 
