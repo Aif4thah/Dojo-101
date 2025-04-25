@@ -177,17 +177,19 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 
 * Verticales omnidirectionnelles à λ/2 ou λ/4
 
-* Directionnelles avec directeurs, radiateur et réflecteur ex: Yagi
+* Directionnelles avec directeurs, radiateur et réflecteur (ex: Yagi)
 
-* Dipôles
+* Dipôles (2 fils généralement à λ/2)
 
 * Parabolique (ex: reception sattelite)
 
 * Loop et cadre magnétique (ex: RFID)
 
+
 ## informations sur les produits et les protocoles
 
 * [FCC](https://www.fcc.gov/)
+
 
 ## Tools
 
@@ -199,6 +201,7 @@ NRZ, NRZI, Manchester, Miller, bipolaires
 * [qt-Dab](https://github.com/JvanKatwijk/qt-dab/releases) : Radio Numerique Terrestre (RNT DAB+) - rester en version 2.7 pour windows
 * [URH](https://github.com/jopohl/urh): Analyse / reverse
 * [Inspectrum](https://github.com/ryanvolz/radioconda) fourni avec radioconda : Analyse 
+
 
 ## signaux
 
@@ -242,6 +245,7 @@ Q (axe x): partie réele : Amplitude en Quadrature, coté initial, `sin(phi)`
 | .cs64  | |
 | .cf32 (.cfile .complex) | Float, 32-bit per value (64 bit per sample) - Complex 32-bit floating point samples (GNURadio, osmocom_fft) |
 | .cf64  | Double Float, 64-bit per value (128 bit per sample) |
+
 
 ### convertir les fichiers:
 

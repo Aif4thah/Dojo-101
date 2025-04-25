@@ -2,7 +2,7 @@
 
 
 
-## Gammes de Frequences
+## Bandes de Frequences
 
 | Frequency band | Signal  range |
 |-----------------|-----------------|
@@ -16,18 +16,16 @@
 |Extremely high frequency (EHF)| 30 GHz–300 GHz|
 |Uncategorized | 300 GHz–3,000 GHz |
 
-### bandes vues par les survivalistes
+### Bandes radio
 
-| **Bande** | **Fréquence** | **Portée** | **Rebond sur les couches de l'atmosphère** | **Remarques** |
-|-----------|---------------|------------|---------------------------------------------|---------------|
-| **FM (VHF II)** | 87,5 - 108 MHz | 100 km (jusqu'à 200 km dans des conditions favorables) | Non | Qualité audio proche de la HIFI, peu sensible aux parasites. Idéale pour les programmes régionaux et nationaux. |
-| **MW (AM)** | 530 - 1600 kHz | 300 - 400 km le jour, 2000 km la nuit | Oui | Se réfléchit sur les hautes couches de l'atmosphère. Bonne pour les fonds de vallées. Antenne intégrée. |
-| **LW (Long Wave)** | 150 - 300 kHz | 2000 km (jour et nuit) | Oui | Onde de sol et réflexion atmosphérique. Stable mais sensible aux parasites. Antenne intégrée. |
-| **SW (Short Wave)** | 3 - 30 MHz | Milliers de km | Oui | Rebondit entre l'ionosphère et la terre. Fréquences à ajuster selon l'heure et la saison. Antenne long fil recommandée. |
-| **DAB/DAB+** | 174 - 240 MHz (VHF III) et 1452 - 1492 MHz (UHF L) | Variable | Non | Qualité audio stable, mais complexité accrue et risque de panne. |
-| **NOAA** | VHF NOAA | N/A | Non | Diffuse des bulletins météos aux USA et au Canada. Inutile en Europe. |
-
-[source resilience-urbaine](https://www.resilience-urbaine.com/materiel-survie/radio-survivaliste-choisir-materiel/)
+| **Bande** | **Fréquence** | **Portée** | **Rebond sur les couches de l'atmosphère** | **Remarques** | **Taille de l'antenne idéale** |
+|-----------|---------------|------------|---------------------------------------------|---------------|-------------------------------|
+| **FM (VHF II)** | 87,5 - 108 MHz | 100 km (jusqu'à 200 km dans des conditions favorables) | Non | Qualité audio proche de la HIFI, peu sensible aux parasites. Idéale pour les programmes régionaux et nationaux. | Environ 1,5 mètre (dipôle) |
+| **MW (AM)** | 530 - 1600 kHz | 300 - 400 km le jour, 2000 km la nuit | Oui | Se réfléchit sur les hautes couches de l'atmosphère. Bonne pour les fonds de vallées. Antenne intégrée. | 0,5 à 1 mètre (fouet ou cadre magnétique) |
+| **LW (Long Wave)** | 150 - 300 kHz | 2000 km (jour et nuit) | Oui | Onde de sol et réflexion atmosphérique. Stable mais sensible aux parasites. Antenne intégrée. | Environ 0,5 mètre (fouet ou intégrée) |
+| **SW (Short Wave)** | 3 - 30 MHz | Milliers de km | Oui | Rebondit entre l'ionosphère et la terre. Fréquences à ajuster selon l'heure et la saison. Antenne long fil recommandée. | 10 à 30 mètres (long fil) |
+| **DAB/DAB+** | 174 - 240 MHz (VHF III) et 1452 - 1492 MHz (UHF L) | Variable | Non | Qualité audio stable, mais complexité accrue et risque de panne. | Environ 1,5 mètre (dipôle) |
+| **NOAA** | VHF NOAA | N/A | Non | Diffuse des bulletins météos aux USA et au Canada. Inutile en Europe. | 0,5 à 1 mètre (fouet ou dipôle) |
 
 ## Bandes libres en France
 
