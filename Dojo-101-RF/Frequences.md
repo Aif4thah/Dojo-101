@@ -1,6 +1,7 @@
-# frequences
+# Frequences
 
-
+> ![WARNING]
+> Ces fréquences ne sont pas systématiquement vérifiées et sont susceptibles d'évoluer
 
 ## Bandes de Frequences
 
@@ -67,37 +68,40 @@ France: 144.800 MHz
 
 ## POCSAG (Post Office Code Standardisation Advisory Group)
 
-* Sapeurs-Pompiers : 173.5125 MHz 
+| **Service** | **Fréquence (MHz)** |
+|-------------------|--------------|
+| Sapeurs-Pompiers  | 173.5125 |
+| Privées | 466.025 |
+|   | 466.050 |
+|   | 466.075 |
+|    | 466.175 |
+|    | 466.20625 |
+|    | 466.23125 |
 
-* privées: 466.025, 466.050, 466.075, 466.175, 466.20625 et 466.23125 MHz
 
 ## Fréquences d'urgence, détresse et essentielles - France et Europe HF VHF UHF
 
-### OLDU
 
-[OLDU](http://oldu.fr/com/)
+* Source: [OLDU](http://oldu.fr/com/)
 
-* VHF Maritime : 156,800 MHz (Canal 16) - VHF Air : 121,500 MHz et 243 MHz
-
-* CB : 27,065 Mhz (Canal 9)
-
-* CROSS : Centre régional opérationnel de surveillance et de sauvetage
-Métropole bande marine VHF entre 156,025 et 162,525 MHz en modulation de fréquence
-Et bande marine entre 1 605 kHz et 4 000 kHz en plusieurs sous bandes
-
-* Samu : bande des 150 Mhz - ~154.525 Mhz - 152-156 Mhz fréquence sortie relais - Véhicules/Fixes au-dessus 4,6 Mhz.
-
-* Sapeur Pompiers : 85.500 et 86.600 Mhz (France sauf Paris) - Canaux Plan Rouge UHF : 465.650 Mhz et 465.750 Mhz.
-
-* Vol libre : FFLV - Fréquence 143.9875 MHz
-
-* Secours Montagne : Mont Blanc, 3 relais, 154.4625 MHz - Auvergne, 2 relais 80 Mhz et 150 MHz (à mettre à jour)
-Haute Savoie, Val d'Aoste, Valais Suisse : canal E 161,300 MHz (relayé par infrastructures spécialisées, SDIS 74 pour France)
+| **Service**| **Fréquence/Canal**   | **Notes**   |
+|------------|-------|-----|
+| VHF Maritime    | 156,800 MHz (Canal 16) |    |
+| VHF Air    | 121,500 MHz et 243 MHz |    |
+| CB | 27,065 MHz (Canal 9)|    |
+| CROSS | Métropole bande marine VHF entre 156,025 et 162,525 MHz en modulation de fréquence | Bande marine entre 1 605 kHz et 4 000 kHz en plusieurs sous bandes    |
+| SAMU  | Bande des 150 MHz - ~154.525 MHz | 152-156 MHz fréquence sortie relais - Véhicules/Fixes au-dessus 4,6 MHz.  |
+| Sapeur Pompiers | 85,500 et 86,600 MHz (France sauf Paris)  | Canaux Plan Rouge UHF : 465,650 MHz et 465,750 MHz. |
+| Vol libre  | 143,9875 MHz    | FFLV    |
+| Secours Montagne| Mont Blanc : 154,4625 MHz (3 relais)  |    |
+|| Auvergne : 80 MHz et 150 MHz (2 relais, à mettre à jour)    |    |
+|| Haute Savoie, Val d'Aoste, Valais Suisse : Canal E 161,300 MHz  | Relayé par infrastructures spécialisées, SDIS 74 pour France    |
 
 
-Source: [Groupe FCF](https://groupefcf.org/)
 
-| NOM DE LA FREQUENCE	| FREQUENCE	| MODULATION |	SERVICE |	PAYS |
+* Source: [Groupe FCF](https://groupefcf.org/)
+
+| NOM DE LA FREQUENCE	| FREQUENCE (Mhz)	| MODULATION |	SERVICE |	PAYS |
 |-----------------------|-----------|------------|----------|-----|
 |GUARD	| 121.500 |	AM |	Aéronautique civil |	International|
 |S.A.R	| 123.100 |	AM	|Aéronautique civil |	International |
@@ -126,9 +130,8 @@ Source: [Groupe FCF](https://groupefcf.org/)
 ||5.680 | USB |	Aeronautique Maritime |	International |
 || 6.215 || Aeronautique Maritime |	International |
 
-### Guerre de France
 
-[Guerre de france](https://guerredefrance.fr/Documents/RADIOLOCALE.pdf)
+* Source: [Guerre de france](https://guerredefrance.fr/Documents/RADIOLOCALE.pdf)
 
 | **Fréquence (MHz)** | **Usage**| **Remarques**    |
 |---------------------|--------|----------------|
@@ -150,10 +153,10 @@ Source: [Groupe FCF](https://groupefcf.org/)
 | 164,800 à 168,900  | Réseaux privés| |
 | 169,410 à 173,815  | Radiomessagerie norme ERMES| |
 | 169,795 à 173,495  | Réseaux privés| |
-| 173,500 à 174,000  | Police, pompiers, SAMU     | |
+| 173,500 à 174,000  | Police, pompiers, SAMU| |
 | 143,98750   | Canal 0 : FFVL (parapentes)| |
-| 156,800     | Canal 16 : SOS international     | Fréquence veillée par les services de secours   |
-| 145,500     | Appels mobiles en FM| Pour les radios amateurs     |
+| 156,800| Canal 16 : SOS international| Fréquence veillée par les services de secours   |
+| 145,500| Appels mobiles en FM| Pour les radios amateurs|
 
 
 ## Internet
@@ -164,108 +167,30 @@ Source: [Groupe FCF](https://groupefcf.org/)
 
 ## Emetteurs nationaux de secours
 
-[OLDU](http://oldu.fr/com/)
-
 Les radios FM ont une propagation limitée en distance (~50 km). En cas de sinistre ou perturbation du réseau électrique :
 Les émetteurs suivants permettent une réception sur les basses fréquences LF/GO (LowFrequency/GrandesOndes) en AM (Modulation d'Amplitude)
 
-* France : Emetteur de Roumoules (RMC - Alpes)
-Fréquence 216 KHz - Longueur Onde 1389 m - Puissance 1500 kW (6h-20h sinon 900 kW) - Emission de 5h à 24h
+| **Pays**| **Émetteur**    | **Fréquence** | **Longueur d'onde** | **Puissance**    | **Heures d'émission**  | **Notes**    |
+|--------------|-----------------|---------------|---------------------|---------------------|-----------------------------|--------------------|
+| France  | Roumoules (RMC - Alpes) | 216 kHz  | 1389 m    | 1500 kW (6h-20h, sinon 900 kW)| 5h à 24h  | |
+| Allemagne    | Felsberg-Berus (Europe 1 - Sarre) | 183 kHz  | 1647 m    | 1500 kW| 4h à 1h50 | |
+| Luxembourg   | Beidweiler (RTL - Junglinster)    | 234 kHz  | 1282 m    | 2000 kW| | |
+| France  | Issoudun (TDF - Indres) ||   | 500 kW   | | |
+| France  | Allouis (France Inter - Cher)| 162 kHz  | 1852 m    | 2000 kW (réduite à 1000 kW la nuit)| | Au 31/12/2016, l’émetteur a cessé la diffusion France Inter   |
 
-* Allemagne : Émetteur Felsberg-Berus (Europe 1 - Sarre)
-Fréquence 183 Khz - Longueur Onde 1647 m - Puissance 1500 kW - Emission de 4h à 1h50
+* Source: [OLDU](http://oldu.fr/com/)
 
-* Luxembourg : Émetteur Beidweiler (RTL - Junglinster)
-Fréquence 234 Khz - Longueur Onde 1282 m - Puissance 2000 kW
+## PMR446
 
-* France : Emetteur d'Issoudun (TDF - Indres)
-Puissance 500 kW
+| **Type**| **Fréquences**   | **Modulation**  | **Canaux** |
+|---------|------------------|-------|-----|
+| Analogique    | 446.0–446.2 MHz | NFM  | 12,5 kHz |
+| Numérique| 446.0–446.2 MHz | TDMA, DMR Tier 1, dPMR446   | 6,25 kHz |
 
-* France : Emetteur Allouis (France Inter - Cher). (Au 31/12/2016, l’émetteur a cesse la diffusion France Inter)
-Fréquence 162 KHz - Longueur Onde 1852m - Puissance 2000 kW (réduite à 1000 kW la nuit)
+* Canal Urgence Analogique : 446,09375 Mhz et 446,10625 Mhz
+
+* Canal Urgence Numérique : 446,115625 MHz
 
 ## Numbers Stations
 
-[PRIYOM](https://priyom.org/)
-
-## BOEFANG
-
-|Location|Name|Frequency|Duplex|Offset|Tone|rToneFreq|cToneFreq|DtcsCode|DtcsPolarity|Mode|TStep|Skip|Comment|URCALL|RPT1CALL|RPT2CALL|DVCODE|
-|--------|----|---------|------|------|----|---------|---------|--------|------------|----|-----|----|-------|-------|--------|--------|------|
-|0|8T18 *|446.093750||0.000000|Tone|123.0|88.5|023|NN|NFM|5.00||||||
-|1|1-0|446.006250||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|2|2-0|446.018750||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|3|3-0|446.031250||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|4|4-0|446.043750||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|5|5-0|446.056250||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|6|6-0|446.068750||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|7|7-0|446.081250||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|8|8-0 !|446.093750||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|9|9-0|446.106250||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|10|10-0|446.118750||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|11|11-0|446.131250||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|12|12-0|446.143750||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|13|13-0|446.156250||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|14|14-0|446.168750||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|15|15-0|446.181250||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|16|16-0|446.193750||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|17|1-1|446.006250||0.000000|TSQL|67.0|67.0|023|NN|NFM|5.00||||||
-|18|1-2CHAS|446.006250||0.000000|TSQL|71.9|71.9|023|NN|NFM|5.00||||||
-|19|1-9ROUT|446.006250||0.000000|TSQL|91.5|91.5|023|NN|NFM|5.00||||||
-|20|1-12URG|446.006250||0.000000|TSQL|100.0|100.0|023|NN|NFM|5.00||||||
-|21|2-2|446.018750||0.000000|TSQL|71.9|71.9|023|NN|NFM|5.00||||||
-|22|2-8CAMC|446.018750||0.000000|TSQL|88.5|88.5|023|NN|NFM|5.00||||||
-|23|3-3SR1|446.031250||0.000000|TSQL|74.4|74.4|023|NN|NFM|5.00||||||
-|24|3-13SR2|446.031250||0.000000|TSQL|103.5|103.5|023|NN|NFM|5.00||||||
-|25|3-23SR3|446.031250||0.000000|TSQL|146.2|146.2|023|NN|NFM|5.00||||||
-|26|3-33SR!|446.031250||0.000000|TSQL|210.7|210.7|023|NN|NFM|5.00||||||
-|27|4-4 4X4|446.043750||0.000000|TSQL|77.0|77.0|023|NN|NFM|5.00||||||
-|28|4-14DRO|446.043750||0.000000|TSQL|107.2|107.2|023|NN|NFM|5.00||||||
-|29|5-5SCOU|446.056250||0.000000|TSQL|79.7|79.7|023|NN|NFM|5.00||||||
-|30|6-6 R1|446.068750||0.000000|TSQL|82.5|82.5|023|NN|NFM|5.00||||||
-|31|6-16R2|446.068750||0.000000|TSQL|114.8|114.8|023|NN|NFM|5.00||||||
-|32|6-26R3|446.068750||0.000000|TSQL|162.2|162.2|023|NN|NFM|5.00||||||
-|33|6-36R4|446.068750||0.000000|TSQL|233.6|233.6|023|NN|NFM|5.00||||||
-|34|7-7 RRM|446.081250||0.000000|TSQL|85.4|85.4|023|NN|NFM|5.00||||||
-|35|8-8  !|446.093750||0.000000|TSQL|88.5|88.5|023|NN|NFM|5.00||||||
-|36|8-18 !*|446.093750||0.000000|TSQL|123.0|123.0|023|NN|NFM|5.00||||||
-|37|VFB1 !*|169.500000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|38|VFB2|169.512500||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|39|VFB3SRV|169.525000||0.000000|Tone|210.7|88.5|023|NN|NFM|5.00||||||
-|40|VFB4PAK|169.537500||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|41|VFB5|169.550000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|42|VFB6REL|169.562500||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|43|VFB7 M|169.575000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|44|M09CAPI|156.450000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|45|M10FLUV|156.500000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|46|M11|156.550000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|47|M12|156.600000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|48|M13INFO|156.650000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|49|M14PLAD|156.700000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|50|M15PLA|156.750000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|51|M16 !*|156.800000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|52|M17|156.850000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|53|M18ECLU|156.900000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|54|M67DEG|156.375000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|55|M68DEG|156.425000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|56|M69DEG|156.475000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|57|M70ASN|156.525000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|58|M71DEG|156.575000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|59|M72DEG|156.625000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|60|M73DEG|156.675000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|61|M74DEG|156.725000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|62|M77DEG|156.875000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|63|FFVL !*|143.987500||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|64|CH E !*|161.300000||0.000000|Tone|123.0|88.5|023|NN|NFM|5.00||||||
-|65|ADRAS1|145.450000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|66|ADRAS2|145.462500||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|67|ADRAS3|145.475000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|68|LP18 !|433.500000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|69|LP20URG|433.550000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|70|V RA !|145.500000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|71|ISS VHF|145.800000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|72|ISS UHF|437.525000||0.000000||88.5|88.5|023|NN|FM|5.00||||||
-|73|ISS RPT|437.800000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|74|RAURG1U|432.525000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|75|RAURG2U|432.537500||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
-|76|RAURG3U|432.550000||0.000000||88.5|88.5|023|NN|NFM|5.00||||||
+* [PRIYOM](https://priyom.org/)
