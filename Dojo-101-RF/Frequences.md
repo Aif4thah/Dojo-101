@@ -1,6 +1,6 @@
 # Frequences
 
-> ![WARNING]
+> [!WARNING]
 > Ces fréquences ne sont pas systématiquement vérifiées et sont susceptibles d'évoluer
 
 ## Bandes de Frequences
