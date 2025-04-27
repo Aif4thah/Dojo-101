@@ -191,6 +191,16 @@ Les émetteurs suivants permettent une réception sur les basses fréquences LF/
 
 * Canal Urgence Numérique : 446,115625 MHz
 
+
+## CB
+
+| **Type**       | **Fréquences**   | **Modulation**       | **Canaux** | **Gap**  |
+|----------------|-------------------|---------------------|------------|----------|
+| Analogique     | 26.965–27.405 MHz | AM, FM, SSB         | 40         | 10 kHz   |
+
+* Canal Urgence : 27.065 MHz
+
+
 ## Numbers Stations
 
 * [PRIYOM](https://priyom.org/)
