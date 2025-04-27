@@ -13,10 +13,8 @@
 > [!WARNING]
 > This repository and its tools are provided "as is." The author(s) make no representations or warranties, express or implied, regarding the operation of the information, content, materials, tools, services, or products included. The author(s) disclaim, to the full extent permissible by law, all warranties, express or implied, including implied warranties of merchantability and fitness for a particular purpose.
 
-> [!NOTE]
-> While this project is open-source and free to use, we kindly ask that if you are using it for commercial purposes or in a business setting, please consider sponsoring the project through GitHub Sponsors. Your support helps maintain and improve the project, ensuring it remains a valuable resource for everyone. Thank you for your understanding and generosity.
->
-> Some sections of Dojo-101 are still in French. The translation will be completed based on client priorities.
+> [!TIP]
+> Support this effort and give back by [sponsoring on GitHub!](https://github.com/sponsors/Aif4thah/)
 
 
 ## ⚔️ Themes
@@ -112,6 +110,7 @@ README Files and those containing the keyword `basics` contain elements that are
 * [GitHub basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Github-basics.md)
 * [AI Basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/IA-ML-basics.md)
 
+> Some sections are still in French. The translation will be completed according to the needs of sponsors and customers.
 
 ## 📒 You need almost nothing.
 
