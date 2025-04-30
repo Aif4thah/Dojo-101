@@ -2,7 +2,7 @@
 
 Comment transmettre un message en mode dégradé, sans qu'il puisse être intercepté ?
 
-Poids: 2
+Poids: 3
 
 > [!NOTE] 
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
@@ -76,13 +76,11 @@ Protéger et échanger des messages confidentiels en Morse sur les ondes radio. 
 ### Partie générale
 
 
-11. Comment pourrait-on s'assurer de l'intégrité du message et de l'authenticité du destinataire ? Ajouter cette fonctionnalité à l'aide d'un script ou d'un outil en CLI.
+11. Comment pourrait-on s'assurer de l'intégrité du message et de l'authenticité du destinataire ? Proposer des algorythmes
 
-12. Reprendre la question 4 avec un algorithme postquantique
+12. le message suivant a été intercepté: `"prggr grpuavdhr f'nccryyr yr puvsserzrag qr prnfre, vy a'rfg cyhf hgvyvft nhwbheq'uhv, pne crh ftphevft"`, il semble vulnérable à une attaque en fréquences ou une attaque par force brute. Déchiffrez-le !
 
-13. le message suivant a été intercepté: `"prggr grpuavdhr f'nccryyr yr puvsserzrag qr prnfre, vy a'rfg cyhf hgvyvft nhwbheq'uhv, pne crh ftphevft"`, il semble vulnérable à une attaque en fréquences ou une attaque par force brute. Déchiffrez-le !
-
-14. Nous suspectons qu'un adversaire a implémenté une backdoor dans notre logiciel de messagerie sécurisé, pourtant nous utilisons AES-CBC (extrait des logs ci-dessous). Trouvez ce qui ne convient pas dans le chiffrement de ces messages.
+13. Nous suspectons qu'un adversaire a implémenté une backdoor dans notre logiciel de messagerie sécurisé, pourtant nous utilisons AES-CBC (extrait des logs ci-dessous). Trouvez ce qui ne convient pas dans le chiffrement de ces messages.
 
 ```txt
 Bob: '>s\x06\x14\x0c\xa7\xa6\x88\xd5[+i\xcc/J\xf7'
@@ -100,7 +98,7 @@ Bob: '\xde@=\x1ed\xc0Qe\x0fK=\x1c\xb3$\xd9\xcb'
 ```
 
 
-15. Nous avons intercepté le message suivant: `b'\xd72U\xc03.\xda\x99Q\xb5\x020\xc4\xb8\x16\xc6\xfa-\xb9U+\xda\\\x126L\xf3~\xbd8\x12q\x02?\x80\xeaVI\xa9\xe1'`. 
+14. Nous avons intercepté le message suivant: `b'\xd72U\xc03.\xda\x99Q\xb5\x020\xc4\xb8\x16\xc6\xfa-\xb9U+\xda\\\x126L\xf3~\xbd8\x12q\x02?\x80\xeaVI\xa9\xe1'`. 
 
 La première partie de la **Clé de 16 octets** est: `b'12345678bien'` et l'algorithme utilisé est celui-ci:
 
@@ -128,6 +126,13 @@ def des_decrypt(key, ciphertext):
 
 Quel était le message transmis ?
 
+### Partie Scripting
+
+* Forker le projet `SecCW` et proposer un algorithme de chiffrement Post quantique. 
+
+* Dans l'idéal, le message chiffré doit être le plus court possible.
+
+* Proposer la modification via une `Pull Request`.
 
 
 ## Modalités pédagogiques
@@ -140,9 +145,9 @@ Relecture des scripts
 
 ## Livrables
 
-* Scripts ou commandes permettant de vérifier l'intégrité et l'authenticité du message
+* Scripts
 
-* Réponses aux questions générales
+* Réponses aux questions
 
 ## Critères de performance
 
