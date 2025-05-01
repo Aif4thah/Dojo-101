@@ -1,6 +1,6 @@
 # Utiliser un reverse shell
 
-Poids: 0.5
+Poids: 1
 
 > [!NOTE] 
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
@@ -8,7 +8,11 @@ Poids: 0.5
 
 ## Ressources
 
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+
+* [reverse shell generator](https://www.revshells.com/)
+
+* [Shellcode db](https://www.exploit-db.com/shellcodes)
 
 ## Contexte
 
@@ -36,24 +40,28 @@ Binôme ou seul (au choix)
 
 9. Recommencer avec un reverse shell que vous avez devellopé/modifié vous meme pour ne pas etre vu par l'Anti-virus (Rust, Java, C# etc...)
 
+10. Développez votre ShellCode ou prenez-en un sur internet, chargez-le avec un loader approprié pour obtenir un Shell une la machine victime malgré la présence de l'Antivirus.
+
 
 ## Modalités d'évaluation
 
-Vérification des screenshots et relecture du code
+* Vérification des screenshots et relecture du code
 
 ## Livrables
 
-Screenshot de chaque reverse shell
+* Screenshot de chaque reverse shell
 
-Code du reverse shell 
+* Code du reverse shell 
+
+* ShellCode avec loader et documentation
 
 ## Critères de performance
 
-Furtivité : Un bon reverse shell doit être capable de se cacher efficacement pour éviter la détection par les systèmes de défense de l’hôte, tels que les antivirus et les pare-feu.
+*Furtivité* : Un bon reverse shell doit être capable de se cacher efficacement pour éviter la détection par les systèmes de défense de l’hôte, tels que les antivirus et les pare-feu.
 
-Stabilité : Il doit être capable de maintenir une connexion stable avec l’attaquant, même en cas de conditions réseau défavorables. Il doit également être résilient face aux redémarrages du système.
+*Stabilité* : Il doit être capable de maintenir une connexion stable avec l’attaquant, même en cas de conditions réseau défavorables. Il doit également être résilient face aux redémarrages du système.
 
-Fonctionnalités : Un bon reverse shell doit offrir un ensemble complet de fonctionnalités qui permettent à l’attaquant d’exécuter des commandes à distance, de télécharger et d’uploader des fichiers, et d’effectuer d’autres actions sur le système cible.
+*Fonctionnalités* : Un bon reverse shell doit offrir un ensemble complet de fonctionnalités qui permettent à l’attaquant d’exécuter des commandes à distance, de télécharger et d’uploader des fichiers, et d’effectuer d’autres actions sur le système cible.
 
 
 ## Pour finir
