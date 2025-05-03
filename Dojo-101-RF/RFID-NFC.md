@@ -45,23 +45,28 @@
 |-----|----|
 | MIFARE DESFire EV1 | EAL4+ |
 | MIFARE DESFire EV2/EV3 | EAL5+ |
+| MIFARE PLus EV1 | EAL5+ |
 
 ## Tools
 
 * Linux: `Proxmark3`
-* Android: `NFC Tools`
+* Android: `NFC Tools` et `Mifare Classic Tools`
 * Flipper Zero
-* ACR122U
+* lecteur / writer : `ACR122U`
 
 ## Vulns connues
 
 ### MIFARE Classic
 
-* *weak key* qui permet de cloner / usurper facilement les badges
+* *weak key* ou *default key* qui permet de cloner et usurper facilement les badges
 
-* brute force et export possible vers `proxmark` depuis Android avec `Mifaire Classic Tools`
+* brute force* et export possible vers `proxmark` depuis Android avec `Mifaire Classic Tools`
 
-* *Nested* et *HardNested* via un lecteur RFID malveillant
+* *Nested* via un lecteur RFID malveillant pour exploitation de faiblesses cryptographiques
+
+* Darkside / Coirtois
+
+* MITM
 
 
 Fonctionnement du Mifare Classic : 
@@ -96,3 +101,6 @@ Les clés A et B définissent les droits d'accès aux blocs du secteur (lecture,
 * ACL (Conditions d'accès) : Ces bits définissent précisément quels droits (lecture, écriture, gestion) sont attribués en fonction de la clé utilisée.
 
 
+### Mifare Classic NG et MIFARE Plus Standard Level 1
+
+* Vulnérable à l'attaque *HardNested*
