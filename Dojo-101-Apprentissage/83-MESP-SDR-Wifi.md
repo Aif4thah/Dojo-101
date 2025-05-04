@@ -9,6 +9,12 @@ Poids: 2
 
 ## Ressources
 
+* [HackRF](https://greatscottgadgets.com/hackrf/one/)(Facultatif: antenne directionnelle)
+
+* Carte Wifi (de préference pouvant passer en mode monitor)
+
+* Point d’accès Wifi (votre téléphone par éxemple)
+
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
 * [HackRF](https://greatscottgadgets.com/hackrf/one/)
@@ -92,14 +98,6 @@ En Binôme, **si vous êtes à l'aise vous pouvez trouver un second binôme pour
 ## Critères de performance
 
 * réussite des actions demandées.
-
-## HardWare
-
-* HackRF (Facultatif: antenne directionnelle)
-
-* Carte Wifi (de préference pouvant passer en mode monitor)
-
-* Point d’accès Wifi (votre téléphone par éxemple)
 
 ## Pour finir
 

@@ -9,7 +9,6 @@ Poids: 1
 
 ## Ressources
 
-
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
 * `Dossier Toolbox RF`
@@ -66,10 +65,6 @@ Binôme
 
 * réussite de la transmission
 * Pertinance de l'analyse
-
-# HW
-
-HackRF
 
 ## Pour finir
 

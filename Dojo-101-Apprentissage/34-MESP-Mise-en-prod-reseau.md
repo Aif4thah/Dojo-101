@@ -9,11 +9,15 @@ Poids: 5
 
 ## Ressources
 
+* Matériel CISCO à disposition
 
-[Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-[Guide ANSSI TLS: anssi-guide-recommandations_de_securite_relatives_a_tls-v1.2](https://cyber.gouv.fr/publications)
-[Guide ANSSI sur l'OS ou la solution choisie](https://cyber.gouv.fr/)
-[Markdown](https://www.markdownguide.org/)
+* [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
+
+* [Guide ANSSI TLS: anssi-guide-recommandations_de_securite_relatives_a_tls-v1.2](https://cyber.gouv.fr/publications)
+
+* [Guide ANSSI sur l'OS ou la solution choisie](https://cyber.gouv.fr/)
+
+* [Markdown](https://www.markdownguide.org/)
 
 
 ## Contexte
@@ -56,9 +60,6 @@ de la solution retenue
 
 * Scanner votre service à l'aide d'un outil tel que Nmap NSE ou vpnscan est inclure le  résultat au fichier md ou en commentaire du script
 
-# Hardware
-
-Matériel CISCO à disposition
 
 ## Pour finir
 

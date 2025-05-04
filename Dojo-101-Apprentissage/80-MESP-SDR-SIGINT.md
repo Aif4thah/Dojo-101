@@ -9,6 +9,15 @@ Poids: 1
 
 ## Ressources
 
+
+* HackRF
+
+* DC Blocker et LNA
+
+* Hub et adaptateur USB
+
+* Câble HDMI + écran
+
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
 * [Sigid Wiki](https://www.sigidwiki.com/wiki/Signal_Identification_Guide)
@@ -65,17 +74,6 @@ Binôme ou seul (au choix)
 ## Critères de performance
 
 * Les signaux ont été identifiés avec une méthodologie adéquate
-
-# Hardware
-
-* HackRF
-
-* DC Blocker et LNA
-
-* Hub et adaptateur USB
-
-* Câble HDMI + écran
-
 
 ## Pour finir
 

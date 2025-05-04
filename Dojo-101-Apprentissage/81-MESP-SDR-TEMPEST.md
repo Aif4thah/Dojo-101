@@ -44,11 +44,6 @@ Binôme
 
 * réussite
 
-# Hardware
-
-Identifier la fréquence de rayonnement du câble HDMI
-Acquérir l’image afin de récupérer les informations affichées à l’écran
-
 
 ## Pour finir
 

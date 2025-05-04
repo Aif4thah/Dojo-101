@@ -17,6 +17,8 @@ Poids: 3
 
 * [HackRF](https://greatscottgadgets.com/hackrf/one/)
 
+* Amplificateur RF
+
 * `Dossier Toolbox RF`
 
 
@@ -154,12 +156,6 @@ Relecture des scripts
 * Aquisition des notions en cryptographie
 
 * Pertinence des solutions proposées
-
-# Hardware
-
-* HackRF
-
-* Amplificateur
 
 
 ## Pour finir

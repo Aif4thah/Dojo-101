@@ -22,6 +22,8 @@ Poids: 2
 
 * [HackRF](https://greatscottgadgets.com/hackrf/one/)
 
+* Recepteur GPS et Smartphone
+
 ## Contexte
 
 > [!CAUTION]
@@ -69,11 +71,6 @@ Binôme
 
 * réussite de la transmission
 * Pertinance de l'analyse
-
-# Hardware
-
-HackRF
-Récepteur GPS (Voiture, Téléphone, Drone, Tracker…)
 
 
 ## Pour finir
