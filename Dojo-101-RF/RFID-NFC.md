@@ -73,7 +73,7 @@ Fonctionnement du Mifare Classic :
 
 | Secteur | Bloc 0            | Bloc 1            | Bloc 2            | Bloc 3 (bloc clé) |
 |---------|-------------------|-------------------|-------------------|-------------------|
-| 0       | Données           | Données           | Données           | Clé A, Clé B, ACL|
+| 0       | Données (souvent résérvé à l'UID) | Données  | Données    | Clé A, Clé B, ACL|
 | 1       | Données           | Données           | Données           | Clé A, Clé B, ACL|
 | 2       | Données           | Données           | Données           | Clé A, Clé B, ACL|
 | 3       | Données           | Données           | Données           | Clé A, Clé B, ACL|
