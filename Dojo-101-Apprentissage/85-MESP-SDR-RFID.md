@@ -19,7 +19,9 @@ Poids: 1
 ## Contexte
 
 > [!NOTE]
-> Notez que certaines cartes peuvent être spécifiques et permettre d'écrire ou de cloner les badges plus facilement. Il faudra également le documenter. Vous pouvez également tester la sécurité de vos badges personnels
+> Notez que certaines cartes peuvent être spécifiques (*magic*) et permettre d'écrire ou de cloner les badges plus facilement (ex: écriture du bloc 0). Il faudra également le documenter. 
+
+Testez la sécurité des badges fournis. Vous pouvez également tester la sécurité de vos badges personnels.
 
 
 0. Qu'est-ce qu'une qualification critère commune ? Quelles technologies RFID sont qualifiées `EAL4` et `EAL5` ? À quoi correspondent ces niveaux de sécurité ?

@@ -71,9 +71,12 @@
 
 Fonctionnement du Mifare Classic : 
 
+> [!NOTE]
+> Le bloc 0 est réservé à l'UID du badge, sur les cartes classique il n'est pas accéssible en écriture. En revanche sur les *magic badges* c'est possible.
+
 | Secteur | Bloc 0            | Bloc 1            | Bloc 2            | Bloc 3 (bloc clé) |
 |---------|-------------------|-------------------|-------------------|-------------------|
-| 0       | Données (souvent résérvé à l'UID) | Données  | Données    | Clé A, Clé B, ACL|
+| 0       | Données (UID) | Données  | Données    | Clé A, Clé B, ACL|
 | 1       | Données           | Données           | Données           | Clé A, Clé B, ACL|
 | 2       | Données           | Données           | Données           | Clé A, Clé B, ACL|
 | 3       | Données           | Données           | Données           | Clé A, Clé B, ACL|
