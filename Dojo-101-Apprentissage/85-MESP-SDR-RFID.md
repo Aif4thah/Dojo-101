@@ -18,10 +18,14 @@ Poids: 1
 
 ## Contexte
 
-> [!NOTE]
-> Notez que certaines cartes peuvent être spécifiques (*magic*) et permettre d'écrire ou de cloner les badges plus facilement (ex: écriture du bloc 0). Il faudra également le documenter. 
+> [!IMPORTANT]
+> La copie de Badge RFID est strictement règlementée et peut être sanctionnée au civil comme au pénal.
 
-Testez la sécurité des badges fournis. Vous pouvez également tester la sécurité de vos badges personnels.
+
+Testez la sécurité des badges fournis. Sous réserve que la loi vous le permette, vous pouvez également tester la sécurité de vos badges personnels si vous avez l'accord express de votre propriétaire / syndic. Et professionnel avec l'autorisation express de votre employeur uniquement.
+
+> [!NOTE]
+> Notez que certaines cartes et commandes peuvent être spécifiques (*magic*) pour permettre d'écrire ou de cloner les badges plus facilement (*écriture du bloc 0*). Il faudra également le documenter. 
 
 
 0. Qu'est-ce qu'une qualification critère commune ? Quelles technologies RFID sont qualifiées `EAL4` et `EAL5` ? À quoi correspondent ces niveaux de sécurité ?

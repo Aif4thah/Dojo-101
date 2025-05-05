@@ -58,9 +58,11 @@
 
 ### MIFARE Classic
 
+* [fichier de clé en ligne](https://github.com/ikarus23/MifareClassicTool/blob/master/Mifare%20Classic%20Tool/app/src/main/assets/key-files/extended-std.keys)
+
 * *weak key* ou *default key* qui permet de cloner et usurper facilement les badges
 
-* brute force* et export possible vers `proxmark` depuis Android avec `Mifaire Classic Tools`
+* *brute force* des clés et export possible vers `proxmark` depuis Android avec `Mifaire Classic Tools`
 
 * *Nested* via un lecteur RFID malveillant pour exploitation de faiblesses cryptographiques
 
@@ -74,24 +76,24 @@ Fonctionnement du Mifare Classic :
 > [!NOTE]
 > Le bloc 0 est réservé à l'UID du badge, sur les cartes classique il n'est pas accéssible en écriture. En revanche sur les *magic badges* c'est possible.
 
-| Secteur | Bloc 0            | Bloc 1            | Bloc 2            | Bloc 3 (bloc clé) |
-|---------|-------------------|-------------------|-------------------|-------------------|
-| 0       | Données (UID) | Données  | Données    | Clé A, Clé B, ACL|
-| 1       | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 2       | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 3       | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 4       | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 5       | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 6       | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 7       | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 8       | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 9       | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 10      | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 11      | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 12      | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 13      | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 14      | Données           | Données           | Données           | Clé A, Clé B, ACL|
-| 15      | Données           | Données           | Données           | Clé A, Clé B, ACL|
+| Secteur | Bloc 0  | Bloc 1  | Bloc 2  | Bloc 3 (bloc clé) |
+|---------|---------|---------|---------|-------------------|
+| 0  | Données (UID) | Données  | Données    | Clé A, Clé B, ACL|
+| 1  | Données | Données | Données | Clé A, Clé B, ACL|
+| 2  | Données | Données | Données | Clé A, Clé B, ACL|
+| 3  | Données | Données | Données | Clé A, Clé B, ACL|
+| 4  | Données | Données | Données | Clé A, Clé B, ACL|
+| 5  | Données | Données | Données | Clé A, Clé B, ACL|
+| 6  | Données | Données | Données | Clé A, Clé B, ACL|
+| 7  | Données | Données | Données | Clé A, Clé B, ACL|
+| 8  | Données | Données | Données | Clé A, Clé B, ACL|
+| 9  | Données | Données | Données | Clé A, Clé B, ACL|
+| 10 | Données | Données | Données | Clé A, Clé B, ACL|
+| 11 | Données | Données | Données | Clé A, Clé B, ACL|
+| 12 | Données | Données | Données | Clé A, Clé B, ACL|
+| 13 | Données | Données | Données | Clé A, Clé B, ACL|
+| 14 | Données | Données | Données | Clé A, Clé B, ACL|
+| 15 | Données | Données | Données | Clé A, Clé B, ACL|
 
 Chaque secteur comporte 4 blocs. les Blocs 0 à 2 contiennent des données utilisateur, le Bloc 3 contient les clés A et B ainsi que les conditions d'accès (ACL - Access Control List) pour le secteur.
 
@@ -102,6 +104,36 @@ Les clés A et B définissent les droits d'accès aux blocs du secteur (lecture,
 * Clé B : Habituellement utilisée pour des accès plus privilégiés, comme l'écriture ou la modification des ACL elles-mêmes.
 
 * ACL (Conditions d'accès) : Ces bits définissent précisément quels droits (lecture, écriture, gestion) sont attribués en fonction de la clé utilisée.
+
+### exemple linux et ACR122U
+
+Installation
+
+```sh
+apt install mfoc
+apt install pcscd pcsc-tools
+add-apt-repository universe
+apt install libnfc-dev libnfc-bin libnfc-examples
+```
+
+Dump avec clé standard
+
+```sh
+mfoc -P 500 -O original.dmp
+```
+
+Brute force des clés et Dump (ou spécification des clés dans un fichier en option)
+
+```sh
+wget https://raw.githubusercontent.com/ikarus23/MifareClassicTool/refs/heads/master/Mifare%20Classic%20Tool/app/src/main/assets/key-files/extended-std.keys
+mfoc -f extended-std.keys -O original.dmp
+```
+
+Clone avec bloc O / UID
+
+```sh
+nfc-mfclassic W a u original.dmp
+```
 
 
 ### Mifare Classic NG et MIFARE Plus Standard Level 1
