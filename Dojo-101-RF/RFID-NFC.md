@@ -1,5 +1,8 @@
 # RFID
 
+> [!IMPORTANT]
+> La copie de Badge RFID est strictement règlementée et peut être sanctionnée au civil comme au pénal.
+
 ## Tags Classes
 
 | Classe | Description|
