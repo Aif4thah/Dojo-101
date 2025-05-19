@@ -22,20 +22,31 @@ Poids: 4
 
 ## Contexte
 
-> [!TIPS]
+> [!TIP]
 > Déployer cette infrastructure n'est en aucun cas une fin en soi : le but est ensuite de la sécuriser. Ce travail est réalisé à l'aide des autres mises en situations professionnelles, en particulier les audits de sécurité.
 
 0. Télécharger les images (ISO ou VM) Windows et Linux et vérifier leurs intégrités (Hashs ou Signatures) 
+
 1. Installer 3 machines virtuelles (VM) : Un contrôleur de domaine (Windows Serveur) + 1 Windows (client) + 1 Linux
+
 2. Faire les mises à jour de sécurité
+
 3. Pour la Workstation Windows: Joindre le domaine (attention à la licence)
+
 4. Créer un utilisateur admin (root/administrateur) + un utilisateur standard (non-admin) et local sur chaque machine
+
 5. Mettre en place les services sur l’AD et configurer la Workstation pour leur utilisation
+
     * DNS (Windows) : celui présent par défaut Domaine AD
+
     * WinRM (Windows) : accessible uniquement aux administrateurs de l'AD. 
+
     * SMB (Windows) : 1 partage "Readonly" + 1 partage accessible en écriture, sans authentification. 
+
     * Web (Linux) : VulnerableLightApp doit être lancé et accessible via le réseau - le binaire contient déjà un serveur Web (Kestrel)
+
     * SSH (Linux) : accessible aux membres du groupe sudoers
+    
 6. exécution du script badblood
 
 

@@ -13,9 +13,6 @@
 > [!WARNING]
 > This repository and its tools are provided "as is" without warranty of any kind, either express or implied, including but not limited to, any warranties of merchantability, fitness for a particular purpose, and non-infringement. The authors shall not be liable for any claims, damages, or other liabilities arising from, out of, or in connection with the use of this tool. The user is solely responsible for ensuring their use of this tool complies with all applicable laws and regulations. The authors disclaim any liability for illegal or unethical use.
 
-> [!TIP]
-> Support this effort and give back by [sponsoring on GitHub!](https://github.com/sponsors/Aif4thah/)
-
 
 ## ⚔️ Themes
 
@@ -145,6 +142,11 @@ Developed in parallel, this application contains numerous vulnerabilities for te
 
 ## 🏆 Credits
 
-* Project maintained by [Michael Vacarella](https://github.com/Aif4thah)
-* Logo created by [@designbyzen](https://www.designbyzen.fr/)
 * **Thank you** to all contributors 😍
+
+* Logo created by [@designbyzen](https://www.designbyzen.fr/)
+
+* Project maintained by [Michael Vacarella](https://github.com/Aif4thah)
+
+* Support this effort and give back by [sponsoring on GitHub!](https://github.com/sponsors/Aif4thah/)
+
