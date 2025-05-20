@@ -13,6 +13,10 @@ Poids: 2
 
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
+Si besoin pour les requêtes HTTP et HTTPS : 
+
+* [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
+
 ## Contexte
 
 Il vous est demandé de procéder à l'analyse des protocoles utilisés sur le réseau et de détecter d'éventuelles faiblesses.
@@ -35,7 +39,7 @@ Il vous est demandé de procéder à l'analyse des protocoles utilisés sur le r
 
 2. qu’est ce que le DHCP Starvation / snooping ? Rogue DHCP ?
 
-3. Que ce passe lors du « ipconfig /release » (windows) ? D’un point de vue sécurité quel peut etre l'enjeu ?
+3. Que ce passe-t-il lors du « ipconfig /release » (windows) ? D’un point de vue sécurité quel peut etre l'enjeu ?
 
 4. Quelle fonctionnalité propose CISCO pour se prémunir des attaques DHCP ? 
 
@@ -55,7 +59,7 @@ Il vous est demandé de procéder à l'analyse des protocoles utilisés sur le r
 
 12. Qu’est-ce qu’une PKI ?
 
-13. Capturer un mot de passe HTTP ou FTP ou Telnet (mettre en place les services si nécessaire)
+13. Capturer un mot de passe HTTP ou FTP ou Telnet (mettre en place les services si nécessaire, ou via le projet VulnerableLightApp : `https://localhost:3000/swagger/index.html`)
 
 14. Comment mettre en place la confidentialité pour ce service ?
 
