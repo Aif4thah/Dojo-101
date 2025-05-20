@@ -340,8 +340,4 @@ Chemin : `c:\windows\system32\drivers\etc\hosts`
 
 ## Tests
 
-Prolonger la licence d'éssai (3*30 jours)
-
-```powershell
-slmgr.vbs -rearm
-```
+Prolonger / renouveler la licence d'éssai auprès du KMS (3*30 jours): `slmgr.vbs -rearm`

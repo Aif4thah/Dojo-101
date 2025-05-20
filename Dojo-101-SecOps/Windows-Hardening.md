@@ -86,27 +86,30 @@ Importe des GPO intitulées "MSFT*" dans "Objets de stratégie de groupe". Elles
 Import-Module .\HardeningKitty.psm1
 ```
 
-### Audit
+Mode audit :
 
 ```powershell
 Invoke-HardeningKitty -Mode Audit -Log -Report
 ```
 
-### backup avant application
-
-Fichier list à mettre à jour avant d'éxecuter le script
+Backup avant application (fichier list à mettre à jour avant d'éxecuter le script) :
 
 ```powershell
 Invoke-HardeningKitty -Mode Config -Backup -BackupFile ".\Backup_$($env:COMPUTERNAME)_$(Get-Date -Format yyyyMMdd-hhmm)_Machine.csv" -FileFindingList "./lists/finding_list_msft_security_baseline_windows_11_24h2_user.csv"
 Invoke-HardeningKitty -Mode Config -Backup -BackupFile ".\Backup_$($env:COMPUTERNAME)_$(Get-Date -Format yyyyMMdd-hhmm)_User.csv" -FileFindingList "./lists/finding_list_msft_security_baseline_windows_11_24h2_user.csv"
 ```
 
-### Durcissement
+Durcissement :
 
 ```powershell
 Invoke-HardeningKitty -Mode HailMary -Log -Report -FileFindingList "./lists/finding_list_msft_security_baseline_windows_11_24h2_user.csv"
 ```
 
+## PingCastle
+
+```powershell
+./PingCastle.exe --healthcheck --server <domain.lan>
+```
 
 ## Manuellement
 
