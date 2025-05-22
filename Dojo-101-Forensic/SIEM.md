@@ -24,7 +24,7 @@ longin à l'url : `http://localhost:8000/`
 ### Ajouts de log :
 
 >[!WARNING]
-> POC en HTTP donc à faire hors prod.
+> POC hors prod : pas d'authent du client.
 
 `Settings` > `Data Inputs` > `HTTP Event Collector`
 
@@ -33,3 +33,7 @@ tester ensuite l'envoi d'event :
 ```sh
 curl -k https://localhost:8088/services/collector -H "Authorization: Splunk <token>" -d '{"event": "test"}'
 ```
+
+### Import des logs manuels
+
+`Settings` > `AddData` > `Upload a file`

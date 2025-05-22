@@ -75,7 +75,7 @@ Il vous est demandé de procéder à l'analyse des protocoles utilisés sur le r
 
 20. Quelles sont les attaques connues sur `NetLM` ?
 
-21. Capturer une `authentification WinRM` (Vous pouvez utiliser EvilWinRM si nécessaire côté client.)
+21. Capturer une `authentification WinRM` (Vous pouvez utiliser EvilWinRM si nécessaire côté client.), quel est le protocole d'authentification capturé ?
 
 22. Capturer une `authentification SSH` ou SFTP (mettre en place le service si nécessaire)
 
