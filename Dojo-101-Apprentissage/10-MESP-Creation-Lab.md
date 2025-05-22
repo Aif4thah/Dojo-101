@@ -93,11 +93,18 @@ Binôme ou seul (au choix)
 
 ## Livrables
 
+> [!IMPORTANT]  
+> Si vous déployez et sécurisez ce Lab dans le cadre d'un projet votre dossier devra être particulièrement soigné et votre travail adapté pour répondre aux exigences du référentiel d'évaluation. Le DAT sera alors présenté sous la forme d'un dossier projet.
+
+### Partie déploiement
+
 Rédiger un document d'architecture technique (DAT) avec : 
 
 * Un schéma réseau, incluant les VM, l'Hyperviseur et les switchs virtuels
 
 * Un tableau avec la liste des comptes utilisés pour l'administration et l'emplacement du gestionnaire de secrets contenant les mots de passe.
+
+* Un Diagramme de Gantt ou un Kanban de votre réalisation pour la partie gestion de projet.
 
 * La présentation des éléments suivants, avec captures d'écran
 
@@ -108,13 +115,17 @@ Rédiger un document d'architecture technique (DAT) avec :
     * Permissions et statut du partage SMB ou Samba
     * le nombre d'utilisateurs contenus dans l'AD
 
-* Un Diagramme de Gantt ou un Kanban de votre réalisation pour la partie gestion de projet.
+### Partie amélioration et sécurisation
 
-* Progressivement, vous ajouterez au DAT votre travail de sécurisation
+* Le cas échéant, vous ajouterez au DAT votre travail de sécurisation
 
     * Audit de configuration des OS
     * Audit de Code
     * Implémentation des mesures de sécurité sélectionnées
+
+* Les schéma réseaux et configuration avant et après configuration
+
+* Votre retour d'experience sur la réalisation de ce projet
 
 
 ## Critères de performance

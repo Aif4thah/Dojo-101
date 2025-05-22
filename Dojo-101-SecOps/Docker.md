@@ -52,6 +52,12 @@ docker ps
 docker ps -a
 ```
 
+## relancer un container exited
+
+```sh
+docker start <nom>
+```
+
 ## télécharger une image (ex: splunk)
 
 ```bash

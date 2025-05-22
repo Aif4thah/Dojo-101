@@ -72,11 +72,11 @@ Une fois les sujets identifiés, commencer à réaliser les figures et à les po
 
 * Synoptique (Processus)
 
-* **Schéma réseaux initial** (Infrastructure réseau, Architecture logicielle)
+* **Schéma d'architecture initial** 
 
-* **Schéma résaux avec vos propositions**
+* **Schéma d'architecture avec vos propositions**
 
-* Schéma PCA / PRA, Cluster
+* Schémas : Firewall, PCA / PRA, Cluster...
 
 * Extrait de Script / Code
 

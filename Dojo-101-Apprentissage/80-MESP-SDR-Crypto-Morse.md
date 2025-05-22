@@ -26,7 +26,7 @@ Poids: 3
 
 ### Introduction 
 
-0. Parmi ces algorithmes, lesquels sont de type symétrique, asymétrique, de Hashage ? Lesquels ne devraient plus être utilisés ? 
+0. Parmi ces algorithmes, lesquels sont de type symétrique, asymétrique, de Hashage ? Lesquels ne devraient plus être utilisés ?
 
     * AES 256 avec mécanisme XTS
     * AES 128 avec ECB
@@ -36,6 +36,9 @@ Poids: 3
     * MD5
     * RSA avec OAEP
     * RSA avec PKCS1
+
+> [!TIP]
+> Avant de passer à la suite, assurez-vous d'avoir compris les différents types de chiffrement (symétrique, asymétrique, hashage) et de connaitre les principaux algorithmes.
 
 
 ### Partie SDR
