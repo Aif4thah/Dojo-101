@@ -46,6 +46,8 @@ Afin de préparer l'arrivée du SIEM dans l'entreprise, vous êtes chargé de me
 
 2. Mettre en place ce puits dans une nouvelle machine du Lab, les logs Windows et Linux seront collectés
 
+## Partie intégration des logs système au SIEM
+
 3. Installer en SIEM en local de la machine hébergeant le puits de logs et importer les logs dans le SIEM à l'aide de collecteurs appropriés.
 
 4. À l'aide du langage de requête de votre solution SIEM, trouver les éléments suivants :
