@@ -66,7 +66,7 @@ Afin de préparer l'arrivée du SIEM dans l'entreprise, vous êtes chargé de me
 
 6. Rejouer les exploits vus en pentest puis importer les logs de l'application dans votre SIEM (manuellement, à l'aide d'un script ou d'un collecteur)
 
-7. Rechercher les incidents de sécurité à l'aide du moteur de recherche du SIEM afin de détecter les incidents de sécurité
+7. Rechercher les incidents de sécurité à l'aide du moteur de recherche du SIEM. Catégoriser le type d'attaque et son impact, si elle a réussi.
 
 
 ## Modalités pédagogiques
