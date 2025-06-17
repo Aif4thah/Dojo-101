@@ -28,6 +28,19 @@
 * Baselines : Minimal implementation
 
 
+## Actifs
+
+### Actifs Essentiels
+
+* Informationnels
+* Services
+
+### Actifs supports
+
+* Physique (Hardware, Software, immobilier)
+* Corporels (personnels avec skills et expérience)
+* Incorporels (réputation)
+
 ## la classification des SI hébergeant des données sensibles
 
 Dans la pratique, cette  classification est faite dans le cadre d'une stratégie d'homologation.
@@ -191,3 +204,30 @@ Les activités couvertes par le référentiel PASSI :
 - audit organisationnel et physique (ORGAPHY)
 
 [Source PASSI](https://cyber.gouv.fr/actualites/appel-public-commentaires-sur-la-mise-jour-du-referentiel-passi)
+
+## Souveraineté
+
+[Dossier technique du Clusif](https://clusif.fr/wp-content/uploads/2025/01/20240627-Souverainete-et-confiance-numerique.pdf)
+
+*La souveraineté numérique peut être définie comme un concept essentiel visant à garantir la préservation des intérêts fondamentaux d’un État, ainsi que ceux de ses organisations nationales et de leurs utilisateurs en matière de services et de protection des données. La souveraineté numérique permet de répondre à l’impérieux besoin d’indépendance, d’autonomie stratégique, de résilience et d’immunité face aux menaces institutionnalisées provenant de puissances étrangères.*
+
+### Critères de souveraineté
+
+Technique :
+
+* Localisation des datacenters
+* Localisation des données (transit, repos, utilisation)
+* Localisation des services et applications tierces
+* Localisation des sous-traitants
+* Localisation des personnes à privilèges
+* Localisation des supervisions et sauvegardes
+* Localisation du siège de la société
+
+Juridique :
+
+* Certification de l'hébergeur
+* Nationalité de l'hébergeur
+* Nationalité du personnel ayant accès
+* Nationalité des fonds de capitaux
+* Montage juridique de la société
+* Nationalité des produits et services utilisés
