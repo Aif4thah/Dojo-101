@@ -134,7 +134,8 @@ quadrantChart
 
 ## Les vulnérabilités
 
-* **Def. Vulnérabilité** : Faute, par malveillance ou maladresse, dans les spécifications, la conception, la réalisation, l’installation ou la configuration d’un système, ou dans la façon de l’utiliser. 
+* **Def. Vulnérabilité** : Faute, par malveillance ou maladresse, dans les spécifications, la conception, la réalisation, l’installation ou la configuration d’un système, ou dans la façon de l’utiliser.
+
 * **Remarques** : Une vulnérabilité peut être utilisée par un code d’exploitation et conduire à une intrusion dans le système. (faiblesse sur le SI)
 
 
@@ -329,7 +330,7 @@ Il est obligatoire de :
 * II901 : instruction interministérielle 901 (Diffusion Restreinte)
 
 
-## L'isolation physique
+## L'isolatiion physique et la sécurité physique
 
 La sécurité physique est la première couche de sécurité d’une entreprise, son but est de:
 
@@ -459,109 +460,11 @@ Politique permettant de vérifier (ou d'enforcer) avant l'accès aux ressources 
 Exemple : NAC (Network Access Control)
 
 
-## Les Zone démilitarisées (DMZ)
-
-Zone isolée fournissant des services à l'extérieur (Internet / *non-trusté*) mais aussi susceptible de fournir des services aux réseaux locaux (de confiance).
-
-* DMZ Classique :
-
-```mermaid
-flowchart TD
-    A{Internet}
-    B[**Firewall 1**]
-    C{**DMZ**}
-    D[**Firewall 2**]
-    E{Internal Network}
-
-    A --> B
-    B --> C
-    D --> C
-    E --> D 
-```
-
-* DMZ à 1 firewall :
-
-```mermaid
-flowchart TD
-    A{Internet}
-    B[**Firewall 1**]
-    C{**DMZ**}
-    E{Internal Network}
-
-    A --> B
-    B --> C
-    E --> B 
-```
-
-* plusieurs DMZ avec plusieurs niveau de sécurité
-
-```mermaid
-flowchart TD
-    A{Internet}
-    B[**Firewall 1**]
-    C{**DMZ ext**}
-    D[**Firewall 2**]
-    F[**Firewall 3**]
-    G{DMZ int}
-    E{Internal Network}
-
-    A --> B
-    B --> C
-    C --> D
-    D --> G
-    G --> F
-    F --> E
-```
-
-> [!WARNING]  
-> Lorsque le réseau interne peut communiquer avec une machine en DMZ sans passer par le firewall, ou lorsque le réseau interne et la DMZ sont sur le même hyperviseur, ce n'est **PAS une DMZ**.
-
-
-## Isolation logique et Virtualisation
-
-| Principe | Description | Exemple |
-|----|----|---|
-| Isolation de contexte | séparer les environnements d’exécution, assurant que les ressources (mémoire, CPU, etc.) entre les applications | Sandbox, sécurité basée sur la virtualisation (VBS) |
-| Para-Virtualisation | Les OS sont conscients de la virtualisation et communiquent avec l'hyperviseur via une couche d'abstraction | Hyper-V, VMWare Vsphere / ESXi |
-| Hyper-Virtualisation | Isolation entre les Machines virtuelles (VM) / OS virtualisé, aucune modification des VM pour gagner en performance | QEMU sans module Kqemu |
-| Virtualisation d’entrées/sorties (I/O) | répartition des ressources entre les VM | MS Storage Spaces Direct : Agrège les disques durs locaux pour créer un stockage partagé haute performance | 
-| Systemes Unikernel et micro serveur | Serveur Headless, Microsoft | Nano Server |
-| Containeur | Les applicaitons et leurs dépendances disposent d'environnements isolés via une virtualisation au niveau de l'OS | Docker |
-
-* [Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
-
-
-
-### Les risques liés à la virtualisation
-
-* Risque accru de compromission des systèmes
-
-* Accroissement du risque d’indisponibilité
-
-* Complexification de l’administration et de la mise en œuvre
-
-* Complexification de la supervision
-
-[Source ANSSI](https://cyber.gouv.fr/publications/securite-des-systemes-de-virtualisation)
-
-
-## Le Cloud
-
-Consiste à utiliser des ressources distantes le plus souvent au travers d’internet
-
-| Principe | Description |
-|----|----|
-| Public | ressources partagées et détenu par des tiers |
-| Privé | systèmes réservés au client |
-| Hybride | Public + Privé |
-
-
 ## Référentiels et bonnes pratiques
 
 * [ANSSI](https://cyber.gouv.fr/)
 
 * [Guide d'hygiène](https://cyber.gouv.fr/publications/guide-dhygiene-informatique)
-
 
 
 ## Les réflexes en cas d'incidents

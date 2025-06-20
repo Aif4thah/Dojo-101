@@ -70,6 +70,14 @@ Dans la pratique, cette  classification est faite dans le cadre d'une stratégie
 
 ## Les responsabilités dans un contexte Cloud
 
+Consiste à utiliser des ressources distantes le plus souvent au travers d’internet
+
+| Principe | Description |
+|----|----|
+| Public | ressources partagées et détenu par des tiers |
+| Privé | systèmes réservés au client |
+| Hybride | Public + Privé |
+
 Répartition des responsabilités entre le fournisseur de services cloud (CSP):
 
 |  | **IaaS** | **PaaS** | **SaaS** |
