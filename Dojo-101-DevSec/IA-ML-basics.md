@@ -80,6 +80,14 @@
 
 * toujours besoin de vérifier les infos
 
+### KaliGPT
+
+* Assistant pour les CTF et les pentests
+
+* Pas besoin de préciser le contexte "sécu technique" car déjà défini ;
+
+* mais pas forcément adapté pour un accompagnement ou une conformité à un Guide type ANSSI
+
 ### Copilot
 
 * Info de session : `/id`
