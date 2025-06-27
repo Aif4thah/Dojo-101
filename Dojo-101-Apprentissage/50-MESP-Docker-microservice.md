@@ -50,16 +50,16 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 
 11. Afficher les **métriques** et relever la consomation des containers
 
-12. Optionel : Pour aller plus loin, réaliser le déploiement de 2 containers à l'aide de **Terraform**
+12. Pour aller plus loin, réaliser le déploiement de 2 containers à l'aide d'un **Docker-compose** ou de **Terraform**
 
-    * 1 pour l'API Web
+    * le premier pour l'API Web VLA
 
-    * 1 pour lire et afficher les logs
+    * le second pour héberger les fichiers de logs indépendamment (ou optionnel : envoyer les logs dans un container hébergeant le SIEM)
 
 
 ## Modalités d'évaluation
 
-* Test du container depuis une machine Linux
+* Test du ou des container(s) depuis une machine Linux
 
 * Relecture des preuves de bonnes pratique de sécurité
 
