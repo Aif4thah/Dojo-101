@@ -13,6 +13,7 @@ Poids: 6
 
 * [Guide ANSSI AD](https://cyber.gouv.fr/publications/recommandations-pour-ladministration-securisee-des-si-reposant-sur-ad)
 * [Guides ANSSI](https://cyber.gouv.fr/publications)
+* [STIGs](https://public.cyber.mil/stigs/downloads/)
 * [Referentiel PASSI](https://cyber.gouv.fr/referentiels-dexigences-pour-la-qualification)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [PingCastle](https://www.pingcastle.com/)

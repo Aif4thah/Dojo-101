@@ -4,7 +4,27 @@
 
 ### Ressources
 
-[élaboration de PSSI](https://cyber.gouv.fr/publications/pssi-guide-delaboration-de-politiques-de-securite-des-systemes-dinformation)
+* [ANSSI Guide Homologation](https://cyber.gouv.fr/publications/lhomologation-de-securite-des-systemes-dinformation)
+
+* [ANSSI élaboration de PSSI](https://cyber.gouv.fr/publications/pssi-guide-delaboration-de-politiques-de-securite-des-systemes-dinformation)
+
+* [NIST RMF](https://csrc.nist.gov/projects/risk-management/about-rmf)
+
+* [NIST NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)
+
+
+### Points important PSSI
+
+1. politique de sécurité,
+2. organisation de la sécurité,
+3. gestion des risques SSI,
+4. sécurité et cycle de vie,
+5. assurance et certification,
+6. aspects humains,
+7. planification de la continuité des activités,
+8. gestion des incidents,
+9. sensibilisation et formation
+
 
 ### Lignes de maitrise
 
@@ -119,6 +139,24 @@ flowchart TD
     17(REX Incidents)-->9
     18(Contrôles)-->9
 ```
+
+## CRA et ISO27K1
+
+[Rapport ENISA](https://www.enisa.europa.eu/sites/default/files/2024-11/Cyber%20Resilience%20Act%20Requirements%20Standards%20Mapping%20-%20final_with_identifiers_0.pdf)
+
+| Exigence CRA  | Article CRA  | Contrôle ISO 27001   | Référence ISO |
+|----------|--------------|----|----|
+| Conception sécurisée   | Art. 6  | Sécurité dès la conception  | A.5.10    |
+| Gestion des vulnérabilités  | Art. 12 | Gestion des vulnérabilités  | A.12.1    |
+| Mises à jour de sécurité    | Art. 13 | Gestion des changements| A.8.9|
+| Confidentialité des données | Art. 10.3c   | Protection des données| A.8.2|
+| Authentification et contrôle d’accès   | Art. 10.3b   | Contrôle d’accès | A.5.15    |
+| Journalisation et surveillance    | Art. 10.3j   | Surveillance des systèmes   | A.5.17    |
+| Notification des incidents  | Art. 11 | Réponse aux incidents | A.5.23    |
+| Minimisation des données    | Art. 10.3e   | Minimisation des données    | A.8.3|
+
+
+
 
 ## EBIOS RM
 

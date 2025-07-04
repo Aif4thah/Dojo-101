@@ -13,6 +13,7 @@ Poids: 3
 
 * [Guides ANSSI](https://cyber.gouv.fr/publications/)
 * [Referentiel PASSI](https://cyber.gouv.fr/referentiels-dexigences-pour-la-qualification)
+* [STIGs](https://public.cyber.mil/stigs/downloads/)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [Lynis](https://cisofy.com/lynis/)
 * [Nuclei](https://github.com/projectdiscovery/nuclei)
