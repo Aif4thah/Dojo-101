@@ -1,5 +1,8 @@
 # Web API
 
+> [!TIP]
+> Même si l'on pense maitriser son API, toujours énumerer, toujours vérifier lors des audits
+
 ## standard type
 
 * SOAP
