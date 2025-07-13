@@ -126,6 +126,22 @@ Content-Type: application/json
 
 ### Merge SOAP with XSD in Visual studio:
 
-- Merge XSD in WSDL file
-- Right click on the project and select "Add Service Reference" -> "WCF" -> "enter local Path or URI"
+* Merge XSD in WSDL file
+* Right click on the project and select "Add Service Reference" -> "WCF" -> "enter local Path or URI"
 
+
+## API Mass Assignement
+
+* Inject JSON and change HTTP Method to modify data.
+
+
+ie, HTTP method : `PUT` with data : 
+```json
+{
+  "status": "admin",
+  "note":"Owned",
+  "userid": "0",
+  "username": "admin",
+  "isAdmin":true
+}
+```

@@ -119,5 +119,49 @@
 * Bots et applications C# / Python
 
 
+## Configuration de prompts
 
+Exemple de prompt inspiré de [Zzoro](https://github.com/ZZ0R0/Auto-MySQL)
 
+```python
+import mysql.connector  # Connexion à MySQL
+import openai           # Communication avec l'API OpenAI
+
+# Clé API pour accéder à OpenAI (à remplacer)
+openai.api_key = "api_Key"
+
+# Connexion à MySQL (modifie selon ton environnement)
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password=passwd,
+    database="ma_base")
+cursor = mydb.cursor()
+
+# 📥 Lecture de la structure d'une table
+table_name = "clients"
+cursor.execute(f"DESCRIBE {table_name}")
+columns = cursor.fetchall()
+
+# Création du prompt décrivant la table
+prompt = f"La table '{table_name}' contient les champs suivants :\n"
+for column in columns:
+    prompt += f"- {column[0]} ({column[1]})\n"
+
+# Ajout de la question de l'utilisateur
+question = input("Quelle question veux-tu poser à propos de cette table ?\n")
+prompt += f"\nQuestion : {question}\n"
+prompt += "Donne-moi la requête SQL correspondante."
+
+# Envoi à OpenAI
+response = openai.Completion.create(
+    engine="text-davinci-003",  # ou le moteur de ton choix
+    prompt=prompt,
+    max_tokens=150,
+    temperature=0.5)
+
+# ffichage de la réponse
+sql_query = response.choices[0].text.strip()
+print("\nRequête SQL générée :")
+print(sql_query)
+```
