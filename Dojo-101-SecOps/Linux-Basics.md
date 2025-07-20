@@ -42,10 +42,10 @@ echo $HOME
 | Montage | Options recommandées | Description |
 |---------|---------|-------------|
 | / | aucune | root |
-| /boot | nosuid,nodev,noexec | Contient le noyau et le chargeur de démarrage. |
+| /boot | nosuid,nodev,noexec | Contiens le noyau et le chargeur de démarrage. |
 | /tmp | nosuid,nodev,noexec | fichiers temporaires |
-| /home | nosuid,nodev,noexec | repertoires utilisateurs
-| /dev | aucune | peripheriques |
+| /home | nosuid,nodev,noexec | répertoires utilisateurs
+| /dev | aucune | périphériques |
 | /var |  nosuid,nodev,noexec | variables et logs |
 
 ```sh
@@ -97,13 +97,13 @@ dpkg -l
 dpkg -l apparmor
 ```
 
-### les depots
+### les dépôts
 
 ```sh
 cat /etc/apt/sources.list
 ```
 
-### Lister les clé gpg
+### Lister les clés GPG
 
 ```sh
 apt-key list
@@ -112,7 +112,7 @@ apt-key --keyring /etc/apt/trusted.gpg finger
 
 ### debug Dependences
 
-notament après l'installation de package (.deb) manuellement (`pdkg -i`)
+notamment après l'installation de package (.deb) manuellement (`pdkg -i`)
 
 ```shell
 apt --fix-broken install
@@ -142,10 +142,10 @@ apt-get install --fix-broken
 ```shell
 file executable.2772.exe 
 objdump -d /usr/bin/sh
-strings <executable ou l'on cherche des chaines de chars>
+strings <exécutables ou l'on cherche des chaines de chars>
 ```
 
-## integrité
+## intégrité
 
 ```sh
 sha256sum test
@@ -153,7 +153,7 @@ sha256sum test
 
 ## hexa
 
-### éditeur sous kali: 
+### éditeurs sous kali: 
 
 * hexeditor
 * bless
@@ -194,7 +194,7 @@ capsh --decode=0000000000003000
 
 ### Auditer les permissions
 
-#### monitorer un repertoire:
+#### monitorer un répertoire:
 
 ```sh
 apt install auditd
@@ -205,7 +205,7 @@ auditctl -l
 ausearch -k vulnapp | aureport -f -i
 ```
 
-### monitorer un user:
+### monitorer les utilisateurs:
 
 ```sh
 auditctl -a always,exit -S openat -F auid=1000 -k user1000
@@ -438,9 +438,9 @@ sudo -u logcheck logcheck -o > /data/$(date +"%m-%d-%Y-%T").log
 
 ## pbm de boot
 
-### Option interessante à ajouter au GRUB (presser "e" au boot ou éditer)
+### Options intéressantes à ajouter au GRUB (presser "e" au boot ou éditer)
 
-"acpi=off" -> désactive énormément de choses dont la gestion de l'alim et acceleration materiel
+"acpi=off" -> désactive énormément de choses dont la gestion de l'alim et accélération matérielle
 "nouveau.blacklist=1" -> désactive les drivers nouveaux
 "nomodeset" -> n'utilise pas les module graphique du kernel durant le boot jusqu'au chargement de X)
 
@@ -448,11 +448,11 @@ sudo -u logcheck logcheck -o > /data/$(date +"%m-%d-%Y-%T").log
 
 1. booter avec nomodeset ou nouveau.blacklist=1
 2. installer le package nvidia-driver
-3. rebooter (sans options supplémentaire, nouveau sera shooté automatiquement)
+3. rebooter (sans options supplémentaires, nouveau sera shooté automatiquement)
 
-### pour les probleme de driver nvidia cf "Nvidia GPU"
+### pour les problèmes, de driver nvidia cf "Nvidia GPU"
 
-si freeze: utiliser les tty (ctrl+alt+<1,2,3,4...>) ou démarrer sans interface graphique: cf "runlevel"
+Si freeze: utiliser les tty (ctrl+alt+<1,2,3,4...>) ou démarrer sans interface graphique: cf "runlevel"
 
 
 ### modules
