@@ -30,7 +30,10 @@ Testez la sécurité des badges fournis. Sous réserve que la loi vous le permet
 
 0. Qu'est-ce qu'une qualification critère commune ? Quelles technologies RFID sont qualifiées `EAL4` et `EAL5` ? À quoi correspondent ces niveaux de sécurité ?
 
-1. Réussir à lire les badges et identifier les technologies à l'aide d'une application Android (recommandé) / Windows / Linux
+1. Réussir à lire les badges et identifier les technologies à l'aide d'une application Android (recommandé) / Windows / Linux.
+
+> [!TIP]
+> Testez un portefeuille anti-RFID ou placez votre carte derrière un support métallique. Quel est le principe de la cage de Faraday ?
 
 2. **Documenter** les attaques les plus connues dans un tableau regroupant les technologies et leurs vulnérabilités. Notamment pour les technos `Mifare Classic`
 

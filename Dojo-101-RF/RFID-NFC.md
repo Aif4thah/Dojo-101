@@ -142,3 +142,8 @@ nfc-mfclassic W a u original.dmp
 ### Mifare Classic NG et MIFARE Plus Standard Level 1
 
 * Vulnérable à l'attaque *HardNested*
+
+
+### Protection
+
+* Il existe de nombreux porte-feuilles et porte-cartes `anti-RFID` sur le marché. Ils préviennent les lectures/copies non-souhaitées.
