@@ -11,7 +11,7 @@ Poids: 2
 
 * [HackRF](https://greatscottgadgets.com/hackrf/one/)(Facultatif: antenne directionnelle)
 
-* Carte Wifi (de préference pouvant passer en mode monitor)
+* Carte Wifi supportant le `mode Monitor`
 
 * Point d’accès Wifi (votre téléphone par éxemple)
 
@@ -42,11 +42,13 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 
 ### Protocoles et vulnérabilités
 
-0. Lister les points d'accès wifi qui vous entourent et leurs protocoles d'authentification.
+0. Lister les points d'accès wifi qui vous entourent et leurs protocoles d'authentification. Quel est l'avantage du mode `monitor` ?
 1. Analyzer les fichiers `.pcap`, que contiennent ces captures ?
 2. Quelles sont les vulnérabilités connues pour ces protocoles Wifi (parler à minima de `WPA2` et `WPA3`) ?
 3. Quels autres protocoles recommanderiez-vous pour une entreprise ? Pourquoi ?
 4. Une capture du trafic Wifi a été réalisée à l'aide de l'outil Aircrack-ng. Mettez en place une attaque par force brute afin de `cracker la clé WPA-PSK`.
+5. Capturer-le `Handshake` de votre propre AP Wifi. **Attention à rester dans la légalité !**
+
 
 ### Jamming et résilience
 
@@ -65,7 +67,7 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 > Dans l'idéal, un Rogue Access Point se fait passer par un Access Point légitime : même nom, même adresse Mac, etc. Mais si vous n'êtes pas à l'aise, commencer par monter un AP plus facile à identifier.
 
 
-1. Monter un `rogue access point` avec les moyens du bord (Téléphone, PC)
+1. Monter un `rogue access point` avec les moyens du bord (Téléphone, PC, carte wifi)
 2. Toujours avec les moyens du bord (Carte Wifi / HackRF), comment détecter les points d'accès wifi malveillants ou non légitimes des autres binômes ?
 3. En vous déplaçant et/ou l'aide de l'antenne directionnelle, trouver son emplacement.
 

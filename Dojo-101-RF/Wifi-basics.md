@@ -184,6 +184,9 @@ iw wlan0 set txpower fixed 3000
 
 ### Windows
 
+> [!TIP]
+> Wireshark propose directement l'option "mode monitor" dans une case à cocher.
+
 ```batch
 netsh wlan show interfaces
 ```
