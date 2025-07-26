@@ -72,6 +72,15 @@
 * API facturée à l'usage ou en auto hébergée. Abonement pour "Le chat".
 
 
+## Lumo - IA proton
+
+* IA by Protonmail axée sur la protection de la confidentialité.
+
+* [Lumo](https://lumo.proton.me/u/2/)
+
+* [Privacy Policy](https://proton.me/support/lumo-privacy)
+
+
 ## Chat GPT - OpenAI & Microsoft - Copilot
 
 * Questions generalistes
@@ -79,6 +88,7 @@
 * Faire vérifier un bout de code
 
 * toujours besoin de vérifier les infos
+
 
 ### KaliGPT
 
@@ -88,9 +98,11 @@
 
 * mais pas forcément adapté pour un accompagnement ou une conformité à un Guide type ANSSI
 
+
 ### Copilot
 
 * Info de session : `/id`
+
 
 ### Github Copilot
 
