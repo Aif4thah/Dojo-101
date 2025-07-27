@@ -1,5 +1,19 @@
 # Drones
 
+## Usages
+
+### Sécurité Physique
+
+| **Type**              | **Usage**                                           | **Marque/Modèle**                          |
+|-----------------------|-----------------------------------------------------|--------------------------------------------|
+| Reconnaissance        | Surveillance, correction de tirs en profondeur      | DJI Mavic, Autel Evo, Parrot Anafi         |
+| Largueur              | Largage de grenades ou charges artisanales          | DJI Matrice, DJI Mavic modifiés            |
+| Kamikaze (FPV)        | Attaque directe avec explosifs                      | Drones FPV customisés                      |
+| Observation tactique  | Suivi de troupes, repérage de terrain               | DJI Phantom, Autel Robotics                |
+| Logistique légère     | Transport de petits équipements ou médicaments      | DJI Matrice, Flytrex                       |
+| Brouillage/Leurre     | Saturation radar, diversion                         | Drones bon marché modifiés (ex: Syma)      |
+
+
 ## Detection
 
 ### écoute et analyse de la communication
