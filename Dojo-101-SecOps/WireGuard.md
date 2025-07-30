@@ -56,7 +56,7 @@ systemctl enable wg-quick@wire.service
 Pour rajouter une couche de sécurité supplémentaire nous allons générer une Pre-Shared Key. Celle-ci devra être utilisée uniquement pour un seul client et le serveur. Pour tout autre client, il faudra générer à chacun une nouvelle Pre-Shared Key. Cette clé nous servira un peu plus tard.
 ```
 wg genspk
-lHuT8N1nEEXAt3znAUPX7JAlWtFEwApkfjC0OsODNGA=
+<redacted>
 ```
 ### Configuration 
 Nous allons activer l'IP Forwading : 
@@ -135,7 +135,7 @@ Address = 192.168.99.3/29
 
 [Peer]
 PublicKey = "clée publique serveur"
-PresharedKey = lHuT8N1nEEXAt3znAUPX7JAlWtFEwApkfjC0OsODNGA=
+PresharedKey = <redacted>
 AllowedIPs = 192.168.99.0/29, 192.168.1.0/24
 EndPoint = "ip publique VPN":61202 
 ```
@@ -156,7 +156,7 @@ PrivateKey = "clé privée"
 [Peer]
 PublicKey = "clée publique client"
 AllowedIPs = 192.168.99.3/32
-PresharedKey = lHuT8N1nEEXAt3znAUPX7JAlWtFEwApkfjC0OsODNGA=
+PresharedKey = <redacted>
 ```
 On relance Wireguard : 
 ```

@@ -31,4 +31,4 @@ Puis rééxporter (file -> export) le binaire au format ELF
 @m-VirtualBox:~/Documents$ ./c2 aaaa
 Good work, the password is : 
 
-ff07031d6fb052490149f44b1d5e94f1592b6bac93c06ca9
+<redacted>
