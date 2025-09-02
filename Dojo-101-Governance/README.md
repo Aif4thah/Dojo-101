@@ -220,7 +220,6 @@ flowchart TD
     5--> |Cycle Stratégique| 1 
 ```
 
-
 ### Le traitement du risque
 
 Exemple de niveau de risque en fonction de la gravité (ordonnée) et de la vraisemblance (abscisse):
@@ -277,3 +276,17 @@ Juridique :
 * Nationalité des fonds de capitaux
 * Montage juridique de la société
 * Nationalité des produits et services utilisés
+
+
+## NIST RMF (Risk Management Framework)
+
+```mermaid
+graph TD
+    A[Prepare] -->|Définir rôles, politiques, ressources| B[Categorize]
+    B -->|Évaluer impact sur confidentialité, intégrité, disponibilité| C[Select]
+    C -->|Choisir contrôles adaptés NIST SP 800-53| D[Implement]
+    D -->|Déployer et documenter les contrôles| E[Assess]
+    E -->|Tester l'efficacité des contrôles| F[Authorize]
+    F -->|Décider d'autoriser le système| G[Monitor]
+    G -->|Surveillance continue, mises à jour| A
+```
