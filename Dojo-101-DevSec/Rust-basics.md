@@ -411,10 +411,10 @@ fn main() {
     println!("2. Vérification de type au moment de la compilation");
     //type_checking(); leve une exception puisque le type ne correspond pas, lorsque commenté un warning est levé à la compilation
 
-    println!("3. Gestion des erreurs avec Result et Option");
+    println!("3. Gestion des erreurs avec Result");
     error_handling();
 
-    println!("4. Absence de null");
+    println!("4. Absence de null, utilisation d'Option");
     no_null();
 
     println!("5. Concurrency sans data races");
@@ -431,21 +431,34 @@ fn memory_management() {
 // Rust effectue une vérification de type stricte au moment de la compilation.
 // Cette fonction échouera à la compilation car elle tente de parser une chaîne en entier.
 fn type_checking() {
-    let _x: i32 = "hello".parse().expect("Not an integer!"); //parse et converti la chaine dans le type addendu
+    let _x: i32 = "hello".parse().expect("Not an integer!"); //parse et converti la chaine dans le type addendu, expect : message en cas d'érreur
 }
 
 
 // Rust encourage l'utilisation de Result et Option pour la gestion des erreurs.
 // Ces types permettent de gérer explicitement les cas d'erreur et d'absence de valeur.
+// Result : succès ou échec avec message d’erreur
 fn error_handling() {
-    let _res: Result<i32, _> = "100".parse(); 
+    let res: Result<i32, std::num::ParseIntError> = "hello".parse();
+
+    match res {
+        Ok(n) => println!("Nombre converti : {}", n),
+        Err(e) => println!("Erreur de conversion : {}", e),
+    }
 }
 
 
 // Rust n'a pas de null, ce qui élimine une classe entière de bugs.
 // Au lieu de cela, Rust utilise le type Option pour représenter une valeur qui peut être absente.
+// avec Option il n’y a pas d’erreur, mais la valeur peut ne pas exister. Le compilateur contraint la gestion de Some(n) et None
 fn no_null() {
-    let _opt: Option<i32> = "42".parse().ok();
+
+    let opt: Option<i32> = "42".parse().ok();
+
+    match opt {
+        Some(n) => println!("Conversion réussie : {}", n),
+        None => println!("Échec de conversion"),
+    }
 }
 
 
