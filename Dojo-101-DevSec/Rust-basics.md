@@ -14,7 +14,7 @@
 ## Les bases
 
 > [!TIP]
-> Rust étant assez verbeux, les éxemples sont comparés au C#.
+> Rust étant assez verbeux, les exemples sont comparés au C#.
 
 
 Compiler un seul fichier :
@@ -41,39 +41,154 @@ cargo add regex
 ```
 
 Le code sera dans `main.rs`
-Les versions des dépendances sont alors spécifié dans le fichier `Cargo.toml`, Cargo gère automatiquement le fichier `Cargo.lock`
+Les versions des dépendances sont alors spécifiées dans le fichier `Cargo.toml`, Cargo gère automatiquement le fichier `Cargo.lock`
 Pour mettre à jour des dépendances : `cargo-update`
 
 
 ### Variable assignement
 
-C#
 
-```csharp
-var x = 5;
-x = 6;
-Console.WriteLine(x); // 6
-```
-
-RUST
-
+**RUST:**
 ```rust
 let x = 5;
 let x = 6; // x = 6 ne compilera pas
 println!("{}", x); // 6
 ```
 
+> la variable _ sert à indiquer que le résultat ne sera pas utilisé et évite des avertissements du compilateur
+
+```rust
+fn main() {
+    let _x = 42; // Rust ne se plaint pas si _x n’est jamais utilisé
+}
+```
+
+### Conditions
+
+> doit toujours être de type booléen
+
+blocs if-else:
+
+```rust
+fn main() {
+    let age = 20;
+
+    if age < 18 {
+        println!("Mineur");
+    } else if age < 65 {
+        println!("Adulte");
+    } else {
+        println!("Senior");
+    }
+}
+```
+
+assignement de valeur:
+
+```rust
+fn main() {
+    let age = 20;
+    let est_majeur = if age >= 18 { true } else { false };
+    println!("{}", est_majeur); // println! attend une chaîne de format
+}
+```
+
+match (équivalent au switch):
+
+```rust
+fn main() {
+    let note = 8;
+
+    match note {
+        0..=4 => println!("Échec"),
+        5..=7 => println!("Passable"),
+        8..=10 => println!("Bien"),
+        _ => println!("Note invalide"),
+    }
+}
+```
+
+### Boucles
+
+Boucle infinie - avec break
+
+```rust
+fn main() {
+    loop {
+        println!("Boucle infinie !");
+        break; // Sans ce break, la boucle ne s'arrête jamais
+    }
+}
+```
+
+```rust
+fn main() {
+    let mut compteur = 0;
+
+    let résultat = loop {
+        compteur += 1;
+        if compteur == 10 {
+            break compteur * 2; // retourne 20
+        }
+    };
+
+    println!("Résultat : {}", resultat);
+}
+```
+
+While : 
+
+```rust
+fn main() {
+    let mut n = 3;
+
+    while n != 0 {
+        println!("{} !", n);
+        n -= 1;
+    }
+
+    println!("Décollage 🚀");
+}
+```
+
+For (itération)
+
+```rust
+fn main() {
+    for i in 1..5 {
+        println!("i vaut {}", i); // 1 à 4
+    }
+
+    for i in 1..=5 {
+        println!("i vaut {}", i); // 1 à 5
+    }
+}
+```
+
+itération de listes / tableaux
+
+```rust
+fn main() {
+    let fruits = ["pomme", "banane", "cerise"];
+
+    for fruit in fruits.iter() {
+        println!("J'aime les {}", fruit);
+    }
+}
+```
+
+
+## Exemples et comparaison avec le C#
+
 ### Casting
 
-C#
-
+C# :
 ```csharp
 double a = 1.2;
 int b = (int)a;
 ```
 
-RUST
-
+**RUST:**
 ```rust
 let int_number: i32 = 1;
 let long_number: i64 = int_number as _;
@@ -81,8 +196,7 @@ let long_number: i64 = int_number as _;
 
 ### Boucle et Conditions
 
-C#
-
+C#:
 ```csharp
 using System;
 using System.Text;
@@ -99,8 +213,7 @@ foreach (var value in values)
 Console.Write(output); // Prints: 1, 2, 3, 4, 5
 ```
 
-RUST
-
+**RUST:**
 ```rust
 use std::fmt::Write;
 
@@ -122,8 +235,7 @@ fn main() {
 
 ### Structures (pas de classes en RUST)
 
-C#
-
+C#:
 ```csharp
 struct Rectangle
 {
@@ -148,8 +260,7 @@ struct Rectangle
 }
 ```
 
-RUST
-
+**RUST:**
 ```rust
 #![allow(dead_code)]
 
@@ -298,7 +409,7 @@ fn main() {
     memory_management();
 
     println!("2. Vérification de type au moment de la compilation");
-    //type_checking(); leve une exception puisque le type de correspont pas, lorsque commenté un warning est levé à la compilation
+    //type_checking(); leve une exception puisque le type ne correspond pas, lorsque commenté un warning est levé à la compilation
 
     println!("3. Gestion des erreurs avec Result et Option");
     error_handling();
