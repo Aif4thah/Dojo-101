@@ -33,16 +33,22 @@ Pour les librairies et dépendances, `cargo` est équivalent à `dotnet` :
 cargo [build|run]
 ```
 
-Créer un projet avec dépendances
+Créer un projet et ajouter les dépendances
 
 ```powershell
 cargo.exe new myproject
 cargo add regex
 ```
 
-Le code sera dans `main.rs`
-Les versions des dépendances sont alors spécifiées dans le fichier `Cargo.toml`, Cargo gère automatiquement le fichier `Cargo.lock`
-Pour mettre à jour des dépendances : `cargo-update`
+* Le code sera dans `myproject/src/main.rs`.
+
+* Les binaires seront dans `myproject/target`.
+
+* Les versions des dépendances sont alors spécifiées dans le fichier `Cargo.toml`, ce fichier peut être édité manuellement.
+
+* Cargo gère automatiquement le fichier `Cargo.lock`
+
+* Pour mettre à jour des dépendances : `cargo-update`
 
 
 ### Variable assignement
@@ -429,9 +435,9 @@ fn memory_management() {
 
 
 // Rust effectue une vérification de type stricte au moment de la compilation.
-// Cette fonction échouera à la compilation car elle tente de parser une chaîne en entier.
+// Cette fonction échouera à la compilation, car elle tente de parser une chaîne en entier.
 fn type_checking() {
-    let _x: i32 = "hello".parse().expect("Not an integer!"); //parse et converti la chaine dans le type addendu, expect : message en cas d'érreur
+    let _x: i32 = "hello".parse().expect("Not an integer!"); //parse et converti la chaine dans le type attendu, expect : message en cas d'erreur
 }
 
 
