@@ -2,7 +2,7 @@
 
 Analyse des mises à jour OS d'un parc IT à l'aide du scripting
 
-Poids: 0.5
+Poids: 1
 
 > [!NOTE] 
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
@@ -15,11 +15,14 @@ Poids: 0.5
 ## Contexte
 
 
-Vérifiez à l'aide d'un langage de script si vous avez les KB5049622, KB5049625 et `Un KB présent de votre choix` présent sur votre OS Windows. Le script devra afficher en Vert les KB présents et en rouge les KB absents.
+1. Vérifiez à l'aide d'un langage de script si vous avez les KB5049622, KB5049625 et `Un KB présent de votre choix` présent sur votre OS Windows. Le script devra afficher en Vert les KB présents et en rouge les KB absents.
 
-Votre script doit fonctionner sur votre machine, mais également sur n'importe quelle autre machine Windows afin de pouvoir être réutilisé à plus grande échelle.
+> [!NOTE] 
+> Votre script doit fonctionner sur votre machine, mais également sur n'importe quelle autre machine Windows afin de pouvoir être réutilisé à plus grande échelle.
 
-Proposer une procédure, à écrire en commentaire du script, pour le déployer sur un parc Windows AD.
+2. Une fois que votre script fonctionne, placer la liste des KB dans un fichier texte, le script devra lire ce fichier pour obtenir la liste des KB.
+
+3. Proposer une procédure, à écrire en commentaire du script, pour le déployer sur un parc Windows AD.
 
 Langages recommandés : `Powershell`.
 
