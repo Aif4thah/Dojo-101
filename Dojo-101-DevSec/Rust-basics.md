@@ -23,8 +23,8 @@ Compiler un seul fichier :
 rustc mon_programme.rs
 ```
 
-```powershell
-rustc.exe .\Rust-security.rs
+```sh
+rustc .\Rust-security.rs
 ```
 
 Pour les librairies et dépendances, `cargo` est équivalent à `dotnet` :
@@ -35,8 +35,8 @@ cargo [build|run]
 
 Créer un projet et ajouter les dépendances
 
-```powershell
-cargo.exe new myproject
+```sh
+cargo new myproject
 cargo add regex
 ```
 
@@ -56,16 +56,23 @@ cargo add regex
 
 **RUST:**
 ```rust
-let x = 5;
-let x = 6; // x = 6 ne compilera pas
-println!("{}", x); // 6
+fn main() {
+    let x = 5;
+    //x = 6; // x = 6 ne compilera pas
+    println!("{}", x); // 6
+
+    let mut y = 5;
+    y = 6; // x = 6 ne compilera pas
+    println!("{}", y); // 6
+}
 ```
 
-> la variable _ sert à indiquer que le résultat ne sera pas utilisé et évite des avertissements du compilateur
+> la variable `_` sert à indiquer que le résultat ne sera pas utilisé et évite des avertissements du compilateur
 
 ```rust
 fn main() {
-    let _x = 42; // Rust ne se plaint pas si _x n’est jamais utilisé
+    let _x = 42; // pas de Warning pas si _x n’est jamais utilisé
+    let _ = 7; // ne sera plus utilisé
 }
 ```
 
@@ -180,8 +187,61 @@ fn main() {
     for fruit in fruits.iter() {
         println!("J'aime les {}", fruit);
     }
+
+    let recherche = "pomme";
+    if fruits.contains(&recherche) {
+        println!("{} trouvé !", recherche);
+    }
 }
 ```
+
+## Lire un fichier
+
+```rust
+use std::fs::File;
+use std::io::{BufRead, BufReader};
+
+fn main() {
+    let file = File::open("/etc/passwd").expect("Impossible d'ouvrir le fichier");
+    let reader = BufReader::new(file);
+
+    for line in reader.lines() {
+        if let Ok(l) = line {
+            let l = l.trim();
+            if !l.is_empty() {
+                println!("{}", l);
+            }
+        }
+    }
+}
+```
+
+## Executer une commande système
+
+```rust
+use std::process::Command;
+
+fn main() {
+    let output = Command::new("id").output().unwrap();
+    println!("{}", String::from_utf8_lossy(&output.stdout));
+}
+```
+
+
+
+### Lire les arguments
+
+```rust
+fn main() {
+    let args: Vec<String> = std::env::args().collect();
+    if args.len() > 1 {
+        println!("Les arguments sont : {:?}", &args[1..]);
+    } else {
+        println!("Aucun argument n'a été passé au programme.");
+    }
+}
+```
+
 
 
 ## Exemples et comparaison avec le C#
@@ -196,8 +256,8 @@ int b = (int)a;
 
 **RUST:**
 ```rust
-let int_number: i32 = 1;
-let long_number: i64 = int_number as _;
+    let int_nb: i32 = 1;
+    let _long_nb: i64 = int_nb as _;
 ```
 
 ### Boucle et Conditions
@@ -319,27 +379,27 @@ impl Display for Rectangle {
 }
 ```
 
-### Lire les arguments
 
-```rust
-fn main() {
-    let args: Vec<String> = std::env::args().collect();
-    if args.len() > 1 {
-        println!("Les arguments sont : {:?}", &args[1..]);
-    } else {
-        println!("Aucun argument n'a été passé au programme.");
-    }
-}
-```
 
 ## Toolchains
 
 la version `stable` est recommandée
 
-```powershell
+```sh
 rustup toolchain list
 ```
 
+## Connaitre la version
+
+```sh
+rustup --version
+```
+
+## Update des versions
+
+```sh
+rustup update
+```
 
 ## Test & linter
 
@@ -347,7 +407,7 @@ rustup toolchain list
 
 Installé par défaut, si non `rustup component add clippy` (priviliger cette commande à `cargo` pour ne pas l'avoir en dépendance)
 
-```
+```sh
 cargo clippy
 ```
 

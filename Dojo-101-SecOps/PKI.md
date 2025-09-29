@@ -1,5 +1,11 @@
 # PKI (Public key infrastructure) / IGC Infrastructure de gestion de clés
 
+## Ressources
+
+* [RGS](https://cyber.gouv.fr/le-referentiel-general-de-securite-version-20-les-documents)
+
+* [Migration vers le Post-Quantique](https://cyber.gouv.fr/publications/avis-de-lanssi-sur-la-migration-vers-la-cryptographie-post-quantique-0)
+
 ## Definitions
 
 * Autorité de certification (AC): Agit comme racine de confiance dans une infrastructure à clé publique et fournit des services qui authentifient l’identité des personnes, des ordinateurs et d’autres entités dans un réseau. (source: microsoft)

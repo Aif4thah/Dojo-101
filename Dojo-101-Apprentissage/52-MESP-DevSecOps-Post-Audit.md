@@ -31,7 +31,7 @@ Afin de tester les vulnérabilités découvertes lors de l'audit, lors des proch
 
 1. La mise en place d'un **Kanban** avec des **User Stories** dans un **backlog** leur permettant d'éstimer le travail à réaliser pour patcher l'application. 
 
-2. la création de templates **nuclei** ou d'un **script python** ou des **tests unitaires** spécifiques en C# permettant de tester les vulnérabilités découvertes lors du test d'intrusion.
+2. la création de templates **nuclei** ou d'un **script** ou des **tests unitaires** spécifiques en C# permettant de tester les vulnérabilités découvertes lors du test d'intrusion.
 
 3. la mise en place des ces tests à chaque *git push* grâce à leur **intégration aux canaux CI/CD**.
 

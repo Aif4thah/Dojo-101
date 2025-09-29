@@ -43,7 +43,7 @@ A l'aide d'un script :
 11. Afficher la liste des IP des équipements réseau traversés pour atteindre le site Web
 
 
-Langages recommandés : `Powershell`, `Python`.
+Langages recommandés : `Powershell`, `Python`, `Rust`.
 
 
 ## Modalités pédagogiques
