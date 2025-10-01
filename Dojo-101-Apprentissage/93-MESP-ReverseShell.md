@@ -14,6 +14,8 @@ Poids: 1
 
 * [Shellcode db](https://www.exploit-db.com/shellcodes)
 
+* [TOE : VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp/tree/main)
+
 ## Contexte
 
 
@@ -21,6 +23,11 @@ Poids: 1
 
 Binôme ou seul (au choix)
 
+> [!WARNING]
+> Attention à bien distinguer ReverseShell != Shellcode
+
+> [!TIP]
+> Pour plus de réalisme, *VulnerableLightApp* permet d'exploiter des vulnérabilités via ReverseShells et de ShellCodes.
 
 1. Télécharger "netcat"
 
@@ -32,16 +39,17 @@ Binôme ou seul (au choix)
 
 5. Commander 2 victimes simultanément
 
-6. Recommencer avec un reverse shell en bash
+6. Recommencer avec un `reverseShell` en bash
 
-7. Recommencer avec un reverse shell en python
+7. Recommencer avec un `reverseShell` en python
 
-8. Recommencer avec un reverse shell en powershell
+8. Recommencer avec un `reverseShell` en powershell
 
-9. Recommencer avec un reverse shell que vous avez devellopé/modifié vous meme pour ne pas etre vu par l'Anti-virus (Rust, Java, C# etc...)
+9. Recommencer avec un `reverseShell` que vous avez développé/modifié vous-même pour ne pas être vu par l'Anti-virus (Rust, Java, C# etc...)
 
-10. Développez votre ShellCode ou prenez-en un sur internet, chargez-le avec un loader approprié pour obtenir un Shell une la machine victime malgré la présence de l'Antivirus.
+10. Développez votre `ShellCode` ou prenez-en un sur internet, chargez-le avec un `Loader` approprié pour obtenir un Shell une la machine victime malgré la présence de l'Antivirus.
 
+11. Si ce n'est pas déjà fait, utiliser un `reverseShell` et un `ShellCode` pour prendre le contrôle de *VulnerableLightApp*.
 
 ## Modalités d'évaluation
 
@@ -49,19 +57,19 @@ Binôme ou seul (au choix)
 
 ## Livrables
 
-* Screenshot de chaque reverse shell
+* Screenshot de chaque `reverseShell`
 
-* Code du reverse shell 
+* Code du `reverseShell` 
 
 * ShellCode avec loader et documentation
 
 ## Critères de performance
 
-*Furtivité* : Un bon reverse shell doit être capable de se cacher efficacement pour éviter la détection par les systèmes de défense de l’hôte, tels que les antivirus et les pare-feu.
+*Furtivité* : Un bon `reverseShell` doit être capable de se cacher efficacement pour éviter la détection par les systèmes de défense de l’hôte, tels que les antivirus et les pare-feu.
 
 *Stabilité* : Il doit être capable de maintenir une connexion stable avec l’attaquant, même en cas de conditions réseau défavorables. Il doit également être résilient face aux redémarrages du système.
 
-*Fonctionnalités* : Un bon reverse shell doit offrir un ensemble complet de fonctionnalités qui permettent à l’attaquant d’exécuter des commandes à distance, de télécharger et d’uploader des fichiers, et d’effectuer d’autres actions sur le système cible.
+*Fonctionnalités* : Un bon `reverseShell` doit offrir un ensemble complet de fonctionnalités qui permettent à l’attaquant d’exécuter des commandes à distance, de télécharger et d’uploader des fichiers, et d’effectuer d’autres actions sur le système cible.
 
 
 ## Pour finir
