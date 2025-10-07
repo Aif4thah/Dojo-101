@@ -17,6 +17,7 @@ Poids: 5
 * [Docker Hub](https://hub.docker.com/)
 * [Guide ANSSI](https://cyber.gouv.fr/publications/recommandations-de-securite-relatives-au-deploiement-de-conteneurs-docker)
 * [Terraform](https://www.terraform.io/)
+* [Trivy](https://trivy.dev/latest/)
 
 
 ## Contexte

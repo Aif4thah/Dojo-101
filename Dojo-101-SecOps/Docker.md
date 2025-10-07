@@ -292,6 +292,11 @@ ou
 docker compose up -d
 ```
 
+## Scan de sécurité
+
+* [Trivy](https://trivy.dev/latest/)
+
+
 ## Aller plus loin
 
 ### Terraform
