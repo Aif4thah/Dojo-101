@@ -10,10 +10,8 @@
 ![Repo Size](https://img.shields.io/github/repo-size/Aif4thah/Dojo-101)
 [![Github Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-30363D?&logo=GitHub-Sponsors&logoColor=EA4AAA)](https://github.com/sponsors/Aif4thah/)
 
-
 > [!WARNING]
 > This repository and its tools are provided "as is" without warranty of any kind, either express or implied, including but not limited to, any warranties of merchantability, fitness for a particular purpose, and non-infringement. The authors shall not be liable for any claims, damages, or other liabilities arising from, out of, or in connection with the use of this tool. The user is solely responsible for ensuring their use of this tool complies with all applicable laws and regulations. The authors disclaim any liability for illegal or unethical use.
-
 
 ## ⚔️ Themes
 
@@ -23,7 +21,6 @@
 * [Forensic](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Forensic)
 * [Radio frequencies](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-RF)
 * [Governance, Risk and Compliance](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Governance)
-
 
 ```mermaid
 mindmap
@@ -96,7 +93,7 @@ mindmap
 
 ```
 
-## 👉 Let’s get started!
+## 👉 Let’s get started
 
 README Files and those containing the keyword `basics` contain elements that are subsequently considered prerequisites. Here are some suggestions:
 
@@ -110,7 +107,7 @@ README Files and those containing the keyword `basics` contain elements that are
 
 > Some sections are still in French. The translation will be completed according to the needs of sponsors and customers.
 
-## 📒 You need almost nothing.
+## 📒 You need almost nothing
 
 Clone the repository without the history using the following command:
 
@@ -150,4 +147,3 @@ Developed in parallel, this application contains numerous vulnerabilities for te
 * Project maintained by [Michael Vacarella](https://github.com/Aif4thah)
 
 * Support this effort and give back by [sponsoring on GitHub!](https://github.com/sponsors/Aif4thah/)
-

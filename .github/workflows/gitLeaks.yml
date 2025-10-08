@@ -1,0 +1,24 @@
+name: Gitleaks Secret Scan
+
+on:
+  push:
+    paths:
+      - '**/*.md'
+      - '*.md'
+  pull_request:
+    paths:
+      - '**/*.md'
+      - '*.md'
+
+jobs:
+  scan-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        with:
+          args: detect --source . --no-git --redact
+
