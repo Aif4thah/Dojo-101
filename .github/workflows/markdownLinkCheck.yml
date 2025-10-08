@@ -11,15 +11,8 @@ on:
       - '**/*.md'
 
 jobs:
-  md-check-links:
+  markdown-link-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Vérifier les liens Markdown
-        uses: YakDriver/md-check-links@latest
-        with:
-          quiet: 'yes'
-          verbose: 'yes'
-          directory: '.'
-          extension: '.md'
+    - uses: actions/checkout@v4
+    - uses: tcort/github-action-markdown-link-check@v1
