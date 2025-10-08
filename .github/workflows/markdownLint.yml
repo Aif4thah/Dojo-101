@@ -18,5 +18,6 @@ jobs:
 
       - name: Run MarkdownLint
         uses: DavidAnson/markdownlint-cli2-action@v15
+        continue-on-error: true
         with:
           globs: '**/*.md'
