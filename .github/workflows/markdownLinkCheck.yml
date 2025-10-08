@@ -21,5 +21,7 @@ jobs:
       - name: Check Markdown links
         uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
+          use-quiet-mode: 'no'
+          use-verbose-mode: 'yes'
           config-file: '.markdownLinkCheck.json'
           folder-path: '.'
