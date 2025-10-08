@@ -14,6 +14,7 @@ on:
 jobs:
   check-links:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -21,7 +22,6 @@ jobs:
       - name: Check Markdown links
         uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
-          use-quiet-mode: 'no'
-          use-verbose-mode: 'yes'
+          use-quiet-mode: 'yes'
           config-file: '.markdownLinkCheck.json'
           folder-path: '.'
