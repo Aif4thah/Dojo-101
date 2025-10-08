@@ -1,4 +1,7 @@
 name: Markdown Link Check
+permissions:
+  contents: read
+  pull-requests: write
 
 on:
   push:

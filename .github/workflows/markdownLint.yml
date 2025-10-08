@@ -1,4 +1,7 @@
 name: Markdown Lint
+permissions:
+  contents: read
+  pull-requests: write
 
 on:
   push:
@@ -16,4 +19,4 @@ jobs:
       - name: Run MarkdownLint
         uses: DavidAnson/markdownlint-cli2-action@v15
         with:
-          globs: '**/*.md
+          globs: '**/*.md'
