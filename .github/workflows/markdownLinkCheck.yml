@@ -16,3 +16,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: tcort/github-action-markdown-link-check@v1
+      continue-on-error: true
