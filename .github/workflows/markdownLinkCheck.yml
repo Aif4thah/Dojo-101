@@ -24,4 +24,5 @@ jobs:
         continue-on-error: true
         with:
           use-quiet-mode: 'yes'
+          config-file: '.markdownLinkCheck.json'
           folder-path: '.'
