@@ -2,13 +2,11 @@ name: Markdown Link Check
 
 on:
   push:
-    paths:
-      - '**/*.md'
-      - '*.md'
+    branches:
+      - main
   pull_request:
-    paths:
-      - '**/*.md'
-      - '*.md'
+    branches:
+      - main
 
 jobs:
   check-links:
