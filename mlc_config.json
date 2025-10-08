@@ -5,5 +5,5 @@
   },
   "timeout": 10,
   "retryOn429": true,
-  "aliveStatusCodes": [200, 403, 500]
+  "aliveStatusCodes": [200]
 }
