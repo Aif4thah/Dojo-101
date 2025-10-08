@@ -4,7 +4,7 @@ Savoir protéger ses informations sur sa machine personnelle Windows
 
 Poids: 2
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
@@ -18,7 +18,6 @@ Poids: 2
 
 Un de vos collaborateurs par à l'étranger et il vous est demandé de lui fournir une machine vierge de toute donnée, 
 bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter ses mails sur Office 365 durant son déplacement.
-
 
 ## Modalités pédagogiques
 
@@ -42,7 +41,6 @@ bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter s
 
 9. Votre configuration **Auditpol** initiale est elle persistante ? Pourquoi ?
 
-
 ## Modalités d'évaluation
 
 Lecture des livrables
@@ -52,7 +50,7 @@ Lecture des livrables
 1. Comparatifs `PolicyAnalyzer` avant et apres le durcissement.
 2. Résultat de la commange `Get-BitLockerVolume`
 3. Résultat de la commande `Get-MpPreference`
-4. Résultat de la commande `auditpol.exe /get /category:*` 
+4. Résultat de la commande `auditpol.exe /get /category:*`
 5. Captures des logs (ou resultat powershell) avec échec d'authentification et escalade de privilèges
 
 ## Critères de performance

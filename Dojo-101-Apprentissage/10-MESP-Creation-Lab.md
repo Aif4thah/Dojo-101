@@ -5,7 +5,7 @@ Nous avons un environnement Windows AD (client et serveur) pour l'administration
 
 Poids: 4
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
@@ -25,7 +25,7 @@ Poids: 4
 > [!TIP]
 > Déployer cette infrastructure n'est en aucun cas une fin en soi : le but est ensuite de la sécuriser. Ce travail est réalisé à l'aide des autres mises en situations professionnelles, en particulier les audits de sécurité.
 
-0. Télécharger les images (ISO ou VM) Windows et Linux et vérifier leurs intégrités (Hashs ou Signatures) 
+0. Télécharger les images (ISO ou VM) Windows et Linux et vérifier leurs intégrités (Hashs ou Signatures)
 
 1. Installer 3 machines virtuelles (VM) : Un contrôleur de domaine (Windows Serveur) + 1 Windows (client) + 1 Linux
 
@@ -41,14 +41,15 @@ Poids: 4
 
     * WinRM (Windows) : accessible uniquement aux administrateurs de l'AD. 
 
-    * SMB (Windows) : 1 partage "Readonly" + 1 partage accessible en écriture, sans authentification. 
+    * SMB (Windows) : 1 partage "Readonly" + 1 partage accessible en écriture, sans authentification.
 
     * Web (Linux) : VulnerableLightApp doit être lancé et accessible via le réseau - le binaire contient déjà un serveur Web (Kestrel)
 
     * SSH (Linux) : accessible aux membres du groupe sudoers
-    
+
 6. exécution du script badblood
 
+**Architecture attendue :**
 
 ```mermaid
 flowchart TD
@@ -67,7 +68,6 @@ flowchart TD
     L --> |running| I{SSH}
 
     C --> |joined| Z
-
 ```
 
 ## Modalités pédagogiques
@@ -77,19 +77,17 @@ Binôme ou seul (au choix)
 > [!WARNING]
 > Attention les éléments mis en place contiennent des vulnérabilités (indispensables pour l'apprentissage), il faudra par précaution:
 
- * S'assurer que les mots de passe soit dans un gestionnaire de secrets (ex: Keepass)
- * Mettre à jour l'hyperviseur
- * Limiter l'exposition des VM à l'hôte ou au réseau local en NAT lors des mises à jour, les éteindre lorsqu'on ne s'en sert pas.
- * Supprimer immédiatement les VM en cas de doute sur leur intégrité
- * Éteindre les VM lorsqu'on ne les utilise pas.
-
+* S'assurer que les mots de passe soit dans un gestionnaire de secrets (ex: Keepass)
+* Mettre à jour l'hyperviseur
+* Limiter l'exposition des VM à l'hôte ou au réseau local en NAT lors des mises à jour, les éteindre lorsqu'on ne s'en sert pas.
+* Supprimer immédiatement les VM en cas de doute sur leur intégrité
+* Éteindre les VM lorsqu'on ne les utilise pas.
 
 ## Modalités d'évaluation
 
 * Vérification du DAT
 
 * Présentation orale
-
 
 ## Livrables
 
@@ -108,25 +106,23 @@ Rédiger un document d'architecture technique (DAT) avec :
 
 * La présentation des éléments suivants, avec captures d'écran
 
-    * Vérification des intégrités des images téléchargées avant l'installation
-    * Mises à jour réussies
-    * le statut des services DNS et Web
-    * connexions SSH et WinRM réussies (Connexion + commande `whoami`)
-    * Permissions et statut du partage SMB ou Samba
-    * le nombre d'utilisateurs contenus dans l'AD
+  * Vérification des intégrités des images téléchargées avant l'installation
+  * Mises à jour réussies  * le statut des services DNS et Web
+  * connexions SSH et WinRM réussies (Connexion + commande `whoami`)
+  * Permissions et statut du partage SMB ou Samba
+  * le nombre d'utilisateurs contenus dans l'AD
 
 ### Partie amélioration et sécurisation
 
 * Le cas échéant, vous ajouterez au DAT votre travail de sécurisation
 
-    * Audit de configuration des OS
-    * Audit de Code
-    * Implémentation des mesures de sécurité sélectionnées
+  * Audit de configuration des OS
+  * Audit de Code
+  * Implémentation des mesures de sécurité sélectionnées
 
 * Les schéma réseaux et configuration avant et après configuration
 
 * Votre retour d'experience sur la réalisation de ce projet
-
 
 ## Critères de performance
 

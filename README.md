@@ -1,3 +1,4 @@
+# Dojo-101
 
 <p align="center">
     <img src="./images/dojo101Dark.png" alt="Dojo-101" style="width: 400px;" />

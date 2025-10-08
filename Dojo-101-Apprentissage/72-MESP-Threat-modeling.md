@@ -18,7 +18,7 @@ Poids: 2
 
 ## Contexte
 
-Vous êtes chargé, à partir de la documentation fournie sur le dépôt github de "VulnerableLightApp", 
+Vous êtes chargé, à partir de la documentation fournie sur le dépôt github de "VulnerableLightApp",
 de modéliser les menaces à l'aide de la méthode STRIDE.
 
 ## Modalités pédagogiques

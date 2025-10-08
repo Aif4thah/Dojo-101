@@ -1,6 +1,6 @@
 # Initiation à la classification des vulnérabilités
 
-En tant que spécialiste IT, vous êtes chargé de comprendre et évaluer différents types de vulnérabilité 
+En tant que spécialiste IT, vous êtes chargé de comprendre et évaluer différents types de vulnérabilité.
 
 Poids: 1
 
@@ -16,7 +16,6 @@ Poids: 1
 * [exploit-db](https://www.exploit-db.com/)
 * [EPSS model](https://www.first.org/epss/model)
 
-
 ## Contexte
 
 Évaluer les vulnérabilités ci-dessous:
@@ -26,7 +25,6 @@ Poids: 1
 * log4shell
 * Looney-tunables
 * *Une vulnérabilité récente de votre choix issue du site du CERT-Fr*
-
 
 ## Modalités pédagogiques
 
@@ -46,7 +44,6 @@ Pour chacune des vulnérabilités :
 
 * Trouver si un score EPSS existe pour cette vuln
 
-
 ## Modalités d'évaluation
 
 * Lecture du livrable
@@ -63,4 +60,3 @@ Pour chacune des vulnérabilités :
 ## Pour finir
 
 Si vous avez apprécié ce cours et souhaitez valoriser votre travail, n'hésitez pas à ajouter une ⭐ au [projet](https://github.com/Aif4thah/Dojo-101)
-
