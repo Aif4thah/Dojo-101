@@ -15,7 +15,6 @@ Poids: 2
 * [nmap](https://nmap.org/)
 * [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
 
-
 ## Contexte
 
 ### Partie 1 : Durcissement OS
@@ -41,7 +40,6 @@ Poids: 2
 9. Configurer le firewall pour réduire le risque de SSRF sur TCP et UDP
 
 10. S'assurer que les IP effectuant des requêtes vers l'application soient dans les journaux d'événements (logs)
-
 
 ## Modalités pédagogiques
 

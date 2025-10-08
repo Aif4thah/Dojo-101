@@ -96,7 +96,7 @@ Binôme ou seul (au choix)
 
 ### Partie déploiement
 
-Rédiger un document d'architecture technique (DAT) avec : 
+Rédiger un document d'architecture technique (DAT) avec :
 
 * Un schéma réseau, incluant les VM, l'Hyperviseur et les switchs virtuels
 

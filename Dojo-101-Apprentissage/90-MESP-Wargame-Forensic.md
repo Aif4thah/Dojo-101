@@ -4,7 +4,7 @@ Vous êtes chargé de défendre votre VM et d'attaquer celles des autres groupes
 
 Poids: 5
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
@@ -19,9 +19,7 @@ Poids: 5
 
 * [Interpol Guidelines](https://www.interpol.int/content/download/16243/file/Guidelines_to_Digital_Forensics_First_Responders_V7.pdf)
 
-
 ### Partie Forensic
-
 
 ## Contexte
 
@@ -31,9 +29,7 @@ Votre mission est de défendre votre Machine tout en lançant des attaques sur c
 
 À l'issue une investigation légale sera menée sur la VM défendue.
 
-
 ## Modalités pédagogiques
-
 
 ### Partie Wargame
 
@@ -59,8 +55,6 @@ Binôme ou seul (au choix) :
 
 5. **À la fin de l'exercice**, Arrêt des machines et décompte des points
 
-
-
 ### Partie Forensic
 
 0. À partir d'une procédure d'investigation légale que vous aurez déterminée. Copiez le Disque et collectez les éléments dignes d'intérêt (Artefacts) sur votre VM.
@@ -78,8 +72,6 @@ Binôme ou seul (au choix) :
 
 5. Supprimer les VM.
 
-
-
 ## Modalités d'évaluation
 
 > [!IMPORTANT]
@@ -87,41 +79,33 @@ Binôme ou seul (au choix) :
 
 * Décompte des points :
 
-    * Chaque détection d'intrusion rapporte **1 point**
-    * Chaque connexion TCP/UDP `victime -> attaquant` déclenchée par un exploit rapporte **1 point**
-    * Chaque création de fichiers pourtant le nom de l'attaquant sur la machine de la victime rapporte **2 points**
-    * Chaque GUID du fichier `flag.txt` rapporte **3 points**
-    * Une perte de disponibilité de votre service de plus de 30 secondes prouvée par un attaquant = **-10 points**
+  * Chaque détection d'intrusion rapporte **1 point**
+  * Chaque connexion TCP/UDP `victime -> attaquant` déclenchée par un exploit rapporte **1 point**
+  * Chaque création de fichiers pourtant le nom de l'attaquant sur la machine de la victime rapporte **2 points**
+  * Chaque GUID du fichier `flag.txt` rapporte **3 points**
+  * Une perte de disponibilité de votre service de plus de 30 secondes prouvée par un attaquant = **-10 points**
 
 * Lecture des rapports d'activités et forensic.
 
-
 ## Livrables
 
-### Partie Wargame
+* Pour la partie Wargame, rapport d'activité avec :
 
-Rapport d'activité avec :
+  * Le nombre de points revendiqué
+  * Captures d'écran des traces des incidents de sécurité sur votre machine
+  * Captures d'écran prouvant les exploitations réussies sur les machines adverses
 
-* Le nombre de points revendiqué
-* Captures d'écran des traces des incidents de sécurité sur votre machine
-* Captures d'écran prouvant les exploitations réussies sur les machines adverses
+* Partie Forensic, rapport d'investigation avec :
 
-### Partie Forensic
-
-Rapport d'investigation avec :
-
-* Hashs des éléments analysés
-* Timeline des actions menées
-* Preuves / traces des compromissions découvertes.
-
-
+  * Hashs des éléments analysés
+  * Timeline des actions menées
+  * Preuves / traces des compromissions découvertes.
 
 ## Critères de performance
 
 * Score final au Wargame
 
 * Découvertes des attaques et reconstitution de la timeline pour la partie forensic
-
 
 ## Pour finir
 

@@ -17,7 +17,7 @@ graph TD
     C -->|Clé secrète| D{Déchiffrement}
     D --> E[Message clair]
 ```
- 
+
 ### Algo
 
 * 3DES (obsolète)
@@ -143,9 +143,9 @@ $msgchiffre
 Dechiffrer-message -EncryptedString $msgchiffre -Key $k -IVs $i
 ```
 
-## Chiffrement asymétrique :
+## Chiffrement asymétrique
 
-### Principe 
+### Principe
 
 Le chiffrement asymétrique est composé d’une clé privée et d’une clé publique. L’une pouvant déchiffrer ce que la seconde a chiffré. Ce type de chiffrement est généralement utilisé pour l’authentification et la non-répudiation. 
 
@@ -160,7 +160,7 @@ graph TD
 ### Algo
 
 * DSA
-* RSA 
+* RSA
 * ECDSA
  
 ### Use case
@@ -184,7 +184,6 @@ New-SelfSignedCertificate @params
 Set-AuthenticodeSignature .\test.ps1 ((Get-ChildItem cert:\CurrentUser\My -codesigning)[0])
 gc .\test.ps1
 ```
-
 
 ## Hash (Condensats)
 
@@ -219,7 +218,6 @@ import hashlib
 hashlib.sha256('test'.encode()).hexdigest()
 ```
 
-
 en powershell
 
 ```powershell
@@ -249,8 +247,6 @@ $signature = $hmacsha.ComputeHash([Text.Encoding]::ASCII.GetBytes($message))
 $signature = [Convert]::ToBase64String($signature)
 write-host -ForegroundColor Cyan $signature
 ```
-
-
 
 ## Génération d'aléas
 
@@ -293,7 +289,7 @@ Le code de l’application, lorsque disponible, peut ensuite être passé en rev
 | Brute force attack | L’auditeur essaie toutes les combinaisons possibles de clés jusqu’à trouver la bonne. |
 | Side-channel attack | L’auditeur exploite des informations physiques (comme le temps d’exécution, la consommation d’énergie) pour trouver la clé de chiffrement. |
 
-# exemple de chiffrement post-quantique
+## exemple de chiffrement post-quantique
 
 [SPHINCS+ pypcx](https://github.com/sphincs/pyspx)
 

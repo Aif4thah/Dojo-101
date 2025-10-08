@@ -4,7 +4,7 @@ Analyse du trafic à l'aide de Wireshark
 
 Poids: 2
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
@@ -13,7 +13,7 @@ Poids: 2
 
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
-Si besoin pour les requêtes HTTP et HTTPS : 
+Si besoin pour les requêtes HTTP et HTTPS
 
 * [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
 
@@ -33,7 +33,7 @@ Il vous est demandé de procéder à l'analyse des protocoles utilisés sur le r
 
 ### Questions
 
-0. Quels sont les `flags TCP` ? 
+0. Quels sont les `flags TCP` ?
 
 1. Capturer le processus `DORA` du protocole DHCP
 

@@ -19,27 +19,25 @@ Poids: 5
 
 * [Markdown](https://www.markdownguide.org/)
 
-
 ## Contexte
 
 Notre startup a récemment commencée à travailler avec des clients internationaux. Nous avons besoin d’un moyen sécurisé pour accéder à nos ressources internes depuis l’extérieur de notre réseau. Nous comptons sur vous.
-
 
 ## Modalités pédagogiques
 
 * Techno au choix:
 
 * Firewall:
-     - Linux 
-     - Cisco
+
+  * Linux
+  * Cisco
 
 * VPN (client - serveur):
-     - Wiregard
-     - OpenVPN
+  * Wiregard
+  * OpenVPN
 
 LAN: 10.0.0.0/24
 WAN : 192.168.1.0/24
-
 
 ## Modalités d'évaluation
 
@@ -48,7 +46,7 @@ Lecture du livrable
 ## Livrables
 
 Documenter au format `markdown` ou `scripter` la mise en place et l'hardening (Authentification, permissions, Suites de chiffrement crypto)
-de la solution retenue 
+de la solution retenue
 
 ## Critères de performance
 
@@ -59,7 +57,6 @@ de la solution retenue
 * l'effort fait sur le durcissement par rapport la configuration par défaut, par exemple : interdire les suites de chiffrement obsolète.
 
 * Scanner votre service à l'aide d'un outil tel que Nmap NSE ou vpnscan est inclure le  résultat au fichier md ou en commentaire du script
-
 
 ## Pour finir
 

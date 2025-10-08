@@ -16,7 +16,7 @@ Poids: 2
 
 ## Contexte
 
-Un de vos collaborateurs par à l'étranger et il vous est demandé de lui fournir une machine vierge de toute donnée, 
+Un de vos collaborateurs par à l'étranger et il vous est demandé de lui fournir une machine vierge de toute donnée,
 bénéficiant d'un niveau de sécurité acceptable afin qu'il puisse consulter ses mails sur Office 365 durant son déplacement.
 
 ## Modalités pédagogiques

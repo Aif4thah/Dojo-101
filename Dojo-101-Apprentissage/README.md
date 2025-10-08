@@ -22,8 +22,7 @@
 
 * 9x : Hacking, sujets avancés
 
-
-## Apprentissage
+## Schéma de l'Apprentissage
 
 ```mermaid
 flowchart TD
@@ -38,14 +37,13 @@ flowchart TD
 
 ### En distanciel
 
-Pour que l'apprentissage en distanciel fonctionne, il faut : 
+Pour que l'apprentissage en distanciel fonctionne, il faut
 
 * Participer
 * Rester concentré (pas de distraction)
 * Faire appel au formateur si on n’arrive pas à trouver de solution (après avoir cherché par soi-même)
 * Mettre la caméra lors des moments d'échange
 * Prendre des pauses (si possible sans écran)
-
 
 ## Zone proximale de développement
 
@@ -95,7 +93,6 @@ On préfère l'expérience et la mise en situation aux cours magistraux.
 
 4. accompagner la démarche réflexive de l'apprenant
 
-
 ## Principe de *variable didactique*
 
 * Elles sont déterminées par le formateur (et non laissée au choix des apprenants) afin de déterminer le niveau de compétence à valider
@@ -120,12 +117,10 @@ Les `variables didactiques` permettent d'augmenter la complexité.
 
 Objectif: tout niveau 3 pour être certifié, **Critère du REAC = Niveau 3**
 
-
 ## Principe d'analyses réflexives
 
 1. Réfléchissement : Identifier gestes, actions, faiblesses et se projeter éventuellement dans une action future, actuelle ou passée.
 
 2. Analyse réflexive : Vérifier le niveau de compréhension
 
-3. Meta analyse : provoquer un processus d'amélioration continue 
-
+3. Meta analyse : provoquer un processus d'amélioration continue

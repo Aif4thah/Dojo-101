@@ -6,7 +6,7 @@ Le rapport d’audit permettra d’identifier les vulnérabilités, leurs critic
 
 Poids: 3
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
@@ -20,18 +20,17 @@ Poids: 3
 * [Privesc](https://github.com/carlospolop/PEASS-ng)
 * [Privesc bins](https://gtfobins.github.io/)
 
-
 ## Contexte
 
 Ce contexte est issu du Lab déjà mis en place.
 
-* Vous êtes un auditeur de sécurité pour ABC, une entreprise de 30 salariés spécialisée dans le développement de logiciels. 
+* Vous êtes un auditeur de sécurité pour ABC, une entreprise de 30 salariés spécialisée dans le développement de logiciels.
 
-* L’entreprise utilise une infrastructure Windows Active Directory (AD) pour gérer les identités et les accès des utilisateurs. 
+* L’entreprise utilise une infrastructure Windows Active Directory (AD) pour gérer les identités et les accès des utilisateurs.
 
-* L’infrastructure AD est composée d'un seul contrôleur de domaine et d’un serveur Linux non intégré au domaine. 
+* L’infrastructure AD est composée d'un seul contrôleur de domaine et d’un serveur Linux non intégré au domaine.
 
-* L’entreprise a également développé une API REST en interne, qui est utilisée par plusieurs applications corporate. 
+* L’entreprise a également développé une API REST en interne, qui est utilisée par plusieurs applications corporate.
 
 Dans le cadre de son programme d'audit, vous serez amené à auditer certains composants du SI.
 

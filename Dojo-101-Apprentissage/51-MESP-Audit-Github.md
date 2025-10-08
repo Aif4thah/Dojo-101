@@ -20,7 +20,6 @@ Poids: 5
 * [CodeQL](https://codeql.github.com/)
 * [Dependabot](https://github.com/dependabot)
 
-
 ## Contexte
 
 En tant que consultant DevOps. Vous devez examiner le dépôt GitHub en question afin d'identifier les mauvaises pratiques, en particulier en termes de sécurité :
@@ -41,11 +40,9 @@ En tant que consultant DevOps. Vous devez examiner le dépôt GitHub en question
 
 Après ces deux jours d'audit, vous disposerez d'un troisième jour pour rédiger un rapport détaillé sur vos observations et recommandations.
 
-
 ## Modalités pédagogiques
 
 Binôme ou seul (au choix)
-
 
 ## Modalités d'évaluation
 
@@ -53,20 +50,17 @@ Binôme ou seul (au choix)
 
 * Evaluation du fork github
 
-
 ## Livrables
 
 * Rapport avec identifications des mauvaises pratiques et des recommandations
 
 * Fork avec application des bonnes pratiques
 
-
 ## Critères de performance
 
 * Les points contrôlés sont pertinents Les vulnérabilités des composants sont identifiées Les risques et leurs menaces associées sont caractérisés 
 * Les outils, documents et sources d’information en anglais sont utilisés de façon fiable et sans erreur de compréhension
 * Les actions proposées répondent aux scénarios de menaces retenus Le suivi de la mise en œuvre est pris en compte et organisé Les procédures sont testées et documentées
-
 
 ## Pour finir
 

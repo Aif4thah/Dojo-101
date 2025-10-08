@@ -4,11 +4,10 @@ Découverte du Rensignement d'origine Électromagnétique (SIGINT)
 
 Poids: 1
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
-
 
 * HackRF
 
@@ -38,12 +37,9 @@ Poids: 1
 
 * [Artemis](https://www.aresvalley.com/)
 
-
-
 ## Contexte
 
 Pour vous initier au SIGINT (Signal intelligence), parcourez le spectre électromagnétique et identifiez les éléments réels qui se cachent derrière les signaux capturés.
-
 
 ## Modalités pédagogiques
 
@@ -61,7 +57,6 @@ Binôme ou seul (au choix)
 4. **Inspection ces signaux** : Inspectez le signal inconnu à l'aide de nombreux outils utiles : comparez la cascade, écoutez un échantillon audio pour découvrir des similitudes ou utilisez les fonctions de filtrage avancées pour réduire les erreurs potentielles.
 
 5. **Identifier à quoi correspondent les signaux** : Lorsqu'il ne reste que quelques signaux candidats en tête de liste, essayez de croiser chaque information dont vous disposez avec la description la plus détaillée disponible (sur sigidwiki.com par éxemple), vous devriez maintenant comprendre facilement ce que vous recherchez.
-
 
 ## Modalités d'évaluation
 

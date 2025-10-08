@@ -35,7 +35,6 @@ Poids: 2
 
 * Video jam wifi
 
-
 ## Contexte
 
 Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entreprise ABC.
@@ -49,7 +48,6 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 4. Une capture du trafic Wifi a été réalisée à l'aide de l'outil Aircrack-ng. Mettez en place une attaque par force brute afin de `cracker la clé WPA-PSK`.
 5. Capturer-le `Handshake` de votre propre AP Wifi. **Attention à rester dans la légalité !**
 
-
 ### Jamming et résilience
 
 > [!TIP]
@@ -60,12 +58,10 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 3. Tester le brouillage pour empêcher la communication, jouer avec la puissance et la bande-passante.
 4. Observer si la fréquence et le canal de la cible changent et si le clients continuent à avoir accès au réseau.
 
-
 ### Rogue AP et détection
 
 > [!TIP]
 > Dans l'idéal, un Rogue Access Point se fait passer par un Access Point légitime : même nom, même adresse Mac, etc. Mais si vous n'êtes pas à l'aise, commencer par monter un AP plus facile à identifier.
-
 
 1. Monter un `rogue access point` avec les moyens du bord (Téléphone, PC, carte wifi)
 2. Toujours avec les moyens du bord (Carte Wifi / HackRF), comment détecter les points d'accès wifi malveillants ou non légitimes des autres binômes ?
@@ -82,8 +78,6 @@ Vous êtes chargé d'analyser la sécurité des réseaux sans fil de l'entrepris
 
 0. Découvrez le site web [Wigle](https://wigle.net/) et sa cartographie des AP Wifi.
 1. À l'aide de l'application de votre choix (Wigle conseillé), parcourez les alentours afin de répertorier et cartographier les points d'accès Wifi
-
-
 
 ## Modalités pédagogiques
 

@@ -4,11 +4,10 @@ Initiation aux liaisons satellitaires : réception satellitaire et enjeux de sé
 
 Poids: 2
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
-
 
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
@@ -28,7 +27,6 @@ Poids: 2
 
 > [!CAUTION]
 > Utiliser un Dipôle à proximité d'une source d'émission peut endommager le SDR, utiliser le **DC BLOCKER obligatoirement** pour protéger le SDR.
-
 
 > [!TIP]
 > Recevoir et démoduler correctement des signaux satellites à l'aide d'un simple dipôle et d'une configuration manuelle est difficile et peut échouer dans le temps imparti. Normalement cela se fait avec une antenne parabolique qui suit le satellite, car cette dernière offre un gain plus élevé et une meilleure directivité, permettant ainsi de capter des signaux plus faibles et de réduire les interférences.
@@ -71,7 +69,6 @@ Binôme
 
 * réussite de la transmission
 * Pertinance de l'analyse
-
 
 ## Pour finir
 

@@ -4,7 +4,7 @@ Créer une VM vulnérable qui pourra être exploitée dans le cadre d'un CTF
 
 Poids: 3
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
@@ -26,8 +26,7 @@ Brute-force = 5/10 (1 fois max et avec Dictionnaire/Mangling spécifique et sans
 Information Disclosure (AuthBypass, IDOR, LFI, RFI, CSRF/XSS) = 6/10
 CVE = 7/10
 RCE / désérialisation / http smugling / BoF / No(SQLI) / exploit maison = 8
-+ ou - 2 points pour le réalisme de l’exploitation
-
+2 points en + ou en - pour le réalisme de l’exploitation
 
 ## Livrables
 
@@ -38,19 +37,17 @@ Brute-force = 5/10 (1 fois max et avec Dictionnaire/Mangling spécifique et sans
 Information Disclosure (AuthBypass, IDOR, LFI, RFI, CSRF/XSS) = 6/10
 CVE = 7/10
 RCE / désérialisation / http smugling / BoF / No(SQLI) / exploit maison = 8
-+ ou - 2 points pour le réalisme de l’exploitation
-
+2 points en + ou en - pour le réalisme de l’exploitation
 
 ## Critères de performance
 
-## objectif 
+## objectif
 
 Appréhender les vulnérabilités
 Appréhender la Kill Chain
 Implémenter et tester les vulnérabilités
 Appréhender l’administration d’outils de type « Capture The Flag »
 Rédiger un Write-Up
-
 
 ## Pour finir
 

@@ -4,11 +4,10 @@ Une machine nomade dérogeant à la PSSI doit être sécurisée. Cette situation
 
 Poids: 5
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
-
-### Ressources
+## Ressources
 
 * [Guide ANSSI Nomadisme](https://cyber.gouv.fr/publications)
 
@@ -18,15 +17,13 @@ Poids: 5
 
 * [Modèles DAT](https://github.com/bflorat/modele-da)
 
-### Contexte
+## Contexte
 
 Depuis le confinement, le dirigeant de l'entreprise ABC - une entreprise de 30 salariés spécialisée dans le développement de logiciels utilise son PC personnel pour accéder aux ressources de l'entreprise. 
-
 
 * À date, ce matériel n’est pas managé par votre entrepris et n'est pas joint au domaine, vous devez néanmoins durcir la configuration de ce « nouveau poste de travail ».
 
 * Ce matériel doit toujours pouvoir se connecter à n’importe quels réseaux et l’utilisateur insiste fortement pour conserver les droits administrateur.
-
 
 La société ABC fonctionne actuellement comme suit : 
 
@@ -36,11 +33,9 @@ La société ABC fonctionne actuellement comme suit :
 
 * L’entreprise a également développé une API REST personnalisée qui est utilisée par plusieurs applications internes.
 
-
 ### Modalités pédagogiques
 
 Binôme ou seul (au choix)
-
 
 ### Modalités d'évaluation
 
@@ -57,18 +52,15 @@ Binôme ou seul (au choix)
 
 3. Rédiger un document d'architecture technique (DAT), reprenant le contexte de l'entreprise et conforme aux bonnes pratiques Zero Trust.
 
-
 ### Livrables
 
 1. Un **DAT** minimaliste présentant les mesures adoptées dans le cadre du Zero Trust. 
 
-
-2. Un **PV de recette** décrivant: 
+2. Un **PV de recette** décrivant:
 
     * Les mesures de sécurité
     * Les preuves de la bonne implémentation (Screenshot avec commande `date;hostname`)
     * Vos Observations / explications complémentaires si nécessaires
-
 
 ### Critères de performance
 
@@ -76,7 +68,6 @@ Binôme ou seul (au choix)
 * respect du contexte et des cas d'usage
 * réalisation des actes techniques
 * respect de l'état de l'art et des principes "Zero Trust"
-
 
 ## Pour finir
 

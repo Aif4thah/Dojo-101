@@ -4,14 +4,13 @@ Vous êtes chargé de renforcer le niveau de sécurité des serveurs Linux
 
 Poids: 2
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
 
 * [Guides ANSSI](https://cyber.gouv.fr/publications)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
-
 
 ## Contexte
 
@@ -21,7 +20,7 @@ Poids: 2
 
 2. copier la clé publique sur le serveur **avec les bonnes permissions**
 
-3. s'authentifier avec sa clé 
+3. s'authentifier avec sa clé
 
 4. désactiver l'authentification par mot de passe
 
@@ -32,7 +31,6 @@ Poids: 2
 7. vérifier que l'accès soit interdit à root
 
 8. Changer le port par défaut
-
 
 ## Modalités pédagogiques
 
@@ -51,7 +49,6 @@ Procédure de configuration et de vérification au format markdown
 ## Critères de performance
 
 Réussite de l'exercice et pertinence de la procédure
-
 
 ## Pour finir
 

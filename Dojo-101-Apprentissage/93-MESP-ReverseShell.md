@@ -2,9 +2,8 @@
 
 Poids: 1
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
-
 
 ## Ressources
 
@@ -17,7 +16,6 @@ Poids: 1
 * [TOE : VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp/tree/main)
 
 ## Contexte
-
 
 ## Modalités pédagogiques
 
@@ -59,7 +57,7 @@ Binôme ou seul (au choix)
 
 * Screenshot de chaque `reverseShell`
 
-* Code du `reverseShell` 
+* Code du `reverseShell`
 
 * ShellCode avec loader et documentation
 
@@ -70,7 +68,6 @@ Binôme ou seul (au choix)
 *Stabilité* : Il doit être capable de maintenir une connexion stable avec l’attaquant, même en cas de conditions réseau défavorables. Il doit également être résilient face aux redémarrages du système.
 
 *Fonctionnalités* : Un bon `reverseShell` doit offrir un ensemble complet de fonctionnalités qui permettent à l’attaquant d’exécuter des commandes à distance, de télécharger et d’uploader des fichiers, et d’effectuer d’autres actions sur le système cible.
-
 
 ## Pour finir
 

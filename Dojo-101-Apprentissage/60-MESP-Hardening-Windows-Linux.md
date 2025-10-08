@@ -4,9 +4,8 @@ Vous êtes chargé de renforcer le niveau de sécurité de l'infrastructure.
 
 Poids: 5
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
-
 
 ## Ressources
 
@@ -16,9 +15,6 @@ Poids: 5
 * [Ansible Quick Start](https://docs.ansible.com/ansible/latest/getting_started/index.html)
 * [powershell DSC](https://learn.microsoft.com/fr-fr/powershell/dsc/overview?view=dsc-2.0)
 * [Chaine DevOps](https://learn.microsoft.com/fr-fr/azure/cloud-adoption-framework/ready/considerations/devops-toolchain#azure-devops-and-github-toolchain)
-
-
-
 
 ## Contexte
 
@@ -38,24 +34,20 @@ Binôme ou seul (au choix)
 
 3. Déployer et appliquer vos configurations
 
-
 ## Modalités d'évaluation
 
 Relecture par le formateur de la procédure de durcissement
-
 
 ## Livrables
 
 * procédure de durcissement
 * PlayBooks etrôles Ansible ou fichier PowershellDSC poussés sur Github
 
-
 ## Critères de performance
 
 * Le rôle (ou équivalent) corrige les vulns trouvées lors de l'audit (MESP-audit-conf*)
 * La solution tourne dans le Lab et l'enrichit (MESP-création-Lab)
 * Le niveau de sécurité n'est pas dégradé du fait des scripts ou de la solution IaC
-
 
 ## Pour finir
 

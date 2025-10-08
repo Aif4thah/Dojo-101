@@ -4,7 +4,7 @@ Initiation aux solutions SIEM
 
 Poids: 8
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
@@ -32,11 +32,9 @@ Poids: 8
 
 ## Contexte
 
-
 ### Benchmark des solutions
 
 0. Comparer les solutions (ex. Splunk et ELK) au travers des critères suivants : Licence, prix, prérequis, OS supportés, facilité de mise en oeuvre (binaires d'installation, Container, etc.)
-
 
 ### Partie centralisation dans un puits de log
 
@@ -69,7 +67,6 @@ Afin de préparer l'arrivée du SIEM dans l'entreprise, vous êtes chargé de me
 6. Rejouer les exploits vus en pentest puis importer les logs de l'application dans votre SIEM (manuellement, à l'aide d'un script ou d'un collecteur)
 
 7. Rechercher les incidents de sécurité à l'aide du moteur de recherche du SIEM. Catégoriser le type d'attaque et son impact, si elle a réussi.
-
 
 ## Modalités pédagogiques
 

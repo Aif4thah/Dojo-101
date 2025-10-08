@@ -4,9 +4,8 @@ Initiation au CTF
 
 Poids: 2
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
-
 
 ## Ressources
 
@@ -17,7 +16,6 @@ Poids: 2
 * [réflexes incidents](https://www.cert.ssi.gouv.fr/les-bons-reflexes-en-cas-dintrusion-sur-un-systeme-dinformation/)
 
 * [Éthique et cadre légal](https://github.com/Aif4thah/Dojo-101/blob/main/CODE_OF_CONDUCT.md)
-
 
 ## Contexte
 
@@ -35,9 +33,7 @@ Lancer `VulnerableLightApp` dans un container ou en local et trouver les Flags s
 
     * flag 5 : Une requête valide sur le endpoint "/Patch"
 
-
 > Lorsque vous trouvez un Flag, présentez-le au formateur.
-
 
 ## Modalités pédagogiques
 

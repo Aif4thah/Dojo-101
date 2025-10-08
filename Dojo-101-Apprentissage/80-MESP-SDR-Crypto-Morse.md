@@ -40,7 +40,6 @@ Poids: 3
 > [!TIP]
 > Avant de passer à la suite, assurez-vous d'avoir compris les différents types de chiffrement (symétrique, asymétrique, hashage) et de connaitre les principaux algorithmes.
 
-
 ### Partie SDR
 
 > [!CAUTION]
@@ -102,7 +101,6 @@ Alice: '\x1f\xafV4\xcb\x116N\xc5.\xa8\xdfM\xcf\xda\x02\x98\xbb\x04\x04C}N{\xf95\
 Bob: '\xde@=\x1ed\xc0Qe\x0fK=\x1c\xb3$\xd9\xcb'
 ```
 
-
 14. Nous avons intercepté le message suivant: `b'\xd72U\xc03.\xda\x99Q\xb5\x020\xc4\xb8\x16\xc6\xfa-\xb9U+\xda\\\x126L\xf3~\xbd8\x12q\x02?\x80\xeaVI\xa9\xe1'`. 
 
 La première partie de la **Clé de 16 octets** est: `b'12345678bien'` et l'algorithme utilisé est celui-ci:
@@ -139,7 +137,6 @@ Quel était le message transmis ?
 
 * Proposer la modification via une `Pull Request`.
 
-
 ## Modalités pédagogiques
 
 Binôme
@@ -159,7 +156,6 @@ Relecture des scripts
 * Aquisition des notions en cryptographie
 
 * Pertinence des solutions proposées
-
 
 ## Pour finir
 

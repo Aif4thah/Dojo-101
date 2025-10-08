@@ -4,7 +4,7 @@ Vous êtes chargé d'aider les équipes Dev à remédier aux vulnérabilités su
 
 Poids: 10
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
@@ -35,7 +35,6 @@ Afin de tester les vulnérabilités découvertes lors de l'audit, lors des proch
 
 3. la mise en place des ces tests à chaque *git push* grâce à leur **intégration aux canaux CI/CD**.
 
-
 ## Modalités pédagogiques
 
 Binôme ou seul (au choix)
@@ -46,7 +45,6 @@ Binôme ou seul (au choix)
 
 * Lecture du KanBan et du Fork du projet
 
-
 ## Livrables
 
 * Script ou templates Nuclei
@@ -54,7 +52,6 @@ Binôme ou seul (au choix)
 * Kanban
 
 * Lien vers le fork du dépot
-
 
 ## Critères de performance
 

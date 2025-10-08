@@ -18,17 +18,16 @@ Poids: 2
 
 2. Implémenter la configuration suivante:
 
-Interdire tous les flux en entrée par défaut, mais permettre les connexions déjà établies (statefull)
-Autoriser DHCP
-Autoriser DNS uniquement vers 8.8.8.8
-Autoriser HTTPS sortant et SSH entrant
-Autoriser HTTP uniquement vers le domaine taisen.eu
-Interdire tous les autres flux en sortie
-Activer le forwarding des trames et rediriger vers la passerelle par défaut
-Dropper ICMP
+* Interdire tous les flux en entrée par défaut, mais permettre les connexions déjà établies (statefull)
+* Autoriser DHCP
+* Autoriser DNS uniquement vers 8.8.8.8
+* Autoriser HTTPS sortant et SSH entrant
+* Autoriser HTTP uniquement vers le domaine taisen.eu
+* Interdire tous les autres flux en sortie
+* Activer le forwarding des trames et rediriger vers la passerelle par défaut
+* Dropper ICMP
 
 3. Vérifier à l'aide de l'outil **nmap** que le firewall fonctionne correctement
-
 
 ## Modalités pédagogiques
 

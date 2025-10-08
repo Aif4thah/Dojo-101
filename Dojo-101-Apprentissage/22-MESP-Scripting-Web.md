@@ -4,7 +4,7 @@ Analyse d'une requête Réseau et Web grace au scripting
 
 Poids: 2
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
@@ -14,11 +14,9 @@ Poids: 2
 * [HTTP MDN](https://developer.mozilla.org/fr/docs/Web/HTTP)
 * [PEP20](https://peps.python.org/pep-0020/)
 
-
 ## Contexte
 
 A l'aide d'un script :
-
 
 1. Réaliser une requête Web GET sur un site Web (Défaut = https://taisen.fr)
 
@@ -42,29 +40,23 @@ A l'aide d'un script :
 
 11. Afficher la liste des IP des équipements réseau traversés pour atteindre le site Web
 
-
 Langages recommandés : `Powershell`, `Python`, `Rust`.
-
 
 ## Modalités pédagogiques
 
 Script Individuel
 
-
 ## Modalités d'évaluation
 
 Execution du livrable
-
 
 ## Livrables
 
 le Script (avec le(s) nom(s) en commentaire)
 
-
 ## Critères de performance
 
 Le script fonctionne
-
 
 ## Pour finir
 

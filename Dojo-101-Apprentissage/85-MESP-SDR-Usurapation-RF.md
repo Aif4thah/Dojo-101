@@ -17,17 +17,13 @@ Poids: 1
 
 * [HackRF](https://greatscottgadgets.com/hackrf/one/)
 
-
 ## Contexte
 
 Analysez le signal et remettez le en forme pour le ré-émettre
 
-
-
 ## Modalités pédagogiques
 
 Binôme
-
 
 ### Mise en forme du signal
 
@@ -38,10 +34,9 @@ Binôme
 
 2. Optionnel : Utiliser le `HackRF` équipé du `DC blocker` et du `LaNA` pour améliorer encore la qualité des signaux reçu (ex. GPS)
 
-
 ### Rejeu
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Afin de rester conforme à la réglementation, l'usage d'un ampli externe pour l'émission est interdit.
 
 1. Analyser ce que contient le fichier `.cs8` (émission drone et phonie)
@@ -51,7 +46,6 @@ Binôme
 3. Observer la signature usurpée à l’analyseur de spectre ou écouter si le fichier contient de la voix.
 
 4. Identifier les éventuelles différences entre le signal usurpé et l’authentique grâce aux données SIGINT et à vos propres tests. (porteuse, répétition, largeur de bande…)
-
 
 ## Modalités d'évaluation
 

@@ -4,7 +4,7 @@ Modélisation des menaces
 
 Poids: 2
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
@@ -34,10 +34,9 @@ Présentation ou lecture du livrable
 3. Correction : Décider comment aborder chaque problème avec la combinaison de contrôles de sécurité appropriée.
 4. Vérification : Vérifier que les exigences sont satisfaites, que les problèmes sont détectés et que les contrôles de sécurité sont implémentés
 
-
 ## Livrables
 
-Rapport d'analyse des menaces avec : 
+Rapport d'analyse des menaces avec :
 
 * Diagramme de flux (Microsoft Threat Modeling Tool ou autre outil)
 * Identification des menaces
@@ -48,7 +47,6 @@ Rapport d'analyse des menaces avec :
 * Respect de la démarche
 
 * Pertinence des préconisations
-
 
 ## Pour finir
 

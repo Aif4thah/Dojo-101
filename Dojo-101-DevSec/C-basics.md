@@ -5,14 +5,14 @@
 ```sh
 gcc -fno-stack-protector -z execstack source.c
 ```
-## package pour les librairies 32bits:
 
-```
+## package pour les librairies 32bits
+
+```sh
 sudo apt-get install gcc-multilib
 ```
 
-
-## memento pointeur:
+## memento pointeur
 
 ```c
 #include <stdio.h>
@@ -79,7 +79,6 @@ p2=     0x7ffffcf45570
 &p2=    0x7ffffcf45568
 */
 ```
-
 
 ## passer root
 
