@@ -7,6 +7,7 @@
 [![License: GNU GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Aif4thah/Dojo-101/pulls)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Aif4thah/Dojo-101)
+![Repo Size](https://img.shields.io/github/repo-size/Aif4thah/Dojo-101)
 [![Github Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-30363D?&logo=GitHub-Sponsors&logoColor=EA4AAA)](https://github.com/sponsors/Aif4thah/)
 
 
