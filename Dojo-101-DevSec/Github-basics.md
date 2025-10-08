@@ -2,10 +2,9 @@
 
 ## Definitions
 
-* VCS : version control system 
+* VCS : version control system
 * SCM : software configuration management
 * Fork : copie du repo coté serveur
-
 
 ## rechercher depuis la barre github
 
@@ -14,7 +13,7 @@
 * User: `user:Aif4thah`
 * Owner: `owner:Aif4thah`
 
-### exemples:
+### exemples
 
 * `is:open is:issue assignee:@me` : Open issues assigned to the current user (@me)
 * `is:closed is:pr author:contoso`: Closed pull requests created by @contoso
@@ -52,7 +51,7 @@
 * fichiers `CODEOWNERS` pour déterminer des responsable à la racine du repo ou `.github` ou dossiers `docs`
 * Scan des dépendances (dependabot)
 * Scan du code (CodeQL)
-* Scan des secrets 
+* Scan des secrets
 
 ## Authentification
 
@@ -83,8 +82,6 @@
 * Admin : Recommended for people who need full access to the project, including sensitive and destructive actions like managing security or deleting a repository. These people are repository owners and administrators.
 
 [more info](https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/4-how-github-organization-permission-works)
-
-
 
 ## Commandes de base
 
@@ -118,7 +115,7 @@ git branch
 git blame
 ```
 
-## créer une pull request:
+## créer une pull request
 
 Cliquer sur le bouton `fork` via l'interface Web, on obtient un fork sous la forme
 
@@ -209,7 +206,6 @@ jobs:
         bandit -r .
 ```
 
-
 ## Gestion des secret
 
 Ils peuvent être gérés depuis `Settings` -> `Security` -> `Secrets and variables`.
@@ -230,3 +226,29 @@ steps:
 ## Scan des secrets
 
 * defaut : A activer dans les options `security` -> `Secret scanning` et `push protection`
+
+* exemple de scan de secret via un workflow avec [Gitleaks](https://github.com/gitleaks/gitleaks) :
+
+```yml
+name: Gitleaks Secret Scan
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  scan-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        with:
+          args: detect --source . --no-git --redact
+```
