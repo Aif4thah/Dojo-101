@@ -1,9 +1,0 @@
-{
-  "ignorePatterns": [],
-  "httpHeaders": {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64)"
-  },
-  "timeout": 10,
-  "retryOn429": true,
-  "aliveStatusCodes": [200]
-}

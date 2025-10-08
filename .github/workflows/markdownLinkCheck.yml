@@ -5,23 +5,21 @@ permissions:
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    paths:
+      - '**/*.md'
 
 jobs:
-  check-links:
+  md-check-links:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Check Markdown links
-        uses: gaurav-nelson/github-action-markdown-link-check@v1
+      - name: Vérifier les liens Markdown
+        uses: YakDriver/md-check-links@latest
         with:
-          use-quiet-mode: 'yes'
-          folder-path: '.'
-          config-file: mlc_config.json
+          quiet: 'yes'
+          verbose: 'yes'
+          directory: '.'
+          extension: '.md'
