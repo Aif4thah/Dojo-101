@@ -28,13 +28,13 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 
 1. Installer Docker
 
-2. Vérifier que docker fonctionne (container **Hello World**)
+2. Vérifier que docker fonctionne en lançant le container **Hello World**
 
-3. Prendre connaissance du projet Vulnerable-light-App, lire son `Dockerfile` et le workflow `Docker.yml`.
+3. Prendre connaissance du projet Vulnerable-light-App, lire son `Dockerfile` et le workflow `Docker.yml`. Executer le `Dockerfile` en local sur vôtre machine.
 
 4. Reprendre le `dockerfile` et/ou la commande `docker run` pour que l'application se lance sur le **port TCP 443**, avec un **volume partagé** qui permettra le partage de fichiers entre le container et l'hôte.
 
-5. Automatiser l'installation et le lancement de cette API grâce au `Dockerfile`.
+5. Vérifier que votre `Dockerfile` modifié fonctionne commande attendu : vous pouvez envoyer vos requêtes à l'application et partager un fichier via le partage de volume.
 
 6. Utiliser le volume partagé avec l'hôte afin d'y stocker les **journeaux d'évenements**, le but est de conserver les logs même une fois le container détruit. *le chemin des logs se modifie via les fichiers de configuration de l'application*
 
