@@ -15,11 +15,7 @@ flowchart TD
     I --> J[OS]
     I --> K[Réseau]
     I --> L[Stockage]
-
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style C fill:#00f,stroke:#333,stroke-width:2px,color:#fff
-    style E fill:#bbf,stroke:#333,stroke-width:2px
-    style I fill:#bfb,stroke:#333,stroke-width:2px
+    J --> G
 ```
 
 ## Installation de docker engine sous ubuntu / debian

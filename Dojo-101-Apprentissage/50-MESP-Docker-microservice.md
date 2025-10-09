@@ -20,7 +20,7 @@ Poids: 4
 
 ## Contexte
 
-Vous faites partie de la PURPLE team de l'entreprise. Afin de former les équipes du SOC à la détection des attaques, il vous est demandé de déployer le projet "vulnerablelightapp" dans un environnement de test docker. 
+Vous faites partie de la PURPLE team de l'entreprise. Afin de former les équipes du SOC à la détection des attaques, il vous est demandé de déployer le projet "vulnerablelightapp" dans un environnement de test docker.
 
 Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener des tests de détection d'attaques Web.
 
@@ -32,7 +32,7 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 
 3. Prendre connaissance du projet Vulnerable-light-App, lire son `Dockerfile` et le workflow `Docker.yml`.
 
-4. Reprendre le `dockerfile` et/ou la commande `docker run` pour que l'application se lance sur le **port TCP 443**, avec un volume partagé avec la machine hôte
+4. Reprendre le `dockerfile` et/ou la commande `docker run` pour que l'application se lance sur le **port TCP 443**, avec un **volume partagé** qui permettra le partage de fichiers entre le container et l'hôte.
 
 5. Automatiser l'installation et le lancement de cette API grâce au `Dockerfile`.
 
