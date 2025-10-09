@@ -1,5 +1,27 @@
 # Docker basics
 
+## Principe
+
+```mermaid
+flowchart TD
+    A[Utilisateur] --> B[Docker CLI]
+    B --> C[Docker Engine]
+    C --> D[Image Docker]
+    D --> E[Conteneur]
+    E --> F[Application]
+    E --> G[Librairies]
+    E --> H[Fichiers système]
+    C --> I[Système Hôte]
+    I --> J[OS]
+    I --> K[Réseau]
+    I --> L[Stockage]
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style C fill:#00f,stroke:#333,stroke-width:2px,color:#fff
+    style E fill:#bbf,stroke:#333,stroke-width:2px
+    style I fill:#bfb,stroke:#333,stroke-width:2px
+```
+
 ## Installation de docker engine sous ubuntu / debian
 
 [documentation](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
@@ -30,7 +52,6 @@ install + "hello world" :
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo docker run hello-world
 ```
-
 
 ## checks
 
@@ -86,7 +107,7 @@ docker stop <container id>
 docker rm <container id>
 ```
 
-## supprimer tous les container : 
+## supprimer tous les container
 
 ```sh
 docker rm $(docker ps -a -q)`
@@ -98,18 +119,17 @@ docker rm $(docker ps -a -q)`
 docker rmi <image id>
 ```
 
-
 ## lancer un container en arrière plan (-d) avec parage de port (-p) et variable d'environnement (-e)
 
 ```sh
 docker run -d -p 8000:8000 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=<password>" --name splunk splunk/splunk:latest
 ```
 
-## Détacher: 
+## Détacher
 
 `Ctrl-P` + `Ctrl-Q`
 
-## stopper un container en interactif 
+## stopper un container en interactif
 
 `ctrl P` + `ctrl D`
 
@@ -117,7 +137,7 @@ docker run -d -p 8000:8000 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PA
 
 `crtl D` + `ctrl C`
 
-## executer une commande dans un container détaché:
+## executer une commande dans un container détaché
 
 ```sh
 docker exec -it MyContainer bash
@@ -129,7 +149,7 @@ docker exec -it MyContainer bash
 docker attach <id>
 ```
 
-## bind de port: 
+## bind de port
 
 ```sh
 docker run -p <host_port1>:<container_port1> -p <host_port2>:<container_port2>
@@ -159,19 +179,19 @@ docker rm -f <id/name>
 docker run --rm -it --network bridge debian ip addr
 ```
 
-## sauvegarde de l'image: 
+## sauvegarde de l'image
 
 ```sh
 sudo docker save -o docker_save_ForensicsExam.tar secit/forensicsexam:latest
 ```
 
-## pour charger l'image ce sera: 
+## pour charger l'image ce sera
 
 ```sh
 sudo docker load -i ./docker_save_ForensicsExam.tar
 ```
 
-## Pousser un container sur le repo: 
+## Pousser un container sur le repo
 
 ```bash
 sudo docker tag 85a603db6265 ep9piegi/alpine_escalation:latest
@@ -200,7 +220,7 @@ docker build .
 
 l'image est ensuite ajouté (`docker image ls`)
 
-Exemple de build via github acitons : 
+Exemple de build via github acitons
 
 ```yml
 name: Docker
@@ -237,11 +257,10 @@ jobs:
       run: curl -k https://127.0.0.1:3000
 ```
 
-
 ## Docker Compose
 
 * [Docker compose](https://docs.docker.com/compose/intro/compose-application-model/)
-* [from @NicolasW-7 ](https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/Projet/Vaultwarden/Vaultwarden/docker-compose.yml)
+* [from @NicolasW-7](https://github.com/NicolasW-7/AIS-Brief-et-TIPS/blob/main/Projet/Vaultwarden/Vaultwarden/docker-compose.yml)
 
 ```yml
 version: '3.7'
@@ -296,7 +315,6 @@ docker compose up -d
 
 * [Trivy](https://trivy.dev/latest/)
 
-
 ## Aller plus loin
 
 ### Terraform
@@ -337,7 +355,6 @@ resource "docker_container" "nginx" {
 }
 ```
 
-
 ```sh
 terraform init
 terraform plan
@@ -345,5 +362,3 @@ terraform apply
 ```
 
 Le container est ensuite déployé sur la machine, on peu le vérifier via `docker ps`. `terraform destroy` permet de supprimer les containers.
-
-

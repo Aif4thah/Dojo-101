@@ -2,7 +2,7 @@
 
 Déploiement de code dans un microservice Docker
 
-Poids: 5
+Poids: 4
 
 > [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
@@ -30,9 +30,9 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 
 2. Vérifier que docker fonctionne (container **Hello World**)
 
-3. Prendre connaissance du projet Vulnerable-light-App, lire son `Dockerfile`.
+3. Prendre connaissance du projet Vulnerable-light-App, lire son `Dockerfile` et le workflow `Docker.yml`.
 
-4. Créer un nouveau dockerfile pour que l'application se lance sur le **port TCP 433**, avec un volume partagé avec la machine hôte
+4. Reprendre le `dockerfile` et/ou la commande `docker run` pour que l'application se lance sur le **port TCP 443**, avec un volume partagé avec la machine hôte
 
 5. Automatiser l'installation et le lancement de cette API grâce au `Dockerfile`.
 
@@ -48,11 +48,7 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 
 11. Afficher les **métriques** et relever la consomation des containers
 
-12. Pour aller plus loin, réaliser le déploiement de 2 containers à l'aide d'un **Docker-compose** ou de **Terraform**
-
-    * le premier pour l'API Web VLA
-
-    * le second pour héberger les fichiers de logs indépendamment (ou optionnel : envoyer les logs dans un container hébergeant le SIEM)
+12. Pour aller plus loin, réaliser le déploiement de 2 containers à l'aide d'un **Docker-compose** ou de **Terraform** : le premier pour l'API Web VLA, le second pour héberger les fichiers de logs indépendamments (ou optionnel : envoyer les logs dans un container hébergeant le SIEM)
 
 ## Modalités d'évaluation
 
