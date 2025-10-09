@@ -106,6 +106,7 @@ docker rm <container id>
 ## supprimer tous les container
 
 ```sh
+docker container prune -f
 docker rm $(docker ps -a -q)`
 ```
 
@@ -211,7 +212,7 @@ CMD ["dotnet","run"]
 éxecution :
 
 ```bash
-docker build .
+docker build --no-cache -t monImage .
 ```
 
 l'image est ensuite ajouté (`docker image ls`)

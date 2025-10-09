@@ -34,9 +34,9 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 
 4. Reprendre le `dockerfile` et/ou la commande `docker run` pour que l'application se lance sur le **port TCP 443**, avec un **volume partagé** qui permettra le partage de fichiers entre le container et l'hôte.
 
-5. Vérifier que votre `Dockerfile` modifié fonctionne commande attendu : vous pouvez envoyer vos requêtes à l'application et partager un fichier via le partage de volume.
+5. Vérifier que votre `Dockerfile` modifié fonctionne : vous pouvez envoyer vos requêtes à l'application et partager un fichier via le partage de volume.
 
-6. Utiliser le volume partagé avec l'hôte afin d'y stocker les **journeaux d'évenements**, le but est de conserver les logs même une fois le container détruit. *le chemin des logs se modifie via les fichiers de configuration de l'application*
+6. Utiliser le **volume partagé** avec l'hôte afin d'y **stocker les journeaux d'évenements**, le but est de conserver les logs même une fois le container détruit. le chemin des logs se modifie via le fichier de configuration `nlog.config` de l'application.
 
 7. Pousser votre travail sur un **repo github**.
 
