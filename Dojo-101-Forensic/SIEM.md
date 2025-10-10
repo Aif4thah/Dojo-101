@@ -21,14 +21,14 @@ docker run -d --name splunk \
 
 longin à l'url : `http://localhost:8000/`
 
-### Ajouts de log :
+### Ajouts de log
 
 >[!WARNING]
 > POC hors prod : pas d'authent du client.
 
 `Settings` > `Data Inputs` > `HTTP Event Collector`
 
-tester ensuite l'envoi d'event : 
+tester ensuite l'envoi d'event
 
 ```sh
 curl -k https://localhost:8088/services/collector -H "Authorization: Splunk <token>" -d '{"event": "test"}'

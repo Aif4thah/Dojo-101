@@ -136,6 +136,14 @@ docker run -d -p 8000:8000 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PA
 
 ## executer une commande dans un container détaché
 
+commande one-shot :
+
+```sh
+docker exec 2391a03b8fca bash -c "ls -l"
+```
+
+mode interactif :
+
 ```sh
 docker exec -it MyContainer bash
 ```
@@ -163,6 +171,13 @@ docker run -it -v /host/path:/path nginx
 ```sh
 docker logs <id>
 ```
+
+## Lister les processus d'un container
+
+```sh
+docker top <container>
+```
+
 
 ## supprimer un container
 

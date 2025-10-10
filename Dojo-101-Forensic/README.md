@@ -119,7 +119,6 @@ flowchart TD
 
 * La note de rançon dans tous ses formats (txt, hta, html, etc.)
 
-
 ## Calul d'integrité
 
 ```powershell
@@ -134,4 +133,24 @@ function prompt {
     "$timestamp PS > "
 }
 Start-Transcript -Path Artefacts/Timeline.txt
+```
+
+## Parser des logs json
+
+à l'aide de jq, Filtrer les erreurs ou exceptions
+
+```bash
+jq 'select(.level == "error" or .level == "fatal")' logs.json
+```
+
+Rechercher des échecs d’authentification
+
+```bash
+jq 'select(.message | test("auth.*fail|unauthorized|invalid credentials"; "i"))' logs.json
+```
+
+Identifier les accès refusés ou interdits
+
+```bash
+jq 'select(.message | test("access denied|forbidden|403"; "i"))' logs.json
 ```

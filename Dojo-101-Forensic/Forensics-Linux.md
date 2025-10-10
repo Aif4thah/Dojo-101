@@ -4,19 +4,18 @@
 
 * [LiME (archived)](https://github.com/504ensicsLabs/LiME)
 
-
 ## Montages de disques / Volumes
 
-### Montage read only :
+### Montage read only
 
 ```bash
 mount  -o loop,ro,noexec img.dd  /mnt
 ```
+
 > [!TIP]
 > ne remplace pas duplicateur avec un bloqueur Hardware en écriture.
 
-
-### dc3dd : 
+### dc3dd
 
 fork de dd qui tolère les clusters défectueux
 

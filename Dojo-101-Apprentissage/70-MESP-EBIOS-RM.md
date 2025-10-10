@@ -4,7 +4,7 @@ Vous êtes le RSSI d'une Startup et vous devez mener une AdR EBIOS RM.
 
 Poids: 4
 
-> [!NOTE] 
+> [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
@@ -37,22 +37,21 @@ L'entreprise est soumise aux réglementations suivantes :
 
 * la PSSI qui précise que :
 
-    * l'intégrité et la confidentialité des données métiers doit être une priorité
+  * l'intégrité et la confidentialité des données métiers doit être une priorité
 
-    * les mots de passe de l'entreprise doivent être robustes
+  * les mots de passe de l'entreprise doivent être robustes
 
-    * les utilisateurs doivent être sensibilisés tous les ans à la cybersécurité
+  * les utilisateurs doivent être sensibilisés tous les ans à la cybersécurité
 
-    * l'Analyse de risque devra être mise à jour tous les ans.
+  * l'Analyse de risque devra être mise à jour tous les ans.
 
-L'entreprise s'appuie sur les réferentiels suivants : 
+L'entreprise s'appuie sur les réferentiels suivants :
 
 * L'OWASP ASVS v4 - Traduction Française
 
 * Les guides ANSSI
 
 Les fournisseurs de l'entreprise sont des entreprises taiwanaises. Ses clients sont Français.
-
 
 En tant que responsable de la gestion des risques, vous avez pour mission de mener une analyse EBIOS RM afin d'établir un premier plan de traitement des risques.
 
@@ -67,7 +66,6 @@ Afin de mener cette analyse:
 * Le périmètre et les éléments à prendre en compte pour l'Atelier 1 se limiteront aux éléments énumérés ci-dessus, afin que vous puissiez passer rapidement à l'atelier 2.
 
 * Vous trouverez les échelles page 26 (diapositive 15) de la méthode EBIOS RISK MANAGER
-
 
 ## Modalités pédagogiques
 
@@ -89,7 +87,6 @@ Lecture du rapport et/ou présentation à l'oral
 
 * un plan de traitement du risque (bruts + résiduels) comportant à minima 5 scénarii de risques et 5 mesures de sécurité
 
-
 ## Critères de performance
 
 * respect de la méthode EBIOS RM
@@ -99,7 +96,6 @@ Lecture du rapport et/ou présentation à l'oral
 * Pertinence de risques identifiés
 
 * Pertinence des mesures de sécurité retenues
-
 
 ## Pour finir
 

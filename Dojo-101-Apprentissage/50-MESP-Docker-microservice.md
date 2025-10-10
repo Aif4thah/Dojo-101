@@ -26,9 +26,9 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 
 ## Modalités pédagogiques
 
-1. Installer Docker
+1. Installer Docker.
 
-2. Vérifier que docker fonctionne en lançant le container **Hello World**
+2. Vérifier que docker fonctionne en lançant le container **Hello World**.
 
 3. Prendre connaissance du projet Vulnerable-light-App, lire son `Dockerfile` et le workflow `Docker.yml`. Executer le `Dockerfile` en local sur vôtre machine.
 
@@ -42,13 +42,13 @@ Ce container sera ensuite utilisé par les équipes RED et BLUE afin de mener de
 
 8. Les tests de build doivent se faire automatiquement lors du push sur GitHub via les **canaux CI/CD**.
 
-9. Optionel : Mettre à disposition votre container (Docker Hub / Registry)
+9. Optionel : Mettre à disposition votre container (Docker Hub / Registry).
 
-10. Appliquer les bonnes pratiques de sécurité issues du **Guide docker ANSSI** (container uniquement, pas de sécurisation du code)
+10. Appliquer les bonnes pratiques de sécurité issues du **Guide docker ANSSI** (container uniquement, pas de sécurisation du code).
 
-11. Afficher les **métriques** et relever la consomation des containers
+11. Afficher les **métriques** et relever la consomation des containers.
 
-12. Pour aller plus loin, réaliser le déploiement de 2 containers à l'aide d'un **Docker-compose** ou de **Terraform** : le premier pour l'API Web VLA, le second pour héberger les fichiers de logs indépendamments (ou optionnel : envoyer les logs dans un container hébergeant le SIEM)
+12. Pour aller plus loin, réaliser le déploiement de 2 containers à l'aide d'un **Docker-compose** ou de **Terraform** : le premier pour *VulnerableLightApp*, le second pour *parser une copie des logs* manuellement à l'aide d'une connexion SSH et de la commande `jq`.
 
 ## Modalités d'évaluation
 

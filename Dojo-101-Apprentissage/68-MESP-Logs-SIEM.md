@@ -27,6 +27,8 @@ Poids: 8
 
 * [NLog](https://nlog-project.org/config/)
 
+* [jq](https://jqlang.org/)
+
 > [!TIP]
 > La liste des SIEM proposée n'est pas exhaustive.
 
@@ -34,21 +36,21 @@ Poids: 8
 
 ### Benchmark des solutions
 
-0. Comparer les solutions (ex. Splunk et ELK) au travers des critères suivants : Licence, prix, prérequis, OS supportés, facilité de mise en oeuvre (binaires d'installation, Container, etc.)
+1. Comparer les solutions (ex. Splunk et ELK) au travers des critères suivants : Licence, prix, prérequis, OS supportés, facilité de mise en oeuvre (binaires d'installation, Container, etc.)
 
 ### Partie centralisation dans un puits de log
 
 Afin de préparer l'arrivée du SIEM dans l'entreprise, vous êtes chargé de mettre en place un puits de logs et de réaliser un POC de la solution SIEM retenue.
 
-1. S'assurer que tous les événements importants pour la sécurité figurent dans les logs (succès et erreur d'authentification, escalade de privilèges, accès aux dossiers sensibles, etc.)
+2. S'assurer que tous les événements importants pour la sécurité figurent dans les logs (succès et erreur d'authentification, escalade de privilèges, accès aux dossiers sensibles, etc.)
 
-2. Mettre en place ce puits dans une nouvelle machine du Lab, les logs Windows et Linux seront collectés
+3. Mettre en place ce puits dans une nouvelle machine du Lab, les logs Windows et Linux seront collectés
 
 ### Partie intégration des logs système au SIEM
 
-3. Installer en SIEM en local de la machine hébergeant le puits de logs et importer les logs dans le SIEM à l'aide de collecteurs appropriés.
+4. Installer en SIEM en local de la machine hébergeant le puits de logs et importer les logs dans le SIEM à l'aide de collecteurs appropriés.
 
-4. À l'aide du langage de requête de votre solution SIEM, trouver les éléments suivants :
+5. À l'aide du langage de requête de votre solution SIEM, trouver les éléments suivants :
 
     * Escalade de privilège (un simple utilisateur obtient ou lance un processus admin ou root)
 
@@ -59,14 +61,13 @@ Afin de préparer l'arrivée du SIEM dans l'entreprise, vous êtes chargé de me
 > [!TIP]
 > Si vous avez mis en place le Lab, c'est le moment de rejouer des attaques vu lors des audits de sécurité (Scans de vuln, Mimikatz, Kerberoast etc...)
 
-
 ### Partie intégration des logs applicatifs
 
-5. Étudier le projet VulnérableLightApp et sa journalisation. Une fois les fichiers de logs identifiés, étudier la faisabilité d'intégrer ces Logs au SIEM.
+6. Étudier le projet VulnérableLightApp et sa journalisation. Une fois les fichiers de logs identifiés, étudier la faisabilité d'intégrer ces Logs au SIEM.
 
-6. Rejouer les exploits vus en pentest puis importer les logs de l'application dans votre SIEM (manuellement, à l'aide d'un script ou d'un collecteur)
+7. Rejouer les exploits vus en pentest puis importer les logs de l'application dans votre SIEM (manuellement, à l'aide d'un script ou d'un collecteur)
 
-7. Rechercher les incidents de sécurité à l'aide du moteur de recherche du SIEM. Catégoriser le type d'attaque et son impact, si elle a réussi.
+8. Rechercher les incidents de sécurité à l'aide du moteur de recherche du SIEM. Catégoriser le type d'attaque et son impact, si elle a réussi.
 
 ## Modalités pédagogiques
 
