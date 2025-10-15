@@ -107,7 +107,7 @@ docker rm <container id>
 
 ```sh
 docker container prune -f
-docker rm $(docker ps -a -q)`
+docker rm $(docker ps -a -q)
 ```
 
 ## supprimer une image

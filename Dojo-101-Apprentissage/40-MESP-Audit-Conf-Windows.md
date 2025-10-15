@@ -17,16 +17,16 @@ Poids: 6
 * [Referentiel PASSI](https://cyber.gouv.fr/referentiels-dexigences-pour-la-qualification)
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 * [PingCastle](https://www.pingcastle.com/)
+* [PurpleKnight](https://www.semperis.com/fr/purple-knight/)
+* [ADcheck](https://github.com/CobblePot59/ADcheck)
 * [SharpView](https://github.com/tevora-threat/SharpView)
 * [ADRecon](https://github.com/adrecon/ADRecon)
 * [Goup3r](https://github.com/Group3r/Group3r)
 * [Responder](https://github.com/lgandx/Responder)
 * [Bloodhound](https://github.com/SpecterOps/BloodHound)
 * [Sharphound](https://github.com/BloodHoundAD/SharpHound/releases)
-* [Nuclei](https://github.com/projectdiscovery/nuclei)
 * [Privesc](https://github.com/carlospolop/PEASS-ng)
 * [Privesc bins](https://lolbas-project.github.io/)
-* [ADcheck](https://github.com/CobblePot59/ADcheck)
 
 ## Contexte
 

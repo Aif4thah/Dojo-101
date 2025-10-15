@@ -41,7 +41,7 @@ Pour que l'apprentissage en distanciel fonctionne, il faut
 
 * Participer
 * Rester concentré (pas de distraction)
-* Faire appel au formateur si on n’arrive pas à trouver de solution (après avoir cherché par soi-même)
+* Faire appel au formateur si on n’arrive pas à trouver de solution après avoir cherché par soi-même
 * Mettre la caméra lors des moments d'échange
 * Prendre des pauses (si possible sans écran)
 

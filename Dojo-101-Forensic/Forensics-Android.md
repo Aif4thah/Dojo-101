@@ -13,7 +13,7 @@
 * [Android Security Reference](https://github.com/doridori/Android-Security-Reference/tree/master)
 
 ## Structure du Système de fichier
- 
+
 | Chemin | Description |
 |--------|-------------|
 | /boot | Kernel |
@@ -30,7 +30,6 @@
 | /proc | process |
 | /recovery | pour le mode restauration |
 
-
 ## Type d'autorisations d'applications
 
 * Installation : contient des autorisation normales et signature.
@@ -38,7 +37,6 @@
 * Signatures (protection `signature`)
 * Execution (protection `dangerous`)
 * Spéciales (protection `appop`)
-
 
 ## Procedure
 
@@ -48,12 +46,11 @@
 
 2. Activation du débogage USB
 
-4. Étendre le Lock Timeaout
+3. Étendre le Lock Timeaout
 
-5. Collecter les identifiants
+4. Collecter les identifiants
 
-6. Transport au Lab (NE PAS etiendre)
-
+5. Transport au Lab (NE PAS etiendre)
 
 ## Android mode Dev + debug USB
 
@@ -61,12 +58,11 @@
 
 2. `Paramètres` -> `Systèmes` -> `Options pour les développeurs` -> `Debogage USB`
 
-
 ## Adb
 
 Avant la collecte d'artefact, penser à **ajouter le timestamp au prompt**
 
-### lancement du serveur adb : 
+### lancement du serveur adb
 
 ```powershell
 .\adb.exe version
@@ -123,7 +119,7 @@ Pour spécifier une date `.\adb.exe logcat -d -T "2024-11-29 16:00:00.000"`
 .\adb.exe shell content query --uri content://contacts/phones > .\Artefacts\phone.txt
 ```
 
-### Appels/SMS/MMS :
+### Appels/SMS/MMS
 
 ```powershell
 .\adb.exe shell content query --uri content://sms > .\Artefacts\sms.txt
@@ -168,7 +164,6 @@ téléchargement des documents utilisateur
 .\adb.exe shell content query --uri content://settings/global > .\Artefacts\global.txt
 ```
 
-
 ### Backup
 
 > [!TIP]
@@ -177,7 +172,6 @@ téléchargement des documents utilisateur
 ```powershell
 .\adb.exe backup -all -shared -system -keyvalue -apk -obb -f .\Artefacts\backup.ab
 ```
-
 
 ### Vérifier l'absence de rootage
 
@@ -188,7 +182,7 @@ téléchargement des documents utilisateur
 .\adb.exe shell "su -c whoami"
 ```
 
-### Fastboot 
+### Fastboot
 
 * vérifier le `secure boot` : yes
 * vérifier le `Device state` : locked
@@ -205,15 +199,13 @@ téléchargement des documents utilisateur
 .\adb.exe shell ls /
 ```
 
-
-### Arrêt du serveur adb : 
+### Arrêt du serveur adb
 
 ```powershell
 .\adb.exe kill-server
 ```
 
 ## Analyse des applications suspectes
-
 
 * Peut se faire localement avec `Google Play Protect` depuis le Play Store
 
@@ -227,14 +219,11 @@ téléchargement des documents utilisateur
 .\adb.exe pull /data/app/chemin/base.apk base.apk
 ```
 
-
 ## Compte google
 
 * [google security checkup](myaccount.google.com/security-checkup)
 
 * [Support Google](https://support.google.com/accounts/answer/6294825?)
-
-
 
 ## Pour aller plus loin, en cas d'élements probants
 
@@ -243,7 +232,6 @@ téléchargement des documents utilisateur
 Via Google :
 
 `Paramètres` -> `Système` -> `Sauvegarde`, ensuite visible sur [Google](https://drive.google.com/drive/backups)
-
 
 Via bu :
 
@@ -271,11 +259,9 @@ via l'outil `MVT` :
 mvt-android check-backup --output /path/to/results/ /path/to/backup.ab`
 ```
 
-
 ### Consomation / temps passé sur une app
 
 Sur le device : `paramètres` -> `bien être numérique et controle parental`
-
 
 ### Recherche d'IoCs
 
@@ -285,28 +271,24 @@ Lorsqu'on sait ce que l'on cherche, trouver les IoCs Correspondants
 mvt-android check-backup --iocs ~/iocs/malware.stix2 /path/to/android/backup/
 ```
 
-
 ### Web (rooté)
 
 ```powershell
  .\adb.exe shell content query --uri content://com.android.chrome.browser/history
 ```
 
-
 ### Codes IHM
 
 Redirection d'appel : `*#21#`
 
-Appel en absence : `*#62#` 
+Appel en absence : `*#62#`
 
 > [!TIP]
-> Pour info, à ne pas faire en forensic : désactiver les redirection :  #002# 
-
+> Pour info, à ne pas faire en forensic : désactiver les redirection :  #002#
 
 ### Traffic réseau
 
 Mise en proxy / derrière un firewall
-
 
 ### Misc
 
@@ -357,7 +339,7 @@ Android forensic artifacts cheat sheet :
 
 /data/data/com.android.providers.settings/databases/settings.db - secrets, dont salt
 
-/data/system/password.key -	secret lockScreen
+/data/system/password.key - secret lockScreen
 
 /data/data/com.android.chrome/databases/webview.db - Chrome history
 

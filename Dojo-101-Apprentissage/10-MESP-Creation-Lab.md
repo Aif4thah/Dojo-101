@@ -107,7 +107,8 @@ Rédiger un document d'architecture technique (DAT) avec :
 * La présentation des éléments suivants, avec captures d'écran
 
   * Vérification des intégrités des images téléchargées avant l'installation
-  * Mises à jour réussies  * le statut des services DNS et Web
+  * Mises à jour réussies  
+  * le statut des services DNS et Web
   * connexions SSH et WinRM réussies (Connexion + commande `whoami`)
   * Permissions et statut du partage SMB ou Samba
   * le nombre d'utilisateurs contenus dans l'AD
