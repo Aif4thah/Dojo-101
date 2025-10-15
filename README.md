@@ -24,7 +24,7 @@
 * [Governance, Risk and Compliance](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Governance)
 
 ```mermaid
-%%{ init: { "theme": "dark" } }%%
+%%{ init: { "theme": "forest" } }%%
 mindmap
   root((**DOJO-101**))
 
