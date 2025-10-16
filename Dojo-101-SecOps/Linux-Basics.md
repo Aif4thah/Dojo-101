@@ -282,11 +282,15 @@ for i in *.tar.gz; do tar -xzvf $i; done
 
 ## information kernel
 
-`dmesg`
+```sh
+dmesg -w
+```
 
 grepper pour chercher une pour identifier une information particulière
 
-ex: /dev/sdb pour trouver sa clé usb
+```sh
+dmesg -w | grep -i usb
+```
 
 ## usb
 

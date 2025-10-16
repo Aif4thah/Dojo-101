@@ -39,7 +39,7 @@ Poids: 4
 
     * DNS (Windows) : celui présent par défaut Domaine AD
 
-    * WinRM (Windows) : accessible uniquement aux administrateurs de l'AD. 
+    * WinRM (Windows) : accessible uniquement aux administrateurs de l'AD.
 
     * SMB (Windows) : 1 partage "Readonly" + 1 partage accessible en écriture, sans authentification.
 
@@ -99,30 +99,24 @@ Binôme ou seul (au choix)
 Rédiger un document d'architecture technique (DAT) avec :
 
 * Un schéma réseau, incluant les VM, l'Hyperviseur et les switchs virtuels
-
-* Un tableau avec la liste des comptes utilisés pour l'administration et l'emplacement du gestionnaire de secrets contenant les mots de passe.
-
+* Caractéristiques des machines
+* Un tableau avec la liste des comptes à privilèges ou critiques pour la sécurité et l'emplacement du gestionnaire de secrets contenant les mots de passe.
 * Un Diagramme de Gantt ou un Kanban de votre réalisation pour la partie gestion de projet.
-
-* La présentation des éléments suivants, avec captures d'écran
-
-  * Vérification des intégrités des images téléchargées avant l'installation
-  * Mises à jour réussies  
-  * le statut des services DNS et Web
-  * connexions SSH et WinRM réussies (Connexion + commande `whoami`)
-  * Permissions et statut du partage SMB ou Samba
-  * le nombre d'utilisateurs contenus dans l'AD
+* Vérification des intégrités des images téléchargées avant l'installation (Capture d'écran)
+* Mises à jour réussies (Capture d'écran)
+* le statut des services DNS et Web (Capture d'écran)
+* connexions SSH et WinRM réussies (Capture d'écran de la connexion avec commande `whoami`)
+* Permissions et statut du partage SMB ou Samba (Capture d'écran)
+* le nombre d'utilisateurs contenus dans l'AD (Capture d'écran)
 
 ### Partie amélioration et sécurisation
 
-* Le cas échéant, vous ajouterez au DAT votre travail de sécurisation
+Le cas échéant, vous ajouterez au DAT votre travail de sécurisation
 
-  * Audit de configuration des OS
-  * Audit de Code
-  * Implémentation des mesures de sécurité sélectionnées
-
+* Audit de configuration des OS
+* Audit de Code
+* Implémentation des mesures de sécurité sélectionnées
 * Les schéma réseaux et configuration avant et après configuration
-
 * Votre retour d'experience sur la réalisation de ce projet
 
 ## Critères de performance
