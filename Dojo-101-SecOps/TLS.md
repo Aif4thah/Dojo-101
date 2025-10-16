@@ -6,7 +6,7 @@ TLS est un protocole de sécurité de la couche transport, il agit en remplaçan
 
 La dernière version est le TLS v1.3 publié en 2018. IL abandonne les algorithmes de considérés comme trop faibles.
 
-## Mode de fonctionnement 
+## Mode de fonctionnement
 
 Le protocole TLS (Transport Layer Security) est un protocole de sécurité qui assure la confidentialité et l'intégrité des données échangées entre un client et un serveur sur un réseau. Voici comment il fonctionne :
 
@@ -56,7 +56,7 @@ Redémarrez votre navigateur après avoir enregistré la clé de registre.
 
 Lancez wireshark et commencez a capturer votre traffic.
 
-Lancez ensuite votre navigateur et effectuez une recherche, par exemple : https://wireshark.org. 
+Lancez ensuite votre navigateur et effectuez une recherche, par exemple : https://wireshark.org.
 
 Stoppez la capture une fois la page affichée et fermez la page web. Le fichier .log devrait s'être généré à l'emplacement souhaité.
 
@@ -67,4 +67,3 @@ Sur Wireshark rendez-vous dans Edit -> Préférences -> Protocols -> TLS
 Dans (Pre)-Master-Secret log filename, rentrez le fichier .log capturé et validez.
 
 Retournez analyser le traffic qui devrait maintenant être déchiffré.
-

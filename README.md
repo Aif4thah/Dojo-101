@@ -31,62 +31,46 @@ mindmap
       **GRC**
         ISO27001
         EBIOS RM
+        Cybercrisis
     
     **DevSec**
-        Crypto
-        Github
-        IA ML
         SAST
         DAST
         STRIDE
-        API
-        Python
-        .NET
-        JS
-        Rust
+        CICD
+        Code
+        Crypto
+        IA
 
     **SecOps**
-        Awareness
         Hardening
-        Windows
-        AD
-        Linux
-        Azure
-        Docker
-        Ansible
-        Powershell
+        Systems
+        IaC
+        Cloud
         Firewall
         VPN
         PKI
         PGP
-        Network
 
     **RF**
-        SDR
         TEMPEST
         SIGINT
         Wifi
         RFID
         Bluetooth
-        Jamming
         Satellites
 
     **Pentest**
         OSINT
-        Scanning
-        Metasploit
-        BoF
-        MITM
+        Recon
+        Exploits
         Payloads
-        Reverseshell
-        Pivot
         PrivEsc
+        Pivot
 
     **Forensic**
         Acquisition
-        Memory
         Reverse
-        Logs
         SIEM
 
     **Training**
