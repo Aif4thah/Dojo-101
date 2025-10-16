@@ -1,6 +1,5 @@
 ﻿# Audit et Durcissement / Hardening Windows et AD
 
-
 ## Windows AD
 
 * [Guide ANSSI AD](https://cyber.gouv.fr/publications/recommandations-pour-ladministration-securisee-des-si-reposant-sur-ad)
@@ -18,7 +17,6 @@
 
 * [Goup3r](https://github.com/Group3r/Group3r)
 
-
 ## Windows StandAlone
 
 * [HardeningKitty)](https://github.com/scipag/HardeningKitty)
@@ -28,7 +26,6 @@
 * [Privesc bins](https://lolbas-project.github.io/)
 
 * [Persistance snipper](https://github.com/last-byte/PersistenceSniper)
-
 
 ## Microsoft Security Compliance Toolkit (MSCT)
 
@@ -42,8 +39,7 @@
 
 * Des scripts pour MS365 et Edge sont également disponibles.
 
-
-### Prérequis 
+### Prérequis
 
 * RSAT et module GroupPolicy
 
@@ -54,7 +50,6 @@
 * L'import de GPO se fait via `Add -> File -> Import Via GPOs`, les dossiers GPOs se trouvent dans chaque dossier de **Baseline**
 
 * La **GPO** peut être comparée avec l' **effective policy** en place sur la machine locale.
-
 
 ### Exemple pour un Windows 11 standalone 
 
@@ -68,7 +63,6 @@ Avec "Windows 11 Security Baseline" et "LGPO" :
 
 Une GPO locale sera importée, y compris sur une édition Famille.
 
-
 ### Exemple sur un Windows 2022 Contrôleur de domaine
 
 Avec Windows Server 2022 Security Baseline
@@ -78,7 +72,6 @@ Avec Windows Server 2022 Security Baseline
 ```
 
 Importe des GPO intitulées "MSFT*" dans "Objets de stratégie de groupe". Elles sont ensuite à appliquer.
-
 
 ## HardeningKitty
 
@@ -102,7 +95,7 @@ Invoke-HardeningKitty -Mode Config -Backup -BackupFile ".\Backup_$($env:COMPUTER
 Durcissement :
 
 ```powershell
-Invoke-HardeningKitty -Mode HailMary -Log -Report -FileFindingList "./lists/finding_list_msft_security_baseline_windows_11_24h2_user.csv"
+Invoke-HardeningKitty -Mode HailMary -FileFindingList "./lists/finding_list_msft_security_baseline_windows_11_24h2_user.csv" -Log -Report
 ```
 
 ## PingCastle

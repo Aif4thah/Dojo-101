@@ -21,7 +21,7 @@
 * [Pentest](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Pentest)
 * [Forensic](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Forensic)
 * [Radio frequencies](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-RF)
-* [Governance, Risk and Compliance](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Governance)
+* [Governance](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Governance)
 
 ```mermaid
 %%{ init: { "theme": "forest" } }%%

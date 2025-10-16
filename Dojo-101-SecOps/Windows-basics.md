@@ -199,13 +199,13 @@ And startup folder all users:
 * remonté desktop (au cas ou le firewall empêche la réponse ICMP)
 
 	
-## Moyens d'accès à distance:
+## Moyens d'accès à distance
 
-* remonté desktop `mstsc.exe`
+* remote desktop `mstsc.exe`
 * winRM
 * Console
 
-## administration distante:
+## administration distante
 
 * GPO
 * local policy

@@ -1,4 +1,4 @@
-## terminologie
+# terminologie
 
 | Nom | AWS | Azure |
 |-----|-----|-------|
@@ -11,5 +11,3 @@
 | VM | EC2 | VM |
 | Storage devices | Elastic block storage | managed disks |
 | function as a service | Lambda | Azure Function Serverless Compute |
-
-

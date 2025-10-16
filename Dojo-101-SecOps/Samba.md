@@ -1,16 +1,19 @@
 # Samba
 
-sudo apt install samba #installé par défaut sous kali
+Installation d'un serveur Samba
 
-sudo systemctl start smbd.service 
+```sh
+apt install samba 
 
-michael@k:~/Documents/Projets/01HackTheBox/Sniper$ mkdir payload
+systemctl start smbd.service
 
+mkdir payload
 
-sudo cp /etc/samba/smb.conf /etc/samba/smb.old
+cp /etc/samba/smb.conf /etc/samba/smb.old
 
 
 sudo -i
+cat <<EOF > /etc/samba/smb.conf.d/sniper-share.conf
 [share]
 path = /home/michael/Documents/Projets/01HackTheBox/Sniper/payload
 browseable = yes
@@ -19,18 +22,19 @@ guest ok = yes
 EOF
 exit
 
-sudo systemctl restart smbd.service 
+systemctl restart smbd.service 
+```
 
-### penser à modifier iptables si besoin
+> [!TIP]
+> penser à modifier iptables si besoin
 
+Si besoin d'ecrire sur le share depuis les machines victimes
 
-## si besoin d'ecrire sur le share depuis les machines victimes:
-
+```txt
 [share]
 path = /home/michael/Documents/Projets/01HackTheBox/Sniper/payload
 browseable = yes
 writeable = yes
 guest ok = yes
 force user = michael
-
-
+```

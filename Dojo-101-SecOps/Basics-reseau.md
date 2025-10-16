@@ -4,14 +4,13 @@
 
 | Couche OSI | Couche TCP/IP | Exemples de protocoles |
 |---------|--------------|-------------|
-| 7 Application |	Application | HTTP, FTP, SMTP, DNS |
-| 6 Présentation	| Application |	SSL, TLS |
-| 5 Session | Application |	NetBIOS, RPC |
+| 7 Application |Application | HTTP, FTP, SMTP, DNS |
+| 6 Présentation| Application | SSL, TLS |
+| 5 Session | Application | NetBIOS, RPC |
 | 4 Transport | Transport |TCP, UDP |
 | 3 Réseau | Internet | IP, ICMP, ARP |
 | 2 Liaison de données | réseau | Ethernet, PPP |
 | 1 Physique | réseau | Ethernet, Wi-Fi |
-
 
 ## Classes d’adresses IPv4
 
@@ -33,7 +32,7 @@
 * Plage d’adresses privées : 192.168.0.0 à 192.168.255.255
 * Masque de sous-réseau : 255.255.255.0 (/24)
 
-### Plages privées
+### Plages privées IPV4
 
 * Classe A : 10.0.0.0 à 10.255.255.255
 * Classe B : 172.16.0.0 à 172.31.255.255
@@ -42,7 +41,6 @@
 ### Boucles locales
 
 * 127.X.X.X
-
 
 ## Adresses IPv6
 
@@ -60,12 +58,12 @@
 * Adresse avec des segments de zéros : 2001:db8:: (implique que les six derniers segments sont zéro)
 * Adresse avec des segments de zéros au début : ::1234:5678 (implique que les six premiers segments sont zéro)
 
-### Plages privées
+### Plages privées IPV6
 
 * Bloc d’adresses fc00::/7 = RFC 4193 Unique Local Addresses (ULA)2
 * Bloc d’adresses fec0::/10 = dépréciées (RFC 3879)2
 
-## Boucles locales
+## Boucles locales IPv4
 
 * ::1
 

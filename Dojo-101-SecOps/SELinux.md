@@ -7,25 +7,26 @@ sudo systemctl disable apparmor
 sudo apt install policycoreutils selinux-basics selinux-utils -y
 ```
 
-# activation
+## activation
+
 ```sh
 sudo selinux-activate
 ```
 
-# status
+## status
 
 ```sh
 sestatus
 ```
 
-# labels
+## labels
 
 ```sh
 ls -Z
 ps -Z
 ```
 
-# Multi-Level Security (MLS) policy
+## Multi-Level Security (MLS) policy
 
 ```sh
 apt install selinux-policy-mls
@@ -92,5 +93,3 @@ modifier les permission
 ```sh
 semanage login --modify --range s2:c100 vaca
 ```
-
-

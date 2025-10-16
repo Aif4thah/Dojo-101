@@ -11,7 +11,6 @@ apt-get install network-manager-strongswan
 apt-get install network-manager-vpnc
 apt-get install network-manager-vpnc-gnome
 ```
+
 openvpn client.conf (à placer dans /etc/openvpn/client/<dossier>) -redirection vers iface tun0
 ou import du fichier de conf via gnome
-
-
