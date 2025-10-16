@@ -14,7 +14,6 @@
 | SSSD | Daemon pour gérer l'accès aux services d'authentification distants |
 | PAM et NSS | Modules d'authentification et de services de noms |
 
-
 ## Clavier
 
 ```shell
@@ -44,7 +43,7 @@ echo $HOME
 | / | aucune | root |
 | /boot | nosuid,nodev,noexec | Contiens le noyau et le chargeur de démarrage. |
 | /tmp | nosuid,nodev,noexec | fichiers temporaires |
-| /home | nosuid,nodev,noexec | répertoires utilisateurs
+| /home | nosuid,nodev,noexec | répertoires utilisateurs |
 | /dev | aucune | périphériques |
 | /var |  nosuid,nodev,noexec | variables et logs |
 
@@ -124,20 +123,19 @@ apt-get install --fix-broken
 
 | lettre | description |
 |-----|-----|
-| - | regular file | 
-| b | block special file | 
-| c | character special file | 
-| C | high performance ("contiguous data") file  | 
-| d | directory | 
-| D | door (Solaris 2.5 and up) | 
-| l | symbolic link | 
-| M | off-line ("migrated") file (Cray DMF) | 
-| n | network special file (HP-UX)  | 
-| p | FIFO (named pipe) | 
-| P | port (Solaris 10 and up) | 
-| s | socket | 
-| ? | some other file type | 
-
+| - | regular file |
+| b | block special file |
+| c | character special file |
+| C | high performance ("contiguous data") file  |
+| d | directory |
+| D | door (Solaris 2.5 and up) |
+| l | symbolic link |
+| M | off-line ("migrated") file (Cray DMF) |
+| n | network special file (HP-UX)  |
+| p | FIFO (named pipe) |
+| P | port (Solaris 10 and up) |
+| s | socket |
+| ? | some other file type |
 
 ```shell
 file executable.2772.exe 
@@ -153,36 +151,45 @@ sha256sum test
 
 ## hexa
 
-### éditeurs sous kali: 
+### éditeurs sous kali
 
 * hexeditor
 * bless
 
-### mettre du code hexa dans un fichier binaire: 
+### mettre du code hexa dans un fichier binaire
 
 ```shell
 xxd -r -p input.hex output.bin
 ```
-### dumper un binaire en hexa: 
+
+### dumper un binaire en hexa
 
 ```shell
 hexdump -C
 ```
 
-### permission
+### permissions
 
 ```shell
 id
 whoami
 ```
 
-#### permission POSIX
+### permission POSIX
 
 ```sh
 touch test
 umask 0077
 chmod 700 test
 chmod +x test
+```
+
+### permission AppArmor
+
+Activé par défaut sous Ubuntu et Snap
+
+```sh
+aa-status
 ```
 
 ### capabilities (rarement utilisé)
@@ -194,7 +201,7 @@ capsh --decode=0000000000003000
 
 ### Auditer les permissions
 
-#### monitorer un répertoire:
+#### monitorer un répertoire
 
 ```sh
 apt install auditd
@@ -205,7 +212,7 @@ auditctl -l
 ausearch -k vulnapp | aureport -f -i
 ```
 
-### monitorer les utilisateurs:
+### monitorer les utilisateurs
 
 ```sh
 auditctl -a always,exit -S openat -F auid=1000 -k user1000
@@ -225,17 +232,18 @@ Ouvrir l'explorateur de fichier: `xdg-open`
 
 ## runlevel Linux
 
-### runlevel 3 au grub:
+### runlevel 3 au grub
 
 ajouter 3 apres “quiet” dans le GRUB
-
 
 ## Archives
 
 ### Compress file
+
 ```shell
 zip compressed.zip file_name.txt
 ```
+
 ### Compress Folder
 
 ```shell
@@ -266,7 +274,7 @@ tar zcvf compressed.tar.gz folder_name
 tar zxvf compressed.tar.gz
 ```
 
-### tout détarer:
+### tout détarer
 
 ```shell
 for i in *.tar.gz; do tar -xzvf $i; done
@@ -274,11 +282,11 @@ for i in *.tar.gz; do tar -xzvf $i; done
 
 ## information kernel
 
-`dmesg` 
+`dmesg`
 
-grepper pour chercher une pour identifier une information particulière 
+grepper pour chercher une pour identifier une information particulière
 
-ex: /dev/sdb pour trouver sa clé usb 
+ex: /dev/sdb pour trouver sa clé usb
 
 ## usb
 
@@ -290,7 +298,6 @@ dd if=kali-linux-2019.4-amd64.iso of=/dev/sdb bs=512k
 ```
 
 ou avec `gnome-disks` (sudo apt install gnome-disk-utility)
-
 
 ## curl
 
@@ -410,16 +417,15 @@ ForwardX11Trusted no
 
 lancer `ssh -X` coté client
 
-
 ## smbclient
 
-### sous xfce:
+### sous xfce
 
 ```sh
 thunar smb://10.10.10.178/Data
 ```
 
-###  impacket:
+### impacket
 
 ```sh
 /usr/share/doc/python3-impacket/examples/smbclient.py C.Smith:xRxRxPANCAK3SxRxRx@10.10.10.178
@@ -443,7 +449,7 @@ sudo -u logcheck logcheck -o > /data/$(date +"%m-%d-%Y-%T").log
 "nouveau.blacklist=1" -> désactive les drivers nouveaux
 "nomodeset" -> n'utilise pas les module graphique du kernel durant le boot jusqu'au chargement de X)
 
-### Pbm d'écran / compatibilité nouveau /nvidia:
+### Pbm d'écran / compatibilité nouveau /nvidia
 
 1. booter avec nomodeset ou nouveau.blacklist=1
 2. installer le package nvidia-driver
@@ -452,7 +458,6 @@ sudo -u logcheck logcheck -o > /data/$(date +"%m-%d-%Y-%T").log
 ### pour les problèmes, de driver nvidia cf "Nvidia GPU"
 
 Si freeze: utiliser les tty (ctrl+alt+<1,2,3,4...>) ou démarrer sans interface graphique: cf "runlevel"
-
 
 ### modules
 
