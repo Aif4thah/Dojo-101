@@ -4,15 +4,14 @@
 
 ### Sécurité Physique
 
-| **Type**              | **Usage**                                           | **Marque/Modèle**                          |
-|-----------------------|-----------------------------------------------------|--------------------------------------------|
-| Reconnaissance        | Surveillance, correction de tirs en profondeur      | DJI Mavic, Autel Evo, Parrot Anafi         |
-| Largueur              | Largage de grenades ou charges artisanales          | DJI Matrice, DJI Mavic modifiés            |
-| Kamikaze (FPV)        | Attaque directe avec explosifs                      | Drones FPV customisés                      |
-| Observation tactique  | Suivi de troupes, repérage de terrain               | DJI Phantom, Autel Robotics                |
-| Logistique légère     | Transport de petits équipements ou médicaments      | DJI Matrice, Flytrex                       |
-| Brouillage/Leurre     | Saturation radar, diversion                         | Drones bon marché modifiés (ex: Syma)      |
-
+| **Type** | **Usage**| **Marque/Modèle**|
+|----|----|----|
+| Reconnaissance| Surveillance, correction de tirs en profondeur | DJI Mavic, Autel Evo, Parrot Anafi |
+| Largueur | Largage de grenades ou charges artisanales| DJI Matrice, DJI Mavic modifiés  |
+| Kamikaze (FPV)| Attaque directe avec explosifs  | Drones FPV customisés  |
+| Observation tactique  | Suivi de troupes, repérage de terrain| DJI Phantom, Autel Robotics |
+| Logistique légère| Transport de petits équipements ou médicaments | DJI Matrice, Flytrex|
+| Brouillage/Leurre| Saturation radar, diversion  | Drones bon marché modifiés (ex: Syma) |
 
 ## Detection
 
@@ -28,9 +27,46 @@
 
 * réflexion du signal par les hélices: For example, if the propeller rotates with the speed around 7500 to 10500 RPM, we expect to see the signature of the drone on the frequency band less than 200Hz
 
-* détection des vibrations du drone: In active approach, the
-system sends out a wireless signal and observes the reflected
-component caused by drone body vibration (peut aussi se faire de manière passive)
+* détection des vibrations du drone: In active approach, the system sends out a wireless signal and observes the reflected component caused by drone body vibration (peut aussi se faire de manière passive)
+
+## Neutralisation
+
+### Fonctionnement des Fusils brouilleurs d’ondes
+
+* Cible les drones de classe 1 (mini, micro, nano)
+
+* Une ou plusieurs antennes directionnelles : généralement à gain élevé, orientées vers la cible pour maximiser l’efficacité du brouillage
+
+* Émission de bruit électromagnétique sur les bandes de fréquence utilisées par les drones (2.4 GHz, 5.8 GHz, GNSS)
+
+* Puissance d’émission de l’ordre de plusieurs watts par bande pour saturer les récepteurs du drone à plusieurs centaines de mètres
+
+* Les antennes sont dimensionnées pour les bandes ciblées (ex. : 2.4 GHz → λ ≈ 12.5 cm), ce qui explique la longueur du canon (~80 cm à 1 m) pour une bonne directivité
+
+### Impacts
+
+* La perte de contrôle du drone par son opérateur
+* Son retour automatique au point de départ (si équipé d’un mode RTH)
+* Ou sa chute immédiate en cas de perte totale de signal
+
+### exemple du NEROD RF
+
+| Caractéristique| Détail |
+|----|----|
+| Type| Fusil brouilleur directionnel monobloc |
+| Antennes | Directionnelles intégrées, multi-bandes|
+| Bandes couvertes | 8 bandes : 2.4 GHz, 5.8 GHz, GNSS (GPS, GLONASS, Galileo), autres RF|
+| Portée de brouillage  | > 2 km |
+| Puissance d’émission  | Plusieurs watts par bande (non précisé publiquement)|
+| Autonomie| 1 heure en brouillage continu, batterie lithium-ion remplaçable  |
+| Poids  | ~6 kg|
+| Dimensions  | Compact, longueur approximative : 80–100 cm |
+| Ergonomie| Ambidextre, utilisable sans visée précise |
+| Déploiement | À pied, en véhicule, embarqué (hélicoptère) |
+| Protection opérateur  | Bouclier électromagnétique intégré|
+| Neutralisation| Soft kill : brouillage des signaux radio, vidéo et GPS |
+
+Source : [MC2 Technologies – NEROD RF](https://www.mc2-technologies.com/nerod-rf/)
 
 ### capture avec HackRF
 
@@ -54,18 +90,17 @@ hackrf_transfer -s 20000000 -l 32 -g 8 -f <freq.> -r capture.cs8
 
 ### Sigint
 
-| Frequency | 433Mhz | 868Mhz | 2.4Ghz | 5Ghz |
-|-----|--------|---------|-------|-----|
-| Control | No | No | DSSS+FHSS/DSSS/OFDM | OFDM |
-| Video | No | No | OFDM | OFDM, FM |
-| Telemetry | Divers | OFDM OFDM,DSSS | OFDM |
-
-voir `Wifi` pour les Modulations à 2.4 et 5 Ghz
+| Usage| 433MHz| 868MHz| 2.4GHz | 5GHz  |
+|----|----|----|-|----|
+| Control | Non| Non| DSSS+FHSS/DSSS/OFDM| OFDM  |
+| Protocoles | LoRa (FSK), RFD900 (FHSS)| LoRa (FSK), XBee (DSSS)| FrSky ACCST (DSSS), TBS Crossfire (FHSS), DJI OcuSync (OFDM) | DJI OcuSync 3.0 (OFDM), Wi-Fi 802.11ac (OFDM) |
+| Vidéo| Non| Non| DJI Lightbridge/OcuSync (OFDM) | Analog FPV (FM), DJI HD FPV (OFDM) |
+| Télémetrie | RFD900 (FHSS), MAVLink  | LoRa (FSK), MAVLink  | MAVLink (DSSS), SmartPort (DSSS), Crossfire (FHSS)| MAVLink (OFDM), Wi-Fi telemetry (OFDM) |
 
 ### Control
 
 | Brand | Frequency | Modulation | Technology |
-|-----|--------|---------|-------|
+|----|----|----|----|
 | DJI Mavic 3 |  2.4Ghz/5.8Ghz | FHSS/DSSS ||
 | DJI Phantom | 2.4Ghz/5.8Ghz | FHSS/DSSS | FASST/Lightbridge |
 | Futaba | 2.4Ghz | FHSS/DSSS | FASST |
@@ -79,7 +114,7 @@ voir `Wifi` pour les Modulations à 2.4 et 5 Ghz
 ### Video
 
 | Brand | Frequency | Modulation | Technology |
-|-----|--------|---------|-------|
+|----|----|----|----|
 | DJI Mavic | 2.4Ghz/5.8Ghz | OFDM ||
 | DJI Phantom | 2.4Ghz | OFDM | Lightbridge/Wi-Fi |
 | Immersion | 2.4Ghz | FM ||
@@ -94,13 +129,12 @@ voir `Wifi` pour les Modulations à 2.4 et 5 Ghz
 * FrSky
 * CrossFire
 
-
 ### Quelques specs
 
 #### DJI Mini 3 Pro
 
 | Specification | Value |
-| --- | --- |
+|----|----|
 | Maximum Flight Speed | 16 m/s (S mode), 10 m/s (N mode), 6 m/s (C mode)  |
 | Maximum Flight Altitude | 4000 meters  |
 | Maximum Flight Time | 34 minutes (standard battery)  |
@@ -111,7 +145,7 @@ voir `Wifi` pour les Modulations à 2.4 et 5 Ghz
 #### DJI Mavic 3
 
 | Specification | Value |
-| --- | --- |
+|----|----|
 | Maximum Flight Speed | 21 m/s (S mode)  |
 | Maximum Flight Altitude | 6000 meters  |
 | Maximum Flight Time | 46 minutes (no wind)  |
@@ -119,32 +153,8 @@ voir `Wifi` pour les Modulations à 2.4 et 5 Ghz
 | Wind Resistance | 12 m/s  |
 | Operating Frequency | GPS + Galileo + BeiDou  |
 
-#### Autel EVO Lite+
+## Autres Ressources
 
-| Specification | Value |
-| --- | --- |
-| Camera Sensor | 1-inch CMOS  |
-| Effective Pixels | 20 MP  |
-| Video Resolution | 6K/30fps and 4K/60fps  |
-| Flight Time | 40 minutes  |
-
-
-#### Ryze Tech Tello
-
-| Specification | Value |
-| --- | --- |
-| Weight | Approximately 80 g (with propellers and battery) ¹ |
-| Dimensions | 98mm x 92.5mm x 41mm ¹ |
-| Propeller | 3 inches  |
-| Built-in Functions | Range Finder, Barometer, LED, Vision System, 2.4 GHz 802.11n Wi-Fi, 720p Live View  |
-| Max Flight Distance | 100m  |
-| Max Speed | 8m/s  |
-| Max Flight Time | 13min  |
-| Max Flight Height | 30m  |
-
-## Ressources:
-
-[sources pour les modulations](https://digitalcommons.odu.edu/cgi/viewcontent.cgi?article=1161&context=ece_etds)
-[sigint](https://www.sigidwiki.com/wiki/Quadcopter_Telemetry_Signal)
-[colorado.edu](https://home.cs.colorado.edu/~rhan/Papers/p17-nguyen.pdf)
-
+* [sources pour les modulations](https://digitalcommons.odu.edu/cgi/viewcontent.cgi?article=1161&context=ece_etds)
+* [sigint](https://www.sigidwiki.com/wiki/Quadcopter_Telemetry_Signal)
+* [colorado.edu](https://home.cs.colorado.edu/~rhan/Papers/p17-nguyen.pdf)
