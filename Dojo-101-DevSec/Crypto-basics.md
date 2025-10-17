@@ -4,9 +4,9 @@
 
 * [NIST SP 800-57 part 1 Recommendation for Key Management](https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final)
 
-## Chiffrement symétrique
+## Chiffrement Symétrique
 
-### Principe
+### Principe du Chiffrement Symétrique
 
 Lorsque le chiffrement symétrique est mis en œuvre, la même clé permet de chiffrer et déchiffrer. Ce type de chiffrement est généralement utilisé pour la confidentialité des informations.
 
@@ -18,20 +18,20 @@ graph TD
     D --> E[Message clair]
 ```
 
-### Algo
+### Algo de Chiffrement Symétrique
 
 * 3DES (obsolète)
 * Rijndael, AES
 
 En complément de l'algo, les modes de chiffrement doivent être choisis avec soin.
 
-### Use case
+### Use case de Chiffrement Symétrique
 
 * Chiffrement de données
 * Pour la mise en œuvre de chiffrement de surface, par exemple la mise en œuvre de la technologie Bitlocker
 * Lors de revues liées aux choix de suites cryptographiques (dont TLS)
 
-### exemple
+### exemple de Chiffrement Symétrique
 
 > [!WARNING]
 > Attention: contrairement à la clé, les IVs ne doivent pas être réutilisés. Ce script est utilisé à titre éducatif et n'est pas là pour garantir la confidentialité d'échanges en production.
@@ -76,7 +76,6 @@ i = secrets.token_bytes(16) # generation d'IVs
 c = chiffre_message(k,i,'test')
 dechiffre_message(k,i,c)
 ```
-
 
 en powershell:
 
@@ -143,11 +142,11 @@ $msgchiffre
 Dechiffrer-message -EncryptedString $msgchiffre -Key $k -IVs $i
 ```
 
-## Chiffrement asymétrique
+## Chiffrement Asymétrique
 
-### Principe
+### Principe du Chiffrement Asymétrique
 
-Le chiffrement asymétrique est composé d’une clé privée et d’une clé publique. L’une pouvant déchiffrer ce que la seconde a chiffré. Ce type de chiffrement est généralement utilisé pour l’authentification et la non-répudiation. 
+Le chiffrement asymétrique est composé d’une clé privée et d’une clé publique. L’une pouvant déchiffrer ce que la seconde a chiffré. Ce type de chiffrement est généralement utilisé pour l’authentification et la non-répudiation.
 
 ```mermaid
 graph TD
@@ -157,32 +156,26 @@ graph TD
     D --> E[Message clair]
 ```
 
-### Algo
+### Algo de Chiffrement Asymétrique
 
 * DSA
 * RSA
 * ECDSA
- 
-### Use case
+
+### Use case du Chiffrement Asymétrique
 
 * La signature de documents, de code ou de message (dont certificats X509 en combinaison avec RSA/ECDSA, avec un secret pour les signatures HMAC pour les Tokens JWT etc...)
 * Utilisé avec d'autres protocoles dans des suites cryptographiques (TLS, SSH, PGP…)
 * Stockage des secrets
 
-### exemple
+### exemple de Signature avec Chiffrement Asymétrique
 
 Certificats X509:
 
 ```powershell
-$params = @{
-    Subject = 'CN=PowerShell Code Signing Cert'
-    Type = 'CodeSigning'
-    CertStoreLocation = 'Cert:\CurrentUser\My'
-    HashAlgorithm = 'sha256'
-}
-New-SelfSignedCertificate @params
-Set-AuthenticodeSignature .\test.ps1 ((Get-ChildItem cert:\CurrentUser\My -codesigning)[0])
-gc .\test.ps1
+# nouveau certificat
+$cert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -Subject "CN=ScriptSigningCert" -KeyUsage DigitalSignature -Type CodeSigningCert
+Set-AuthenticodeSignature -FilePath "script.ps1" -Certificate $cert
 ```
 
 ## Hash (Condensats)
@@ -193,23 +186,21 @@ graph TD
     B --> C[Hachage]
 ```
 
-### Principe 
+### Principe Hashage
 
-le condensat (ou hash), est obtenu grâce à opération mathématique à sens unique. Les algorithmes utilisés peuvent être MD5, SHA1 aujourd’hui obsolètes ou SHA2. 
+le condensat (ou hash), est obtenu grâce à opération mathématique à sens unique. Les algorithmes utilisés peuvent être MD5, SHA1 aujourd’hui obsolètes ou SHA2.
 
-### Algo
+### Algo Hashage
 
 * SHA1, MD5 (obsolètes)
 * SHA2, SHA3, SHA512
 
-### Use case 
+### Use case Hashage
 
 * Pour le stockage de secret, par exemple des mots de passe en base de données
 * Utilisé avec d'autres protocoles dans des suites cryptographiques (HMAC, Oauth/JWT, TLS)
 
-### exemple
-
-#### hashage
+### exemple Hashage
 
 en python
 
@@ -224,7 +215,7 @@ en powershell
 Get-FileHash -Algorithm SHA512 <fichier>
 ```
 
-#### Signature à base de hashs
+#### exemple de Signature à base de hashs avec secret
 
 en python:
 
@@ -257,14 +248,14 @@ write-host -ForegroundColor Cyan $signature
 | Uniformité | Uniforme | Uniforme si "seed" correcte |
 | Sécurité | Idéal | Non-Idéal |
 
-### Le niveau d’exigence est élevé 	
+### Le niveau d’exigence est élevé
 
 Je me réfère aux référentiels d’audits, aux guides ANSSI et à la qualification (critères communs) du produit utilisé.
 Je m’assure que mon travail soit complété par une démarche d’homologation ou de certification appropriée.
 
 ### Le niveau d’exigence est modéré
 
-Le premier niveau de contrôle concerne le respect des cas d’usage et la détection de vulnérabilités publiques présentes dans les librairies utilisées. 
+Le premier niveau de contrôle concerne le respect des cas d’usage et la détection de vulnérabilités publiques présentes dans les librairies utilisées.
 
 Le code de l’application, lorsque disponible, peut ensuite être passé en revue. Je peux alors être amené adresser des recommandations à partir des éléments suivants :
 

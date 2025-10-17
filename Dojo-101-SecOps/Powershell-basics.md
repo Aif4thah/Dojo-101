@@ -50,7 +50,6 @@ $var.gettype() #obtenir le type
 $var |gm #lister les membres (proprietés et fonctions)
 ```
 
-
 ## tableau
 
 ```powershell
@@ -159,14 +158,14 @@ Get-NetIPAddress
 Get-NetIPAddress |select -Property Ipaddress,AddressFamily |? AddressFamily -eq "IPV4"
 ```
 
-## cartes réseaux 
+## cartes réseaux
 
 ```powershell
 Get-NetAdapter
 Get-NetAdapter -ifIndex 21 |Get-NetConnectionProfile
 ```
 
-### test de connection 
+### test de connection
 
 ```powershell
 Test-NetConnection -Port 443 google.fr
@@ -230,6 +229,7 @@ en cas de pbm d'encodage:
 $content |Set-Content -Path $urlsFfuffed -Encoding utf8
 $content | Add-Content -Path $urlsFfuffed -Encoding ascii
 ```
+
 ## regex
 
 ```powershell
@@ -273,13 +273,11 @@ gc .\test.ps1 |iex
 Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
 ```
 
-
 ## Update
 
 ```powershell
 Get-Hotfix
 ```
-
 
 ## services
 
@@ -309,21 +307,24 @@ Get-EventLog -List
 Get-EventLog -LogName "Security"
 ```
 
+## activation des logs powershells
+
+```powershell
+Set-ItemProperty -Path "registry::HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging" -Name "EnableScriptBlockLogging" -value 1
+cd 'C:\Program Files\PowerShell\7'
+.\RegisterManifest.ps1
+```
+
 ### succès et echecs d'authent
+
+En tant qu'Admin :
 
 ```powershell
 Get-WinEvent -FilterHashtable @{
-LogName='Security'
-Id=4625,4624
-StartTime = [datetime]::Now.AddHours(-10000)
-}
-```
-
-## volume registry
-
-```powershell
-get-psdrive
-Get-ItemProperty -path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0
+  LogName='Security'
+  Id=4624,4625
+  StartTime = [datetime]::Now.AddDays(-7)
+} -MaxEvents 10
 ```
 
 ## sécurité de la mémoire
@@ -334,27 +335,34 @@ Set-Processmitigation -System -Enable DEP,BottomUp,SEHOP #pas d'autres options p
 Set-ProcessMitigation -System -Remove ; Set-ProcessMitigation -System -Reset #restauration de la conf par défaut 
 ```
 
-## désactivation des « null sessions » :
+## Registry
+
+```powershell
+get-psdrive
+Get-ItemProperty -path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0
+```
+
+désactivation des null sessions
 
 ```powershell
 Set-ItemProperty registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters -name RestrictNullSessAccess -value 1
 Set-ItemProperty registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\LSA -name restrictAnonymous -Value 2
 ```
 
-## Rescriction NTLM
+Rescriction NTLM
 
 ```powershell
 New-ItemProperty -path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0 -name RestrictSendingNTLMTraffic -Value 2 -PropertyType "DWord" -ea SilentlyContinue
 Set-ItemProperty -path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0 -name RestrictSendingNTLMTraffic -Value 2
 ```
 
-## désactivation WDigest (désactivé par défaut on écrase juste la valeur si elle éxiste)
+désactivation WDigest (désactivé par défaut on écrase juste la valeur si elle éxiste)
 
 ```powershell
 Set-ItemProperty -Path 'registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest' -Name "UseLogonCredential" -Type DWord -Value 0 -ea SilentlyContinue
 ```
 
-## Configuration SMB :
+Configuration SMB
 
 ```powershell
 get-SmbShare
@@ -363,14 +371,14 @@ Set-SmbClientConfiguration -RequireSecuritySignature $true -Force
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" -Name DisableCompression -Type DWORD -Value 1 -Force
 ```
 
-## Désactivation du protocole netbios
+Désactivation du protocole netbios
 
 ```powershell
 $r = "HKLM:SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces" 
 Get-ChildItem $r |ForEach-Object{ Set-ItemProperty -Path "$r\$($_.pschildname)" -Name NetbiosOptions -Value 2 }
 ```
 
-## Désactivation du protocole LLMNR - DNS multicast
+Désactivation du protocole LLMNR - DNS multicast
 
 ```powershell
 New-Item "registry::HKEY_LOCAL_MACHINE\Software\policies\Microsoft\Windows NT\DNSClient" -ea SilentlyContinue
@@ -378,50 +386,65 @@ New-ItemProperty -Path "registry::HKEY_LOCAL_MACHINE\Software\policies\Microsoft
 Set-ItemProperty -Path "registry::HKEY_LOCAL_MACHINE\Software\policies\Microsoft\Windows NT\DNSClient" -name "EnableMulticast" -Value 0
 ```
 
-## Désactivation du protocole WPAD
+Désactivation du protocole WPAD
 
 ```powershell
 New-ItemProperty -Path "registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad" -Name "WpadOverride" -Value 1 -PropertyType "DWord" -ea SilentlyContinue
 Set-ItemProperty -Path "registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad" -Name "WpadOverride" -Value 1
 ```
 
-## Suppréssion du PageFile lors de l’arret du systèm
+Suppréssion du PageFile lors de l’arret du systèm
 
 ```powershell
 Set-ItemProperty -Path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -name ClearPageFileAtShutdown -Value 1
 ```
 
-## Désactivation du sous-sytème linux
+Désactivation du sous-sytème linux
 
 ```powershell
 Disable-WindowsOptionalFeature -online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart -Remove
 ```
 
-## Désactivation du partage de connection SharedAccess
+Désactivation du partage de connection SharedAccess
 
 ```powershell
 Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess -Name "Start" -Type DWord -Value 4
 ```
 
-## Désactivation de WinRM
+Désactivation de WinRM
 
 ```powershell
 Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinRM -Name "Start" -Type DWord -Value 4
 ```
 
-## désactivation RDP
+désactivation RDP
 
 ```powershell
 Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" –Value 1
 ```
 
-## désactivation de powershellv2
+configuration de l'UAC au niveau 3
+
+```powershell
+Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System -Name "ConsentPromptBehaviorAdmin" -Value 2 
+Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System -Name "PromptOnSecureDesktop" -Value 1
+```
+
+verification que le "always install with elevated" est désactivé
+
+```powershell
+remove-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Installer -name AlwaysInstallElevated -ea SilentlyContinue
+```
+
+## Features
+
+désactivation de powershellv2
 
 ```powershell
 Disable-WindowsOptionalFeature -Online -FeatureName MicrosoftWindowsPowerShellV2 -NoRestart
 ```
 
-## Configuration Pare-feu
+## Pare-feu
 
 ```powershell
 Get-NetFirewallProfile 
@@ -429,32 +452,39 @@ Get-NetConnectionProfile
 gcm *Firewall*
 ```
 
-## Configuration de Windows Defender
+exemple avec suppression des règles firewall en doublon:
+
+```powershell
+Get-NetFirewallRule | select -Property DisplayName | % {
+    if ((Get-NetFirewallRule -DisplayName $_.DisplayName | measure).Count -gt 1) {
+        $r1 = (Get-NetFirewallRule -DisplayName $_.DisplayName)[0]
+        $r2 = (Get-NetFirewallRule -DisplayName $_.DisplayName)[1]
+        if ($null -eq (Compare-Object $r1 $r2 -Property Profile, Enabled, Direction, Action, Group)) {
+            if ($null -eq (Compare-Object ($r1 | Get-NetFirewallPortFilter) ($r2 | Get-NetFirewallPortFilter) -Property Protocol, LocalPort, RemotePort)) {
+                if ($null -eq (Compare-Object ($r1 | Get-NetFirewallAddressFilter) ($r2 | Get-NetFirewallAddressFilter) -Property RemoteAddress, LocalAddress)) {
+                    if ($null -eq (Compare-Object ($r1 | Get-NetFirewallApplicationFilter) ($r2 | Get-NetFirewallApplicationFilter) -Property Program )) {
+                        write-host "$r2" -ForegroundColor Cyan
+                        if ($null -eq (Compare-Object ($r1 | Get-NetFirewallServiceFilter) ($r2 | Get-NetFirewallServiceFilter) -Property Service )) {
+                            if ($null -eq (Compare-Object ($r1 | Get-NetFirewallInterfaceFilter) ($r2 | Get-NetFirewallInterfaceFilter) -Property InterfaceAlias )) {
+                                if ($null -eq (Compare-Object ($r1 | Get-NetFirewallSecurityFilter) ($r2 | Get-NetFirewallSecurityFilter) -Property LocalUser, Authentication, RemoteUser, RemoteMachine, Encryption )) {
+                                    $r2 
+                                    $r2 | Disable-NetFirewallRule -Confirm
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+## Windows Defender
 
 ```powershell
 Get-MpComputerStatus
 Get-MpPreference
-```
-
-#configuration de l'UAC au niveau 3
-
-```powershell
-Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System -Name "ConsentPromptBehaviorAdmin" -Value 2 
-Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System -Name "PromptOnSecureDesktop" -Value 1
-```
-
-## verification que le "always install with elevated" est désactivé
-
-```powershell
-remove-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Installer -name AlwaysInstallElevated -ea SilentlyContinue
-```
-
-## activation des logs powershells
-
-```powershell
-Set-ItemProperty -Path "registry::HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging" -Name "EnableScriptBlockLogging" -value 1
-cd 'C:\Program Files\PowerShell\7'
-.\RegisterManifest.ps1
 ```
 
 ## Installer et utiliser un module vu sur powershell Gallery
@@ -466,6 +496,46 @@ gcm -Module AOVPNTools
 Get-TlsCertificate -Hostname taisen.fr
 ```
 
+## intefrité
+
+Calculer et vérifier un hash
+
+```powershell
+"F68E37DC9CABF2EE8B94D6A5D28AD04BE246CCC2E82911F8F1AC390DCF0EE364" -eq (Get-FileHash .\test -Algorithm SHA256).Hash
+```
+
+Vérifier la signature des binaires :
+
+```powershell
+ Get-AuthenticodeSignature C:\Windows\System32\cmd.exe
+```
+
+### certificats (quick and dirty)
+
+```powershell
+New-SelfSignedCertificate -DnsName Ucshiwa.lan -CertStoreLocation Cert:\CurrentUser\My\  -KeyAlgorithm RSA -KeyLength 4096 -NotAfter $(Get-Date).AddYears(30)
+certmgr.msc # export the generated certificate as password protected .pfx file 
+```
+
+### Signature
+
+```pwsh
+#$cert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -Subject "CN=ScriptSigningCert" -KeyUsage DigitalSignature -Type CodeSigningCert
+$Cert = Get-ChildItem Cert:\CurrentUser\My | Where-Object { $_.Subject -like "*ScriptSigningCert*" }
+Set-AuthenticodeSignature -FilePath "script.ps1" -Certificate $cert
+```
+
+## requete wmi
+
+```powershell
+Get-CimInstance -ClassName Win32_BIOS
+```
+
+## requete cim
+
+```powershell
+Get-CimInstance -ClassName Win32_Service 
+```
 
 ## déclarer une fonction
 
@@ -516,7 +586,7 @@ function Get-NimporteQuoi
 }
 ```
 
-### appeler une fonction
+appeler la fonction
 
 ```powershell
 Copier coller la fonction ou faire `. .\fichier.ps1`
@@ -525,42 +595,7 @@ Get-NimporteQuoi -parametre1 aaaaa -parametre2 bbbbb
 Get-NimporteQuoi
 ```
 
-### intefrité
-
-les hashs : 
-
-```powershell
-"F68E37DC9CABF2EE8B94D6A5D28AD04BE246CCC2E82911F8F1AC390DCF0EE364" -eq (Get-FileHash .\test -Algorithm SHA256).Hash
-```
-
-
-Signature des binaires :
-
-```powershell
- Get-AuthenticodeSignature C:\Windows\System32\cmd.exe
-```
-
-
-### certificats (quick and dirty)
-
-```powershell
-New-SelfSignedCertificate -DnsName Ucshiwa.lan -CertStoreLocation Cert:\CurrentUser\My\  -KeyAlgorithm RSA -KeyLength 4096 -NotAfter $(Get-Date).AddYears(30)
-certmgr.msc # export the generated certificate as password protected .pfx file 
-```
-
-### requete wmi
-
-```powershell
-Get-CimInstance -ClassName Win32_BIOS
-```
-
-### requete cim
-
-```powershell
-Get-CimInstance -ClassName Win32_Service 
-```
-
-### compiler et utiliser une dll
+## compiler et utiliser une dll
 
 ```powershell
 $Source = @"
@@ -583,38 +618,10 @@ $BasicTestObject = New-Object BasicTest
 $BasicTestObject.Multiply(5, 2)
 ```
 
-### thread avec get-job
+### lancement de thread avec get-job
 
 ```powershell
 $job = Start-Job -ScriptBlock { Get-WinEvent -Log System }
 $job | Select-Object -Property *
 Stop-Job $job
-```
-
-### firewall, exemple avec suppression des règles en doublon
-
-```powershell
-Get-NetFirewallRule | select -Property DisplayName | % {
-    if ((Get-NetFirewallRule -DisplayName $_.DisplayName | measure).Count -gt 1) {
-        $r1 = (Get-NetFirewallRule -DisplayName $_.DisplayName)[0]
-        $r2 = (Get-NetFirewallRule -DisplayName $_.DisplayName)[1]
-        if ($null -eq (Compare-Object $r1 $r2 -Property Profile, Enabled, Direction, Action, Group)) {
-            if ($null -eq (Compare-Object ($r1 | Get-NetFirewallPortFilter) ($r2 | Get-NetFirewallPortFilter) -Property Protocol, LocalPort, RemotePort)) {
-                if ($null -eq (Compare-Object ($r1 | Get-NetFirewallAddressFilter) ($r2 | Get-NetFirewallAddressFilter) -Property RemoteAddress, LocalAddress)) {
-                    if ($null -eq (Compare-Object ($r1 | Get-NetFirewallApplicationFilter) ($r2 | Get-NetFirewallApplicationFilter) -Property Program )) {
-                        write-host "$r2" -ForegroundColor Cyan
-                        if ($null -eq (Compare-Object ($r1 | Get-NetFirewallServiceFilter) ($r2 | Get-NetFirewallServiceFilter) -Property Service )) {
-                            if ($null -eq (Compare-Object ($r1 | Get-NetFirewallInterfaceFilter) ($r2 | Get-NetFirewallInterfaceFilter) -Property InterfaceAlias )) {
-                                if ($null -eq (Compare-Object ($r1 | Get-NetFirewallSecurityFilter) ($r2 | Get-NetFirewallSecurityFilter) -Property LocalUser, Authentication, RemoteUser, RemoteMachine, Encryption )) {
-                                    $r2 
-                                    $r2 | Disable-NetFirewallRule -Confirm
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 ```
