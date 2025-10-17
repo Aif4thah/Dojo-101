@@ -1,23 +1,21 @@
-# Première soutenance (à blanc) : remise de la première partie du mémoire projet
+# Préparation d'une Soutenance avec Dossier
 
 > [!NOTE]
 > Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
-## Partie 1 : Commencer la rédaction du rapport (Word)
-
-### Partir du référentiel de formation (ou tableau des compétences attendues)
+## Partir du référentiel de formation (ou tableau des compétences attendues)
 
 * Faire un **tableau de synthèse** qui précisera pour chaque *compétence attendue*, l'expérience acquise en entreprise ou lors de projets réalisés en cours.
 
 * Ce tableau vous permettra de savoir ce que vous allez décrire dans le rapport et dans votre présentation, par exemple :
 
-| Ref. | Activité type | Compétence du référentiel | Contexte | Chapitre du rapport |
+| Ref. | Activité type | Compétence du référentiel | Contexte Entreprise ou Formation | Chapitre du Rapport |
 |---|---|---|---|---|
 | 1 | Participer à la gestion de la cybersécurité | Participer à la mesure et à l’analyse du niveau de sécurité de l’infrastructure |  Audit du serveur AD | §4.1 |
 | 2 | Participer à la gestion de la cybersécurité | Participer à l’élaboration et à la mise en œuvre de la politique de sécurité |  Mise à jour de l'Analyse de risque | §1.2 |
 | 3 | ...| ... |  ... | §X.X |
 
-### Faire le Plan
+## Faire le Plan
 
 * Identifier les Chapitres (Titre de niveau 1)
 
@@ -25,36 +23,17 @@
 
 * créer un *sommaire dynamique*
 
-### Commencer à rédiger
+## Commencer à rédiger
 
-* Rédiger l'introduction et la présentation du contexte
-
-  * l'entreprise : valeur métiers et quelques chiffres (CA, nombre d'employés)
-
-  * l'équipe : Organigramme, missions
-
-  * l'environnement technique : schéma réseau simplifié, technologies
+* Rédiger l'introduction et la présentation du contexte : l'entreprise (CA, nombre d'employés), l'équipe, les missions et l'environnement technique.
 
 * Créer un glossaire et y mettre les termes techniques
 
 * Créer une page de garde
 
-* Garder une Police simple, par exemple :
+* Garder une Police simple et lisible.
 
-  * Titre de niveau 1 : Taille 16 bleu numéroté "1"
-
-  * Titre ne niveau 2 : Taille 12 noir numéroté "1.1"
-
-  * Titre de niveau 3: Taille 11 noir numéroté "1.1.1"
-
-  * Texte: taille 12
-
-  * Pas de souligné pas de gras
-
-> [!TIP]
-> Les conclusions / résumé / abstract seront à faire plus tard, en toute fin de rédaction.
-
-### Créer et rassembler les figures
+## Créer  les figures
 
 Une fois les sujets identifiés, commencer à réaliser les figures et à les positionner dans votre rapport.
 
@@ -76,9 +55,10 @@ Une fois les sujets identifiés, commencer à réaliser les figures et à les po
 
 * Extrait de Script / Code
 
-La plupart du temps, mettre des données personnelles / sensibles (Noms, IP etc.) est inutile. Dans le cas contraire, demander une validation.
+> [!TIP]
+> La plupart du temps, mettre des données personnelles / sensibles (Noms, IP etc.) est inutile. Dans le cas contraire, demander une validation.
 
-### Une fois ce travail réalisé commencez à faire des slides (PPT) en accord avec votre plan
+## Commencez à faire des slides (PPT) en accord avec votre plan
 
 Garder un **plan identique** votre présentation reste naturelle et s'appuie sur votre rapport, par exemple :
 
@@ -88,37 +68,37 @@ Garder un **plan identique** votre présentation reste naturelle et s'appuie sur
 
 * bullets points -> Titre de niveau 3
 
-* Copier-Coller des figures -> diagrammes, synoptique, etc. présent dans le rapport
+* Copier-Coller des figures du rapport -> diagrammes, synoptique, etc.
 
-## Partie 2 : Finir le rapport et Compléter les slides
+## Finir le rapport et Compléter les slides
 
-1. Rédiger l'ensemble de votre rapport, les explications doivent être concises et compréhensibles par une personne qui a des bases techniques, mais ne connait pas votre entreprise.
+* Rédiger l'ensemble de votre rapport, les explications doivent être concises et compréhensibles par une personne qui a des bases techniques, mais ne connait pas votre entreprise.
 
-2. Vérifier que toutes les figures pertinentes du rapport soient présentes dans les slides.
+* Vérifier que toutes les figures pertinentes du rapport soient présentes dans les slides.
 
-3. Pour chaque Titre de niveau 2 et 3, assurez-vous d'avoir les bullets points ou les phrases présentant les éléments importants.
+* Pour chaque Titre de niveau 2 et 3, assurez-vous d'avoir les bullets points ou les phrases présentant les éléments importants.
 
-4. Créez-vous des notes (fonction PowerPoint) que vous seuls verrez afin d'être certains de ne rien oublier le jour J.
+* Créez-vous des notes (fonction PowerPoint) que vous seuls verrez afin d'être certains de ne rien oublier le jour J.
 
-### Rédiger le résumé / la conclusion
+## Rédiger le résumé ou la conclusion
 
-Quelques conseils pour l'abstract :
+Quelques conseils pour un abstract en Anglais :
 
 * An explanation of why your findings and key message contribute to the field/s and more specifically to the company's needs
 
 * In other words, an abstract includes points covering these questions.
 
-* What is your paper about?
+* What is your paper about ?
 
-* Why is it important?
+* Why is it important ?
 
-* How did you do it?
+* How did you do it ?
 
-* What did you find?
+* What did you find ?
 
-* Why are your findings important?
+* Why are your findings important ?
 
-### Entrainez-vous à l'oral
+## Entrainez-vous à l'oral
 
 * Répétez
 
@@ -126,7 +106,7 @@ Quelques conseils pour l'abstract :
 
 * Anticipez quelques questions
 
-### Préparez votre matériel pour le jour J
+## Préparez votre matériel pour le jour J
 
 * Venez avec une machine fiable, en bon état et avec vos logiciels installés.
 
@@ -136,7 +116,7 @@ Quelques conseils pour l'abstract :
 
 * Connaissez votre  Login / mot de passe pour la présentation
 
-### Certications
+## Certications
 
 * En plus du rapport/mémoire, il peut être nécessaire **Dossier pro au format du ministère**. Le rapport que vous venez de terminer vous y aidera.
 
