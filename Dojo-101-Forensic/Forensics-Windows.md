@@ -8,7 +8,7 @@
 
 * [KAPE](https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape)
 
-éléments d'interet : 
+éléments d'interet :
 
 * Journaux d’événement Windows (EVTX),
 
@@ -30,25 +30,24 @@ C:\winpmem_v3.3.rc3.exe --output memdump.raw --format raw --volume_format raw
 
 * `Dumpit.exe`
 
-* `NotMyFault.exe` 
+* `NotMyFault.exe`
 
 * `Windows` : système -> avancé -> sauvegarde et restauration -> vidage de la RAM
 
 * [process hacker](https://processhacker.sourceforge.io/) On peut visualiser les process mais aussi directement lire les strings en ram etc : `click droit sur le process -> proprietés -> memory -> strings`
 
-* `Sysinternals: procdump` 
+* `Sysinternals: procdump`
 
 ```powershell
 C:\Users\Chase\Documents>.\procdump.exe -accepteula -ma <pid> 
 .\procdump.exe -accepteula -ma 6800
 ```
 
-## Logs Windows Event:
+## Logs Windows Event
 
 ### Outils de mise en forme des logs
 
 * [sysmon](https://learn.microsoft.com/fr-fr/sysinternals/downloads/sysmon)
-
 
 ### Event ID
 
@@ -56,7 +55,7 @@ C:\Users\Chase\Documents>.\procdump.exe -accepteula -ma <pid>
 |----|--------------|----------|
 | 4624 | Successful Logon | Security |
 | 4625 | Failed Login | Security |
-| 4673 | Sensitive Privilege Use |
+| 4673 | Sensitive Privilege Use | Security |
 | 4776 | Successful /Failed Account Authentication | Security |
 | 4720 | A user account was created | Security |
 | 4732 | A member was added to a security-enabled local group |  Security |
@@ -64,8 +63,7 @@ C:\Users\Chase\Documents>.\procdump.exe -accepteula -ma <pid>
 | 7030 | Service Creation Errors | System |
 | 7040 | The start type of the IPSEC Services service was changed from disabled to auto start. | System |
 | 7045 | Service Creation | System |
- 
- 
+
 ### Logon Types
 
  | type | title | Description |
@@ -76,7 +74,6 @@ C:\Users\Chase\Documents>.\procdump.exe -accepteula -ma <pid>
  | 5 | Service | A service was started by the Service Control Manager.|
  | 7 |  Unlock |  This workstation was unlocked.|
  | 8 | NetworkCleartext | A user logged on to this computer from the network. The user’s password was passed to the authentication package in its unhashed form. The built-in authentication packages all hash credentials before sending them across the network. The credentials do not traverse the network in plaintext (also called cleartext).|
-
 
 ## Windows Sniffing
 
@@ -96,4 +93,18 @@ $name = "c:\test\${name}.pcap"
 PktMon.exe
 ```
 
+### MS Office
 
+* outil d'analyse de macros : olevba, oledump
+
+## Dump de la SAM
+
+```sh
+crashdump2 SYSTEM SAM
+```
+
+## Dump de la clé Wifi
+
+```powershell
+netsh wlan show profile name="nom du ssid" key=clear
+```
