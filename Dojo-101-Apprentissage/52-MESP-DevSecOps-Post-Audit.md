@@ -5,7 +5,7 @@ Vous êtes chargé d'aider les équipes Dev à remédier aux vulnérabilités su
 Poids: 10
 
 > [!NOTE]
-> Ce contenu est publié sous licence "GNU GENERAL PUBLIC LICENSE Version 3" et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
+> Ce contenu est publié sous licence *GNU GENERAL PUBLIC LICENSE Version 3* et les sources sont sur le projet Github Dojo-101, merci d'en tenir compte dans vos usages.
 
 ## Ressources
 
