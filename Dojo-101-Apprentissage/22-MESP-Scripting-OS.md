@@ -18,7 +18,7 @@ Poids: 1
 
 1. Vérifiez à l'aide d'un langage de script si vous avez les KB5049622, KB5049625 et **Un KB présent de votre choix** présent sur votre OS `Windows`. Le script devra afficher en Vert les KB présents et en rouge les KB absents.
 
-2. Une fois que votre script fonctionne, placer la liste des KB dans un **fichier texte** nommé `kb_list.txt`, le script devra lire ce fichier pour obtenir la liste des KB.
+2. Une fois que votre script fonctionne, placer la liste des KB recherchés dans un **fichier texte** nommé `kb_list.txt`, le script devra lire ce fichier et comparer ces KB à la liste des KB installés sur la machine.
 
 3. Proposer une procédure, à écrire en commentaire du script, pour appliquer ce script sur un parc Windows AD.
 

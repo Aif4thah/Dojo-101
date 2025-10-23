@@ -99,6 +99,7 @@ $var.Contains('a') ? $true : $false
 ## la boucle (quick and dirty)
 
 ```powershell
+for($i=0; $i -le 5;$i++){ write "`$i vaut : $i" }
 foreach( $a in $var ){ write-host $a -ForegroundColor grey }
 1..100 |%{ $_  }
 ls |%{ $_.FullName }
