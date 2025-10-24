@@ -1,6 +1,6 @@
 # Audit de sécurité d’un OS Linux
 
-Vous êtes chargé d’auditer la configuration d’une machine Linux vis-à-vis des bonnes pratiques de l'ANSSI. 
+Vous êtes chargé d’auditer la configuration d’une machine Linux vis-à-vis des bonnes pratiques de l'ANSSI.
 
 Le rapport d’audit permettra d’identifier les vulnérabilités, leurs criticités ainsi que les préconisations de sécurité conformément au référentiel PASSI (partie exécution de la prestation).
 
@@ -46,8 +46,7 @@ Relecture par le formateur du rapport d'audit finalisé
 
 ## Livrables
 
-* Rapport d'audit répondant aux exigences du référentiel PASSI 
-
+* Rapport d'audit répondant aux exigences du référentiel PASSI.
 
 ## Critères de performance
 

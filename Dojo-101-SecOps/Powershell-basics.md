@@ -343,103 +343,7 @@ get-psdrive
 Get-ItemProperty -path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0
 ```
 
-désactivation des null sessions
-
-```powershell
-Set-ItemProperty registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters -name RestrictNullSessAccess -value 1
-Set-ItemProperty registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\LSA -name restrictAnonymous -Value 2
-```
-
-Rescriction NTLM
-
-```powershell
-New-ItemProperty -path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0 -name RestrictSendingNTLMTraffic -Value 2 -PropertyType "DWord" -ea SilentlyContinue
-Set-ItemProperty -path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0 -name RestrictSendingNTLMTraffic -Value 2
-```
-
-désactivation WDigest (désactivé par défaut on écrase juste la valeur si elle éxiste)
-
-```powershell
-Set-ItemProperty -Path 'registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest' -Name "UseLogonCredential" -Type DWord -Value 0 -ea SilentlyContinue
-```
-
-Configuration SMB
-
-```powershell
-get-SmbShare
-Set-SmbServerConfiguration -EnableSMB1Protocol $false -force
-Set-SmbClientConfiguration -RequireSecuritySignature $true -Force
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" -Name DisableCompression -Type DWORD -Value 1 -Force
-```
-
-Désactivation du protocole netbios
-
-```powershell
-$r = "HKLM:SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces" 
-Get-ChildItem $r |ForEach-Object{ Set-ItemProperty -Path "$r\$($_.pschildname)" -Name NetbiosOptions -Value 2 }
-```
-
-Désactivation du protocole LLMNR - DNS multicast
-
-```powershell
-New-Item "registry::HKEY_LOCAL_MACHINE\Software\policies\Microsoft\Windows NT\DNSClient" -ea SilentlyContinue
-New-ItemProperty -Path "registry::HKEY_LOCAL_MACHINE\Software\policies\Microsoft\Windows NT\DNSClient" -name "EnableMulticast" -Value 0 -PropertyType "DWord" -ea SilentlyContinue
-Set-ItemProperty -Path "registry::HKEY_LOCAL_MACHINE\Software\policies\Microsoft\Windows NT\DNSClient" -name "EnableMulticast" -Value 0
-```
-
-Désactivation du protocole WPAD
-
-```powershell
-New-ItemProperty -Path "registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad" -Name "WpadOverride" -Value 1 -PropertyType "DWord" -ea SilentlyContinue
-Set-ItemProperty -Path "registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad" -Name "WpadOverride" -Value 1
-```
-
-Suppréssion du PageFile lors de l’arret du systèm
-
-```powershell
-Set-ItemProperty -Path "registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -name ClearPageFileAtShutdown -Value 1
-```
-
-Désactivation du sous-sytème linux
-
-```powershell
-Disable-WindowsOptionalFeature -online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart -Remove
-```
-
-Désactivation du partage de connection SharedAccess
-
-```powershell
-Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess -Name "Start" -Type DWord -Value 4
-```
-
-Désactivation de WinRM
-
-```powershell
-Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinRM -Name "Start" -Type DWord -Value 4
-```
-
-désactivation RDP
-
-```powershell
-Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" –Value 1
-```
-
-configuration de l'UAC au niveau 3
-
-```powershell
-Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System -Name "ConsentPromptBehaviorAdmin" -Value 2 
-Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System -Name "PromptOnSecureDesktop" -Value 1
-```
-
-verification que le "always install with elevated" est désactivé
-
-```powershell
-remove-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Installer -name AlwaysInstallElevated -ea SilentlyContinue
-```
-
 ## Features
-
-désactivation de powershellv2
 
 ```powershell
 Disable-WindowsOptionalFeature -Online -FeatureName MicrosoftWindowsPowerShellV2 -NoRestart
@@ -451,34 +355,6 @@ Disable-WindowsOptionalFeature -Online -FeatureName MicrosoftWindowsPowerShellV2
 Get-NetFirewallProfile 
 Get-NetConnectionProfile 
 gcm *Firewall*
-```
-
-exemple avec suppression des règles firewall en doublon:
-
-```powershell
-Get-NetFirewallRule | select -Property DisplayName | % {
-    if ((Get-NetFirewallRule -DisplayName $_.DisplayName | measure).Count -gt 1) {
-        $r1 = (Get-NetFirewallRule -DisplayName $_.DisplayName)[0]
-        $r2 = (Get-NetFirewallRule -DisplayName $_.DisplayName)[1]
-        if ($null -eq (Compare-Object $r1 $r2 -Property Profile, Enabled, Direction, Action, Group)) {
-            if ($null -eq (Compare-Object ($r1 | Get-NetFirewallPortFilter) ($r2 | Get-NetFirewallPortFilter) -Property Protocol, LocalPort, RemotePort)) {
-                if ($null -eq (Compare-Object ($r1 | Get-NetFirewallAddressFilter) ($r2 | Get-NetFirewallAddressFilter) -Property RemoteAddress, LocalAddress)) {
-                    if ($null -eq (Compare-Object ($r1 | Get-NetFirewallApplicationFilter) ($r2 | Get-NetFirewallApplicationFilter) -Property Program )) {
-                        write-host "$r2" -ForegroundColor Cyan
-                        if ($null -eq (Compare-Object ($r1 | Get-NetFirewallServiceFilter) ($r2 | Get-NetFirewallServiceFilter) -Property Service )) {
-                            if ($null -eq (Compare-Object ($r1 | Get-NetFirewallInterfaceFilter) ($r2 | Get-NetFirewallInterfaceFilter) -Property InterfaceAlias )) {
-                                if ($null -eq (Compare-Object ($r1 | Get-NetFirewallSecurityFilter) ($r2 | Get-NetFirewallSecurityFilter) -Property LocalUser, Authentication, RemoteUser, RemoteMachine, Encryption )) {
-                                    $r2 
-                                    $r2 | Disable-NetFirewallRule -Confirm
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 ```
 
 ## Windows Defender

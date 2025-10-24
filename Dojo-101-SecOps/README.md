@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Les pertes mondiales imputables aux attaques informatiques dépassent les **1000 milliards/an** de dollars depuis 2020, ce qui représente plus de **1% du PIB mondial**
+Les pertes mondiales imputables aux attaques informatiques dépassent les **1000 milliards/an** de dollars **depuis 2020**, soit plus de **1% du PIB mondial**
 
 Depuis ce chiffre est en constante augmentation : ~*15%/an*
 
@@ -18,6 +18,22 @@ pie title Panorama Cybermenace 2023 ANSSI
     "EPA, EPIC (mission de service public)" : 4
     "Ministère" : 2
     "Autre" : 2
+```
+
+## Guerre Hybride
+
+Depuis 2022, le concept de **Guerre Hybride** permet de représenter la situation du cyberespace comme un théâtre d’opérations où s’entremêlent attaques informatiques, campagnes de désinformation, sabotage numérique et influence géopolitique
+
+```mermaid
+flowchart TD
+    A[Acteurs étatiques] -->|Cyberattaques| B[Infrastructures critiques]
+    A -->|Désinformation| C[Opinion publique]
+    A -->|Soutien indirect| D[Groupes armés non étatiques]
+    E[Acteurs non étatiques] -->|Hacktivisme| B
+    E -->|Propagande| C
+    C -->|Instabilité sociale| F[Affaiblissement de l'État]
+    B -->|Perturbation économique| F
+    D -->|Conflits locaux| F
 ```
 
 ## Les attaques les plus courantes
@@ -253,15 +269,15 @@ flowchart TD
 
 Il est obligatoire de :
 
-  * Recueillir l'accord préalable des clients.
+* Recueillir l'accord préalable des clients.
 
-  * Informer les clients de leurs droits d'accès, de rectification, d'opposition et de suppression des informations collectées.
+* Informer les clients de leurs droits d'accès, de rectification, d'opposition et de suppression des informations collectées.
 
-  * Veiller à la sécurité des systèmes d'information.
+* Veiller à la sécurité des systèmes d'information.
 
-  * Assurer la confidentialité des données.
+* Assurer la confidentialité des données.
 
-  * Indiquer une durée de conservation des données.
+* Indiquer une durée de conservation des données.
 
 le montant des sanctions pécuniaires peut s'élever jusqu'à **20 millions d'euros ou dans le cas d'une entreprise jusqu'à 4 % du chiffre d'affaires annuel mondial**
 
