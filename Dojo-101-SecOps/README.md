@@ -86,6 +86,8 @@ pie title Causes des Cyberattaques CESIN 2024
 
 * **Actifs** (Assets) : tout ce qui a de la valeur au sein du SI
 
+Source : [Dico ANSSI](https://cyber.gouv.fr/le-cyberdico)
+
 ## La surface d'attaque
 
 Tout ce que vous exposez à vos adversaires
@@ -130,7 +132,6 @@ quadrantChart
     Scan: [0.20, 0.34]
 ```
 
-
 ### les motivations des attaquants
 
 * **Gain** : monétisation des informations et/ou déni de service
@@ -149,7 +150,7 @@ quadrantChart
 
 ### Identification et évaluation
 
-* N° CVE : identifiant unique pour une vuln. [Nist NVD](https://nvd.nist.gov/)
+* N° CVE : identifiant unique pour une vuln. [MITRE CVE](https://www.cve.org/), [Nist NVD](https://nvd.nist.gov/)
 
 * Alternative au NVD : [ENISA](https://euvd.enisa.europa.eu/) ou encore [VulDB](https://vuldb.com/fr/)
 
@@ -167,7 +168,7 @@ Ce qu’on veut faire faire :
 « Pour aller à la gare : aller toujours tout droit, dès que vous voyez un panneau vert : tourner à droite et vous êtes arrivé »
 ```
 
-Ce qu'on code : 
+Ce qu'on code :
 
 ```python
 def AllerGare():
@@ -183,7 +184,7 @@ def AllerGare():
 Ce que la machine execute :
 
 ```Assembly
-ection .text
+section .text
 global _start
 _start:
     ; while not Arrivé:
@@ -215,7 +216,7 @@ flowchart TD
 ```
 
 * **Risque** = `Menace * Vulnérabilité * Impact`
-* Evalusation du **risque** : `Impact * Vraissemblance` ou `Gravité * Facilité d'exploitation`
+* Evaluation du **risque** : `Impact * Vraissemblance` ou `Gravité * Facilité d'exploitation`
 
 ## Critères de sécurité (DICP)
 
@@ -227,7 +228,7 @@ flowchart TD
 
 * **Preuve**, Tracabililité, Non-répudiation
 
-* **Authentitication** : L’authentification a pour but de vérifier l’identité dont une entité se réclame. ***La personne est bien celle qu'elle prétend être.***
+* **Authentification** : L’authentification a pour but de vérifier l’identité dont une entité se réclame. ***La personne est bien celle qu'elle prétend être.***
 
 ## Le STRIDE (les menaces plutôt que les DICP)
 
@@ -305,7 +306,7 @@ le montant des sanctions pécuniaires peut s'élever jusqu'à **20 millions d'eu
 
 * NIS2 : Network Information Security, qui concerne les opérateurs de services essentiels (OSE) et leurs Systèmes d'Information Essentiels (SIE)
 
-* CRA : Cyber Resilience Act, qui concerne les materiels, systèmes, logiciels, Cloud et IoT sur le marché Européen. 
+* CRA : Cyber Resilience Act, qui concerne les materiels, systèmes, logiciels, Cloud et IoT sur le marché Européen.
 
 * RGPD : Données personnelles
 
@@ -416,7 +417,7 @@ https://www.securite-sоlution.fr/login (« o » cyrillique)
 
 ### Quelques matériels liés au hacking
 
-* [Great Scott Gadgets Throwing Star LAN Tap Kit ](https://www.amazon.fr/Great-Scott-Gadgets-Throwing-Star/dp/B07GYWZPXG)
+* [Great Scott Gadgets Throwing Star LAN Tap Kit](https://www.amazon.fr/Great-Scott-Gadgets-Throwing-Star/dp/B07GYWZPXG)
 
 * [Rubber Ducky](https://shop.hak5.org/products/usb-rubber-ducky)
 

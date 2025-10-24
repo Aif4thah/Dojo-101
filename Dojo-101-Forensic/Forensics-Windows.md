@@ -75,27 +75,12 @@ C:\Users\Chase\Documents>.\procdump.exe -accepteula -ma <pid>
  | 7 |  Unlock |  This workstation was unlocked.|
  | 8 | NetworkCleartext | A user logged on to this computer from the network. The user’s password was passed to the authentication package in its unhashed form. The built-in authentication packages all hash credentials before sending them across the network. The credentials do not traverse the network in plaintext (also called cleartext).|
 
-## Windows Sniffing
-
-### wireshark in background
-
-```powershell
-stop-Process -name tshark
-cd 'C:\Program Files\Wireshark'
-$name = (new-guid).ToString()
-$name = "c:\test\${name}.pcap"
-.\tshark.exe -i "Wi-fi" -w $name
-```
-
-### packet monitor
-
-```powershell
-PktMon.exe
-```
-
 ### MS Office
 
-* outil d'analyse de macros : olevba, oledump
+outil d'analyse de macros :
+
+* olevba
+* oledump
 
 ## Dump de la SAM
 

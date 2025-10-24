@@ -1,4 +1,0 @@
-# objdump
-
-`objdump -d <fichier>`
-

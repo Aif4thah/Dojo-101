@@ -36,7 +36,7 @@ Pour chacune des vulnérabilités :
 
 * Décrire la vulnérabilité en une phrase
 
-* Citez des éléments d'infrastructure pouvant être concernés
+* Citez des éléments d'infrastructure pouvant être concernés et l'impact sur les critères DICP.
 
 * Trouvez, mettez à jour ou calculez le score base CVSS (dernière version)
 

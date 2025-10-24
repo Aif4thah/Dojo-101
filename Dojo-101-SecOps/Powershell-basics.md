@@ -466,7 +466,7 @@ function Get-NimporteQuoi
 appeler la fonction
 
 ```powershell
-Copier coller la fonction ou faire `. .\fichier.ps1`
+. .\fichier.ps1
 Help Get-NimporteQuoi
 Get-NimporteQuoi -parametre1 aaaaa -parametre2 bbbbb
 Get-NimporteQuoi

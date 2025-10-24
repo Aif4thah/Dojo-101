@@ -32,7 +32,7 @@
 * Créer une page de garde
 * Garder une Police simple et lisible.
 
-## Créerles figures
+## Créer les figures
 
 Une fois les sujets identifiés, commencer à réaliser les figures et à les positionner dans votre rapport.
 

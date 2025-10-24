@@ -33,7 +33,7 @@
 
 * [Download](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
 
-* Permets d'appliquer une **baseline** par GPO localement (même sans domaine AD, grâce à LGPO.exe) avec les recommandations de Microsoft. 
+* Permets d'appliquer une **baseline** par GPO localement (même sans domaine AD, grâce à LGPO.exe) avec les recommandations de Microsoft.
 
 * On peut ensuite **Auditer** en comparant la GPO actuelle et la GPO recommandée.
 
@@ -51,7 +51,7 @@
 
 * La **GPO** peut être comparée avec l' **effective policy** en place sur la machine locale.
 
-### Exemple pour un Windows 11 standalone 
+### Exemple pour un Windows 11 standalone
 
 * poser LGPO.exe dans `./Scripts/Tools/`
 
