@@ -9,11 +9,13 @@ Poids: 2
 
 ## Ressources
 
-* [Wireshark](https://www.wireshark.org/download.html)
-
 * [Gestes professionnels](https://github.com/Aif4thah/Dojo-101)
 
-Si besoin pour les requêtes HTTP et HTTPS
+* [Wireshark](https://www.wireshark.org/download.html)
+
+* [Frame IP](https://www.frameip.com/)
+
+* [Packet Safari](https://www.packetsafari.com/)
 
 * [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
 
@@ -33,7 +35,7 @@ Il vous est demandé de procéder à l'analyse des protocoles utilisés sur le r
 
 ### Questions
 
-0. Quels sont les `flags TCP` ?
+0. Quels sont les `flags TCP` ? à quoi servent-ils ?
 
 1. Capturer le processus `DORA` du protocole DHCP
 
@@ -77,7 +79,7 @@ Il vous est demandé de procéder à l'analyse des protocoles utilisés sur le r
 
 21. Capturer une `authentification WinRM` (Vous pouvez utiliser EvilWinRM si nécessaire côté client.), quel est le protocole d'authentification capturé ?
 
-22. Capturer une `authentification SSH` ou SFTP (mettre en place le service si nécessaire)
+22. Capturer une `authentification SSH` ou `SFTP` (mettre en place le service si nécessaire)
 
 23. Intercepter un `fichier au travers du protocole SMB`
 

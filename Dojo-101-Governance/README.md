@@ -12,7 +12,6 @@
 
 * [NIST NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)
 
-
 ### Points important PSSI
 
 1. politique de sécurité,
@@ -25,7 +24,6 @@
 8. gestion des incidents,
 9. sensibilisation et formation
 
-
 ### Lignes de maitrise
 
 1. Opérationnel (DSI)
@@ -33,10 +31,9 @@
 3. Contrôle (Comité d'Homologation)
 4. Contrôle externe
 
-
 ## La documentation en entreprise (concept anglo-saxon)
 
-### Mandatory 
+### Mandatory
 
 * Policies : General Management statement
 * Standards : Specific Mandatory Controls
@@ -46,7 +43,6 @@
 
 * Guidelines : Best Practices / Recommendations
 * Baselines : Minimal implementation
-
 
 ## Actifs
 
@@ -71,8 +67,7 @@ Dans la pratique, cette  classification est faite dans le cadre d'une stratégie
 | Classe 1 | SI sensible / DR, connecté à Internet au travers d’une passerelle sécurisée (rupture de flux entre deux dispositifs de filtrage, produits qualifiés) satisfaisant les exigences de sécurité définies dans l’II 901. |
 | Classe 2 | SI sensible / DR physiquement isolé d’Internet. |
 
-*DR : Diffusion Restreinte*
-
+DR : *Diffusion Restreinte*
 
 ## Autorités d'Homologation
 
@@ -86,7 +81,6 @@ Dans la pratique, cette  classification est faite dans le cadre d'une stratégie
 | IGI 1337 | Pas d'exigence |
 | RGS | Pas d'exigence |
 | LPM | Pas d'exigence |
-
 
 ## Les responsabilités dans un contexte Cloud
 
@@ -112,10 +106,7 @@ Répartition des responsabilités entre le fournisseur de services cloud (CSP):
 | **Stockage** | CSP | CSP | CSP |
 | **Réseau** | CSP | CSP | CSP |
 
-
 ## ISO 27001
-
-### Processus Global
 
 ```mermaid
 flowchart TD
@@ -155,12 +146,40 @@ flowchart TD
 | Notification des incidents  | Art. 11 | Réponse aux incidents | A.5.23    |
 | Minimisation des données    | Art. 10.3e   | Minimisation des données    | A.8.3|
 
+## CRA
 
+Exigences techniques
 
+| Id | Exigence|
+|----|-----|
+| 1  | Conception sécurisée |
+| 2  | Protection contre accès non autorisé |
+| 3  | Contrôle d’authentification  |
+| 4  | Protection des données  |
+| 5  | Limitation des attaques |
+| 6  | Protection contre les injections  |
+| 7  | Sécurité des communications  |
+| 8  | Sécurité des mises à jour    |
+| 9  | Journalisation des événements|
+| 10 | Protection contre les altérations |
+| 11 | Sécurité par défaut|
+| 12 | Séparation des privilèges    |
+| 13 | Résilience aux défaillances  |
+
+Exigences de vulnérabilité  
+
+| Id | Exigence |
+|----|-----|
+| 1  | Processus de gestion des vulnérabilités |
+| 2  | Surveillance continue |
+| 3  | Réaction rapide |
+| 4  | Mises à jour de sécurité|
+| 5  | Notification des incidents à l’ENISA sous 24h |
+| 6  | Communication avec les utilisateurs |
+| 7  | Canal de divulgation pour les chercheurs en sécurité|
+| 8  | Documentation technique à jour |
 
 ## EBIOS RM
-
-### Processus Global
 
 ```mermaid
 flowchart TD
@@ -224,29 +243,27 @@ flowchart TD
 
 Exemple de niveau de risque en fonction de la gravité (ordonnée) et de la vraisemblance (abscisse):
 
-| | Faible | Moyenne | Élevée | Critique |
+| Faible | Moyenne | Élevée | Critique |
 | --- | --- | --- | --- | --- |
 | **Très improbable** | Faible | Faible | Moyen | Élevé |
 | **Improbable** | Faible | Moyen | Élevé | Très élevé |
 | **Probable** | Moyen | Élevé | Très élevé | Critique |
 | **Très probable** | Élevé | Très élevé | Critique | Critique |
 
-
 * écarter : par exemple, l'arrêt d'un service obsolète
 * atténuer (mitigate) : par exemple, la mise en place d'un Firewall applicatif (WAF)
 * transférer : par exemple, la migration vers un service cloud qui s'engage contractuellement à couvrir ce risque
 * accepter : laisser le risque tel quel est assumer l'impact d'une exploitation par un attaquant
 
-
 ## Les audits de sécurité
 
 Les activités couvertes par le référentiel PASSI :
 
-- audit d’architecture (ARCHI);
-- audit de configuration (CONF);
-- audit de code source (CODE);
-- test d’intrusion (PENTEST);
-- audit organisationnel et physique (ORGAPHY)
+* audit d’architecture (ARCHI);
+* audit de configuration (CONF);
+* audit de code source (CODE);
+* test d’intrusion (PENTEST);
+* audit organisationnel et physique (ORGAPHY)
 
 [Source PASSI](https://cyber.gouv.fr/actualites/appel-public-commentaires-sur-la-mise-jour-du-referentiel-passi)
 
@@ -276,7 +293,6 @@ Juridique :
 * Nationalité des fonds de capitaux
 * Montage juridique de la société
 * Nationalité des produits et services utilisés
-
 
 ## NIST RMF (Risk Management Framework)
 
