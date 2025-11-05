@@ -58,18 +58,19 @@ Relecture par le formateur du rapport d'audit finalisé
 
 Participer à la mesure et à l’analyse du niveau de sécurité de l’infrastructure.
 
-     - Pertinence et preuve des vulnérabilités identifiées
-     - Justesse de l’évaluation de la criticité et gravité
+* Pertinence et preuve des vulnérabilités identifiées
+* Justesse de l’évaluation de la criticité et gravité
 
 Participer à l’élaboration et à la mise en œuvre de la politique de sécurité
 
-     - Pertinence des préconisations
+* Pertinence des préconisations
 
 Communiquer par écrit avec les professionnels et les utilisateurs de l’informatique.
 
-    - Synthèse managériale compréhensible pour un personnel non technique
-    - détails des vulnérabilités clair et technique
-    - Lisibilité globale du document
+* Synthèse managériale compréhensible pour un personnel non technique
+* Tableau de synthèse des vulnérabilités
+* Détails des vulnérabilités clair et technique
+* Lisibilité globale du document
 
 ## Pour finir
 
