@@ -85,9 +85,6 @@ Il vous est demandé de procéder à l'analyse des protocoles utilisés sur le r
 
 24. Comment proteger l'`authenticité` et la `confidentialité` d'un partage SMB ?
 
-> [!TIP]
-> Bonus : **Déchiffrer le traffic TLS** en important la clé privée du certificat dans Wireshark et **reconstituer le fichier** qui à transité sur le réseau à l'aide de Wireshark
-
 ## Modalités pédagogiques
 
 Binôme ou seul (au choix)
