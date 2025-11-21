@@ -37,13 +37,13 @@ flowchart TD
 
 ## Bonnes pratiques de sécurité
 
-* Prevenir/limiter tout montage du système de fichier de l'hôte
+* Prévenir/limiter tout montage du système de fichier de l'hôte
 
 * Ne jamais monter/mapper `/var/run/docker.sock` avec un container
 
-* Ne pas utiliser l'option `--privileged`, éviter l'ajout de capabilities aux containers, banir `SYS_ADMIN` et `SYS_ROOT`
+* Ne pas utiliser l'option `--privileged`, éviter l'ajout de capabilities aux containers, bannir `SYS_ADMIN` et `SYS_ROOT`
 
-* Ne pas être `root` dans un container (car privilèges elevés aussi sur l'hôte du fait du partage du noyeau)
+* Ne pas être `root` dans un container (car privilèges élevés aussi sur l'hôte du fait du partage du noyau)
 
 * Utiliser docker en mode `rootless`
 
