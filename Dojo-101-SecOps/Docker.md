@@ -5,18 +5,51 @@
 ```mermaid
 flowchart TD
     A[Utilisateur] --> B[Docker CLI]
-    B --> C[Docker Engine]
-    C --> D[Image Docker]
-    D --> E[Conteneur]
-    E --> F[Application]
-    E --> G[Librairies]
-    E --> H[Fichiers système]
-    C --> I[Système Hôte]
-    I --> J[OS]
-    I --> K[Réseau]
-    I --> L[Stockage]
-    J --> G
+    B --> C[Socket /var/run/docker.sock]
+    C --> D[dockerd]
+    D --> E[containerd]
+    E --> F[runc]
+
+    D --> G[Image Docker]
+    G --> H[Conteneur]
+
+    H --> I[Application]
+    H --> J[Librairies]
+    H --> K[Fichiers système]
+
+    D --> L[Système Hôte]
+    L --> M[OS]
+    L --> N[Réseau]
+    L --> O[Stockage]
+
+    M --> J
 ```
+
+## Security Tools
+
+* Scan lors du build : [Docker Bench Security](https://github.com/docker/docker-bench-security)
+
+* Scan pour escalade de privs [DeepCE](https://github.com/stealthcopter/deepce)
+
+* Scan d'image : [Dive](https://github.com/wagoodman/dive)
+
+* recherche de CVE : [Trivy](https://trivy.dev/latest/)
+
+## Bonnes pratiques de sécurité
+
+* Prevenir/limiter tout montage du système de fichier de l'hôte
+
+* Ne jamais monter/mapper `/var/run/docker.sock` avec un container
+
+* Ne pas utiliser l'option `--privileged`, éviter l'ajout de capabilities aux containers, banir `SYS_ADMIN` et `SYS_ROOT`
+
+* Ne pas être `root` dans un container (car privilèges elevés aussi sur l'hôte du fait du partage du noyeau)
+
+* Utiliser docker en mode `rootless`
+
+## Misc & GUI
+
+* [Portainer](https://www.portainer.io/)
 
 ## Installation de docker engine sous ubuntu / debian
 

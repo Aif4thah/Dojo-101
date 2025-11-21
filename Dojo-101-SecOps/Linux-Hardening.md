@@ -27,15 +27,12 @@ lynis audit system
 * propose également des modes "pentest" et "forensic"
 * propose de l'audit docker.
 
-
-
 ### Nuclei
 
 * [Nuclei](https://github.com/projectdiscovery/nuclei)
 
 * [Contient des templates de configuration pour le scan](https://github.com/projectdiscovery/nuclei-templates/tree/main/code/privilege-escalation/linux)
 * Implémentation et personnalisation des scans possible
-
 
 ## Hardening IaC
 
@@ -46,5 +43,3 @@ lynis audit system
 * [Guide ANSSI](https://cyber.gouv.fr/publications/recommandations-de-securite-relatives-un-systeme-gnulinux)
 * [Privesc](https://github.com/carlospolop/PEASS-ng)
 * [Privesc bins](https://gtfobins.github.io/)
-
-

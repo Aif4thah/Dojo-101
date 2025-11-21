@@ -79,6 +79,7 @@ C:\Users\Chase\Documents>.\procdump.exe -accepteula -ma <pid>
 
 outil d'analyse de macros :
 
+* [oletools](https://github.com/decalage2/oletools)
 * olevba
 * oledump
 

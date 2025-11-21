@@ -73,7 +73,7 @@ Il vous est demandé de procéder à l'analyse des protocoles utilisés sur le r
 
 18. Capturer une authentification `Kerberos` (mettre en place le service si nécessaire), identifier l'`AS_REQ`, `AS_REP` et les messages suivants.
 
-19. Capturer une `authentification RDP` (mettre en place le service si nécessaire), quel est le protocole d'authentification capturé ?
+19. Capturer une `authentification RDP` (mettre en place le service si nécessaire), quel est le protocole d'authentification capturé (`Kerberos` ou `NTLM`) ?
 
 20. Quelles sont les attaques connues sur `NetLM` ?
 
