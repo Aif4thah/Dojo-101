@@ -187,29 +187,29 @@ flowchart TD
     0[Parties Prenantes]
     1{Valeurs métiers}
     2[Événements Redoutés]
-    1-->2
+    1-->| en lien avec|2
 
     3[Sources de risques]
     4[Objectifs Visés]
     5[Couples SROV]
-    3-->5
-    4-->5
+    3-->|Ressources|5
+    4-->|Motivations|5
     5-->0
-    1<-->|en lien avec|5
+    1-->|en lien avec|5
 
     6[Biens supports]
-    1-->6
+    1-->|s'appuie sur|6
     7[Vulnérabilités]
-    7-->6
-    6-->8
+    7-->|contenues dans|6
+    6-->|Chemins opérationnels|8
 
     8[/Scénarios Opérationnels/]
     9[\Scénarios Stratégiques\]
     5-->|Pertinence|8
     5-->|Pertinence|9
-    0-->|Chemins d'attaques|9
+    0-->|Chemins stratégiques|9
     2-->|Gravité|9
-    9-->|Chemins d'attaques|8
+    9-->|Chemins opérationnels|8
 
     10{Scénarios de risques}
     9-->|Gravité|10
@@ -221,8 +221,8 @@ flowchart TD
     20-->|Atténue le Risque|10
 
     21(Etat de la menace)
-    21-->3
-    21-->4
+    21-->|Menaces connues|3
+    21-->|Activités connues|4
 ```
 
 ### Ateliers
@@ -241,19 +241,23 @@ flowchart TD
 
 ### Le traitement du risque
 
-Exemple de niveau de risque en fonction de la gravité (ordonnée) et de la vraisemblance (abscisse):
-
-| Gravité / Vraissemblance | Faible | Moyenne | Élevée | Critique |
-|-------------------------|--------|---------|--------|----------|
-| **Très improbable** | Faible | Faible | Moyen | Élevé |
-| **Improbable** | Faible | Moyen | Élevé | Très élevé |
-| **Probable** | Moyen | Élevé | Très élevé | Critique |
-| **Très probable** | Élevé | Très élevé | Critique | Critique |
-
 * écarter : par exemple, l'arrêt d'un service obsolète
 * atténuer (mitigate) : par exemple, la mise en place d'un Firewall applicatif (WAF)
 * transférer : par exemple, la migration vers un service cloud qui s'engage contractuellement à couvrir ce risque
 * accepter : laisser le risque tel quel est assumer l'impact d'une exploitation par un attaquant
+
+Exemple de matrice de risque :
+
+| Vraisemblance / Gravité | Faible | Moyenne | Élevée | Critique |
+|-------------------------|--------|---------|--------|-----------|
+| **Très probable**       | 🟠 | 🔴 | 🔴 | 🔴 |
+| **Probable**            | 🟠 | 🟠 | 🔴 | 🔴 |
+| **Improbable**          | 🟢 | 🟠 | 🟠 | 🔴 |
+| **Très improbable**     | 🟢 | 🟢 | 🟠 | 🟠 |
+
+* 🟢 Moyen
+* 🟠 Élevé
+* 🔴 Critique
 
 ## Les audits de sécurité
 
