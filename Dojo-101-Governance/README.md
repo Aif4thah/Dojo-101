@@ -243,8 +243,8 @@ flowchart TD
 
 Exemple de niveau de risque en fonction de la gravité (ordonnée) et de la vraisemblance (abscisse):
 
-| Faible | Moyenne | Élevée | Critique |
-| --- | --- | --- | --- | --- |
+| gravité / Vraissemblance | Faible | Moyenne | Élevée | Critique |
+||-------------------------|--------|---------|--------|----------|
 | **Très improbable** | Faible | Faible | Moyen | Élevé |
 | **Improbable** | Faible | Moyen | Élevé | Très élevé |
 | **Probable** | Moyen | Élevé | Très élevé | Critique |
