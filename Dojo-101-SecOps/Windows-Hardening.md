@@ -82,20 +82,19 @@ Import-Module .\HardeningKitty.psm1
 Mode audit :
 
 ```powershell
-Invoke-HardeningKitty -Mode Audit -Log -Report
+Invoke-HardeningKitty -Mode Audit -FileFindingList "./lists/finding_list_msft_security_baseline_windows_11_25h2_machine.csv" -Log -Report
 ```
 
 Backup avant application (fichier list à mettre à jour avant d'éxecuter le script) :
 
 ```powershell
-Invoke-HardeningKitty -Mode Config -Backup -BackupFile ".\Backup_$($env:COMPUTERNAME)_$(Get-Date -Format yyyyMMdd-hhmm)_Machine.csv" -FileFindingList "./lists/finding_list_msft_security_baseline_windows_11_24h2_user.csv"
-Invoke-HardeningKitty -Mode Config -Backup -BackupFile ".\Backup_$($env:COMPUTERNAME)_$(Get-Date -Format yyyyMMdd-hhmm)_User.csv" -FileFindingList "./lists/finding_list_msft_security_baseline_windows_11_24h2_user.csv"
+Invoke-HardeningKitty -Mode Config -Backup -BackupFile ".\Backup_$($env:COMPUTERNAME)_$(Get-Date -Format yyyyMMdd-hhmm)_Machine.csv" -FileFindingList "./lists/finding_list_msft_security_baseline_windows_11_24h2_machine.csv"
 ```
 
 Durcissement :
 
 ```powershell
-Invoke-HardeningKitty -Mode HailMary -FileFindingList "./lists/finding_list_msft_security_baseline_windows_11_24h2_user.csv" -Log -Report
+Invoke-HardeningKitty -Mode HailMary -FileFindingList "./lists/finding_list_msft_security_baseline_windows_11_25h2_machine.csv" -Log -Report
 ```
 
 ## PingCastle
