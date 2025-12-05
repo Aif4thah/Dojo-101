@@ -51,7 +51,13 @@ flowchart TD
 
 * [Portainer](https://www.portainer.io/)
 
-## Installation de docker engine sous ubuntu / debian
+## Installation de docker engine
+
+```sh
+apt install docker.io -y
+```
+
+## Installation depuis l'image officiel de l'éditeur
 
 [documentation](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 

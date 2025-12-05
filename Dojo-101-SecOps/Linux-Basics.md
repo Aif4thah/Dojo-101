@@ -23,8 +23,16 @@ loadkeys fr
 
 ## misc
 
+Quelques tools pour pouvoir bosser:
+
+> [!WARNING]
+> Attention certains outils peuvent être interdit en production et se retourner contre vous en cas de compromission.
+
 ```sh
-apt install binutils net-tools -y
+snap install vscodium --classic
+apt install -y git binutils net-tools dnsutils chromium-browser wireshark
+apt install -y nmap ffuf hydra john sqlmap nikto aircrack-ng netcat-openbsd
+snap install zaproxy --classic
 ```
 
 ## environnement
