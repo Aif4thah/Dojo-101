@@ -29,10 +29,11 @@ Quelques tools pour pouvoir bosser:
 > Attention certains outils peuvent être interdit en production et se retourner contre vous en cas de compromission.
 
 ```sh
-snap install vscodium --classic
+snap install codium --classic
 apt install -y git binutils net-tools dnsutils chromium-browser wireshark
 apt install -y nmap ffuf hydra john sqlmap nikto aircrack-ng netcat-openbsd
 snap install zaproxy --classic
+snap install impacket
 ```
 
 ## environnement
