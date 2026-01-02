@@ -30,7 +30,7 @@ Quelques tools pour pouvoir bosser:
 
 ```sh
 snap install codium --classic
-apt install -y git binutils net-tools dnsutils chromium-browser wireshark
+apt install -y git binutils net-tools dnsutils chromium-browser wireshark jq yq
 apt install -y nmap ffuf hydra john sqlmap nikto aircrack-ng netcat-openbsd
 snap install zaproxy --classic
 snap install impacket

@@ -3,6 +3,7 @@
 ## ressources
 
 * [Guide ANSSI](https://cyber.gouv.fr/publications/recommandations-de-securite-pour-un-systeme-dia-generative)
+* [OWASP LLM TOP 10](https://genai.owasp.org/llm-top-10/)
 
 ## Concepts
 
@@ -33,7 +34,7 @@
 
 ## Apprentissages
 
-L'Apprentissage se fait à partir d'une knowledge base(KB):
+L'Apprentissage se fait à partir d'une `knowledge base(KB)`:
 
 * soit l'IA réapprends totalement le KB
 * soit on untilise le `fine tuning` pour mettre à jour le KB
@@ -41,10 +42,11 @@ L'Apprentissage se fait à partir d'une knowledge base(KB):
 ## Attaques et vulnérabilités
 
 * Porter atteinte aux Critères D.I.C.T.
-* Injections classiques (Saisies utilisateurs non nettoyées, XSS, CSRF prompt injection, etc.)
+* Injection de requêtes, directement dans le prompt ou via un contenu externe (sites et fichiers malveillants).
+* Injections classiques (Saisies utilisateurs non nettoyées, XSS, CSRF prompt injection, etc.).
 * Infection,  corruption du modèle, data poisonning, Injection de contexte. Par exemple : faire lire au serveur le contenu d'un fichier sensible ou malveillant qui sera ajouté au modèle et modifiera les réponses de l'IA.
 * Manipulation du modèle / fonctionnalité non prévue. Par exemple faire compléter des mots ou des listes, jusqu'a obtenir des informations ou un comportement non prévu par le modèle.
-* Fuite de données sensibles ou protegées du fait du Modèle ou de l'absence de restriction
+* Fuite de données sensibles ou protegées du fait du Modèle ou de l'absence de restriction.
 
 ### protection du modèle pour des requêtes éfficaces
 
