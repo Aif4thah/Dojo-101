@@ -24,7 +24,6 @@
 * [Governance](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Governance)
 
 ```mermaid
-%%{ init: { "theme": "forest" } }%%
 mindmap
   root((**DOJO-101**))
 
@@ -38,33 +37,22 @@ mindmap
         DAST
         STRIDE
         CICD
-        Code
-        Crypto
         IA
 
     **SecOps**
-        Hardening
-        Systems
+        OS Hardening
         IaC
         Cloud
-        Firewall
-        VPN
-        PKI
-        PGP
 
     **RF**
         TEMPEST
         SIGINT
-        Wifi
-        RFID
-        Bluetooth
+        Wireless
         Satellites
 
     **Pentest**
-        OSINT
         Recon
         Exploits
-        Payloads
         PrivEsc
         Pivot
 
