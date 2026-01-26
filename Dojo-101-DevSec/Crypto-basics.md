@@ -280,9 +280,20 @@ Le code de l’application, lorsque disponible, peut ensuite être passé en rev
 | Brute force attack | L’auditeur essaie toutes les combinaisons possibles de clés jusqu’à trouver la bonne. |
 | Side-channel attack | L’auditeur exploite des informations physiques (comme le temps d’exécution, la consommation d’énergie) pour trouver la clé de chiffrement. |
 
-## exemple de chiffrement post-quantique
+## Post-Quantique (PQ)
 
-[SPHINCS+ pypcx](https://github.com/sphincs/pyspx)
+| Concept | Définition courte | Exemple d’algos |
+|--------|-------------------|------------------|
+| **PQC (pur)** | Algorithmes résistants au quantique, utilisés seuls | Kyber, Dilithium, Falcon, SPHINCS+ |
+| **Hybride PQC** | Combinaison d’un algo classique + un algo PQC | ECDH + Kyber, RSA + Dilithium |
+
+### Signature
+
+* [SPHINCS+ pypcx](https://github.com/sphincs/pyspx)
+
+* [sphincsplus](https://github.com/sphincs/sphincsplus)
+
+Exemple d'algo `SPHINCS+ SHAKE‑128f` :
 
 ```python
 import pyspx.shake_128f as sphincs
@@ -297,3 +308,7 @@ message = b"<message>"
 signature = sphincs.sign(message, secret_key)
 sphincs.verify(message, signature, public_key)
 ```
+
+### Key Exchange
+
+* [ML-KEM-512 (ex-Kyber)](https://csrc.nist.gov/pubs/fips/203/final)
