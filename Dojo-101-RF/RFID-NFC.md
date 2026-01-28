@@ -73,6 +73,8 @@
 
 * MITM
 
+> [!TIP]
+> Une détection Anti-Copy ou Magic Check" est présente sur les lecteurs modernes type Vigik, Intratone, Comelit pour repérer les badges dits "Magic" (les badges chinois UID changeables).
 
 Fonctionnement du Mifare Classic : 
 

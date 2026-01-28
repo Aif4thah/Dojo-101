@@ -55,6 +55,10 @@ L'Apprentissage se fait à partir d'une `knowledge base(KB)`:
 * rester en anglais :  `act as <...>`
 * Donner des tâches `1. <...>, 2. <...>, 3. <...>`
 
+## libs et IA locales
+
+* [Ollama](https://docs.ollama.com/)
+
 ## Mistral AI
 
 * [site MISTRAL AI](https://mistral.ai/)

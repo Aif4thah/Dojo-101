@@ -1,4 +1,4 @@
-# HackRF
+# HackRF One
 
 * [Github project](https://github.com/greatscottgadgets/hackrf)
 
@@ -14,12 +14,11 @@
 | Gamme de Fréquences | 1-6000Mhz |
 | Échantillonage CAN | 20 Msps 8 bits |
 
-
 ## Leds
 
 When HackRF One is plugged in to a USB host, four LEDs should turn on: 3V3, 1V8, RF, and USB. 
 * The 3V3 LED indicates that the primary internal power supply is working properly.
-* The 1V8 and RF LEDs indicate that firmware is running and has switched on additional internal power supplies. 
+* The 1V8 and RF LEDs indicate that firmware is running and has switched on additional internal power supplies.
 * The USB LED indicates that the HackRF One is communicating with the host over USB.
 * The RX and TX LEDs indicate that a receive or transmit operation is currently in progress.
 
@@ -109,28 +108,12 @@ exemple avec ampli (a) et ampli vga (x):
 hackrf_transfer -R -a 1 -x 32 -s 20000000 -f 2441000000 -t test.cs8
 ```
 
-## Reception avec SDR# (GUI sous Windows)
+### Reception avec SDR# (GUI sous Windows)
 
 [SDR#](https://airspy.com/download/)
 
-## Emission avec SoapySDR API from Pothos SDR
+## Autres librairies et Tools Linux
 
-sélectionner le hackrf dans les propriétés de SoapySDR:
-
-Device Args : 
-```json
-{"driver":"hackrf"}
-```
-
-## Librairies python
-
-[pyhackRF](https://github.com/dressel/pyhackrf/tree/master#quick-example)
-
-## Radioconda (GNU Radio)
-
-installation Windows :
-
-1. [release from repo](https://github.com/ryanvolz/radioconda)
-2. Lancer GNU Radio Companion depuis le menu windows
-
-
+* [GNU Radio](https://www.gnuradio.org/)
+* [SDR Angel](https://github.com/f4exb/sdrangel)
+* [Lib python : pyhackRF](https://github.com/dressel/pyhackrf/tree/master#quick-example)
