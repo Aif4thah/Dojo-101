@@ -21,9 +21,7 @@ setxkbmap fr  #ne marche que lorsque X est lancé
 loadkeys fr
 ```
 
-## misc
-
-Quelques tools pour pouvoir bosser:
+## Outillage Sécu
 
 > [!WARNING]
 > Attention certains outils peuvent être interdit en production et se retourner contre vous en cas de compromission.
@@ -36,6 +34,19 @@ apt install -y nmap ffuf hydra john sqlmap nikto aircrack-ng netcat-openbsd
 snap install zaproxy --classic
 snap install impacket
 snap install amass
+apt install -y pipx python3-pip python3-venv
+apt install ettercap-graphical -y && echo 1 | tee /proc/sys/net/ipv4/ip_forward
+```
+
+Pour utiliser un tool python et gérer correctement les dépendances de l'OS il faut utiliser pipx ou les venv.
+
+Exemple avec mitm6
+
+```sh
+python3 -m venv mitm6-env
+source mitm6-env/bin/activate
+pip install mitm6
+./mitm6-env/bin/mitm6 -i wlp2s0
 ```
 
 ## environnement
