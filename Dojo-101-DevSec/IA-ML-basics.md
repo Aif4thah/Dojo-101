@@ -58,12 +58,17 @@ L'Apprentissage se fait à partir d'une `knowledge base(KB)`:
 ## libs et IA locales
 
 * [Ollama](https://docs.ollama.com/)
+* [PentestAgent](https://github.com/GH05TCREW/pentestagent)
 
 ## Mistral AI
 
 * [site MISTRAL AI](https://mistral.ai/)
 * [Le Chat Mistral](https://chat.mistral.ai/chat)
 * API facturée à l'usage ou en auto hébergée. Abonement pour "Le chat".
+
+## Claude
+
+* [Claude](https://claude.ai/)
 
 ## Lumo - IA proton
 
@@ -77,11 +82,10 @@ L'Apprentissage se fait à partir d'une `knowledge base(KB)`:
 * Faire vérifier un bout de code
 * toujours besoin de vérifier les infos
 
-### KaliGPT
+### Agent de pentest
 
-* Assistant pour les CTF et les pentests
-* Pas besoin de préciser le contexte "sécu technique" car déjà défini ;
-* mais pas forcément adapté pour un accompagnement ou une conformité à un Guide type ANSSI
+* [KaliGPT - agent ChatGPT](https://chatgpt.com/)
+* [Strix](https://www.strix.ai/)
 
 ### Copilot
 
