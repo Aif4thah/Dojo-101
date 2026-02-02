@@ -76,16 +76,14 @@ L'Apprentissage se fait à partir d'une `knowledge base(KB)`:
 * [Lumo](https://lumo.proton.me/u/2/)
 * [Privacy Policy](https://proton.me/support/lumo-privacy)
 
-## Chat GPT - OpenAI & Microsoft - Copilot
-
-* Questions generalistes
-* Faire vérifier un bout de code
-* toujours besoin de vérifier les infos
-
 ### Agent de pentest
 
 * [KaliGPT - agent ChatGPT](https://chatgpt.com/)
 * [Strix](https://www.strix.ai/)
+
+### Misc
+
+* [OpenClaw](https://openclaw.ai/)
 
 ### Copilot
 
