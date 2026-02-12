@@ -27,9 +27,13 @@ loadkeys fr
 > Attention certains outils peuvent être interdit en production et se retourner contre vous en cas de compromission.
 
 ```sh
+# ssh server
+apt install openssh-server -y && systemctl enable ssh && systemctl start ssh
+# admin tools
 snap install curl
 snap install codium --classic
 apt install -y git binutils net-tools dnsutils chromium-browser wireshark jq yq dislocker
+# secu tools
 apt install -y nmap ffuf hydra john sqlmap nikto aircrack-ng netcat-openbsd
 snap install zaproxy --classic
 snap install impacket

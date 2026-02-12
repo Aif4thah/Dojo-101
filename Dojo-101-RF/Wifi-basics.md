@@ -18,7 +18,6 @@
 
 * [ESP32 Marauder](https://github.com/justcallmekoko/ESP32Marauder)
 
-
 ## Definitions
 
 | Terme      | Signification |
@@ -55,8 +54,6 @@ FHSS : Frequency Hopping Spread Spectrum
 > [!IMPORTANT]  
 > Attention à WPA3-personal, censé renforcer WPA2, certaines vulnérabilités sont connues via le protocole SAE. (ex : CertID VU871675, CVE-2019-9494, CVE-2019-9494, CertID VU871675)
 
-
-
 ## Standards
 
 | Standard     | Fréquence    | Débit maximal théorique | Portée maximale | Année d'introduction |
@@ -83,8 +80,6 @@ Connaitre le lien canal-fréquence permet d'utiliser des outils software defined
 | 5 GHz | 22 | 20 MHz |
 
 ### valeurs
-
-
 
 | id | Freq (GHz) |
 |----|------|
@@ -130,7 +125,6 @@ Connaitre le lien canal-fréquence permet d'utiliser des outils software defined
 
 ## Principales attaques
 
-
 * Deauth pour le Deni de service ou capture de hanshakes
 
 * Rogue AP, Evil Twin (Clone) pour la mise en place d'un MITM
@@ -138,7 +132,6 @@ Connaitre le lien canal-fréquence permet d'utiliser des outils software defined
 * Captures Handshakes pour cracker le mot de passe
 
 * PMKID (attaques similaires au handshake permettant le brute-force offline)
-
 
 ## WarDraving
 
@@ -149,7 +142,6 @@ Connaitre le lien canal-fréquence permet d'utiliser des outils software defined
 ## Le mode monitor
 
 Permets la capture et l'analyse du trafic wifi
-
 
 ### Linux
 
@@ -217,14 +209,11 @@ netsh wlan show profiles
 netsh wlan show profiles name=<SSID>
 ```
 
-
 ## Kismet
 
 Supporte à la fois les `cartes wifi monitorables` et les materiels `SDR` comme le HackRF one.
 
-
-
-## Aicrack-ng 
+## Aicrack-ng
 
 ### Hidden AP
 
@@ -232,13 +221,23 @@ Supporte à la fois les `cartes wifi monitorables` et les materiels `SDR` comme 
 
 * *Alternative pour redescendre sur les couches basses* : on peut aussi procéder par analyse de spectre et antenne directionnelle pour trouver la source d'émission. cf. HackRF.
 
-### capture quick and dirty
+### Ecoute en mode monitor
 
-`airodump-ng wlan0mon`
+Sur la bande 2.4 GHz
 
-### capture dans un fichier :
+```sh
+airodump-ng <interface> --band bg
+```
 
-Cette méthode offre notamment la possibilité de capturer les handshakes WPA2 en vue d'une attaque par force brute. 
+Sur du 5 GHz
+
+```sh
+airodump-ng <interface> --band a
+```
+
+### capture dans un fichier
+
+Cette méthode offre notamment la possibilité de capturer les handshakes WPA2 en vue d'une attaque par force brute.
 
 ```sh
 airodump-ng --essid <nom AP> -c <channel> -w capture-file wlan1
