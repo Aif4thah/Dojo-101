@@ -4,6 +4,7 @@
 
 * [Guide ANSSI](https://cyber.gouv.fr/publications/recommandations-de-securite-pour-un-systeme-dia-generative)
 * [OWASP LLM TOP 10](https://genai.owasp.org/llm-top-10/)
+* [CERT FR 2026 CTI](https://www.cert.ssi.gouv.fr/uploads/CERTFR-2026-CTI-001.pdf)
 
 ## Concepts
 
