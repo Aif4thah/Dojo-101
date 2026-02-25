@@ -262,7 +262,9 @@ aircrack-ng.exe -w wordlist.txt file.cap
 
 ### Rogue AP tools
 
-* [wifipumpkin3](https://github.com/P0cL4bs/wifipumpkin3)
+* [WifiPumpkin3](https://github.com/P0cL4bs/wifipumpkin3)
+
+* [Wifiphisher](https://github.com/wifiphisher/wifiphisher)
 
 ## Antenne Wifi directionnelle
 
