@@ -452,7 +452,7 @@ jobs:
 ```rust
 let x = 5; // immuable
 let mut y = 5; // la valeur pourra etre modifiée
-let z = &x; // y est une référence à x, utilise la valeurs sans en prendre la possession
+let z = &x; // y est une référence à x via &, utilise la valeurs sans en prendre la possession (Ownership)
 ```
 
 ## lever une exception
