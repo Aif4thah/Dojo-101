@@ -4,6 +4,8 @@
 
 * [Aircrack-ng](https://www.aircrack-ng.org/downloads.html)
 
+* [Bettercap](https://github.com/bettercap/bettercap)
+
 * [Acrylic Wifi](https://www.acrylicwifi.com/)
 
 * [Kismet](https://www.kismetwireless.net/)
@@ -260,13 +262,17 @@ sudo aireplay-ng --deauth 30 -a <mac AP> -c <mac Client> wlan1
 aircrack-ng.exe -w wordlist.txt file.cap
 ```
 
-### Rogue AP tools
+### PMKID
+
+Outil : `hcxtools` ou `Bettercap` (wifi.assoc all).
+
+### Rogue AP
+
+Alternative à `BetterCap` :
 
 * [WifiPumpkin3](https://github.com/P0cL4bs/wifipumpkin3)
 
 * [Wifiphisher](https://github.com/wifiphisher/wifiphisher)
-
-* [Bettercap](https://github.com/bettercap/bettercap)
 
 ## Antenne Wifi directionnelle
 
