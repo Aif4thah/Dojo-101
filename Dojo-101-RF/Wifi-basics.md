@@ -6,15 +6,11 @@
 
 * [Bettercap](https://github.com/bettercap/bettercap)
 
-* [Acrylic Wifi](https://www.acrylicwifi.com/)
-
 * [Kismet](https://www.kismetwireless.net/)
 
 * [WiFi Pineapple](https://shop.hak5.org/collections/wifi-pentesting)
 
 * [Alfa Card Drivers](https://files.alfa.com.tw/)
-
-* [Wireshark](https://www.wireshark.org/)
 
 * [HackRF](https://greatscottgadgets.com/hackrf/one/)
 
@@ -263,6 +259,9 @@ aircrack-ng.exe -w wordlist.txt file.cap
 ```
 
 ### PMKID
+
+> [!TIP]
+> WiFi 6/WPA3 normalement PMKID Prood
 
 Outil : `hcxtools` ou `Bettercap` (wifi.assoc all).
 
