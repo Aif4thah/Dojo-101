@@ -34,14 +34,15 @@ snap install curl
 snap install codium --classic
 apt install -y git binutils net-tools dnsutils chromium-browser wireshark jq yq dislocker
 # secu tools
-apt install -y nmap ffuf hydra john sqlmap nikto netcat-openbsd
+apt install -y nmap ffuf hydra john hashcat sqlmap nikto netcat-openbsd
 snap install zaproxy --classic
 snap install impacket
 snap install amass
 apt install -y pipx python3-pip python3-venv
+apt install -y bettercap
 apt install ettercap-graphical -y && echo 1 | tee /proc/sys/net/ipv4/ip_forward
 # wifi
-apt install -y aircrack-ng hcxdumptool
+apt install -y aircrack-ng hcxtools hcxdumptool
 ```
 
 Pour utiliser un tool python et gérer correctement les dépendances de l'OS il faut utiliser pipx ou les venv.
