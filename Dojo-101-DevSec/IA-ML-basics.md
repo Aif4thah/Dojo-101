@@ -19,6 +19,7 @@
 | Word Embedding | Méthode de représentation des mots pour l’apprentissage automatique |
 | RAG | Retrieval Augmented Generation, génération amélioré par récupération (stockage sous forme de vecteurs) |
 | réseau neuronaux | moteur de l'IA |
+| Token | fais souvent reference au découpage des mots - pas forcément à la sécu |
 
 ## Cycle de vie
 
