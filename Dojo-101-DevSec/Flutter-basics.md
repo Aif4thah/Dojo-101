@@ -46,14 +46,24 @@ dev_dependencies:
 
 ## Compilation
 
-```sh
-# Lister les appareils/émulateurs disponibles
+> [!NOTE]
+> Pour créer des androids virtuuels : Android Studio -> Virtual Device Mangaer
+
+Lister les appareils/émulateurs disponibles
+
+```sh 
 flutter devices
+```
 
-# Exécuter en mode Debug avec support du Hot Reload ('r' dans le terminal)
+Exécuter en mode Debug avec support du Hot Reload ('r' dans le terminal)
+
+```sh
 flutter run
+```
 
-# Compiler pour la production (Release)
+Compiler pour la production (Release)
+
+```sh
 flutter build apk      # Pour Android
 flutter build ipa      # Pour iOS
 flutter build web      # Pour le Web

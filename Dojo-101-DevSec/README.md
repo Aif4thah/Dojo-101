@@ -158,7 +158,6 @@ retour à 1
 .\cvemap.exe -l 100
 ```
 
-
 ## threats modeling	helper
 
 1. What are we working on ?
@@ -179,7 +178,6 @@ retour à 1
 
 ## Rappel VSCode
 
-Palette commande : `Ctrl + Shift + `
-Terminal : `Ctrl + `
-Format Cote : `Shift + Alt + F`
+Nouveau terminal : `Ctrl + ~`
+Format : `Shift + Alt + F`
 Chat Copilot : `Ctrl + I`
