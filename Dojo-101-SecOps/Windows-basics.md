@@ -1,5 +1,16 @@
 # Windows basics
 
+Quelques tools pour bosser :
+
+```powershell
+winget install DominikReichl.KeePass
+winget install 7zip.7zip
+winget install vscode
+winget install google.chrome
+winget install --id Git.Git -e --source winget
+winget install --id GitHub.GitHubDesktop -e --source winget
+```
+
 ## Kernel modes
 
 | Kernel mode | User Mode |
