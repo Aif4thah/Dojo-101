@@ -64,10 +64,12 @@ flutter run
 Compiler pour la production (Release)
 
 ```sh
-flutter build apk      # Pour Android
+flutter build apk --release   # Pour Android
 flutter build ipa      # Pour iOS
 flutter build web      # Pour le Web
 ```
+
+apk dans `build\app\outputs\flutter-apk\`
 
 ## Tests
 
