@@ -64,9 +64,15 @@ flutter run
 Compiler pour la production (Release)
 
 ```sh
-flutter build apk --release   # Pour Android
-flutter build ipa      # Pour iOS
-flutter build web      # Pour le Web
+flutter build apk  # Pour Android
+flutter build ipa  # Pour iOS
+flutter build web  # Pour le Web
+```
+
+Spécifier les version et build
+
+```sh
+flutter build apk --release --build-name=1.1.0 --build-number=2
 ```
 
 apk dans `build\app\outputs\flutter-apk\`
