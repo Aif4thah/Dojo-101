@@ -69,6 +69,14 @@ flutter build ipa  # Pour iOS
 flutter build web  # Pour le Web
 ```
 
+Publication Android App Bundle (.aab)
+
+```
+flutter build appbundle
+```
+
+fichier aab dans : `.\build\app\outputs\bundle\release`
+
 Spécifier les version et build
 
 ```sh
@@ -85,4 +93,17 @@ flutter test
 
 # Exécuter un fichier de test spécifique
 flutter test test/widget_test.dart
+```
+
+## renommer les packages
+
+```sh
+flutter pub add --dev change_app_package_name
+dart run change_app_package_name:main <nouveau.nom>
+```
+
+## signer les packages
+
+```powershell
+& "C:\Program Files\Android\Android Studio\jbr\bin\keytool.exe" -genkey -v -keystore android/upload-keystore.jks -storetype JKS -keyalg RSA -keysize <size> -validity <days> -alias upload
 ```
