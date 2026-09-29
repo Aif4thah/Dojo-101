@@ -71,8 +71,8 @@ flutter build web  # Pour le Web
 
 Publication Android App Bundle (.aab)
 
-```
-flutter build appbundle
+```sh
+flutter build appbundle --release --obfuscate --split-debug-info=build/app/outputs/symbols
 ```
 
 fichier aab dans : `.\build\app\outputs\bundle\release`
