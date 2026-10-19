@@ -1,5 +1,13 @@
 # Intelligence artificielle et Machine learning - basics
 
+> [!NOTE]
+> L'IA évolue très vite et la mode est de faire abstraction du code, ci dessous quelques règles de base coté sécu : 
+
+1. Toujours spécifier les limites et regles de sécurités dans `.agent/.rules.md` , validation humaines et règles pour interdire (limiter le risque dans les faits) les fuites
+2. Limites les MCP au sctict nécéssaire
+3. Limiter les dossiers de contexte et whitelister petit à petit les commandes autorisées
+
+
 ## ressources
 
 * [Guide ANSSI](https://cyber.gouv.fr/publications/recommandations-de-securite-pour-un-systeme-dia-generative)
@@ -56,101 +64,3 @@ L'Apprentissage se fait à partir d'une `knowledge base(KB)`:
 * Préciser `répondre/agir en tant que <metier> ou <outil de traduction python vers .NET>`
 * rester en anglais :  `act as <...>`
 * Donner des tâches `1. <...>, 2. <...>, 3. <...>`
-
-## libs et IA locales
-
-* [Ollama](https://docs.ollama.com/)
-* [PentestAgent](https://github.com/GH05TCREW/pentestagent)
-
-## Mistral AI
-
-* [site MISTRAL AI](https://mistral.ai/)
-* [Le Chat Mistral](https://chat.mistral.ai/chat)
-* API facturée à l'usage ou en auto hébergée. Abonement pour "Le chat".
-
-## Claude
-
-* [Claude](https://claude.ai/)
-
-## Lumo - IA proton
-
-* IA by Protonmail axée sur la protection de la confidentialité.
-* [Lumo](https://lumo.proton.me/u/2/)
-* [Privacy Policy](https://proton.me/support/lumo-privacy)
-
-### Agent de pentest
-
-* [KaliGPT - agent ChatGPT](https://chatgpt.com/)
-* [Strix](https://www.strix.ai/)
-
-### Misc
-
-* [OpenClaw](https://openclaw.ai/)
-
-### Copilot
-
-* Info de session : `/id`
-
-### Github Copilot
-
-* Disponible pour Visual Studio Code, Visual Studio, Neovim, JetBrains
-
-## ML.NET - Technologie .NET pour le Machine Learning
-
-* Pour les projets .NET / C#
-* Repose sur ML builder (AutoML) qui facilite l'utilisation pour un projet simple
-* On met en forme les données, et donne notre objectif
-* la feature nous propose l'algorithme le plus adéquat
-
-## Azure ML et Azure AI services
-
-* ML -> permet notamment de publier une API à partir du modèle ML entrainé
-* IA -> dont la recherche cognitive qui permet d'indexer et rechercher des données (notamment à partir de texte afin de sortir le sentiment global et les mots clés)
-* Bots et applications C# / Python
-
-## Configuration de prompts
-
-Exemple de prompt inspiré de [Zzoro](https://github.com/ZZ0R0/Auto-MySQL)
-
-```python
-import mysql.connector  # Connexion à MySQL
-import openai           # Communication avec l'API OpenAI
-
-# Clé API pour accéder à OpenAI (à remplacer)
-openai.api_key = "api_Key"
-
-# Connexion à MySQL (modifie selon ton environnement)
-mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password=passwd,
-    database="ma_base")
-cursor = mydb.cursor()
-
-# Lecture de la structure d'une table
-table_name = "clients"
-cursor.execute(f"DESCRIBE {table_name}")
-columns = cursor.fetchall()
-
-# Création du prompt décrivant la table
-prompt = f"La table '{table_name}' contient les champs suivants :\n"
-for column in columns:
-    prompt += f"- {column[0]} ({column[1]})\n"
-
-# Ajout de la question de l'utilisateur
-question = input("Quelle question veux-tu poser à propos de cette table ?\n")
-prompt += f"\nQuestion : {question}\n"
-prompt += "Donne-moi la requête SQL correspondante."
-
-# Envoi à OpenAI
-response = openai.Completion.create(
-    engine="text-davinci-003",  # ou le moteur de ton choix
-    prompt=prompt,
-    max_tokens=150,
-    temperature=0.5)
-
-# ffichage de la réponse
-sql_query = response.choices[0].text.strip()
-print("\nRequête SQL générée :")
-print(sql_query)
-```
