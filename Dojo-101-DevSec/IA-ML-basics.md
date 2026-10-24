@@ -83,7 +83,16 @@ L'apprentissage se fait à partir d'une `knowledge base (KB)` :
 * Donner des contraintes claires et numérotées : `1. <...>, 2. <...>, 3. <...>`
 * Préciser les contraintes négatives (ce qu'il **ne doit pas** modifier ou utiliser)
 * Cibler les fichiers avec précision (`@src/fichier.ts`) plutôt que de laisser l'agent explorer tout le dépôt
-* Utiliser `/plan` avant l'écriture de code pour valider la démarche d'abord
+
+### Commandes utiles pour l'Agent (Slash Commands)
+
+L'utilisation de commandes permet de forcer le comportement de l'IA et d'éviter qu'elle ne code de manière chaotique. Si elles ne sont pas natives à ton outil, tu peux les utiliser comme mots-clés dans tes prompts.
+
+* **/plan :** Force l'agent à se comporter en architecte. Il doit lister les étapes logiques d'un développement, les fichiers ciblés et les risques, sans écrire une seule ligne de code. Idéal pour amorcer une tâche.
+* **/explain (ou /ask) :** Oblige l'agent à expliquer un comportement, un fichier ou une erreur, en lui interdisant strictement de modifier ou générer du code.
+* **/fix :** Demande à l'agent de se concentrer exclusivement sur la résolution d'une erreur ciblée (souvent accompagné d'un copier-coller des logs).
+* **/test :** Limite le périmètre de l'agent à la génération de tests unitaires ou d'intégration pour le composant ou le fichier ciblé.
+* **/refactor :** Lance une session d'optimisation (clean code, renommage, factorisation) sans modifier le comportement fonctionnel de la cible. À utiliser souvent après un `/plan` validé.
 
 ### Hygiène des conversations (nouveau thread)
 
