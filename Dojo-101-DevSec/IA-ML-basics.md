@@ -1,11 +1,13 @@
 # Intelligence artificielle et Machine learning - basics
 
 > [!NOTE]
-> L'IA évolue très vite et la mode est de faire abstraction du code, ci dessous quelques règles de base coté sécu : 
+> L'IA évolue très vite et la mode est de faire abstraction du code, ci-dessous quelques règles de base coté sécu et gestion d'agents : 
 
-1. Toujours spécifier les limites et regles de sécurités dans `.agent/.rules.md` , validation humaines et règles pour interdire (limiter le risque dans les faits) les fuites
-2. Limites les MCP au sctict nécéssaire
+1. Toujours spécifier les limites et règles de sécurité dans `.agent/.rules.md` : validation humaine et règles pour interdire (limiter le risque dans les faits) les fuites
+2. Limiter les MCP au strict nécessaire
 3. Limiter les dossiers de contexte et whitelister petit à petit les commandes autorisées
+4. Exclure systématiquement les fichiers sensibles (`.env`, secrets, builds, logs) via un fichier d'exclusion dédié
+5. Gérer le cycle de vie des conversations : ne pas laisser un thread s'éterniser pour éviter la pollution de contexte et la dérive de l'agent
 
 
 ## ressources
@@ -13,54 +15,79 @@
 * [Guide ANSSI](https://cyber.gouv.fr/publications/recommandations-de-securite-pour-un-systeme-dia-generative)
 * [OWASP LLM TOP 10](https://genai.owasp.org/llm-top-10/)
 * [CERT FR 2026 CTI](https://www.cert.ssi.gouv.fr/uploads/CERTFR-2026-CTI-001.pdf)
+* [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
 
 ## Concepts
 
-| Concept IA | définition |
-|-------|------------|
-| IA | simule l'intelligence humaine à partir du ML |
-| ML | Machine learning, Apprentissage et modèles prédictifs / probabilistes |
-| IA générative | Sous-ensemble axé sur la création de contenu (texte, image...) |
-| LLM | Large Language Model, entrainé sur un large ensemble de données pour simuler un langage humain |
-| SLM | Petit modèle de donnée |
-| Data | Analyse et Statistiques |
-| Word Embedding | Méthode de représentation des mots pour l’apprentissage automatique |
-| RAG | Retrieval Augmented Generation, génération amélioré par récupération (stockage sous forme de vecteurs) |
-| réseau neuronaux | moteur de l'IA |
-| Token | fais souvent reference au découpage des mots - pas forcément à la sécu |
+| Concept IA | Définition |
+|---|---|
+| IA | Simule l'intelligence humaine à partir du ML |
+| ML | Machine Learning, apprentissage et modèles prédictifs / probabilistes |
+| IA générative | Sous-ensemble axé sur la création de contenu (texte, image, code...) |
+| LLM | Large Language Model, entraîné sur un large ensemble de données pour simuler un langage humain |
+| SLM | Small Language Model, modèle plus léger adapté aux tâches ciblées ou au local |
+| Data | Analyse et statistiques |
+| Word Embedding | Méthode de représentation vectorielle des mots pour l’apprentissage automatique |
+| RAG | Retrieval Augmented Generation, génération augmentée par récupération (stockage sous forme de vecteurs) |
+| Réseau de neurones | Moteur de l'IA |
+| Token | Unité de base de traitement du texte (mots, syllabes ou caractères) — coût et limite de contexte |
+| Context Window | Quantité maximale de tokens que le modèle peut traiter en mémoire à un instant T |
+| MCP | Model Context Protocol, protocole standard pour connecter l'agent à des outils et données externes |
+
+## Fichiers de configuration et cadrage (Agents / IDE)
+
+Pour piloter et sécuriser un agent local sans saturer son contexte :
+
+* **`.agentignore` (ou `.aiignore`) :** bloque l'indexation des secrets (`.env`), des dépendances (`node_modules`) et des builds lourds (`dist`, logs).
+* **`.agent/.rules.md` :** instructions système persistantes, contraintes de sécurité, style de code et actions interdites.
+* **`ARCHITECTURE.md` :** vue d'ensemble technique, flux de données autorisés et patterns imposés dans le projet.
+* **`SCRATCHPAD.md` :** bloc-notes temporaire partagé avec l'agent pour suivre l'état d'un refactoring complexe sans surcharger l'historique du fil.
+* **`mcp.json` :** déclaration et restriction des outils/serveurs externes mis à disposition de l'agent.
 
 ## Cycle de vie
 
-1. Entrainement : création du modèle, affinage, tests, etc.
+1. Entraînement : création du modèle, affinage, tests, etc.
 2. Déploiement : **Test et Audit de sécurité**, build, intégration, mise en prod
 3. Production : MCO/MCS (Maintien en conditions opérationnelles et de sécurité)
 
 ### Principe du Word Embedding
 
-* Initialisation: Chaque mot unique dans le corpus de texte est associé à un vecteur de nombres aléatoires.
-* Contexte: L’algorithme examine ensuite chaque mot dans le contexte des mots qui l’entourent dans le corpus.
-* Ajustement: Les vecteurs sont ajustés de manière à ce que les mots qui apparaissent dans des contextes similaires aient des vecteurs plus proches les uns des autres.
-* Résultat: À la fin de ce processus, chaque mot est représenté par un vecteur qui encode quelque chose de son sens.
+* **Initialisation :** Chaque mot unique dans le corpus de texte est associé à un vecteur de nombres aléatoires.
+* **Contexte :** L’algorithme examine ensuite chaque mot dans le contexte des mots qui l’entourent dans le corpus.
+* **Ajustement :** Les vecteurs sont ajustés de manière à ce que les mots apparaissant dans des contextes similaires aient des vecteurs plus proches les uns des autres.
+* **Résultat :** À la fin de ce processus, chaque mot est représenté par un vecteur qui encode une partie de son sens sémantique.
 
 ## Apprentissages
 
-L'Apprentissage se fait à partir d'une `knowledge base(KB)`:
+L'apprentissage se fait à partir d'une `knowledge base (KB)` :
 
-* soit l'IA réapprends totalement le KB
-* soit on untilise le `fine tuning` pour mettre à jour le KB
+* Soit l'IA réapprend totalement la KB
+* Soit on utilise le `fine tuning` pour spécialiser le modèle sur la KB
+* Soit on passe par du `RAG` pour interroger dynamiquement la KB sans réentraîner
 
 ## Attaques et vulnérabilités
 
-* Porter atteinte aux Critères D.I.C.T.
-* Injection de requêtes, directement dans le prompt ou via un contenu externe (sites et fichiers malveillants).
-* Injections classiques (Saisies utilisateurs non nettoyées, XSS, CSRF prompt injection, etc.).
-* Infection,  corruption du modèle, data poisonning, Injection de contexte. Par exemple : faire lire au serveur le contenu d'un fichier sensible ou malveillant qui sera ajouté au modèle et modifiera les réponses de l'IA.
-* Manipulation du modèle / fonctionnalité non prévue. Par exemple faire compléter des mots ou des listes, jusqu'a obtenir des informations ou un comportement non prévu par le modèle.
-* Fuite de données sensibles ou protegées du fait du Modèle ou de l'absence de restriction.
+* Porter atteinte aux critères D.I.C.T.
+* Injection de requêtes (Prompt Injection), directement dans le prompt ou indirectement via un contenu externe (sites web, fichiers vérolés).
+* Injections classiques (saisies utilisateurs non assainies, XSS, CSRF prompt injection, etc.).
+* Infection, corruption du modèle, data poisoning.
+* **Pollution de contexte et biais d'ancrage :** accumulation d'erreurs dans l'historique menant l'agent à s'obstiner dans une mauvaise direction.
+* Manipulation du modèle / fonctionnalité non prévue (jailbreak, extraction d'instructions système).
+* Fuite de données sensibles ou protégées du fait du modèle ou de l'absence de restriction de lecture locale.
 
-### protection du modèle pour des requêtes éfficaces
+## Bonnes pratiques : requêtes et gestion des agents
 
-* Informer de spécificité de la mission / requete
-* Préciser `répondre/agir en tant que <metier> ou <outil de traduction python vers .NET>`
-* rester en anglais :  `act as <...>`
-* Donner des tâches `1. <...>, 2. <...>, 3. <...>`
+### Cadrage des requêtes
+
+* Spécifier le contexte métier et la tâche : `répondre/agir en tant que <métier>` ou en anglais `act as <...>`
+* Donner des contraintes claires et numérotées : `1. <...>, 2. <...>, 3. <...>`
+* Préciser les contraintes négatives (ce qu'il **ne doit pas** modifier ou utiliser)
+* Cibler les fichiers avec précision (`@src/fichier.ts`) plutôt que de laisser l'agent explorer tout le dépôt
+* Utiliser `/plan` avant l'écriture de code pour valider la démarche d'abord
+
+### Hygiène des conversations (nouveau thread)
+
+* **Règle d'or :** 1 tâche = 1 fil de discussion propre.
+* Commiter le code fonctionnel avant d'ouvrir un nouveau fil.
+* Couper court et relancer un fil dès que l'agent boucle ou échoue deux fois sur le même problème.
+* Relancer un fil dès l'apparition de signaux de saturation (lenteur anormale, oubli des consignes de base, hallucinations).
