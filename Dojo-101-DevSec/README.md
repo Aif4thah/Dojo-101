@@ -176,6 +176,11 @@ retour à 1
 
 * Assess your work - Did you do a good enough job for the system at hand?
 
+## SEO
+
+* Google Search Console
+* Bing WebMaster Tools (utile également pour les IA microsoft)
+
 ## Rappel VSCode
 
 Nouveau terminal : `Ctrl + ~`
