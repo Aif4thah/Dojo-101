@@ -7,3 +7,8 @@ vérifier qu'un utilisateur ne peut pas rédiger de la prod vers le dev/test pou
 ## IBAN et SWIFT
 
 la validité d'un numéro ne veut pas dire que ce numéro existe à la banque
+
+## Stripe
+
+* Vérifier l'absence de `test` en url / tester la carte `42424242...`
+* Certains paiement sont fais plusieurs jours après, verifier les process metier
