@@ -53,3 +53,7 @@ Avec le nom du fichier .zip (exemple : 'fichier.zip') à la place du `<fichier.j
         - Le récapitulatif des informations de scan trouvées (version de dependency-check, dépendances scannées, vulnérabilité)
         - Le sommaire qui montrera les dépendances, le package, la sévérité, le compte de CVE et le compte des évidences (vous avez aussi la possibilité de voir uniquement les dépendances où des vuln sont détectées)
         - Le détail des dépendances soit principalement les evidences et les CVE trouvées ainsi que leur détail
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

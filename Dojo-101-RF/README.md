@@ -1,5 +1,10 @@
 # RF et RF Security basics
 
+<p align="center">
+  <a href="../README.md">🏠 Retour à l'accueil Dojo-101</a> •
+  <a href="https://github.com/sponsors/Aif4thah/">💖 Soutenir le projet sur GitHub Sponsors</a>
+</p>
+
 ## definitions
 
 | terme | definition |
@@ -484,3 +489,10 @@ un `TCXO` permet l'utilisation d'une horloge externe
 * ku : de 12 à 18 Ghz
 
 * ka : de 27 à 40 Ghz
+
+---
+
+<p align="center">
+  <b>💡 Ces fiches pratiques vous font gagner du temps en mission, en audit ou en formation ?</b><br>
+  Soutenez la mise à jour continue de <b>Dojo-101</b> en <a href="https://github.com/sponsors/Aif4thah/">devenant Sponsor sur GitHub 💖</a> ou en ajoutant une ⭐ au <a href="https://github.com/Aif4thah/Dojo-101">dépôt principal</a>.
+</p>

@@ -87,3 +87,7 @@ sudo cryptsetup luksChangeKey /dev/sdb
 ```sh
 cryptsetup luksHeaderBackup /dev/sda4 --header-backup-file /tmp/luks.img
 ```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

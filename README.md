@@ -1,124 +1,168 @@
 # Dojo-101
 
 <p align="center">
-    <img src="./images/dojo101Dark.png" alt="Dojo-101" style="width: 400px;" />
-    <br>DOJO-101 : Offline Cybersecurity Knowledge Base
+  <img src="./images/dojo101Dark.png" alt="Dojo-101" style="width: 380px;" />
+  <br>
+  <b>DOJO-101 : Base de Connaissances Cybersécurité, DevSecOps & Labs Pédagogiques (Offline-First)</b>
+  <br>
+  <i>+250 fiches pratiques, Cheat-Sheets & 38 Mises en Situation Professionnelle (MESP) prêtes à l'emploi</i>
 </p>
 
-[![License: GNU GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Aif4thah/Dojo-101/pulls)
-![GitHub last commit](https://img.shields.io/github/last-commit/Aif4thah/Dojo-101)
-![Repo Size](https://img.shields.io/github/repo-size/Aif4thah/Dojo-101)
-[![Github Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-30363D?&logo=GitHub-Sponsors&logoColor=EA4AAA)](https://github.com/sponsors/Aif4thah/)
+<p align="center">
+  <a href="https://github.com/sponsors/Aif4thah/">
+    <img src="https://img.shields.io/badge/Sponsoriser_le_projet-EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white" alt="GitHub Sponsors" />
+  </a>
+  <a href="https://github.com/Aif4thah/Dojo-101/stargazers">
+    <img src="https://img.shields.io/github/stars/Aif4thah/Dojo-101?style=for-the-badge&logo=github&color=yellow" alt="GitHub Stars" />
+  </a>
+</p>
 
-> [!WARNING]
-> This repository and its tools are provided "as is" without warranty of any kind, either express or implied, including but not limited to, any warranties of merchantability, fitness for a particular purpose, and non-infringement. The authors shall not be liable for any claims, damages, or other liabilities arising from, out of, or in connection with the use of this tool. The user is solely responsible for ensuring their use of this tool complies with all applicable laws and regulations. The authors disclaim any liability for illegal or unethical use.
+<p align="center">
+  <a href="https://www.gnu.org/licenses/gpl-3.0">
+    <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GNU GPL v3" />
+  </a>
+  <a href="https://github.com/Aif4thah/Dojo-101/pulls">
+    <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions welcome" />
+  </a>
+  <img src="https://img.shields.io/github/last-commit/Aif4thah/Dojo-101" alt="GitHub last commit" />
+  <img src="https://img.shields.io/github/repo-size/Aif4thah/Dojo-101" alt="Repo Size" />
+</p>
 
-## ⚔️ Themes
+<p align="center">
+  <a href="#-thèmes--les-7-piliers">⚔️ Les 7 Piliers</a> •
+  <a href="#-par-où-commencer-fondamentaux">👉 Fondamentaux</a> •
+  <a href="./Dojo-101-Apprentissage/README.md">🎓 38 Labs & MESP</a> •
+  <a href="#-utiliser-dojo-101-hors-ligne">📒 Usage Hors-Ligne</a> •
+  <a href="#-soutenir-dojo-101--devenir-sponsor">💖 Devenir Sponsor</a>
+</p>
 
-* [Secure development](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-DevSec)
-* [Secure administration](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-SecOps)
-* [Pentest](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Pentest)
-* [Forensic](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Forensic)
-* [Radio frequencies](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-RF)
-* [Governance](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Governance)
+---
+
+> [!TIP]
+> **Vous êtes formateur cyber, école d'ingénieurs, pentester ou ingénieur DevSecOps ?**
+> Ce dépôt capitalise des années de terrain et d'ingénierie pédagogique (**250+ fiches techniques** et **38 scénarios de travaux pratiques évaluables**). S'il vous fait gagner du temps en mission ou en cours, **[soutenez sa maintenance sur GitHub Sponsors 💖](https://github.com/sponsors/Aif4thah/)**.
+
+## ⚔️ Thèmes & Les 7 Piliers
+
+| Pilier | Contenu & Cas d'usage | Volume | Accès direct |
+| :--- | :--- | :---: | :--- |
+| **🛡️ DevSecOps & AppSec** | Intégration CI/CD, SAST/DAST (CodeQL, Nuclei, SonarQube, ZAP), ASVS, STRIDE, sécurité par langage (Python, Rust, C, C#, JS, Flutter) | **33 fiches** | [Explorer DevSec](./Dojo-101-DevSec/README.md) |
+| **⚙️ SecOps & Hardening** | Fondamentaux SSI, durcissement Linux/Windows/AD, Cloud Azure, Docker, Pare-feu, VPN (WireGuard, OpenVPN), PKI, TLS, SELinux | **31 fiches** | [Explorer SecOps](./Dojo-101-SecOps/README.md) |
+| **🎯 Pentest & Red Team** | Méthodologie d'audit, Reconnaissance, Exploitation Web (SQLi, XSS, XXE, SSTI, JWT), Active Directory (Kerberos, BloodHound, Mimikatz), PrivEsc Linux/Windows, Buffer Overflow, Pivot | **127 fiches** | [Explorer Pentest](./Dojo-101-Pentest/README.md) |
+| **🔍 Forensic & DFIR** | Réponse à incident, collecte de preuves, mémoire (Volatility), forensique Windows/Linux/Android, Reverse (Ghidra, Radare2), SIEM & parsing de logs (`jq`/`yq`) | **10 fiches** | [Explorer Forensic](./Dojo-101-Forensic/README.md) |
+| **📡 Radiofréquences (RF & SDR)** | SDR (HackRF, RTL-SDR, GNU Radio), modulations, SIGINT, TEMPEST, Wi-Fi, Bluetooth, RFID/NFC, TETRA, Satellites & Drones | **17 fiches** | [Explorer RF](./Dojo-101-RF/README.md) |
+| **⚖️ Gouvernance, Risques & Conformité (GRC)** | Homologation ANSSI, ISO 27001, EBIOS RM, Cyber Resilience Act (CRA), NIS2, PASSI, Souveraineté, Gestion de crise cyber | **2 dossiers complets** | [Explorer Governance](./Dojo-101-Governance/README.md) |
+| **🎓 Apprentissage & Scénarios Pro (MESP)** | **38 Mises en Situation Professionnelle** progressives (Lab, Hardening, Audit, DevSecOps, EBIOS RM, SDR, Wargame, CTF) et guide d'ingénierie pédagogique | **39 fiches** | [Explorer les 38 MESP](./Dojo-101-Apprentissage/README.md) |
 
 ```mermaid
 %%{ init: { "theme": "forest" } }%%
 mindmap
   root((**DOJO-101**))
 
-      **GRC**
-        ISO27001
-        EBIOS RM
-        Cybercrisis
-    
+    **GRC**
+      ISO27001
+      EBIOS RM
+      CRA / NIS2
+      Cybercrisis
+
     **DevSec**
-        SAST
-        DAST
-        STRIDE
-        CICD
-        IA
+      SAST / DAST
+      STRIDE / ASVS
+      CI/CD
+      IA & Langages
 
     **SecOps**
-        OS Hardening
-        IaC
-        Cloud
+      OS Hardening
+      Active Directory
+      IaC & Docker
+      Cloud Azure
 
-    **RF**
-        TEMPEST
-        SIGINT
-        Wireless
-        Satellites
+    **RF & SDR**
+      TEMPEST
+      SIGINT
+      Wi-Fi / Bluetooth
+      Satellites / RFID
 
     **Pentest**
-        Recon
-        Exploits
-        PrivEsc
-        Pivot
+      Recon & OSINT
+      Web & AD Exploits
+      PrivEsc
+      Pivot & Post-Exploit
 
     **Forensic**
-        Acquisition
-        Reverse
-        SIEM
+      Acquisition
+      Volatility / RAM
+      Reverse
+      SIEM
 
-    **Training**
-        Lab
-        Wargame
-
+    **Training (38 MESP)**
+      Labs & Réseaux
+      Audits & Hardening
+      Wargame & CTF
 ```
 
-## 👉 Let’s get started
+## 👉 Par où commencer ? (Fondamentaux)
 
-README Files and those containing the keyword `basics` contain elements that are subsequently considered prerequisites. Here are some suggestions:
+Les fichiers `README.md` de chaque dossier ainsi que les fiches comportant le mot-clé `basics` constituent les prérequis recommandés avant d'aborder les scénarios avancés :
 
-* [Cyber basics (french)](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/README.md)
-* [Linux basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Linux-Basics.md)
-* [Powershell basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-SecOps/Powershell-basics.md)
-* [Python basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Python-basics.md)
-* [Wifi basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-RF/Wifi-basics.md)
-* [GitHub basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/Github-basics.md)
-* [AI Basics](https://github.com/Aif4thah/Dojo-101/blob/main/Dojo-101-DevSec/IA-ML-basics.md)
+* 🇫🇷 [Les fondamentaux de la cybersécurité (Cyber basics)](./Dojo-101-SecOps/README.md)
+* 🐧 [Linux basics](./Dojo-101-SecOps/Linux-Basics.md) & [Windows basics](./Dojo-101-SecOps/Windows-basics.md)
+* 💻 [PowerShell basics](./Dojo-101-SecOps/Powershell-basics.md) & [Python basics](./Dojo-101-DevSec/Python-basics.md)
+* 🌐 [Réseau basics](./Dojo-101-SecOps/Basics-reseau.md) & [Wi-Fi basics](./Dojo-101-RF/Wifi-basics.md)
+* 🔧 [GitHub basics](./Dojo-101-DevSec/Github-basics.md) & [AI / ML basics](./Dojo-101-DevSec/IA-ML-basics.md)
+* 🎓 [Découvrir Dojo-101 en TP (MESP 03)](./Dojo-101-Apprentissage/03-MESP-Dojo-101.md)
 
-> Some sections are still in French. The translation will be completed according to the needs of sponsors and customers.
+## 📒 Utiliser Dojo-101 hors-ligne
 
-## 📒 You need almost nothing
-
-Clone the repository without the history using the following command:
+Conçu pour être consultable **sans connexion Internet** (en salle blanche, en audit interne, en examen ou en déplacement) :
 
 ```sh
 git clone --depth 1 https://github.com/Aif4thah/Dojo-101
 ```
 
-Open `DOJO-101` folder with [VSCode](https://code.visualstudio.com/) then,
+Ouvrez ensuite le dossier `Dojo-101` avec [VSCode](https://code.visualstudio.com/) :
 
-* Search by keyword across all files (e.g., `basics`, `Windows`, `Linux`)
-* Read the content in `HTML` format (`ctrl`+`shift` +`V`)
+* Recherchez instantanément par mot-clé dans les +250 fiches (`Ctrl` + `Shift` + `F`, ex. `Kerberos`, `GPO`, `EBIOS`, `HackRF`).
+* Affichez le rendu visuel et les schémas Mermaid au format HTML (`Ctrl` + `Shift` + `V`).
 
-## 🤝 Contributions
+## 🧪 Tester vos compétences en conditions réelles
 
-* [Contributor guidelines](https://github.com/Aif4thah/Dojo-101/blob/main/CONTRIBUTING.md)
+Développée en parallèle pour accompagner les fiches Pentest, DevSecOps et les MESP, cette application volontairement vulnérable vous permet de pratiquer en toute légalité :
 
-## 🚨 Security
+* 🎯 **[VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)** — Application d'entraînement à l'audit de code, au pentest Web et à la remédiation.
 
-* [About project security](https://github.com/Aif4thah/Dojo-101/blob/main/SECURITY.md)
+---
 
-## 🌱 Learning
+## 💖 Soutenir Dojo-101 / Devenir Sponsor
 
-* [Professional scenarios](https://github.com/Aif4thah/Dojo-101/tree/main/Dojo-101-Apprentissage)
+Maintenir plus de **250 fiches techniques à jour**, vérifier les commandes, documenter les nouvelles normes (CRA, NIS2, EBIOS RM) et concevoir des scénarios pédagogiques réalistes représente **des centaines d'heures de travail bénévole**.
 
-## 🧪 Test your skills
+Choisissez la formule qui correspond à votre usage sur **[GitHub Sponsors](https://github.com/sponsors/Aif4thah/)** :
 
-Developed in parallel, this application contains numerous vulnerabilities for testing your knowledge :
+| Votre profil | Ce que Dojo-101 vous apporte | Comment soutenir |
+| :--- | :--- | :--- |
+| **👨‍🎓 Étudiant, Pentester, DevSecOps** | Un aide-mémoire fiable pendant vos CTF, vos audits, vos soutenances ou votre veille quotidienne, 100 % gratuit et sans publicité. | **[Offrir un café ponctuel ou mensuel sur GitHub Sponsors ☕](https://github.com/sponsors/Aif4thah/)** (ou ajouter une ⭐ au dépôt) |
+| **👨‍🏫 Formateur indépendant / Enseignant** | **38 MESP clés en main**, des schémas Mermaid prêts à projeter et une structure REAC/compétences qui vous épargnent des semaines de préparation de cours. | **[Devenir Sponsor Formateur sur GitHub 💖](https://github.com/sponsors/Aif4thah/)** et orienter les prochaines mises à jour et traductions |
+| **🏢 École Cyber, Organisme de formation, ESN** | Une base pédagogique éprouvée pour vos promotions et une **visibilité directe auprès d'étudiants et professionnels cyber qualifiés** (recrutement & marque employeur). | **[Devenir Sponsor Officiel (Logo sur cet accueil) 🏆](https://github.com/sponsors/Aif4thah/)** |
 
-* [VulnerableLightApp](https://github.com/Aif4thah/VulnerableLightApp)
+> 🌍 *Note for English-speaking visitors: Most advanced regulatory and pedagogical sheets are currently in French. Translation and new modules are prioritized based on [GitHub Sponsors](https://github.com/sponsors/Aif4thah/) feedback and requests.*
 
-## 🏆 Credits
+### 🌟 Nos Sponsors & Partenaires
 
-* **Thank you** to all contributors 😍
+*Vous souhaitez voir votre nom ou le logo de votre école / entreprise apparaître ici ? [Rejoignez les sponsors de Dojo-101 sur GitHub](https://github.com/sponsors/Aif4thah/) !*
 
-* Logo created by [@designbyzen](https://www.designbyzen.fr/)
+---
 
-* Project maintained by [Michael Vacarella](https://github.com/Aif4thah)
+## 🤝 Contributions & Sécurité
 
-* Support this effort and give back by [sponsoring on GitHub!](https://github.com/sponsors/Aif4thah/)
+* **Contribuer** : Vous souhaitez partager un retour d'expérience ou corriger une fiche ? Consultez les [règles de contribution (CONTRIBUTING.md)](./CONTRIBUTING.md).
+* **Sécurité** : Consultez notre [politique de sécurité (SECURITY.md)](./SECURITY.md).
+
+## 🏆 Crédits
+
+* **Merci** à l'ensemble des contributeurs, apprenants et sponsors qui font vivre ce projet 😍
+* Logo réalisé par [@designbyzen](https://www.designbyzen.fr/)
+* Projet créé et maintenu par **[Michael Vacarella (@Aif4thah)](https://github.com/Aif4thah)** — [Soutenir sur GitHub Sponsors 💖](https://github.com/sponsors/Aif4thah/)
+
+> [!WARNING]
+> **Avertissement légal / Disclaimer** : Ce dépôt et les outils ou commandes qui y sont documentés sont fournis « en l'état » (*as is*), à des fins strictement pédagogiques, d'audit autorisé et de sécurisation des systèmes d'information. L'auteur décline toute responsabilité en cas d'utilisation illégale, non éthique ou non autorisée. Il appartient à chaque utilisateur de s'assurer de la conformité de ses actions avec les lois et réglementations en vigueur (notamment les articles 323-1 et suivants du Code pénal).

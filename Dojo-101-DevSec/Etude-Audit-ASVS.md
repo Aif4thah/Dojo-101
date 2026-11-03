@@ -180,3 +180,7 @@ Sur les 286 contrôles de l'ASVS:
 ### calcul de la couverture globale:
 
 ( 82 + 135 - 11 ) / 286 * 100 = 72 %
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

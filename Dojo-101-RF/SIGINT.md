@@ -35,3 +35,7 @@ Les bases de données utilisées peuvent être exportées et archivées pour sau
 ## automatisation via logiciels
 
 * [SigDigger](https://github.com/BatchDrake/SigDigger)
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

@@ -49,3 +49,7 @@
 * `hciconfig`: equivalent of ifconfig for bluetooth
 * `hcitool`: provides us with device name, device ID, device class and device clock info which enables the devices to work synchronously
 * `hcidump`: Used to sniff bluetooth communications, meaning we can capture data sent over bluetooth.
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

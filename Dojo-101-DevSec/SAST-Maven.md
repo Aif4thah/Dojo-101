@@ -195,3 +195,7 @@ mvn.cmd clean package -f "pom.xml" -B -V -e -Dfindbugs.skip -Dcheckstyle.skip -D
         </activeProfiles>     
 </settings>
 ```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

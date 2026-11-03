@@ -107,3 +107,7 @@ dart run change_app_package_name:main <nouveau.nom>
 ```powershell
 & "C:\Program Files\Android\Android Studio\jbr\bin\keytool.exe" -genkey -v -keystore android/upload-keystore.jks -storetype JKS -keyalg RSA -keysize <size> -validity <days> -alias upload
 ```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

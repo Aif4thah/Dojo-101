@@ -516,3 +516,7 @@ string Pattern = @" -(\d\d).\d\d";
 Match Match = Regex.Match(line, Pattern);
 if (Match.Success) { }
 ```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

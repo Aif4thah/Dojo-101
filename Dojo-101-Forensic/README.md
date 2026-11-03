@@ -1,5 +1,10 @@
 # Detection, Réponse et Forensic
 
+<p align="center">
+  <a href="../README.md">🏠 Retour à l'accueil Dojo-101</a> •
+  <a href="https://github.com/sponsors/Aif4thah/">💖 Soutenir le projet sur GitHub Sponsors</a>
+</p>
+
 ## Ressources
 
 * [Interpol Guidelines](https://www.interpol.int/content/download/16243/file/Guidelines_to_Digital_Forensics_First_Responders_V7.pdf)
@@ -150,3 +155,10 @@ jq 'select(.message | test("access denied|forbidden|403"; "i"))' logs.json
 ## parser les logs yml
 
 `yq` est l'équivalent de `jq` pour le `yaml`
+
+---
+
+<p align="center">
+  <b>💡 Ces fiches pratiques vous font gagner du temps en mission, en audit ou en formation ?</b><br>
+  Soutenez la mise à jour continue de <b>Dojo-101</b> en <a href="https://github.com/sponsors/Aif4thah/">devenant Sponsor sur GitHub 💖</a> ou en ajoutant une ⭐ au <a href="https://github.com/Aif4thah/Dojo-101">dépôt principal</a>.
+</p>

@@ -182,3 +182,7 @@ C'était très utile avec les anciens terminaux et les liaisons réseau erratiqu
     rafraîchit l'affichage et place le curseur en bas
 
 ```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

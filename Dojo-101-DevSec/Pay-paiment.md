@@ -12,3 +12,7 @@ la validité d'un numéro ne veut pas dire que ce numéro existe à la banque
 
 * Vérifier l'absence de `test` en url / tester la carte `42424242...`
 * Certains paiement sont fais plusieurs jours après, verifier les process metier
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

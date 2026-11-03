@@ -1,5 +1,10 @@
 # Governance, Risk, and Compliance (GRC)
 
+<p align="center">
+  <a href="../README.md">🏠 Retour à l'accueil Dojo-101</a> •
+  <a href="https://github.com/sponsors/Aif4thah/">💖 Soutenir le projet sur GitHub Sponsors</a>
+</p>
+
 ## Homologation du SI
 
 ### Ressources
@@ -310,3 +315,10 @@ graph TD
     F -->|Décider d'autoriser le système| G[Monitor]
     G -->|Surveillance continue, mises à jour| A
 ```
+
+---
+
+<p align="center">
+  <b>💡 Ces fiches pratiques vous font gagner du temps en mission, en audit ou en formation ?</b><br>
+  Soutenez la mise à jour continue de <b>Dojo-101</b> en <a href="https://github.com/sponsors/Aif4thah/">devenant Sponsor sur GitHub 💖</a> ou en ajoutant une ⭐ au <a href="https://github.com/Aif4thah/Dojo-101">dépôt principal</a>.
+</p>

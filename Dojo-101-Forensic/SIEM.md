@@ -37,3 +37,7 @@ curl -k https://localhost:8088/services/collector -H "Authorization: Splunk <tok
 ### Import des logs manuels
 
 `Settings` > `AddData` > `Upload a file`
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

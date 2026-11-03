@@ -105,3 +105,7 @@ Chaque catégorie de menaces est associée à un contrôle de sécurité destin�
 |2.	| Détection	    |Appliquer un framework de modélisation des menaces au diagramme de flux de données et trouver des problèmes de sécurité potentiels. (Le STRIDE)
 |3.	| Correction	 |   Décider comment aborder chaque problème avec la combinaison de contrôles de sécurité appropriée.
 |4.	| Vérification	| Vérifier que les exigences sont satisfaites, que les problèmes sont détectés et que les contrôles de sécurité sont implémentés.
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

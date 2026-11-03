@@ -1,5 +1,10 @@
 # Développement sécurisé / DevSec basics
 
+<p align="center">
+  <a href="../README.md">🏠 Retour à l'accueil Dojo-101</a> •
+  <a href="https://github.com/sponsors/Aif4thah/">💖 Soutenir le projet sur GitHub Sponsors</a>
+</p>
+
 ## Référentiels et bonnes pratiques
 
 * [Projets OWASP](https://owasp.org/projects/)
@@ -186,3 +191,10 @@ retour à 1
 Nouveau terminal : `Ctrl + ~`
 Format : `Shift + Alt + F`
 Chat Copilot : `Ctrl + I`
+
+---
+
+<p align="center">
+  <b>💡 Ces fiches pratiques vous font gagner du temps en mission, en audit ou en formation ?</b><br>
+  Soutenez la mise à jour continue de <b>Dojo-101</b> en <a href="https://github.com/sponsors/Aif4thah/">devenant Sponsor sur GitHub 💖</a> ou en ajoutant une ⭐ au <a href="https://github.com/Aif4thah/Dojo-101">dépôt principal</a>.
+</p>

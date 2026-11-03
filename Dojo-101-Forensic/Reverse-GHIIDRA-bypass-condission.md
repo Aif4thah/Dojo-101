@@ -32,3 +32,7 @@ Puis rééxporter (file -> export) le binaire au format ELF
 Good work, the password is : 
 
 <redacted>
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

@@ -25,3 +25,7 @@ project = DD AND status in (Ouvert, "In Progress", Réouvert, "Being Analyzed", 
 ```jql
 issuetype = "Faille de Sécurité" AND status != Clôturé AND priority = Critical
 ```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

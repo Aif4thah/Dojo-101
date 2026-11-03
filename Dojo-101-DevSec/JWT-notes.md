@@ -52,3 +52,6 @@ Par éxemple pour RSA :Attaque liée à l’implémentation de ECDH-ES (Invalid 
 
 Une attaque par recherche exhaustive offline est réalisable sur les tokens JWT obtenus. Cette attaque a peu de chance d’aboutir (sauf si la clé de signature est présente dans un dictionnaire), la compromission de la clé partagée peut cependant permettre de forger des tokens JWT. Suivant leur contenu et leur usage, ces tokens forgés peuvent permettre d’accéder à d’autres éléments de l’infrastructure et d’élever ses privilèges.
 
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

@@ -60,4 +60,6 @@ copier un dossier: reprendre les page et le fichier `config.ini`
 
 appeller par le nom (dans le config.ini) avec l'option `-p`
 
+---
 
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

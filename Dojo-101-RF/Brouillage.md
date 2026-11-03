@@ -87,3 +87,7 @@ output_int.tofile(sys.argv[1])
 2. Identifier le canal
 3. Brouiller uniquement ce même canal
 4. Étudier la réaction de la cible (changement de canal ? perte de dispo ? etc.)
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

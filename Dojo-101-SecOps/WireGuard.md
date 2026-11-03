@@ -218,8 +218,8 @@ PORT      STATE         SERVICE VERSION
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 147.78 seconds
 ```
-Nmap nous renvoie aucune vulnérabilités. Notons ici que le port a pu être reconnu à l'état "open" grâce à l'argument -sU qui réalise le scan en UDP.  
+Nmap nous renvoie aucune vulnérabilités. Notons ici que le port a pu être reconnu à l'état "open" grâce à l'argument -sU qui réalise le scan en UDP.
 
+---
 
-
-
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

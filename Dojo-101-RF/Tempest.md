@@ -23,3 +23,7 @@ Le magnétométre permet la détection des émissions électro magnétique des a
 
 > [!TIP]
 > En cas de chiffrement de l'image, `protocole HDCP` on a une "Neige Fixe".
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

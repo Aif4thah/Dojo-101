@@ -357,3 +357,7 @@ Get-AzVmDiskEncryptionStatus  -ResourceGroupName <resource-group> -VMName <vm-na
 
 az vm encryption show --resource-group <resource-group> --name <vm-name>
 ```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

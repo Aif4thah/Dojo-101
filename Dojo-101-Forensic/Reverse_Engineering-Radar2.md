@@ -544,6 +544,6 @@ Examples:
 r2 -b 32 -d rarun2 program=pwn1 arg1=$(ragg2 -P 300 -r) : runs pwn1 with a De Bruijn Pattern as first argument, inside radare2's debugger, and force 32 bits
 r2 -d rarun2 program=/bin/ls stdin=$(python exploit.py) : runs /bin/ls with the output of exploit.py directed to stdin
 
+---
 
-
-
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

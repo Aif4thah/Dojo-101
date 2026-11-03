@@ -412,3 +412,7 @@ terraform apply
 ```
 
 Le container est ensuite déployé sur la machine, on peu le vérifier via `docker ps`. `terraform destroy` permet de supprimer les containers.
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

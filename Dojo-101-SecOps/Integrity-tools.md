@@ -8,3 +8,6 @@ tripwire --update --twrfile /var/lib/tripwire/report/<name>.twr #mise a jour de 
 
 ## AIDE
 
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

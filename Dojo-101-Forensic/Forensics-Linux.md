@@ -28,3 +28,7 @@ Pour le montage il faut determiner le secteur du début de partition (NTFS)
 ```bash
 mmls WKS042.dd
 ```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

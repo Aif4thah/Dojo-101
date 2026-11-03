@@ -352,3 +352,7 @@ Chemin : `c:\windows\system32\drivers\etc\hosts`
 ## Tests
 
 Prolonger / renouveler la licence d'éssai auprès du KMS (3*30 jours): `slmgr.vbs -rearm`
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

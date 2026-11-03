@@ -117,3 +117,7 @@ hackrf_transfer -R -a 1 -x 32 -s 20000000 -f 2441000000 -t test.cs8
 * [GNU Radio](https://www.gnuradio.org/)
 * [SDR Angel](https://github.com/f4exb/sdrangel)
 * [Lib python : pyhackRF](https://github.com/dressel/pyhackrf/tree/master#quick-example)
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

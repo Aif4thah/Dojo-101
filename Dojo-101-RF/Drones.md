@@ -158,3 +158,7 @@ hackrf_transfer -s 20000000 -l 32 -g 8 -f <freq.> -r capture.cs8
 * [sources pour les modulations](https://digitalcommons.odu.edu/cgi/viewcontent.cgi?article=1161&context=ece_etds)
 * [sigint](https://www.sigidwiki.com/wiki/Quadcopter_Telemetry_Signal)
 * [colorado.edu](https://home.cs.colorado.edu/~rhan/Papers/p17-nguyen.pdf)
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

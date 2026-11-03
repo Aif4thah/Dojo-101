@@ -20,3 +20,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
     Header set Feature-Policy "geolocation 'self'; vibrate 'none'"
 </IfModule>
 ```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

@@ -53,3 +53,7 @@ La méthode que nous utiliserons la méthode suivante, testée sur Windows 11
 * Sur Wireshark rendez-vous dans `Edit` -> `Préférences` -> `Protocols` -> `TLS`
 * Dans (Pre)-Master-Secret log filename, rentrez le fichier .log capturé et validez.
 * Retournez analyser le traffic qui devrait maintenant être déchiffré.
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

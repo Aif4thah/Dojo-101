@@ -240,3 +240,7 @@ Côté local on utilise toujours l'`AD` et les solutions tels que `Configuration
 Coté Azure on à le `centre d’administration Microsoft Entra` et le `MDM (Intune)`,
 
 Les clients restent alors managés via l' `AD local` **et** ont joint `l'AAD / Entra ID`
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

@@ -55,3 +55,6 @@ By Gaël Rousseau & Timothy Ringard
 
 ## ***7.Welcome to the World Wide Secret Web***
 
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

@@ -488,3 +488,7 @@ s angular.element()
 ```-Djava.security.manager```
 3. Create a policy that you use for your applications:
 ```-Djava.security.policy==/my/custom.policy```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

@@ -312,3 +312,7 @@ sphincs.verify(message, signature, public_key)
 ### Key Exchange
 
 * [ML-KEM-512 (ex-Kyber)](https://csrc.nist.gov/pubs/fips/203/final)
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

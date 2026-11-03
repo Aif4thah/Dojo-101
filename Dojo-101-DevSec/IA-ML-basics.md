@@ -100,3 +100,7 @@ L'utilisation de commandes permet de forcer le comportement de l'IA et d'éviter
 * Commiter le code fonctionnel avant d'ouvrir un nouveau fil.
 * Couper court et relancer un fil dès que l'agent boucle ou échoue deux fois sur le même problème.
 * Relancer un fil dès l'apparition de signaux de saturation (lenteur anormale, oubli des consignes de base, hallucinations).
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

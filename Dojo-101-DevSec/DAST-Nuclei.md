@@ -143,3 +143,7 @@ spécifier le chemin du fichier:
 ```powershell
 .\nuclei.exe -u https://localhost:3000 -t .\VulnerableLightApp\templates\vla-cwe89.yaml -v -debug
 ```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

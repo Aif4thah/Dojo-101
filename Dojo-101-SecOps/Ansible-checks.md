@@ -494,3 +494,6 @@ Service
 Certains requirements peuvent entrainer des erreurs et arrêter les checks 
 L'option `--step` permet des tests manuels sans modification du template
 
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

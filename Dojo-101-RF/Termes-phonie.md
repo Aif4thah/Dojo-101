@@ -102,3 +102,6 @@ PRENEZ MESSAGE : Prenez par écrit le message qui suit.
 
 RECU: J'ai bien reçu votre dernière transmission.
 
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

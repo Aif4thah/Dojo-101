@@ -507,3 +507,7 @@ Si freeze: utiliser les tty (ctrl+alt+<1,2,3,4...>) ou démarrer sans interface 
 ```sh
 rdesktop <server> [ -u username -p password ]
 ```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

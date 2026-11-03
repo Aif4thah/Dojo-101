@@ -11,3 +11,7 @@
 | VM | EC2 | VM |
 | Storage devices | Elastic block storage | managed disks |
 | function as a service | Lambda | Azure Function Serverless Compute |
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

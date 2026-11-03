@@ -1,5 +1,10 @@
 # Les fondamentaux de la cybersécurité (basics)
 
+<p align="center">
+  <a href="../README.md">🏠 Retour à l'accueil Dojo-101</a> •
+  <a href="https://github.com/sponsors/Aif4thah/">💖 Soutenir le projet sur GitHub Sponsors</a>
+</p>
+
 ## Introduction
 
 Les pertes mondiales imputables aux attaques informatiques dépassent les **1000 milliards/an** de dollars **depuis 2020**, soit plus de **1% du PIB mondial**
@@ -470,3 +475,10 @@ Exemple : NAC (Network Access Control)
 * [Autres README Dojo-101](https://github.com/Aif4thah/Dojo-101/)
 
 * [Démonstration d'attaques](https://github.com/Aif4thah/VulnerableLightApp)
+
+---
+
+<p align="center">
+  <b>💡 Ces fiches pratiques vous font gagner du temps en mission, en audit ou en formation ?</b><br>
+  Soutenez la mise à jour continue de <b>Dojo-101</b> en <a href="https://github.com/sponsors/Aif4thah/">devenant Sponsor sur GitHub 💖</a> ou en ajoutant une ⭐ au <a href="https://github.com/Aif4thah/Dojo-101">dépôt principal</a>.
+</p>

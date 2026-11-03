@@ -502,3 +502,7 @@ $job = Start-Job -ScriptBlock { Get-WinEvent -Log System }
 $job | Select-Object -Property *
 Stop-Job $job
 ```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

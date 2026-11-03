@@ -43,3 +43,7 @@ lynis audit system
 * [Guide ANSSI](https://cyber.gouv.fr/publications/recommandations-de-securite-relatives-un-systeme-gnulinux)
 * [Privesc](https://github.com/carlospolop/PEASS-ng)
 * [Privesc bins](https://gtfobins.github.io/)
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

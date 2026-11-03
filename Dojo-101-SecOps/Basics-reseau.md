@@ -80,3 +80,7 @@
 * afficher la table de routage sous windows: `route print`
 * afficher la table de routage sous linux: `ip route`
 * afficher le cache ARP: `arp -a`
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

@@ -8,3 +8,7 @@ Pour transférer le risque vers Github et héberger des ressources statiques (pr
 3. louer son nom de domaine chez un fournisseur et faire une redirection vers github (`CNAME`, `A`, `AAAA`...)
 4. déclarer le nom de domaine dans les settings du projet.
 5. Le certificat est généré automatiquement
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

@@ -616,6 +616,6 @@ volatility -f ch2.dmp --profile=Win7SP1x86 netscan
 volatility -f ch2.dmp --profile=Win7SP1x86 consoles
 ```
 
+---
 
-
-
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

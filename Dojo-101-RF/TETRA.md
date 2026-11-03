@@ -24,3 +24,7 @@ Perte de confidentialité dévoilée en Juillet 2023:
 * CVE-2022-24402
 * CVE-2022-24403
 * CVE-2022-24404
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

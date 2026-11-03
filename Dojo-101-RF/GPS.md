@@ -39,3 +39,7 @@ ex `71.74979859541622, -40.1146284141901`
 ```powershell
 hackrf_transfer -R -t gpssim.bin -f 1575420000 -s 2600000 -a 1 -x 42
 ```
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*

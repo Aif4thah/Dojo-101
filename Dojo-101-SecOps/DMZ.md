@@ -54,3 +54,7 @@ flowchart TD
 
 > [!WARNING]  
 > Lorsque le réseau interne peut communiquer avec une machine en DMZ sans passer par le firewall, ou lorsque le réseau interne et la DMZ sont sur le même hyperviseur, ce n'est **PAS une DMZ**.
+
+---
+
+*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*
