@@ -62,43 +62,41 @@ mindmap
     **GRC**
       ISO27001
       EBIOS RM
-      CRA / NIS2
       Cybercrisis
 
     **DevSec**
-      SAST / DAST
-      STRIDE / ASVS
-      CI/CD
-      IA & Langages
+      SAST
+      DAST
+      STRIDE
+      CICD
 
     **SecOps**
       OS Hardening
       Active Directory
-      IaC & Docker
-      Cloud Azure
+      IaC
+      Cloud
 
-    **RF & SDR**
+    **RF**
       TEMPEST
       SIGINT
-      Wi-Fi / Bluetooth
-      Satellites / RFID
+      Wireless
+      Satellites
 
     **Pentest**
-      Recon & OSINT
-      Web & AD Exploits
+      Recon
+      Exploits
       PrivEsc
-      Pivot & Post-Exploit
+      Pivot
 
     **Forensic**
       Acquisition
-      Volatility / RAM
       Reverse
       SIEM
 
-    **Training (38 MESP)**
-      Labs & Réseaux
-      Audits & Hardening
-      Wargame & CTF
+    **Training**
+      Labs
+      Wargame
+      CTF
 ```
 
 ## 👉 Par où commencer ? (Fondamentaux)
