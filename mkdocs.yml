@@ -1,0 +1,86 @@
+site_name: Dojo-101
+site_description: Base de connaissances Cybersécurité, DevSecOps & Labs Pédagogiques (Offline-First)
+site_author: Michael Vacarella (Aif4thah)
+site_url: https://aif4thah.github.io/Dojo-101/
+
+docs_dir: '.'
+site_dir: site
+
+exclude_docs: |
+  .git/**
+  .agents/**
+  .github/**
+  site/**
+  *.ps1
+  *.py
+  *.json
+  *.toml
+  .gitattributes
+  .gitignore
+
+repo_name: Aif4thah/Dojo-101
+repo_url: https://github.com/Aif4thah/Dojo-101
+edit_uri: blob/main/
+
+theme:
+  name: material
+  language: fr
+  custom_dir: overrides
+  logo: images/dojo101Dark.png
+  favicon: images/dojo101Dark.png
+  palette:
+    # Mode sombre (Dark) par défaut
+    - scheme: slate
+      primary: black
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Passer au mode clair
+    # Mode clair (Light)
+    - scheme: default
+      primary: teal
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Passer au mode sombre
+  features:
+    - announce.dismiss
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Aif4thah/Dojo-101
+      name: Dépôt GitHub (Ajouter une étoile ⭐)
+    - icon: fontawesome/brands/github-sponsors
+      link: https://github.com/sponsors/Aif4thah/
+      name: Devenir Sponsor sur GitHub 💖
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
