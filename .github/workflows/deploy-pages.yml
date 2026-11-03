@@ -33,6 +33,7 @@ jobs:
           cp -r Dojo-101-* images docs/
           cp README.md docs/README.md
           cp CONTRIBUTING.md CODE_OF_CONDUCT.md SECURITY.md docs/ || true
+          cp robots.txt llms.txt docs/ || true
 
       - name: Install static generator (Zensical / MkDocs)
         run: |

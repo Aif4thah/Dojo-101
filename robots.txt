@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Autorisation explicite des moteurs et robots d'IA
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Standard LLM context
+# https://aif4thah.github.io/Dojo-101/llms.txt
+
+Sitemap: https://aif4thah.github.io/Dojo-101/sitemap.xml

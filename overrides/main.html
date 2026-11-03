@@ -1,5 +1,23 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  <!-- Métadonnées OpenGraph (Partage LinkedIn, Discord, Slack) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dojo-101 — Base de connaissances Cybersécurité & DevSecOps">
+  <meta property="og:description" content="+250 fiches pratiques, Cheat-Sheets et 38 Labs / MESP en accès libre et offline-first.">
+  <meta property="og:url" content="https://aif4thah.github.io/Dojo-101/">
+  <meta property="og:image" content="https://aif4thah.github.io/Dojo-101/images/dojo101Dark.png">
+
+  <!-- Métadonnées Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dojo-101 — Cybersécurité & DevSecOps">
+  <meta name="twitter:description" content="+250 fiches pratiques, Cheat-Sheets et 38 Labs / MESP en accès libre.">
+  <meta name="twitter:image" content="https://aif4thah.github.io/Dojo-101/images/dojo101Dark.png">
+
+  <!-- Balise pour validation Google Search Console (à remplacer si besoin) -->
+  <!-- <meta name="google-site-verification" content="VOTRE_CODE_GOOGLE" /> -->
+{% endblock %}
+
 {% block announce %}
   <span>
     💡 <strong>Dojo-101 vous fait gagner du temps ?</strong>
