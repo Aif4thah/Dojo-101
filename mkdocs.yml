@@ -3,20 +3,8 @@ site_description: Base de connaissances Cybersécurité, DevSecOps & Labs Pédag
 site_author: Michael Vacarella (Aif4thah)
 site_url: https://aif4thah.github.io/Dojo-101/
 
-docs_dir: '.'
+docs_dir: docs
 site_dir: site
-
-exclude_docs: |
-  .git/**
-  .agents/**
-  .github/**
-  site/**
-  *.ps1
-  *.py
-  *.json
-  *.toml
-  .gitattributes
-  .gitignore
 
 repo_name: Aif4thah/Dojo-101
 repo_url: https://github.com/Aif4thah/Dojo-101

@@ -21,20 +21,34 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      - name: Install MkDocs Material
+      - name: Prepare docs structure (Runner only)
         run: |
-          pip install mkdocs-material
+          mkdir -p docs
+          cp -r Dojo-101-* images docs/
+          cp README.md docs/index.md
+          cp CONTRIBUTING.md CODE_OF_CONDUCT.md SECURITY.md docs/ || true
 
-      - name: Build site with MkDocs
-        run: mkdocs build
+      - name: Install static generator (Zensical / MkDocs)
+        run: |
+          pip install zensical mkdocs-material
+
+      - name: Build static site
+        env:
+          NO_MKDOCS_2_WARNING: "1"
+        run: |
+          if command -v zensical &> /dev/null; then
+            echo "Building with modern engine Zensical..."
+            zensical build
+          else
+            echo "Building with MkDocs..."
+            mkdocs build
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
