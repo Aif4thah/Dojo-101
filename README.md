@@ -55,47 +55,47 @@
 | **🎓 Apprentissage & Scénarios Pro (MESP)** | **38 Mises en Situation Professionnelle** progressives (Lab, Hardening, Audit, DevSecOps, EBIOS RM, SDR, Wargame, CTF) et guide d'ingénierie pédagogique | **39 fiches** | [Explorer les 38 MESP](./Dojo-101-Apprentissage/README.md) |
 
 ```mermaid
-mindmap
-  root((**DOJO-101**))
+flowchart LR
+    DOJO((**DOJO-101**))
 
-    **GRC**
-      ISO27001
-      EBIOS RM
-      Cybercrisis
+    DOJO --> GRC["⚖️ GRC"]
+    GRC --- GRC1[ISO27001]
+    GRC --- GRC2[EBIOS RM]
+    GRC --- GRC3[Cybercrisis]
 
-    **DevSec**
-      SAST
-      DAST
-      STRIDE
-      CICD
+    DOJO --> DevSec["🛡️ DevSec"]
+    DevSec --- DS1[SAST]
+    DevSec --- DS2[DAST]
+    DevSec --- DS3[STRIDE]
+    DevSec --- DS4[CICD]
 
-    **SecOps**
-      OS Hardening
-      Active Directory
-      IaC
-      Cloud
+    DOJO --> SecOps["⚙️ SecOps"]
+    SecOps --- SO1[OS Hardening]
+    SecOps --- SO2[Active Directory]
+    SecOps --- SO3[IaC]
+    SecOps --- SO4[Cloud]
 
-    **RF**
-      TEMPEST
-      SIGINT
-      Wireless
-      Satellites
+    DOJO --> RF["📡 RF"]
+    RF --- RF1[TEMPEST]
+    RF --- RF2[SIGINT]
+    RF --- RF3[Wireless]
+    RF --- RF4[Satellites]
 
-    **Pentest**
-      Recon
-      Exploits
-      PrivEsc
-      Pivot
+    DOJO --> Pentest["🎯 Pentest"]
+    Pentest --- PT1[Recon]
+    Pentest --- PT2[Exploits]
+    Pentest --- PT3[PrivEsc]
+    Pentest --- PT4[Pivot]
 
-    **Forensic**
-      Acquisition
-      Reverse
-      SIEM
+    DOJO --> Forensic["🔍 Forensic"]
+    Forensic --- FO1[Acquisition]
+    Forensic --- FO2[Reverse]
+    Forensic --- FO3[SIEM]
 
-    **Training**
-      Labs
-      Wargame
-      CTF
+    DOJO --> Training["🎓 Training"]
+    Training --- TR1[Labs]
+    Training --- TR2[Wargame]
+    Training --- TR3[CTF]
 ```
 
 ## 👉 Par où commencer ? (Fondamentaux)
