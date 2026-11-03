@@ -2,14 +2,92 @@
 
 {% block extrahead %}
   <style>
-    /* Lisibilité Mermaid en thème sombre */
+    /* ========================================================
+       Contraste optimal et garanti pour Mermaid (Clair & Sombre)
+       ======================================================== */
+
+    /* --- 1. Mode Sombre (Dark - palette slate) --- */
+    /* Fond et bordures des nœuds */
+    [data-md-color-scheme="slate"] .mermaid .mindmap-node .node-bkg,
+    [data-md-color-scheme="slate"] .mermaid .mindmap-node rect,
+    [data-md-color-scheme="slate"] .mermaid .mindmap-node circle,
+    [data-md-color-scheme="slate"] .mermaid .mindmap-node path,
+    [data-md-color-scheme="slate"] .mermaid .mindmap-node polygon,
+    [data-md-color-scheme="slate"] .mermaid .node rect,
+    [data-md-color-scheme="slate"] .mermaid .node circle {
+      fill: #1e293b !important;
+      stroke: #475569 !important;
+      stroke-width: 1.5px !important;
+    }
+
+    /* Texte des nœuds en mode sombre : Blanc net et contrasté */
     [data-md-color-scheme="slate"] .mermaid text,
     [data-md-color-scheme="slate"] .mermaid tspan,
     [data-md-color-scheme="slate"] .mermaid .nodeLabel,
-    [data-md-color-scheme="slate"] .mermaid .mindmap-node text,
-    [data-md-color-scheme="slate"] .mermaid .mindmap-node tspan {
+    [data-md-color-scheme="slate"] .mermaid .mindmap-node-label,
+    [data-md-color-scheme="slate"] .mermaid .label,
+    [data-md-color-scheme="slate"] .mermaid .label span {
+      fill: #f8fafc !important;
+      color: #f8fafc !important;
+    }
+
+    /* Lignes de liaison */
+    [data-md-color-scheme="slate"] .mermaid path.edge,
+    [data-md-color-scheme="slate"] .mermaid .edgePaths path,
+    [data-md-color-scheme="slate"] .mermaid path[class*="section-"] {
+      stroke: #94a3b8 !important;
+      stroke-width: 2px !important;
+    }
+
+    /* --- 2. Mode Clair (Light - palette default) --- */
+    /* Fond et bordures des nœuds */
+    [data-md-color-scheme="default"] .mermaid .mindmap-node .node-bkg,
+    [data-md-color-scheme="default"] .mermaid .mindmap-node rect,
+    [data-md-color-scheme="default"] .mermaid .mindmap-node circle,
+    [data-md-color-scheme="default"] .mermaid .mindmap-node path,
+    [data-md-color-scheme="default"] .mermaid .mindmap-node polygon,
+    [data-md-color-scheme="default"] .mermaid .node rect,
+    [data-md-color-scheme="default"] .mermaid .node circle {
+      fill: #f8fafc !important;
+      stroke: #94a3b8 !important;
+      stroke-width: 1.5px !important;
+    }
+
+    /* Texte des nœuds en mode clair : Noir profond et net */
+    [data-md-color-scheme="default"] .mermaid text,
+    [data-md-color-scheme="default"] .mermaid tspan,
+    [data-md-color-scheme="default"] .mermaid .nodeLabel,
+    [data-md-color-scheme="default"] .mermaid .mindmap-node-label,
+    [data-md-color-scheme="default"] .mermaid .label,
+    [data-md-color-scheme="default"] .mermaid .label span {
+      fill: #0f172a !important;
+      color: #0f172a !important;
+    }
+
+    /* Lignes de liaison */
+    [data-md-color-scheme="default"] .mermaid path.edge,
+    [data-md-color-scheme="default"] .mermaid .edgePaths path,
+    [data-md-color-scheme="default"] .mermaid path[class*="section-"] {
+      stroke: #64748b !important;
+      stroke-width: 2px !important;
+    }
+
+    /* --- 3. Nœud racine (Root / Titre DOJO-101) --- */
+    .mermaid .mindmap-node.section-root .node-bkg,
+    .mermaid .mindmap-node.section-root circle,
+    .mermaid .mindmap-node.section-root rect {
+      fill: #0284c7 !important;
+      stroke: #38bdf8 !important;
+      stroke-width: 2.5px !important;
+    }
+
+    .mermaid .mindmap-node.section-root text,
+    .mermaid .mindmap-node.section-root tspan,
+    .mermaid .mindmap-node.section-root .mindmap-node-label,
+    .mermaid .mindmap-node.section-root .label span {
       fill: #ffffff !important;
       color: #ffffff !important;
+      font-weight: bold !important;
     }
   </style>
 {% endblock %}
