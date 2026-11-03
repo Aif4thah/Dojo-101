@@ -47,7 +47,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Aif4thah/Dojo-101
       name: Dépôt GitHub (Ajouter une étoile ⭐)
-    - icon: fontawesome/brands/github-sponsors
+    - icon: material/heart
       link: https://github.com/sponsors/Aif4thah/
       name: Devenir Sponsor sur GitHub 💖
 
