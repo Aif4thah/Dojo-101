@@ -55,7 +55,6 @@
 | **🎓 Apprentissage & Scénarios Pro (MESP)** | **38 Mises en Situation Professionnelle** progressives (Lab, Hardening, Audit, DevSecOps, EBIOS RM, SDR, Wargame, CTF) et guide d'ingénierie pédagogique | **39 fiches** | [Explorer les 38 MESP](./Dojo-101-Apprentissage/README.md) |
 
 ```mermaid
-%%{ init: { "theme": "forest" } }%%
 mindmap
   root((**DOJO-101**))
 

@@ -31,7 +31,7 @@ jobs:
         run: |
           mkdir -p docs
           cp -r Dojo-101-* images docs/
-          cp README.md docs/index.md
+          cp README.md docs/README.md
           cp CONTRIBUTING.md CODE_OF_CONDUCT.md SECURITY.md docs/ || true
 
       - name: Install static generator (Zensical / MkDocs)

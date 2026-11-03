@@ -1,5 +1,19 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  <style>
+    /* Lisibilité Mermaid en thème sombre */
+    [data-md-color-scheme="slate"] .mermaid text,
+    [data-md-color-scheme="slate"] .mermaid tspan,
+    [data-md-color-scheme="slate"] .mermaid .nodeLabel,
+    [data-md-color-scheme="slate"] .mermaid .mindmap-node text,
+    [data-md-color-scheme="slate"] .mermaid .mindmap-node tspan {
+      fill: #ffffff !important;
+      color: #ffffff !important;
+    }
+  </style>
+{% endblock %}
+
 {% block announce %}
   <span>
     💡 <strong>Dojo-101 vous fait gagner du temps ?</strong>
