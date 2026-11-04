@@ -1,0 +1,77 @@
+# Dojo-101
+
+> DOJO-101 est une base de connaissances ouverte et offline-first couvrant la cybersécurité offensive et défensive, le DevSecOps, la gouvernance SSI (EBIOS RM, ISO 27001, CRA, NIS2), les radiofréquences (SDR) et l'ingénierie pédagogique à travers 38 Mises en Situation Professionnelle (MESP).
+
+Projet créé et maintenu par Michaël Vaccarella ([@Aif4thah](https://github.com/Aif4thah)). Conçu pour être directement indexable et consommable par des assistants d'intelligence artificielle, des pipelines RAG, et des praticiens humains en environnement déconnecté ou connecté. Le projet est publié sous licence GNU GPLv3 et maintenu de manière indépendante grâce aux soutiens de la communauté.
+
+- Dépôt GitHub : https://github.com/Aif4thah/Dojo-101
+- Documentation complète : [README.md](./README.md)
+- Sponsoriser le projet : https://github.com/sponsors/Aif4thah/
+
+## Fondamentaux Cybersécurité & Systèmes
+
+- [Fondamentaux SSI](./Dojo-101-SecOps/README.md) : Concepts clés (DICP, STRIDE, surface d'attaque, cadre juridique STAD, RGPD, ANSSI).
+- [Bases Linux](./Dojo-101-SecOps/Linux-Basics.md) : Commandes fondamentales, gestion des permissions, processus et fichiers sous Linux.
+- [Bases Windows](./Dojo-101-SecOps/Windows-basics.md) : Architecture Windows, commandes usuelles, base de registre et sécurité.
+- [Bases PowerShell](./Dojo-101-SecOps/Powershell-basics.md) : Scripting PowerShell orienté administration et sécurité.
+- [Bases Réseau](./Dojo-101-SecOps/Basics-reseau.md) : Protocoles TCP/IP, routage, filtrage et concepts réseau essentiels.
+
+## DevSecOps & Sécurité Applicative
+
+- [Méthodologie DevSecOps](./Dojo-101-DevSec/README.md) : Intégration de la sécurité dans le SDLC, chaînes CI/CD, SAST, DAST et modélisation de menaces.
+- [Modélisation de menaces STRIDE](./Dojo-101-DevSec/Threat-Modeling-STRIDE.md) : Application pratique de la matrice STRIDE pour évaluer les risques applicatifs.
+- [Audit OWASP ASVS](./Dojo-101-DevSec/Etude-Audit-ASVS.md) : Référentiel de vérification de la sécurité des applications OWASP.
+- [Analyse Statique CodeQL](./Dojo-101-DevSec/SAST-CodeQL.md) : Détection automatique de vulnérabilités par requêtes CodeQL.
+- [Sécurité Python](./Dojo-101-DevSec/Python-basics.md) : Bonnes pratiques de développement sécurisé et scripts défensifs/offensifs en Python.
+- [Sécurité Rust](./Dojo-101-DevSec/Rust-basics.md) : Fondamentaux du langage Rust orientés sûreté mémoire et robustesse.
+
+## SecOps & Durcissement (Hardening)
+
+- [Durcissement Linux](./Dojo-101-SecOps/Linux-Hardening.md) : Guides de durcissement des systèmes Linux selon les recommandations ANSSI et CIS Benchmarks.
+- [Durcissement Windows](./Dojo-101-SecOps/Windows-Hardening.md) : Sécurisation des postes et serveurs Windows, politiques locales et GPO.
+- [Active Directory Basics](./Dojo-101-SecOps/Windows-AD-basics.md) : Architecture AD, contrôleurs de domaine, forêts, arbres et objets de sécurité.
+- [VPN WireGuard](./Dojo-101-SecOps/WireGuard.md) : Déploiement et sécurisation de tunnels VPN modernes avec WireGuard.
+- [Infrastructure PKI](./Dojo-101-SecOps/PKI.md) : Gestion des autorités de certification, certificats X.509 et cryptographie asymétrique.
+- [Sécurité Docker](./Dojo-101-SecOps/Docker.md) : Bonnes pratiques de conteneurisation, isolation et moindres privilèges.
+
+## Pentest & Red Team
+
+- [Méthodologie de Test d'Intrusion](./Dojo-101-Pentest/README.md) : Cycle d'attaque (Reconnaissance, Exploitation, Escalade de privilèges, Pivot).
+- [Attaques Active Directory & Kerberos](./Dojo-101-Pentest/Windows-AD-Kerberos.md) : Kerberoasting, AS-REP Roasting et compromission de tickets Kerberos.
+- [Golden & Silver Tickets](./Dojo-101-Pentest/Windows-AD-golden_ticket.md) : Forge de tickets d'authentification et persistance Active Directory.
+- [Élévation de privilèges Linux](./Dojo-101-Pentest/Linux-Privesc-privesc-basics.md) : Vecteurs classiques d'escalade locale (SUID, sudo, crons, kernel exploits).
+- [Élévation de privilèges Windows](./Dojo-101-Pentest/Windows-Privesc-Basics.md) : Exploitation des services non sécurisés, DLL hijacking, tokens et bypass UAC.
+- [Cheat-Sheet Burp Suite](./Dojo-101-Pentest/Web-Burp-Cheat-Sheet.md) : Aide-mémoire complet pour les audits d'applications Web avec Burp Suite.
+- [Injections SQL (SQLi)](./Dojo-101-Pentest/Web-SQLI.md) : Typologies d'injection SQL (In-band, Error-based, Blind, Time-based) et remédiations.
+
+## Réponse à Incident & Forensique (DFIR)
+
+- [Méthodologie DFIR](./Dojo-101-Forensic/README.md) : Collecte de preuves, chaîne de traçabilité, protocole TLP et gestion de crise.
+- [Analyse de Mémoire Volatile (Volatility)](./Dojo-101-Forensic/Forensics-Memory-Volatility.md) : Investigation sur dump de RAM avec Volatility.
+- [Forensique Windows](./Dojo-101-Forensic/Forensics-Windows.md) : Analyse des artefacts Windows (Event Logs, Prefetch, MFT, Shimcache).
+- [Rétro-ingénierie Ghidra](./Dojo-101-Forensic/Reverse-GHIIDRA-bypass-condition.md) : Analyse statique et décompilation de binaires pour contourner des contrôles logiques.
+
+## Radiofréquences & Software-Defined Radio (SDR)
+
+- [Fondamentaux RF & SDR](./Dojo-101-RF/README.md) : Notions de baseband, échantillonnage I/Q, transformée de Fourier et modulations.
+- [HackRF Basics](./Dojo-101-RF/Hackrf-basics.md) : Prise en main du transceiver HackRF One, capture et rejeu de signaux.
+- [Écoute & SIGINT](./Dojo-101-RF/SIGINT.md) : Renseignement d'origine électromagnétique et interception de signaux.
+- [Compromission TEMPEST](./Dojo-101-RF/Tempest.md) : Émanations compromettantes et fuites électromagnétiques d'écrans et câbles.
+
+## Gouvernance, Risques & Conformité (GRC)
+
+- [Homologation & Normes SSI](./Dojo-101-Governance/README.md) : Guides d'homologation ANSSI, SMSI ISO/IEC 27001, référentiel PASSI et cadre CRA / NIS2.
+- [Analyse de Risques EBIOS RM](./Dojo-101-Governance/EBIOS-RM.md) : Déroulé des 5 ateliers de la méthode EBIOS Risk Manager de l'ANSSI.
+- [Gestion de Crise Cyber](./Dojo-101-Governance/Gestion-de-crise.md) : Organisation de la cellule de crise, communication et fiches réflexes.
+
+## Mises en Situation Professionnelle (38 MESP)
+
+- [Catalogue Pédagogique MESP](./Dojo-101-Apprentissage/README.md) : Référentiel des 38 scénarios pratiques évaluables pour la formation professionnelle.
+- [MESP 03 - Utiliser une base de connaissances](./Dojo-101-Apprentissage/03-MESP-Dojo-101.md) : Prise en main de Dojo-101, Git et recherche documentaire.
+- [MESP 42 - Audit de code & Pentest Boîte Blanche](./Dojo-101-Apprentissage/42-MESP-Audit-Code-Pentest.md) : Audit approfondi de l'application VulnerableLightApp.
+- [MESP 70 - Analyse EBIOS RM](./Dojo-101-Apprentissage/70-MESP-EBIOS-RM.md) : Conduite complète d'une analyse de risques en situation réelle.
+- [MESP 90 - WarGame & DFIR](./Dojo-101-Apprentissage/90-MESP-Wargame-Forensic.md) : Exercice d'attaque/défense et investigation numérique.
+
+## Soutenir le Projet
+
+- [Devenir Sponsor GitHub](https://github.com/sponsors/Aif4thah/) : Soutenir la maintenance bénévole, l'ingénierie pédagogique et les mises à jour des fiches.
