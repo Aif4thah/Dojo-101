@@ -3,7 +3,8 @@
 ## API paiement
 
 * vérifier qu'un utilisateur ne peut pas rédiger de la prod vers le dev/test pour contourner l'étape du paiement. (avec un numéro de carte de crédit de test par exemple)
-* vérifier que l'utilisateur ne peux pas simuler un faux reçu de paiement (via la boucle locale etc...)
+* vérifier que l'utilisateur ne peux pas simuler un faux reçu de paiement (via la boucle locale, site malveillant etc...)
+* vérifier le mapping : les URL et/ou les ID correspondent.
 
 
 ## IBAN et SWIFT
@@ -18,3 +19,4 @@ la validité d'un numéro ne veut pas dire que ce numéro existe à la banque
 ## Google pay billing
 
 * Utiliser `consumePurchase` et `completePurchase` si non l'utilisateur peut être remboursé sous 3 jours
+
