@@ -2,7 +2,9 @@
 
 ## API paiement
 
-vérifier qu'un utilisateur ne peut pas rédiger de la prod vers le dev/test pour contourner l'étape du paiement. (avec un numéro de carte de crédit de test par exemple)
+* vérifier qu'un utilisateur ne peut pas rédiger de la prod vers le dev/test pour contourner l'étape du paiement. (avec un numéro de carte de crédit de test par exemple)
+* vérifier que l'utilisateur ne peux pas simuler un faux reçu de paiement (via la boucle locale etc...)
+
 
 ## IBAN et SWIFT
 
@@ -11,8 +13,8 @@ la validité d'un numéro ne veut pas dire que ce numéro existe à la banque
 ## Stripe
 
 * Vérifier l'absence de `test` en url / tester la carte `42424242...`
-* Certains paiement sont fais plusieurs jours après, verifier les process metier
+* Certains paiements sont fait plusieurs jours après, verifier les process metier.
 
----
+## Google pay billing
 
-*Dojo-101 — [🏠 Sommaire principal](../README.md) • [📂 Sommaire du thème](./README.md) • [💖 Soutenir ce projet sur GitHub Sponsors](https://github.com/sponsors/Aif4thah/)*
+* Utiliser `consumePurchase` et `completePurchase` si non l'utilisateur peut être remboursé sous 3 jours
