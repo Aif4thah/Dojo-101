@@ -28,11 +28,47 @@
 | SLM | Small Language Model, modèle plus léger adapté aux tâches ciblées ou au local |
 | Data | Analyse et statistiques |
 | Word Embedding | Méthode de représentation vectorielle des mots pour l’apprentissage automatique |
-| RAG | Retrieval Augmented Generation, génération augmentée par récupération (stockage sous forme de vecteurs) |
+| RAG | Retrieval-Augmented Generation : combine un moteur de recherche documentaire et un LLM pour répondre avec des faits récents/privés sans réentraînement |
+| Vector DB | Base de données vectorielle (Chroma, Qdrant, Milvus, pgvector) stockant les embeddings pour la recherche par similarité |
 | Réseau de neurones | Moteur de l'IA |
 | Token | Unité de base de traitement du texte (mots, syllabes ou caractères) — coût et limite de contexte |
 | Context Window | Quantité maximale de tokens que le modèle peut traiter en mémoire à un instant T |
 | MCP | Model Context Protocol, protocole standard pour connecter l'agent à des outils et données externes |
+
+## Fonctionnement détaillé du RAG (Retrieval-Augmented Generation)
+
+Le **RAG** est une architecture qui connecte un LLM à une base de connaissances externe privée ou dynamique sans avoir besoin de réentraîner le modèle (*fine-tuning* coûteux).
+
+```mermaid
+flowchart LR
+    A["Question utilisateur"] --> B["Génération d'embedding (requête)"]
+    B --> C["Recherche sémantique (Vector DB)"]
+    D["Documents / Fiches Markdown"] -->|Ingestion & Découpage| E["Embeddings vectoriels"]
+    E --> C
+    C -->|Top K extraits pertinents| F["Prompt augmenté : Question + Contexte"]
+    F --> G["LLM (ex. Mistral, Llama, Claude)"]
+    G --> H["Réponse sourcée et factuelle"]
+```
+
+### Le pipeline RAG en 3 étapes clés
+
+1. **Phase d'indexation (Offline / Ingestion) :**
+   * **Chunking** : Les documents sources (ex. fiches .md, PDF, tickets) sont découpés en petits morceaux de texte (*chunks*).
+   * **Embedding** : Chaque extrait passe dans un modèle d'embedding qui le convertit en vecteur mathématique représentatif de son sens.
+   * **Stockage** : Les vecteurs et métadonnées sont stockés dans une base vectorielle (*Vector DB* comme ChromaDB, Qdrant, PGVector).
+2. **Phase de récupération (Retrieval) :**
+   * Lorsque l'utilisateur pose une question, celle-ci est elle-même convertie en vecteur.
+   * La base vectorielle effectue une recherche de similarité cosinus (*nearest neighbors*) pour extraire les k fragments les plus pertinents par rapport au sens de la question.
+3. **Phase de génération (Generation) :**
+   * Les fragments récupérés sont injectés dynamiquement dans la fenêtre de contexte du modèle avec la question.
+   * Le LLM formule la réponse en s'appuyant sur des données réelles et vérifiables.
+
+### Avantages majeurs en cybersécurité
+
+* **Réduction drastique des hallucinations** : le modèle s'appuie sur des faits et sources documentées réelles.
+* **Mise à jour instantanée** : pour actualiser les connaissances, il suffit d'ajouter ou modifier une fiche sans recalculer le modèle de base.
+* **Confidentialité & Souveraineté** : utilisable 100 % en local (*air-gapped*) avec Ollama / vLLM et une base Chroma locale, sans faire fuiter de données sensibles vers le cloud.
+* **Traçabilité** : permet de citer explicitement la fiche ou la source utilisée pour générer la réponse.
 
 ## Fichiers de configuration et cadrage (Agents / IDE)
 
