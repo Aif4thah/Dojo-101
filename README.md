@@ -32,7 +32,7 @@
   <a href="#-thèmes--les-7-piliers">⚔️ Les 7 Piliers</a> •
   <a href="#-par-où-commencer-fondamentaux">👉 Fondamentaux</a> •
   <a href="./Dojo-101-Apprentissage/README.md">🎓 38 Labs & MESP</a> •
-  <a href="#-usages--hors-ligne--intégration-ia">📒 Usages & IA</a> •
+  <a href="#-utiliser-dojo-101-hors-ligne">📒 Usage Hors-Ligne</a> •
   <a href="#-soutenir-dojo-101--devenir-sponsor">💖 Devenir Sponsor</a>
 </p>
 
@@ -109,9 +109,7 @@ Les fichiers `README.md` de chaque dossier ainsi que les fiches comportant le mo
 * 🔧 [GitHub basics](./Dojo-101-DevSec/Github-basics.md) & [AI / ML basics](./Dojo-101-DevSec/IA-ML-basics.md)
 * 🎓 [Découvrir Dojo-101 en TP (MESP 03)](./Dojo-101-Apprentissage/03-MESP-Dojo-101.md)
 
-## 📒 Usages : Hors-ligne & Intégration IA
-
-### 1. Consultation hors-ligne (Air-gapped)
+## 📒 Utiliser Dojo-101 hors-ligne
 
 Conçu pour être consultable **sans connexion Internet** (en salle blanche, en audit interne, en examen ou en déplacement) :
 
@@ -123,14 +121,6 @@ Ouvrez ensuite le dossier `Dojo-101` avec [VSCode](https://code.visualstudio.com
 
 * Recherchez instantanément par mot-clé dans les +250 fiches (`Ctrl` + `Shift` + `F`, ex. `Kerberos`, `GPO`, `EBIOS`, `HackRF`).
 * Affichez le rendu visuel et les schémas Mermaid au format HTML (`Ctrl` + `Shift` + `V`).
-
-### 2. Base documentaire pour assistants et compétences IA
-
-Le formatage uniforme en Markdown brut (`.md`), sans fioritures ni dépendances propriétaires, rend ce dépôt directement exploitable par vos environnements d'assistance :
-
-* **Contexte pour assistants de code** : indexable par vos outils locaux (Copilot, Cursor, etc.) pour appuyer des tâches de durcissement, de scripting ou d'audit.
-* **Alimentation de compétences personnalisées (Skills / Rules)** : les fiches peuvent servir de briques documentaires pour cadrer des agents ou des pipelines RAG sans nécessiter de prétraitement.
-* **Usage souverain** : compatible avec des modèles d'IA auto-hébergés en local (air-gapped) préservant la confidentialité de vos données d'audit.
 
 ## 🧪 Tester vos compétences en conditions réelles
 
@@ -148,9 +138,11 @@ Choisissez la formule qui correspond à votre usage sur **[GitHub Sponsors](http
 
 | Votre profil | Ce que Dojo-101 vous apporte | Comment soutenir |
 | :--- | :--- | :--- |
-| **👨‍🎓 Étudiant, Pentester, DevSecOps** | Un aide-mémoire fiable pour vos CTF, audits ou veille, et une base textuelle prête à enrichir vos assistants IA, 100 % gratuit et sans pub. | **[Offrir un café ponctuel ou mensuel sur GitHub Sponsors ☕](https://github.com/sponsors/Aif4thah/)** (ou ajouter une ⭐ au dépôt) |
-| **👨‍🏫 Formateur indépendant / Enseignant** | **38 MESP clés en main**, des schémas Mermaid prêts à projeter et une structure REAC/compétences qui vous épargnent des semaines de préparation de cours. | **[Devenir Sponsor Formateur sur GitHub 💖](https://github.com/sponsors/Aif4thah/)** et orienter les prochaines mises à jour et priorités |
+| **👨‍🎓 Étudiant, Pentester, DevSecOps** | Un aide-mémoire fiable pendant vos CTF, vos audits, vos soutenances ou votre veille quotidienne, 100 % gratuit et sans publicité. | **[Offrir un café ponctuel ou mensuel sur GitHub Sponsors ☕](https://github.com/sponsors/Aif4thah/)** (ou ajouter une ⭐ au dépôt) |
+| **👨‍🏫 Formateur indépendant / Enseignant** | **38 MESP clés en main**, des schémas Mermaid prêts à projeter et une structure REAC/compétences qui vous épargnent des semaines de préparation de cours. | **[Devenir Sponsor Formateur sur GitHub 💖](https://github.com/sponsors/Aif4thah/)** et orienter les prochaines mises à jour et traductions |
 | **🏢 École Cyber, Organisme de formation, ESN** | Une base pédagogique éprouvée pour vos promotions et une **visibilité directe auprès d'étudiants et professionnels cyber qualifiés** (recrutement & marque employeur). | **[Devenir Sponsor Officiel (Logo sur cet accueil) 🏆](https://github.com/sponsors/Aif4thah/)** |
+
+> 🌍 *Note for English-speaking visitors: Most advanced regulatory and pedagogical sheets are currently in French. Translation and new modules are prioritized based on [GitHub Sponsors](https://github.com/sponsors/Aif4thah/) feedback and requests.*
 
 ### 🌟 Nos Sponsors & Partenaires
 
