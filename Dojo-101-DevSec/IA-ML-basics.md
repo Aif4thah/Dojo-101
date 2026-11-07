@@ -80,6 +80,17 @@ Pour piloter et sécuriser un agent local sans saturer son contexte :
 * **`SCRATCHPAD.md` :** bloc-notes temporaire partagé avec l'agent pour suivre l'état d'un refactoring complexe sans surcharger l'historique du fil.
 * **`mcp.json` :** déclaration et restriction des outils/serveurs externes mis à disposition de l'agent.
 
+### Choix de Customization Gemini :
+
+Type            | Config File/Folder           | Scope                     | Best For                                                                                | Learn More
+:-------------- | :--------------------------- | :------------------------ | :-------------------------------------------------------------------------------------- | :---------
+**Rules**       | `GEMINI.md`, `AGENTS.md`     | Contextual / Hierarchical | Enforcing coding styles, API restrictions, and local guidelines.                        | [Rules Guide](./docs/rules.md)
+**Skills**      | `skills/<name>/SKILL.md`     | On-Demand (Progressive)   | Teaching the agent multi-step procedures, runbooks, and tool workflows.                 | [Skills Guide](./docs/skills.md)
+**Plugins**     | `plugins/<name>/plugin.json` | Bundle                    | Packaging related skills, rules, and MCP configs into a single unit.                    | [Plugins Guide](./docs/plugins.md)
+**Hooks**       | `hooks.json`                 | Lifecycle Event           | Running scripts/commands at specific agent lifecycle points (e.g., pre-tool execution). | [Hooks Guide](./docs/hooks.md)
+**MCP Servers** | `mcp_config.json`            | Tool Integration          | Connecting the agent to external services and custom tool providers.                    | [MCP Guide](./docs/mcp_servers.md)
+
+
 ## Cycle de vie
 
 1. Entraînement : création du modèle, affinage, tests, etc.
