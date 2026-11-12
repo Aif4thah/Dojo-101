@@ -147,6 +147,7 @@ L'utilisation de commandes permet de forcer le comportement de l'IA et d'éviter
 * Commiter le code fonctionnel avant d'ouvrir un nouveau fil.
 * Couper court et relancer un fil dès que l'agent boucle ou échoue deux fois sur le même problème.
 * Relancer un fil dès l'apparition de signaux de saturation (lenteur anormale, oubli des consignes de base, hallucinations).
+* Pour des problèmes complexes : créer des `subagents` avec des rôles précis (exemple : un expert technique, un expert juridique qui vont dialoguer)
 
 ---
 
