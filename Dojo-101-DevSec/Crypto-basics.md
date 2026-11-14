@@ -34,7 +34,7 @@ En complément de l'algo, les modes de chiffrement doivent être choisis avec so
 ### exemple de Chiffrement Symétrique
 
 > [!WARNING]
-> Attention: contrairement à la clé, les IVs ne doivent pas être réutilisés. Ce script est utilisé à titre éducatif et n'est pas là pour garantir la confidentialité d'échanges en production.
+> Attention: contrairement à la clé, les IVs ne doivent pas être réutilisés. Ce script est fourni à titre de démonstration et n'est pas là pour garantir la confidentialité d'échanges en production.
 
 en python
 

@@ -319,6 +319,6 @@ graph TD
 ---
 
 <p align="center">
-  <b>💡 Ces fiches pratiques vous font gagner du temps en mission, en audit ou en formation ?</b><br>
-  Soutenez la mise à jour continue de <b>Dojo-101</b> en <a href="https://github.com/sponsors/Aif4thah/">devenant Sponsor sur GitHub 💖</a> ou en ajoutant une ⭐ au <a href="https://github.com/Aif4thah/Dojo-101">dépôt principal</a>.
+  <b>💡 Ces fiches pratiques vous font gagner du temps en mission, en audit ou dans vos workflows IA ?</b><br>
+  Soutenez la mise à jour continue de <b>Dojo-101</b> en <a href="https://github.com/sponsors/Aif4thah/">devenant Sponsor sur GitHub 💖</a>, en ajoutant une ⭐ au <a href="https://github.com/Aif4thah/Dojo-101">dépôt principal</a>, ou <a href="mailto:michael.vacarella@pm.me">contactez-moi pour un audit / cadrage IA 🛡️</a>.
 </p>

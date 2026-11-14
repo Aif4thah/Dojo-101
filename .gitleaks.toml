@@ -1,2 +1,26 @@
+title = "Gitleaks configuration for Dojo-101"
+
+[extend]
+# Indispensable en Gitleaks v8+ : sans useDefault = true, les règles par défaut sont désactivées
+useDefault = true
+
 [allowlist]
-regexes = ['\$Cpassword="LjFWQMzS3GWDeav7\+0Q0oSoOM43VwD30YZDVaItj8e0"']
+description = "Allowlist globale pour les exemples techniques et placeholders Dojo-101"
+regexTarget = "line"
+regexes = [
+  # Exemple public Microsoft MS14-025 (GPP cpassword) documenté dans Dojo-101-Pentest/Windows-AD-No-LAPS-cpassword.md
+  '''\$Cpassword="LjFWQMzS3GWDeav7\+0Q0oSoOM43VwD30YZDVaItj8e0"''',
+  # Placeholders explicites utilisés dans les fiches techniques
+  '''<(redacted|secret|token|api[_-]?key|password|cle|votre[_-].+?)>''',
+]
+paths = [
+  '''^\.agents/''',
+]
+stopwords = [
+  "redacted",
+  "SHODANAPIKEY",
+  "changeme",
+  "placeholder",
+  "votre_token",
+  "votre_cle",
+]

@@ -4,9 +4,9 @@ Avant de soumettre cette Pull Request, merci de vérifier que vous avez lu les r
 
 ## Description des ajouts ou modifications
 
-- [ ] Nouvelle fiche pratique / Cheat-sheet
+- [ ] Nouvelle fiche pratique / Cheat-sheet opérationnelle
 - [ ] Mise à jour ou correction d'une fiche existante
-- [ ] Nouvelle Mise en Situation Professionnelle (MESP)
+- [ ] Amélioration pour l'intégration IA / Agents (`llms.txt`, structuration RAG/Skills)
 
 ---
 
