@@ -74,6 +74,7 @@ flowchart LR
 
 Pour piloter et sécuriser un agent local sans saturer son contexte :
 
+* **`AGENTS.md` :** point d'entrée standardisé à la racine du dépôt guidant les agents IA (routage, stratégie de contexte, workflows et conventions d'édition).
 * **`.agentignore` (ou `.aiignore`) :** bloque l'indexation des secrets (`.env`), des dépendances (`node_modules`) et des builds lourds (`dist`, logs).
 * **`.agent/.rules.md` :** instructions système persistantes, contraintes de sécurité, style de code et actions interdites.
 * **`ARCHITECTURE.md` :** vue d'ensemble technique, flux de données autorisés et patterns imposés dans le projet.
@@ -148,6 +149,26 @@ L'utilisation de commandes permet de forcer le comportement de l'IA et d'éviter
 * Couper court et relancer un fil dès que l'agent boucle ou échoue deux fois sur le même problème.
 * Relancer un fil dès l'apparition de signaux de saturation (lenteur anormale, oubli des consignes de base, hallucinations).
 * Pour des problèmes complexes : créer des `subagents` avec des rôles précis (exemple : un expert technique, un expert juridique qui vont dialoguer)
+
+## Protection des données en PME (Anti-Fuite & Souveraineté)
+
+Pour exploiter des agents LLM en PME sans exposer son patrimoine informationnel (secrets, code métier, données clients/RH) :
+
+```mermaid
+flowchart LR
+    A["Donnée / Code / Prompt"] --> B{"Classification & Filtrage"}
+    B -->|"Public / Anonymisé"| C["Passerelle / API Pro (Zero Data Retention)"]
+    B -->|"Confidentiel / Métier"| D["Modèle Local / Privé (Ollama, vLLM, RAG local)"]
+    B -->|"Secret (.env, Clés, PII)"| E["Blocage strict (.agentignore, Gitleaks, DLP)"]
+```
+
+### Les 5 grands principes opérationnels
+
+1. **Classification et routage des flux** : interdire l'envoi de données critiques (secrets d'affaires, RGPD/PII, propriété intellectuelle) vers des LLM publics ; les orienter vers une instance locale (*Local-First* via Ollama/vLLM) ou hébergée sur cloud souverain dédié.
+2. **Filtrage technique à la source** : imposer `.agentignore` / `.aiignore` dans tous les dépôts et coupler un scanner de secrets en pré-commit (`gitleaks`) pour bloquer mécaniquement l'ingestion de `.env`, clés privées, dumps et configurations de production.
+3. **Contrats API « Zero Data Retention » (ZDR)** : bannir les comptes grand public gratuits (*Shadow AI* qui réentraînent leurs modèles sur les prompts) au profit d'accès API/Entreprise garantissant contractuellement le non-entraînement et la purge immédiate des logs.
+4. **Cloisonnement et moindre privilège (MCP / Outils)** : exécuter les agents dans un périmètre restreint (conteneur/sandbox), limiter les serveurs MCP en lecture seule par défaut et exiger une validation humaine (*Human-in-the-loop*) avant toute écriture ou requête externe.
+5. **Anonymisation préalable** : remplacer systématiquement les noms de clients, adresses IP internes, domaines et identifiants par des variables génériques avant de soumettre un extrait de log ou de code à un modèle externe.
 
 ---
 
